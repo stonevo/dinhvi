@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from '../db/db';
+import { useStaticData } from '../data/load';
 import { t } from '../i18n';
 import { formatPeriod, periodOf } from '../lib/period';
 import { domainStatus, type DomainStatus } from '../lib/status';
@@ -13,7 +15,15 @@ const STATUS_KEY = {
   done: 'home.status.done',
 } as const satisfies Record<DomainStatus, string>;
 
+const ACTION_KEY = {
+  needsReview: 'home.action.review',
+  needsPositioning: 'home.action.start',
+  draft: 'home.action.continue',
+  done: 'home.action.view',
+} as const satisfies Record<DomainStatus, string>;
+
 export function HomePage() {
+  const { data: staticData } = useStaticData();
   const data = useLiveQuery(async () => {
     const [settings, domains, positionings, drafts] = await Promise.all([
       getSettings(db),
@@ -43,11 +53,30 @@ export function HomePage() {
       <ul className="domain-list">
         {data.domains.map((d) => {
           const status = domainStatus(d.id, period, data.positionings, data.drafts);
+          const current = data.positionings.find((p) => p.domainId === d.id && p.period === period);
+          const hex = current && staticData ? staticData.hexagram(current.finalHexagram) : null;
+          const to = current ? `/record/${current.id}` : `/position/${d.id}`;
           return (
             <li key={d.id} className={`domain status-${status}`}>
-              <span className="domain-name">{d.name}</span>
+              <span className="domain-name">
+                {d.name}
+                {hex && current && (
+                  <span className="muted small">
+                    {' '}
+                    · {hex.nameHanViet} · {t('line.n', { n: current.finalLine })}
+                  </span>
+                )}
+              </span>
               <span className="domain-status">{t(STATUS_KEY[status])}</span>
-              <button className="link" onClick={() => db.domains.update(d.id, { archived: true })}>
+              <Link className="domain-action" to={to}>
+                {t(ACTION_KEY[status])}
+              </Link>
+              <button
+                className="link"
+                onClick={() => {
+                  if (window.confirm(t('home.archive.confirm', { name: d.name }))) void db.domains.update(d.id, { archived: true });
+                }}
+              >
                 {t('home.archive')}
               </button>
             </li>
@@ -55,9 +84,15 @@ export function HomePage() {
         })}
       </ul>
       <form className="row" onSubmit={addDomain}>
-        <input value={name} onChange={(e) => setName(e.target.value)} placeholder={t('home.domainPlaceholder')} />
+        <input
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder={t('home.domainPlaceholder')}
+          aria-label={t('home.domainPlaceholder')}
+        />
         <button type="submit">{t('home.addDomain')}</button>
       </form>
+      <p className="muted small">{t('home.aloneNote')}</p>
     </section>
   );
 }

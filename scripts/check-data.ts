@@ -10,8 +10,14 @@ const read = (p: string) => JSON.parse(readFileSync(p, 'utf8'));
 
 const args = process.argv.slice(2);
 let errors: string[];
-if (args[0] === '--partial') {
-  errors = args.slice(1).flatMap((f) => validateHexagrams(read(f), { requireAll: false }).map((e) => `${f}: ${e}`));
+if (args[0] === '--partial' || args[0] === '--partial-complete') {
+  // --partial-complete: mọi quẻ trong file đều phải viết kỹ (không draft).
+  const complete = args[0] === '--partial-complete';
+  errors = args.slice(1).flatMap((f) => {
+    const list = read(f);
+    const requireComplete = complete ? list.map((h: { kingWenNumber: number }) => h.kingWenNumber) : undefined;
+    return validateHexagrams(list, { requireAll: false, requireComplete }).map((e) => `${f}: ${e}`);
+  });
 } else {
   errors = [
     ...validateTrigrams(read(join(DATA, 'trigrams.json'))).map((e) => `trigrams.json: ${e}`),
