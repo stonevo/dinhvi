@@ -2,7 +2,7 @@ import { NavLink, Route, Routes } from 'react-router-dom';
 import { t } from './i18n';
 import { HomePage } from './pages/HomePage';
 import { SettingsPage } from './pages/SettingsPage';
-import { PlaceholderPage } from './pages/PlaceholderPage';
+import { CalibrationPage } from './pages/CalibrationPage';
 import { RecordPage } from './pages/RecordPage';
 import { PositioningPage } from './flow/PositioningPage';
 import { TrajectoryPage } from './pages/TrajectoryPage';
@@ -25,7 +25,7 @@ export function App() {
           <Route path="/position/:domainId" element={<PositioningPage />} />
           <Route path="/record/:id" element={<RecordPage />} />
           <Route path="/trajectory" element={<TrajectoryPage />} />
-          <Route path="/calibration" element={<PlaceholderPage title={t('nav.calibration')} />} />
+          <Route path="/calibration" element={<CalibrationPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </main>

@@ -7,6 +7,7 @@ import { t } from '../i18n';
 import { formatPeriod, periodOf } from '../lib/period';
 import { domainStatus, type DomainStatus } from '../lib/status';
 import { newId } from '../lib/id';
+import { reminderState } from '../lib/reminder';
 
 const STATUS_KEY = {
   needsReview: 'home.status.needsReview',
@@ -36,7 +37,9 @@ export function HomePage() {
   const [name, setName] = useState('');
 
   if (!data) return <p className="muted">{t('common.loading')}</p>;
-  const period = periodOf(new Date(), data.settings.cycle);
+  const now = new Date();
+  const period = periodOf(now, data.settings.cycle);
+  const reminder = reminderState(now, data.settings, data.domains, data.positionings, data.drafts);
 
   async function addDomain(e: React.FormEvent) {
     e.preventDefault();
@@ -50,6 +53,7 @@ export function HomePage() {
     <section>
       <p className="intro">{t('home.intro')}</p>
       <h2 className="period">{t('home.period', { period: formatPeriod(period) })}</h2>
+      {reminder.inAppDue && <p className="note">{t('home.reminderDue')}</p>}
       <ul className="domain-list">
         {data.domains.map((d) => {
           const status = domainStatus(d.id, period, data.positionings, data.drafts);

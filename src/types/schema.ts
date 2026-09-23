@@ -185,6 +185,8 @@ export const settingsSchema = z.object({
   reminderDay: z.number().int().min(1).max(28),
   notificationsEnabled: z.boolean(),
   locale: z.enum(['vi']),
+  /** Kỳ gần nhất đã gửi thông báo nhắc — để không nhắc lặp trong cùng kỳ. */
+  lastReminderPeriod: z.string().optional(),
 });
 export type Settings = z.infer<typeof settingsSchema>;
 

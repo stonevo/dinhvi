@@ -4,15 +4,34 @@ import { db, getSettings } from '../db/db';
 import { BackupError, exportAll, importAll, parseBackup, serializeBackup } from '../db/backup';
 import { t } from '../i18n';
 import type { Settings } from '../types/schema';
+import {
+  notificationSupport, remindOnOpen, requestNotificationPermission, syncBackgroundReminder,
+  type NotificationSupport,
+} from '../lib/notifications';
 
 export function SettingsPage() {
   const settings = useLiveQuery(() => getSettings(db));
   const fileRef = useRef<HTMLInputElement>(null);
   const [message, setMessage] = useState<string | null>(null);
+  const [permission, setPermission] = useState<NotificationSupport>(notificationSupport());
 
   if (!settings) return <p className="muted">{t('common.loading')}</p>;
 
   const patch = (p: Partial<Settings>) => db.settings.put({ ...settings, ...p });
+
+  async function toggleNotifications() {
+    if (settings!.notificationsEnabled) {
+      await patch({ notificationsEnabled: false });
+      await syncBackgroundReminder(false);
+      return;
+    }
+    const result = await requestNotificationPermission();
+    setPermission(result);
+    if (result !== 'granted') return;
+    await patch({ notificationsEnabled: true });
+    await syncBackgroundReminder(true);
+    await remindOnOpen();
+  }
 
   async function doExport() {
     const text = serializeBackup(await exportAll(db));
@@ -56,7 +75,23 @@ export function SettingsPage() {
           value={settings.reminderDay}
           onChange={(e) => patch({ reminderDay: Math.min(28, Math.max(1, Number(e.target.value) || 1)) })}
         />
+        <span className="muted small">{t('settings.reminderDay.hint')}</span>
       </label>
+
+      <h2>{t('settings.notifications')}</h2>
+      {permission === 'unsupported' ? (
+        <p className="muted">{t('settings.notifications.unsupported')}</p>
+      ) : (
+        <>
+          <div className="row">
+            <button type="button" onClick={toggleNotifications} aria-pressed={settings.notificationsEnabled}>
+              {settings.notificationsEnabled ? t('settings.notifications.disable') : t('settings.notifications.enable')}
+            </button>
+          </div>
+          {permission === 'denied' && <p className="soft-warn">{t('settings.notifications.denied')}</p>}
+          <p className="muted small">{t('settings.notifications.hint')}</p>
+        </>
+      )}
 
       <h2>{t('settings.backup')}</h2>
       <p className="muted">{t('settings.backup.hint')}</p>

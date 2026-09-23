@@ -9,6 +9,9 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      strategies: 'injectManifest',
+      srcDir: 'src',
+      filename: 'sw.ts',
       includeAssets: ['icon.svg'],
       manifest: {
         name: 'Định Vị',
@@ -24,7 +27,7 @@ export default defineConfig({
           { src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' },
         ],
       },
-      workbox: {
+      injectManifest: {
         // Dữ liệu quẻ nằm trong public/data — precache để dùng offline.
         globPatterns: ['**/*.{js,css,html,svg,png,json,webmanifest}'],
       },

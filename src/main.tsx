@@ -4,6 +4,7 @@ import { HashRouter } from 'react-router-dom';
 import { registerSW } from 'virtual:pwa-register';
 import { App } from './App';
 import { db, ensureSeeded } from './db/db';
+import { remindOnOpen } from './lib/notifications';
 import './styles.css';
 
 registerSW({ immediate: true });
@@ -16,4 +17,8 @@ ensureSeeded(db).finally(() => {
       </HashRouter>
     </React.StrictMode>,
   );
+  void remindOnOpen();
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') void remindOnOpen();
+  });
 });
