@@ -20,6 +20,17 @@ export function domainStatus(
   return 'needsPositioning';
 }
 
+/**
+ * Cổng tạo bản ghi mới: chưa có bản ghi cho kỳ này, và mọi kỳ trước của cùng
+ * lĩnh vực đều đã nhìn lại.
+ */
+export function canStartPositioning(domainId: string, period: string, positionings: Positioning[]): boolean {
+  return (
+    !positionings.some((p) => p.domainId === domainId && p.period === period) &&
+    !unreviewedBefore(domainId, period, positionings)
+  );
+}
+
 /** Bản ghi gần nhất trước kỳ hiện tại mà chưa có hindsight, nếu có. */
 export function unreviewedBefore(
   domainId: string,
