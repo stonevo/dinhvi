@@ -1,0 +1,45 @@
+import type { Positioning } from '../src/types/schema';
+
+/** Bản ghi định vị hợp lệ tối thiểu; ghi đè trường cần thiết cho từng test. */
+export function makePositioning(overrides: Partial<Positioning> = {}): Positioning {
+  return {
+    id: 'p1',
+    domainId: 'd1',
+    period: '2026-Q2',
+    createdAt: '2026-04-02T09:00:00.000Z',
+    facts: ['Nhóm có ba người mới.', 'Dự án lùi hạn hai lần.', 'Tôi họp bốn buổi mỗi tuần.'],
+    innerTrigram: 'kan',
+    innerEvidence: 'Không chắc hướng đi.',
+    outerTrigram: 'gen',
+    outerEvidence: 'Ngân sách bị đóng băng.',
+    hexagram: 4,
+    sequenceCheck: 'fits',
+    sequenceNote: '',
+    tier: 'earth',
+    tierEvidence: 'Chưa ai phụ thuộc quyết định của tôi.',
+    line: 1,
+    tierChecklistAnswers: { 'l1-q1': true, 'l2-q1': false },
+    behavioralSignalsMatched: [0, 2],
+    painfulSentence: 'Người ở vị trí này thường…',
+    painType: 'specific',
+    reflectionAnswers: ['…'],
+    criticHexagram: 3,
+    criticLine: 2,
+    criticComparison: 'Hào của người phê bình gọi tên đúng hơn.',
+    witness: {
+      who: 'Đồng nghiệp',
+      theirStage: 'beginning',
+      theirLineGuess: 1,
+      note: '',
+      askedAt: '2026-04-01T00:00:00.000Z',
+    },
+    finalHexagram: 4,
+    finalLine: 1,
+    confidence: 3,
+    changedAfterTests: false,
+    willNotDo: 'Không nhận thêm dự án mới trong quý.',
+    notes: 'Ghi chú có dấu: ỡ ự ẫ 乾 — và "ngoặc kép".',
+    hindsight: null,
+    ...overrides,
+  };
+}
