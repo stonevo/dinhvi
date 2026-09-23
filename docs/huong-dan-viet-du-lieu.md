@@ -1,0 +1,104 @@
+# Hướng dẫn viết dữ liệu quẻ / hào
+
+Tài liệu cho người (hoặc agent) viết và sửa `public/data/hexagrams.json`. Đọc hết trước khi viết.
+
+## Triết lý — đọc trước
+
+Định Vị **không phải app bói**. Người dùng tự xác định mình đang ở quẻ nào, hào nào, rồi đọc lời hào *như ghi chép của những người từng đứng ở đúng vị trí ấy*. Kinh Dịch ở đây là kho 384 dạng tình huống nén từ kinh nghiệm quá khứ (tinh thần Trình Di, Vương Phu Chi), không phải lời tiên tri.
+
+Hệ quả cho văn phong:
+
+- **Không tiên tri, không mệnh lệnh.** Không nói điều gì *sẽ* xảy ra, không bảo người đọc *nên* làm gì. Chỉ mô tả: “người ở vị trí này thường…”, “vị trí này hay…”, và đặt câu hỏi.
+- **Không cát/hung.** Dịch các chữ cát, hung, hối, lận, vô cữu thành hệ quả mô tả được: “thường thuận”, “thường để lại tiếc nuối”, “thường không gây lỗi lớn”, “dễ bẽ bàng”.
+- **Hiện đại, trung tính, cụ thể.** Ngôi thứ hai “bạn”. Ví dụ lấy từ công việc, gia đình, sức khỏe, tài chính — không lấy từ triều đình.
+- **Tự viết.** Tham chiếu tinh thần Phan Bội Châu, Ngô Tất Tố, Nguyễn Hiến Lê, Richard Wilhelm, Trình Di, Chu Hy — nhưng **không chép** văn của bất kỳ bản dịch/giảng nào. Nguyễn Hiến Lê, Nhân Tử Nguyễn Văn Thọ, bản Anh của Baynes còn bản quyền: chỉ đọc để hiểu, không trích, không diễn đạt sát câu.
+
+## Lint tự động (test sẽ fail nếu vi phạm)
+
+Cấm trong **mọi trường**, trừ `traditionalCounsel` và `reflectionQuestions` (so khớp nguyên từ, không phân biệt hoa thường):
+
+`sẽ` · `chắc chắn` · `nhất định` · `tránh ngay` · `không nên` · `nên` · `phải`
+
+Được miễn: `không phải` (phủ định), `trở nên` (= trở thành).
+
+Bẫy hay gặp và cách viết thay:
+
+| Bẫy | Viết thay |
+|---|---|
+| “sẽ gặp trở ngại” | “thường gặp trở ngại”, “dễ gặp trở ngại” |
+| “nên chờ” | đưa vào `traditionalCounsel`, hoặc hỏi: “Điều gì khiến bạn không chờ được?” |
+| “nên” làm liên từ (“vì vậy nên”) | “vì thế”, “do đó” |
+| “phải chăng”, “buộc phải”, “chưa phải” | “liệu”, “bị buộc”, “chưa tới”, “chưa là” |
+| “chắc chắn thất bại” | “thường không thành” |
+
+- `traditionalCounsel`: được dùng các từ trên, nhưng **phải mở đầu** bằng `Truyền thống khuyên rằng` (hoặc `Theo truyền thống,` / `Lời xưa khuyên rằng` / `Các nhà chú giải xưa khuyên rằng`). Đây là lời của truyền thống, không phải lời của app.
+- `reflectionQuestions`: mỗi câu **kết thúc bằng `?`**. Là câu hỏi thật, không phải lời khuyên trá hình. ✗ “Bạn đã thử chậm lại chưa?” ✓ “Nếu chậm lại một tháng, cái gì mất đi thật sự?”
+
+Kiểm tra: `npx tsx scripts/check-data.ts` (toàn bộ) hoặc `npx tsx scripts/check-data.ts --partial <file>` (một phần).
+
+## Trường cấp quẻ
+
+| Trường | Viết gì |
+|---|---|
+| `nameHanViet` | Tên ngắn Hán Việt: `Càn`, `Truân`, `Đại Hữu`. Tên đầy đủ (“Thủy Lôi Truân”) app tự ghép từ hai quái. |
+| `nameHan` | Chữ Hán phồn thể: `乾`, `屯`, `大有`. |
+| `nameVi` | Nghĩa tiếng Việt, 2–5 chữ: “Gian nan buổi đầu”, “Chờ đợi”. |
+| `binary`, `lowerTrigram`, `upperTrigram`, `oppositeHexagram` | Tính sẵn bởi `scripts/skeleton.ts`. Không sửa tay. |
+| `theme` | Một câu: đây là dạng tình huống gì. “Khởi đầu trong hỗn độn, khi mọi thứ mới nhú và chưa có trật tự.” |
+| `stageInCycle` | Một trong `beginning` (khởi đầu) · `rising` (đang lên) · `peak` (đỉnh) · `turning` (bước ngoặt) · `declining` (đang xuống) · `ending` (kết thúc) · `stagnant` (bế tắc/đình trệ) · `transitional` (chuyển tiếp). Chọn theo bản chất tình huống, không theo vị trí số. |
+| `judgment` | Mở đầu bằng phiên âm Hán Việt lời quẻ trong ngoặc kép, rồi ` — `, rồi 2–4 câu diễn đạt hiện đại. Ví dụ: `“Truân: nguyên hanh, lợi trinh. Vật dụng hữu du vãng, lợi kiến hầu.” — Buổi đầu còn rối …` |
+| `sequenceNote` | 1–2 câu, theo tinh thần Tự quái truyện: vì sao quẻ này đến sau quẻ trước. Quẻ 1 nói vì sao đứng đầu. |
+| `sources` | Những nguồn đã tham chiếu tinh thần, ví dụ `["Chu Dịch (kinh văn)", "Trình Di — Y Xuyên Dịch truyện", "Ngô Tất Tố — Kinh Dịch"]`. |
+
+## Trường cấp hào
+
+| Trường | Viết gì |
+|---|---|
+| `position`, `yinYang`, `tier` | Tính sẵn. Không sửa tay. |
+| `original` | `<Tên hào>: <phiên âm Hán Việt lời hào>`. Tên hào tính sẵn (`Sơ cửu`, `Lục nhị`, `Cửu tam`, …, `Thượng lục`) và test kiểm tra khớp với âm dương. Phiên âm theo kinh văn chuẩn, dùng âm Hán Việt thông dụng nhất. Không dịch. |
+| `situation` | 1–3 câu: tình huống, ngôn ngữ hiện đại. |
+| `behavioralSignals` | **Trường quan trọng nhất.** 3–5 dấu hiệu **hành vi / sự kiện quan sát được** cho thấy đang ở đúng hào này trong đúng quẻ này. Người ngoài có thể xác nhận được. Có con số, thời hạn, người cụ thể khi được. ✓ “Chưa ai phụ thuộc vào quyết định của bạn trong việc này” ✓ “Bạn làm nhiều mà kết quả chưa hiện, cảm giác ‘gần rồi’ kéo dài quá 3 tháng” ✗ “Bạn cảm thấy bất an” ✗ “Bạn đang ở giai đoạn đầu”. Tránh lặp nguyên câu hỏi chung của `lineTiers.json` — dấu hiệu phải mang màu của quẻ. |
+| `characteristicRisk` | Cái nguy đặc trưng của vị trí, 1–2 câu. |
+| `commonFailure` | Cách người ở vị trí này thường vấp. Mở đầu gợi ý: “Người ở vị trí này thường…”. |
+| `traditionalCounsel` | Mở đầu `Truyền thống khuyên rằng …`, bám ý lời hào và Tiểu Tượng. |
+| `whatTendsToFollow` | Điều thường đến sau, mô tả, không hứa hẹn. Có thể nối sang hào kế hoặc quẻ biến. |
+| `reflectionQuestions` | 2–4 câu hỏi tự soi, kết thúc bằng `?`. |
+| `draft` | `true` khi hào mới viết tóm lược. |
+
+### Hào draft
+
+Khi chưa viết kỹ: `draft: true`, điền `original` (đầy đủ), `situation` (1–2 câu tóm lược), `characteristicRisk` (1 câu). Các trường chuỗi khác để `""`, mảng để `[]`. Không bỏ trống `original` và `situation`.
+
+## Ví dụ một hào viết kỹ — Càn, hào 1
+
+```json
+{
+  "position": 1,
+  "yinYang": "yang",
+  "tier": "earth",
+  "original": "Sơ cửu: Tiềm long, vật dụng.",
+  "situation": "Bạn có năng lực thật nhưng chưa có chỗ để dùng nó. Trong việc này chưa ai biết đến bạn, và thời điểm chưa tới.",
+  "behavioralSignals": [
+    "Chưa ai phụ thuộc vào quyết định của bạn trong việc này",
+    "Bạn có ý tưởng hoặc kỹ năng mà chưa có dịp dùng trước người có ảnh hưởng",
+    "Khi bạn đề xuất, người ta nghe nhưng không làm theo",
+    "Phần lớn thời gian của bạn dành cho học, luyện, chuẩn bị"
+  ],
+  "characteristicRisk": "Nóng lòng ra mặt khi nền chưa đủ; bị nhìn thấy quá sớm và bị đo bằng thước chưa dành cho mình.",
+  "commonFailure": "Người ở vị trí này thường dốc hết sức ra thể hiện trước khi có chỗ đứng, rồi mất uy tín hoặc bị dập từ sớm.",
+  "traditionalCounsel": "Truyền thống khuyên rằng rồng còn ẩn thì chưa dùng: giữ sức, nuôi đức, chưa hành động lớn.",
+  "whatTendsToFollow": "Khi nền được nuôi đủ, thường đến giai đoạn “thấy rồng ở ruộng” — có chỗ đứng và có người biết đến (hào 2).",
+  "reflectionQuestions": [
+    "Điều gì khiến bạn muốn được nhìn thấy ngay lúc này?",
+    "Nền của bạn trong việc này còn thiếu gì mà chính bạn biết?",
+    "Ai từng ra mặt quá sớm trong việc tương tự, và chuyện gì đã xảy ra với họ?"
+  ]
+}
+```
+
+## Quy trình
+
+1. `npx tsx scripts/skeleton.ts <từ> <đến> > data-src/chunks/hex-<từ>-<đến>.json` — khung có sẵn mọi trường tính được.
+2. Điền chữ.
+3. `npx tsx scripts/check-data.ts --partial data-src/chunks/hex-<từ>-<đến>.json` cho tới khi báo “Dữ liệu hợp lệ.”
+4. `npx tsx scripts/merge-chunks.ts` gộp vào `public/data/hexagrams.json`, rồi `npx tsx scripts/check-data.ts`.

@@ -1,0 +1,74 @@
+[
+  {
+    "position": 1,
+    "tier": "earth",
+    "summary": "Mới vào, chưa có vị. Nền đang hình thành; việc làm lúc này chưa ai nhìn thấy và chưa ai phụ thuộc vào nó.",
+    "checklist": [
+      { "id": "l1-q1", "question": "Chưa ai phụ thuộc vào quyết định của bạn trong việc này?" },
+      { "id": "l1-q2", "question": "Bạn vẫn đang học các quy tắc ngầm của việc này?" },
+      { "id": "l1-q3", "question": "Nếu bạn rút lui, việc chung gần như không bị ảnh hưởng?" },
+      { "id": "l1-q4", "question": "Bạn chưa có mặt trong các cuộc họp hay danh sách quan trọng?" },
+      { "id": "l1-q5", "question": "Phần lớn việc bạn làm là chuẩn bị, chưa tới phần thực thi chính?" }
+    ]
+  },
+  {
+    "position": 2,
+    "tier": "earth",
+    "summary": "Có chỗ đứng ở dưới. Làm tròn phần mình, được người phía trên biết đến và hô ứng, nhưng chưa ở chỗ quyết.",
+    "checklist": [
+      { "id": "l2-q1", "question": "Bạn có một vai trò rõ ràng mà người khác đều biết?" },
+      { "id": "l2-q2", "question": "Có một người ở vị trí cao hơn tin và dựa vào bạn?" },
+      { "id": "l2-q3", "question": "Bạn được giao việc thực chất chứ không chỉ việc phụ?" },
+      { "id": "l2-q4", "question": "Quyết định cuối cùng vẫn thuộc về người khác?" },
+      { "id": "l2-q5", "question": "Kết quả của bạn được ghi nhận, nhưng chủ yếu trong phạm vi nhóm?" }
+    ]
+  },
+  {
+    "position": 3,
+    "tier": "human",
+    "summary": "Đỉnh của quái dưới, chỗ chuyển tiếp — vị trí nguy nhất. Đã vượt khỏi nền nhưng chưa vào vùng trên; dễ căng quá sức, dễ làm quá tay.",
+    "checklist": [
+      { "id": "l3-q1", "question": "Bạn đang gánh nhiều hơn vai trò chính thức của mình?" },
+      { "id": "l3-q2", "question": "Cảm giác “gần rồi” mà kết quả chưa hiện đã kéo dài hơn một kỳ?" },
+      { "id": "l3-q3", "question": "Bạn đứng giữa hai cấp, bị cả trên lẫn dưới kéo?" },
+      { "id": "l3-q4", "question": "Kỳ vừa qua bạn đã ít nhất một lần làm quá tay hoặc hứa quá sức?" },
+      { "id": "l3-q5", "question": "Bước tiếp theo đòi một thay đổi về vai trò, không chỉ cố thêm?" }
+    ]
+  },
+  {
+    "position": 4,
+    "tier": "human",
+    "summary": "Vào vùng trên, gần quyền nhưng chưa là quyền. Đứng cạnh người quyết định, bị lộ, được nhìn thấy, dễ bị nghi.",
+    "checklist": [
+      { "id": "l4-q1", "question": "Bạn thường làm việc trực tiếp với người có quyết định cuối cùng?" },
+      { "id": "l4-q2", "question": "Bạn được hỏi ý kiến, nhưng quyết định vẫn là của người khác?" },
+      { "id": "l4-q3", "question": "Sai sót của bạn giờ được nhiều người nhìn thấy hơn trước?" },
+      { "id": "l4-q4", "question": "Bạn đang giằng co giữa trung thành với người trên và làm theo ý mình?" },
+      { "id": "l4-q5", "question": "Người ở dưới bắt đầu tìm đến bạn như một cửa ngõ?" }
+    ]
+  },
+  {
+    "position": 5,
+    "tier": "heaven",
+    "summary": "Vị trung của quái trên. Quyết định của bạn định hình việc của người khác; bạn là người chịu trách nhiệm cuối cùng.",
+    "checklist": [
+      { "id": "l5-q1", "question": "Nếu bạn nghỉ hai tuần, các việc quan trọng dừng lại chờ bạn?" },
+      { "id": "l5-q2", "question": "Người khác lên kế hoạch dựa trên quyết định của bạn?" },
+      { "id": "l5-q3", "question": "Khi việc hỏng, bạn là người chịu trách nhiệm cuối cùng?" },
+      { "id": "l5-q4", "question": "Bạn phân bổ nguồn lực (tiền, người, thời gian) cho người khác?" },
+      { "id": "l5-q5", "question": "Hầu như không ai có thể đảo ngược quyết định của bạn trong việc này?" }
+    ]
+  },
+  {
+    "position": 6,
+    "tier": "heaven",
+    "summary": "Qua đỉnh. Còn danh, còn ảnh hưởng, nhưng quyền thực đang chuyển đi; cái nguy là ở lại quá lâu.",
+    "checklist": [
+      { "id": "l6-q1", "question": "Việc chính đã đạt được và giờ chủ yếu là duy trì?" },
+      { "id": "l6-q2", "question": "Người khác đang dần nhận các quyết định trước đây là của bạn?" },
+      { "id": "l6-q3", "question": "Bạn được mời vì uy tín cũ nhiều hơn vì vai trò hiện tại?" },
+      { "id": "l6-q4", "question": "Bạn thấy khó buông vai trò dù nó không còn cần bạn như trước?" },
+      { "id": "l6-q5", "question": "Những người mới nói về việc này bằng ngôn ngữ bạn không quen?" }
+    ]
+  }
+]

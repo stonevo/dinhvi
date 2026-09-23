@@ -1,0 +1,170 @@
+[
+  {
+    "key": "qian",
+    "nameHanViet": "Càn",
+    "nameHan": "乾",
+    "binary": "111",
+    "image": "trời",
+    "asInnerState": "Bên trong bạn có đà và sức chủ động: bạn muốn tiến, muốn cầm lái, và thấy mình đủ sức kéo việc đi.",
+    "asOuterSituation": "Hoàn cảnh mạnh và đòi hỏi cao: nhịp việc nhanh, người có năng lực và sức bền được đẩy lên.",
+    "innerSignals": [
+      "Bạn tự nhận thêm việc mà không cần ai giao",
+      "Bạn sốt ruột khi người khác làm chậm hơn mình",
+      "Bạn ít hỏi ý kiến trước khi quyết",
+      "Bạn có đủ sức làm cả ngày mà ít cần nghỉ"
+    ],
+    "outerSignals": [
+      "Mục tiêu và kỳ vọng được đặt cao hơn kỳ trước",
+      "Người có thành tích được giao thêm quyền rất nhanh",
+      "Nhịp việc nhanh, ít chỗ cho do dự",
+      "Nguồn lực có sẵn cho ai dám nhận"
+    ]
+  },
+  {
+    "key": "dui",
+    "nameHanViet": "Đoài",
+    "nameHan": "兌",
+    "binary": "110",
+    "image": "đầm",
+    "asInnerState": "Bên trong bạn đang mở và vui: bạn muốn trao đổi, kết nối, chia sẻ, và dễ bị thu hút.",
+    "asOuterSituation": "Hoàn cảnh cởi mở, nhiều trao đổi: người gặp người, thương lượng, thuyết phục; lời nói và sự dễ chịu có sức nặng.",
+    "innerSignals": [
+      "Bạn chủ động nhắn tin, hẹn gặp người khác nhiều hơn thường lệ",
+      "Bạn dễ nhận lời mời",
+      "Bạn tìm đến các cuộc trò chuyện hơn là làm việc một mình",
+      "Bạn chọn lời để người đối diện dễ chịu"
+    ],
+    "outerSignals": [
+      "Đang có thương lượng, thỏa thuận, hoặc lời chào mời",
+      "Nhiều cuộc gặp gỡ, sự kiện, giao lưu",
+      "Người ta quyết định dựa vào cảm tình nhiều hơn số liệu",
+      "Có lời hứa hẹn hoặc lời khen mà chưa có cam kết cụ thể"
+    ]
+  },
+  {
+    "key": "li",
+    "nameHanViet": "Ly",
+    "nameHan": "離",
+    "binary": "101",
+    "image": "lửa",
+    "asInnerState": "Bên trong bạn sáng rõ: bạn thấy vấn đề, hiểu mình muốn gì, và muốn được nhìn thấy — nhưng sự sáng ấy dựa vào cái bạn bám vào.",
+    "asOuterSituation": "Hoàn cảnh đang được soi rõ và phô ra: mọi thứ được nhìn thấy, được đánh giá; vị trí của bạn tùy vào cái bạn gắn với.",
+    "innerSignals": [
+      "Bạn giải thích được vấn đề cho người khác trong vài câu",
+      "Bạn để ý người khác nhìn mình ra sao",
+      "Có một người, một tổ chức hay một ý tưởng mà bạn gắn bó sâu",
+      "Hứng thú của bạn bùng lên nhanh rồi cũng nguội nhanh"
+    ],
+    "outerSignals": [
+      "Kết quả của bạn đang được công khai hoặc đo đếm",
+      "Bạn được chú ý nhiều hơn kỳ trước",
+      "Vị trí của bạn gắn với một người bảo trợ hoặc một dự án cụ thể",
+      "Thông tin lan nhanh, khó giữ kín"
+    ]
+  },
+  {
+    "key": "zhen",
+    "nameHanViet": "Chấn",
+    "nameHan": "震",
+    "binary": "100",
+    "image": "sấm",
+    "asInnerState": "Bên trong bạn vừa bị đánh thức: một cú chấn động làm bạn giật mình, thúc bạn khởi động điều gì đó hoặc phản ứng gấp.",
+    "asOuterSituation": "Hoàn cảnh vừa có biến cố đột ngột: một thay đổi bất ngờ làm xáo trộn trật tự cũ và mở ra một khởi đầu.",
+    "innerSignals": [
+      "Vài tuần gần đây có một sự kiện làm bạn mất ngủ hoặc nghĩ lại mọi thứ",
+      "Bạn bắt đầu một việc mà một tháng trước chưa hề tính",
+      "Bạn phản ứng nhanh hơn thường lệ, có lúc trước khi nghĩ kỹ",
+      "Bạn khó ngồi yên"
+    ],
+    "outerSignals": [
+      "Có một thay đổi đột ngột: tái cơ cấu, tin dữ, cơ hội bất ngờ, người mới xuất hiện",
+      "Quy trình cũ bị gián đoạn",
+      "Mọi người xung quanh đang bàn về cùng một sự kiện",
+      "Kế hoạch hay thời hạn bị đảo lộn chỉ sau một đêm"
+    ]
+  },
+  {
+    "key": "xun",
+    "nameHanViet": "Tốn",
+    "nameHan": "巽",
+    "binary": "011",
+    "image": "gió",
+    "asInnerState": "Bên trong bạn đang thấm dần: bạn tác động nhẹ, đi đường vòng, thuyết phục từng chút thay vì đối đầu.",
+    "asOuterSituation": "Hoàn cảnh vận hành bằng ảnh hưởng chậm mà bền: điều gì thay đổi được là nhờ kiên trì, quan hệ và sự thâm nhập từ từ.",
+    "innerSignals": [
+      "Bạn gợi ý thay vì yêu cầu",
+      "Bạn đang giữ một thói quen nhỏ lặp lại mỗi ngày",
+      "Bạn nói chuyện riêng với từng người thay vì nêu trước tập thể",
+      "Bạn nhượng bộ ở chi tiết để giữ hướng chung"
+    ],
+    "outerSignals": [
+      "Quyết định thật được hình thành qua các cuộc trò chuyện không chính thức",
+      "Thay đổi diễn ra từng chút, khó chỉ ra một thời điểm",
+      "Người có ảnh hưởng không phải người có chức danh",
+      "Làm đều trong thời gian dài được ghi nhận hơn làm mạnh một lần"
+    ]
+  },
+  {
+    "key": "kan",
+    "nameHanViet": "Khảm",
+    "nameHan": "坎",
+    "binary": "010",
+    "image": "nước",
+    "asInnerState": "Bên trong bạn đang ở chỗ hiểm: nhiều bất định, không thấy đáy, bạn lo và đang dò từng bước.",
+    "asOuterSituation": "Hoàn cảnh hiểm và bất định: có rủi ro thật, thông tin thiếu, một sai lầm dễ kéo theo sai lầm khác.",
+    "innerSignals": [
+      "Bạn nghĩ đi nghĩ lại cùng một nỗi lo nhiều lần trong ngày",
+      "Bạn không trả lời được câu “ba tháng nữa việc này ra sao”",
+      "Bạn hoãn quyết định vì thiếu thông tin",
+      "Giấc ngủ hoặc ăn uống của bạn thay đổi vì việc này"
+    ],
+    "outerSignals": [
+      "Có rủi ro đo được: nợ, bệnh, kiện tụng, nguy cơ mất việc",
+      "Thông tin quan trọng đang bị che hoặc chưa ai biết",
+      "Đã có một sự cố và hậu quả còn đang lan",
+      "Người có kinh nghiệm cũng chưa rõ hướng ra"
+    ]
+  },
+  {
+    "key": "gen",
+    "nameHanViet": "Cấn",
+    "nameHan": "艮",
+    "binary": "001",
+    "image": "núi",
+    "asInnerState": "Bên trong bạn đang dừng: bạn giữ lại, không tiến, hoặc cố ý đứng yên để giữ điều mình có.",
+    "asOuterSituation": "Hoàn cảnh đang chặn: có một giới hạn rõ — quy định, con người, tài nguyên — mà hiện chưa vượt qua được.",
+    "innerSignals": [
+      "Bạn đã ngừng một việc từng làm đều đặn",
+      "Bạn từ chối nhận thêm việc",
+      "Bạn nhiều lần định bắt đầu rồi lại thôi",
+      "Bạn dành thời gian ngẫm nghĩ nhiều hơn làm"
+    ],
+    "outerSignals": [
+      "Một đề xuất hoặc đơn từ của bạn đang bị treo",
+      "Có người hoặc quy định trả lời “chưa” với bạn",
+      "Ngân sách, thời gian hoặc chỗ trống đã hết",
+      "Mọi thứ không đổi so với kỳ trước dù bạn đã thử"
+    ]
+  },
+  {
+    "key": "kun",
+    "nameHanViet": "Khôn",
+    "nameHan": "坤",
+    "binary": "000",
+    "image": "đất",
+    "asInnerState": "Bên trong bạn đang ở thế tiếp nhận: bạn nhường, đi theo, nuôi dưỡng, dựa vào nguồn lực chung hơn là tự khởi xướng.",
+    "asOuterSituation": "Hoàn cảnh rộng, mềm và cần người đỡ: việc tiến nhờ sự bền bỉ và hỗ trợ theo một hướng đã có, không nhờ người dẫn đầu mới.",
+    "innerSignals": [
+      "Phần lớn việc bạn làm tuần qua do người khác khởi xướng",
+      "Bạn dành nhiều thời gian lo cho người khác hơn cho việc của mình",
+      "Bạn chờ có hướng rõ rồi mới bắt tay",
+      "Bạn hiếm khi là người nêu ý đầu tiên trong cuộc họp"
+    ],
+    "outerSignals": [
+      "Đã có người dẫn và hướng đi; việc cần là người thực thi bền",
+      "Kết quả đến từ khối lượng đều đặn hơn là đột phá",
+      "Có một nguồn lực chung (tổ chức, gia đình, cộng đồng) mà bạn dựa vào",
+      "Sáng kiến riêng lẻ ít được hưởng ứng"
+    ]
+  }
+]
