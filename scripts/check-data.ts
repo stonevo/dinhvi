@@ -1,6 +1,7 @@
 // Kiểm tra toàn vẹn dữ liệu tĩnh.
 //   npx tsx scripts/check-data.ts                 → kiểm public/data/*.json (đủ 64 quẻ)
-//   npx tsx scripts/check-data.ts --partial f.json → kiểm một phần danh sách quẻ
+//   npx tsx scripts/check-data.ts --partial f.json → kiểm một phần, cho phép hào draft
+//   npx tsx scripts/check-data.ts --partial-complete f.json → kiểm một phần, không cho draft
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { validateHexagrams, validateLineTiers, validateTrigrams } from '../src/data/validate';
@@ -15,7 +16,7 @@ if (args[0] === '--partial' || args[0] === '--partial-complete') {
   const complete = args[0] === '--partial-complete';
   errors = args.slice(1).flatMap((f) => {
     const list = read(f);
-    const requireComplete = complete ? list.map((h: { kingWenNumber: number }) => h.kingWenNumber) : undefined;
+    const requireComplete = complete ? list.map((h: { kingWenNumber: number }) => h.kingWenNumber) : [];
     return validateHexagrams(list, { requireAll: false, requireComplete }).map((e) => `${f}: ${e}`);
   });
 } else {

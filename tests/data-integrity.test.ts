@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import type { Hexagram } from '../src/types/schema';
 import {
-  SAMPLE_HEXAGRAMS, lineLabel, validateHexagrams, validateLineTiers, validateTrigrams,
+  lineLabel, validateHexagrams, validateLineTiers, validateTrigrams,
 } from '../src/data/validate';
 import { CANONICAL_NAMES, fullHexagramName } from '../src/data/names';
 import { hexagramFromTrigrams, oppositeHexagram } from '../src/lib/iching';
@@ -24,8 +24,8 @@ describe('toàn vẹn dữ liệu tĩnh', () => {
     expect(hexagrams.map((h) => [h.nameHanViet, h.nameHan])).toEqual(CANONICAL_NAMES);
   });
 
-  it('8 quẻ mẫu viết kỹ, không có hào draft', () => {
-    for (const n of SAMPLE_HEXAGRAMS) expect(hexagrams[n - 1].lines.every((l) => !l.draft)).toBe(true);
+  it('cả 64 quẻ viết kỹ, không còn hào draft', () => {
+    expect(hexagrams.flatMap((h) => h.lines).filter((l) => l.draft)).toEqual([]);
   });
 
   it('không hào nào bỏ trống original / situation', () => {
@@ -68,10 +68,10 @@ describe('validator bắt được lỗi', () => {
     expect(validateHexagrams(clone().slice(0, 63)).some((e) => e.includes('64'))).toBe(true);
   });
 
-  it('quẻ mẫu bị để draft', () => {
+  it('hào bị để draft', () => {
     const h = clone();
-    h[0].lines[0].draft = true;
-    expect(validateHexagrams(h).some((e) => e.includes('quẻ mẫu'))).toBe(true);
+    h[40].lines[0].draft = true;
+    expect(validateHexagrams(h).some((e) => e.includes('hào còn draft'))).toBe(true);
   });
 
   it('từ cấm lọt vào dữ liệu', () => {

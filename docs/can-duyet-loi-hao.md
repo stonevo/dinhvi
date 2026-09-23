@@ -4,6 +4,19 @@ Trường `original` (phiên âm Hán Việt) được viết từ trí nhớ ki
 
 Sửa trực tiếp trong `public/data/hexagrams.json`, rồi chạy `npm run check:data`.
 
+## Đã sửa khi viết kỹ 56 quẻ (giai đoạn 7)
+
+Người viết giai đoạn 7 rà lại toàn bộ `original` trong dải của mình và sửa 4 chỗ:
+
+| Quẻ.hào | Trước | Sau | Lý do |
+|---|---|---|---|
+| 37.5 | Vương giả hữu gia | Vương cách hữu gia | 假 ở đây đọc như 格 (đến) |
+| 52.3 | liệt kỳ di | liệt kỳ dần | 夤 đọc “dần”; “di” nhầm với 夷 |
+| 57.1 | Tấn thoái | Tiến thoái | 進 — âm thông dụng, khớp 20.3 |
+| 10.3 | Miễu năng thị | Diểu năng thị | thống nhất với 54.2 (cùng chữ 眇); cần xác nhận “diểu” hay “miểu” |
+
+Nghi vấn thêm từ giai đoạn 7 (chưa sửa): 11.3 陂 bí/bi/pha · 11.1, 12.1 彙 vị/vựng · 9.5 攣 loan/luyến · 17.6 亨 hanh/hưởng · 21.1, 21.6 校 giáo/hiệu · 43.3 頄 quỳ/cầu · 45.6 赍咨 tê tư · 49.2 và lời quẻ 49 己/已 dĩ/kỷ · 61.2 靡 · 62.3 戕 tường/thương · 33.2, 38.6 說 thoát/thuyết.
+
 ## Quẻ mẫu (1–8)
 
 | Quẻ.hào | Đang ghi | Cần xem |

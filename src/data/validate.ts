@@ -10,8 +10,8 @@ import { lintDocument } from '../lib/lint';
 
 // Kiểm tra toàn vẹn dữ liệu tĩnh. Dùng chung cho test, script CLI và loader.
 
-/** Quẻ mẫu viết kỹ ở giai đoạn 3: Càn, Khôn, Truân, Mông, Nhu, Tụng, Sư, Tỷ. */
-export const SAMPLE_HEXAGRAMS = [1, 2, 3, 4, 5, 6, 7, 8];
+/** Mọi quẻ đều đã viết kỹ đủ 6 hào; hào draft chỉ được phép khi kiểm từng phần. */
+export const ALL_HEXAGRAMS = Array.from({ length: 64 }, (_, i) => i + 1);
 
 const ORDINAL: Record<number, string> = { 2: 'nhị', 3: 'tam', 4: 'tứ', 5: 'ngũ' };
 
@@ -46,12 +46,12 @@ function completeLineErrors(prefix: string, l: Line): string[] {
 export type HexagramCheckOptions = {
   /** false = cho phép tập con (kiểm từng phần). Mặc định đòi đủ 64. */
   requireAll?: boolean;
-  /** Các quẻ bắt buộc không có hào draft. */
+  /** Các quẻ bắt buộc không có hào draft. Mặc định: cả 64. */
   requireComplete?: number[];
 };
 
 export function validateHexagrams(raw: unknown, opts: HexagramCheckOptions = {}): string[] {
-  const { requireAll = true, requireComplete = SAMPLE_HEXAGRAMS } = opts;
+  const { requireAll = true, requireComplete = ALL_HEXAGRAMS } = opts;
   const parsed = z.array(hexagramSchema).safeParse(raw);
   if (!parsed.success) return zodErrors('hexagrams', parsed.error);
   const list: Hexagram[] = parsed.data;
@@ -91,7 +91,7 @@ export function validateHexagrams(raw: unknown, opts: HexagramCheckOptions = {})
       if (!l.original.normalize('NFC').startsWith(`${label}:`))
         errors.push(`${lp}.original: cần mở đầu bằng "${label}:" — "${l.original}"`);
       if (!l.draft) errors.push(...completeLineErrors(lp, l));
-      else if (requireComplete.includes(h.kingWenNumber)) errors.push(`${lp}: quẻ mẫu không được để draft`);
+      else if (requireComplete.includes(h.kingWenNumber)) errors.push(`${lp}: hào còn draft`);
     });
   }
 
