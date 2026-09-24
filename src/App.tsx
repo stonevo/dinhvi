@@ -7,6 +7,7 @@ import { RecordPage } from './pages/RecordPage';
 import { PositioningPage } from './flow/PositioningPage';
 import { TrajectoryPage } from './pages/TrajectoryPage';
 import { ThemeToggle } from './ui/ThemeToggle';
+import { CastPage } from './pages/CastPage';
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
           <NavLink to="/" end>{t('nav.home')}</NavLink>
           <NavLink to="/trajectory">{t('nav.trajectory')}</NavLink>
           <NavLink to="/calibration">{t('nav.calibration')}</NavLink>
+          <NavLink to="/cast">{t('nav.cast')}</NavLink>
           <NavLink to="/settings">{t('nav.settings')}</NavLink>
           <ThemeToggle />
         </nav>
@@ -28,6 +30,7 @@ export function App() {
           <Route path="/record/:id" element={<RecordPage />} />
           <Route path="/trajectory" element={<TrajectoryPage />} />
           <Route path="/calibration" element={<CalibrationPage />} />
+          <Route path="/cast" element={<CastPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </main>

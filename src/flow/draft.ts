@@ -1,14 +1,18 @@
 import {
   positioningSchema, type LinePosition, type Positioning, type Tier, type TrigramKey, type Witness,
 } from '../types/schema';
-import { distanceToStage, hexagramFromTrigrams, linesOfTier } from '../lib/iching';
+import { distanceToStage, hexagramFromTrigrams, linesOfTier, trigramsOf } from '../lib/iching';
+import { readCast, type LineValue } from '../lib/cast';
 
 // Logic thuần của luồng 8 bước: dữ liệu nháp, điều kiện qua bước, chốt bản ghi.
-// Không có hàm nào ở đây chọn quẻ/hào thay người dùng — chỉ tính quẻ từ hai
-// quái người dùng chọn, và đếm dấu hiệu người dùng tự đánh dấu.
+// Bước 2 có hai cách: tự ghép hai quái (kèm bằng chứng), hoặc gieo quẻ.
 
 export type DraftData = {
   facts?: string[];
+  /** Cách có quẻ ở bước 2. Thiếu = tự ghép. */
+  method?: 'self' | 'cast';
+  /** Các hào đã gieo, từ dưới lên (đủ 6 thì có quẻ). */
+  castLines?: LineValue[];
   innerTrigram?: TrigramKey;
   innerEvidence?: string;
   outerTrigram?: TrigramKey;
@@ -38,7 +42,7 @@ export type DraftData = {
 
 export const STEP_COUNT = 8;
 
-/** Quẻ suy ra từ hai quái — không có đường nào khác để đặt quẻ ở bước 2. */
+/** Quẻ suy ra từ hai quái (tự chọn, hoặc lấy từ quẻ chính khi gieo). */
 export function derivedHexagram(d: DraftData): number | null {
   return d.innerTrigram && d.outerTrigram ? hexagramFromTrigrams(d.innerTrigram, d.outerTrigram) : null;
 }
@@ -51,6 +55,7 @@ export function stepComplete(step: number, d: DraftData): boolean {
     case 1:
       return (d.facts ?? []).filter(filled).length === 3;
     case 2:
+      if (d.method === 'cast') return (d.castLines ?? []).length === 6 && !!d.innerTrigram && !!d.outerTrigram;
       return !!d.innerTrigram && !!d.outerTrigram && filled(d.innerEvidence) && filled(d.outerEvidence);
     case 3:
       return !!d.sequenceCheck;
@@ -85,6 +90,25 @@ export const finalLineOf = (d: DraftData) => d.finalLine ?? d.line;
  */
 export function applyPatch(d: DraftData, patch: Partial<DraftData>): DraftData {
   const next: DraftData = { ...d, ...patch };
+  if ((patch.method ?? d.method ?? 'self') !== (d.method ?? 'self')) {
+    // Đổi cách chọn quẻ: bỏ kết quả của cách cũ.
+    delete next.innerTrigram;
+    delete next.outerTrigram;
+    delete next.innerEvidence;
+    delete next.outerEvidence;
+    delete next.castLines;
+  }
+  // Gieo đủ 6 hào: quẻ chính quyết định hai quái.
+  if (next.method === 'cast' && patch.castLines) {
+    if (patch.castLines.length === 6) {
+      const { lower, upper } = trigramsOf(readCast(patch.castLines).primary);
+      next.innerTrigram = lower;
+      next.outerTrigram = upper;
+    } else {
+      delete next.innerTrigram;
+      delete next.outerTrigram;
+    }
+  }
   const hexChanged = derivedHexagram(next) !== derivedHexagram(d);
   if (hexChanged) {
     delete next.sequenceCheck;
@@ -145,9 +169,9 @@ export function finalizeDraft(
     ...meta,
     facts: d.facts!.map((f) => f.trim()),
     innerTrigram: d.innerTrigram,
-    innerEvidence: d.innerEvidence!.trim(),
+    innerEvidence: d.innerEvidence?.trim() ?? '',
     outerTrigram: d.outerTrigram,
-    outerEvidence: d.outerEvidence!.trim(),
+    outerEvidence: d.outerEvidence?.trim() ?? '',
     hexagram,
     sequenceCheck: d.sequenceCheck,
     sequenceNote: d.sequenceNote?.trim() ?? '',
@@ -170,6 +194,8 @@ export function finalizeDraft(
     willNotDo: d.willNotDo!.trim(),
     notes: d.notes?.trim() ?? '',
     hindsight: null,
+    method: d.method ?? 'self',
+    ...(d.method === 'cast' ? { castLines: d.castLines } : {}),
   });
 }
 

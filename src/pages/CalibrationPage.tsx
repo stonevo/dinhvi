@@ -117,6 +117,18 @@ export function CalibrationPage() {
           </section>
 
           <section>
+            <h2>{t('cal.method')}</h2>
+            <p>
+              {t('cal.method.value', {
+                a: pct(r.method.self),
+                na: r.method.self.n,
+                b: pct(r.method.cast),
+                nb: r.method.cast.n,
+              })}
+            </p>
+          </section>
+
+          <section>
             <h2>{t('cal.zones')}</h2>
             {Object.keys(r.zones).length === 0 && <p className="muted">{t('cal.zones.none')}</p>}
             {q.domains

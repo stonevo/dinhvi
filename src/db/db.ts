@@ -1,6 +1,7 @@
 import Dexie, { type Table } from 'dexie';
 import {
   DEFAULT_SETTINGS,
+  type CastRecord,
   type Domain,
   type Positioning,
   type PositioningDraft,
@@ -13,6 +14,7 @@ export class DinhViDB extends Dexie {
   positionings!: Table<Positioning, string>;
   drafts!: Table<PositioningDraft, string>;
   settings!: Table<Settings, string>;
+  casts!: Table<CastRecord, string>;
 
   constructor(name = 'dinhvi') {
     super(name);
@@ -22,6 +24,8 @@ export class DinhViDB extends Dexie {
       drafts: 'id, domainId, [domainId+period]',
       settings: 'id',
     });
+    // v2: lịch sử gieo quẻ ở mục "Gieo quẻ" (tách khỏi bản ghi định vị).
+    this.version(2).stores({ casts: 'id, createdAt' });
   }
 }
 

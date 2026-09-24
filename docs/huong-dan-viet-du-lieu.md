@@ -2,9 +2,9 @@
 
 Tài liệu cho người (hoặc agent) viết và sửa `public/data/hexagrams.json`. Đọc hết trước khi viết.
 
-## Triết lý — đọc trước
+## Giọng văn — đọc trước
 
-Định Vị **không phải app bói**. Người dùng tự xác định mình đang ở quẻ nào, hào nào, rồi đọc lời hào *như ghi chép của những người từng đứng ở đúng vị trí ấy*. Kinh Dịch ở đây là kho 384 dạng tình huống nén từ kinh nghiệm quá khứ (tinh thần Trình Di, Vương Phu Chi), không phải lời tiên tri.
+Người dùng có quẻ (tự ghép hai quái hoặc gieo), rồi đọc lời hào *như ghi chép của những người từng đứng ở đúng vị trí ấy*. Dù quẻ đến bằng cách nào, lời hào trong dữ liệu vẫn viết như mô tả một dạng tình huống nén từ kinh nghiệm quá khứ (tinh thần Trình Di, Vương Phu Chi), không phải lời tiên tri — và lint tự động vẫn kiểm điều đó.
 
 Hệ quả cho văn phong:
 

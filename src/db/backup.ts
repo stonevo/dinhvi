@@ -2,11 +2,12 @@ import { BACKUP_SCHEMA_VERSION, backupSchema, type Backup } from '../types/schem
 import { getSettings, type DinhViDB } from './db';
 
 export async function exportAll(db: DinhViDB, now = new Date()): Promise<Backup> {
-  const [domains, positionings, drafts, settings] = await Promise.all([
+  const [domains, positionings, drafts, settings, casts] = await Promise.all([
     db.domains.orderBy('createdAt').toArray(),
     db.positionings.orderBy('createdAt').toArray(),
     db.drafts.toArray(),
     getSettings(db),
+    db.casts.orderBy('createdAt').toArray(),
   ]);
   return {
     app: 'dinhvi',
@@ -16,6 +17,7 @@ export async function exportAll(db: DinhViDB, now = new Date()): Promise<Backup>
     positionings,
     drafts,
     settings,
+    casts,
   };
 }
 
@@ -46,11 +48,12 @@ export function parseBackup(text: string): Backup {
 
 /** Thay toàn bộ dữ liệu hiện có bằng nội dung backup, trong một transaction. */
 export async function importAll(db: DinhViDB, backup: Backup): Promise<void> {
-  await db.transaction('rw', [db.domains, db.positionings, db.drafts, db.settings], async () => {
-    await Promise.all([db.domains.clear(), db.positionings.clear(), db.drafts.clear(), db.settings.clear()]);
+  await db.transaction('rw', [db.domains, db.positionings, db.drafts, db.settings, db.casts], async () => {
+    await Promise.all([db.domains.clear(), db.positionings.clear(), db.drafts.clear(), db.settings.clear(), db.casts.clear()]);
     await db.domains.bulkAdd(backup.domains);
     await db.positionings.bulkAdd(backup.positionings);
     await db.drafts.bulkAdd(backup.drafts);
     await db.settings.put(backup.settings);
+    await db.casts.bulkAdd(backup.casts);
   });
 }

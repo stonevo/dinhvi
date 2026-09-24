@@ -4,6 +4,7 @@ import { fullHexagramName } from '../../data/names';
 import { HexagramFigure } from '../../ui/HexagramFigure';
 import { ChoiceGroup, TextArea } from '../../ui/controls';
 import { derivedHexagram } from '../draft';
+import { CastBoard } from '../../ui/CastBoard';
 import type { StepProps } from './types';
 
 export const TRIGRAM_SYMBOL: Record<TrigramKey, string> = {
@@ -37,12 +38,30 @@ function trigramOptions(list: Record<TrigramKey, Trigram>, side: 'inner' | 'oute
   });
 }
 
-/** Bước 2 — Ghép quái. Quẻ chỉ là hệ quả; không có ô sửa quẻ. */
+/** Bước 2 — Có quẻ: tự ghép hai quái kèm bằng chứng, hoặc gieo. */
 export function Step2Trigrams({ d, set, data }: StepProps) {
+  const method = d.method ?? 'self';
+  const chooser = (
+    <ChoiceGroup
+      label={t('step2.method')}
+      options={(['self', 'cast'] as const).map((v) => ({ value: v, label: t(`step2.method.${v}`) }))}
+      value={method}
+      onChange={(v) => set({ method: v })}
+    />
+  );
+  if (method === 'cast') {
+    return (
+      <div className="stack">
+        {chooser}
+        <CastBoard lines={d.castLines ?? []} onChange={(castLines) => set({ castLines })} data={data} />
+      </div>
+    );
+  }
   const hex = derivedHexagram(d);
   const h = hex ? data.hexagram(hex) : null;
   return (
     <div className="stack">
+      {chooser}
       <ChoiceGroup
         label={<h2>{t('step2.innerQuestion')}</h2>}
         layout="grid"

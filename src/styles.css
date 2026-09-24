@@ -306,3 +306,9 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
   display: inline-flex; align-items: center; justify-content: center;
 }
 .theme-toggle:hover:not(:disabled) { border-color: var(--accent); }
+
+/* ---------- Gieo quẻ ---------- */
+.hexagram-figure .bar-empty { fill: none; stroke: var(--line); stroke-dasharray: 3 3; }
+.hexagram-figure .moving-dot { fill: var(--accent); }
+.cast-log { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--muted); }
+.cast-log li { padding: 2px 0; }

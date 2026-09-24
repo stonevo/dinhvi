@@ -1,18 +1,18 @@
 # Định Vị
 
-Nhật ký tự định vị định kỳ theo 64 quẻ × 6 hào của Kinh Dịch. **Không phải app bói**: không gieo quẻ, không sinh số ngẫu nhiên, không gợi ý quẻ. Mỗi tháng hoặc mỗi quý, với từng lĩnh vực đời sống, bạn tự xác định mình đang ở quẻ nào, hào nào — rồi đọc lời hào như ghi chép của những người từng đứng ở đúng vị trí ấy. Theo thời gian, app vẽ lại quỹ đạo và đo độ chính xác của việc tự định vị bằng cách đối chiếu với nhìn lại.
+Nhật ký định vị định kỳ theo 64 quẻ × 6 hào của Kinh Dịch. Mỗi tháng hoặc mỗi quý, với từng lĩnh vực đời sống, bạn xác định mình đang ở quẻ nào, hào nào — bằng cách **tự ghép hai quái** (trạng thái bên trong + hoàn cảnh bên ngoài, kèm bằng chứng) hoặc **gieo quẻ** ba đồng xu — rồi đọc lời hào như ghi chép của những người từng đứng ở đúng vị trí ấy. Theo thời gian, app vẽ lại quỹ đạo và đo độ chính xác bằng cách đối chiếu với nhìn lại, kể cả so sánh hai cách có quẻ.
 
-Cách đọc theo tinh thần Trình Di, Vương Phu Chi: Kinh Dịch là kho 384 dạng tình huống nén từ kinh nghiệm quá khứ, không phải kênh nhận tin từ tương lai.
+Ngoài luồng định vị còn có mục **Gieo quẻ** riêng: gieo, xem quẻ chính / hào động / quẻ biến, lưu lịch sử — tách khỏi quỹ đạo và thống kê.
 
-## Nguyên tắc (và nơi chúng được kiểm)
+## Cơ chế chính
 
-| Nguyên tắc | Cơ chế |
+| Cơ chế | Ở đâu |
 |---|---|
-| App không chọn quẻ thay người dùng | Quẻ chỉ suy ra từ hai quái người dùng chọn kèm bằng chứng (`src/flow/draft.ts`); không có ô sửa quẻ; điểm khớp ở bước 4 chỉ là số đếm; bước 6 không điền sẵn |
-| Không nói “nên / không nên”, không tiên tri | Lint từ cấm quét cả 3 file dữ liệu, chuỗi giao diện `vi.ts`, và mọi chuỗi viết cứng trong `src/` (`tests/lint.test.ts`, `tests/ui-voice.test.ts`) |
-| Chống 3 lỗi: tự đặt cao, chọn quẻ đẹp, định vị một mình | Cảnh báo cố định ở bước 4; phép thử đau (5); người phê bình (6); nhân chứng (7); thống kê hiệu chỉnh đo cả ba |
-| Vòng lặp định vị → nhìn lại → hiệu chỉnh | Không lưu được kỳ mới khi kỳ trước chưa nhìn lại — kiểm ở UI và ở tầng DB (`src/db/positionings.ts`) |
-| Không ngẫu nhiên | `tests/no-randomness.test.ts` cấm `Math.random`, `getRandomValues`, `randomUUID` trong `src/` |
+| Luồng 8 bước: sự thật → có quẻ (tự ghép hoặc gieo) → Tự quái → hào → phép thử đau → người phê bình → nhân chứng → kết luận | `src/flow/` |
+| Gieo ba đồng xu (6/7/8/9), hào động, quẻ biến; nguồn ngẫu nhiên `crypto.getRandomValues` | `src/lib/cast.ts` |
+| Vòng lặp định vị → nhìn lại → hiệu chỉnh: không lưu được kỳ mới khi kỳ trước chưa nhìn lại (kiểm ở UI và tầng DB) | `src/db/positionings.ts` |
+| Thống kê hiệu chỉnh, mọi con số kèm n, gồm độ đúng khi tự ghép so với khi gieo | `src/lib/calibration.ts` |
+| Lint giọng văn: dữ liệu và chuỗi giao diện không dùng giọng tiên tri/mệnh lệnh | `src/lib/lint.ts`, `tests/lint.test.ts`, `tests/ui-voice.test.ts` |
 
 ## Chạy
 
@@ -42,7 +42,7 @@ Bản build là trang tĩnh (HashRouter, đường dẫn tương đối) — đ�
 ```
 src/
   types/schema.ts      schema zod
-  lib/                 logic thuần: iching (King Wen, Tự quái, bàng thông), calibration,
+  lib/                 logic thuần: iching (King Wen, Tự quái, bàng thông), cast (gieo quẻ), calibration,
                        trajectory, status, lint, period, reminder, csv
   flow/                luồng 8 bước: draft.ts (logic thuần), useDraft, steps/, HindsightForm
   db/                  Dexie, sao lưu, lưu bản ghi có kiểm luật

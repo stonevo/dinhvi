@@ -1,6 +1,7 @@
 import { t } from '../../i18n';
 import type { LinePosition, Tier } from '../../types/schema';
 import { linesOfTier } from '../../lib/iching';
+import { readCast } from '../../lib/cast';
 import { ChoiceGroup, TextArea } from '../../ui/controls';
 import { derivedHexagram, signalCount } from '../draft';
 import type { StepProps } from './types';
@@ -18,6 +19,9 @@ export function Step4Line({ d, set, data }: StepProps) {
   return (
     <div className="stack">
       <p className="warning" role="note">{t('step4.warning')}</p>
+      {d.method === 'cast' && d.castLines?.length === 6 && readCast(d.castLines).moving.length > 0 && (
+        <p className="note">{t('step4.movingNote', { lines: readCast(d.castLines).moving.join(', ') })}</p>
+      )}
 
       <ChoiceGroup
         label={<h2>{t('step4.tierQuestion')}</h2>}

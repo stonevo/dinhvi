@@ -57,6 +57,23 @@ describe('export/import round-trip', () => {
     expect(parsed.settings.cycle).toBe('month');
   });
 
+  it('xuất kèm lịch sử gieo quẻ; nhập được file v1 (chưa có casts)', async () => {
+    await ensureSeeded(db);
+    await db.casts.add({ id: 'c1', createdAt: '2026-09-24T00:00:00.000Z', question: 'q', lines: [9, 7, 7, 7, 7, 7], primary: 1, moving: [1], transformed: 44, notes: '' });
+    const backup = await exportAll(db);
+    expect(backup.schemaVersion).toBe(2);
+    expect(backup.casts).toHaveLength(1);
+
+    const v1 = JSON.parse(serializeBackup(backup));
+    v1.schemaVersion = 1;
+    delete v1.casts;
+    const parsed = parseBackup(JSON.stringify(v1));
+    expect(parsed.casts).toEqual([]);
+    await importAll(db, parsed);
+    expect(await db.casts.count()).toBe(0);
+    expect(await db.domains.count()).toBe(4);
+  });
+
   it('từ chối JSON hỏng', () => {
     expect(() => parseBackup('{not json')).toThrow(BackupError);
   });

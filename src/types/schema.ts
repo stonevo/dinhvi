@@ -92,6 +92,9 @@ export type Domain = z.infer<typeof domainSchema>;
 
 export const WITNESS_STAGES = ['beginning', 'rising', 'peak', 'turning', 'declining', 'ending', 'unknown'] as const;
 
+/** Giá trị một hào khi gieo: 6 lão âm, 7 thiếu dương, 8 thiếu âm, 9 lão dương. */
+export const lineValue = z.union([z.literal(6), z.literal(7), z.literal(8), z.literal(9)]);
+
 export const witnessSchema = z.object({
   who: z.string(),
   theirStage: z.enum(WITNESS_STAGES),
@@ -164,8 +167,26 @@ export const positioningSchema = z.object({
 
   // Kỳ sau
   hindsight: hindsightSchema.nullable(),
+
+  /** Cách có quẻ ở bước 2. Thiếu = 'self' (bản ghi trước khi có chức năng gieo). */
+  method: z.enum(['self', 'cast']).optional(),
+  /** Sáu giá trị hào khi gieo (6/7/8/9, từ dưới lên). */
+  castLines: z.array(lineValue).length(6).optional(),
 });
 export type Positioning = z.infer<typeof positioningSchema>;
+
+/** Một lần gieo ở mục "Gieo quẻ" — tách khỏi bản ghi định vị. */
+export const castRecordSchema = z.object({
+  id: z.string().min(1),
+  createdAt: isoDate,
+  question: z.string(),
+  lines: z.array(lineValue).length(6),
+  primary: z.number().int().min(1).max(64),
+  moving: z.array(z.number().int().min(1).max(6)),
+  transformed: z.number().int().min(1).max(64).nullable(),
+  notes: z.string(),
+});
+export type CastRecord = z.infer<typeof castRecordSchema>;
 
 /** Nháp của luồng 8 bước. Tách bảng để bản ghi chính luôn đầy đủ. */
 export const draftSchema = z.object({
@@ -198,15 +219,17 @@ export const DEFAULT_SETTINGS: Settings = {
   locale: 'vi',
 };
 
-export const BACKUP_SCHEMA_VERSION = 1;
+/** v2: thêm bảng casts. File v1 vẫn nhập được (casts = []). */
+export const BACKUP_SCHEMA_VERSION = 2;
 
 export const backupSchema = z.object({
   app: z.literal('dinhvi'),
-  schemaVersion: z.literal(BACKUP_SCHEMA_VERSION),
+  schemaVersion: z.union([z.literal(1), z.literal(2)]),
   exportedAt: isoDate,
   domains: z.array(domainSchema),
   positionings: z.array(positioningSchema),
   drafts: z.array(draftSchema),
   settings: settingsSchema,
+  casts: z.array(castRecordSchema).default([]),
 });
 export type Backup = z.infer<typeof backupSchema>;

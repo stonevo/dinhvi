@@ -94,6 +94,16 @@ export function willNotDoDiscipline(ps: Positioning[]): { yes: Ratio; partly: Ra
   return { yes: count('yes'), partly: count('partly'), no: count('no') };
 }
 
+/** Độ đúng theo cách có quẻ ở bước 2: tự ghép quái hay gieo. */
+export function methodComparison(ps: Positioning[]): { self: Ratio; cast: Ratio } {
+  const rs = reviewed(ps);
+  const right = (m: 'self' | 'cast') => {
+    const xs = rs.filter((p) => (p.method ?? 'self') === m);
+    return ratio(xs.filter((p) => p.hindsight.selfWasRight === 'yes').length, xs.length);
+  };
+  return { self: right('self'), cast: right('cast') };
+}
+
 export type Zone = { hexagram: number; line: number | null; count: number };
 
 /** Quẻ/hào hay lui tới theo nhìn lại, theo lĩnh vực. Sắp xếp xác định. */
@@ -127,6 +137,7 @@ export type CalibrationReport = {
   pain: ReturnType<typeof painTest>;
   willNotDo: ReturnType<typeof willNotDoDiscipline>;
   zones: ReturnType<typeof frequentZones>;
+  method: ReturnType<typeof methodComparison>;
 };
 
 /**
@@ -145,5 +156,6 @@ export function calibrationReport(ps: Positioning[]): CalibrationReport {
     pain: painTest(rs),
     willNotDo: willNotDoDiscipline(rs),
     zones: frequentZones(rs),
+    method: methodComparison(rs),
   };
 }

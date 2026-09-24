@@ -8,6 +8,7 @@ import { t } from '../i18n';
 import { formatPeriod } from '../lib/period';
 import { HexagramFigure } from '../ui/HexagramFigure';
 import { hexagramOptionLabel } from '../ui/controls';
+import { readCast } from '../lib/cast';
 
 /** Tóm tắt một trang của một bản ghi, in được / lưu ảnh được. */
 export function RecordPage() {
@@ -101,6 +102,15 @@ export function RecordPage() {
             <h3>{t('record.initial')}</h3>
             <p>
               {hexagramOptionLabel(data.hexagram(p.hexagram))} · {t('line.n', { n: p.line })}
+            </p>
+            <p className="muted small">
+              {t(p.method === 'cast' ? 'record.method.cast' : 'record.method.self')}
+              {p.castLines && readCast(p.castLines).moving.length > 0 && (
+                <> · {t('cast.moving', { lines: readCast(p.castLines).moving.join(', ') })}</>
+              )}
+              {p.castLines && readCast(p.castLines).transformed && (
+                <> · {t('cast.transformed')}: {hexagramOptionLabel(data.hexagram(readCast(p.castLines).transformed!))}</>
+              )}
             </p>
           </div>
           <div>
