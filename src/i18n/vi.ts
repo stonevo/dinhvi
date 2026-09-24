@@ -225,6 +225,8 @@ export const vi = {
   'cal.exportCsv': 'Xuất CSV',
   'cal.na': '—',
 
+  'theme.toDark': 'Chuyển sang giao diện tối',
+  'theme.toLight': 'Chuyển sang giao diện sáng',
   'settings.theme': 'Giao diện',
   'settings.theme.light': 'Sáng',
   'settings.theme.dark': 'Tối',

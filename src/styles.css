@@ -297,3 +297,12 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 @media print {
   :root, :root[data-theme] { --bg: #fff; --surface: #fff; --surface-2: #fff; --ink: #000; --muted: #444; --line: #ccc; --accent-soft: #fff; }
 }
+
+/* ---------- Nút sáng/tối ---------- */
+.topbar nav { align-items: center; }
+.theme-toggle {
+  border: 1px solid var(--line); background: var(--surface-2); color: var(--accent);
+  border-radius: 999px; width: 34px; height: 34px; padding: 0; line-height: 1; font-size: 1rem;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.theme-toggle:hover:not(:disabled) { border-color: var(--accent); }

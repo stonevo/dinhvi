@@ -8,7 +8,7 @@ import {
   notificationSupport, remindOnOpen, requestNotificationPermission, syncBackgroundReminder,
   type NotificationSupport,
 } from '../lib/notifications';
-import { THEMES, getTheme, setTheme, type Theme } from '../lib/theme';
+import { THEMES, setTheme, useTheme } from '../lib/theme';
 import { ChoiceGroup } from '../ui/controls';
 
 export function SettingsPage() {
@@ -16,7 +16,7 @@ export function SettingsPage() {
   const fileRef = useRef<HTMLInputElement>(null);
   const [message, setMessage] = useState<string | null>(null);
   const [permission, setPermission] = useState<NotificationSupport>(notificationSupport());
-  const [theme, setThemeState] = useState<Theme>(getTheme());
+  const theme = useTheme();
 
   if (!settings) return <p className="muted">{t('common.loading')}</p>;
 
@@ -65,10 +65,7 @@ export function SettingsPage() {
         label={t('settings.theme')}
         options={THEMES.map((v) => ({ value: v, label: t(`settings.theme.${v}`) }))}
         value={theme}
-        onChange={(v) => {
-          setTheme(v);
-          setThemeState(v);
-        }}
+        onChange={setTheme}
       />
 
       <label className="field">

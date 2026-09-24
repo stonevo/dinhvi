@@ -6,6 +6,7 @@ import { CalibrationPage } from './pages/CalibrationPage';
 import { RecordPage } from './pages/RecordPage';
 import { PositioningPage } from './flow/PositioningPage';
 import { TrajectoryPage } from './pages/TrajectoryPage';
+import { ThemeToggle } from './ui/ThemeToggle';
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
           <NavLink to="/trajectory">{t('nav.trajectory')}</NavLink>
           <NavLink to="/calibration">{t('nav.calibration')}</NavLink>
           <NavLink to="/settings">{t('nav.settings')}</NavLink>
+          <ThemeToggle />
         </nav>
       </header>
       <main className="page">
