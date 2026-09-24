@@ -4,7 +4,7 @@ Tài liệu cho người (hoặc agent) viết và sửa `public/data/hexagrams.
 
 ## Giọng văn — đọc trước
 
-Người dùng có quẻ (tự ghép hai quái hoặc gieo), rồi đọc lời hào *như ghi chép của những người từng đứng ở đúng vị trí ấy*. Dù quẻ đến bằng cách nào, lời hào trong dữ liệu vẫn viết như mô tả một dạng tình huống nén từ kinh nghiệm quá khứ (tinh thần Trình Di, Vương Phu Chi), không phải lời tiên tri — và lint tự động vẫn kiểm điều đó.
+Người dùng có quẻ (tự ghép hai quái hoặc gieo), rồi đọc lời hào *như ghi chép của những người từng đứng ở đúng vị trí ấy*. Dù quẻ đến bằng cách nào, lời hào trong dữ liệu vẫn viết như mô tả một dạng tình huống nén từ kinh nghiệm quá khứ (tinh thần Trình Di, Vương Phu Chi), không phải lời tiên tri. Đây là quy ước văn phong, không còn lint tự động.
 
 Hệ quả cho văn phong:
 
@@ -13,28 +13,7 @@ Hệ quả cho văn phong:
 - **Hiện đại, trung tính, cụ thể.** Ngôi thứ hai “bạn”. Ví dụ lấy từ công việc, gia đình, sức khỏe, tài chính — không lấy từ triều đình.
 - **Tự viết.** Tham chiếu tinh thần Phan Bội Châu, Ngô Tất Tố, Nguyễn Hiến Lê, Richard Wilhelm, Trình Di, Chu Hy — nhưng **không chép** văn của bất kỳ bản dịch/giảng nào. Nguyễn Hiến Lê, Nhân Tử Nguyễn Văn Thọ, bản Anh của Baynes còn bản quyền: chỉ đọc để hiểu, không trích, không diễn đạt sát câu.
 
-## Lint tự động (test sẽ fail nếu vi phạm)
-
-Cấm trong **mọi trường**, trừ `traditionalCounsel` và `reflectionQuestions` (so khớp nguyên từ, không phân biệt hoa thường):
-
-`sẽ` · `chắc chắn` · `nhất định` · `tránh ngay` · `không nên` · `nên` · `phải`
-
-Được miễn: `không phải` (phủ định), `trở nên` (= trở thành).
-
-Bẫy hay gặp và cách viết thay:
-
-| Bẫy | Viết thay |
-|---|---|
-| “sẽ gặp trở ngại” | “thường gặp trở ngại”, “dễ gặp trở ngại” |
-| “nên chờ” | đưa vào `traditionalCounsel`, hoặc hỏi: “Điều gì khiến bạn không chờ được?” |
-| “nên” làm liên từ (“vì vậy nên”) | “vì thế”, “do đó” |
-| “phải chăng”, “buộc phải”, “chưa phải” | “liệu”, “bị buộc”, “chưa tới”, “chưa là” |
-| “chắc chắn thất bại” | “thường không thành” |
-
-- `traditionalCounsel`: được dùng các từ trên, nhưng **phải mở đầu** bằng `Truyền thống khuyên rằng` (hoặc `Theo truyền thống,` / `Lời xưa khuyên rằng` / `Các nhà chú giải xưa khuyên rằng`). Đây là lời của truyền thống, không phải lời của app.
-- `reflectionQuestions`: mỗi câu **kết thúc bằng `?`**. Là câu hỏi thật, không phải lời khuyên trá hình. ✗ “Bạn đã thử chậm lại chưa?” ✓ “Nếu chậm lại một tháng, cái gì mất đi thật sự?”
-
-Kiểm tra: `npx tsx scripts/check-data.ts` (toàn bộ) hoặc `npx tsx scripts/check-data.ts --partial <file>` (một phần).
+Kiểm tra cấu trúc: `npx tsx scripts/check-data.ts` (toàn bộ) hoặc `npx tsx scripts/check-data.ts --partial <file>` (một phần).
 
 ## Trường cấp quẻ
 

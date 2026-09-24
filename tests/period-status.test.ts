@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { comparePeriods, formatPeriod, periodOf } from '../src/lib/period';
-import { domainStatus } from '../src/lib/status';
+import { domainStatus, unreviewedBefore } from '../src/lib/status';
 import { makePositioning } from './fixtures';
 
 describe('period', () => {
@@ -33,10 +33,12 @@ describe('domainStatus', () => {
     expect(domainStatus('d1', '2026-Q3', [], [])).toBe('needsPositioning');
   });
 
-  it('kỳ trước chưa nhìn lại → cần nhìn lại, kể cả khi có nháp', () => {
+  it('kỳ trước chưa nhìn lại không chặn; chỉ được gợi ý', () => {
     const ps = [makePositioning({ period: '2026-Q2' })];
     const drafts = [{ id: 'x', domainId: 'd1', period: '2026-Q3', step: 1, data: {}, updatedAt: '' }];
-    expect(domainStatus('d1', '2026-Q3', ps, drafts)).toBe('needsReview');
+    expect(domainStatus('d1', '2026-Q3', ps, drafts)).toBe('draft');
+    expect(domainStatus('d1', '2026-Q3', ps, [])).toBe('needsPositioning');
+    expect(unreviewedBefore('d1', '2026-Q3', ps)?.id).toBe('p1');
   });
 
   it('kỳ trước đã nhìn lại + có nháp → đang viết dở', () => {

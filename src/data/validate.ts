@@ -6,7 +6,6 @@ import {
 import {
   TRIGRAM_BINARY, hexagramBinary, lineYinYang, oppositeHexagram, tierOfLine, trigramsOf,
 } from '../lib/iching';
-import { lintDocument } from '../lib/lint';
 
 // Kiểm tra toàn vẹn dữ liệu tĩnh. Dùng chung cho test, script CLI và loader.
 
@@ -25,10 +24,6 @@ export function lineLabel(position: LinePosition, yinYang: 'yin' | 'yang'): stri
 
 function zodErrors(prefix: string, err: z.ZodError): string[] {
   return err.issues.map((i) => `${prefix}${i.path.length ? '.' + i.path.join('.') : ''}: ${i.message}`);
-}
-
-function lintErrors(file: string, doc: unknown): string[] {
-  return lintDocument(doc, file).map((v) => `${v.path}: ${v.rule} — "${v.text}"`);
 }
 
 /** Hào đã viết kỹ (không draft) thì mọi trường phải đủ. */
@@ -95,7 +90,6 @@ export function validateHexagrams(raw: unknown, opts: HexagramCheckOptions = {})
     });
   }
 
-  errors.push(...lintErrors('hexagrams.json', list));
   return errors;
 }
 
@@ -109,7 +103,6 @@ export function validateTrigrams(raw: unknown): string[] {
   for (const k of TRIGRAM_KEYS) if (!keys.includes(k)) errors.push(`thiếu quái ${k}`);
   for (const t of list)
     if (t.binary !== TRIGRAM_BINARY[t.key]) errors.push(`${t.key}.binary: ${t.binary} ≠ ${TRIGRAM_BINARY[t.key]}`);
-  errors.push(...lintErrors('trigrams.json', list));
   return errors;
 }
 
@@ -127,6 +120,5 @@ export function validateLineTiers(raw: unknown): string[] {
   });
   const ids = list.flatMap((t) => t.checklist.map((q) => q.id));
   if (new Set(ids).size !== ids.length) errors.push('id câu kiểm chứng bị trùng');
-  errors.push(...lintErrors('lineTiers.json', list));
   return errors;
 }

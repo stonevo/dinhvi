@@ -8,8 +8,8 @@ import { formatPeriod } from '../lib/period';
 import { HexagramFigure } from '../ui/HexagramFigure';
 import { ChoiceGroup, HexagramLinePicker, TextArea, hexagramOptionLabel } from '../ui/controls';
 
-/** Bước 0 — Nhìn lại kỳ trước. Bắt buộc trước khi định vị kỳ mới. */
-export function HindsightForm({ record, data }: { record: Positioning; data: StaticData }) {
+/** Nhìn lại một kỳ đã qua: kỳ đó thực sự ở đâu, chuyện gì đã xảy ra. */
+export function HindsightForm({ record, data, onSaved }: { record: Positioning; data: StaticData; onSaved?: () => void }) {
   const [h, setH] = useState<Partial<Hindsight>>({ actualHexagram: null, actualLine: null });
   const [error, setError] = useState<string | null>(null);
   const hex = data.hexagram(record.finalHexagram);
@@ -26,6 +26,7 @@ export function HindsightForm({ record, data }: { record: Positioning; data: Sta
         willNotDoKept: h.willNotDoKept!,
         notes: h.notes?.trim() ?? '',
       });
+      onSaved?.();
     } catch (e) {
       setError(String(e instanceof Error ? e.message : e));
     }

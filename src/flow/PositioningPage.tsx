@@ -9,7 +9,6 @@ import { newId } from '../lib/id';
 import { formatPeriod, periodOf } from '../lib/period';
 import { unreviewedBefore } from '../lib/status';
 import { STEP_COUNT, finalizeDraft, furthestAllowedStep, stepComplete } from './draft';
-import { HindsightForm } from './HindsightForm';
 import { useDraft } from './useDraft';
 import type { StepProps } from './steps/types';
 import { Step1Facts } from './steps/Step1Facts';
@@ -52,9 +51,17 @@ export function PositioningPage() {
     );
 
   const pending = unreviewedBefore(domainId, period, q.positionings);
-  if (pending) return <HindsightForm key={pending.id} record={pending} data={data} />;
-
-  return <Flow domainId={domainId} domainName={q.domain.name} period={period} data={data} />;
+  return (
+    <>
+      {pending && (
+        <p className="note no-print">
+          {t('flow.reviewHint', { period: formatPeriod(pending.period) })}{' '}
+          <Link to={`/review/${pending.id}`}>{t('home.action.review')}</Link>
+        </p>
+      )}
+      <Flow domainId={domainId} domainName={q.domain.name} period={period} data={data} />
+    </>
+  );
 }
 
 function Flow({ domainId, domainName, period, data }: { domainId: string; domainName: string; period: string; data: StaticData }) {

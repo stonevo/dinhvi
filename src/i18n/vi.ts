@@ -1,5 +1,4 @@
-// Chuỗi giao diện tiếng Việt. Giọng: trung tính, không mệnh lệnh về đời sống,
-// không tiên tri. Chỉ mô tả và đặt câu hỏi. tests/lint.test.ts quét file này.
+// Chuỗi giao diện tiếng Việt.
 export const vi = {
   'app.name': 'Định Vị',
   'app.tagline': 'Nhật ký tự định vị định kỳ',
@@ -16,7 +15,7 @@ export const vi = {
   'home.domainPlaceholder': 'Tên lĩnh vực',
   'home.archive': 'Cất đi',
   'home.archive.confirm': 'Cất lĩnh vực “{name}”? Bản ghi cũ vẫn giữ nguyên.',
-  'home.status.needsReview': 'Cần nhìn lại kỳ trước',
+  'home.reviewPrev': 'Kỳ trước chưa nhìn lại',
   'home.status.needsPositioning': 'Cần định vị kỳ này',
   'home.status.draft': 'Đang viết dở',
   'home.status.done': 'Xong',
@@ -64,6 +63,7 @@ export const vi = {
   'flow.incomplete': 'Bước này chưa đủ để đi tiếp.',
   'flow.alreadyDone': 'Lĩnh vực này đã được định vị trong kỳ {period}.',
   'flow.notFound': 'Không tìm thấy lĩnh vực.',
+  'flow.reviewHint': 'Kỳ {period} của lĩnh vực này chưa được nhìn lại.',
 
   'step1.question': 'Ba câu mô tả sự thật về lĩnh vực này, lúc này.',
   'step1.hint':
@@ -192,7 +192,7 @@ export const vi = {
 
   'hindsight.title': 'Nhìn lại kỳ {period}',
   'hindsight.intro':
-    'Trước khi định vị kỳ mới, nhìn lại kỳ trước. Đây là phần làm cho việc tự định vị chính xác dần theo thời gian.',
+    'Nhìn lại một kỳ đã qua là phần làm cho việc định vị chính xác dần theo thời gian, và là dữ liệu của trang Hiệu chỉnh.',
   'hindsight.then': 'Kỳ đó bạn đặt mình ở',
   'hindsight.willNotDo': 'Điều bạn chọn không làm',
   'hindsight.pain': 'Câu làm bạn khó chịu',

@@ -26,10 +26,10 @@ describe('lưu bản ghi', () => {
     expect(await db.drafts.count()).toBe(0);
   });
 
-  it('chặn kỳ mới khi kỳ trước chưa nhìn lại', async () => {
+  it('lưu được kỳ mới dù kỳ trước chưa nhìn lại', async () => {
     await savePositioning(db, makePositioning({ id: 'a', period: '2026-Q2' }));
-    await expect(savePositioning(db, makePositioning({ id: 'b', period: '2026-Q3' }))).rejects.toThrow(PositioningRuleError);
-    expect(await db.positionings.count()).toBe(1);
+    await savePositioning(db, makePositioning({ id: 'b', period: '2026-Q3' }));
+    expect(await db.positionings.count()).toBe(2);
   });
 
   it('cho phép sau khi đã nhìn lại', async () => {

@@ -5,19 +5,17 @@ import { db, getSettings } from '../db/db';
 import { useStaticData } from '../data/load';
 import { t } from '../i18n';
 import { formatPeriod, periodOf } from '../lib/period';
-import { domainStatus, type DomainStatus } from '../lib/status';
+import { domainStatus, unreviewedBefore, type DomainStatus } from '../lib/status';
 import { newId } from '../lib/id';
 import { reminderState } from '../lib/reminder';
 
 const STATUS_KEY = {
-  needsReview: 'home.status.needsReview',
   needsPositioning: 'home.status.needsPositioning',
   draft: 'home.status.draft',
   done: 'home.status.done',
 } as const satisfies Record<DomainStatus, string>;
 
 const ACTION_KEY = {
-  needsReview: 'home.action.review',
   needsPositioning: 'home.action.start',
   draft: 'home.action.continue',
   done: 'home.action.view',
@@ -60,6 +58,7 @@ export function HomePage() {
           const current = data.positionings.find((p) => p.domainId === d.id && p.period === period);
           const hex = current && staticData ? staticData.hexagram(current.finalHexagram) : null;
           const to = current ? `/record/${current.id}` : `/position/${d.id}`;
+          const pending = unreviewedBefore(d.id, period, data.positionings);
           return (
             <li key={d.id} className={`domain status-${status}`}>
               <span className="domain-name">
@@ -69,6 +68,11 @@ export function HomePage() {
                     {' '}
                     · {hex.nameHanViet} · {t('line.n', { n: current.finalLine })}
                   </span>
+                )}
+                {pending && (
+                  <Link className="review-link small" to={`/review/${pending.id}`}>
+                    {t('home.reviewPrev')}
+                  </Link>
                 )}
               </span>
               <span className="domain-status">{t(STATUS_KEY[status])}</span>

@@ -57,8 +57,8 @@ describe('quỹ đạo', () => {
 });
 
 describe('cổng tạo bản ghi mới', () => {
-  it('chặn khi kỳ trước chưa nhìn lại', () => {
-    expect(canStartPositioning('d1', '2026-Q4', PS)).toBe(false); // 'c' (Q3) chưa có hindsight
+  it('không chặn khi kỳ trước chưa nhìn lại', () => {
+    expect(canStartPositioning('d1', '2026-Q4', PS)).toBe(true); // 'c' (Q3) chưa có hindsight
   });
   it('chặn khi kỳ này đã có bản ghi', () => {
     const reviewedAll = PS.map((p) => ({ ...p, hindsight: hs(1, 1) }));

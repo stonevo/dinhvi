@@ -99,7 +99,6 @@ button.link { border: none; background: none; color: var(--muted); padding: 0; f
   padding: 14px 0; border-bottom: 1px solid var(--line);
 }
 .domain-status { font-size: 0.9rem; color: var(--muted); }
-.status-needsReview .domain-status { color: var(--warn); }
 .status-done .domain-status { color: var(--accent); }
 
 .domain-action { color: var(--ink); }
@@ -271,7 +270,6 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .step-title { color: var(--ink); }
 
 .domain-action { color: var(--accent); }
-.status-needsReview .domain-status { color: var(--warn); }
 .status-draft .domain-status { color: var(--accent); }
 .status-done .domain-status { color: var(--sage); }
 
@@ -312,3 +310,4 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .hexagram-figure .moving-dot { fill: var(--accent); }
 .cast-log { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--muted); }
 .cast-log li { padding: 2px 0; }
+.review-link { display: block; color: var(--warn); }

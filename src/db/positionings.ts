@@ -5,16 +5,13 @@ import type { DinhViDB } from './db';
 
 export class PositioningRuleError extends Error {}
 
-/**
- * Lưu bản ghi mới và xoá nháp, trong một transaction. Luật "không định vị kỳ
- * mới khi kỳ trước chưa nhìn lại" được kiểm cả ở đây, không chỉ ở UI.
- */
+/** Lưu bản ghi mới và xoá nháp, trong một transaction. Mỗi lĩnh vực một bản ghi mỗi kỳ. */
 export async function savePositioning(db: DinhViDB, p: Positioning): Promise<void> {
   const valid = positioningSchema.parse(p);
   await db.transaction('rw', db.positionings, db.drafts, async () => {
     const existing = await db.positionings.where('domainId').equals(valid.domainId).toArray();
     if (!canStartPositioning(valid.domainId, valid.period, existing))
-      throw new PositioningRuleError('Kỳ trước chưa được nhìn lại, hoặc kỳ này đã có bản ghi.');
+      throw new PositioningRuleError('Lĩnh vực này đã có bản ghi cho kỳ này.');
     await db.positionings.add(valid);
     await db.drafts.delete(draftId(valid.domainId, valid.period));
   });

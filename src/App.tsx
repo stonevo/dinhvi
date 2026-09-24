@@ -8,6 +8,7 @@ import { PositioningPage } from './flow/PositioningPage';
 import { TrajectoryPage } from './pages/TrajectoryPage';
 import { ThemeToggle } from './ui/ThemeToggle';
 import { CastPage } from './pages/CastPage';
+import { ReviewPage } from './pages/ReviewPage';
 
 export function App() {
   return (
@@ -28,6 +29,7 @@ export function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/position/:domainId" element={<PositioningPage />} />
           <Route path="/record/:id" element={<RecordPage />} />
+          <Route path="/review/:id" element={<ReviewPage />} />
           <Route path="/trajectory" element={<TrajectoryPage />} />
           <Route path="/calibration" element={<CalibrationPage />} />
           <Route path="/cast" element={<CastPage />} />

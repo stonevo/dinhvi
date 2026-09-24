@@ -3,16 +3,16 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { DinhViDB, ensureSeeded } from '../src/db/db';
-import { PositioningRuleError, saveHindsight, savePositioning } from '../src/db/positionings';
+import { saveHindsight, savePositioning } from '../src/db/positionings';
 import { exportAll, importAll, parseBackup, serializeBackup } from '../src/db/backup';
 import { finalizeDraft, applyPatch, type DraftData } from '../src/flow/draft';
 import { calibrationReport } from '../src/lib/calibration';
-import { domainStatus } from '../src/lib/status';
+import { domainStatus, unreviewedBefore } from '../src/lib/status';
 import { domainTrajectory, hasTrajectory } from '../src/lib/trajectory';
 import type { Hexagram, TrigramKey } from '../src/types/schema';
 
 // Tiêu chí chấp nhận (mục 10), đi trọn vòng lặp trên DB thật (fake-indexeddb):
-// tạo lĩnh vực → định vị đủ 8 bước → lưu → kỳ sau bị yêu cầu nhìn lại → sau
+// tạo lĩnh vực → định vị đủ 8 bước → lưu → kỳ sau được gợi ý nhìn lại → sau
 // vài kỳ có quỹ đạo → sau 8 bản ghi có nhìn lại thì có trang hiệu chỉnh.
 
 const hexagrams: Hexagram[] = JSON.parse(readFileSync(join(__dirname, '..', 'public', 'data', 'hexagrams.json'), 'utf8'));
@@ -52,12 +52,11 @@ describe('tiêu chí chấp nhận', () => {
 
     for (let i = 0; i < periods.length; i++) {
       const period = periods[i];
-      // Kỳ trước chưa nhìn lại → không định vị được.
+      // Kỳ trước chưa nhìn lại → được gợi ý, không bị chặn.
       if (i > 0) {
         const all = await db.positionings.toArray();
-        expect(domainStatus(domain.id, period, all, [])).toBe('needsReview');
-        const tryEarly = finalizeDraft(walk('kan', 'gen', 1, { confidence: 3 }), { id: `early-${i}`, domainId: domain.id, period, createdAt: 'x' });
-        await expect(savePositioning(db, tryEarly)).rejects.toThrow(PositioningRuleError);
+        expect(domainStatus(domain.id, period, all, [])).toBe('needsPositioning');
+        expect(unreviewedBefore(domain.id, period, all)).toBeDefined();
 
         // Nhìn lại kỳ trước: thực tế thấp hơn một hào so với tự định vị.
         const prev = all.find((p) => p.period === periods[i - 1])!;
@@ -65,7 +64,7 @@ describe('tiêu chí chấp nhận', () => {
           reviewedAt: 'x', actualHexagram: prev.finalHexagram, actualLine: Math.max(1, prev.finalLine - 1),
           selfWasRight: prev.confidence >= 4 ? 'no' : 'yes', whatHappened: 'đã xảy ra', willNotDoKept: 'yes', notes: '',
         });
-        expect(domainStatus(domain.id, period, await db.positionings.toArray(), [])).toBe('needsPositioning');
+        expect(unreviewedBefore(domain.id, period, await db.positionings.toArray())).toBeUndefined();
       }
 
       // Định vị: Khảm (trong) + Cấn (ngoài) = Mông (4). Kỳ lẻ đổi về quẻ người phê bình.

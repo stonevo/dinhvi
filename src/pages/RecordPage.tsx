@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../db/db';
 import { useStaticData } from '../data/load';
@@ -48,6 +48,7 @@ export function RecordPage() {
         <button type="button" onClick={saveImage}>
           {t('record.image')}
         </button>
+        {!p.hindsight && <Link to={`/review/${p.id}`}>{t('home.action.review')}</Link>}
       </div>
 
       <article className="sheet" ref={sheet}>
