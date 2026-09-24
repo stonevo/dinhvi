@@ -72,6 +72,7 @@ export function Step4Line({ d, set, data }: StepProps) {
                           <label>
                             <input
                               type="checkbox"
+                              aria-label={s}
                               checked={marked.includes(i)}
                               onChange={(e) => {
                                 const next = e.target.checked ? [...marked, i] : marked.filter((x) => x !== i);
