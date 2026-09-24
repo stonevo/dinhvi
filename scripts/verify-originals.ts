@@ -6,10 +6,11 @@
 //   npx tsx scripts/verify-originals.ts <dir KR1a0001> <Unihan_Readings.txt> [--json out.json]
 //
 // Nguồn không nằm trong repo. Kết quả in ra stdout (markdown).
-import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Hexagram } from '../src/types/schema';
 import { EXTRA_READINGS } from './hanviet-extra';
+import { parseKanripo } from './kanripo';
 
 const [kanripoDir, unihanPath, ...rest] = process.argv.slice(2);
 if (!kanripoDir || !unihanPath) {
@@ -52,41 +53,20 @@ for (const [ch, list] of Object.entries(EXTRA_READINGS)) {
 }
 const canRead = (ch: string, syl: string) => readings.get(ch)?.has(syllableKey(syl)) ?? false;
 
-// ---------- Tách kinh văn Kanripo ----------
+// ---------- Kinh văn Kanripo (bỏ dấu câu để so từng chữ) ----------
 
-const LABELS = ['初九', '初六', '九二', '六二', '九三', '六三', '九四', '六四', '九五', '六五', '上九', '上六'];
-const HAN_PUNCT = /[\s¶，。、：；！？「」『』《》〈〉（）()·—…]/gu;
+const HAN_PUNCT = /[s¶，。、：；！？「」『』《》〈〉（）()·—…]/gu;
+const strip = (x: string) => x.replace(HAN_PUNCT, '');
 
-type Canon = { judgment: string; lines: string[] };
+type Canon = { judgment: string; lines: string[]; use: string | null };
 
-function parseKanripo(dir: string): Map<number, Canon> {
-  const out = new Map<number, Canon>();
-  const files = readdirSync(dir).filter((f) => /^KR1a0001_0\d\d\.txt$/.test(f)).sort();
-  for (const f of files) {
-    const n = Number(f.slice(10, 13));
-    if (n < 1 || n > 64) continue;
-    const text = readFileSync(join(dir, f), 'utf8').replace(/^#.*$/gm, '').replace(/^\*\*.*$/gm, '');
-    const blocks = text.split(/<pb:[^>]+>/).map((b) => b.replace(/¶/g, '').trim()).filter(Boolean);
-    let judgment = '';
-    const lines: string[] = new Array(6).fill('');
-    for (const b of blocks) {
-      // Giữ tên quẻ trong ngoặc: có quẻ mà tên là một phần của câu (艮其背, 履虎尾).
-      // Có quẻ Kanripo lặp tên ở tiêu đề và đầu câu (《履》履虎尾) — khi đó bỏ tiêu đề.
-      const hm = /^《([^》]+)》/.exec(b);
-      if (!judgment && hm && !/^(彖|象|文言)$/.test(hm[1])) {
-        const body = b.slice(hm[0].length);
-        judgment = body.startsWith(hm[1]) ? body : b;
-      }
-      // Quẻ Càn dùng "初九、", các quẻ khác "初九："; loại "初九曰" của Văn ngôn.
-      const lm = /^(初九|初六|九二|六二|九三|六三|九四|六四|九五|六五|上九|上六)[：、]/.exec(b);
-      if (lm) {
-        const pos = LABELS.indexOf(lm[1]) >> 1; // cặp (dương, âm) cho mỗi vị trí
-        if (!lines[pos]) lines[pos] = b.slice(lm[0].length);
-      }
-    }
-    out.set(n, { judgment: judgment.replace(HAN_PUNCT, ''), lines: lines.map((l) => l.replace(HAN_PUNCT, '')) });
-  }
-  return out;
+function loadCanon(dir: string): Map<number, Canon> {
+  return new Map(
+    [...parseKanripo(dir)].map(([n, c]) => [
+      n,
+      { judgment: strip((c.name ?? '') + c.judgment), lines: c.lines.map(strip), use: c.use ? strip(c.use.text) : null },
+    ]),
+  );
 }
 
 // ---------- Căn chỉnh chuỗi âm tiết ↔ chuỗi chữ ----------
@@ -133,7 +113,7 @@ const tokenize = (vi: string) =>
 // ---------- Chạy ----------
 
 const hexagrams: Hexagram[] = JSON.parse(readFileSync(join(import.meta.dirname, '..', 'public', 'data', 'hexagrams.json'), 'utf8'));
-const canon = parseKanripo(kanripoDir);
+const canon = loadCanon(kanripoDir);
 
 type Finding = { ref: string; ours: string; han: string; ops: Op[] };
 const findings: Finding[] = [];
@@ -157,13 +137,14 @@ for (const h of hexagrams) {
     check(`${h.kingWenNumber} lời quẻ`, jm[1], c.judgment);
   }
   h.lines.forEach((l, i) => check(`${h.kingWenNumber}.${i + 1}`, l.original.replace(/^[^:]+:\s*/, ''), c.lines[i]));
+  if (h.allMoving && c.use) check(`${h.kingWenNumber} dụng`, h.allMoving.original.replace(/^[^:]+:\s*/, ''), c.use);
 }
 
 const fmt = (o: Op) =>
   o.kind === 'sub' ? `“${o.syl}” ≠ ${o.ch}` : o.kind === 'extra' ? `thừa “${o.syl}”` : `thiếu ${o.ch}`;
 
 console.log(`# Đối chiếu lời hào với Kanripo KR1a0001\n`);
-console.log(`Đã so ${checked} đoạn (64 lời quẻ + 384 lời hào). Lệch: ${findings.length}.\n`);
+console.log(`Đã so ${checked} đoạn (lời quẻ, lời hào, Dụng cửu/Dụng lục). Lệch: ${findings.length}.\n`);
 console.log('| Đoạn | Chữ Hán (Kanripo) | Chỗ lệch |\n|---|---|---|');
 for (const f of findings) console.log(`| ${f.ref} | ${f.han} | ${f.ops.filter((o) => o.kind !== 'ok').map(fmt).join('; ')} |`);
 if (jsonOut) writeFileSync(jsonOut, JSON.stringify(findings, null, 2));

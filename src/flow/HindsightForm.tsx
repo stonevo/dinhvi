@@ -46,6 +46,7 @@ export function HindsightForm({ record, data, onSaved }: { record: Positioning; 
               {hexagramOptionLabel(hex)} · {t('line.n', { n: record.finalLine })}
             </p>
             <p className="original">{hex.lines[record.finalLine - 1].original}</p>
+            <p className="han-text" lang="zh-Hant">{hex.lines[record.finalLine - 1].originalHan}</p>
           </div>
         </div>
         <p>

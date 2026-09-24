@@ -101,6 +101,8 @@ export const vi = {
   'cast.noMoving': 'Không có hào động.',
   'cast.transformed': 'Quẻ biến',
   'cast.movingLines': 'Lời các hào động',
+  'cast.useNine': 'Dụng cửu — cả sáu hào dương đều động',
+  'cast.useSix': 'Dụng lục — cả sáu hào âm đều động',
   'cast.recast': 'Gieo lại từ đầu',
   'cast.question': 'Điều bạn đang hỏi (tùy chọn)',
   'cast.notes': 'Ghi chú (tùy chọn)',

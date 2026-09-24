@@ -67,6 +67,30 @@ describe('validator bắt được lỗi', () => {
     expect(validateHexagrams(clone().slice(0, 63)).some((e) => e.includes('64'))).toBe(true);
   });
 
+  it('nhãn chữ Hán không khớp âm dương', () => {
+    const h = clone();
+    h[0].lines[0].originalHan = h[0].lines[0].originalHan.replace('初九', '初六');
+    expect(validateHexagrams(h).some((e) => e.includes('originalHan'))).toBe(true);
+  });
+
+  it('số chữ Hán lệch số âm tiết', () => {
+    const h = clone();
+    h[3].lines[2].originalHan += '吉';
+    expect(validateHexagrams(h).some((e) => e.includes('#4.lines[2]: số chữ Hán'))).toBe(true);
+    const j = clone();
+    j[3].judgmentHan = j[3].judgmentHan.replace('來', '');
+    expect(validateHexagrams(j).some((e) => e.includes('#4: số chữ Hán lời quẻ'))).toBe(true);
+  });
+
+  it('Dụng cửu / Dụng lục chỉ ở Càn, Khôn', () => {
+    const h = clone();
+    h[2].allMoving = h[0].allMoving;
+    expect(validateHexagrams(h)).toContain('#3.allMoving: chỉ Càn và Khôn có Dụng cửu / Dụng lục');
+    const k = clone();
+    delete k[1].allMoving;
+    expect(validateHexagrams(k)).toContain('#2.allMoving: thiếu Dụng lục');
+  });
+
   it('hào bị để draft', () => {
     const h = clone();
     h[40].lines[0].draft = true;

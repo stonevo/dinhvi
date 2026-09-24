@@ -109,7 +109,23 @@ function MovingLines({ reading, data }: { reading: { primary: number; moving: nu
   const h = data.hexagram(reading.primary);
   return (
     <section>
+      <p className="han-text" lang="zh-Hant">{h.judgmentHan}</p>
       <p className="muted">{h.judgment}</p>
+      {reading.moving.length === 6 && h.allMoving && (
+        <div className="card">
+          <h4>{t(h.kingWenNumber === 1 ? 'cast.useNine' : 'cast.useSix')}</h4>
+          <p className="original">{h.allMoving.original}</p>
+          <p className="han-text" lang="zh-Hant">{h.allMoving.originalHan}</p>
+          <p>{h.allMoving.situation}</p>
+          <p className="muted">{h.allMoving.commonFailure}</p>
+          <p className="muted small">{h.allMoving.traditionalCounsel}</p>
+          <ul>
+            {h.allMoving.reflectionQuestions.map((q) => (
+              <li key={q}>{q}</li>
+            ))}
+          </ul>
+        </div>
+      )}
       {reading.moving.length > 0 && (
         <>
           <h3 className="small-caps">{t('cast.movingLines')}</h3>

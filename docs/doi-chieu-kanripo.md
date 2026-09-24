@@ -22,7 +22,7 @@ npx tsx scripts/verify-originals.ts /tmp/KR1a0001 Unihan_Readings.txt
 
 ## Kết quả
 
-448 đoạn (64 lời quẻ + 384 lời hào).
+450 đoạn (64 lời quẻ + 384 lời hào + Dụng cửu, Dụng lục).
 
 - **Không còn đoạn nào thừa hay thiếu chữ** so với Kanripo.
 - **Đã sửa 2 chỗ:**
@@ -39,6 +39,10 @@ npx tsx scripts/verify-originals.ts /tmp/KR1a0001 Unihan_Readings.txt
 | 26.3 | 曰 | nhật | kinh văn là 曰 (viết); Chu Hy đọc 日 (nhật) |
 | 43.3 | 頄 | quỳ | cũng đọc “cầu” |
 | 49 lời quẻ, 49.2 | 巳 | dĩ | Kanripo in 巳; Chu Hy đọc 已日 (dĩ nhật), có bản đọc 己日 (kỷ nhật) |
+
+## Chữ Hán trong dữ liệu
+
+Từ ngày 24/09/2026, `hexagrams.json` có thêm chữ Hán gốc lấy từ chính Kanripo KR1a0001: `judgmentHan` (lời quẻ), `originalHan` (lời hào, kèm nhãn 初九…), và `allMoving.originalHan` (用九 / 用六). Nhập bằng `npx tsx scripts/import-han.ts <thư mục KR1a0001>`. `npm run check:data` kiểm nhãn chữ Hán khớp âm dương và số chữ Hán bằng số âm tiết Hán Việt cho từng đoạn.
 
 ## Giới hạn
 

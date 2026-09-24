@@ -1,7 +1,7 @@
 // Âm Hán Việt bổ sung cho các chữ mà Unihan kVietnamese thiếu âm dùng trong
 // Chu Dịch. Mỗi cặp chữ–âm được xét tay khi đối chiếu với Kanripo KR1a0001
 // (docs/doi-chieu-kanripo.md); các cặp còn nghi vấn KHÔNG có ở đây để script
-// tiếp tục báo chúng: 輻 bức, 眇 diểu, 陂 bí, 曰 nhật, 巳 dĩ, 己 dĩ, 胏 tỉ, 頄 quỳ.
+// tiếp tục báo chúng: 眇 diểu, 陂 bí, 曰 nhật, 巳 dĩ, 己 dĩ, 胏 tỉ, 頄 quỳ.
 export const EXTRA_READINGS: Record<string, string[]> = {
   且: ['thư'], 並: ['tịnh'], 主: ['chủ'], 乃: ['nãi'], 乘: ['thừa'], 乾: ['càn', 'can'],
   二: ['nhị'], 亢: ['kháng'], 亦: ['diệc'], 亨: ['hưởng'], 以: ['dĩ'], 何: ['hà'],
@@ -52,7 +52,7 @@ export const EXTRA_READINGS: Record<string, string[]> = {
   誡: ['giới'], 說: ['thoát', 'duyệt'], 謂: ['vị'], 豚: ['đồn'], 豫: ['dự'], 豶: ['phần'],
   豹: ['báo'], 貝: ['bối'], 貫: ['quán'], 賁: ['bí'], 資: ['tư'], 趾: ['chỉ'],
   跛: ['bả'], 蹇: ['kiển'], 蹢: ['trịch'], 躋: ['tê'], 載: ['tái'], 輔: ['phụ'],
-  輹: ['phúc'], 輿: ['dư'], 逖: ['địch'], 遄: ['thuyên'], 遐: ['hà'], 遯: ['độn'],
+  輹: ['phúc'], 輻: ['phúc'], 輿: ['dư'], 逖: ['địch'], 遄: ['thuyên'], 遐: ['hà'], 遯: ['độn'],
   邅: ['chiên'], 郊: ['giao'], 酒: ['tửu'], 醜: ['xú'], 里: ['lý'], 鉉: ['huyễn'],
   錫: ['tích'], 錯: ['thác'], 長: ['trưởng'], 闃: ['khuých'], 闚: ['khuy'], 隍: ['hoàng'],
   隕: ['vẫn'], 隼: ['chuẩn'], 雨: ['vũ'], 需: ['nhu'], 震: ['chấn'], 靡: ['mĩ'],

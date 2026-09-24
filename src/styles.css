@@ -311,3 +311,9 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .cast-log { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--muted); }
 .cast-log li { padding: 2px 0; }
 .review-link { display: block; color: var(--warn); }
+
+/* ---------- Chữ Hán ---------- */
+.han-text {
+  font-family: 'Noto Serif TC', 'Songti TC', 'PMingLiU', 'MingLiU', 'Noto Serif CJK TC', serif;
+  color: var(--muted); letter-spacing: 0.08em; margin: 2px 0 8px; font-size: 1rem;
+}

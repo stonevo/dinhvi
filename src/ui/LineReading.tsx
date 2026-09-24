@@ -53,6 +53,7 @@ export function LineReading({ hexagram, position, lineTiers, compact, onPickSent
   return (
     <div className="line-reading">
       <p className="original">{line.original}</p>
+      <p className="han-text" lang="zh-Hant">{line.originalHan}</p>
       {section(t('line.situation'), line.situation)}
       {section(t('line.risk'), line.characteristicRisk)}
       {section(t('line.failure'), line.commonFailure)}

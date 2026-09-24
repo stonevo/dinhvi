@@ -41,6 +41,8 @@ export const lineSchema = z.object({
   yinYang: z.enum(['yin', 'yang']),
   tier,
   original: z.string().min(1),
+  /** Lời hào chữ Hán, kèm nhãn (初九：…), theo Kanripo KR1a0001. */
+  originalHan: z.string().min(1),
   situation: z.string().min(1),
   behavioralSignals: z.array(z.string().min(1)),
   characteristicRisk: z.string(),
@@ -51,6 +53,18 @@ export const lineSchema = z.object({
   draft: z.boolean().optional(),
 });
 export type Line = z.infer<typeof lineSchema>;
+
+export const allMovingSchema = z.object({
+  original: z.string().min(1),
+  originalHan: z.string().min(1),
+  situation: z.string().min(1),
+  characteristicRisk: z.string().min(1),
+  commonFailure: z.string().min(1),
+  traditionalCounsel: z.string().min(1),
+  whatTendsToFollow: z.string().min(1),
+  reflectionQuestions: z.array(z.string().min(1)).min(1),
+});
+export type AllMoving = z.infer<typeof allMovingSchema>;
 
 export const hexagramSchema = z.object({
   kingWenNumber: z.number().int().min(1).max(64),
@@ -63,9 +77,13 @@ export const hexagramSchema = z.object({
   theme: z.string().min(1),
   stageInCycle,
   judgment: z.string().min(1),
+  /** Lời quẻ chữ Hán, theo Kanripo KR1a0001. */
+  judgmentHan: z.string().min(1),
   sequenceNote: z.string().min(1),
   oppositeHexagram: z.number().int().min(1).max(64),
   lines: z.array(lineSchema).length(6),
+  /** Dụng cửu (Càn) / Dụng lục (Khôn): đọc khi cả sáu hào đều động. */
+  allMoving: allMovingSchema.optional(),
   sources: z.array(z.string()).optional(),
 });
 export type Hexagram = z.infer<typeof hexagramSchema>;

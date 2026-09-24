@@ -32,7 +32,7 @@ Bản build là trang tĩnh (HashRouter, đường dẫn tương đối) — đ�
 - **Dữ liệu tĩnh** trong `public/data/`, sửa được mà không cần build lại:
   - `trigrams.json` — 8 quái như trạng thái bên trong / hoàn cảnh bên ngoài
   - `lineTiers.json` — dấu hiệu chung của 6 vị trí hào, câu kiểm chứng có/không
-  - `hexagrams.json` — 64 quẻ, 384 hào
+  - `hexagrams.json` — 64 quẻ, 384 hào, Dụng cửu / Dụng lục; phiên âm Hán Việt kèm chữ Hán gốc (kinh văn theo [Kanripo KR1a0001](https://github.com/kanripo/KR1a0001))
 - Schema: `src/types/schema.ts` (zod — nguồn duy nhất cho type TS và validate).
 - Hướng dẫn viết/sửa: [docs/huong-dan-viet-du-lieu.md](docs/huong-dan-viet-du-lieu.md). Lời hào gốc cần người duyệt: [docs/can-duyet-loi-hao.md](docs/can-duyet-loi-hao.md). Nguồn tham khảo: [docs/nguon-du-lieu-kinh-dich.md](docs/nguon-du-lieu-kinh-dich.md).
 
@@ -48,7 +48,8 @@ src/
   data/                tải + validate dữ liệu tĩnh, bảng tên chuẩn
   pages/, ui/          giao diện
   sw.ts                service worker: precache offline + nhắc nền
-scripts/               skeleton / extract / merge-chunks / check-data cho dữ liệu
+scripts/               skeleton / extract / merge-chunks / check-data cho dữ liệu;
+                       import-han / verify-originals đối chiếu với Kanripo
 tests/                 Vitest
 ```
 

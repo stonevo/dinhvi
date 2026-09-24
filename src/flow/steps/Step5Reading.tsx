@@ -19,6 +19,7 @@ export function Step5Reading({ d, set, data }: StepProps) {
           <h2>
             {h.nameHanViet} · {t('line.n', { n: line })}
           </h2>
+          <p className="han-text" lang="zh-Hant">{h.judgmentHan}</p>
           <p className="muted">{h.judgment}</p>
         </div>
       </div>

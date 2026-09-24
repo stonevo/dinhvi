@@ -65,6 +65,7 @@ export function RecordPage() {
                 {p.changedAfterTests && <> · {t('record.changed')}</>}
               </p>
               <p className="original">{line.original}</p>
+              <p className="han-text" lang="zh-Hant">{line.originalHan}</p>
             </div>
           </div>
         </header>

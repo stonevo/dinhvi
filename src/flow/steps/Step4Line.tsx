@@ -44,6 +44,7 @@ export function Step4Line({ d, set, data }: StepProps) {
               <section key={pos} className="card">
                 <h3>{t('line.n', { n: pos })}</h3>
                 <p className="original">{line.original}</p>
+                <p className="han-text" lang="zh-Hant">{line.originalHan}</p>
                 <p className="muted small">{tier.summary}</p>
 
                 <h4>{t('step4.checklist')}</h4>
