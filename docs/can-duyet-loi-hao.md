@@ -28,4 +28,4 @@ Sửa trực tiếp trong `public/data/hexagrams.json`, rồi chạy `npm run ch
 
 - `stageInCycle` là cách đọc của người viết. Ví dụ: Càn/Khôn = `rising`, Truân/Mông = `beginning`, Nhu = `transitional`, Tụng = `turning`, 25/27 = `transitional`.
 - Chữ cát/hung/lận **được giữ trong `original` và phần trích lời quẻ** vì là kinh văn; phần diễn giải hiện đại không dùng.
-- Dụng cửu (Càn) và Dụng lục (Khôn) chưa có chỗ trong schema (6 hào/quẻ), nên chưa đưa vào.
+- Dụng cửu (Càn) và Dụng lục (Khôn) đã có ở trường `allMoving`; phần diễn giải hiện đại do máy viết, chưa có người duyệt.
