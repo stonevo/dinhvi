@@ -5,9 +5,11 @@ import { registerSW } from 'virtual:pwa-register';
 import { App } from './App';
 import { db, ensureSeeded } from './db/db';
 import { remindOnOpen } from './lib/notifications';
+import { applyTheme, getTheme } from './lib/theme';
 import './styles.css';
 
 registerSW({ immediate: true });
+applyTheme(getTheme());
 
 ensureSeeded(db).finally(() => {
   ReactDOM.createRoot(document.getElementById('root')!).render(

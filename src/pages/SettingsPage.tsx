@@ -8,12 +8,15 @@ import {
   notificationSupport, remindOnOpen, requestNotificationPermission, syncBackgroundReminder,
   type NotificationSupport,
 } from '../lib/notifications';
+import { THEMES, getTheme, setTheme, type Theme } from '../lib/theme';
+import { ChoiceGroup } from '../ui/controls';
 
 export function SettingsPage() {
   const settings = useLiveQuery(() => getSettings(db));
   const fileRef = useRef<HTMLInputElement>(null);
   const [message, setMessage] = useState<string | null>(null);
   const [permission, setPermission] = useState<NotificationSupport>(notificationSupport());
+  const [theme, setThemeState] = useState<Theme>(getTheme());
 
   if (!settings) return <p className="muted">{t('common.loading')}</p>;
 
@@ -57,6 +60,16 @@ export function SettingsPage() {
   return (
     <section className="stack">
       <h1>{t('nav.settings')}</h1>
+
+      <ChoiceGroup
+        label={t('settings.theme')}
+        options={THEMES.map((v) => ({ value: v, label: t(`settings.theme.${v}`) }))}
+        value={theme}
+        onChange={(v) => {
+          setTheme(v);
+          setThemeState(v);
+        }}
+      />
 
       <label className="field">
         <span>{t('settings.cycle')}</span>

@@ -225,6 +225,10 @@ export const vi = {
   'cal.exportCsv': 'Xuất CSV',
   'cal.na': '—',
 
+  'settings.theme': 'Giao diện',
+  'settings.theme.light': 'Sáng',
+  'settings.theme.dark': 'Tối',
+  'settings.theme.auto': 'Theo hệ thống',
   'settings.cycle': 'Chu kỳ',
   'settings.cycle.quarter': 'Hàng quý',
   'settings.cycle.month': 'Hàng tháng',
