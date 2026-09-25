@@ -4,10 +4,10 @@
 import { TRIGRAM_KEYS, type StudyState, type TrigramKey } from '../types/schema';
 import { oppositeHexagram, reversedHexagram, trigramsOf } from './iching';
 
-export const DECKS = ['trigram', 'name', 'build', 'keyword', 'order', 'pair'] as const;
+export const DECKS = ['trigram', 'name', 'build', 'keyword', 'order', 'pair', 'line'] as const;
 export type DeckKey = (typeof DECKS)[number];
 
-/** `n`: số quẻ 1..64, hoặc chỉ số quái 0..7 với bộ "trigram". */
+/** `n`: số quẻ 1..64; chỉ số quái 0..7 với bộ "trigram"; số hào 1..384 với bộ "line" ((quẻ − 1) × 6 + hào). */
 export type Card = { id: string; deck: DeckKey; n: number };
 
 export const DAY = 86_400_000;
@@ -22,10 +22,18 @@ export function allCards(): Card[] {
   const out: Card[] = TRIGRAM_KEYS.map((_, i) => ({ id: `trigram:${i}`, deck: 'trigram' as const, n: i }));
   for (const deck of DECKS) {
     if (deck === 'trigram') continue;
-    for (let n = 1; n <= 64; n++) out.push({ id: `${deck}:${n}`, deck, n });
+    const count = deck === 'line' ? 384 : 64;
+    for (let n = 1; n <= count; n++) out.push({ id: `${deck}:${n}`, deck, n });
   }
   return out;
 }
+
+/** Thẻ hào: số hào 1..384 ↔ (quẻ, vị trí). */
+export const lineOf = (n: number) => ({ hexagram: Math.ceil(n / 6), position: ((n - 1) % 6) + 1 });
+export const lineCardNumber = (hexagram: number, position: number) => (hexagram - 1) * 6 + position;
+
+/** Thứ tự học thẻ mới: theo số quẻ (hào tính theo quẻ của nó). */
+const orderKey = (c: Card) => (c.deck === 'line' ? lineOf(c.n).hexagram : c.n);
 
 /** Quẻ cặp: quẻ lộn ngược; tám quẻ lộn ngược vẫn y nguyên thì cặp với quẻ đổi hết hào. */
 export function pairOf(n: number): number {
@@ -96,8 +104,8 @@ export function pickNext(
   // Xen kẽ các bộ để một buổi không chỉ toàn một kiểu hỏi.
   const fresh = pool.filter((c) => !states.has(c.id));
   if (!fresh.length) return null;
-  const minN = Math.min(...fresh.map((c) => c.n));
-  return fresh.find((c) => c.n === minN)!;
+  const minKey = Math.min(...fresh.map(orderKey));
+  return fresh.find((c) => orderKey(c) === minKey)!;
 }
 
 /** Lần ôn gần nhất sắp tới (để báo "quay lại lúc…"). */
@@ -146,6 +154,7 @@ export function choices(card: Card, seed: string): number[] {
     const others = seededShuffle([0, 1, 2, 3, 4, 5, 6, 7].filter((i) => i !== card.n), seed).slice(0, 3);
     return seededShuffle([card.n, ...others], seed + '/o');
   }
+  if (card.deck === 'line') return lineChoices(card.n, seed);
   const answer = answerOf(card);
   const { lower, upper } = trigramsOf(answer);
   const all = Array.from({ length: 64 }, (_, i) => i + 1).filter((m) => m !== answer && m !== card.n);
@@ -156,6 +165,29 @@ export function choices(card: Card, seed: string): number[] {
   const far = all.filter((m) => !near.includes(m));
   const picked = [...seededShuffle(near, seed).slice(0, 2), ...seededShuffle(far, seed + '/f')].slice(0, 3);
   return seededShuffle([answer, ...picked], seed + '/o');
+}
+
+/**
+ * Lựa chọn cho thẻ hào: một hào khác của cùng quẻ, một hào cùng vị trí ở quẻ
+ * chung quái, và một hào bất kỳ — để phải nhớ cả quẻ lẫn vị trí.
+ */
+function lineChoices(n: number, seed: string): number[] {
+  const { hexagram, position } = lineOf(n);
+  const sameHex = seededShuffle([1, 2, 3, 4, 5, 6].filter((p) => p !== position), seed + '/h').map((p) => lineCardNumber(hexagram, p));
+  const { lower, upper } = trigramsOf(hexagram);
+  const near = Array.from({ length: 64 }, (_, i) => i + 1).filter((m) => {
+    if (m === hexagram) return false;
+    const t = trigramsOf(m);
+    return t.lower === lower || t.upper === upper;
+  });
+  const samePos = seededShuffle(near, seed + '/p').map((m) => lineCardNumber(m, position));
+  const any = seededShuffle(Array.from({ length: 384 }, (_, i) => i + 1), seed + '/a');
+  const picked: number[] = [];
+  for (const x of [sameHex[0], samePos[0], ...any]) {
+    if (picked.length === 3) break;
+    if (x !== n && !picked.includes(x)) picked.push(x);
+  }
+  return seededShuffle([n, ...picked], seed + '/o');
 }
 
 /** Đáp án của thẻ trắc nghiệm (số quẻ hoặc chỉ số quái). Bộ "build" dùng answerTrigrams. */

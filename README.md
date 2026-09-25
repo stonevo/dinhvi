@@ -20,7 +20,7 @@ Dùng cho mình và cho người khác:
 | Gieo ba đồng xu (6/7/8/9), hào động, quẻ biến; nguồn ngẫu nhiên `crypto.getRandomValues` | `src/lib/cast.ts` |
 | Vòng lặp định vị → nhìn lại → hiệu chỉnh: nhìn lại là tùy chọn, trang chủ gợi ý kỳ nào chưa nhìn lại; mỗi lĩnh vực một bản ghi mỗi kỳ | `src/lib/status.ts`, `src/pages/ReviewPage.tsx` |
 | Thống kê hiệu chỉnh, mọi con số kèm n, gồm độ đúng khi tự ghép so với khi gieo | `src/lib/calibration.ts` |
-| Trang Học: thẻ ghi nhớ lặp lại ngắt quãng (8 quái, hình ↔ tên, dựng quẻ, ý nghĩa, thứ tự, quẻ cặp), tiến độ theo hồ sơ; hai bài ca nhớ quẻ của Chu Hy | `src/lib/study.ts`, `src/pages/StudyPage.tsx`, `src/data/verses.ts` |
+| Trang Học: thẻ ghi nhớ lặp lại ngắt quãng (8 quái, hình ↔ tên, dựng quẻ, ý nghĩa, thứ tự, quẻ cặp, 384 lời hào), tiến độ theo hồ sơ; hai bài ca nhớ quẻ của Chu Hy | `src/lib/study.ts`, `src/pages/StudyPage.tsx`, `src/data/verses.ts` |
 
 ## Chạy
 

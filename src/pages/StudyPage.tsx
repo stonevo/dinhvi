@@ -7,7 +7,7 @@ import { TRIGRAM_IMAGE_HV, fullHexagramName } from '../data/names';
 import { ORDER_VERSE, TRIGRAM_VERSE, VERSE_SOURCE } from '../data/verses';
 import { t } from '../i18n';
 import {
-  DECKS, allCards, answerOf, answerTrigrams, choices, isMastered, nextDue, pickNext, review,
+  DECKS, allCards, answerOf, answerTrigrams, choices, isMastered, lineOf, nextDue, pickNext, review,
   type Card, type DeckKey,
 } from '../lib/study';
 import { TRIGRAM_KEYS, type StudyState, type TrigramKey } from '../types/schema';
@@ -205,6 +205,10 @@ function CardView({
     // Không kèm ký hiệu quái, kẻo lộ đáp án.
     if (card.deck === 'trigram') return `${data.trigrams[TRIGRAM_KEYS[o]].nameHanViet} · ${TRIGRAM_IMAGE_HV[TRIGRAM_KEYS[o]]}`;
     if (card.deck === 'keyword') return hex(o).nameVi;
+    if (card.deck === 'line') {
+      const l = lineOf(o);
+      return t('study.lineOption', { n: l.position, name: fullHexagramName(hex(l.hexagram)) });
+    }
     return `${fullHexagramName(hex(o))}`;
   };
 
@@ -241,6 +245,21 @@ function CardView({
     case 'order':
       prompt = <p className="study-big">{t('study.q.order', { n: card.n })}</p>;
       break;
+    case 'line': {
+      const l = lineOf(card.n);
+      const line = hex(l.hexagram).lines[l.position - 1];
+      // Bỏ nhãn "Sơ cửu:" / "初九：" kẻo lộ vị trí hào.
+      prompt = (
+        <>
+          <p className="study-big">{line.original.replace(/^[^:]*:\s*/, '')}</p>
+          <p className="han-text" lang="zh-Hant">
+            {line.originalHan.replace(/^[^：]*：/, '')}
+          </p>
+          <p>{t('study.q.line')}</p>
+        </>
+      );
+      break;
+    }
     case 'pair':
       prompt = (
         <>
@@ -319,6 +338,25 @@ function Answer({ card, data }: { card: Card; data: StaticData }) {
       <p>
         <strong>{trigramLabel(data, k)}</strong> <span className="han">{tr.nameHan}</span> — {TRIGRAM_VERSE[verseIndex(k)].hanViet}
       </p>
+    );
+  }
+  if (card.deck === 'line') {
+    const l = lineOf(card.n);
+    const h = data.hexagram(l.hexagram);
+    const line = h.lines[l.position - 1];
+    return (
+      <div className="hex-head">
+        <HexagramFigure binary={h.binary} highlight={l.position} size={56} label={fullHexagramName(h)} />
+        <div>
+          <p>
+            <strong>{t('study.lineOption', { n: l.position, name: fullHexagramName(h) })}</strong> — {line.original}
+          </p>
+          <p className="muted">{line.situation}</p>
+          <p className="small">
+            <Link to={`/library/${h.kingWenNumber}#line-${l.position}`}>{t('study.open')}</Link>
+          </p>
+        </div>
+      </div>
     );
   }
   const h = data.hexagram(answerOf(card));

@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto';
 import { describe, expect, it } from 'vitest';
 import {
-  DAY, MASTERED_DAYS, NEW_PER_DAY, RELEARN_MS, allCards, answerOf, choices, isMastered, nextDue, pairOf, pickNext,
+  DAY, MASTERED_DAYS, NEW_PER_DAY, RELEARN_MS, allCards, answerOf, choices, isMastered, lineCardNumber, lineOf, nextDue, pairOf, pickNext,
   review, seededShuffle, type DeckKey,
 } from '../src/lib/study';
 import { ORDER_VERSE } from '../src/data/verses';
@@ -12,9 +12,10 @@ import { exportAll, exportProfile, importAll, parseBackup, serializeBackup } fro
 const NOW = new Date('2026-09-26T09:00:00').getTime();
 
 describe('bộ thẻ', () => {
-  it('8 quái + 64 quẻ × 5 kiểu, id không trùng', () => {
+  it('8 quái + 64 quẻ × 5 kiểu + 384 hào, id không trùng', () => {
     const cards = allCards();
-    expect(cards).toHaveLength(8 + 64 * 5);
+    expect(cards).toHaveLength(8 + 64 * 5 + 384);
+    expect(cards.filter((c) => c.deck === 'line')).toHaveLength(384);
     expect(new Set(cards.map((c) => c.id)).size).toBe(cards.length);
   });
 
@@ -35,6 +36,21 @@ describe('bộ thẻ', () => {
       expect(new Set(o).size).toBe(4);
       expect(o).toContain(answerOf(c));
       expect(choices(c, `${c.id}#0`)).toEqual(o);
+    }
+  });
+
+  it('thẻ hào: số 1..384 ↔ (quẻ, vị trí); lựa chọn có một hào cùng quẻ và một hào cùng vị trí', () => {
+    expect(lineOf(1)).toEqual({ hexagram: 1, position: 1 });
+    expect(lineOf(384)).toEqual({ hexagram: 64, position: 6 });
+    for (let n = 1; n <= 384; n++) {
+      const { hexagram, position } = lineOf(n);
+      expect(lineCardNumber(hexagram, position)).toBe(n);
+      const o = choices({ id: `line:${n}`, deck: 'line', n }, `line:${n}#0`);
+      expect(new Set(o).size).toBe(4);
+      expect(o).toContain(n);
+      const others = o.filter((x) => x !== n).map(lineOf);
+      expect(others.some((l) => l.hexagram === hexagram)).toBe(true);
+      expect(others.some((l) => l.position === position && l.hexagram !== hexagram)).toBe(true);
     }
   });
 
