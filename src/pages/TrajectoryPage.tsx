@@ -5,6 +5,39 @@ import { t } from '../i18n';
 import { formatPeriod, periodOf } from '../lib/period';
 import { domainTrajectory, hasTrajectory, hexagramHistory, periodOverview } from '../lib/trajectory';
 import { TrajectoryChart } from '../ui/TrajectoryChart';
+import type { StaticData } from '../data/load';
+import type { QuickNote } from '../types/schema';
+
+/** Ghi nhanh của một lĩnh vực, mới nhất trước. */
+function QuickNotes({ notes, data }: { notes: QuickNote[]; data: StaticData }) {
+  if (notes.length === 0) return null;
+  const sorted = [...notes].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  return (
+    <>
+      <h3 className="small-caps">{t('quick.list')}</h3>
+      <ul className="stat-list">
+        {sorted.map((n) => (
+          <li key={n.id}>
+            <span className="muted small">{new Date(n.createdAt).toLocaleDateString('vi-VN')}</span>
+            <span>
+              {data.hexagram(n.hexagram).nameHanViet} · {t('line.n', { n: n.line })}
+            </span>
+            <span>{n.note}</span>
+            <button
+              type="button"
+              className="link"
+              onClick={() => {
+                if (window.confirm(t('quick.delete.confirm'))) void db.quickNotes.delete(n.id);
+              }}
+            >
+              {t('cast.delete')}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
 
 export function TrajectoryPage() {
   const { data } = useStaticData();
@@ -14,6 +47,7 @@ export function TrajectoryPage() {
   const period = periodOf(new Date(), q.settings.cycle);
   const rows = periodOverview(q.domains, q.positionings, period, (n) => data.hexagram(n).stageInCycle);
   const withTrajectory = q.domains.filter((d) => hasTrajectory(q.positionings.filter((p) => p.domainId === d.id)));
+  const quickOnly = q.domains.filter((d) => !withTrajectory.includes(d) && q.quickNotes.some((x) => x.domainId === d.id));
 
   return (
     <div className="stack">
@@ -84,9 +118,16 @@ export function TrajectoryPage() {
             <p className="muted small">
               {t('trajectory.follows', { k: history.followsSequence.k, n: history.followsSequence.n })}
             </p>
+            <QuickNotes notes={q.quickNotes.filter((x) => x.domainId === d.id)} data={data} />
           </section>
         );
       })}
+      {quickOnly.map((d) => (
+        <section key={d.id}>
+          <h2>{d.name}</h2>
+          <QuickNotes notes={q.quickNotes.filter((x) => x.domainId === d.id)} data={data} />
+        </section>
+      ))}
       <p className="muted small">{t('trajectory.noPrediction')}</p>
     </div>
   );

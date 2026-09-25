@@ -126,6 +126,9 @@ function DomainCard({
         <Link className="domain-action" to={to}>
           {t(ACTION_KEY[status])}
         </Link>
+        <Link className="small" to={`/quick/${domain.id}`}>
+          {t('quick.open')}
+        </Link>
         {pending && (
           <Link className="review-link small" to={`/review/${pending.id}`}>
             {t('home.reviewPrev')}

@@ -12,6 +12,7 @@ import { CastPage } from './pages/CastPage';
 import { ReviewPage } from './pages/ReviewPage';
 import { HexagramPage, LibraryPage } from './pages/LibraryPage';
 import { SharePage } from './pages/SharePage';
+import { QuickNotePage } from './pages/QuickNotePage';
 
 export function App() {
   return (
@@ -33,6 +34,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/position/:domainId" element={<PositioningPage />} />
+          <Route path="/quick/:domainId" element={<QuickNotePage />} />
           <Route path="/record/:id" element={<RecordPage />} />
           <Route path="/record/:id/share" element={<SharePage />} />
           <Route path="/review/:id" element={<ReviewPage />} />
