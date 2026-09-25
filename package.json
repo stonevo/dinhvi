@@ -15,6 +15,7 @@
     "data:skeleton": "tsx scripts/skeleton.ts"
   },
   "dependencies": {
+    "@fontsource/merriweather": "^5.3.0",
     "dexie": "^4.4.6",
     "dexie-react-hooks": "^4.4.0",
     "html-to-image": "^1.11.13",

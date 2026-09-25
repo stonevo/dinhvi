@@ -55,11 +55,17 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--bg); color: var(--ink); }
-body {
-  font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Noto Serif', serif;
-  font-size: 18px;
-  line-height: 1.65;
+/* Như VnExpress: tiêu đề Merriweather, nội dung Arial — cả hai hiển thị tiếng Việt tốt. */
+:root {
+  --font-heading: 'Merriweather', Georgia, 'Times New Roman', serif;
+  --font-body: Arial, 'Helvetica Neue', Helvetica, 'Segoe UI', sans-serif;
 }
+body {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+}
+h1, h2, h3, .brand, .step-title { font-family: var(--font-heading); }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 
 .shell { max-width: 720px; margin: 0 auto; padding: 0 16px 64px; }
@@ -72,7 +78,7 @@ body {
 .topbar a { color: var(--muted); text-decoration: none; }
 .topbar a.active { color: var(--ink); border-bottom: 1px solid var(--ink); }
 
-h1, h2 { font-weight: normal; }
+h1, h2 { font-weight: 700; }
 h1 { font-size: 1.6rem; margin: 0 0 16px; }
 h2 { font-size: 1.2rem; margin: 32px 0 12px; }
 .intro { color: var(--muted); }

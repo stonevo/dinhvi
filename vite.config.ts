@@ -29,7 +29,7 @@ export default defineConfig({
       },
       injectManifest: {
         // Dữ liệu quẻ nằm trong public/data — precache để dùng offline.
-        globPatterns: ['**/*.{js,css,html,svg,png,json,webmanifest}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,json,webmanifest,woff2}'],
       },
     }),
   ],

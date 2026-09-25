@@ -6,6 +6,13 @@ import { App } from './App';
 import { db, ensureSeeded } from './db/db';
 import { remindOnOpen } from './lib/notifications';
 import { applyTheme, getTheme } from './lib/theme';
+// Merriweather cho tiêu đề (như VnExpress); nhúng sẵn để dùng offline.
+import '@fontsource/merriweather/latin-400.css';
+import '@fontsource/merriweather/latin-ext-400.css';
+import '@fontsource/merriweather/vietnamese-400.css';
+import '@fontsource/merriweather/latin-700.css';
+import '@fontsource/merriweather/latin-ext-700.css';
+import '@fontsource/merriweather/vietnamese-700.css';
 import './styles.css';
 
 registerSW({ immediate: true });
