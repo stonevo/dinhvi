@@ -3,7 +3,7 @@ import { clearProfileData, getSettings, type DinhViDB } from './db';
 
 /** Sao lưu toàn bộ (mọi hồ sơ). */
 export async function exportAll(db: DinhViDB, now = new Date()): Promise<Backup> {
-  const [profiles, domains, positionings, drafts, settings, casts, quickNotes] = await Promise.all([
+  const [profiles, domains, positionings, drafts, settings, casts, quickNotes, study] = await Promise.all([
     db.profiles.orderBy('createdAt').toArray(),
     db.domains.orderBy('createdAt').toArray(),
     db.positionings.orderBy('createdAt').toArray(),
@@ -11,6 +11,7 @@ export async function exportAll(db: DinhViDB, now = new Date()): Promise<Backup>
     getSettings(db),
     db.casts.orderBy('createdAt').toArray(),
     db.quickNotes.orderBy('createdAt').toArray(),
+    db.study.toArray(),
   ]);
   return {
     app: 'dinhvi',
@@ -24,6 +25,7 @@ export async function exportAll(db: DinhViDB, now = new Date()): Promise<Backup>
     settings,
     casts,
     quickNotes,
+    study,
   };
 }
 
@@ -41,6 +43,7 @@ export async function exportProfile(db: DinhViDB, profileId: string, now = new D
     drafts: all.drafts.filter((d) => ids.has(d.domainId)),
     casts: all.casts.filter((c) => c.profileId === profileId),
     quickNotes: all.quickNotes.filter((q) => ids.has(q.domainId)),
+    study: all.study.filter((s) => s.profileId === profileId),
   };
 }
 
@@ -77,7 +80,7 @@ export function parseBackup(text: string): Backup {
   return data;
 }
 
-const ALL_TABLES = (db: DinhViDB) => [db.profiles, db.domains, db.positionings, db.drafts, db.settings, db.casts, db.quickNotes];
+const ALL_TABLES = (db: DinhViDB) => [db.profiles, db.domains, db.positionings, db.drafts, db.settings, db.casts, db.quickNotes, db.study];
 
 /** Thay toàn bộ dữ liệu hiện có bằng nội dung backup, trong một transaction. */
 export async function importAll(db: DinhViDB, backup: Backup): Promise<void> {
@@ -89,6 +92,7 @@ export async function importAll(db: DinhViDB, backup: Backup): Promise<void> {
     await db.drafts.bulkAdd(backup.drafts);
     await db.casts.bulkAdd(backup.casts);
     await db.quickNotes.bulkAdd(backup.quickNotes);
+    await db.study.bulkAdd(backup.study.filter((s) => backup.profiles.some((p) => p.id === s.profileId)));
     const activeOk = backup.profiles.some((p) => p.id === backup.settings.activeProfileId);
     await db.settings.put({ ...backup.settings, activeProfileId: activeOk ? backup.settings.activeProfileId : backup.profiles[0].id });
   });
@@ -109,5 +113,6 @@ export async function importProfiles(db: DinhViDB, backup: Backup): Promise<void
     await db.drafts.bulkPut(backup.drafts);
     await db.casts.bulkPut(backup.casts);
     await db.quickNotes.bulkPut(backup.quickNotes);
+    await db.study.bulkPut(backup.study.filter((s) => backup.profiles.some((p) => p.id === s.profileId)));
   });
 }

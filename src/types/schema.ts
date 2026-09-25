@@ -269,15 +269,34 @@ export const DEFAULT_SETTINGS: Settings = {
   activeProfileId: DEFAULT_PROFILE_ID,
 };
 
+/** Tiến độ học một thẻ ở trang "Học" (lặp lại ngắt quãng), theo hồ sơ. */
+export const studyStateSchema = z.object({
+  /** `${profileId}|${cardId}` */
+  id: z.string().min(1),
+  profileId: z.string().min(1),
+  cardId: z.string().min(1),
+  /** Lần ôn tới (epoch ms). */
+  due: z.number(),
+  /** Khoảng cách hiện tại, tính bằng ngày (0 = đang học lại trong ngày). */
+  interval: z.number().min(0),
+  ease: z.number().min(1),
+  reps: z.number().int().min(0),
+  lapses: z.number().int().min(0),
+  firstSeen: z.number(),
+  lastReviewed: z.number(),
+});
+export type StudyState = z.infer<typeof studyStateSchema>;
+
 /**
  * v2: thêm casts. v3: thêm profiles, quickNotes, và scope ('all' | 'profile').
+ * v4: thêm study (tiến độ trang Học).
  * File cũ vẫn nhập được: thiếu thì dùng mặc định (một hồ sơ "Tôi").
  */
-export const BACKUP_SCHEMA_VERSION = 3;
+export const BACKUP_SCHEMA_VERSION = 4;
 
 export const backupSchema = z.object({
   app: z.literal('dinhvi'),
-  schemaVersion: z.union([z.literal(1), z.literal(2), z.literal(3)]),
+  schemaVersion: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4)]),
   scope: z.enum(['all', 'profile']).default('all'),
   profiles: z.array(profileSchema).default([]),
   quickNotes: z.array(quickNoteSchema).default([]),
@@ -287,6 +306,7 @@ export const backupSchema = z.object({
   drafts: z.array(draftSchema),
   settings: settingsSchema,
   casts: z.array(castRecordSchema).default([]),
+  study: z.array(studyStateSchema).default([]),
 });
 export type Backup = z.infer<typeof backupSchema>;
 

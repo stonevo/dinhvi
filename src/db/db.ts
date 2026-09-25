@@ -9,6 +9,7 @@ import {
   type Profile,
   type QuickNote,
   type Settings,
+  type StudyState,
 } from '../types/schema';
 import { newId } from '../lib/id';
 
@@ -20,6 +21,7 @@ export class DinhViDB extends Dexie {
   casts!: Table<CastRecord, string>;
   profiles!: Table<Profile, string>;
   quickNotes!: Table<QuickNote, string>;
+  study!: Table<StudyState, string>;
 
   constructor(name = 'dinhvi') {
     super(name);
@@ -47,6 +49,8 @@ export class DinhViDB extends Dexie {
           c.profileId ??= DEFAULT_PROFILE_ID;
         });
       });
+    // v4: tiến độ trang Học.
+    this.version(4).stores({ study: 'id, profileId, due' });
   }
 }
 
@@ -94,7 +98,7 @@ export async function createProfile(db: DinhViDB, name: string, now = new Date()
 
 /** Xoá một hồ sơ cùng toàn bộ dữ liệu của nó. Không xoá được hồ sơ cuối cùng. */
 export async function deleteProfile(db: DinhViDB, profileId: string): Promise<void> {
-  await db.transaction('rw', [db.profiles, db.domains, db.positionings, db.drafts, db.casts, db.quickNotes, db.settings], async () => {
+  await db.transaction('rw', [db.profiles, db.domains, db.positionings, db.drafts, db.casts, db.quickNotes, db.study, db.settings], async () => {
     if ((await db.profiles.count()) <= 1) throw new Error('Không xoá được hồ sơ cuối cùng.');
     await clearProfileData(db, profileId);
     await db.profiles.delete(profileId);
@@ -106,7 +110,7 @@ export async function deleteProfile(db: DinhViDB, profileId: string): Promise<vo
   });
 }
 
-/** Xoá dữ liệu của một hồ sơ (lĩnh vực, bản ghi, nháp, ghi nhanh, lần gieo); giữ bản thân hồ sơ. */
+/** Xoá dữ liệu của một hồ sơ (lĩnh vực, bản ghi, nháp, ghi nhanh, lần gieo, tiến độ học); giữ bản thân hồ sơ. */
 export async function clearProfileData(db: DinhViDB, profileId: string): Promise<void> {
   const domainIds = await db.domains.where('profileId').equals(profileId).primaryKeys();
   await db.positionings.where('domainId').anyOf(domainIds).delete();
@@ -114,6 +118,7 @@ export async function clearProfileData(db: DinhViDB, profileId: string): Promise
   await db.quickNotes.where('domainId').anyOf(domainIds).delete();
   await db.domains.bulkDelete(domainIds);
   await db.casts.where('profileId').equals(profileId).delete();
+  await db.study.where('profileId').equals(profileId).delete();
 }
 
 /** Cài đặt, luôn đủ trường: cài đặt lưu từ bản cũ được trộn với giá trị mặc định. */

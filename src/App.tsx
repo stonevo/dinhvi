@@ -15,6 +15,7 @@ import { ProfileSwitcher } from './ui/ProfileSwitcher';
 import { CastPage } from './pages/CastPage';
 import { ReviewPage } from './pages/ReviewPage';
 import { HexagramPage, LibraryPage } from './pages/LibraryPage';
+import { StudyPage } from './pages/StudyPage';
 import { SharePage } from './pages/SharePage';
 import { QuickNotePage } from './pages/QuickNotePage';
 import { WitnessPage } from './pages/WitnessPage';
@@ -43,6 +44,7 @@ export function App() {
           <NavLink to="/calibration">{t('nav.calibration')}</NavLink>
           <NavLink to="/cast">{t('nav.cast')}</NavLink>
           <NavLink to="/library">{t('nav.library')}</NavLink>
+          <NavLink to="/study">{t('nav.study')}</NavLink>
           <NavLink to="/settings">{t('nav.settings')}</NavLink>
           <ProfileSwitcher />
           <ThemeToggle />
@@ -63,6 +65,7 @@ export function App() {
           <Route path="/cast" element={<CastPage />} />
           <Route path="/library" element={<LibraryPage />} />
           <Route path="/library/:n" element={<HexagramPage />} />
+          <Route path="/study" element={<StudyPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
         </ErrorBoundary>

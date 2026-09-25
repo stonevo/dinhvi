@@ -418,3 +418,25 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
   margin: 0;
   padding-left: 1.2rem;
 }
+
+.deck-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border-radius: 999px; padding: 4px 12px; font-size: 0.9rem; }
+.chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.study-progress { border-collapse: collapse; font-size: 0.92rem; width: 100%; }
+.study-progress th, .study-progress td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line); }
+.study-card { text-align: center; }
+.study-card .hexagram-figure { margin: 0 auto; }
+.study-symbol { font-size: 4rem; line-height: 1; margin: 8px 0; }
+.study-big { font-size: 1.2rem; font-family: var(--font-heading); }
+.study-options { display: grid; gap: 8px; grid-template-columns: 1fr; text-align: left; }
+@media (min-width: 560px) { .study-options { grid-template-columns: 1fr 1fr; } }
+.study-option { display: flex; align-items: center; gap: 8px; padding: 10px 12px; min-height: 48px; text-align: left; }
+.study-option.right { border-color: #3c8a4a; background: color-mix(in srgb, #3c8a4a 15%, var(--surface)); }
+.study-option.wrong { border-color: var(--warn); background: color-mix(in srgb, var(--warn) 15%, var(--surface)); }
+.study-ok { color: #3c8a4a; font-weight: 600; }
+.study-no { color: var(--warn); font-weight: 600; }
+.study-card .hex-head { text-align: left; }
+.verse-list { padding-left: 1.2rem; }
+.verse-list li { margin: 4px 0; }
+.verse-list.plain { list-style: none; padding-left: 0; }
+.study-card select { font-size: 1.5rem; min-width: 4.5rem; }
