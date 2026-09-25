@@ -6,7 +6,7 @@ Tài liệu này ghi cách phần Kinh & Truyện (`public/data/commentary.json`
 
 1. **Chữ Hán không bao giờ gõ tay hay để AI chép lại.** Lời quẻ, lời hào, Thoán truyện, Đại tượng, Tiểu tượng đều trích bằng script từ Kanripo KR1a0001 (`scripts/kanripo.ts`).
 2. **Mọi câu chuyện, điển tích, nhân vật, "cách hiểu khác" phải có nguồn thật và ghi rõ ai nói.** Nguồn hợp lệ là nguyên văn Kinh/Thập Dực, Trình Di, Chu Hy, và sách của Nguyễn Hiến Lê (cùng những người ông dẫn, ví dụ Phan Bội Châu, ghi rõ là ông dẫn). Không tìm thấy trong nguồn thì bỏ. Không viết theo trí nhớ.
-3. **Phần tiếng Việt là lời tự dịch và tự giảng từ chữ Hán.** Không chép hay mô phỏng câu chữ của bản dịch hiện đại còn bản quyền. Sách *Kinh Dịch – Đạo của người quân tử* của Nguyễn Hiến Lê (mất 1984) còn được bảo hộ đến hết năm 2034, nên chỉ dùng để đối chiếu nghĩa. Mục "Nguyễn Hiến Lê" trong `views` là tóm ý bằng lời riêng.
+3. **Phần tiếng Việt là lời tự dịch và tự giảng từ chữ Hán.** Bản cohoc.net của Phan Bội Châu, Ngô Tất Tố là OCR từ bản in hiện đại (có thể lẫn chú thích còn bản quyền), nên chỉ dùng để đối chiếu, tóm ý bằng lời riêng. Không chép hay mô phỏng câu chữ của bản dịch hiện đại còn bản quyền. Sách *Kinh Dịch – Đạo của người quân tử* của Nguyễn Hiến Lê (mất 1984) còn được bảo hộ đến hết năm 2034, nên chỉ dùng để đối chiếu nghĩa. Mục "Nguyễn Hiến Lê" trong `views` là tóm ý bằng lời riêng.
 4. **Khác trường phái không phải là sai.** Chỗ Trình Di, Chu Hy, Nguyễn Hiến Lê hiểu khác nhau thì giữ bản diễn giải đang có và ghi các cách hiểu vào `views`. Chỉ sửa khi app hiểu sai hẳn: đảo chủ thể, đảo phán từ, nhầm chữ then chốt.
 5. **Cấu trúc hào không viết tay.** Đắc chính, đắc trung, ứng, âm cưỡi hay đỡ dương đều tính từ hình quẻ (`src/lib/structure.ts`).
 
@@ -18,6 +18,8 @@ Tài liệu này ghi cách phần Kinh & Truyện (`public/data/commentary.json`
 | Trình Di, *Y Xuyên Dịch truyện* | [kanripo/KR1a0016](https://github.com/kanripo/KR1a0016) | tóm ý Trình Di trong `views` |
 | Chu Hy, *Chu Dịch bản nghĩa* (bản gốc) | [kanripo/KR1a0031](https://github.com/kanripo/KR1a0031) | tóm ý Chu Hy trong `views`; quyển 9–10 là Văn ngôn truyện |
 | Nguyễn Hiến Lê, *Kinh Dịch – Đạo của người quân tử* | bản của người dùng (PDF) | đối chiếu nghĩa; tóm ý riêng của ông |
+| Phan Bội Châu, *Quốc văn Chu Dịch diễn giải* (mất 1940, công cộng) | cohoc.net (`q-qid-2461…2524`), scan: archive.org `QuocVanChuDichDiennGiaiPhanBoiiChau` | đối chiếu nghĩa; view "Phan Bội Châu" (tóm ý) |
+| Ngô Tất Tố, *Kinh Dịch* (mất 1954, công cộng) | cohoc.net (`que-so-N-kinh-dich-ngo-tat-to-qid-{2396+N}`), scan: archive.org `KinhDichTronBoNgoTatTo` | đối chiếu bản dịch Trình Di / Chu Hy; view Tiên Nho ghi "(Ngô Tất Tố dẫn)" |
 | Unihan (kVietnamese) | unicode.org | kiểm âm Hán Việt (`verify-originals`) |
 
 ## Dựng lại dữ liệu

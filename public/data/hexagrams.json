@@ -2584,7 +2584,7 @@
         ],
         "characteristicRisk": "Sống quen với một tình trạng dở dang mãi, không khỏi mà cũng không đổ.",
         "commonFailure": "Người ở vị trí này thường chấp nhận tình trạng dở dang như vĩnh viễn, hoặc tìm vui trong hưởng thụ để quên áp lực.",
-        "traditionalCounsel": "Truyền thống khuyên rằng giữ chính mà mang bệnh, lâu mà không chết; vì cưỡi lên hào cứng, nhưng còn giữ đạo trung nên chưa mất.",
+        "traditionalCounsel": "Truyền thống khuyên rằng mang bệnh dai dẳng mà lâu vẫn không chết; vì cưỡi lên hào cứng nên thành bệnh, nhưng còn giữ đạo trung nên chưa mất.",
         "whatTendsToFollow": "Nếu tiếp tục chìm, người ở đây thường trượt sang sự mê muội trong vui của hào 6; nếu tỉnh, vẫn còn cửa để đổi.",
         "reflectionQuestions": [
           "Căn bệnh kéo dài trong việc này là gì, nếu gọi đúng tên?",
@@ -3093,7 +3093,7 @@
         ],
         "characteristicRisk": "Rút lui hẳn và cắt đứt khỏi những người đang cần giúp đỡ; hoặc can thiệp quá sâu vào việc không còn là của mình.",
         "commonFailure": "Người ở vị trí này thường hoặc biến mất hoàn toàn, hoặc không chịu buông và chỉ đạo người kế nhiệm từ phía sau.",
-        "traditionalCounsel": "Truyền thống khuyên rằng tới gần bằng lòng đôn hậu thì tốt và không lỗi; chí ở chỗ nâng đỡ bên trong, không ở chỗ giữ quyền.",
+        "traditionalCounsel": "Truyền thống khuyên rằng tới gần bằng lòng đôn hậu thì tốt và không lỗi; người ở trên mà chí hướng về người hiền ở dưới, hạ mình tôn trọng và thuận theo họ, là sự dày dặn nhất.",
         "whatTendsToFollow": "Sau thời gần gũi và lớn mạnh, việc thường chuyển sang lúc lùi lại để quan sát và được quan sát — tinh thần của quẻ Quan.",
         "reflectionQuestions": [
           "Người bạn đang nâng đỡ có cần bạn theo đúng cách bạn đang giúp không?",
@@ -4311,7 +4311,7 @@
         "tier": "human",
         "original": "Lục tam: Phất di, trinh hung, thập niên vật dụng, vô du lợi.",
         "originalHan": "六三：拂頤貞、凶，十年勿用，无攸利。",
-        "situation": "Bạn nuôi mình bằng thứ trái với bản chất của sự nuôi dưỡng: chỉ làm dễ chịu trước mắt mà không bồi bổ. Kiểu sống này có thể kéo dài nhiều năm mà không đi tới đâu.",
+        "situation": "Bạn nuôi mình bằng thứ trái với bản chất của sự nuôi dưỡng: chỉ làm dễ chịu trước mắt mà không bồi bổ. Theo lối này thì dù bao lâu cũng không dùng được vào việc gì.",
         "behavioralSignals": [
           "Một thói quen tiêu hao (mua sắm, rượu bia, lướt mạng, ăn đêm) đã lặp lại gần như mỗi ngày trong nhiều tháng",
           "Bạn đã đặt mốc bỏ thói quen ấy ít nhất hai lần rồi lùi mốc",
@@ -6462,7 +6462,7 @@
         "tier": "heaven",
         "original": "Lục ngũ: Quân tử duy hữu giải, cát, hữu phu vu tiểu nhân.",
         "originalHan": "六五：君子維有解，吉，有孚于小人。",
-        "situation": "Bạn ở vị trí có thể tự giải thoát khỏi những ảnh hưởng tiêu cực, và cách bạn làm điều đó rõ tới mức chính những người ấy cũng thừa nhận và tự lui.",
+        "situation": "Bạn ở vị trí có thể dứt khỏi những ảnh hưởng tiêu cực quanh mình — người xu nịnh, những thói quen cũ cùng loại với chính mình. Dấu hiệu cho thấy bạn đã thật sự dứt được không nằm ở lời tuyên bố, mà ở chỗ những ảnh hưởng ấy đã rời xa bạn.",
         "behavioralSignals": [
           "Bạn đã thay đổi cách làm việc hoặc sinh hoạt một cách nhất quán trong vài tháng, không chỉ tuyên bố",
           "Những người từng lợi dụng hoặc kéo bạn xuống đã tự thôi tìm đến",
@@ -6471,7 +6471,7 @@
         ],
         "characteristicRisk": "Tuyên bố cắt đứt nhưng hành vi vẫn giữ nguyên, khiến không ai tin sự thay đổi.",
         "commonFailure": "Người ở vị trí này thường nói nhiều về sự thay đổi của mình, và lời nói đi trước việc làm.",
-        "traditionalCounsel": "Truyền thống khuyên rằng người quân tử có cách tự giải thì tốt, lấy đó mà làm cho kẻ tiểu nhân tin phục và tự lui.",
+        "traditionalCounsel": "Truyền thống khuyên rằng người quân tử chỉ có cởi bỏ được kẻ tiểu nhân quanh mình thì mới tốt; muốn biết mình đã thật sự cởi được chưa, cứ xem kẻ tiểu nhân đã lui đi hay vẫn còn bám bên cạnh.",
         "whatTendsToFollow": "Khi phần lớn đã được giải, thường còn lại một trở ngại cuối ở vị trí cao, chờ một cú dứt điểm (hào 6).",
         "reflectionQuestions": [
           "Người quanh bạn thấy sự thay đổi của bạn qua việc gì cụ thể?",
@@ -6957,7 +6957,7 @@
         ],
         "characteristicRisk": "Nương tay vì tình cảm, để điều cần dứt mọc lại.",
         "commonFailure": "Người ở vị trí này thường cắt nửa vời: tuyên bố dứt nhưng để lại một kẽ hở, hoặc cắt quá tay rồi áy náy mà mở lại.",
-        "traditionalCounsel": "Truyền thống khuyên rằng rau dền mọc dai, dứt thì dứt cho quyết, giữ đường trung thì không lỗi; trung mà lòng chưa sáng thì vẫn chưa đủ.",
+        "traditionalCounsel": "Truyền thống khuyên rằng dứt như bẻ cọng rau sam, đã dứt thì dứt cho quyết, giữ đường trung thì không lỗi; trung mà lòng chưa sáng thì vẫn chưa đủ.",
         "whatTendsToFollow": "Khi dứt điểm bằng cách công bằng, điều sai còn sót lại thường rơi vào thế cô, không ai bênh (hào 6).",
         "reflectionQuestions": [
           "Điều gì khiến việc này cứ mọc lại sau mỗi lần cắt?",
@@ -7212,7 +7212,7 @@
         ],
         "characteristicRisk": "Nghĩ mình cần thể hiện nhiều để được chấp nhận, rồi đánh mất sự tự nhiên.",
         "commonFailure": "Người ở vị trí này thường ra sức thể hiện trong vài buổi đầu, làm người khác nghi động cơ, và đánh mất chính sự chân thành đã khiến mình được dẫn vào.",
-        "traditionalCounsel": "Truyền thống khuyên rằng được dẫn dắt thì tốt, không lỗi; có lòng thành thì lễ mọn như lễ thược mùa xuân cũng đủ.",
+        "traditionalCounsel": "Truyền thống khuyên rằng được dẫn dắt thì tốt, không lỗi; có lòng thành thì lễ mọn như lễ tế Thược đơn sơ cũng đủ.",
         "whatTendsToFollow": "Bên cạnh người được dẫn vào, thường có người chưa được ai dẫn, đứng ngoài và thở than (hào 3).",
         "reflectionQuestions": [
           "Nếu chỉ đến bằng chính mình, bạn lo thiếu điều gì?",
@@ -8013,7 +8013,7 @@
         "tier": "earth",
         "original": "Cửu nhị: Đỉnh hữu thực, ngã cừu hữu tật, bất ngã năng tức, cát.",
         "originalHan": "九二：鼎有實，我仇有疾，不我能即，吉。",
-        "situation": "Bạn có thực lực, có việc thật trong tay. Có người ganh ghét hoặc đối đầu, nhưng họ đang vướng chuyện riêng và không chạm tới được bạn khi bạn giữ mình cẩn trọng.",
+        "situation": "Bạn có thực lực, có việc thật trong tay. Người ở sát bên ghen ghét hoặc muốn kéo bạn vào một quan hệ không chính đáng, nhưng khi bạn giữ mình ngay thẳng và cẩn trọng chỗ đi thì họ không đến gần được.",
         "behavioralSignals": [
           "Bạn đang giữ một phần việc cốt lõi mang lại kết quả đo được: doanh số, sản phẩm, bữa cơm cho cả nhà",
           "Một đồng nghiệp, họ hàng hoặc đối thủ đã nhiều lần nói xấu hoặc tìm cách kéo bạn vào tranh cãi",
@@ -8627,7 +8627,7 @@
     "upperTrigram": "zhen",
     "theme": "Bước vào một mối gắn bó hay vị trí vì bị cảm xúc cuốn đi, khi hai bên không tương xứng và cách bắt đầu không đúng đắn; khởi đầu lệch thì về sau khó có lợi.",
     "stageInCycle": "transitional",
-    "judgment": "“Quy muội: chinh hung, vô du lợi.” — Người em gái theo chị về nhà chồng ở vị trí thứ yếu, bị cảm xúc đẩy đi hơn là được sắp đặt đúng. Chủ động lấn tới ở vị trí này thường mang lại rắc rối, khó có lợi. Tình huống đòi bạn nhìn rõ vai của mình và giữ được lâu dài.",
+    "judgment": "“Quy muội: chinh hung, vô du lợi.” — Người con gái trẻ vì vui lòng mà tự động theo người đàn ông, không đi theo lễ và thứ tự đúng; cả chỗ đứng lẫn cách bắt đầu đều lệch. Tiến tới trong thế ấy thường mang lại rắc rối, khó có lợi. Tình huống đòi bạn thấy chỗ lệch ngay từ đầu để lo cho mối gắn bó được bền về sau.",
     "judgmentHan": "歸妹：征凶，无攸利。",
     "sequenceNote": "Tiến thì ắt có chỗ về; Tiệm là tiến dần đến nơi về. Vì thế Quy Muội tiếp sau Tiệm.",
     "oppositeHexagram": 53,
@@ -8693,7 +8693,7 @@
         ],
         "characteristicRisk": "Tự hạ giá để được chọn, rồi bị đặt vào chỗ thấp hơn mong muốn.",
         "commonFailure": "Người ở vị trí này thường không chờ được theo lối chính, đi đường tắt, và trả giá bằng vị thế lâu dài.",
-        "traditionalCounsel": "Truyền thống khuyên rằng em gái về nhà chồng mà mong chỗ không phải của mình thì bị trả về làm vợ thứ; vị không chính thì cầu không hợp.",
+        "traditionalCounsel": "Truyền thống khuyên rằng người con gái không chính, lấy sự chiều lòng mà cầu gả thì không ai rước, phải chờ mãi; muốn có chỗ về thì đành quay lại chịu phận vợ lẽ. Vị không chính thì cầu không hợp, nên tự trọng mà giữ chính.",
         "whatTendsToFollow": "Khi đã thấy cái giá của đường tắt, người ở đây thường chọn chờ đúng lúc, dù lâu (hào 4).",
         "reflectionQuestions": [
           "Điều bạn đang đổi lấy chỗ vào này có đáng không, nếu tính trong ba năm?",
@@ -9364,7 +9364,7 @@
         ],
         "characteristicRisk": "Kéo dài sự cân nhắc tới mức bị cái hấp dẫn nhưng có hại lôi đi.",
         "commonFailure": "Người ở vị trí này thường mặc cả với chính mình (“lần cuối thôi”), giữ cả hai lựa chọn quá lâu.",
-        "traditionalCounsel": "Truyền thống khuyên rằng bàn tính điều vui mà chưa yên thì cần vạch ranh giới với cái bệnh; cách ly được cái hại thì có mừng.",
+        "traditionalCounsel": "Truyền thống khuyên rằng cân nhắc điều vui mà chưa yên thì phải cương quyết dứt bỏ cái tà hại đang cám dỗ mình, theo người chính đáng; làm được vậy thì có mừng.",
         "whatTendsToFollow": "Khi đã chọn, người ta thường lên vị trí lớn hơn — và ở đó, cái gặm mòn hay đến dưới dạng lời tin cậy ngọt ngào (hào 5).",
         "reflectionQuestions": [
           "Nếu cắt hẳn cái hấp dẫn kia, bạn mất cụ thể những gì?",
@@ -9665,7 +9665,7 @@
         ],
         "characteristicRisk": "Đổ lỗi cho hoàn cảnh thay vì nhìn vào sự thiếu tiết độ của mình.",
         "commonFailure": "Người ở vị trí này thường than mà không đổi, hoặc chuyển từ buông thả sang khắt khe cực đoan rồi lại buông.",
-        "traditionalCounsel": "Truyền thống khuyên rằng không biết tiết độ thì đến lúc than thở; tự mình gây ra thì còn trách ai — biết than mà sửa thì không lỗi.",
+        "traditionalCounsel": "Truyền thống khuyên rằng không biết tiết độ thì đến lúc phải than thở; tai họa do mình tự gây ra thì còn trách ai được — nếu biết tự tiết chế từ trước thì đã tránh được lỗi.",
         "whatTendsToFollow": "Khi chừng mực được dựng lại từ trải nghiệm, nó dần trở nên tự nhiên, không gượng (hào 4).",
         "reflectionQuestions": [
           "Mức giới hạn bị vượt đầu tiên là ở đâu, và lúc đó chuyện gì xảy ra?",
@@ -9957,7 +9957,7 @@
         "tier": "earth",
         "original": "Lục nhị: Quá kỳ tổ, ngộ kỳ tỉ; bất cập kỳ quân, ngộ kỳ thần, vô cữu.",
         "originalHan": "六二：過其祖，遇其妣。不及其君，遇其臣。无咎。",
-        "situation": "Bạn đi vòng qua một bậc để gặp người hợp với mình hơn, nhưng không vượt lên tới người đứng đầu mà dừng ở người giúp việc của họ. Bạn biết dừng ở mức vừa đủ.",
+        "situation": "Bạn tiến lên, vượt qua một bậc để gặp người hợp với mình hơn, nhưng dừng lại trước khi ngang hàng người đứng đầu, giữ đúng phận của người giúp việc. Bạn vượt một chút mà không vượt phận.",
         "behavioralSignals": [
           "Thay vì đi thẳng tới giám đốc hay người quyết định, bạn làm việc qua trợ lý, trưởng nhóm hoặc người thân cận của họ",
           "Khi người chính khó tiếp cận, bạn tìm đến một bậc trên gần gũi hơn với mình (bà thay vì ông, chị thay vì anh)",
@@ -9965,7 +9965,7 @@
           "Đã có lúc bạn muốn “vượt rào” lên thẳng cấp cao nhất nhưng dừng lại"
         ],
         "characteristicRisk": "Vượt quá cấp bậc, chạm tới những người không thuộc tầm mình và làm mất lòng người trung gian.",
-        "commonFailure": "Người ở vị trí này thường nóng vội đi thẳng lên người đứng đầu, bỏ qua người giúp việc, rồi bị chặn ở những bước sau.",
+        "commonFailure": "Người ở vị trí này thường nhân đà được việc mà lấn lên ngang hàng người đứng đầu, quên phận mình, rồi bị chặn ở những bước sau.",
         "traditionalCounsel": "Truyền thống khuyên rằng qua ông mà gặp bà, không tới vua mà gặp bề tôi thì không lỗi; bề tôi không được vượt quá phận.",
         "whatTendsToFollow": "Chỗ dễ vấp tiếp theo là tự tin quá mà không phòng bị ở mức cần thiết (hào 3).",
         "reflectionQuestions": [
@@ -10049,7 +10049,7 @@
         "tier": "heaven",
         "original": "Thượng lục: Phất ngộ quá chi, phi điểu ly chi, hung, thị vị tai sảnh.",
         "originalHan": "上六：弗遇、過之，飛鳥離之，凶，是謂災眚。",
-        "situation": "Bạn vượt quá mà không gặp điểm dừng, như chim bay mãi rồi sa lưới. Sự thái quá đã tới cùng, và tai họa thường từ chính mình mà ra.",
+        "situation": "Bạn vượt quá mà không dừng ở chỗ hợp lẽ, như chim cứ bay mãi, càng lúc càng xa, không kéo lại được. Sự thái quá đã tới cùng, và họa có thể đến cả từ hoàn cảnh lẫn từ chính việc mình làm.",
         "behavioralSignals": [
           "Bạn tiếp tục tăng mức cược (vay thêm, nhận thêm, hứa thêm) dù các chỉ số đã xấu trong vài tháng",
           "Nhiều người thân và đồng nghiệp đã góp ý, và bạn ngừng nghe họ",
@@ -10057,8 +10057,8 @@
           "Đã có một sự cố nhỏ (cảnh báo, tiền phạt, chấn thương) mà bạn bỏ qua"
         ],
         "characteristicRisk": "Tiếp tục vượt quá tới mức tự chuốc lấy tai họa.",
-        "commonFailure": "Người ở vị trí này thường cho rằng chỉ cần thêm một bước nữa là tới, và bước ấy chính là bước sa lưới.",
-        "traditionalCounsel": "Truyền thống khuyên rằng không gặp mà vượt quá, chim bay mà mắc lưới là xấu, đó là tai họa tự chuốc; ở thời Tiểu Quá mà lên cao cùng cực thì không còn chỗ dừng.",
+        "commonFailure": "Người ở vị trí này thường cho rằng chỉ cần thêm một bước nữa là tới, và chính bước ấy đưa họ đi quá xa, không còn đường quay lại.",
+        "traditionalCounsel": "Truyền thống khuyên rằng không gặp lẽ phải mà cứ vượt quá, như chim bay đi xa mãi không kéo lại được, là xấu; quá đến cùng cực thì cả họa trời (tai) lẫn lỗi người (sảnh) cùng kéo đến.",
         "whatTendsToFollow": "Khi những việc nhỏ đã được vượt qua đúng tầm, việc thường đi tới chỗ hoàn thành — quẻ Ký Tế.",
         "reflectionQuestions": [
           "Điểm dừng của bạn trong việc này ở đâu, và bạn đã vượt qua nó chưa?",
