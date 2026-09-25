@@ -2,6 +2,8 @@
 
 Tài liệu cho người (hoặc agent) viết và sửa `public/data/hexagrams.json`. Đọc hết trước khi viết.
 
+Phần Kinh & Truyện (`commentary.json`) và quy tắc trích nguồn, đối chiếu: xem [quy-trinh-noi-dung.md](quy-trinh-noi-dung.md). Mọi câu chuyện, điển tích, cách hiểu khác phải có nguồn thật; không viết theo trí nhớ.
+
 ## Giọng văn — đọc trước
 
 Người dùng có quẻ (tự ghép hai quái hoặc gieo), rồi đọc lời hào *như ghi chép của những người từng đứng ở đúng vị trí ấy*. Dù quẻ đến bằng cách nào, lời hào trong dữ liệu vẫn viết như mô tả một dạng tình huống nén từ kinh nghiệm quá khứ (tinh thần Trình Di, Vương Phu Chi), không phải lời tiên tri. Đây là quy ước văn phong, không còn lint tự động.
