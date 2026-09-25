@@ -4,6 +4,7 @@ import { isYang, readCast, tossCoins, type LineValue } from '../lib/cast';
 import type { StaticData } from '../data/load';
 import { fullHexagramName } from '../data/names';
 import { HexagramFigure } from './HexagramFigure';
+import { Term } from './Term';
 
 /**
  * Bàn gieo: mỗi lần bấm tung ba đồng xu cho hào kế tiếp (từ dưới lên). Đủ 6
@@ -97,7 +98,7 @@ export function CastSummary({ reading, data }: { reading: ReturnType<typeof read
           </p>
           <p>{p.theme}</p>
           <p className="muted small">
-            {reading.moving.length ? t('cast.moving', { lines: reading.moving.join(', ') }) : t('cast.noMoving')}
+            {reading.moving.length ? t('cast.moving', { lines: reading.moving.join(', ') }) : t('cast.noMoving')} <Term k="haoDong" />
           </p>
         </div>
       </div>
@@ -105,7 +106,9 @@ export function CastSummary({ reading, data }: { reading: ReturnType<typeof read
         <div className="hex-head">
           <HexagramFigure binary={tr.binary} size={48} label={fullHexagramName(tr)} />
           <div>
-            <p className="small-caps">{t('cast.transformed')}</p>
+            <p className="small-caps">
+              {t('cast.transformed')} <Term k="queBien" />
+            </p>
             <h3>
               {tr.kingWenNumber}. {tr.nameHanViet} <span className="han">{tr.nameHan}</span>
             </h3>

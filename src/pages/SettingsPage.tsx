@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
+import { Link } from 'react-router-dom';
 import { db, getSettings } from '../db/db';
 import { BackupError, exportAll, importAll, importProfiles, parseBackup, serializeBackup } from '../db/backup';
 import { downloadText } from '../lib/download';
@@ -130,6 +131,9 @@ export function SettingsPage() {
         />
       </div>
       {message && <p className="note">{message}</p>}
+      <p className="small">
+        <Link to="/welcome">{t('welcome.again')}</Link>
+      </p>
       <p className="muted small">{t('settings.privacy')}</p>
     </section>
   );

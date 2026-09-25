@@ -9,6 +9,7 @@ import { STAGES, TRIGRAM_KEYS, type LinePosition, type StageInCycle, type Trigra
 import { HexagramFigure } from '../ui/HexagramFigure';
 import { LineReading } from '../ui/LineReading';
 import { TRIGRAM_SYMBOL } from '../flow/steps/Step2Trigrams';
+import { Term } from '../ui/Term';
 
 /** Thư viện: tra cứu 64 quẻ. */
 export function LibraryPage() {
@@ -125,7 +126,9 @@ export function HexagramPage() {
       </section>
 
       <section>
-        <h2>{t('library.lines')}</h2>
+        <h2>
+          {t('library.lines')} <Term k="hao" />
+        </h2>
         {([1, 2, 3, 4, 5, 6] as LinePosition[]).map((pos) => (
           <div key={pos} id={`line-${pos}`} className="card library-line">
             <h3>

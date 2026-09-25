@@ -5,6 +5,7 @@ import { HexagramFigure } from '../../ui/HexagramFigure';
 import { ChoiceGroup, TextArea } from '../../ui/controls';
 import { derivedHexagram } from '../draft';
 import { CastBoard } from '../../ui/CastBoard';
+import { Term } from '../../ui/Term';
 import type { StepProps } from './types';
 
 export const TRIGRAM_SYMBOL: Record<TrigramKey, string> = {
@@ -63,7 +64,11 @@ export function Step2Trigrams({ d, set, data }: StepProps) {
     <div className="stack">
       {chooser}
       <ChoiceGroup
-        label={<h2>{t('step2.innerQuestion')}</h2>}
+        label={
+          <h2>
+            {t('step2.innerQuestion')} <Term k="quai" />
+          </h2>
+        }
         layout="grid"
         options={trigramOptions(data.trigrams, 'inner')}
         value={d.innerTrigram}

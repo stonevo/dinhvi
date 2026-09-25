@@ -5,6 +5,7 @@ import { oppositeHexagram, opposingLine } from '../../lib/iching';
 import { LineReading } from '../../ui/LineReading';
 import { HexagramLinePicker, TextArea, hexagramOptionLabel } from '../../ui/controls';
 import { derivedHexagram } from '../draft';
+import { Term } from '../../ui/Term';
 import type { StepProps } from './types';
 
 /**
@@ -28,6 +29,8 @@ export function Step6Critic({ d, set, data }: StepProps) {
         <button type="button" aria-pressed={preview === 'opposingLine'} onClick={() => setPreview(preview === 'opposingLine' ? null : 'opposingLine')}>
           {t('step6.showOpposingLine')}
         </button>
+        <Term k="bangThong" />
+        <Term k="haoDoi" />
       </div>
       {preview && (
         <section className="card preview">

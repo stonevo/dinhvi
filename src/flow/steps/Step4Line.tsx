@@ -4,6 +4,7 @@ import { linesOfTier } from '../../lib/iching';
 import { readCast } from '../../lib/cast';
 import { ChoiceGroup, TextArea } from '../../ui/controls';
 import { derivedHexagram, signalCount } from '../draft';
+import { Term } from '../../ui/Term';
 import type { StepProps } from './types';
 
 /**
@@ -24,7 +25,11 @@ export function Step4Line({ d, set, data }: StepProps) {
       )}
 
       <ChoiceGroup
-        label={<h2>{t('step4.tierQuestion')}</h2>}
+        label={
+          <h2>
+            {t('step4.tierQuestion')} <Term k="tang" />
+          </h2>
+        }
         layout="column"
         options={(['earth', 'human', 'heaven'] as Tier[]).map((v) => ({ value: v, label: t(`tier.${v}`) }))}
         value={d.tier}
@@ -104,7 +109,11 @@ export function Step4Line({ d, set, data }: StepProps) {
         <>
           <p className="muted small">{t('step4.countNote')}</p>
           <ChoiceGroup
-            label={<h2>{t('step4.choose')}</h2>}
+            label={
+              <h2>
+                {t('step4.choose')} <Term k="hao" />
+              </h2>
+            }
             options={candidates.map((pos) => ({ value: pos as LinePosition, label: t('step4.pick', { n: pos }) }))}
             value={d.line}
             onChange={(v) => set({ line: v })}

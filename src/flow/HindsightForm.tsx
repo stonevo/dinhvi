@@ -6,6 +6,7 @@ import { db } from '../db/db';
 import { saveHindsight } from '../db/positionings';
 import { formatPeriod } from '../lib/period';
 import { HexagramFigure } from '../ui/HexagramFigure';
+import { Term } from '../ui/Term';
 import { ChoiceGroup, HexagramLinePicker, TextArea, hexagramOptionLabel } from '../ui/controls';
 
 /** Nhìn lại một kỳ đã qua: kỳ đó thực sự ở đâu, chuyện gì đã xảy ra. */
@@ -34,7 +35,9 @@ export function HindsightForm({ record, data, onSaved }: { record: Positioning; 
 
   return (
     <div className="stack">
-      <h1>{t('hindsight.title', { period: formatPeriod(record.period) })}</h1>
+      <h1>
+        {t('hindsight.title', { period: formatPeriod(record.period) })} <Term k="nhinLai" />
+      </h1>
       <p className="muted">{t('hindsight.intro')}</p>
 
       <section className="card readonly">

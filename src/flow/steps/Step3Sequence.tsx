@@ -4,6 +4,7 @@ import { previousInSequence } from '../../lib/iching';
 import { HexagramFigure } from '../../ui/HexagramFigure';
 import { ChoiceGroup, TextArea } from '../../ui/controls';
 import { derivedHexagram } from '../draft';
+import { Term } from '../../ui/Term';
 import type { StepProps } from './types';
 
 /** Bước 3 — Kiểm tra Tự quái: quẻ đứng trước có giống quãng vừa qua không. */
@@ -19,7 +20,9 @@ export function Step3Sequence({ d, set, data, goTo }: StepProps) {
       </p>
       {prev ? (
         <section className="card">
-          <h3 className="small-caps">{t('step3.previous')}</h3>
+          <h3 className="small-caps">
+            {t('step3.previous')} <Term k="tuQuai" />
+          </h3>
           <div className="hex-head">
             <HexagramFigure binary={prev.binary} size={48} label={fullHexagramName(prev)} />
             <div>

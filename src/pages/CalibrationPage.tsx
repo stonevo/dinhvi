@@ -5,6 +5,7 @@ import { t } from '../i18n';
 import { MIN_HINDSIGHT_RECORDS, calibrationReport, type Ratio } from '../lib/calibration';
 import { positioningsToCsv } from '../lib/csv';
 import { downloadText } from '../lib/download';
+import { Term } from '../ui/Term';
 
 const pct = (r: Ratio) => (r.rate === null ? t('cal.na') : `${Math.round(r.rate * 100)}%`);
 
@@ -26,7 +27,9 @@ export function CalibrationPage() {
 
   return (
     <div className="stack">
-      <h1>{t('nav.calibration')}</h1>
+      <h1>
+        {t('nav.calibration')} <Term k="hieuChinh" />
+      </h1>
       <div className="row">
         <button type="button" onClick={exportCsv} disabled={q.positionings.length === 0}>
           {t('cal.exportCsv')}

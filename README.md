@@ -4,6 +4,14 @@ Nhật ký định vị định kỳ theo 64 quẻ × 6 hào của Kinh Dịch. 
 
 Ngoài luồng định vị còn có mục **Gieo quẻ** riêng: gieo, xem quẻ chính / hào động / quẻ biến, lưu lịch sử — tách khỏi quỹ đạo và thống kê.
 
+Dùng cho mình và cho người khác:
+
+- **Hồ sơ**: mỗi người một bộ lĩnh vực, bản ghi, quỹ đạo, hiệu chỉnh, lần gieo; chọn trên thanh đầu trang, xuất/nhập riêng từng hồ sơ.
+- **Bản gửi**: bản tóm tắt gọn cho người được định vị (in, lưu ảnh, chia sẻ dạng chữ).
+- **Nhân chứng qua link**: gửi link/QR một câu hỏi, nhận lại mã trả lời — không cần server.
+- **Ghi nhanh**: một quẻ, một hào, một dòng giữa hai kỳ; không tính vào hiệu chỉnh.
+- **Thư viện 64 quẻ**, **hướng dẫn lần đầu**, và giải thích thuật ngữ (ⓘ) ngay tại chỗ.
+
 ## Cơ chế chính
 
 | Cơ chế | Ở đâu |

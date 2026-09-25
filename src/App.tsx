@@ -1,4 +1,7 @@
-import { NavLink, Route, Routes, useLocation } from 'react-router-dom';
+import { Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { db, getSettings } from './db/db';
+import { WelcomePage } from './pages/WelcomePage';
 import { t } from './i18n';
 import { HomePage } from './pages/HomePage';
 import { SettingsPage } from './pages/SettingsPage';
@@ -16,8 +19,12 @@ import { QuickNotePage } from './pages/QuickNotePage';
 import { WitnessPage } from './pages/WitnessPage';
 
 export function App() {
+  const { pathname, state } = useLocation();
+  const justOnboarded = (state as { onboarded?: boolean } | null)?.onboarded === true;
+  const isWitness = pathname === '/witness';
+  const settings = useLiveQuery(() => (isWitness ? undefined : getSettings(db)), [isWitness]);
   // Trang nhân chứng mở từ link gửi đi: đứng riêng, không có điều hướng của app.
-  if (useLocation().pathname === '/witness')
+  if (isWitness)
     return (
       <div className="shell">
         <main className="page">
@@ -42,7 +49,8 @@ export function App() {
       </header>
       <main className="page">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={settings && !settings.onboarded && !justOnboarded ? <Navigate to="/welcome" replace /> : <HomePage />} />
+          <Route path="/welcome" element={<WelcomePage />} />
           <Route path="/position/:domainId" element={<PositioningPage />} />
           <Route path="/quick/:domainId" element={<QuickNotePage />} />
           <Route path="/record/:id" element={<RecordPage />} />
