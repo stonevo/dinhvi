@@ -14,9 +14,9 @@ Tài liệu này ghi cách phần Kinh & Truyện (`public/data/commentary.json`
 
 | Nguồn | Kho | Dùng cho |
 |---|---|---|
-| Chu Dịch (kinh văn + Thập Dực) | [kanripo/KR1a0001](https://github.com/kanripo/KR1a0001) | chữ Hán: lời quẻ, lời hào, Thoán, Tượng |
+| Chu Dịch (kinh văn + Thập Dực) | [kanripo/KR1a0001](https://github.com/kanripo/KR1a0001) | chữ Hán: lời quẻ, lời hào, Thoán, Tượng, Văn ngôn (Càn, Khôn) |
 | Trình Di, *Y Xuyên Dịch truyện* | [kanripo/KR1a0016](https://github.com/kanripo/KR1a0016) | tóm ý Trình Di trong `views` |
-| Chu Hy, *Chu Dịch bản nghĩa* (bản gốc) | [kanripo/KR1a0031](https://github.com/kanripo/KR1a0031) | tóm ý Chu Hy trong `views` |
+| Chu Hy, *Chu Dịch bản nghĩa* (bản gốc) | [kanripo/KR1a0031](https://github.com/kanripo/KR1a0031) | tóm ý Chu Hy trong `views`; quyển 9–10 là Văn ngôn truyện |
 | Nguyễn Hiến Lê, *Kinh Dịch – Đạo của người quân tử* | bản của người dùng (PDF) | đối chiếu nghĩa; tóm ý riêng của ông |
 | Unihan (kVietnamese) | unicode.org | kiểm âm Hán Việt (`verify-originals`) |
 
@@ -34,7 +34,7 @@ npm run check:data
 
 ## Tách nguồn theo quẻ (để giao việc cho từng đợt)
 
-- **KR1a0001:** mỗi quẻ một file sẵn.
+- **KR1a0001:** mỗi quẻ một file sẵn. Văn ngôn của Càn, Khôn tách thành đoạn theo danh sách điểm ngắt `WENYAN_BREAKS` trong `scripts/kanripo.ts` (Càn 16 đoạn, Khôn 7 đoạn).
 - **KR1a0016 / KR1a0031:** mỗi quyển gồm nhiều quẻ. Tách theo tiêu đề `(X下/Y上)` rồi tra số quẻ từ hai quái, **không tách theo ký hiệu ䷀–䷿**, vì bản số hóa gõ sai ký hiệu ở nhiều quẻ (ví dụ quẻ Tỉnh, Ký Tế, Kiển).
   - Tên quái có dị thể: 兌/兑/兊, 巽/㢲.
   - Bản Chu Hy có một tiêu đề sai: Tiểu Súc ghi `(乾下/坤上)`, phải sửa thành `(乾下/巽上)` trước khi tách.

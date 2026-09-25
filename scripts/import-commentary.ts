@@ -19,7 +19,8 @@ const current = new Map<number, HexagramCommentary>(
 );
 
 type ViPart = Partial<Omit<CommentaryPart, 'imageHan'>>;
-type Vi = { judgment?: ViPart & { tuan?: string }; lines?: ViPart[]; allMoving?: ViPart };
+type ViWenyan = { title?: string; vi?: string; explain?: string; views?: CommentaryPart['views'] };
+type Vi = { judgment?: ViPart & { tuan?: string }; lines?: ViPart[]; allMoving?: ViPart; wenyan?: ViWenyan[] };
 
 const empty = { literal: '', image: '', explain: '', views: [] };
 const part = (imageHan: string, prev: Partial<CommentaryPart> | undefined, vi: ViPart | undefined): CommentaryPart => ({
@@ -46,6 +47,16 @@ for (let n = 1; n <= 64; n++) {
     lines: c.lineImages.map((img, i) => part(img, prev?.lines[i], vi.lines?.[i])),
   };
   if (c.useImage) entry.allMoving = part(c.useImage, prev?.allMoving, vi.allMoving);
+  if (c.wenyan.length)
+    entry.wenyan = c.wenyan.map((han, i) => ({
+      title: '',
+      vi: '',
+      explain: '',
+      views: [],
+      ...prev?.wenyan?.[i],
+      ...vi.wenyan?.[i],
+      han,
+    }));
   out.push(entry);
 }
 writeFileSync(OUT, JSON.stringify(out, null, 1) + '\n');

@@ -132,7 +132,265 @@
     }
    ],
    "imageHan": "用九、天德不可為首也。"
-  }
+  },
+  "wenyan": [
+   {
+    "title": "Bốn đức nguyên, hanh, lợi, trinh",
+    "vi": "Nguyên (khởi đầu, lớn) là đứng đầu các điều thiện; hanh (thông suốt) là chỗ hội tụ của mọi điều tốt đẹp; lợi (thích đáng) là sự hòa hợp của nghĩa; trinh (chính và bền) là cái cốt cán của mọi việc. Người quân tử (người có đức) lấy lòng nhân làm thể thì đủ để làm bậc trên của người; làm cho sự hội tụ tốt đẹp thì đủ để hợp với lễ; làm lợi cho vật thì đủ để hòa với nghĩa; chính và bền vững thì đủ để làm cốt cán cho việc. Người quân tử thực hành bốn đức ấy, cho nên nói: “Càn: nguyên, hanh, lợi, trinh.”",
+    "explain": "Đoạn mở đầu Văn ngôn giảng lời quẻ Càn, đem bốn đức của trời chuyển sang việc người. Mỗi chữ được gắn với một điều: nguyên với thiện và nhân, hanh với cái đẹp và lễ, lợi với nghĩa, trinh với sự đứng vững của việc. Câu cuối nói chỉ người quân tử thực hành đủ bốn đức mới xứng với chữ Càn. Trình Di nói chỉ Càn, Khôn mới có riêng Văn ngôn, để suy đạo Càn ra việc người.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di giảng “thể nhân” là thể nguyên: noi theo mà bắt chước đức nhân của Càn thì thành đạo làm bậc trên. Ông nhấn mạnh không hợp lễ thì trái lẽ, trái lẽ thì chẳng thể gọi là tốt đẹp, cũng chẳng thể hanh thông."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy đối bốn đức với bốn mùa và bốn đức của người: nguyên là xuân, là nhân; hanh là hạ, là lễ; lợi là thu, là nghĩa; trinh là đông, là trí; “cán” là thân cây, chỗ cành lá dựa vào. Ông còn nói lời này trùng với lời bà Mục Khương chép trong Xuân Thu truyện, nên đây vốn là cổ ngữ; vì thế các đoạn sau mới ghi riêng “Khổng Tử nói” để phân biệt."
+     }
+    ],
+    "han": "元者、善之長也，亨者、嘉之會也，利者、義之和也，貞者、事之幹也。君子體仁足以長人，嘉會足以合禮，利物足以和義，貞固足以幹事。君子行此四德者，故曰乾、元、亨、利、貞。"
+   },
+   {
+    "title": "Hào 1: rồng ẩn — lời Khổng Tử",
+    "vi": "Hào Sơ Cửu nói “rồng ẩn, chớ dùng”, nghĩa là gì? Khổng Tử nói: Đó là người có đức của rồng mà ẩn mình. Không vì đời mà đổi điều mình giữ, không cầu thành danh; lánh đời mà không buồn, không được đời cho là phải mà cũng không buồn. Vui thì làm, lo thì tránh; vững vàng không gì lay chuyển được, đó là rồng ẩn.",
+    "explain": "Đây là lời Khổng Tử giảng hào 1 quẻ Càn. Rồng ẩn là người có tài đức nhưng ở chỗ thấp, chưa được biết đến. Cái đáng quý của họ là giữ đạo không đổi theo đời, không cần danh, không vì bị bỏ quên mà phiền muộn, và biết lúc nào nên làm, lúc nào nên lui.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói từ đoạn này trở đi là bàn về cái dụng của Càn. Ông ví với bậc thánh hiền ở nơi hèn mọn: giữ đạo không theo đời mà đổi, giấu việc làm không cầu người biết, tự tin tự vui, thấy được thì động, biết khó thì tránh, giữ vững không ai đoạt được."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy giảng “dịch” là đổi điều mình giữ, và nói đức rồng là đức thánh nhân. Ông cho rằng Văn ngôn sáu hào Càn đều lấy thánh nhân mà nói, chỉ có khác nhau ẩn hay hiện chứ không khác nhau nông hay sâu."
+     }
+    ],
+    "han": "初九曰、潛龍勿用，何謂也？子曰：龍、德而隱者也。不易乎世，不成乎名，遯世无悶，不見是而无悶。樂則行之，憂則違之，確乎其不可拔，潛龍也。"
+   },
+   {
+    "title": "Hào 2: rồng hiện — đức của vua",
+    "vi": "Hào Cửu Nhị nói “rồng hiện trên ruộng, lợi gặp đại nhân (người đức lớn)”, nghĩa là gì? Khổng Tử nói: Đó là người có đức rồng mà ở chỗ chính giữa. Lời nói thường ngày cũng giữ tín, việc làm thường ngày cũng cẩn thận; ngăn điều tà để giữ lòng thành; làm cho đời tốt hơn mà không khoe công; đức rộng mà cảm hóa được người. Kinh Dịch nói “rồng hiện trên ruộng, lợi gặp đại nhân”, là nói đức của bậc vua.",
+    "explain": "Đoạn giảng hào 2 quẻ Càn. Hào ở giữa quái dưới nên nói “chính trung”: không lệch, không quá. Đức ấy thể hiện ở những việc rất thường, lời nói và hành vi hằng ngày, ở việc giữ lòng thành và không kể công. Tuy chưa ở ngôi vua, người ấy đã có đức của vua, nên lời hào gọi là đại nhân.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói tín và cẩn trong lời, việc thường là lúc vội vàng cũng không rời điều đó; đã ở chỗ không lỗi thì chỉ còn việc ngăn tà, tà ngăn được thì lòng thành tự còn. “Đức bác nhi hóa” là sửa mình ngay thì người cũng ngay; tuy không ở ngôi vua nhưng có đức vua."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói “chính trung” là lúc không còn ẩn mà chưa nhảy lên; lời thường cũng tín, việc thường cũng cẩn là đức thịnh đến cùng. Câu “đức của vua” là để giảng rằng đại nhân chính là hào 2."
+     }
+    ],
+    "han": "九二曰、見龍在田、利見大人，何謂也？子曰：龍德而正中者也。庸言之信，庸行之謹，閑邪存其誠，善世而不伐，德博而化。易曰、見龍在田、利見大人，君德也。"
+   },
+   {
+    "title": "Hào 3: tiến đức, sửa nghiệp",
+    "vi": "Hào Cửu Tam nói “người quân tử suốt ngày hăng hái không nghỉ, tối vẫn còn lo sợ; nguy nhưng không lỗi”, nghĩa là gì? Khổng Tử nói: Người quân tử tiến đức và sửa nghiệp. Trung thực và giữ tín là cách để tiến đức; sửa lời nói cho đúng, dựng lên lòng thành, là cách để giữ vững sự nghiệp. Biết chỗ cần đến mà đến được, thì có thể cùng bàn cái mầm vi tế của sự việc; biết chỗ cần dừng mà đi đến cùng, thì có thể cùng giữ được nghĩa. Vì vậy ở ngôi trên mà không kiêu, ở ngôi dưới mà không lo. Cho nên hăng hái không nghỉ, theo thời mà lo sợ, dù nguy cũng không có lỗi.",
+    "explain": "Đoạn giảng hào 3 quẻ Càn. Hào ở trên cùng quái dưới, sát quái trên, là chỗ nguy. Lời Khổng Tử chỉ ra việc phải làm ở chỗ ấy: tiến đức bằng trung tín, giữ nghiệp bằng lời nói thật và lòng thành; biết trước điều phải đạt và theo đến cùng. Nhờ vậy ở trên hay ở dưới đều yên, dù nguy cũng không lỗi.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di chia hai vế thành đầu và cuối của việc học: “tri chí chí chi” là cái biết (trí tri), biết đi trước nên có thể bàn mầm việc; “tri chung chung chi” là sức làm (lực hành), giữ ở sau nên có thể giữ nghĩa."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói trung tín là lòng không một ý nào không thành, tu từ là việc không một lời nào không thật; có lòng trung tín mà không tu từ lập thành thì không giữ được. Ông gắn “tri chí chí chi” với tiến đức và “tri chung chung chi” với cư nghiệp, khác lối chia biết và làm của Trình Di."
+     }
+    ],
+    "han": "九三曰、君子終日乾乾、夕惕若、厲、无咎。何謂也？子曰：君子進德脩業，忠信，所以進德也，脩辭立其誠，所以居業也。知至至之，可與幾也，知終終之，可與存義也。是故居上位而不驕，在下位而不憂，故乾乾因其時而惕，雖危无咎矣。"
+   },
+   {
+    "title": "Hào 4: nhảy lên hay ở vực",
+    "vi": "Hào Cửu Tứ nói “hoặc nhảy lên, hoặc ở dưới vực, không lỗi”, nghĩa là gì? Khổng Tử nói: Lên xuống không cố định, không phải vì làm điều tà; tiến lùi không thường, không phải vì lìa bỏ đồng loại. Người quân tử tiến đức sửa nghiệp là muốn kịp thời, cho nên không lỗi.",
+    "explain": "Đoạn giảng hào 4 quẻ Càn. Hào đã sang quái trên nhưng chưa đến ngôi 5, nên lúc lên lúc xuống, chưa định. Khổng Tử giải thích sự không cố định ấy không phải bất chính hay bỏ bạn, mà vì người quân tử muốn theo đúng thời.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói vực sâu là chỗ yên của rồng; “ở vực” là nhảy về chỗ yên. Chữ “hoặc” là lời ngờ, tùy thời mà chưa thể định; người quân tử theo thời như bóng theo hình, lìa thì không phải đạo."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói quái trong lấy đức và học mà bàn, quái ngoài lấy thời và ngôi mà bàn; tiến đức sửa nghiệp thì hào 3 đã đủ, đến hào 4 là muốn kịp thời mà tiến."
+     }
+    ],
+    "han": "九四曰、或躍在淵、无咎。何謂也？子曰：上下无常，非為邪也。進退无恆，非離群也。君子進德脩業、欲及時也，故无咎。"
+   },
+   {
+    "title": "Hào 5: đồng thanh tương ứng",
+    "vi": "Hào Cửu Ngũ nói “rồng bay trên trời, lợi gặp đại nhân”, nghĩa là gì? Khổng Tử nói: Cùng tiếng thì ứng nhau, cùng khí thì tìm nhau. Nước chảy về chỗ ẩm, lửa bén vào chỗ khô, mây theo rồng, gió theo hổ. Thánh nhân nổi lên thì muôn vật đều trông thấy. Cái gốc ở trời thì thân với trên, cái gốc ở đất thì thân với dưới; ấy là mỗi thứ theo loại của nó.",
+    "explain": "Đoạn giảng hào 5 quẻ Càn. Khổng Tử dùng loạt hình ảnh đồng loại tìm đến nhau để giải thích vì sao khi rồng bay lên ngôi cao thì “lợi gặp đại nhân”: thánh nhân lên ngôi thì người trong thiên hạ cùng loại đều hướng về, trên dưới trông thấy nhau.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói người với thánh nhân cùng loại, nên thánh nhân lên ngôi thì người đều ngưỡng vọng; “vật” ở đây là người. Ông phân biệt “lợi kiến đại nhân” ở quẻ Tụng là nên đi gặp người đức lớn, còn ở hào 2, 5 quẻ Càn là thánh nhân đã ra, trên dưới thấy nhau. Gốc ở trời là như mặt trời, trăng, sao; gốc ở đất là như sâu bọ, thú, cỏ cây."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy giảng “tác” là nổi lên, “vật” cũng là người, “thấy” là giảng ý “lợi kiến”. Khác Trình Di, ông nói gốc ở trời là loài động vật, gốc ở đất là loài thực vật; thánh nhân là đứng đầu loài người nên nổi lên thì ai cũng thấy."
+     }
+    ],
+    "han": "九五曰、飛龍在天、利見大人。何謂也？子曰：同聲相應，同氣相求。水流濕，火就燥，雲從龍，風從虎，聖人作而萬物覩。本乎天者親上，本乎地者親下，則各從其類也。"
+   },
+   {
+    "title": "Hào 6: rồng quá cao — lời Khổng Tử",
+    "vi": "Hào Thượng Cửu nói “rồng lên quá cao, có hối hận”, nghĩa là gì? Khổng Tử nói: Sang mà không có ngôi, cao mà không có dân, người hiền ở ngôi dưới mà không giúp, vì vậy hễ động là có hối hận.",
+    "explain": "Đoạn giảng hào 6 quẻ Càn. Hào ở trên cả ngôi 5, cao quá mức mà không có thực quyền, không có dân theo, người hiền bên dưới cũng không đến giúp. Ở chỗ ấy mà còn hành động thì phải hối.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói hào 9 ở trên cùng mà không đúng ngôi tôn, cho nên không có dân, không có người giúp, động thì hối."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói “người hiền ở ngôi dưới” là chỉ từ hào 5 trở xuống; họ không giúp vì hào 6 quá cao, lòng tự mãn. Ông ghi đây là hết tiết thứ hai, giảng thêm ý Tượng truyện."
+     }
+    ],
+    "han": "上九曰、亢龍有悔，何謂也？子曰：貴而无位，高而无民，賢人在下位而无輔，是以動而有悔也。"
+   },
+   {
+    "title": "Sáu hào theo việc người",
+    "vi": "Rồng ẩn chớ dùng, vì ở dưới. Rồng hiện trên ruộng, vì thời còn dừng lại. Suốt ngày hăng hái, vì đang làm việc. Hoặc nhảy lên ở vực, vì đang tự thử sức. Rồng bay trên trời, vì ở trên mà cai trị. Rồng lên quá cao có hối hận, vì đến chỗ cùng nên gặp tai họa. Đức nguyên của Càn dùng số chín (cách dùng hào dương), thì thiên hạ được trị.",
+    "explain": "Đoạn này điểm lại sáu hào và lời “dùng chín”, mỗi câu tóm bằng vài chữ về vị trí và việc làm ở mỗi chặng. Câu cuối nói biết dùng đức dương của Càn cho đúng thì thiên hạ yên trị.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói đoạn này bàn về thời của Càn. Ông giảng “thời xá” là tùy thời mà dừng, “tự thí” là tùy thời mà tự dùng mình; “dùng chín” là trời và thánh nhân cùng được cái dụng ấy nên thiên hạ trị."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy giảng “thời xá” là chưa được thời dùng đến, “tự thí” là chưa vội làm, thử xem có được không. Về “dùng chín”, ông nói đạo vua cứng mà biết mềm thì thiên hạ không đâu không trị."
+     }
+    ],
+    "han": "潛龍勿用、下也，見龍在田、時舍也，終日乾乾、行事也，或躍在淵、自試也，飛龍在天、上治也，亢龍有悔、窮之災也。乾元用九、天下治也。"
+   },
+   {
+    "title": "Sáu hào theo khí trời",
+    "vi": "Rồng ẩn chớ dùng: khí dương còn ẩn náu. Rồng hiện trên ruộng: thiên hạ được văn minh (sáng đẹp, có văn vẻ). Suốt ngày hăng hái: cùng đi với thời. Hoặc nhảy lên ở vực: đạo Càn bắt đầu đổi thay. Rồng bay trên trời: bèn ở ngôi đức trời. Rồng lên quá cao có hối hận: cùng thời đi đến chỗ cùng cực. Đức nguyên của Càn dùng số chín: bèn thấy được phép tắc của trời.",
+    "explain": "Lần điểm thứ ba về sáu hào, lần này nói theo vận hành của khí dương và của thời: từ lúc khí dương ẩn dưới đất, đến lúc hiện ra làm thiên hạ sáng đẹp, qua bước chuyển lên quái trên, lên ngôi trời, rồi theo thời mà đến cực. Câu cuối nói cách dùng hào dương chính là phép của trời.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói đoạn này bàn về nghĩa của Càn. “Càn đạo nãi cách” là rời ngôi dưới lên ngôi trên, trên dưới đổi chỗ. Ông còn đáp câu hỏi sáu hào có phải đều là việc thánh nhân không: làm trọn đạo thì là thánh nhân, còn được mất thì có cát hung, quẻ nào cũng vậy."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói “thiên hạ văn minh” là tuy chưa ở ngôi trên mà thiên hạ đã chịu ảnh hưởng; “thiên đức” chính là ngôi trời, vì có đức ấy mới nên ở ngôi ấy. “Thiên tắc” là cứng mà biết mềm, phép của trời."
+     }
+    ],
+    "han": "潛龍勿用，陽氣潛藏。見龍在田，天下文明。終日乾乾，與時偕行。或躍在淵，乾道乃革。飛龍在天，乃位乎天德。亢龍有悔，與時偕極。乾元用九，乃見天則。"
+   },
+   {
+    "title": "Càn nguyên và lợi trinh",
+    "vi": "“Càn nguyên hanh” là bắt đầu thì hanh thông. “Lợi trinh” là tính tình (bản tính thật) của Càn. Càn khởi đầu mà có thể đem cái lợi tốt đẹp làm lợi cho thiên hạ, lại không nói lợi ở chỗ nào, thật lớn lao thay!",
+    "explain": "Đoạn này quay lại giảng lời quẻ Càn một lần nữa: nguyên là khởi đầu, đã khởi đầu thì hanh thông; lợi và trinh là chỗ thấy được bản tính của Càn. Càn làm lợi cho khắp thiên hạ mà không chỉ riêng lợi cho điều gì, đó là chỗ lớn của nó.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói đã bắt đầu thì phải hanh, không hanh thì dừng; đã bắt đầu và hanh mà không có lợi trinh thì không thể không ngừng. Không nói lợi ở đâu vì không chỗ nào không lợi, chẳng thể chỉ tên ra được."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói thu gom cất giữ mới thấy được thực chất của tính tình; rồi đối từng vế: khởi đầu là nguyên và hanh, làm lợi thiên hạ là lợi, không nói lợi ở đâu là trinh. Ông ghi thêm có người cho rằng Khôn nói “lợi của ngựa cái” là đã nói chỗ lợi."
+     }
+    ],
+    "han": "乾元亨者、始而亨者也。利貞者、性情也。乾始能以美利利天下，不言所利，大矣哉！"
+   },
+   {
+    "title": "Lớn thay Càn: cương kiện trung chính",
+    "vi": "Lớn thay Càn! Cứng, mạnh, giữa, chính, thuần, túy, ấy là tinh hoa. Sáu hào phát huy, thấu suốt mọi tình. Theo thời cưỡi sáu con rồng để điều khiển trời; mây bay mưa rải, thiên hạ thái bình. Người quân tử lấy đức đã thành làm việc làm, là việc làm có thể thấy hằng ngày.",
+    "explain": "Đoạn này ca ngợi đạo Càn bằng một chuỗi đức: cứng, mạnh, giữa, chính, thuần, túy, và nói sáu hào đã bày hết mọi lẽ. Câu cuối về người quân tử lấy đức đã thành làm việc làm là câu nối, dẫn vào đoạn sau giảng hào 1.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói sáu chữ cương, kiện, trung, chính, thuần, túy là để hình dung đạo Càn, còn “tinh” là chỗ cực của sáu điều ấy. Cưỡi thời của sáu hào mà đương vận trời thì công dụng của trời rõ ra, như mây mưa lan khắp, thiên hạ hòa bình."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy phân: cương nói về thể, kiện gồm cả dụng, trung là làm không quá không kém, chính là đứng không lệch; thuần là không lẫn âm nhu, túy là không lẫn tà ác. Có người ngờ Càn thuần cứng thì sao gọi là trung chính, ông đáp trời đất vốn một khí lưu hành, chia ra động tĩnh mới có âm dương, nói gộp thì Càn bao hết."
+     }
+    ],
+    "han": "大哉乾乎！剛健中正，純粹精也。六爻發揮，旁通情也。時乘六龍、以御天也，雲行雨施、天下平也。君子以成德為行，日可見之行也。"
+   },
+   {
+    "title": "Rồng ẩn và bốn việc của đại nhân",
+    "vi": "Chữ “ẩn” có nghĩa là còn giấu chưa hiện, việc làm chưa thành, vì thế người quân tử chưa dùng. Người quân tử học để gom góp, hỏi để phân biệt, rộng lượng để ở, lấy nhân mà làm. Kinh Dịch nói “rồng hiện trên ruộng, lợi gặp đại nhân”, là nói đức của bậc vua.",
+    "explain": "Đoạn này nói lại hào 1 và hào 2. Hào 1 “chớ dùng” không phải vì chưa có đức mà vì việc làm chưa thể hiện ra. Hào 2 thì nêu bốn việc làm nên người đức lớn: học, hỏi, rộng lượng, làm điều nhân; nhờ đó tuy chưa có ngôi đã có đức của vua.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói đức đã thành thì mới đem ra dùng; hào 1 còn ẩn nên việc chưa thành. Học gom hỏi phân là tiến đức, rộng lượng và làm nhân là sửa nghiệp. Tiến lên ở ngôi là như Thuấn, Vũ; tiến lên thi hành đạo là như Y Doãn, Phó Duyệt."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói hào 1 vốn là đức đã thành, chỉ việc làm chưa thấy được mà thôi. Nhờ bốn việc học, hỏi, khoan, nhân mà thành đức đại nhân; lặp lại “đức của vua” để nói rõ hào 2 là đại nhân."
+     }
+    ],
+    "han": "潛之為言也，隱而未見，行而未成，是以君子弗用也。君子學以聚之，問以辯之，寬以居之，仁以行之。易曰、見龍在田、利見大人，君德也。"
+   },
+   {
+    "title": "Hào 3: trùng cương mà không trung",
+    "vi": "Hào Cửu Tam cứng chồng cứng mà không ở giữa, trên chẳng ở trời, dưới chẳng ở ruộng, cho nên hăng hái không nghỉ, theo thời mà lo sợ, dù nguy cũng không lỗi.",
+    "explain": "Đoạn này giảng hào 3 theo vị trí trong quẻ: đã quá giữa quái dưới, chưa lên tới ngôi trời (hào 5), lại rời khỏi ruộng (hào 2). Đứng ở chỗ lưng chừng và nguy như vậy nên phải chăm chỉ và thận trọng; nhờ thế mà không lỗi.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói trùng cương là cứng đến cực thịnh; quá giữa mà ở trên quái dưới, lên chưa tới trời, xuống đã rời ruộng, là chỗ nguy. Thuận theo thời mà lo sợ thì dù nguy cũng không mắc lỗi; người quân tử nhờ thận trọng theo thời mà được yên."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy chỉ giảng “trùng cương” là hào dương ở ngôi dương."
+     }
+    ],
+    "han": "九三重剛而不中，上不在天，下不在田，故乾乾因其時而惕，雖危无咎矣。"
+   },
+   {
+    "title": "Hào 4: chữ “hoặc” là còn ngờ",
+    "vi": "Hào Cửu Tứ cứng chồng cứng mà không ở giữa, trên chẳng ở trời, dưới chẳng ở ruộng, giữa chẳng ở người, cho nên nói “hoặc”. “Hoặc” là còn ngờ, cho nên không lỗi.",
+    "explain": "Đoạn giảng hào 4 theo vị trí: không ở trời, không ở ruộng, cũng không ở chỗ của người. Không có chỗ đứng chắc chắn nên lời hào dùng chữ “hoặc”, tức còn cân nhắc, chưa quyết; chính vì thận trọng như thế mà không lỗi.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói hào 4 đã ra trên người, là chỗ nguy; ngờ là lời chưa quyết, vì ở chỗ không thể chắc được, tiến hay lùi chỉ tùy chỗ yên, nên không lỗi."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy cho rằng hào 4 (dương ở ngôi âm) không phải trùng cương, nên ngờ chữ “trùng” ở đây là thừa; “ở người” là chỉ hào 3; “hoặc” là tùy thời mà chưa định. Trình Di thì không đặt vấn đề chữ thừa."
+     }
+    ],
+    "han": "九四重剛而不中，上不在天，下不在田，中不在人，故或之。或之者、疑之也，故无咎。"
+   },
+   {
+    "title": "Đại nhân hợp đức với trời đất",
+    "vi": "Đại nhân là người có đức hợp với trời đất, sự sáng hợp với mặt trời mặt trăng, thứ tự hợp với bốn mùa, điều lành dữ hợp với quỷ thần. Làm trước trời mà trời không trái, làm sau trời thì vâng theo thời của trời. Trời còn không trái, huống chi là người, huống chi là quỷ thần?",
+    "explain": "Đoạn này giảng chữ “đại nhân” trong lời hào 5 (“lợi gặp đại nhân”). Đại nhân là người hòa hợp trọn vẹn với trời đất, mặt trời mặt trăng, bốn mùa, quỷ thần; vì hợp với đạo nên dù đi trước hay đi sau trời cũng đều thuận, người và quỷ thần lại càng không trái được.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói đại nhân hợp với trời đất, nhật nguyệt, bốn mùa, quỷ thần là hợp với đạo; trời đất là đạo, quỷ thần là dấu vết của tạo hóa. Hợp với đạo thì người và quỷ thần sao có thể trái."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói người và trời đất quỷ thần vốn không hai lẽ, chỉ vì cái riêng tư của “ta” che lấp mà bị bó trong hình thể; đại nhân không riêng tư nên chẳng có trước sau. Ông dẫn chuyện người Hồi Hột nói với Quách Tử Nghi rằng thầy bói bảo chuyến này sẽ gặp một đại nhân, và cho rằng Tử Nghi tuy chưa tới mức Khổng Tử bàn nhưng chí công vô tư, cũng là đại nhân của thời ấy."
+     }
+    ],
+    "han": "夫大人者、與天地合其德，與日月合其明，與四時合其序，與鬼神合其吉凶，先天而天弗違，後天而奉天時。天且弗違，而況於人乎？況於鬼神乎？"
+   },
+   {
+    "title": "Chữ “kháng”: biết tiến không biết lùi",
+    "vi": "Chữ “kháng” (quá cao) có nghĩa là chỉ biết tiến mà không biết lùi, chỉ biết còn mà không biết mất, chỉ biết được mà không biết mất đi. Chỉ có thánh nhân chăng! Biết tiến lùi, còn mất mà không đánh mất lẽ chính, chỉ có thánh nhân chăng!",
+    "explain": "Đoạn cuối về quẻ Càn giảng hào 6 “rồng lên quá cao”. Quá cao là không biết giới hạn, chỉ thấy một chiều tiến, còn, được. Thánh nhân thì hiểu cả hai chiều và giữ được lẽ chính, nên không rơi vào chỗ hối hận.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói cực quá mức là kháng; đến chỗ kháng là vì không biết lẽ tiến lùi, còn mất, được mất. Thánh nhân biết mà xử đều không mất chính, nên không đến nỗi kháng."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói biết thế là như vậy mà xử bằng đạo thì không đến hối, chứ không phải tính toán riêng để tránh hại. Câu “chỉ có thánh nhân chăng” nói hai lần, lần đầu như hỏi, lần sau tự đáp."
+     }
+    ],
+    "han": "亢之為言也，知進而不知退，知存而不知亡，知得而不知喪。其唯聖人乎！知進退存亡而不失其正者，其唯聖人乎！"
+   }
+  ]
  },
  {
   "kingWenNumber": 2,
@@ -275,7 +533,113 @@
     }
    ],
    "imageHan": "用六永貞，以大終也。"
-  }
+  },
+  "wenyan": [
+   {
+    "title": "Khôn: rất mềm mà động thì cứng",
+    "vi": "Khôn rất mềm mà khi động thì cứng, rất tĩnh mà đức thì vuông vắn. Theo sau thì được chủ mà có lẽ thường; chứa đựng muôn vật mà sự hóa dục sáng lớn. Đạo Khôn là thuận chăng! Vâng theo trời mà làm đúng thời.",
+    "explain": "Đoạn giảng lời quẻ Khôn và Thoán truyện. Khôn là mềm và tĩnh, nhưng khi vận hành thì có sức mạnh và có khuôn phép; đi sau Càn thì được đúng vị trí; bao chứa muôn vật mà nuôi lớn chúng. Tóm lại đạo Khôn là thuận: nhận cái thi ân của trời và làm đúng lúc.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói động mà cứng nên ứng với Càn không trái, đức vuông nên sinh vật có lẽ thường; âm không xướng mà họa nên ở sau là được, và làm lợi cho muôn vật là lẽ thường của Khôn. Ông cho rằng sau chữ “chủ” sót mất chữ “lợi”."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói cứng và vuông là giảng chữ “trinh của ngựa cái”, vuông là sinh vật có lẽ thường; ông dẫn lời Trình truyện rằng dưới chữ “chủ” nên có chữ “lợi”. Câu “chứa muôn vật” là nói lại nghĩa hanh, câu cuối nói lại nghĩa “thuận vâng trời”."
+     }
+    ],
+    "han": "坤至柔而動也剛，至靜而德方，後得主而有常，含萬物而化光。坤道其順乎，承天而時行。"
+   },
+   {
+    "title": "Tích thiện, tích bất thiện",
+    "vi": "Nhà tích điều thiện ắt có phúc thừa, nhà tích điều bất thiện ắt có họa thừa. Bề tôi giết vua, con giết cha, không phải là cớ của một sớm một chiều, mà do dần dần mà đến, vì không sớm phân biệt được điều cần phân biệt. Kinh Dịch nói “giẫm lên sương thì băng cứng sắp đến”, là nói về thế thuận chiều mà lớn dần.",
+    "explain": "Đoạn giảng hào 1 quẻ Khôn “giẫm sương, băng cứng sẽ đến”. Điều thiện hay điều ác đều tích lại dần mà thành, tai họa lớn đến mức giết vua giết cha cũng khởi từ cái nhỏ; vì vậy phải nhận ra và ngăn từ lúc mới chớm.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói việc trong thiên hạ không gì không do tích mà thành; người sáng suốt biết cái dần không để cho lớn, phân biệt từ sớm thì cái ác không thành. Sương thành băng, ác nhỏ thành ác lớn, đều là thế việc thuận chiều mà lớn lên."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy cho rằng chữ cổ “thuận” và “thận” dùng thông nhau, ở đây nên đọc là “thận” (cẩn thận): nói phải phân biệt từ lúc còn nhỏ. Trình Di thì hiểu đúng mặt chữ “thuận” là thế lớn dần."
+     }
+    ],
+    "han": "積善之家必有餘慶，積不善之家必有餘殃。臣弒其君，子弒其父，非一朝一夕之故，其所由來者漸矣，由辯之不早辯也。易曰、履霜、堅冰至，蓋言順也。"
+   },
+   {
+    "title": "Kính để thẳng trong, nghĩa để vuông ngoài",
+    "vi": "Thẳng là chính, vuông là nghĩa. Người quân tử lấy kính (nghiêm cẩn) để làm thẳng bên trong, lấy nghĩa để làm vuông bên ngoài; kính và nghĩa đã đứng vững thì đức không lẻ loi. “Thẳng, vuông, lớn, không tập mà không gì không lợi”, là không còn ngờ vực điều mình làm.",
+    "explain": "Đoạn giảng hào 2 quẻ Khôn “thẳng, vuông, lớn”. Thẳng ứng với lòng chính trực bên trong, giữ bằng sự nghiêm cẩn; vuông ứng với việc làm đúng nghĩa bên ngoài. Hai điều đứng vững thì đức tự lớn, làm gì cũng không phải ngờ, nên “không tập mà không gì không lợi”.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói giữ kính thì trong thẳng, giữ nghĩa thì ngoài vuông; nghĩa hiện ra ngoài nhưng không phải ở ngoài. Kính nghĩa đứng thì đức thịnh, không mong lớn mà tự lớn, dùng đâu cũng trọn, còn gì phải ngờ."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói đoạn này lấy việc học mà bàn: chính là bản thể, nghĩa là sự cắt đặt; kính là giữ bản thể. “Không lẻ loi” là giảng chữ lớn; vì còn ngờ nên phải tập rồi mới lợi, không ngờ thì cần gì tập."
+     }
+    ],
+    "han": "直其正也，方其義也。君子敬以直內，義以方外，敬義立而德不孤。直、方、大、不習无不利，則不疑其所行也。"
+   },
+   {
+    "title": "Ngậm vẻ đẹp để theo việc vua",
+    "vi": "Âm tuy có vẻ đẹp nhưng ngậm giữ lại để theo việc vua, không dám tự nhận là mình làm nên. Đó là đạo của đất, đạo của vợ, đạo của bề tôi. Đạo đất không tự thành mà thay trời làm cho trọn việc.",
+    "explain": "Đoạn giảng hào 3 quẻ Khôn “ngậm vẻ đẹp, có thể giữ chính; hoặc theo việc vua, không thành mà có kết thúc”. Người ở dưới có tài vẫn giấu đi, làm việc cho bề trên mà không nhận công; như đất giúp trời làm trọn việc sinh vật mà công vẫn thuộc về trời.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói đạo làm người dưới là không nhận công, ngậm giấu vẻ đẹp để theo việc vua, thay bề trên làm trọn việc; như đất thay trời làm cho vật thành, mà công thì thuộc về trời; đạo vợ cũng vậy."
+     }
+    ],
+    "han": "陰雖有美含之以從王事，弗敢成也。地道也，妻道也，臣道也。地道無成而代有終也。"
+   },
+   {
+    "title": "Thắt miệng túi: nói về cẩn trọng",
+    "vi": "Trời đất biến hóa thì cỏ cây tốt tươi; trời đất bế tắc thì người hiền ẩn đi. Kinh Dịch nói “thắt miệng túi, không lỗi cũng không khen”, là nói về sự cẩn trọng.",
+    "explain": "Đoạn giảng hào 4 quẻ Khôn. Khi trời đất giao hòa thì vạn vật tươi tốt; khi bế tắc thì người hiền phải ẩn. Hào 4 ở lúc bế tắc ấy nên phải kín đáo như thắt miệng túi: không được khen nhưng tránh được lỗi.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói hào 4 ở gần vua mà không có nghĩa tương đắc, là tượng cách tuyệt: trời đất giao thì vạn vật thịnh, vua tôi gặp nhau thì đạo thông; trời đất bế tắc thì vua tôi đạo dứt, người hiền ẩn. Ở lúc ấy mà thắt túi giấu mình thì tuy không được tiếng tốt nhưng không lỗi, phải cẩn trọng tự giữ."
+     }
+    ],
+    "han": "天地變化，草木蕃。天地閉，賢人隱。易曰、括囊、无咎无譽，蓋言謹也。"
+   },
+   {
+    "title": "Vàng ở giữa, vẻ đẹp tột cùng",
+    "vi": "Người quân tử có sắc vàng ở giữa mà thông suốt lẽ phải, ở ngôi chính mà giữ đúng thể của mình; vẻ đẹp ở bên trong mà lan ra tứ chi, phát ra thành sự nghiệp, ấy là vẻ đẹp đến tột cùng.",
+    "explain": "Đoạn giảng hào 5 quẻ Khôn “xiêm vàng, rất tốt”. Vàng là màu giữa, chỉ đức trung ở bên trong; xiêm là áo dưới, chỉ việc ở ngôi cao mà vẫn giữ phận dưới. Cái đẹp tích bên trong rồi tỏa ra việc làm, đó là cái đẹp trọn vẹn.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói “hoàng trung” là văn đẹp ở giữa; ở ngôi chính mà không mất thể của người dưới. Hào 5 là ngôi tôn, nhưng ở quẻ Khôn chỉ lấy nghĩa trung chính."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy nói “hoàng trung” là đức trung ở trong, giảng chữ vàng; “chính vị cư thể” là tuy ở ngôi tôn mà ở thể dưới, giảng chữ xiêm; câu sau lại giảng tiếp hai ý ấy."
+     }
+    ],
+    "han": "君子黃中通理，正位居體，美在其中而暢於四支，發於事業，美之至也。"
+   },
+   {
+    "title": "Rồng đánh nhau: huyết đen vàng",
+    "vi": "Âm ngang ngửa với dương thì ắt đánh nhau; vì e như là không có dương nên gọi là rồng. Vẫn chưa rời loại của mình nên gọi là huyết. Đen và vàng là màu trời đất lẫn lộn: trời đen mà đất vàng.",
+    "explain": "Đoạn giảng hào 6 quẻ Khôn “rồng đánh nhau ở đồng, huyết đen vàng”. Âm lên đến cực thịnh thì ngang với dương mà tranh nhau. Quẻ toàn âm nhưng lời hào nói “rồng” để cho thấy vẫn có dương; nói “huyết” vì âm vẫn chưa rời loại âm; đen và vàng là màu trời và đất, nghĩa là cả hai bên đều bị thương.",
+    "views": [
+     {
+      "source": "Trình Di",
+      "text": "Trình Di nói dương lớn âm nhỏ, âm phải theo dương; âm thịnh cực thì sánh ngang dương, không theo nhau thì đánh nhau. Quẻ thuần âm, sợ người ngờ là không có dương nên gọi rồng; “ở đồng” là tiến mãi ra ngoài; huyết đen vàng là cả hai đều bị thương."
+     },
+     {
+      "source": "Chu Hy",
+      "text": "Chu Hy giảng “nghi” là ngang sức, không còn phân lớn nhỏ; Khôn tuy không có hào dương nhưng dương chưa từng không có. Huyết thuộc âm, vì khí là dương còn huyết là âm; đen vàng là chính sắc của trời đất, nói âm dương đều bị thương."
+     }
+    ],
+    "han": "陰疑於陽必戰，為其嫌於无陽也，故稱龍焉。猶未離其類也，故稱血焉。夫玄黃者、天地之雜也。天玄而地黃。"
+   }
+  ]
  },
  {
   "kingWenNumber": 3,

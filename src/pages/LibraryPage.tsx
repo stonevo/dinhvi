@@ -10,7 +10,7 @@ import { HexagramFigure } from '../ui/HexagramFigure';
 import { LineReading } from '../ui/LineReading';
 import { TRIGRAM_SYMBOL } from '../flow/steps/Step2Trigrams';
 import { Term } from '../ui/Term';
-import { JudgmentClassic, LineClassic } from '../ui/Classic';
+import { JudgmentClassic, LineClassic, WenyanClassic } from '../ui/Classic';
 
 /** Thư viện: tra cứu 64 quẻ. */
 export function LibraryPage() {
@@ -151,6 +151,7 @@ export function HexagramPage() {
           </div>
         )}
       </section>
+      <WenyanClassic hexagram={h} />
     </article>
   );
 }

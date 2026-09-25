@@ -173,6 +173,12 @@ export function validateCommentary(raw: unknown): string[] {
     if (!c.judgment.tuan.trim()) errors.push(`quẻ ${n}.judgment.tuan trống`);
     c.lines.forEach((l, j) => need(`quẻ ${n}.hào ${j + 1}`, l));
     if (c.allMoving) need(`quẻ ${n}.allMoving`, c.allMoving);
+    if (Boolean(c.wenyan) !== (n === 1 || n === 2)) errors.push(`quẻ ${n}: Văn ngôn chỉ có ở Càn, Khôn`);
+    c.wenyan?.forEach((w, j) => {
+      if (!w.title.trim()) errors.push(`quẻ ${n}.văn ngôn ${j + 1}.title trống`);
+      if (!w.vi.trim()) errors.push(`quẻ ${n}.văn ngôn ${j + 1}.vi trống`);
+      if (!w.explain.trim()) errors.push(`quẻ ${n}.văn ngôn ${j + 1}.explain trống`);
+    });
   });
   return errors;
 }

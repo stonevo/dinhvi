@@ -324,5 +324,18 @@ export const hexagramCommentarySchema = z.object({
   lines: z.array(commentaryPartSchema).length(6),
   /** Dụng cửu / Dụng lục (Càn, Khôn). */
   allMoving: commentaryPartSchema.optional(),
+  /** Văn ngôn (chỉ Càn, Khôn), từng đoạn: chữ Hán, bản dịch, giảng, ý các nhà chú giải. */
+  wenyan: z
+    .array(
+      z.object({
+        han: z.string().min(1),
+        /** Tiêu đề ngắn của đoạn, vd. "Bốn đức nguyên, hanh, lợi, trinh". */
+        title: z.string(),
+        vi: z.string(),
+        explain: z.string(),
+        views: z.array(commentaryViewSchema),
+      }),
+    )
+    .optional(),
 });
 export type HexagramCommentary = z.infer<typeof hexagramCommentarySchema>;

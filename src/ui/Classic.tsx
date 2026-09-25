@@ -92,6 +92,39 @@ export function JudgmentClassic({ hexagram }: { hexagram: Hexagram }) {
   );
 }
 
+/** Văn ngôn (Càn, Khôn): từng đoạn chữ Hán, bản dịch, giảng, ý các nhà chú giải. */
+export function WenyanClassic({ hexagram }: { hexagram: Hexagram }) {
+  const c = useCommentary(hexagram.kingWenNumber);
+  if (!c?.wenyan) return null;
+  return (
+    <section>
+      <h2>{t('classic.wenyan')}</h2>
+      <p className="muted small">{t('classic.wenyanIntro')}</p>
+      {c.wenyan.map((w, i) => (
+        <details key={i} className="classic">
+          <summary>{w.title || w.han.slice(0, 16)}</summary>
+          <Han text={w.han} />
+          {w.vi && <p>{w.vi}</p>}
+          {w.explain && (
+            <Section title={t('classic.explain')}>
+              <p>{w.explain}</p>
+            </Section>
+          )}
+          {w.views.length > 0 && (
+            <Section title={t('classic.views')}>
+              {w.views.map((v) => (
+                <p key={v.source}>
+                  <strong>{v.source}:</strong> {v.text}
+                </p>
+              ))}
+            </Section>
+          )}
+        </details>
+      ))}
+    </section>
+  );
+}
+
 /** Một hào (hoặc Dụng cửu/Dụng lục khi position = 7): dịch nghĩa, cấu trúc, Tiểu tượng, giảng. */
 export function LineClassic({ hexagram, position }: { hexagram: Hexagram; position: number }) {
   const c = useCommentary(hexagram.kingWenNumber);

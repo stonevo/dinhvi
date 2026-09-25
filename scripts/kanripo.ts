@@ -26,7 +26,28 @@ export type CanonHexagram = {
   lineImages: string[];
   /** Tiểu tượng của 用九 / 用六. */
   useImage: string;
+  /** Văn ngôn (chỉ Càn, Khôn), tách theo từng đoạn giảng. */
+  wenyan: string[];
 };
+
+// Chỗ bắt đầu mỗi đoạn Văn ngôn (sau khi bỏ khoảng trắng, còn giữ ngoặc 「」).
+const WENYAN_BREAKS: Record<number, string[]> = {
+  1: ['初九曰、', '九二曰、', '九三曰、', '九四曰、', '九五曰、', '上九曰、', '「潛龍勿用」、下也', '「潛龍勿用」，陽氣',
+    '《乾》「元」', '大哉乾乎', '「潛」之為言', '九三重剛', '九四重剛', '夫「大人」者', '「亢」之為言'],
+  2: ['積善之家', '「直」其正也', '陰雖有美', '天地變化', '君子「黃」中', '陰疑於陽'],
+};
+
+function splitWenyan(n: number, raw: string): string[] {
+  const i = raw.indexOf('《文言》曰：');
+  if (i < 0 || !WENYAN_BREAKS[n]) return [];
+  let t = raw.slice(i + 6).replace(/<pb:[^>]+>/g, '').replace(/[¶\s]/g, '');
+  for (const b of WENYAN_BREAKS[n]) {
+    const at = t.indexOf(b);
+    if (at <= 0) throw new Error(`Văn ngôn quẻ ${n}: không thấy "${b}"`);
+    t = t.slice(0, at) + '|' + t.slice(at);
+  }
+  return t.split('|').map((x) => cleanHan(x).replace(/[《》]/g, ''));
+}
 
 /** Giữ dấu câu Hán, bỏ ký hiệu đánh dấu và ngoặc trích dẫn. */
 export const cleanHan = (s: string) => s.replace(/[¶\s「」『』]/g, '');
@@ -47,6 +68,7 @@ export function parseKanripo(dir: string): Map<number, CanonHexagram> {
     const hex: CanonHexagram = {
       name: null, judgment: '', lines: new Array(6).fill(''), labels: new Array(6).fill(''), use: null,
       tuan: '', image: '', lineImages: new Array(6).fill(''), useImage: '',
+      wenyan: splitWenyan(n, text),
     };
     // Tượng gắn với lời đứng ngay trước nó: -1 = lời quẻ, 0..5 = hào, 6 = 用九/用六.
     let last = -1;

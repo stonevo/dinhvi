@@ -58,6 +58,8 @@ export const vi = {
   'classic.explain': 'Giảng',
   'classic.views': 'Các nhà chú giải',
   'classic.structure': 'Cấu trúc hào',
+  'classic.wenyan': 'Văn ngôn',
+  'classic.wenyanIntro': 'Văn ngôn là thiên trong Thập Dực chỉ viết cho Càn và Khôn, giảng sâu lời quẻ và từng hào; nhiều đoạn ghi là lời Khổng Tử.',
   'structure.yang': 'dương',
   'structure.yin': 'âm',
   'structure.correct.yang': 'Hào dương ở vị lẻ: đắc chính (đúng chỗ).',
