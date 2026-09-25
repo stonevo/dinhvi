@@ -1860,18 +1860,18 @@
         "originalHan": "六二：苞承，小人吉，大人否。亨。",
         "situation": "Xung quanh là những người đang tìm cách nương vào, chiều theo người có uy tín. Nếu bạn là người ở vị trí nhỏ, biết nhún mình theo người ngay thẳng là điều tốt cho bạn. Nếu bạn là người có chí, được chiều chuộng như thế đừng vội nhận; chịu phần bế tắc của mình để giữ khí tiết thì đường mới thông.",
         "behavioralSignals": [
-          "Một người có quyền vừa tỏ ra ưu ái bạn: tăng lương, cho dự án đẹp, mời vào vòng trong",
-          "Sự ưu ái kèm một điều kiện ngầm: đứng về phe họ, im lặng về một việc",
+          "Gần đây có vài người bắt đầu vây quanh bạn: khen ngợi, hỏi ý, xin đứng chung tên trong việc của bạn",
+          "Có người đã nhân danh bạn hoặc mượn uy tín của bạn khi nói chuyện với người khác",
           "Người cùng chí trước đây bắt đầu nhìn bạn khác đi",
-          "Bạn đã từ chối hoặc đang trì hoãn nhận một lợi ích cụ thể"
+          "Bạn đã từ chối hoặc đang trì hoãn nhận một lợi ích cụ thể đi kèm sự chiều chuộng ấy"
         ],
         "characteristicRisk": "Nhận sự tung hô, bám theo của những người muốn mượn danh mình, rồi bị họ kéo vào vòng bế tắc chung.",
         "commonFailure": "Người ở vị trí này thường thấy được vây quanh, được chiều theo thì dễ chịu, để những kẻ cơ hội mượn tên mình, và từng chút mất đi sự trong sạch vốn là chỗ đứng duy nhất lúc bế tắc.",
         "traditionalCounsel": "Truyền thống khuyên rằng được bao bọc chiều thuận thì kẻ tiểu nhân thấy tốt; bậc đại nhân chịu bĩ mà vẫn thông, không để lẫn vào bầy.",
         "whatTendsToFollow": "Nếu nhận sự bao bọc, người ở đây thường trượt dần tới chỗ ôm giữ điều đáng thẹn của hào 3.",
         "reflectionQuestions": [
-          "Sự ưu ái này đòi bạn trả lại điều gì, dù không ai nói ra?",
-          "Nếu từ chối, bạn mất gì cụ thể trong sáu tháng tới?",
+          "Những người đang chiều theo bạn muốn nhận lại điều gì, dù không ai nói ra?",
+          "Nếu khước từ sự vây quanh này, bạn mất gì cụ thể trong sáu tháng tới?",
           "Người bạn tôn trọng nhất nhìn lựa chọn này thế nào?"
         ]
       },
@@ -2030,7 +2030,7 @@
         "characteristicRisk": "Vòng kết nối hẹp dần thành bè phái và khép cửa với người ngoài.",
         "commonFailure": "Người ở vị trí này thường lấy sự thân thuộc làm tiêu chí tin cậy, và vòng kết nối hẹp dần thành bè phái khép cửa với người ngoài.",
         "traditionalCounsel": "Truyền thống khuyên rằng cùng người mà chỉ trong họ hàng thì hẹp, đáng thẹn; hòa đồng lấy lẽ công, không lấy tình riêng.",
-        "whatTendsToFollow": "Khi phe đã hình thành, các phe thường bắt đầu nghi nhau, phục binh chờ nhau (hào 3).",
+        "whatTendsToFollow": "Khi phe đã hình thành, thường có người muốn giành về mình người đã gắn với bên khác, giấu quân rình chờ mà không dám ra mặt (hào 3).",
         "reflectionQuestions": [
           "Nếu bỏ tiêu chí “quen biết”, ai xứng đáng ở vòng trong mà đang ở ngoài?",
           "Nhóm của bạn đang được lợi gì mà người ngoài không có?",
@@ -2047,17 +2047,17 @@
         "behavioralSignals": [
           "Bạn đang thu thập thông tin, lưu bằng chứng về một đồng nghiệp hoặc người thân mà chưa nói thẳng với họ",
           "Bạn muốn có vị trí hoặc người mà người khác đang giữ",
-          "Tình trạng đề phòng này đã kéo dài nhiều tháng mà không có hành động công khai nào",
-          "Bạn dành nhiều thời gian đoán ý người khác hơn làm việc chính"
+          "Bạn đã tính chuyện ra tay nhiều tháng nay nhưng chưa có hành động công khai nào",
+          "Bạn dành nhiều thời gian dò phản ứng của bên kia hơn làm việc chính"
         ],
         "characteristicRisk": "Nuôi ý đồ giành cái không thuộc về mình bằng đường lén lút, rồi mắc kẹt trong rình rập hàng năm trời.",
-        "commonFailure": "Người ở vị trí này thường nuôi sự đề phòng mãi, không dám đối mặt cũng không chịu buông, và giậm chân tại chỗ hàng năm trời.",
+        "commonFailure": "Người ở vị trí này thường không dám giành thẳng mà cũng không chịu buông ý muốn, cứ rình chờ thời cơ không bao giờ đến, và giậm chân tại chỗ hàng năm trời.",
         "traditionalCounsel": "Truyền thống khuyên rằng giấu quân nơi rậm, lên gò cao mà nhìn, ba năm không dấy được; địch mạnh mà chính thì làm sao được — biết thế thì thôi.",
-        "whatTendsToFollow": "Khi sự nghi đã đẩy tới chỗ ra tay, thường đến lúc leo lên tường rồi nhận ra mình không có lý (hào 4).",
+        "whatTendsToFollow": "Khi ý muốn giành đã đẩy tới chỗ ra tay, thường đến lúc leo lên tường rồi nhận ra mình không có lý (hào 4).",
         "reflectionQuestions": [
           "Điều bạn thực sự muốn từ người kia là gì?",
           "Nếu nói thẳng với họ tuần này, điều tệ nhất có thể là gì?",
-          "Sự đề phòng này đã lấy đi của bạn bao nhiêu thời gian và sức?"
+          "Sự rình chờ này đã lấy đi của bạn bao nhiêu thời gian và sức?"
         ]
       },
       {
@@ -2747,7 +2747,7 @@
         "characteristicRisk": "Tin nhầm vào những điều hào nhoáng thay vì điều có giá trị thật.",
         "commonFailure": "Người ở vị trí này thường để cảm tình riêng hoặc lời khen thay cho việc xét người, rồi cả nhóm đi theo lựa chọn đó.",
         "traditionalCounsel": "Truyền thống khuyên rằng người ở ngôi cao thành tín với điều tốt đẹp thì tốt; theo điều thiện là chỗ đứng chính của người dẫn dắt.",
-        "whatTendsToFollow": "Khi niềm tin đã đặt sâu, sự gắn bó thường chặt tới mức thành ràng buộc (hào 6).",
+        "whatTendsToFollow": "Khi niềm tin đã đặt sâu, lòng theo của mọi người thường gắn chặt tới mức bền bỉ không rời (hào 6).",
         "reflectionQuestions": [
           "Điều gì khiến bạn tin người hay việc bạn đang theo là tốt thật?",
           "Ai trong nhóm dám nói với bạn rằng bạn đang tin nhầm?",
@@ -2762,19 +2762,19 @@
         "originalHan": "上六：拘係之乃從，維之，王用亨于西山。",
         "situation": "Lòng theo của mọi người đã tới độ sâu nhất: họ gắn bó với bạn bền chặt, sẵn sàng đi cùng cả khi bạn phải đổi chỗ đứng hay bắt đầu lại từ đầu. Đây là thành quả của việc đã theo đúng điều chính suốt chặng đường.",
         "behavioralSignals": [
-          "Bạn gắn với một người, một tổ chức hoặc một lý tưởng hơn năm năm và khó hình dung mình ở chỗ khác",
-          "Trong năm qua đã có một cơ hội rời đi rõ ràng và bạn không cân nhắc thật sự",
-          "Người ngoài nhìn bạn như biểu tượng của nơi này hoặc của mối quan hệ này",
-          "Các quyết định lớn của bạn thường được đo bằng việc chúng ảnh hưởng thế nào tới mối gắn kết đó"
+          "Có những người đã gắn bó với bạn hơn năm năm, qua nhiều lúc thăng trầm",
+          "Khi bạn đổi chỗ làm, chuyển nơi ở hoặc bắt đầu lại, có người sẵn sàng đi theo",
+          "Người ngoài nhìn bạn như trung tâm của nhóm hoặc của mối quan hệ này",
+          "Các quyết định lớn của bạn thường được cân theo ảnh hưởng tới những người đang gắn với bạn"
         ],
         "characteristicRisk": "Coi sự gắn bó của người khác là điều hiển nhiên, thôi chăm lo cho chính lòng thành đã khiến họ đi theo.",
-        "commonFailure": "Người ở vị trí này thường nhầm sự quen thuộc với sự trung thành, và bỏ qua lúc mối gắn kết đã thôi nuôi dưỡng cả hai bên.",
+        "commonFailure": "Người ở vị trí này thường coi lòng gắn bó của người khác là của mình mãi mãi, thôi giữ lời và thôi chăm lo, cho tới khi mối gắn kết chỉ còn là thói quen.",
         "traditionalCounsel": "Truyền thống khuyên rằng lòng theo đã tới cùng thì bị buộc giữ, theo mà ràng lấy; bậc vua dùng lòng thành ấy mà tế ở núi Tây — gắn bó chí thành có thể thấu tới thần minh.",
         "whatTendsToFollow": "Khi sự theo đã thành nếp cứng, cái cũ thường sinh mục ruỗng và đòi được sửa — tinh thần của quẻ Cổ.",
         "reflectionQuestions": [
-          "Nếu hôm nay mới gặp, bạn có chọn gắn với nơi này hay người này không?",
-          "Mối gắn kết này đang nuôi bạn, hay bạn đang nuôi nó?",
-          "Bạn giữ nó vì lòng tin, hay vì không biết mình là ai khi thiếu nó?"
+          "Điều gì ở bạn đã khiến họ gắn bó tới mức này?",
+          "Lần gần nhất bạn chăm lo cho mối gắn kết ấy, chứ không chỉ nhận nó, là khi nào?",
+          "Nếu những người đang theo bạn phải đi cùng bạn qua một chặng khó, bạn cần giữ lời với họ điều gì?"
         ]
       }
     ],
@@ -7400,7 +7400,7 @@
         "traditionalCounsel": "Truyền thống khuyên rằng lên như vào ấp không người, không gì cản trở; có tài và thuận theo người trên thì cứ tiến, không cần do dự.",
         "whatTendsToFollow": "Sự thuận lợi thường đưa bạn tới gần trung tâm, nơi được giao những việc trang trọng và nặng trách nhiệm (hào 4).",
         "reflectionQuestions": [
-          "Vì sao chỗ này lại trống, và trước đây ai đã ở đó?",
+          "Bạn định dùng lúc đường đang trống này để tiến tới đâu?",
           "Nếu gặp trở ngại đầu tiên vào tháng sau, bạn đã có gì trong tay?",
           "Sự dễ dàng này đang khiến bạn bỏ qua bước kiểm tra nào?"
         ]
@@ -9134,7 +9134,7 @@
         "characteristicRisk": "Lưỡng lự kéo dài đến mức cơ hội qua đi và người khác thôi tin vào lời bạn.",
         "commonFailure": "Người ở vị trí này thường gom thêm ý kiến để khỏi tự chọn, rồi để hạn chót quyết thay mình.",
         "traditionalCounsel": "Truyền thống khuyên rằng khi tiến lui không định thì lợi ở cái chính bền của người võ: lấy sự quả quyết mà sửa chỗ mềm yếu, chọn một hướng rồi giữ.",
-        "whatTendsToFollow": "Khi đã dứt được, sự mềm mỏng thường chuyển thành khả năng dò xét kỹ những điều khuất lấp (hào 2).",
+        "whatTendsToFollow": "Khi đã dứt được, sự mềm mỏng thường chuyển thành sự nhún nhường thành thật, bày tỏ qua nhiều người và nhiều cách (hào 2).",
         "reflectionQuestions": [
           "Nếu buộc chọn trong 24 giờ, bạn nghiêng về bên nào?",
           "Bạn đang chờ thêm thông tin, hay chờ ai đó chọn hộ?",
@@ -9149,19 +9149,19 @@
         "originalHan": "九二：巽在床下，用史巫、紛若吉、无咎。",
         "situation": "Bạn hạ mình xuống rất thấp, nhún nhường tới mức gần như khúm núm. Nhưng sự nhún ấy xuất phát từ lòng thành chứ không phải để lấy lòng, và khi đặt vào việc đáng kính, như bày tỏ lòng thành với nhiều người qua nhiều cách, nó đem lại kết quả tốt.",
         "behavioralSignals": [
-          "Bạn đang hỏi chuyện nhiều người ở các cấp khác nhau về cùng một vấn đề chưa ai gọi tên",
-          "Bạn chịu ngồi cùng tuyến dưới, làm việc tay chân hoặc đọc lại hồ sơ cũ để hiểu gốc chuyện",
-          "Bạn nhờ người trung gian (đồng nghiệp lâu năm, chuyên gia, người nhà) nói hộ hoặc dò hộ",
-          "Trong vài tuần, bạn đã tìm ra ít nhất một điều trước đó bị giấu hoặc bị bỏ qua"
+          "Bạn chủ động nhận phần thấp, xin lỗi trước hoặc nhường lời dù không hẳn là người có lỗi",
+          "Bạn nhờ nhiều người khác nhau (đồng nghiệp lâu năm, người nhà, người trung gian) chuyển lời hoặc nói giúp mình",
+          "Bạn bày tỏ cùng một thiện chí qua nhiều cách: gặp mặt, viết thư, làm một việc cụ thể",
+          "Người nhận đã bắt đầu dịu lại hoặc đáp lời sau những lần bạn hạ mình"
         ],
         "characteristicRisk": "Hạ mình tới mức mất phẩm giá, hoặc để người khác lợi dụng sự nhún nhường ấy.",
-        "commonFailure": "Người ở vị trí này thường ngại hỏi thẳng, dừng ở lời đồn và để nghi ngờ đọng lại mà không làm rõ.",
+        "commonFailure": "Người ở vị trí này thường nhún nhường để lấy lòng hay để tránh va chạm chứ không vì lòng thành, và người khác sớm nhận ra sự gượng ép ấy.",
         "traditionalCounsel": "Truyền thống khuyên rằng thuận nhập đến tận dưới giường, dùng nhiều người như thầy sử thầy vu để thông đạt lòng thành thì tốt, không lỗi; khiêm mà ở giữa thì không thành xu nịnh.",
         "whatTendsToFollow": "Nếu sự nhún nhường không còn từ lòng mà lặp đi lặp lại vì bị ép, nó dễ trượt thành gượng gạo (hào 3).",
         "reflectionQuestions": [
-          "Điều bạn đang dò tìm là gì, và ai được lợi khi nó còn khuất?",
+          "Bạn đang hạ mình để bày tỏ điều gì, và với ai?",
           "Bạn hạ mình vì việc, hay vì sợ va chạm?",
-          "Ranh giới nào bạn không muốn vượt qua dù cần thông tin đến đâu?"
+          "Ranh giới nào bạn không muốn vượt qua dù cần nhún nhường đến đâu?"
         ]
       },
       {
@@ -10175,7 +10175,7 @@
         "characteristicRisk": "Lơ là vì thấy mọi thứ đã xong, không chuẩn bị cho vết nứt nhỏ.",
         "commonFailure": "Người ở vị trí này thường bỏ dự phòng khi thấy lâu không có sự cố, đúng lúc chỗ rò bắt đầu lớn.",
         "traditionalCounsel": "Truyền thống khuyên rằng thuyền có chỗ rò thì sẵn giẻ rách, suốt ngày răn giữ; ở thời đã xong mà biết lo xa thì không hỏng.",
-        "whatTendsToFollow": "Khi giữ được thành quả, câu hỏi tiếp theo là giữ nó bằng hình thức phô trương hay bằng lòng thành giản dị (hào 5).",
+        "whatTendsToFollow": "Khi giữ được thành quả, câu hỏi tiếp theo thường là nhận ra cái thịnh của mình đang ở đâu trong vòng thời (hào 5).",
         "reflectionQuestions": [
           "Chỗ rò nhỏ nào bạn đang thấy mà chưa nói với ai?",
           "Phương án dự phòng của bạn được kiểm tra lần cuối khi nào?",
@@ -10190,19 +10190,19 @@
         "originalHan": "九五：東鄰殺牛，不如西鄰之禴祭實受其福。",
         "situation": "Hàng xóm phía đông giết bò làm lễ lớn, nhưng hàng xóm phía tây chỉ làm lễ mọn lại được phúc thật hơn. Cả hai đều thành tâm như nhau; khác nhau ở thời. Bạn đang ở gần đỉnh, nơi cái thịnh đã đầy và sắp chuyển, nên cùng một nỗ lực đem lại ít hơn so với người đang ở đầu chặng.",
         "behavioralSignals": [
-          "Bạn có đủ nguồn lực để làm lớn một sự kiện, một buổi ra mắt hoặc một món quà",
-          "Bạn đang cân nhắc giữa một buổi hoành tráng và một cách làm nhỏ mà đúng người, đúng việc",
-          "Người nhận quan tâm đến sự chu đáo hơn là quy mô",
-          "Trong những lần trước, chi phí cho hình thức (quảng cáo, trang trí, quà cáp) chiếm phần lớn ngân sách"
+          "Bạn đã ở đỉnh của việc này một thời gian và có đủ nguồn lực để làm lớn",
+          "Cùng mức công sức như trước, kết quả bạn thu về gần đây ít hơn",
+          "Một người hoặc nhóm mới lên, ít phương tiện hơn, lại đang được đón nhận nhiều hơn bạn",
+          "Bạn đang tính tăng quy mô hoặc chi phí để lấy lại đà cũ"
         ],
         "characteristicRisk": "Tưởng rằng ở vị trí cao, làm lớn thì phúc cũng lớn, mà không thấy thời thịnh của mình đang qua dần.",
         "commonFailure": "Người ở vị trí này thường dồn thêm nguồn lực và quy mô để giữ đà cũ, trong khi người mới lên, dù ít phương tiện hơn, lại gặt được nhiều hơn vì đúng thời.",
         "traditionalCounsel": "Truyền thống khuyên rằng xóm đông giết bò không bằng lễ mọn của xóm tây, vì xóm tây gặp thời hơn nên được phúc thật; thịnh tới cực thì sẽ suy, người ở trên cần biết mình đang ở đâu trong vòng thời.",
         "whatTendsToFollow": "Khi đã xong mà vẫn tiến quá, người ta thường bị cuốn tới chỗ nước ngập đầu (hào 6).",
         "reflectionQuestions": [
-          "Người bạn muốn bày tỏ thật sự cần điều gì?",
-          "Phần nào của việc này làm cho người khác, phần nào để người khác nhìn thấy?",
-          "Nếu ngân sách chỉ bằng một phần mười, bạn làm thế nào?"
+          "Bạn đang ở đầu, giữa hay cuối chặng thịnh của việc này?",
+          "Người mới lên đang có điều gì mà bạn không còn?",
+          "Nếu không tăng quy mô, bạn sẽ dồn nguồn lực hiện có vào đâu cho hợp thời?"
         ]
       },
       {
