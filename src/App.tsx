@@ -1,4 +1,4 @@
-import { NavLink, Route, Routes } from 'react-router-dom';
+import { NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import { t } from './i18n';
 import { HomePage } from './pages/HomePage';
 import { SettingsPage } from './pages/SettingsPage';
@@ -13,8 +13,18 @@ import { ReviewPage } from './pages/ReviewPage';
 import { HexagramPage, LibraryPage } from './pages/LibraryPage';
 import { SharePage } from './pages/SharePage';
 import { QuickNotePage } from './pages/QuickNotePage';
+import { WitnessPage } from './pages/WitnessPage';
 
 export function App() {
+  // Trang nhân chứng mở từ link gửi đi: đứng riêng, không có điều hướng của app.
+  if (useLocation().pathname === '/witness')
+    return (
+      <div className="shell">
+        <main className="page">
+          <WitnessPage />
+        </main>
+      </div>
+    );
   return (
     <div className="shell">
       <header className="topbar no-print">

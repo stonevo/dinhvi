@@ -2,12 +2,13 @@ import { t } from '../../i18n';
 import { WITNESS_STAGES, type Witness } from '../../types/schema';
 import { ChoiceGroup, TextArea, TextInput } from '../../ui/controls';
 import { witnessDiffers } from '../draft';
+import { WitnessLinkBox } from '../../ui/WitnessLinkBox';
 import type { StepProps } from './types';
 
 const EMPTY = (): Witness => ({ who: '', theirStage: 'unknown', theirLineGuess: null, note: '', askedAt: new Date().toISOString() });
 
 /** Bước 7 — Nhân chứng (chống định vị một mình). Bỏ qua được, nhưng phải chủ động bấm. */
-export function Step7Witness({ d, set }: StepProps) {
+export function Step7Witness({ d, set, domainName }: StepProps) {
   const w = d.witness ?? null;
   const patch = (p: Partial<Witness>) => set({ witness: { ...(w ?? EMPTY()), ...p }, witnessSkipped: false });
 
@@ -26,6 +27,10 @@ export function Step7Witness({ d, set }: StepProps) {
   return (
     <div className="stack">
       <p className="lead">{t('step7.intro')}</p>
+      <WitnessLinkBox
+        topic={domainName?.toLowerCase() ?? ''}
+        onAnswer={(a) => patch({ who: a.who, theirStage: a.stage, note: a.note, askedAt: a.at })}
+      />
       <TextInput label={t('step7.who')} value={w?.who} onChange={(v) => patch({ who: v })} />
       <ChoiceGroup
         label={t('step7.stage')}

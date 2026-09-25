@@ -11,7 +11,10 @@ import './styles.css';
 registerSW({ immediate: true });
 applyTheme(getTheme());
 
-ensureSeeded(db).finally(() => {
+// Trang nhân chứng (mở từ link) không tạo dữ liệu trên máy người trả lời.
+const isWitness = window.location.hash.startsWith('#/witness');
+
+(isWitness ? Promise.resolve() : ensureSeeded(db)).finally(() => {
   ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
       <HashRouter>
@@ -19,6 +22,7 @@ ensureSeeded(db).finally(() => {
       </HashRouter>
     </React.StrictMode>,
   );
+  if (isWitness) return;
   void remindOnOpen();
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') void remindOnOpen();

@@ -362,3 +362,9 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 /* ---------- Bản gửi ---------- */
 .share-sheet .original { margin-top: 16px; }
 .share-message { margin-top: 20px; padding: 10px 14px; background: var(--surface-2); border-radius: var(--radius); font-style: italic; }
+
+/* ---------- Nhân chứng qua link ---------- */
+.qr { width: 180px; max-width: 100%; background: #fff; padding: 6px; border-radius: var(--radius); }
+.qr svg { display: block; width: 100%; height: auto; }
+.code-box { word-break: break-all; font-family: ui-monospace, Menlo, Consolas, monospace; background: var(--surface-2); padding: 8px 10px; border-radius: var(--radius); margin: 0; }
+.witness-page { max-width: 560px; margin: 0 auto; }

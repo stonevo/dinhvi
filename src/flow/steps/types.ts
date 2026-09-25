@@ -6,4 +6,6 @@ export type StepProps = {
   set: (patch: Partial<DraftData>) => void;
   data: StaticData;
   goTo: (step: number) => void;
+  /** Tên lĩnh vực đang định vị (dùng làm chủ đề khi hỏi nhân chứng qua link). */
+  domainName?: string;
 };

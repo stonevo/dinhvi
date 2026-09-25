@@ -115,7 +115,7 @@ function Flow({ domainId, domainName, period, data }: { domainId: string; domain
         {t('flow.step', { n: draft.step })} — {t(`flow.stepName.${draft.step}` as 'flow.stepName.1')}
       </h1>
 
-      <Step d={draft.data} set={draft.update} data={data} goTo={draft.setStep} />
+      <Step d={draft.data} set={draft.update} data={data} goTo={draft.setStep} domainName={domainName} />
 
       {error && <p className="warning">{t('common.error', { message: error })}</p>}
       <div className="flow-nav">
