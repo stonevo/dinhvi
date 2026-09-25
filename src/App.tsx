@@ -11,6 +11,7 @@ import { ProfileSwitcher } from './ui/ProfileSwitcher';
 import { CastPage } from './pages/CastPage';
 import { ReviewPage } from './pages/ReviewPage';
 import { HexagramPage, LibraryPage } from './pages/LibraryPage';
+import { SharePage } from './pages/SharePage';
 
 export function App() {
   return (
@@ -33,6 +34,7 @@ export function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/position/:domainId" element={<PositioningPage />} />
           <Route path="/record/:id" element={<RecordPage />} />
+          <Route path="/record/:id/share" element={<SharePage />} />
           <Route path="/review/:id" element={<ReviewPage />} />
           <Route path="/trajectory" element={<TrajectoryPage />} />
           <Route path="/calibration" element={<CalibrationPage />} />

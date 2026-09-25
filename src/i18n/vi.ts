@@ -229,6 +229,11 @@ export const vi = {
 
   'record.title': '{domain} · {period}',
   'record.print': 'In / lưu PDF',
+  'share.open': 'Bản gửi',
+  'share.back': 'Về bản ghi đầy đủ',
+  'share.hint': 'Bản gọn để gửi cho người được định vị: chỉ quẻ, hào, lời hào, điều chọn không làm và câu hỏi tự soi. Không có thống kê hay ghi chú riêng.',
+  'share.message': 'Lời nhắn kèm theo (tùy chọn, không lưu)',
+  'share.shareText': 'Chia sẻ dạng chữ',
   'record.image': 'Lưu ảnh',
   'record.facts': 'Sự thật',
   'record.trigrams': 'Bên trong / bên ngoài',

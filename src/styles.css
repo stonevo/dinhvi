@@ -358,3 +358,7 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .library-sub { display: block; }
 .library-line { margin-top: 10px; }
 .library-line h3 { font-size: 1rem; font-weight: normal; }
+
+/* ---------- Bản gửi ---------- */
+.share-sheet .original { margin-top: 16px; }
+.share-message { margin-top: 20px; padding: 10px 14px; background: var(--surface-2); border-radius: var(--radius); font-style: italic; }

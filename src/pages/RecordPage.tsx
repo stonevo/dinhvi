@@ -48,6 +48,7 @@ export function RecordPage() {
         <button type="button" onClick={saveImage}>
           {t('record.image')}
         </button>
+        <Link to={`/record/${p.id}/share`}>{t('share.open')}</Link>
         {!p.hindsight && <Link to={`/review/${p.id}`}>{t('home.action.review')}</Link>}
       </div>
 
