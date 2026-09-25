@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { cryptoBit, readCast, tossCoins, type BitSource, type LineValue } from '../src/lib/cast';
+import { castFocus, cryptoBit, readCast, tossCoins, type BitSource, type LineValue } from '../src/lib/cast';
 import { applyPatch, derivedHexagram, finalizeDraft, stepComplete, type DraftData } from '../src/flow/draft';
 
 /** Nguồn bit dựng sẵn để kiểm thử. */
@@ -92,5 +92,32 @@ describe('bước 2 bằng cách gieo', () => {
     const p = finalizeDraft(d, { id: 'x', domainId: 'd', period: '2026-Q3', createdAt: 'x' });
     expect(p.method).toBe('self');
     expect(p.castLines).toBeUndefined();
+  });
+});
+
+describe('castFocus — đoạn nên đọc theo số hào động', () => {
+  const v = (s: string) => [...s].map(Number) as LineValue[];
+  it('0 hào động: lời quẻ chính', () => {
+    expect(castFocus(readCast(v('777777')))).toEqual({ kind: 'judgment', hexagrams: [1] });
+  });
+  it('1–2 hào động: lời hào động ở quẻ chính, hào trên là chính', () => {
+    expect(castFocus(readCast(v('977777')))).toEqual({ kind: 'lines', hexagram: 1, lines: [1], main: 1 });
+    expect(castFocus(readCast(v('797977')))).toEqual({ kind: 'lines', hexagram: 1, lines: [2, 4], main: 4 });
+  });
+  it('3 hào động: lời quẻ chính rồi lời quẻ biến', () => {
+    const r = readCast(v('999777'));
+    expect(castFocus(r)).toEqual({ kind: 'judgment', hexagrams: [1, r.transformed] });
+  });
+  it('4–5 hào động: hào không động ở quẻ biến, hào dưới là chính', () => {
+    const r4 = readCast(v('799997'));
+    expect(castFocus(r4)).toEqual({ kind: 'lines', hexagram: r4.transformed, lines: [1, 6], main: 1 });
+    const r5 = readCast(v('999979'));
+    expect(castFocus(r5)).toEqual({ kind: 'lines', hexagram: r5.transformed, lines: [5], main: 5 });
+  });
+  it('6 hào động: Càn/Khôn đọc dụng hào, quẻ khác đọc lời quẻ biến', () => {
+    expect(castFocus(readCast(v('999999')))).toEqual({ kind: 'allMoving', hexagram: 1 });
+    expect(castFocus(readCast(v('666666')))).toEqual({ kind: 'allMoving', hexagram: 2 });
+    const r = readCast(v('969696'));
+    expect(castFocus(r)).toEqual({ kind: 'judgment', hexagrams: [r.transformed] });
   });
 });

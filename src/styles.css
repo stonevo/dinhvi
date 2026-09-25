@@ -382,3 +382,13 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 }
 .welcome { max-width: 600px; }
 .welcome-steps li { margin: 4px 0; }
+
+.cast-focus {
+  border-left: 3px solid var(--accent);
+}
+.cast-question {
+  margin: 0;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--line);
+  font-style: italic;
+}

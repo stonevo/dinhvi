@@ -43,3 +43,38 @@ export function readCast(values: LineValue[]): CastReading {
     : null;
   return { primary, moving, transformed };
 }
+
+/**
+ * Đoạn nên đọc trước cho một lần gieo, theo quy tắc của Chu Hy (Dịch học khải mông):
+ * - 0 hào động: lời quẻ chính.
+ * - 1 hào động: lời hào đó.
+ * - 2 hào động: lời hai hào đó ở quẻ chính, hào trên là chính.
+ * - 3 hào động: lời quẻ chính và lời quẻ biến, quẻ chính là chính.
+ * - 4 hào động: lời hai hào không động ở quẻ biến, hào dưới là chính.
+ * - 5 hào động: lời hào không động ở quẻ biến.
+ * - 6 hào động: Càn/Khôn đọc Dụng cửu/Dụng lục; quẻ khác đọc lời quẻ biến.
+ */
+export type CastFocus =
+  | { kind: 'judgment'; hexagrams: number[] }
+  | { kind: 'lines'; hexagram: number; lines: number[]; main: number }
+  | { kind: 'allMoving'; hexagram: number };
+
+export function castFocus({ primary, moving, transformed }: CastReading): CastFocus {
+  const still = [1, 2, 3, 4, 5, 6].filter((p) => !moving.includes(p));
+  switch (moving.length) {
+    case 0:
+      return { kind: 'judgment', hexagrams: [primary] };
+    case 1:
+    case 2:
+      return { kind: 'lines', hexagram: primary, lines: moving, main: moving[moving.length - 1] };
+    case 3:
+      return { kind: 'judgment', hexagrams: [primary, transformed!] };
+    case 4:
+    case 5:
+      return { kind: 'lines', hexagram: transformed!, lines: still, main: still[0] };
+    default:
+      return primary === 1 || primary === 2
+        ? { kind: 'allMoving', hexagram: primary }
+        : { kind: 'judgment', hexagrams: [transformed!] };
+  }
+}
