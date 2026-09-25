@@ -326,6 +326,10 @@
      {
       "source": "Chu Hy",
       "text": "Chu Hy phân: cương nói về thể, kiện gồm cả dụng, trung là làm không quá không kém, chính là đứng không lệch; thuần là không lẫn âm nhu, túy là không lẫn tà ác. Có người ngờ Càn thuần cứng thì sao gọi là trung chính, ông đáp trời đất vốn một khí lưu hành, chia ra động tĩnh mới có âm dương, nói gộp thì Càn bao hết."
+     },
+     {
+      "source": "Phan Bội Châu",
+      "text": "Phan Bội Châu giảng chuỗi đức phải khép lại bằng chữ 'tinh': cương kiện mà không tinh thì thành thô bạo như Tử Lộ; trung chính mà không tinh thì thành hẹp hòi như Bá Di hoặc khinh nhờn như Liễu Hạ Huệ."
      }
     ],
     "han": "大哉乾乎！剛健中正，純粹精也。六爻發揮，旁通情也。時乘六龍、以御天也，雲行雨施、天下平也。君子以成德為行，日可見之行也。"
@@ -362,10 +366,6 @@
      {
       "source": "Chu Hy",
       "text": "Chu Hy chỉ giảng “trùng cương” là hào dương ở ngôi dương."
-     },
-     {
-      "source": "Phan Bội Châu",
-      "text": "Phan Bội Châu giảng chuỗi đức phải khép lại bằng chữ 'tinh': cương kiện mà không tinh thì thành thô bạo như Tử Lộ; trung chính mà không tinh thì thành hẹp hòi như Bá Di hoặc khinh nhờn như Liễu Hạ Huệ."
      }
     ],
     "han": "九三重剛而不中，上不在天，下不在田，故乾乾因其時而惕，雖危无咎矣。"
@@ -1623,7 +1623,7 @@
     },
     {
      "source": "Vương Phụ Tự (Ngô Tất Tố dẫn)",
-     "text": "Vương Phụ Tự lưu ý: dương ở vị âm là cứng mà biết nhún, nên trong quẻ Lý các hào dương ở vị âm (hào 2, 4 và trên cùng) đều được lời tốt."
+     "text": "Vương Phụ Tự cho rằng hào dương ở ngôi âm là cứng mà biết khiêm nhún, nên trong quẻ Lý, dương ở vị âm được coi là điều tốt."
     }
    ],
    "imageHan": "上天下澤，《履》。君子以辯上下，定民志。",
@@ -1896,7 +1896,7 @@
      },
      {
       "source": "Phan Bội Châu",
-      "text": "Phan Bội Châu theo Chu Hy coi hào 1 là tiểu nhân, nhưng hiểu “chí ở vua” khác: “vua” ở đây là hào 4, người quân tử mà hào 1 ứng theo như tôi tớ theo chủ; thánh nhân khuyên nó giữ chính, một lòng với người quân tử ấy thì mới tốt và thông."
+      "text": "Giống Chu Hy, Phan Bội Châu coi hào 1 là tiểu nhân, nhưng hiểu “chí ở vua” khác: “vua” là hào 4, người quân tử mà hào 1 ứng theo như tôi tớ theo chủ; giữ chính, một lòng với người ấy thì mới tốt và thông."
      }
     ],
     "imageHan": "拔茅貞吉、志在君也。"
@@ -2623,7 +2623,7 @@
      },
      {
       "source": "Phan Bội Châu",
-      "text": "Phan Bội Châu lưu ý hào trên cùng thường cực thì chuyển xấu, riêng Tùy cực lại được hanh, vì Tùy nói về lòng người theo chứ không nói hoàn cảnh: trước khi theo phải chọn kỹ, đã theo thì phải theo đến cùng. Ông phân biệt chữ hệ ở hào này là gắn bó theo lẽ tự nhiên như dân về với người nhân, khác chữ hệ vì tình riêng ở hào 2 và hào 3."
+      "text": "Phan Bội Châu lưu ý hào trên cùng thường cực thì chuyển xấu, riêng Tùy cực lại được hanh, vì Tùy không nói hoàn cảnh mà nói lòng người theo, và đã theo thì phải theo đến cùng. Ông phân biệt chữ hệ ở hào này là gắn bó theo lẽ tự nhiên như dân về với người nhân, khác chữ hệ vì tình riêng ở hào 2 và hào 3."
      }
     ],
     "imageHan": "拘係之、上窮也。"
@@ -3115,7 +3115,7 @@
      },
      {
       "source": "Phan Bội Châu",
-      "text": "Phan Bội Châu so bốn hào dùng hình theo tài và vị: hào 5 hơn hào 2 về tài (mềm mà ở ngôi cứng), hơn hào 3 về vị (được trung); riêng hào 4 có tài cứng lại ở ngôi mềm, tài và vị bù cho nhau nên là hào duy nhất được cát. Có vị mà không tài, hay có tài mà không vị, đều khó trừ được cái ngăn cách."
+      "text": "Phan Bội Châu so bốn hào dùng hình theo tài và vị: hào 5 hơn hào 2 về tài (mềm mà ở ngôi cứng), hơn hào 3 về vị (được trung); riêng hào 4 tài cứng ở ngôi mềm, tài và vị đỡ cho nhau nên là hào duy nhất được cát. Ông rút ra: có vị mà thiếu tài thì không tạo nổi thời thế, có tài mà thiếu vị thì phải chờ thời, huống chi thiếu cả hai mà đòi trừ cái ngăn cách."
      }
     ],
     "imageHan": "利艱貞吉、未光也。"
@@ -3564,7 +3564,7 @@
     },
     {
      "source": "Dương Văn Hoán (Ngô Tất Tố dẫn)",
-     "text": "Dương Văn Hoán chia quẻ làm hai: ba hào dưới thuộc Chấn đều lợi về động (hào 1 đi tốt, hào 2 lợi đi, hào 3 người đi được bò), ba hào trên thuộc Càn đều răn động (hào 4 giữ, hào 5 đừng thuốc, hào 6 đi thì có lỗi); nên động mà không động hay không nên động mà động đều là vọng."
+     "text": "Dương Văn Hoán cho rằng ba hào dưới thuộc Chấn đều được khuyến khích hành động, còn ba hào trên thuộc Càn đều bị răn đừng động; vọng là làm trái lẽ trời, nên đáng động mà ngồi yên cũng như không đáng động mà cứ động, cả hai đều là vọng."
     }
    ],
    "imageHan": "天下雷行，物與《无妄》。先王以茂對時育萬物。",
@@ -5544,7 +5544,7 @@
      },
      {
       "source": "Khâu Kiến An (Ngô Tất Tố dẫn)",
-      "text": "Khâu Kiến An coi hào 3 (kẻ vừa gánh vừa ngồi xe) là gốc sinh nạn và là chủ của cả quẻ; các hào khác đều nhằm trừ nó: cáo của hào 2, ngón chân cái của hào 4, kẻ tiểu nhân phải lui của hào 5, và con chim cắt mà hào trên cùng bắn đều chỉ hào 3."
+      "text": "Khâu Kiến An coi hào 3 (kẻ vừa đội đồ vừa ngồi xe) là gốc sinh ra nạn và là chủ của cả quẻ Giải; các hào khác đều nhằm trừ nó: cáo mà hào 2 bắt, ngón chân cái mà hào 4 gỡ, kẻ tiểu nhân mà hào 5 khiến phải lui, và con chim cắt mà hào trên cùng bắn đều là hào 3."
      }
     ],
     "imageHan": "公用射隼、以解悖也。"
@@ -5877,7 +5877,7 @@
      },
      {
       "source": "Phan Bội Châu",
-      "text": "Ông coi hào 3 là người trong phe quân tử mà thân với tiểu nhân, có thể thành nội ứng như Y Doãn đến với Kiệt; nếu lòng thật theo quân tử thì chính tay nó lật đổ hào trên. Trong sáu hào chỉ hào 3 và 5 có chữ quải quải: dùng hào 3 là quyền biến, tôn hào 5 là chính đạo, thiếu một bên thì việc quyết không thành."
+      "text": "Ông coi hào 3 là bạn thân của hào trên, có thể làm nội gián cho phe quân tử; nếu lòng thật tốt thì là hạng người như Y Doãn đến với Kiệt hay Địch Nhân Kiệt thờ nhà Chu mà khôi phục nhà Đường. Trong sáu hào chỉ hào 3 và hào 5 có chữ quyết quyết: dùng hào 3 là kế biến, tôn hào 5 là đạo chính, thiếu bên nào việc quyết cũng khó thành."
      }
     ],
     "imageHan": "君子夬夬、終无咎也。"

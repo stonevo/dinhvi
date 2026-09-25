@@ -6449,7 +6449,7 @@
         "characteristicRisk": "Tiếc cái cũ quen thuộc mà không nhận ra nó đang giữ chân mình.",
         "commonFailure": "Người ở vị trí này thường muốn vừa giữ cái cũ vừa có được người mới, và mất lòng tin của cả hai phía.",
         "traditionalCounsel": "Truyền thống khuyên rằng gỡ bỏ ngón chân cái thì bạn bè đến và tin nhau — lìa kẻ tiểu nhân thân cận, người quân tử mới tới.",
-        "whatTendsToFollow": "Khi đã buông, người ở đây thường tới chỗ tự giải thoát trọn vẹn và được cả những người cũ thừa nhận (hào 5).",
+        "whatTendsToFollow": "Khi đã buông được mối ràng buộc gần nhất, người ở đây thường tới chỗ dứt hẳn khỏi những ảnh hưởng xấu, và điều đó thấy rõ qua việc chúng tự rời xa bạn (hào 5).",
         "reflectionQuestions": [
           "Điều gì bạn nhận được từ mối ràng buộc cũ mà chưa tìm được ở đâu khác?",
           "Người bạn muốn đến gần đang thấy gì khi nhìn bạn?",
@@ -6474,7 +6474,7 @@
         "traditionalCounsel": "Truyền thống khuyên rằng người quân tử chỉ có cởi bỏ được kẻ tiểu nhân quanh mình thì mới tốt; muốn biết mình đã thật sự cởi được chưa, cứ xem kẻ tiểu nhân đã lui đi hay vẫn còn bám bên cạnh.",
         "whatTendsToFollow": "Khi phần lớn đã được giải, thường còn lại một trở ngại cuối ở vị trí cao, chờ một cú dứt điểm (hào 6).",
         "reflectionQuestions": [
-          "Người quanh bạn thấy sự thay đổi của bạn qua việc gì cụ thể?",
+          "Những người hay thói quen từng kéo bạn xuống đã thật sự rời xa bạn chưa, hay vẫn còn quanh quẩn bên cạnh?",
           "Phần nào trong bạn vẫn còn giữ liên hệ với điều đã rời?",
           "Điều gì giúp sự thay đổi này đứng vững mà không cần nói ra?"
         ]
@@ -7208,7 +7208,7 @@
           "Một người trong nhóm chủ động giới thiệu hoặc dẫn bạn vào",
           "Người dẫn bạn vào có uy tín thật trong nhóm",
           "Bạn đến với nhóm mà không mang theo quà cáp hay màn giới thiệu cầu kỳ",
-          "Bạn đang tốn thời gian chuẩn bị hồ sơ, hình ảnh để được đánh giá cao ngay từ đầu"
+          "Trong những buổi đầu, bạn cư xử như thường ngày, không dựng hình ảnh để được đánh giá cao ngay"
         ],
         "characteristicRisk": "Nghĩ mình cần thể hiện nhiều để được chấp nhận, rồi đánh mất sự tự nhiên.",
         "commonFailure": "Người ở vị trí này thường ra sức thể hiện trong vài buổi đầu, làm người khác nghi động cơ, và đánh mất chính sự chân thành đã khiến mình được dẫn vào.",
@@ -8017,12 +8017,12 @@
         "behavioralSignals": [
           "Bạn đang giữ một phần việc cốt lõi mang lại kết quả đo được: doanh số, sản phẩm, bữa cơm cho cả nhà",
           "Một đồng nghiệp, họ hàng hoặc đối thủ đã nhiều lần nói xấu hoặc tìm cách kéo bạn vào tranh cãi",
-          "Người đó đang gặp rắc rối riêng: sức khỏe, sai sót, mất vị trí",
+          "Người đó từng rủ bạn vào một việc khuất tất: lập phe, chia phần không rõ ràng, làm tắt quy trình",
           "Bạn đã từ chối ít nhất một lần lời rủ hùa theo hoặc đáp trả"
         ],
         "characteristicRisk": "Tự làm đổ vạc của mình khi để bị cuốn vào cuộc đối đầu; hoặc kiêu vì có thực lực.",
         "commonFailure": "Người ở vị trí này thường lao vào đối phó với người ghen, lấy thời gian của việc thật để lo chuyện hơn thua.",
-        "traditionalCounsel": "Truyền thống khuyên rằng vạc đã có thức ăn thì phải cẩn thận chỗ đi; kẻ thù của ta có bệnh, không đến gần ta được, giữ mình thì tốt.",
+        "traditionalCounsel": "Truyền thống khuyên rằng vạc đã có thức ăn thì phải cẩn thận chỗ đi; kẻ đối nghịch sát bên mang lòng ganh ghét (“ngã cừu hữu tật”) nhưng không đến gần ta được, giữ mình ngay thẳng thì tốt.",
         "whatTendsToFollow": "Có thực lực mà chưa được dùng tới, người ở đây thường gặp cảnh quai vạc bị đổi — tài có mà đường dẫn tới người dùng bị tắc (hào 3).",
         "reflectionQuestions": [
           "Nếu thôi dành thời gian đối phó người kia, bạn làm được thêm gì cho việc chính?",
@@ -10059,7 +10059,7 @@
         "characteristicRisk": "Tiếp tục vượt quá tới mức tự chuốc lấy tai họa.",
         "commonFailure": "Người ở vị trí này thường cho rằng chỉ cần thêm một bước nữa là tới, và chính bước ấy đưa họ đi quá xa, không còn đường quay lại.",
         "traditionalCounsel": "Truyền thống khuyên rằng không gặp lẽ phải mà cứ vượt quá, như chim bay đi xa mãi không kéo lại được, là xấu; quá đến cùng cực thì cả họa trời (tai) lẫn lỗi người (sảnh) cùng kéo đến.",
-        "whatTendsToFollow": "Khi những việc nhỏ đã được vượt qua đúng tầm, việc thường đi tới chỗ hoàn thành — quẻ Ký Tế.",
+        "whatTendsToFollow": "Khi đà vượt quá đã tới cùng, việc thường chuyển sang thế mọi thứ đã vào chỗ — quẻ Ký Tế — nơi điều còn lại cần học là biết dừng và giữ lấy cái đã có.",
         "reflectionQuestions": [
           "Điểm dừng của bạn trong việc này ở đâu, và bạn đã vượt qua nó chưa?",
           "Ai đã cảnh báo bạn, và bạn đã trả lời họ thế nào?",
