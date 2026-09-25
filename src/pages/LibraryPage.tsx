@@ -10,6 +10,7 @@ import { HexagramFigure } from '../ui/HexagramFigure';
 import { LineReading } from '../ui/LineReading';
 import { TRIGRAM_SYMBOL } from '../flow/steps/Step2Trigrams';
 import { Term } from '../ui/Term';
+import { JudgmentClassic, LineClassic } from '../ui/Classic';
 
 /** Thư viện: tra cứu 64 quẻ. */
 export function LibraryPage() {
@@ -110,6 +111,7 @@ export function HexagramPage() {
         <h2>{t('library.judgment')}</h2>
         <p className="han-text" lang="zh-Hant">{h.judgmentHan}</p>
         <p>{h.judgment}</p>
+        <JudgmentClassic hexagram={h} />
       </section>
 
       <section>
@@ -142,6 +144,7 @@ export function HexagramPage() {
             <h3>{t(num === 1 ? 'cast.useNine' : 'cast.useSix')}</h3>
             <p className="original">{h.allMoving.original}</p>
             <p className="han-text" lang="zh-Hant">{h.allMoving.originalHan}</p>
+            <LineClassic hexagram={h} position={7} />
             <p>{h.allMoving.situation}</p>
             <p className="muted">{h.allMoving.commonFailure}</p>
             <p className="muted small">{h.allMoving.traditionalCounsel}</p>

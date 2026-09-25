@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { z } from 'zod';
 import {
-  hexagramSchema, lineTierSchema, trigramSchema,
-  type Hexagram, type LineTier, type Trigram, type TrigramKey,
+  hexagramCommentarySchema, hexagramSchema, lineTierSchema, trigramSchema,
+  type Hexagram, type HexagramCommentary, type LineTier, type Trigram, type TrigramKey,
 } from '../types/schema';
 
 // Dữ liệu tĩnh nằm ở public/data để người tự host sửa được mà không build lại.
@@ -66,5 +66,34 @@ export function useStaticData(): { data: StaticData | null; error: string | null
       alive = false;
     };
   }, []);
+  return state;
+}
+
+// Kinh & Truyện (dịch sát, Thoán, Tượng, giảng) nằm ở file riêng, chỉ tải khi cần xem.
+let commentaryCache: Promise<Map<number, HexagramCommentary>> | null = null;
+
+export function loadCommentary(): Promise<Map<number, HexagramCommentary>> {
+  commentaryCache ??= fetchJson('commentary.json', z.array(hexagramCommentarySchema).length(64)).then(
+    (list) => new Map(list.map((c) => [c.kingWenNumber, c])),
+  );
+  commentaryCache.catch(() => {
+    commentaryCache = null;
+  });
+  return commentaryCache;
+}
+
+/** Kinh & Truyện của một quẻ; null khi đang tải hoặc tải lỗi. */
+export function useCommentary(n: number): HexagramCommentary | null {
+  const [state, setState] = useState<HexagramCommentary | null>(null);
+  useEffect(() => {
+    let alive = true;
+    loadCommentary().then(
+      (m) => alive && setState(m.get(n) ?? null),
+      () => alive && setState(null),
+    );
+    return () => {
+      alive = false;
+    };
+  }, [n]);
   return state;
 }

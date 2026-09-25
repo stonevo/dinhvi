@@ -392,3 +392,22 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
   border-left: 2px solid var(--line);
   font-style: italic;
 }
+
+.classic {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.classic > summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+}
+.classic[open] > summary {
+  margin-bottom: 0.5rem;
+}
+.structure-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}

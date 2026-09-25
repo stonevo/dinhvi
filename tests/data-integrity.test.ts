@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import type { Hexagram } from '../src/types/schema';
 import {
-  lineLabel, validateHexagrams, validateLineTiers, validateTrigrams,
+  lineLabel, validateCommentary, validateHexagrams, validateLineTiers, validateTrigrams,
 } from '../src/data/validate';
 import { CANONICAL_NAMES, fullHexagramName } from '../src/data/names';
 import { hexagramFromTrigrams, oppositeHexagram } from '../src/lib/iching';
@@ -18,6 +18,8 @@ describe('toàn vẹn dữ liệu tĩnh', () => {
   it('lineTiers.json', () => expect(validateLineTiers(read('lineTiers.json'))).toEqual([]));
   it('hexagrams.json: schema, 64 quẻ, binary, quái, bàng thông, hào', () =>
     expect(validateHexagrams(hexagrams)).toEqual([]));
+  it('commentary.json: 64 quẻ, Thoán, Tượng, dịch và giảng đủ', () =>
+    expect(validateCommentary(read('commentary.json'))).toEqual([]));
 
   it('tên quẻ khớp bảng chuẩn độc lập', () => {
     expect(hexagrams.map((h) => [h.nameHanViet, h.nameHan])).toEqual(CANONICAL_NAMES);

@@ -1,6 +1,7 @@
 import type { Hexagram, LineTier } from '../types/schema';
 import { t } from '../i18n';
 import { sentences } from '../flow/draft';
+import { LineClassic } from './Classic';
 
 type Props = {
   hexagram: Hexagram;
@@ -54,6 +55,7 @@ export function LineReading({ hexagram, position, lineTiers, compact, onPickSent
     <div className="line-reading">
       <p className="original">{line.original}</p>
       <p className="han-text" lang="zh-Hant">{line.originalHan}</p>
+      {!compact && <LineClassic hexagram={hexagram} position={position} />}
       {section(t('line.situation'), line.situation)}
       {section(t('line.risk'), line.characteristicRisk)}
       {section(t('line.failure'), line.commonFailure)}

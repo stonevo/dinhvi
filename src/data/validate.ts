@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import {
-  hexagramSchema, lineTierSchema, trigramSchema, TRIGRAM_KEYS,
-  type Hexagram, type Line, type LinePosition, type LineTier, type Trigram,
+  hexagramCommentarySchema, hexagramSchema, lineTierSchema, trigramSchema, TRIGRAM_KEYS,
+  type CommentaryPart, type Hexagram, type HexagramCommentary, type Line, type LinePosition, type LineTier, type Trigram,
 } from '../types/schema';
 import {
   TRIGRAM_BINARY, hexagramBinary, lineYinYang, oppositeHexagram, tierOfLine, trigramsOf,
@@ -152,5 +152,27 @@ export function validateLineTiers(raw: unknown): string[] {
   });
   const ids = list.flatMap((t) => t.checklist.map((q) => q.id));
   if (new Set(ids).size !== ids.length) errors.push('id câu kiểm chứng bị trùng');
+  return errors;
+}
+
+/** Kinh & Truyện: đủ 64 quẻ theo thứ tự, Dụng cửu/Dụng lục chỉ ở Càn, Khôn, và phần tiếng Việt không trống. */
+export function validateCommentary(raw: unknown): string[] {
+  const parsed = z.array(hexagramCommentarySchema).safeParse(raw);
+  if (!parsed.success) return zodErrors('commentary', parsed.error);
+  const list: HexagramCommentary[] = parsed.data;
+  const errors: string[] = [];
+  if (list.length !== 64) errors.push(`cần đủ 64 quẻ (có ${list.length})`);
+  const need = (where: string, p: CommentaryPart) => {
+    for (const k of ['literal', 'image', 'explain'] as const) if (!p[k].trim()) errors.push(`${where}.${k} trống`);
+  };
+  list.forEach((c, i) => {
+    const n = c.kingWenNumber;
+    if (n !== i + 1) errors.push(`commentary[${i}]: quẻ ${n} sai thứ tự`);
+    if (Boolean(c.allMoving) !== (n === 1 || n === 2)) errors.push(`quẻ ${n}: allMoving chỉ có ở Càn, Khôn`);
+    need(`quẻ ${n}.judgment`, c.judgment);
+    if (!c.judgment.tuan.trim()) errors.push(`quẻ ${n}.judgment.tuan trống`);
+    c.lines.forEach((l, j) => need(`quẻ ${n}.hào ${j + 1}`, l));
+    if (c.allMoving) need(`quẻ ${n}.allMoving`, c.allMoving);
+  });
   return errors;
 }

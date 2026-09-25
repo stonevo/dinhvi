@@ -289,3 +289,40 @@ export const backupSchema = z.object({
   casts: z.array(castRecordSchema).default([]),
 });
 export type Backup = z.infer<typeof backupSchema>;
+
+// ---- Kinh & Truyện: dịch sát, Thoán, Tượng, giảng, ý các nhà chú giải ----
+// Chữ Hán trích từ Kanripo KR1a0001; phần tiếng Việt tự dịch và tự giảng từ
+// Thập Dực, Trình Di (Y Xuyên Dịch truyện, KR1a0016), Chu Hy (Chu Dịch bản nghĩa, KR1a0031).
+
+export const commentaryViewSchema = z.object({
+  /** Tên nhà chú giải, vd. "Trình Di", "Chu Hy". */
+  source: z.string().min(1),
+  text: z.string().min(1),
+});
+export type CommentaryView = z.infer<typeof commentaryViewSchema>;
+
+export const commentaryPartSchema = z.object({
+  /** Dịch sát nghĩa lời quẻ / lời hào. */
+  literal: z.string(),
+  /** Tượng truyện chữ Hán (Đại tượng cho lời quẻ, Tiểu tượng cho hào). */
+  imageHan: z.string().min(1),
+  image: z.string(),
+  /** Giảng: vì sao lời như vậy (hình tượng, vị trí hào, quan hệ các hào). */
+  explain: z.string(),
+  /** Ý riêng của từng nhà chú giải, nhất là chỗ họ hiểu khác nhau. */
+  views: z.array(commentaryViewSchema),
+});
+export type CommentaryPart = z.infer<typeof commentaryPartSchema>;
+
+export const hexagramCommentarySchema = z.object({
+  kingWenNumber: z.number().int().min(1).max(64),
+  judgment: commentaryPartSchema.extend({
+    /** Thoán truyện chữ Hán. */
+    tuanHan: z.string().min(1),
+    tuan: z.string(),
+  }),
+  lines: z.array(commentaryPartSchema).length(6),
+  /** Dụng cửu / Dụng lục (Càn, Khôn). */
+  allMoving: commentaryPartSchema.optional(),
+});
+export type HexagramCommentary = z.infer<typeof hexagramCommentarySchema>;

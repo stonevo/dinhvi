@@ -41,6 +41,7 @@ Bản build là trang tĩnh (HashRouter, đường dẫn tương đối) — đ�
   - `trigrams.json` — 8 quái như trạng thái bên trong / hoàn cảnh bên ngoài
   - `lineTiers.json` — dấu hiệu chung của 6 vị trí hào, câu kiểm chứng có/không
   - `hexagrams.json` — 64 quẻ, 384 hào, Dụng cửu / Dụng lục; phiên âm Hán Việt kèm chữ Hán gốc (kinh văn theo [Kanripo KR1a0001](https://github.com/kanripo/KR1a0001))
+  - `commentary.json` — Kinh & Truyện: dịch sát lời quẻ/lời hào, Thoán truyện, Đại tượng, Tiểu tượng (chữ Hán trích tự động từ KR1a0001), giảng, và ý của Trình Di ([Y Xuyên Dịch truyện, KR1a0016](https://github.com/kanripo/KR1a0016)) và Chu Hy ([Chu Dịch bản nghĩa, KR1a0031](https://github.com/kanripo/KR1a0031)). Phần tiếng Việt tự dịch từ chữ Hán, không dựa vào bản dịch hiện đại còn bản quyền. Cấu trúc hào (chính, trung, ứng, thừa) tính tự động từ hình quẻ (`src/lib/structure.ts`).
 - Schema: `src/types/schema.ts` (zod — nguồn duy nhất cho type TS và validate).
 - Hướng dẫn viết/sửa: [docs/huong-dan-viet-du-lieu.md](docs/huong-dan-viet-du-lieu.md). Lời hào gốc cần người duyệt: [docs/can-duyet-loi-hao.md](docs/can-duyet-loi-hao.md). Nguồn tham khảo: [docs/nguon-du-lieu-kinh-dich.md](docs/nguon-du-lieu-kinh-dich.md).
 
@@ -49,7 +50,8 @@ Bản build là trang tĩnh (HashRouter, đường dẫn tương đối) — đ�
 ```
 src/
   types/schema.ts      schema zod
-  lib/                 logic thuần: iching (King Wen, Tự quái, bàng thông), cast (gieo quẻ), calibration,
+  lib/                 logic thuần: iching (King Wen, Tự quái, bàng thông), cast (gieo quẻ, đoạn nên đọc),
+                       structure (chính/trung/ứng/thừa của hào), calibration,
                        trajectory, status, lint, period, reminder, csv
   flow/                luồng 8 bước: draft.ts (logic thuần), useDraft, steps/, HindsightForm
   db/                  Dexie, sao lưu, lưu bản ghi có kiểm luật
@@ -57,7 +59,7 @@ src/
   pages/, ui/          giao diện
   sw.ts                service worker: precache offline + nhắc nền
 scripts/               skeleton / extract / merge-chunks / check-data cho dữ liệu;
-                       import-han / verify-originals đối chiếu với Kanripo
+                       import-han / import-commentary / verify-originals đối chiếu với Kanripo
 tests/                 Vitest
 ```
 
