@@ -7,9 +7,9 @@ import { DinhViDB, ensureSeeded } from '../src/db/db';
 import { makePositioning } from './fixtures';
 
 const domains: Domain[] = [
-  { id: 'd1', name: 'A', createdAt: '1', archived: false },
-  { id: 'd2', name: 'B', createdAt: '2', archived: false },
-  { id: 'd3', name: 'C', createdAt: '3', archived: true },
+  { id: 'd1', profileId: 'me', name: 'A', createdAt: '1', archived: false },
+  { id: 'd2', profileId: 'me', name: 'B', createdAt: '2', archived: false },
+  { id: 'd3', profileId: 'me', name: 'C', createdAt: '3', archived: true },
 ];
 const on = { ...DEFAULT_SETTINGS, notificationsEnabled: true, reminderDay: 5 };
 

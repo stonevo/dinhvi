@@ -100,8 +100,20 @@ export type LineTier = z.infer<typeof lineTierSchema>;
 
 const isoDate = z.string().min(1);
 
+/** Hồ sơ mặc định: dữ liệu trước khi có nhiều hồ sơ được gán vào đây. */
+export const DEFAULT_PROFILE_ID = 'me';
+
+export const profileSchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  createdAt: isoDate,
+});
+export type Profile = z.infer<typeof profileSchema>;
+
 export const domainSchema = z.object({
   id: z.string().min(1),
+  /** Hồ sơ sở hữu lĩnh vực; bản ghi và nháp đi theo lĩnh vực. */
+  profileId: z.string().min(1).default(DEFAULT_PROFILE_ID),
   name: z.string().min(1),
   createdAt: isoDate,
   archived: z.boolean(),
@@ -196,6 +208,7 @@ export type Positioning = z.infer<typeof positioningSchema>;
 /** Một lần gieo ở mục "Gieo quẻ" — tách khỏi bản ghi định vị. */
 export const castRecordSchema = z.object({
   id: z.string().min(1),
+  profileId: z.string().min(1).default(DEFAULT_PROFILE_ID),
   createdAt: isoDate,
   question: z.string(),
   lines: z.array(lineValue).length(6),
@@ -205,6 +218,20 @@ export const castRecordSchema = z.object({
   notes: z.string(),
 });
 export type CastRecord = z.infer<typeof castRecordSchema>;
+
+/** Ghi nhanh giữa các kỳ: một quẻ, một hào, một dòng — không tính vào hiệu chỉnh. */
+export const quickNoteSchema = z.object({
+  id: z.string().min(1),
+  domainId: z.string().min(1),
+  createdAt: isoDate,
+  period: z.string().min(1),
+  method: z.enum(['pick', 'cast']),
+  hexagram: z.number().int().min(1).max(64),
+  line: z.number().int().min(1).max(6),
+  castLines: z.array(lineValue).length(6).optional(),
+  note: z.string(),
+});
+export type QuickNote = z.infer<typeof quickNoteSchema>;
 
 /** Nháp của luồng 8 bước. Tách bảng để bản ghi chính luôn đầy đủ. */
 export const draftSchema = z.object({
@@ -226,6 +253,10 @@ export const settingsSchema = z.object({
   locale: z.enum(['vi']),
   /** Kỳ gần nhất đã gửi thông báo nhắc — để không nhắc lặp trong cùng kỳ. */
   lastReminderPeriod: z.string().optional(),
+  /** Hồ sơ đang dùng trên máy này. */
+  activeProfileId: z.string().min(1).default(DEFAULT_PROFILE_ID),
+  /** Đã xem màn hướng dẫn lần đầu. */
+  onboarded: z.boolean().optional(),
 });
 export type Settings = z.infer<typeof settingsSchema>;
 
@@ -235,14 +266,21 @@ export const DEFAULT_SETTINGS: Settings = {
   reminderDay: 1,
   notificationsEnabled: false,
   locale: 'vi',
+  activeProfileId: DEFAULT_PROFILE_ID,
 };
 
-/** v2: thêm bảng casts. File v1 vẫn nhập được (casts = []). */
-export const BACKUP_SCHEMA_VERSION = 2;
+/**
+ * v2: thêm casts. v3: thêm profiles, quickNotes, và scope ('all' | 'profile').
+ * File cũ vẫn nhập được: thiếu thì dùng mặc định (một hồ sơ "Tôi").
+ */
+export const BACKUP_SCHEMA_VERSION = 3;
 
 export const backupSchema = z.object({
   app: z.literal('dinhvi'),
-  schemaVersion: z.union([z.literal(1), z.literal(2)]),
+  schemaVersion: z.union([z.literal(1), z.literal(2), z.literal(3)]),
+  scope: z.enum(['all', 'profile']).default('all'),
+  profiles: z.array(profileSchema).default([]),
+  quickNotes: z.array(quickNoteSchema).default([]),
   exportedAt: isoDate,
   domains: z.array(domainSchema),
   positionings: z.array(positioningSchema),

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db } from '../db/db';
+import { db, getSettings } from '../db/db';
 import { useStaticData, type StaticData } from '../data/load';
 import { t } from '../i18n';
 import { newId } from '../lib/id';
@@ -13,7 +13,12 @@ import type { CastRecord } from '../types/schema';
 /** Mục "Gieo quẻ": gieo ba đồng xu, xem quẻ chính / hào động / quẻ biến, lưu riêng. */
 export function CastPage() {
   const { data } = useStaticData();
-  const history = useLiveQuery(() => db.casts.orderBy('createdAt').reverse().toArray());
+  const q = useLiveQuery(async () => {
+    const { activeProfileId } = await getSettings(db);
+    const casts = await db.casts.where('profileId').equals(activeProfileId).sortBy('createdAt');
+    return { profileId: activeProfileId, history: casts.reverse() };
+  });
+  const history = q?.history;
   const [lines, setLines] = useState<LineValue[]>([]);
   const [question, setQuestion] = useState('');
   const [notes, setNotes] = useState('');
@@ -28,6 +33,7 @@ export function CastPage() {
     if (!reading) return;
     const record: CastRecord = {
       id: newId(),
+      profileId: q!.profileId,
       createdAt: new Date().toISOString(),
       question: question.trim(),
       lines,

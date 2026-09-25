@@ -14,7 +14,7 @@ describe('csv', () => {
   it('một dòng mỗi bản ghi, theo thứ tự kỳ, có BOM', () => {
     const csv = positioningsToCsv(
       [makePositioning({ id: 'b', period: '2026-Q3', willNotDo: 'Không ký, không hứa' }), makePositioning({ id: 'a', period: '2026-Q2' })],
-      [{ id: 'd1', name: 'Công việc', createdAt: 'x', archived: false }],
+      [{ id: 'd1', profileId: 'me', name: 'Công việc', createdAt: 'x', archived: false }],
     );
     expect(csv.startsWith('﻿')).toBe(true);
     const lines = csv.slice(1).split('\r\n');

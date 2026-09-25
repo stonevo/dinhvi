@@ -34,10 +34,10 @@ describe('quỹ đạo', () => {
 
   it('bảng tổng quan kỳ hiện tại, bỏ lĩnh vực đã cất', () => {
     const domains: Domain[] = [
-      { id: 'd1', name: 'Công việc', createdAt: '1', archived: false },
-      { id: 'd2', name: 'Gia đình', createdAt: '2', archived: false },
-      { id: 'd3', name: 'Sức khỏe', createdAt: '3', archived: false },
-      { id: 'd4', name: 'Cũ', createdAt: '4', archived: true },
+      { id: 'd1', profileId: 'me', name: 'Công việc', createdAt: '1', archived: false },
+      { id: 'd2', profileId: 'me', name: 'Gia đình', createdAt: '2', archived: false },
+      { id: 'd3', profileId: 'me', name: 'Sức khỏe', createdAt: '3', archived: false },
+      { id: 'd4', profileId: 'me', name: 'Cũ', createdAt: '4', archived: true },
     ];
     const rows = periodOverview(domains, PS, '2026-Q3', (h) => (h === 30 ? 'peak' : null));
     expect(rows.map((r) => r.domain.id)).toEqual(['d1', 'd2', 'd3']);

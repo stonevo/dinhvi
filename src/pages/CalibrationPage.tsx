@@ -1,34 +1,24 @@
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db } from '../db/db';
+import { activeProfileData, db } from '../db/db';
 import { useStaticData } from '../data/load';
 import { t } from '../i18n';
 import { MIN_HINDSIGHT_RECORDS, calibrationReport, type Ratio } from '../lib/calibration';
 import { positioningsToCsv } from '../lib/csv';
+import { downloadText } from '../lib/download';
 
 const pct = (r: Ratio) => (r.rate === null ? t('cal.na') : `${Math.round(r.rate * 100)}%`);
 
-function download(name: string, text: string, type: string) {
-  const url = URL.createObjectURL(new Blob([text], { type }));
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = name;
-  a.click();
-  URL.revokeObjectURL(url);
-}
 
 /** Trang hiệu chỉnh (mục 6). Mọi con số kèm n; dưới ngưỡng thì nói rõ chưa đủ dữ liệu. */
 export function CalibrationPage() {
   const { data } = useStaticData();
-  const q = useLiveQuery(async () => {
-    const [domains, positionings] = await Promise.all([db.domains.toArray(), db.positionings.toArray()]);
-    return { domains, positionings };
-  });
+  const q = useLiveQuery(() => activeProfileData(db));
   if (!q || !data) return <p className="muted">{t('common.loading')}</p>;
 
   const r = calibrationReport(q.positionings);
   const domainName = new Map(q.domains.map((d) => [d.id, d.name]));
   const exportCsv = () =>
-    download(
+    downloadText(
       `dinhvi-${new Date().toISOString().slice(0, 10)}.csv`,
       positioningsToCsv(q.positionings, q.domains),
       'text/csv;charset=utf-8',

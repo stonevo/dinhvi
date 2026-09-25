@@ -317,3 +317,7 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
   font-family: 'Noto Serif TC', 'Songti TC', 'PMingLiU', 'MingLiU', 'Noto Serif CJK TC', serif;
   color: var(--muted); letter-spacing: 0.08em; margin: 2px 0 8px; font-size: 1rem;
 }
+
+/* ---------- Hồ sơ ---------- */
+.profile-switcher { padding: 4px 8px; font-size: 0.9rem; max-width: 140px; }
+.row-inline { display: inline-flex; gap: 12px; }

@@ -1,5 +1,5 @@
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, getSettings } from '../db/db';
+import { activeProfileData, db } from '../db/db';
 import { useStaticData } from '../data/load';
 import { t } from '../i18n';
 import { formatPeriod, periodOf } from '../lib/period';
@@ -8,14 +8,7 @@ import { TrajectoryChart } from '../ui/TrajectoryChart';
 
 export function TrajectoryPage() {
   const { data } = useStaticData();
-  const q = useLiveQuery(async () => {
-    const [settings, domains, positionings] = await Promise.all([
-      getSettings(db),
-      db.domains.orderBy('createdAt').toArray(),
-      db.positionings.toArray(),
-    ]);
-    return { settings, domains, positionings };
-  });
+  const q = useLiveQuery(() => activeProfileData(db));
   if (!q || !data) return <p className="muted">{t('common.loading')}</p>;
 
   const period = periodOf(new Date(), q.settings.cycle);

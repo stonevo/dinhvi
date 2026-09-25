@@ -1,7 +1,9 @@
 import { useRef, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from '../db/db';
-import { BackupError, exportAll, importAll, parseBackup, serializeBackup } from '../db/backup';
+import { BackupError, exportAll, importAll, importProfiles, parseBackup, serializeBackup } from '../db/backup';
+import { downloadText } from '../lib/download';
+import { ProfileManager } from '../ui/ProfileManager';
 import { t } from '../i18n';
 import type { Settings } from '../types/schema';
 import {
@@ -38,17 +40,19 @@ export function SettingsPage() {
 
   async function doExport() {
     const text = serializeBackup(await exportAll(db));
-    const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `dinhvi-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+    downloadText(`dinhvi-${new Date().toISOString().slice(0, 10)}.json`, text, 'application/json');
   }
 
   async function doImport(file: File) {
     try {
       const backup = parseBackup(await file.text());
+      if (backup.scope === 'profile') {
+        const names = backup.profiles.map((p) => p.name).join(', ');
+        if (!window.confirm(t('settings.import.profileConfirm', { names }))) return;
+        await importProfiles(db, backup);
+        setMessage(t('settings.import.profileDone', { names }));
+        return;
+      }
       if (!window.confirm(t('settings.import.confirm'))) return;
       await importAll(db, backup);
       setMessage(t('settings.import.done', { domains: backup.domains.length, positionings: backup.positionings.length }));
@@ -60,6 +64,11 @@ export function SettingsPage() {
   return (
     <section className="stack">
       <h1>{t('nav.settings')}</h1>
+
+      <h2>{t('profile.title')}</h2>
+      <ProfileManager />
+
+      <h2>{t('settings.display')}</h2>
 
       <ChoiceGroup
         label={t('settings.theme')}

@@ -7,6 +7,7 @@ import { RecordPage } from './pages/RecordPage';
 import { PositioningPage } from './flow/PositioningPage';
 import { TrajectoryPage } from './pages/TrajectoryPage';
 import { ThemeToggle } from './ui/ThemeToggle';
+import { ProfileSwitcher } from './ui/ProfileSwitcher';
 import { CastPage } from './pages/CastPage';
 import { ReviewPage } from './pages/ReviewPage';
 
@@ -21,6 +22,7 @@ export function App() {
           <NavLink to="/calibration">{t('nav.calibration')}</NavLink>
           <NavLink to="/cast">{t('nav.cast')}</NavLink>
           <NavLink to="/settings">{t('nav.settings')}</NavLink>
+          <ProfileSwitcher />
           <ThemeToggle />
         </nav>
       </header>

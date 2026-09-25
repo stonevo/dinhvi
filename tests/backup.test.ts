@@ -59,9 +59,9 @@ describe('export/import round-trip', () => {
 
   it('xuất kèm lịch sử gieo quẻ; nhập được file v1 (chưa có casts)', async () => {
     await ensureSeeded(db);
-    await db.casts.add({ id: 'c1', createdAt: '2026-09-24T00:00:00.000Z', question: 'q', lines: [9, 7, 7, 7, 7, 7], primary: 1, moving: [1], transformed: 44, notes: '' });
+    await db.casts.add({ id: 'c1', profileId: 'me', createdAt: '2026-09-24T00:00:00.000Z', question: 'q', lines: [9, 7, 7, 7, 7, 7], primary: 1, moving: [1], transformed: 44, notes: '' });
     const backup = await exportAll(db);
-    expect(backup.schemaVersion).toBe(2);
+    expect(backup.schemaVersion).toBe(3);
     expect(backup.casts).toHaveLength(1);
 
     const v1 = JSON.parse(serializeBackup(backup));

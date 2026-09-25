@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, getSettings } from '../db/db';
+import { activeProfileData, db } from '../db/db';
 import { useStaticData } from '../data/load';
 import { t } from '../i18n';
 import { formatPeriod, periodOf } from '../lib/period';
@@ -24,13 +24,8 @@ const ACTION_KEY = {
 export function HomePage() {
   const { data: staticData } = useStaticData();
   const data = useLiveQuery(async () => {
-    const [settings, domains, positionings, drafts] = await Promise.all([
-      getSettings(db),
-      db.domains.filter((d) => !d.archived).sortBy('createdAt'),
-      db.positionings.toArray(),
-      db.drafts.toArray(),
-    ]);
-    return { settings, domains, positionings, drafts };
+    const p = await activeProfileData(db);
+    return { ...p, domains: p.domains.filter((d) => !d.archived) };
   });
   const [name, setName] = useState('');
 
@@ -43,7 +38,7 @@ export function HomePage() {
     e.preventDefault();
     const trimmed = name.trim();
     if (!trimmed) return;
-    await db.domains.add({ id: newId(), name: trimmed, createdAt: new Date().toISOString(), archived: false });
+    await db.domains.add({ id: newId(), profileId: data!.profileId, name: trimmed, createdAt: new Date().toISOString(), archived: false });
     setName('');
   }
 
