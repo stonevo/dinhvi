@@ -344,3 +344,17 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .domain-card-foot .link { margin-left: auto; }
 .status-done .domain-status { color: var(--sage); }
 .status-draft .domain-status { color: var(--accent); }
+
+/* ---------- Thư viện ---------- */
+.library-filters { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: flex-end; }
+.library-filters .grow { flex: 1 1 200px; }
+.library-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; }
+.library-item {
+  display: flex; gap: 10px; align-items: center; padding: 8px 10px; text-decoration: none; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+}
+.library-item:hover { border-color: var(--accent); }
+.library-num { color: var(--muted); font-variant-numeric: tabular-nums; }
+.library-sub { display: block; }
+.library-line { margin-top: 10px; }
+.library-line h3 { font-size: 1rem; font-weight: normal; }
