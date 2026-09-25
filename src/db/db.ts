@@ -64,11 +64,10 @@ function defaultDomains(profileId: string, createdAt: string): Domain[] {
 export async function ensureSeeded(db: DinhViDB, now = new Date()): Promise<void> {
   await db.transaction('rw', db.domains, db.settings, db.profiles, async () => {
     const createdAt = now.toISOString();
-    let settings = await db.settings.get('settings');
-    if (!settings) {
-      settings = DEFAULT_SETTINGS;
-      await db.settings.put(settings);
-    }
+    // Cài đặt từ bản cũ có thể thiếu trường mới (vd. activeProfileId): ghi bổ sung.
+    const stored = await db.settings.get('settings');
+    const settings: Settings = { ...DEFAULT_SETTINGS, ...stored };
+    if (!stored || Object.keys(settings).some((k) => !(k in stored))) await db.settings.put(settings);
     if ((await db.profiles.count()) === 0)
       await db.profiles.add({ id: DEFAULT_PROFILE_ID, name: DEFAULT_PROFILE_NAME, createdAt });
     const active = settings.activeProfileId ?? DEFAULT_PROFILE_ID;
@@ -117,8 +116,9 @@ export async function clearProfileData(db: DinhViDB, profileId: string): Promise
   await db.casts.where('profileId').equals(profileId).delete();
 }
 
+/** Cài đặt, luôn đủ trường: cài đặt lưu từ bản cũ được trộn với giá trị mặc định. */
 export async function getSettings(db: DinhViDB): Promise<Settings> {
-  return (await db.settings.get('settings')) ?? DEFAULT_SETTINGS;
+  return { ...DEFAULT_SETTINGS, ...(await db.settings.get('settings')) };
 }
 
 export async function setActiveProfile(db: DinhViDB, profileId: string): Promise<void> {

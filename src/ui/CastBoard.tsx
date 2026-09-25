@@ -32,6 +32,19 @@ export function CastBoard({
     onChange([...lines, value]);
   }
 
+  /** Gieo nốt các hào còn lại trong một lần bấm. */
+  function tossAll() {
+    const next = [...lines];
+    const nextLog = log.slice(0, lines.length);
+    while (next.length < 6) {
+      const { coins, value } = tossCoins();
+      next.push(value);
+      nextLog.push(coins);
+    }
+    setLog(nextLog);
+    onChange(next);
+  }
+
   return (
     <div className="cast-board">
       <p className="muted small">{t('cast.tossHint')}</p>
@@ -52,9 +65,14 @@ export function CastBoard({
           </ol>
           <div className="row">
             {!done && (
-              <button type="button" className="primary" onClick={toss}>
-                {t('cast.toss', { n: lines.length + 1 })}
-              </button>
+              <>
+                <button type="button" className="primary" onClick={tossAll}>
+                  {lines.length === 0 ? t('cast.tossAll') : t('cast.tossRest')}
+                </button>
+                <button type="button" onClick={toss}>
+                  {t('cast.toss', { n: lines.length + 1 })}
+                </button>
+              </>
             )}
             {lines.length > 0 && (
               <button

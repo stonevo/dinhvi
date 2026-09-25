@@ -37,6 +37,20 @@ describe('nâng DB lên v3', () => {
   });
 });
 
+describe('cài đặt từ bản cũ', () => {
+  it('thiếu activeProfileId vẫn đọc được và được ghi bổ sung khi khởi động', async () => {
+    const raw = (await db.settings.get('settings'))!;
+    const { activeProfileId: _drop, ...old } = raw;
+    await db.settings.put(old as typeof raw);
+    expect((await getSettings(db)).activeProfileId).toBe('me');
+    // Truy vấn theo hồ sơ (như trang Gieo quẻ) không còn nhận khoá undefined.
+    const { activeProfileId } = await getSettings(db);
+    await expect(db.casts.where('profileId').equals(activeProfileId).toArray()).resolves.toEqual([]);
+    await ensureSeeded(db);
+    expect((await db.settings.get('settings'))?.activeProfileId).toBe('me');
+  });
+});
+
 describe('nhiều hồ sơ', () => {
   it('mỗi hồ sơ có lĩnh vực và bản ghi riêng', async () => {
     const me = await activeProfileData(db);

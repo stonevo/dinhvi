@@ -97,8 +97,10 @@ export const vi = {
 
   'cast.intro':
     'Gieo ba đồng xu sáu lần để có một quẻ, từ hào 1 (dưới) lên hào 6. Các lần gieo ở mục này được lưu riêng, không tính vào quỹ đạo hay hiệu chỉnh.',
-  'cast.tossHint': 'Mỗi lần gieo là ba đồng xu cho một hào: ngửa = 3, sấp = 2.',
-  'cast.toss': 'Gieo hào {n}',
+  'cast.tossHint': 'Bấm “Gieo cả 6 hào” để có quẻ ngay, hoặc gieo từng hào một (từ dưới lên). Mỗi hào là ba đồng xu: ngửa = 3, sấp = 2.',
+  'cast.toss': 'Gieo từng hào: hào {n}',
+  'cast.tossAll': 'Gieo cả 6 hào',
+  'cast.tossRest': 'Gieo nốt các hào còn lại',
   'cast.coins': 'Hào {n}: {coins} = {value} · {name}',
   'cast.heads': 'ngửa',
   'cast.tails': 'sấp',
@@ -394,6 +396,8 @@ export const vi = {
   'welcome.4.profiles': 'Định vị cho người khác: tạo hồ sơ riêng cho họ trong Cài đặt, và gửi họ bản tóm tắt.',
   'welcome.4.quick': 'Giữa hai kỳ: dùng Ghi nhanh trên thẻ lĩnh vực.',
   'welcome.4.library': 'Muốn đọc trước 64 quẻ:',
+  'error.page': 'Trang này gặp lỗi khi hiển thị. Dữ liệu của bạn không bị ảnh hưởng.',
+  'error.reload': 'Tải lại',
   'common.save': 'Lưu',
   'common.cancel': 'Huỷ',
   'common.back': 'Quay lại',

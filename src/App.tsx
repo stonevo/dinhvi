@@ -2,6 +2,7 @@ import { Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from './db/db';
 import { WelcomePage } from './pages/WelcomePage';
+import { ErrorBoundary } from './ui/ErrorBoundary';
 import { t } from './i18n';
 import { HomePage } from './pages/HomePage';
 import { SettingsPage } from './pages/SettingsPage';
@@ -48,6 +49,7 @@ export function App() {
         </nav>
       </header>
       <main className="page">
+        <ErrorBoundary resetKey={pathname}>
         <Routes>
           <Route path="/" element={settings && !settings.onboarded && !justOnboarded ? <Navigate to="/welcome" replace /> : <HomePage />} />
           <Route path="/welcome" element={<WelcomePage />} />
@@ -63,6 +65,7 @@ export function App() {
           <Route path="/library/:n" element={<HexagramPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
+        </ErrorBoundary>
       </main>
     </div>
   );
