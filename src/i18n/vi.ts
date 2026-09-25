@@ -16,6 +16,8 @@ export const vi = {
   'home.archive': 'Cất đi',
   'home.archive.confirm': 'Cất lĩnh vực “{name}”? Bản ghi cũ vẫn giữ nguyên.',
   'home.reviewPrev': 'Kỳ trước chưa nhìn lại',
+  'home.lastPeriod': 'Kỳ gần nhất: {period}',
+  'home.noRecord': 'Chưa có bản ghi nào.',
   'home.status.needsPositioning': 'Cần định vị kỳ này',
   'home.status.draft': 'Đang viết dở',
   'home.status.done': 'Xong',

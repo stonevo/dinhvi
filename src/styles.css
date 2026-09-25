@@ -310,7 +310,7 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .hexagram-figure .moving-dot { fill: var(--accent); }
 .cast-log { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--muted); }
 .cast-log li { padding: 2px 0; }
-.review-link { display: block; color: var(--warn); }
+.review-link { color: var(--warn); }
 
 /* ---------- Chữ Hán ---------- */
 .han-text {
@@ -321,3 +321,26 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 /* ---------- Hồ sơ ---------- */
 .profile-switcher { padding: 4px 8px; font-size: 0.9rem; max-width: 140px; }
 .row-inline { display: inline-flex; gap: 12px; }
+
+/* ---------- Trang chủ dạng thẻ ---------- */
+.domain-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.domain-card {
+  display: flex; flex-direction: column; gap: 10px; padding: 14px 16px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 1px 2px rgba(61, 57, 41, 0.05);
+}
+.domain-card.status-done { border-top: 3px solid var(--sage); }
+.domain-card.status-draft { border-top: 3px solid var(--accent); }
+.domain-card.status-needsPositioning { border-top: 3px solid var(--line); }
+.domain-card.is-stale .hexagram-figure { opacity: 0.45; }
+.domain-card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.domain-card-head h3 { margin: 0; font-size: 1.1rem; font-weight: normal; }
+.domain-card-hex { margin: 0; }
+.domain-card-wnd {
+  margin: 0; padding: 6px 10px; font-size: 0.92rem;
+  border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 var(--radius) var(--radius) 0;
+}
+.domain-card-foot { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; margin-top: auto; font-size: 0.95rem; }
+.domain-card-foot .link { margin-left: auto; }
+.status-done .domain-status { color: var(--sage); }
+.status-draft .domain-status { color: var(--accent); }
