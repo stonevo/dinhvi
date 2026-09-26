@@ -2,30 +2,31 @@
  {
   "id": "nguon-goc",
   "title": "Nguồn gốc Kinh Dịch",
-  "summary": "Truyền thống kể Kinh Dịch do ba (hay bốn) bậc thánh nối nhau làm nên qua ba thời; học giới hiện đại xem phần lõi là một sách bói đời Tây Chu, được chép lại, chú giải và dần thành kinh điển. Mục này đặt hai cách nhìn cạnh nhau, kèm nguồn.",
+  "summary": "Sách xưa kể Kinh Dịch do ba (hay bốn) bậc thánh nối nhau làm nên qua ba thời; học giới hiện đại xem phần lõi là một sách bói đời Tây Chu, về sau được gắn thêm mười thiên Truyện và đưa vào hàng kinh điển đời Hán. Mục này ghi cả hai cách nhìn, kèm nguồn.",
   "blocks": [
    {
     "type": "p",
-    "text": "Cái tên “Kinh Dịch” (易經, sách kinh về sự đổi thay) có từ đời Hán. Phần lõi vốn tên “Chu Dịch” (周易): 64 quẻ sáu vạch kèm những lời đoán ngắn, và phần lõi ấy không hề nói mình do ai viết, viết khi nào. Mọi chuyện về nguồn gốc đều do sách đời sau kể lại, nên cần tách hai lớp: truyền thuyết người xưa tin, và bằng chứng học giới ngày nay kiểm được.",
+    "text": "Phần lõi của Kinh Dịch vốn tên là “Chu Dịch” (周易): 64 quẻ sáu vạch kèm những lời đoán ngắn. Tên “Kinh Dịch” (易經) có từ khi Hán Vũ Đế, năm 136 trước Công nguyên, đưa sách vào hàng kinh điển. Bản thân Chu Dịch không nói gì về nguồn gốc của chính nó; các chuyện về nguồn gốc đều do sách đời sau chép lại.",
     "source": "Wikipedia, I Ching (mục Zhou yi)"
    },
    {
     "type": "h",
-    "text": "Truyền thuyết: “người đổi ba thánh, đời trải ba thời”"
+    "text": "Thuyết truyền thống: “người đổi ba thánh, đời trải ba thời”"
    },
    {
     "type": "p",
-    "text": "Người đầu tiên được nhắc tới là Phục Hy (包犧, cũng viết 伏羲, 宓戲), một vị vua huyền thoại thời thượng cổ. Hệ từ hạ (một thiên trong phần Truyện) kể rằng ông quan sát bầu trời và mặt đất, vằn vẻ trên mình chim thú, lấy mẫu từ thân thể con người và từ sự vật xung quanh, rồi mới vạch ra tám quẻ ba vạch (bát quái)."
+    "text": "Người đầu tiên được nhắc tới là Phục Hy (Hệ từ viết 包犧; Khổng Dĩnh Đạt viết 伏犧). Hệ từ hạ (một thiên trong phần Truyện) kể rằng thuở xưa, khi họ Bao Hy làm vua thiên hạ, ông nhìn lên xem tượng trời, nhìn xuống xem phép đất, xem vằn vẻ trên mình chim thú, lấy mẫu từ thân thể người ở gần và từ vạn vật ở xa, rồi mới vạch ra tám quẻ ba vạch (bát quái).",
+    "source": "Hệ từ hạ, chương 2 (Kanripo KR1a0001)"
    },
    {
     "type": "quote",
     "han": "古者包犧氏之王天下也，仰則觀象於天，俯則觀法於地，觀鳥獸之文與地之宜",
-    "vi": "Thuở xưa, khi họ Bao Hy trị vì thiên hạ, ông nhìn lên để quan sát các hình tượng của trời, nhìn xuống để quan sát khuôn mẫu của đất, lại xem hoa văn trên mình chim thú và điều thích hợp của mỗi vùng đất.",
+    "vi": "Thuở xưa, khi họ Bao Hy làm vua thiên hạ, ngửa lên thì xem hình tượng ở trời, cúi xuống thì xem khuôn phép ở đất, xem vằn vẻ của chim thú và điều thích nghi của đất.",
     "source": "Hệ từ hạ, chương 2 (Kanripo KR1a0001)"
    },
    {
     "type": "p",
-    "text": "Từ tám quẻ đơn thành 64 quẻ kép (trùng quái, tức chồng hai quẻ ba vạch lên nhau) là do ai? Khổng Dĩnh Đạt đời Đường, khi soạn Chu Dịch chính nghĩa, đã ghi lại bốn thuyết khác nhau: nhóm Vương Bật cho là chính Phục Hy chồng quẻ; nhóm Trịnh Huyền cho là Thần Nông; Tôn Thịnh cho là vua Vũ nhà Hạ; Tư Mã Thiên và những người theo ông cho là Văn Vương nhà Chu. Bản thân Khổng Dĩnh Đạt nghiêng về thuyết Phục Hy.",
+    "text": "Từ tám quẻ đơn thành 64 quẻ kép (trùng quái, tức chồng hai quẻ ba vạch lên nhau) là do ai? Khổng Dĩnh Đạt đời Đường, trong Chu Dịch chính nghĩa, ghi lại bốn thuyết: nhóm Vương Bật cho là chính Phục Hy chồng quẻ; nhóm Trịnh Huyền cho là Thần Nông; Tôn Thịnh cho là Hạ Vũ; Tư Mã Thiên và những người theo ông cho là Văn Vương nhà Chu. Khổng Dĩnh Đạt chọn theo thuyết của Vương Bật (Phục Hy).",
     "source": "Khổng Dĩnh Đạt, Chu Dịch chính nghĩa, quyển đầu, “Luận trùng quái chi nhân”"
    },
    {
@@ -36,18 +37,18 @@
    },
    {
     "type": "p",
-    "text": "Chữ “cái” (蓋, có lẽ) cho thấy Tư Mã Thiên chỉ ghi điều nghe truyền lại. Hệ từ hạ cũng chỉ hỏi chứ không khẳng định: phải chăng Dịch hưng lên cuối đời Ân, lúc đức nhà Chu đang thịnh, ứng với chuyện giữa Văn Vương và vua Trụ?",
+    "text": "Tư Mã Thiên dùng chữ “cái” (蓋, có lẽ), tức là nói theo lối phỏng đoán. Hệ từ hạ cũng đặt thành câu hỏi: Dịch hưng lên có phải vào cuối đời Ân, lúc đức nhà Chu đang thịnh, ứng với chuyện giữa Văn Vương và vua Trụ chăng?",
     "source": "Sử ký, Chu bản kỷ; Hệ từ hạ, chương 11"
    },
    {
     "type": "p",
-    "text": "Về lời văn, Khổng Dĩnh Đạt ghi hai thuyết. Phái Trịnh Huyền cho rằng cả quái từ (lời đoán cả quẻ) lẫn hào từ (lời đoán từng vạch) đều của Văn Vương. Mã Dung, Lục Tích cho rằng hào từ là của Chu Công, con Văn Vương, vì hào từ nhắc những việc sau khi Văn Vương mất: hào 4 quẻ Thăng nói “vua dâng lễ ở núi Kỳ” (王用亨于岐山), mà Văn Vương chỉ được truy tôn là vua sau khi nhà Ân mất; hào 5 quẻ Minh Di nhắc Cơ Tử, người bị giam về sau. Khổng Dĩnh Đạt theo thuyết thứ hai.",
+    "text": "Về lời văn, Khổng Dĩnh Đạt ghi hai thuyết. Phái Trịnh Huyền cho rằng cả quái từ (lời đoán cả quẻ) lẫn hào từ (lời đoán từng vạch) đều của Văn Vương. Mã Dung, Lục Tích cho rằng quái từ của Văn Vương, còn hào từ của Chu Công, vì hào từ nhắc những việc sau thời Văn Vương: hào 4 quẻ Thăng nói “vua dâng lễ ở núi Kỳ” (王用亨于岐山), mà phải sau khi Vũ Vương thắng nhà Ân, Văn Vương mới được truy tôn là vua; hào 5 quẻ Minh Di nhắc Cơ Tử, người chỉ bị giam sau khi Vũ Vương dấy quân. Khổng Dĩnh Đạt theo thuyết thứ hai.",
     "source": "Chu Dịch chính nghĩa, quyển đầu, “Luận quái từ hào từ thùy tác”"
    },
    {
     "type": "p",
-    "text": "Người thứ ba (hoặc thứ tư) là Khổng Tử. Sử ký nói về già ông thích Dịch, đọc đến mức dây da buộc thẻ tre đứt ba lần (韋編三絕). Hán thư đời Đông Hán gom tất cả lại thành một công thức sẽ lặp đi lặp lại suốt hai nghìn năm:",
-    "source": "Sử ký, Khổng Tử thế gia"
+    "text": "Người thứ ba (hoặc thứ tư) là Khổng Tử. Sử ký nói về già ông thích Dịch, đọc đến mức dây da buộc thẻ tre đứt ba lần (韋編三絕). Hán thư của Ban Cố thì gom các thuyết lại như sau:",
+    "source": "Sử ký, Khổng Tử thế gia; Hán thư, Nghệ văn chí"
    },
    {
     "type": "quote",
@@ -57,8 +58,8 @@
    },
    {
     "type": "p",
-    "text": "Ba thánh trong đoạn Hán thư ấy là Phục Hy, Văn Vương và Khổng Tử; lời chú của Mạnh Khang (孟康) xếp họ lần lượt vào thượng cổ, trung cổ và hạ cổ. Khi thuyết hào từ của Chu Công được chấp nhận, người ta nói thành bốn thánh; Khổng Dĩnh Đạt giải thích vì sao vẫn gọi là “ba thánh”: con nối nghiệp cha, nên công của Chu Công được tính gộp vào Văn Vương (以父統子業故也).",
-    "source": "Hán thư, Nghệ văn chí (và chú của Mạnh Khang); Chu Dịch chính nghĩa, quyển đầu"
+    "text": "Theo lời chú Hán thư, Vi Chiêu (韋昭) nói ba thánh là Phục Hy, Văn Vương và Khổng Tử; Mạnh Khang (孟康) dựa vào câu Hệ từ “Dịch hưng lên ở thời trung cổ chăng?” mà xếp Phục Hy vào thượng cổ, Văn Vương vào trung cổ, Khổng Tử vào hạ cổ. Khổng Dĩnh Đạt theo thuyết hào từ của Chu Công, nên giải thích vì sao vẫn chỉ nói ba thánh mà không kể Chu Công: vì lấy cha gồm nghiệp của con (以父統子業故也).",
+    "source": "Hán thư, Nghệ văn chí (lời chú của Vi Chiêu, Mạnh Khang); Chu Dịch chính nghĩa, quyển đầu, “Luận quái từ hào từ thùy tác”"
    },
    {
     "type": "h",
@@ -66,22 +67,23 @@
    },
    {
     "type": "p",
-    "text": "Chu Dịch không phải phép bói bằng quẻ duy nhất thời xưa. Sách Chu lễ, khi kể chức việc của quan Thái bốc (quan đứng đầu việc bói), nói ông giữ ba phép Dịch."
+    "text": "Chu Dịch không phải phép bói bằng quẻ duy nhất được sách xưa nhắc tới. Sách Chu lễ, khi kể chức việc của quan Đại bốc (大卜), nói ông giữ ba phép Dịch.",
+    "source": "Chu lễ, Xuân quan, Đại bốc"
    },
    {
     "type": "quote",
     "han": "掌三易之法，一曰連山，二曰歸藏，三曰周易。其經卦皆八，其別皆六十有四。",
     "vi": "Giữ phép của ba sách Dịch: một là Liên Sơn, hai là Quy Tàng, ba là Chu Dịch. Quẻ gốc của cả ba đều là tám, quẻ biệt (quẻ kép) đều là sáu mươi bốn.",
-    "source": "Chu lễ, Xuân quan, Thái bốc"
+    "source": "Chu lễ, Xuân quan, Đại bốc"
    },
    {
     "type": "p",
-    "text": "Hai sách kia thuộc về ai thì mỗi người nói một khác. Theo Khổng Dĩnh Đạt dẫn lại, Đỗ Tử Xuân cho Liên Sơn của Phục Hy, Quy Tàng của Hoàng Đế; Trịnh Huyền cho đó là Dịch của ba triều: Hạ là Liên Sơn, Ân là Quy Tàng, Chu là Chu Dịch. Có thuyết nói Quy Tàng mở đầu bằng quẻ Khôn, Liên Sơn bằng quẻ Cấn, nhưng hai sách đã mất nên không kiểm được.",
+    "text": "Hai sách kia thuộc về ai thì mỗi người nói một khác. Theo Khổng Dĩnh Đạt dẫn lại, Đỗ Tử Xuân cho Liên Sơn là của Phục Hy, Quy Tàng là của Hoàng Đế; Trịnh Huyền cho đó là Dịch của ba đời: Hạ là Liên Sơn, Ân là Quy Tàng, Chu là Chu Dịch. Có thuyết nói Quy Tàng mở đầu bằng quẻ Khôn, Liên Sơn bằng quẻ Cấn, nhưng hai sách đã mất nên không biết thuyết ấy đúng hay không.",
     "source": "Chu Dịch chính nghĩa, “Luận tam đại Dịch danh”; Wikipedia tiếng Trung, 歸藏"
    },
    {
     "type": "p",
-    "text": "Hán thư không ghi Quy Tàng; bản Quy Tàng lưu truyền đời sau bị chính Khổng Dĩnh Đạt chê là sách ngụy. Năm 1993, mộ Tần số 15 ở Vương Gia Đài (Hồ Bắc) cho hơn 800 thẻ tre, trong đó 394 thẻ là một sách bói trùng với những câu Quy Tàng người đời Thanh gom lại, nên được đặt tên Quy Tàng; nhưng cũng có học giả phản bác tên gọi ấy.",
+    "text": "Hán thư, Nghệ văn chí không ghi sách Quy Tàng; bản Quy Tàng lưu truyền đời sau bị Khổng Dĩnh Đạt (trong chính nghĩa Tả truyện, năm thứ 9 Tương công) gọi là sách ngụy, không phải Dịch nhà Ân. Tháng 3 năm 1993, mộ Tần số 15 ở Vương Gia Đài (Giang Lăng, Hồ Bắc) cho 813 thẻ tre, trong đó 394 thẻ là một sách bói có nội dung khớp với bản Quy Tàng do Mã Quốc Hàn đời Thanh gom lại, nên người chỉnh lý đặt tên là Quy Tàng; nhưng Sử Thiện Cương và Đổng Diên Thọ (Triết học nghiên cứu, 2010) cho rằng đó không phải Quy Tàng.",
     "source": "Wikipedia tiếng Trung, 王家台秦墓竹简; 归藏 (dẫn Văn vật 1995, Triết học nghiên cứu 2010)"
    },
    {
@@ -90,13 +92,13 @@
    },
    {
     "type": "p",
-    "text": "Chữ “Chu” có hai cách hiểu. Trịnh Huyền hiểu là “khắp”: đạo Dịch bao quát khắp nơi, không gì không đủ (周易者言易道周普无所不備). Khổng Dĩnh Đạt bác lại: Liên Sơn, Quy Tàng đều là hiệu đời, vậy “Chu” cũng là tên đất Chu ở phía nam núi Kỳ và tên triều Chu, giống như Chu thư, Chu lễ, dùng để phân biệt với sách của các đời khác. Khổng Dĩnh Đạt ghi rằng các nhà nho trước ông đều hiểu “Chu” là tên triều đại, không ai giảng khác (因代以稱周是先儒更不別解).",
+    "text": "Chữ “Chu” có hai cách hiểu. Trịnh Huyền hiểu là “khắp”: đạo Dịch bao quát khắp nơi, không gì không đủ (周易者言易道周普无所不備). Khổng Dĩnh Đạt không theo: Liên Sơn, Quy Tàng đều là hiệu đời, vậy “Chu” là lấy tên đất Chu ở phía nam núi Kỳ, tức tên triều Chu, giống như Chu thư, Chu lễ ghi chữ “Chu” để phân biệt với các đời khác. Ông viết rằng về việc lấy tên đời mà gọi là “Chu” thì các nhà nho trước không giảng khác (因代以稱周是先儒更不別解).",
     "source": "Chu Dịch chính nghĩa, “Luận tam đại Dịch danh”"
    },
    {
     "type": "p",
-    "text": "Chữ “Dịch” (易) nghĩa gốc là đổi. Sách Dịch vĩ Càn tạc độ đời Hán nói một chữ Dịch gồm ba nghĩa: giản dị, biến đổi, không đổi (易一名而含三義，所謂易也，變易也，不易也); mục Đạo trời sẽ bàn kỹ. Học giới hiện đại còn tranh luận cái “đổi” ban đầu là biến của quẻ, của hào hay của con số khi bói; thuyết của Phùng Hữu Lan cho “dịch” là “dễ” thì ít chứng cứ.",
-    "source": "Khổng Dĩnh Đạt dẫn Càn tạc độ; Wikipedia, I Ching (dẫn Knechtges 2014)"
+    "text": "Chữ “Dịch” (易) nghĩa đen là đổi. Sách vĩ Càn tạc độ, được Khổng Dĩnh Đạt dẫn, nói một chữ Dịch gồm ba nghĩa: giản dị, biến đổi, không đổi (易一名而含三義，所謂易也，變易也，不易也); mục Đạo trời bàn kỹ hơn. Theo Wikipedia (dẫn Knechtges 2014), cái “đổi” ấy được hiểu là biến của quẻ, của hào, hoặc của con số khi bói; Phùng Hữu Lan cho rằng “dịch” vốn nghĩa là “dễ”, nhưng thuyết ấy ít chứng cứ.",
+    "source": "Chu Dịch chính nghĩa, quyển đầu, “Luận Dịch chi tam danh” (dẫn Càn tạc độ); Wikipedia, I Ching (dẫn Knechtges 2014)"
    },
    {
     "type": "h",
@@ -104,7 +106,7 @@
    },
    {
     "type": "p",
-    "text": "Dấu vết sớm nhất đều cho thấy Chu Dịch là sách bói. Chữ “trinh” (貞) trong câu mở đầu “nguyên hanh lợi trinh” vốn là chữ chỉ việc bói trong giáp cốt văn (chữ khắc trên mai rùa, xương thú) cuối đời Thương. Tả truyện và Quốc ngữ ghi hơn hai mươi lần bói bằng Chu Dịch trong khoảng năm 671–487 trước Công nguyên.",
+    "text": "Chu Dịch ban đầu là một sách bói. Chữ “trinh” (貞) trong câu mở đầu “nguyên hanh lợi trinh” cũng là chữ dùng với nghĩa “bói” trong giáp cốt văn (chữ khắc trên mai rùa, xương thú) cuối đời Thương. Tả truyện và Quốc ngữ ghi hơn hai mươi lần bói bằng Chu Dịch trong khoảng năm 671–487 trước Công nguyên.",
     "source": "Wikipedia, I Ching (dẫn Shaughnessy 2014, Rutt 1996)"
    },
    {
@@ -115,7 +117,7 @@
    },
    {
     "type": "p",
-    "text": "Năm 136 trước Công nguyên, Hán Vũ Đế đặt Dịch vào hàng Ngũ kinh, và từ đó nó mang tên “Kinh Dịch”. Cùng với mười thiên Truyện được gắn vào, một sách bói đã trở thành một bộ sách triết học về trời đất và đạo làm người.",
+    "text": "Năm 136 trước Công nguyên, Hán Vũ Đế đặt Chu Dịch vào hàng Ngũ kinh và gọi là “Kinh Dịch”. Theo Wikipedia, qua thời Chiến Quốc và đầu thời đế chế (khoảng 500–200 trước Công nguyên), sách bói ấy đã chuyển thành một văn bản về vũ trụ, kèm các lời bình triết học gọi là Thập Dực.",
     "source": "Wikipedia, I Ching"
    },
    {
@@ -125,16 +127,18 @@
    {
     "type": "list",
     "items": [
-     "Niên đại: phần lõi là sách bói thời Tây Chu (khoảng 1000–750 trước Công nguyên); các ước đoán về lúc thành sách trải từ thế kỷ 10 đến thế kỷ 4 trước Công nguyên. Edward Shaughnessy so ngôn ngữ với minh văn đồ đồng và cho rằng bản gần như hiện nay được biên tập cuối thế kỷ 9 trước Công nguyên.",
-     "Thuyết bốn thánh, vốn thành đồng thuận từ Mã Dung (thế kỷ 2), nay không còn được học giới nói chung chấp nhận.",
-     "Vạch âm, vạch dương có lẽ vốn là cách ghi tắt con số khi bói cỏ thi: vạch đứt thay 6 và 8, vạch liền thay 7 và 9.",
-     "Mã Vương Đôi: năm 1973, mộ số 3 (đóng năm 168 trước Công nguyên) ở Trường Sa cho một bản Chu Dịch chép trên lụa, kèm các thiên Nhị tam tử, Hệ từ, Dịch chi nghĩa, Yếu, Mâu Hòa, Chiêu Lực. Thứ tự quẻ khác bản truyền đời: chia tám nhóm theo quẻ trên.",
-     "Thượng Bác: khoảng 1.200 thẻ tre nước Sở Bảo tàng Thượng Hải mua ở Hồng Kông từ năm 1994, ước khoảng 300 trước Công nguyên (không rõ nơi xuất thổ); bản Chu Dịch công bố năm 2003 cho thấy lúc ấy sách đã gần như ngày nay, chỉ khác chữ nhỏ."
-    ]
+     "Niên đại: phần lõi là sách bói thời Tây Chu (khoảng 1000–750 trước Công nguyên); các học giả hiện đại ước đoán lúc sách thành hình như hiện nay trong khoảng thế kỷ 10 đến thế kỷ 4 trước Công nguyên. Edward Shaughnessy so ngôn ngữ với minh văn đồ đồng và xếp việc biên tập bản như hiện nay vào một phần tư cuối thế kỷ 9 trước Công nguyên.",
+     "Thuyết gán sách cho Phục Hy, Văn Vương, Chu Công và Khổng Tử, vốn thành đồng thuận quanh ý kiến của Mã Dung (thế kỷ 2), nay không còn được học giới nói chung chấp nhận.",
+     "Trong hình quẻ, vạch đứt được dùng ghi tắt các số 6 và 8, vạch liền ghi tắt các số 7 và 9, là những con số có được khi bói cỏ thi.",
+     "Mã Vương Đôi: năm 1973, ở Trường Sa (Hồ Nam), mộ số 3 (đóng năm 168 trước Công nguyên) cho một bản Chu Dịch chép trên lụa, kèm các thiên Nhị tam tử, Hệ từ, Dịch chi nghĩa, Yếu, Mâu Hòa, Chiêu Lực. Bản này xếp quẻ theo thứ tự khác bản truyền đời: tám nhóm theo quẻ trên.",
+     "Thượng Bác: khoảng 1.200 thẻ tre nước Sở, Bảo tàng Thượng Hải mua dần ở chợ đồ cổ Hồng Kông từ tháng 5 năm 1994, không rõ nơi xuất thổ, ước khoảng năm 300 trước Công nguyên; bản Chu Dịch trong đó in năm 2003. Theo Wikipedia, bản này cho thấy khoảng năm 300 trước Công nguyên Chu Dịch đã có dạng như hiện nay, chỉ còn khác biệt nhỏ."
+    ],
+    "source": "Wikipedia, I Ching; Wikipedia, Mawangdui Silk Texts; Wikipedia tiếng Trung, 马王堆帛书; 上海博物馆藏战国楚竹书"
    },
    {
     "type": "note",
-    "text": "Các niên đại hiện đại ở đây là ước đoán, không phải kết luận dứt khoát; việc thẻ Vương Gia Đài có đúng là Quy Tàng không vẫn đang tranh luận."
+    "text": "Các niên đại hiện đại ở đây là ước đoán của các học giả được Wikipedia dẫn; việc thẻ Vương Gia Đài có đúng là Quy Tàng không thì có ý kiến trái nhau (xem trên).",
+    "source": "Wikipedia, I Ching; Wikipedia tiếng Trung, 归藏; 王家台秦墓竹简"
    },
    {
     "type": "table",
@@ -149,13 +153,13 @@
       "Phục Hy",
       "Vạch tám quẻ (có thuyết: chồng thành 64 quẻ)",
       "Hệ từ hạ; Chu Dịch chính nghĩa",
-      "Nhân vật truyền thuyết"
+      "Wikipedia gọi là vị vua huyền thoại"
      ],
      [
       "Văn Vương",
       "Chồng quẻ và/hoặc viết quái từ",
-      "Sử ký; Hán thư",
-      "Không có chứng cứ trực tiếp; phần lõi được xếp vào thời Tây Chu"
+      "Sử ký; Hán thư; Chu Dịch chính nghĩa",
+      "Thuyết truyền thống nay không còn được học giới nói chung chấp nhận; phần lõi được xếp vào thời Tây Chu"
      ],
      [
       "Chu Công",
@@ -167,9 +171,10 @@
       "Khổng Tử",
       "Viết mười thiên Truyện (Thập Dực)",
       "Sử ký; Hán thư",
-      "Bị nghi từ đời Tống; nay thường xem là của nhiều người đời sau (xem mục Kinh và Truyện)"
+      "Bị Âu Dương Tu, Tư Mã Quang nghi từ đời Bắc Tống; nay thường cho là do các học giả đời sau soạn (xem mục Kinh và Truyện)"
      ]
-    ]
+    ],
+    "source": "Wikipedia, I Ching; Wikipedia, Ten Wings"
    }
   ],
   "sources": [
@@ -190,7 +195,11 @@
     "url": "https://zh.wikisource.org/wiki/漢書/卷030"
    },
    {
-    "label": "Chu lễ, Xuân quan tông bá, chức Thái bốc (Wikisource)",
+    "label": "Hán thư, Nghệ văn chí, bản có lời chú (Vi Chiêu, Mạnh Khang) — trang giảng dạy của Chúc Bình Thứ, Đại học Thanh Hoa (Đài Loan)",
+    "url": "https://sites.google.com/a/ptc.cl.nthu.edu.tw/courses/archives/qin-tang-wen-xian/han-shu/han-shu-yi-wen-zhi"
+   },
+   {
+    "label": "Chu lễ, Xuân quan tông bá, chức Đại bốc (Wikisource)",
     "url": "https://zh.wikisource.org/wiki/周禮/春官宗伯"
    },
    {
@@ -200,6 +209,10 @@
    {
     "label": "Wikipedia, I Ching (dẫn Shaughnessy, Rutt, Nylan, Smith, Knechtges)",
     "url": "https://en.wikipedia.org/wiki/I_Ching"
+   },
+   {
+    "label": "Wikipedia, Ten Wings",
+    "url": "https://en.wikipedia.org/wiki/Ten_Wings"
    },
    {
     "label": "Wikipedia, Mawangdui Silk Texts",
@@ -226,11 +239,11 @@
  {
   "id": "kinh-truyen",
   "title": "Kinh và Truyện",
-  "summary": "Kinh Dịch gồm hai tầng: phần Kinh (64 quẻ với quái từ, hào từ, chia Thượng kinh 30 quẻ và Hạ kinh 34 quẻ) và mười thiên Truyện giải thích gọi là Thập Dực. Mục này nói mỗi thiên bàn gì, và cuộc tranh luận ai đã viết chúng.",
+  "summary": "Kinh Dịch gồm hai tầng: phần Kinh (64 quẻ với quái từ, hào từ, chia Thượng kinh 30 quẻ và Hạ kinh 34 quẻ) và mười thiên Truyện gọi là Thập Dực. Mục này ghi mỗi thiên bàn gì, và các ý kiến về việc ai đã viết chúng.",
   "blocks": [
    {
     "type": "p",
-    "text": "Quyển sách ta gọi là Kinh Dịch gồm hai tầng văn bản. Tầng thứ nhất là Kinh (經), tức Chu Dịch gốc: các hình quẻ và lời đoán ngắn đi kèm. Tầng thứ hai là Truyện (傳, lời giải thích kinh), gồm mười thiên, quen gọi là Thập Dực (十翼, mười cánh chim), như đôi cánh giúp kinh bay xa. Học giới hiện đại lưu ý Kinh viết bằng tiếng Hán thượng cổ sớm, còn Truyện dùng thứ ngôn ngữ muộn hơn hẳn.",
+    "text": "Quyển sách ta gọi là Kinh Dịch gồm hai tầng văn bản. Tầng thứ nhất là Kinh (經), tức Chu Dịch gốc: các hình quẻ và lời đoán ngắn đi kèm. Tầng thứ hai là Truyện (傳, lời giải thích kinh), gồm mười thiên, gọi là Thập Dực (十翼, mười cánh). Theo Rutt (Wikipedia dẫn), Chu Dịch viết bằng tiếng Hán thượng cổ giai đoạn sớm, còn Thập Dực viết bằng thứ tiếng tiền thân của tiếng Hán trung cổ.",
     "source": "Wikipedia, I Ching và Ten Wings (dẫn Rutt 1996)"
    },
    {
@@ -239,22 +252,24 @@
    },
    {
     "type": "p",
-    "text": "Mỗi quẻ (卦) là hình sáu vạch chồng lên nhau, mỗi vạch là một hào (爻): liền là hào dương, đứt là hào âm. Sáu vạch, mỗi vạch hai loại, cho đúng 64 quẻ. Dưới mỗi quẻ có tên quẻ, quái từ (卦辭, lời đoán cả quẻ, xưa cũng gọi là thoán 彖) và sáu hào từ (爻辭, lời đoán từng hào) tính từ dưới lên. Hào dương gọi là cửu (九), hào âm gọi là lục (六), hào dưới cùng là sơ (初), trên cùng là thượng (上). Riêng Càn, Khôn có thêm lời dụng cửu, dụng lục; tổng cộng 384 hào từ và hai lời dụng."
+    "text": "Mỗi quẻ (卦) là hình sáu vạch chồng lên nhau, mỗi vạch là một hào (爻): liền là hào dương, đứt là hào âm. Bản truyền đời có đủ cả 64 quẻ có thể có. Mỗi quẻ có tên quẻ, quái từ (卦辭, lời đoán cả quẻ, xưa gọi là thoán 彖) và sáu hào từ (爻辭, lời đoán từng hào) tính từ dưới lên. Hào dương gọi là cửu (九), hào âm gọi là lục (六), hào dưới cùng là sơ (初), trên cùng là thượng (上). Riêng Càn, Khôn có thêm lời dụng cửu, dụng lục; tổng cộng 384 hào từ (64 × 6) và hai lời dụng.",
+    "source": "Wikipedia, I Ching (mục Structure); Chu Dịch, quẻ Càn, Khôn (Kanripo KR1a0001_001, _002)"
    },
    {
     "type": "quote",
     "han": "《乾》元亨，利貞。初九、潛龍勿用。九二：見龍在田，利見大人。",
-    "vi": "Quẻ Càn: lớn, thông suốt, lợi cho việc giữ điều chính. Hào sơ cửu: rồng còn ẩn, chưa dùng được. Hào cửu nhị: rồng hiện trên đồng, lợi cho việc gặp bậc đại nhân.",
+    "vi": "Quẻ Càn: lớn, thông suốt, lợi cho việc giữ điều chính. Hào sơ cửu: rồng còn ẩn, chớ dùng. Hào cửu nhị: rồng hiện trên đồng, lợi cho việc gặp bậc đại nhân.",
     "source": "Chu Dịch, quẻ Càn (Kanripo KR1a0001_001)"
    },
    {
     "type": "p",
-    "text": "Lời đoán rất ngắn, dùng hình ảnh (rồng, sương, giếng, cái đỉnh…) và những chữ định cát hung: cát (吉, tốt), hung (凶, xấu), hối (悔, ăn năn), lận (吝, đáng tiếc), vô cữu (无咎, không lỗi). Nhiều câu khó hiểu ngay từ thời xưa, nên mới cần phần Truyện."
+    "text": "Lời đoán rất ngắn, dùng hình ảnh (như rồng ở quẻ Càn, sương ở quẻ Khôn) và những chữ định tốt xấu. Hệ từ thượng giảng các chữ ấy: cát hung (吉凶, tốt xấu) là nói về được mất; hối lận (悔吝, ăn năn, đáng tiếc) là nói về lỗi nhỏ; vô cữu (无咎, không lỗi) là khéo sửa lỗi. Wikipedia gọi hào từ, phần chiếm nhiều nhất trong sách, là cực kỳ khó hiểu.",
+    "source": "Chu Dịch, quẻ Càn, Khôn; Hệ từ thượng, chương 3; Wikipedia, I Ching"
    },
    {
     "type": "p",
-    "text": "Kinh chia làm hai thiên. Thượng kinh gồm 30 quẻ, từ Càn đến Ly; Hạ kinh gồm 34 quẻ, từ Hàm đến Vị Tế. Hệ từ thượng đã nói đến “sách lược của hai thiên” (二篇之策), cho thấy sự chia đôi có từ rất sớm. Vì sao chia không đều? Khổng Dĩnh Đạt dẫn sách Càn tạc độ đời Hán giải thích bằng âm dương:",
-    "source": "Hệ từ thượng, chương 9"
+    "text": "Kinh chia làm hai thiên. Thượng kinh gồm 30 quẻ, từ Càn đến Ly; Hạ kinh gồm 34 quẻ, từ Hàm đến Vị Tế. Hệ từ thượng đã nói đến “số que cỏ thi của hai thiên” (二篇之策，萬有一千五百二十). Vì sao chia không đều? Khổng Dĩnh Đạt dẫn sách Càn tạc độ giải thích bằng âm dương:",
+    "source": "Hệ từ thượng, chương 9; Chu Dịch chính nghĩa, quyển đầu"
    },
    {
     "type": "quote",
@@ -264,8 +279,8 @@
    },
    {
     "type": "p",
-    "text": "Cũng theo đoạn ấy, Thượng kinh mở bằng Càn, Khôn (trời đất, gốc của âm dương) và khép bằng Khảm, Ly (trăng, mặt trời); Hạ kinh mở bằng Hàm, Hằng (đạo vợ chồng, khởi đầu của đạo người) và khép bằng Ký Tế, Vị Tế (đã xong, chưa xong) để nhắc sự thận trọng. Đó là cách người xưa đọc ý nghĩa vào thứ tự quẻ; bản lụa Mã Vương Đôi lại xếp quẻ theo một thứ tự khác hẳn.",
-    "source": "Chu Dịch chính nghĩa, quyển đầu; Wikipedia, I Ching"
+    "text": "Cũng theo đoạn ấy, Thượng kinh mở bằng Càn, Khôn (gốc của âm dương) và khép bằng Khảm, Ly (trăng, mặt trời); Hạ kinh mở bằng Hàm, Hằng (khởi đầu của nam nữ, đạo vợ chồng, mà đạo người phải từ đó mà hưng) và khép bằng Ký Tế, Vị Tế để tỏ sự răn giữ thận trọng. Khổng Dĩnh Đạt suy ra rằng việc chia hai thiên là do Văn Vương định. Bản lụa Mã Vương Đôi (tìm thấy năm 1973) thì xếp quẻ theo thứ tự khác: tám nhóm theo quẻ trên.",
+    "source": "Chu Dịch chính nghĩa, quyển đầu, “Luận phân thượng hạ nhị thiên”; Wikipedia, I Ching"
    },
    {
     "type": "h",
@@ -273,7 +288,8 @@
    },
    {
     "type": "p",
-    "text": "Con số mười có được là do Thoán, Tượng và Hệ từ mỗi truyện chia thành hai thiên, cộng với bốn thiên còn lại. Khổng Dĩnh Đạt ghi rằng cách đếm mười thiên có nhiều nhà khác nhau, và ông chọn cách đếm của phái Trịnh Huyền:"
+    "text": "Con số mười có được là do Thoán, Tượng và Hệ từ mỗi truyện chia thành hai thiên, cộng với bốn thiên còn lại. Khổng Dĩnh Đạt ghi rằng cách đếm mười thiên có nhiều nhà khác nhau (數十翼亦有多家), và ông theo cách đếm mà phái Trịnh Huyền cũng dùng:",
+    "source": "Chu Dịch chính nghĩa, quyển đầu, “Luận phu tử Thập Dực”"
    },
    {
     "type": "quote",
@@ -291,32 +307,32 @@
     "rows": [
      [
       "Thoán truyện (thượng, hạ)",
-      "Giải thích quái từ: vì sao quẻ có tên ấy, lời đoán ấy, dựa vào cấu trúc hai quẻ đơn và vị trí các hào. Chia đôi theo Thượng kinh, Hạ kinh.",
-      "大哉乾元，萬物資始，乃統天 (Cái nguyên của Càn thật lớn lao: vạn vật dựa vào đó để có khởi điểm, và nó bao trùm cả trời)"
+      "Giải thích quái từ; Hệ từ thượng nói “lời thoán là nói về tượng” (彖者言乎象者也). Chia đôi theo Thượng kinh, Hạ kinh.",
+      "大哉乾元，萬物資始，乃統天 (Lớn thay nguyên của Càn: vạn vật dựa vào đó để khởi đầu, bèn thống lĩnh trời)"
      ],
      [
       "Tượng truyện (thượng, hạ)",
-      "Gồm Đại tượng (xem hình tượng của cả quẻ qua hai quẻ đơn rồi rút ra bài học “người quân tử lấy đó mà…”) và Tiểu tượng (giải thích từng hào từ).",
+      "Gồm Đại tượng (nói hình tượng cả quẻ qua hai quẻ đơn rồi nói “người quân tử lấy đó mà…”) và Tiểu tượng (giải thích từng hào từ, như “rồng ẩn chớ dùng, vì dương ở dưới”).",
       "天行健，君子以自強不息 (Trời vận hành mạnh mẽ; người quân tử theo đó tự cường không nghỉ)"
      ],
      [
       "Hệ từ truyện (thượng, hạ)",
-      "Bàn tổng quát: Dịch là gì, âm dương, cách bói cỏ thi, nguồn gốc bát quái, ý nghĩa các vị hào, đạo đức người quân tử. Thiên triết lý quan trọng nhất.",
+      "Bàn tổng quát: âm dương, cách bói cỏ thi, việc Bao Hy vạch bát quái, các vị hào, đạo người quân tử. Wikipedia gọi đây có lẽ là thiên quan trọng nhất trong Thập Dực.",
       "聖人設卦觀象，繫辭焉而明吉凶 (Thánh nhân đặt quẻ, xem tượng, buộc lời vào để làm rõ tốt xấu)"
      ],
      [
       "Văn ngôn",
-      "Chỉ giảng hai quẻ Càn và Khôn, theo lối bàn về đức hạnh; nhiều đoạn mở đầu bằng “Tử viết”.",
+      "Chỉ giảng hai quẻ Càn và Khôn, theo lối bàn về đạo đức; nhiều đoạn mở đầu bằng “Tử viết”.",
       "積善之家必有餘慶 (Nhà tích điều thiện ắt có phúc thừa)"
      ],
      [
       "Thuyết quái",
-      "Nói về tám quẻ đơn: đức tính, phương vị, gia đình (Càn cha, Khôn mẹ, sáu quẻ con) và danh sách dài các vật tượng.",
-      "乾、健也，坤、順也 (Càn là mạnh, Khôn là thuận)"
+      "Nói về tám quẻ đơn: đức tính (Càn mạnh, Khôn thuận…), phương vị, gia đình (Càn cha, Khôn mẹ, sáu quẻ con) và danh sách dài các vật tượng.",
+      "乾、健也，坤、順也 (Càn: kiện, tức mạnh; Khôn: thuận, tức theo)"
      ],
      [
       "Tự quái",
-      "Giải thích thứ tự 64 quẻ như một chuỗi nhân quả, quẻ này dẫn tới quẻ kia.",
+      "Giải thích thứ tự 64 quẻ: vì sao sau quẻ này thì tiếp đến quẻ kia.",
       "有天地，然後萬物生焉 (Có trời đất rồi muôn vật mới sinh)"
      ],
      [
@@ -324,20 +340,22 @@
       "Ghép các quẻ thành từng cặp đối nhau, mỗi quẻ tóm bằng một hai chữ.",
       "乾剛坤柔，比樂師憂 (Càn cứng Khôn mềm, Tỉ vui Sư lo)"
      ]
-    ]
+    ],
+    "source": "Chu Dịch (Kanripo KR1a0001: quẻ Càn, Khôn; Hệ từ, Thuyết quái, Tự quái, Tạp quái); Chu Dịch chính nghĩa, quyển đầu; Wikipedia, I Ching"
    },
    {
     "type": "p",
-    "text": "Trong các bản truyền đời, Thoán, Tượng và Văn ngôn thường được cắt ra đặt ngay dưới từng quẻ; chẳng hạn ở bản Kanripo, sau quái từ và hào từ quẻ Càn là Thoán, rồi Tượng, rồi Văn ngôn. Hệ từ, Thuyết quái, Tự quái, Tạp quái thì đứng riêng ở cuối sách. Vì vậy người đọc Dịch hiện nay dễ tưởng lời Thoán, lời Tượng là một phần của kinh, trong khi chúng thuộc tầng Truyện.",
+    "text": "Ở bản Kanripo, sau quái từ và hào từ quẻ Càn là lời Thoán, rồi lời Tượng, rồi Văn ngôn; còn Hệ từ, Thuyết quái, Tự quái, Tạp quái đứng riêng ở cuối sách.",
     "source": "Chu Dịch (Kanripo KR1a0001_001, _002)"
    },
    {
     "type": "h",
-    "text": "Ai viết Thập Dực? Một cuộc tranh luận nghìn năm"
+    "text": "Ai viết Thập Dực?"
    },
    {
     "type": "p",
-    "text": "Thuyết truyền thống cho rằng Khổng Tử viết cả mười thiên. Chứng cứ cổ nhất là Sử ký của Tư Mã Thiên:"
+    "text": "Thuyết truyền thống gán Thập Dực cho Khổng Tử. Sử ký của Tư Mã Thiên chép:",
+    "source": "Wikipedia, I Ching; Wikipedia, Ten Wings"
    },
    {
     "type": "quote",
@@ -347,12 +365,13 @@
    },
    {
     "type": "p",
-    "text": "Câu này vốn đã mơ hồ: chữ “tự” (序) có thể là động từ (sắp xếp, viết lời dẫn) hoặc là tên thiên Tự quái; và câu không nói rõ Khổng Tử “viết” các thiên ấy. Có học giả cho rằng việc gán Thập Dực cho Khổng Tử có thể bắt nguồn từ cách đọc sai đoạn Sử ký này. Đến Hán thư thì đã nói thẳng họ Khổng làm mười thiên, và đến đời Đường, Khổng Dĩnh Đạt còn viết rằng các nhà nho trước “không ai có ý khác” (先儒更无異論). Luận ngữ cũng có câu Khổng Tử nói: cho ta thêm vài năm, năm mươi tuổi học Dịch, thì có thể không mắc lỗi lớn (加我數年，五十以學易，可以無大過).",
-    "source": "Wikipedia, I Ching (dẫn Peterson 1982); Hán thư, Nghệ văn chí; Chu Dịch chính nghĩa; Luận ngữ, Thuật nhi (chương 16 theo bản Wikisource; nhiều bản đánh số 17)"
+    "text": "Theo Wikipedia (dẫn Peterson 1982), việc gán Thập Dực cho Khổng Tử có thể bắt nguồn từ việc đọc sai đoạn Sử ký này. Đến Hán thư thì đã nói thẳng họ Khổng làm mười thiên, và đến đời Đường, Khổng Dĩnh Đạt viết rằng về việc Khổng Tử làm Thập Dực, các nhà nho trước “không ai có ý khác” (先儒更无異論). Luận ngữ có chép lời Khổng Tử: cho ta thêm vài năm, năm mươi tuổi học Dịch, thì có thể không mắc lỗi lớn (加我數年，五十以學易，可以無大過).",
+    "source": "Wikipedia, I Ching (dẫn Peterson 1982); Hán thư, Nghệ văn chí; Chu Dịch chính nghĩa, quyển đầu; Luận ngữ, Thuật nhi (mục 7.16 theo bản Wikisource)"
    },
    {
     "type": "p",
-    "text": "Người đầu tiên công khai phản bác là Âu Dương Tu (1007–1072) đời Bắc Tống, trong sách Dịch đồng tử vấn, viết theo lối một cậu bé hỏi, thầy đáp."
+    "text": "Đời Bắc Tống, Âu Dương Tu (1007–1072) bác thuyết ấy trong sách Dịch đồng tử vấn, viết theo lối một cậu bé hỏi, thầy đáp.",
+    "source": "Wikipedia, Ten Wings; Âu Dương Tu, Dịch đồng tử vấn"
    },
    {
     "type": "quote",
@@ -362,23 +381,23 @@
    },
    {
     "type": "p",
-    "text": "Lý lẽ của ông gồm mấy điểm. Thứ nhất, các thiên tự mâu thuẫn: về nguồn gốc bát quái, Hệ từ lúc thì nói thánh nhân theo Hà đồ, lúc thì nói Phục Hy quan sát trời đất mà vạch quẻ, còn Thuyết quái lại nói quẻ lập ra từ cỏ thi; ba thuyết không thể cùng của một người. Thứ hai, lời văn rườm rà, vụn vặt, không giống lối văn cô đọng của Khổng Tử. Thứ ba, câu nổi tiếng về bốn đức “nguyên hanh lợi trinh” trong Văn ngôn vốn là lời bà Mục Khương nước Lỗ nói khi bói, được Tả truyện chép vào năm thứ 9 đời Lỗ Tương công; theo Âu Dương Tu, việc ấy xảy ra mười lăm năm trước khi Khổng Tử ra đời.",
+    "text": "Lý lẽ của ông gồm mấy điểm. Thứ nhất, các thiên tự mâu thuẫn: về nguồn gốc bát quái, Hệ từ lúc thì nói thánh nhân theo Hà đồ, lúc thì nói Bao Hy quan sát trời đất mà vạch quẻ, còn Thuyết quái lại nói quẻ lập ra từ cỏ thi; theo ông, ba thuyết ấy không thể của cùng một người. Thứ hai, lời văn rườm rà, vụn vặt (繁衍叢脞), trong khi văn Khổng Tử càng gọn thì nghĩa càng sâu. Thứ ba, bốn đức “nguyên hanh lợi trinh” giảng trong Văn ngôn vốn là lời bà Mục Khương nước Lỗ nói khi bói, vào năm thứ 9 đời Lỗ Tương công; mười lăm năm sau Khổng Tử mới ra đời.",
     "source": "Âu Dương Tu, Dịch đồng tử vấn, quyển 3"
    },
    {
     "type": "p",
-    "text": "Sau Âu Dương Tu, Tư Mã Quang đời Tống cũng nghi ngờ; đời Thanh, Diêu Tế Hằng và Khang Hữu Vi củng cố thêm; học giới thế kỷ 20 phần lớn bác bỏ thuyết cũ. Theo nghiên cứu hiện đại, Thập Dực ra đời muộn hơn Kinh rất nhiều, Hệ từ vào khoảng năm 300 trước Công nguyên, còn nguồn gốc cụ thể của các thiên vẫn chưa rõ. Việc nhiều đoạn mở đầu bằng “Tử viết” như Luận ngữ gợi ý các thiên này gắn với giới Nho gia (nhận xét của người viết).",
-    "source": "Wikipedia, Ten Wings (dẫn Rutt 1996); Wikipedia, I Ching (dẫn Shaughnessy 2014, Smith 2008)"
+    "text": "Cùng đời Bắc Tống, Tư Mã Quang (1019–1086) cũng nghi ngờ; đời Thanh, Diêu Tế Hằng và Khang Hữu Vi củng cố thêm; các nhà Hán học thế kỷ 20 đưa ra lý lẽ bác bỏ thuyết truyền thống. Theo Wikipedia, Thập Dực ra đời muộn hơn Chu Dịch rất nhiều, Hệ từ vào khoảng năm 300 trước Công nguyên, còn nguồn gốc cụ thể của các thiên vẫn chưa rõ. Joseph Adler (Wikipedia dẫn) lưu ý Thập Dực hay dùng lối “Tử viết” vốn thường thấy trong Luận ngữ, và cho rằng điều đó hàm ý Nho gia can dự nhiều vào việc soạn và đưa chúng vào kinh điển.",
+    "source": "Wikipedia, Ten Wings (dẫn Rutt 1996); Wikipedia, I Ching (dẫn Shaughnessy 2014, Smith 2008, Adler 2017)"
    },
    {
     "type": "p",
-    "text": "Bản lụa Mã Vương Đôi (mộ đóng năm 168 trước Công nguyên) có một bản Hệ từ cùng những thiên Truyện không có trong bản truyền đời, như Nhị tam tử, Dịch chi nghĩa, Yếu, Mâu Hòa, Chiêu Lực; trong đó Khổng Tử được mô tả là coi Dịch trước hết như nguồn minh triết, sau mới là sách bói. Điều đó cho thấy đầu đời Hán còn lưu hành những thiên Truyện ngoài mười thiên về sau được đưa vào kinh điển (suy từ danh mục bản lụa).",
-    "source": "Wikipedia, I Ching; Wikipedia tiếng Trung, 马王堆帛书"
+    "text": "Bản lụa Mã Vương Đôi (mộ đóng năm 168 trước Công nguyên) có một bản Hệ từ cùng những thiên Truyện trước đó chưa ai biết, như Nhị tam tử, Dịch chi nghĩa, Yếu, Mâu Hòa, Chiêu Lực; theo Wikipedia, một thiên trong đó mô tả Khổng Tử coi Dịch trước hết là nguồn minh triết, sau mới là một sách bói chưa hoàn hảo. Wikipedia tiếng Trung ghi phần Dịch truyện trong bản lụa khác nhiều so với bản nay, và được coi là một trong những bản chép lưu hành trước khi sách có bản định chính thức.",
+    "source": "Wikipedia, I Ching; Wikipedia, Mawangdui Silk Texts; Wikipedia tiếng Trung, 马王堆帛书"
    },
    {
     "type": "note",
-    "text": "Hai điểm còn tranh luận: (1) hào từ do Văn Vương hay Chu Công soạn, hay là kết quả biên tập của những người làm nghề bói đời Tây Chu như nhiều học giả hiện đại nghĩ; (2) Khổng Tử có viết Thập Dực không. Học giới ngày nay nhìn chung không coi Thập Dực là tác phẩm của riêng Khổng Tử, nhưng thừa nhận Nho gia có vai trò lớn trong việc soạn và đưa chúng vào kinh điển.",
-    "source": "Wikipedia, I Ching; Wikipedia, Ten Wings"
+    "text": "Hai điểm còn có nhiều ý kiến: (1) hào từ do Văn Vương hay Chu Công soạn (hai thuyết Khổng Dĩnh Đạt ghi lại, xem mục Nguồn gốc); học giới hiện đại không còn chấp nhận thuyết gán sách cho các bậc thánh, và xếp phần lõi vào thời Tây Chu; (2) Khổng Tử có viết Thập Dực không: Wikipedia ghi rằng các thiên này có lẽ do học giả đời sau soạn, và Nho gia có ảnh hưởng trong việc đưa chúng vào kinh điển đời Hán Vũ Đế.",
+    "source": "Chu Dịch chính nghĩa, quyển đầu; Wikipedia, I Ching; Wikipedia, Ten Wings"
    }
   ],
   "sources": [
@@ -407,12 +426,16 @@
     "url": "https://zh.wikisource.org/wiki/易童子問"
    },
    {
-    "label": "Wikipedia, I Ching (dẫn Rutt, Shaughnessy, Smith, Peterson)",
+    "label": "Wikipedia, I Ching (dẫn Rutt, Shaughnessy, Smith, Peterson, Adler)",
     "url": "https://en.wikipedia.org/wiki/I_Ching"
    },
    {
     "label": "Wikipedia, Ten Wings (dẫn Rutt 1996)",
     "url": "https://en.wikipedia.org/wiki/Ten_Wings"
+   },
+   {
+    "label": "Wikipedia, Mawangdui Silk Texts",
+    "url": "https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts"
    },
    {
     "label": "Wikipedia tiếng Trung, 马王堆帛书",
@@ -423,11 +446,12 @@
  {
   "id": "cac-phai",
   "title": "Các phái Dịch học từ Hán đến nay",
-  "summary": "Hơn hai nghìn năm đọc Kinh Dịch xoay quanh hai lối: tượng số (tìm nghĩa trong hình tượng, con số, lịch khí) và nghĩa lý (tìm đạo lý làm người). Mục này đi qua các trường phái chính ở Trung Hoa, Việt Nam và phương Tây, và chỉ ra phép bói Lục Hào, Mai Hoa bắt nguồn từ đâu.",
+  "summary": "Tứ khố toàn thư tổng mục đề yếu tóm Dịch học thành hai phái, sáu tông: một bên bàn tượng số, một bên bỏ tượng số mà giảng lý. Mục này theo Tứ khố, các sách sử và nguồn tra cứu đi qua các nhà Dịch học Trung Hoa từ Hán đến Thanh, các phát hiện khảo cổ hiện đại, một số sách Dịch ở Việt Nam và phương Tây, và ghi lời Tứ khố về gốc của phép bói đồng tiền.",
   "blocks": [
    {
     "type": "p",
-    "text": "Bản văn Kinh Dịch ngắn, nhưng cách đọc thì rất nhiều. Từ đời Hán đã hình thành hai lối lớn. Tượng số (象數): \"tượng\" là hình tượng của quẻ (Càn là trời, là ngựa…), \"số\" là con số, ngày giờ, tiết khí. Nghĩa lý (義理): coi lời quẻ, lời hào là bài học về đạo trời và cách xử thế."
+    "text": "Theo mục \"I Ching\" trên Wikipedia, đời Đông Hán cách giải Dịch chia thành hai trường phái. Phái Kim văn tìm chỗ tương ứng về hình tượng và con số giữa thế giới tự nhiên với các quẻ, làm nền cho phái Tượng số (象數); phái Cổ văn chú trọng nội dung đạo đức của văn bản, làm nền cho phái Nghĩa lý (義理). \"Tượng\" là hình tượng gán cho quẻ, như Thuyết quái nói Càn là trời, là ngựa (乾為天…乾為馬).",
+    "source": "Wikipedia \"I Ching\" (mục Eastern Han and Six Dynasties); Thuyết quái"
    },
    {
     "type": "h",
@@ -435,38 +459,38 @@
    },
    {
     "type": "p",
-    "text": "Tứ khố toàn thư tổng mục đề yếu, bộ thư mục triều Thanh, tóm lịch sử Dịch học thành \"lưỡng phái lục tông\" (兩派六宗, hai phái, sáu tông). Phái tượng số: Hán nho, rồi Kinh Phòng – Tiêu Diên Thọ, rồi Trần Đoàn – Thiệu Ung. Phái nghĩa lý: Vương Bật, rồi Hồ Viện – Trình Di, rồi Lý Quang – Dương Vạn Lý (lấy việc sử để đối chứng).",
+    "text": "Tứ khố toàn thư tổng mục đề yếu, bộ thư mục triều Thanh, tóm lịch sử Dịch học thành \"lưỡng phái lục tông\" (兩派六宗, hai phái, sáu tông). Một phái bắt đầu từ Hán nho bàn tượng số, rồi Kinh Phòng – Tiêu Diên Thọ, rồi Trần Đoàn – Thiệu Ung. Phái kia bắt đầu từ Vương Bật bỏ hết tượng số, rồi Hồ Viện – Trình Di, rồi Lý Quang – Dương Vạn Lý (lấy việc sử để đối chứng).",
     "source": "Tứ khố toàn thư tổng mục đề yếu, quyển 1, Dịch loại tiểu tự"
    },
    {
     "type": "quote",
     "han": "漢儒言象數，去古未遠也。一變而爲京、焦，入於禨祥。再變而爲陳、邵，務窮造化。",
-    "vi": "Nhà Nho đời Hán bàn tượng số, còn gần với phép xưa. Biến lần thứ nhất thành Kinh Phòng, Tiêu Diên Thọ, sa vào điềm lành điềm dữ. Biến lần thứ hai thành Trần Đoàn, Thiệu Ung, dốc sức tìm lẽ tạo hóa.",
+    "vi": "Nhà Nho đời Hán bàn tượng số, cách thời xưa chưa xa. Biến lần thứ nhất thành Kinh Phòng, Tiêu Diên Thọ, sa vào điềm lành điềm dữ. Biến lần thứ hai thành Trần Đoàn, Thiệu Ung, dốc sức tìm lẽ tạo hóa.",
     "source": "Tứ khố toàn thư tổng mục đề yếu, quyển 1, Dịch loại tiểu tự"
    },
    {
     "type": "h",
-    "text": "Đời Hán: lịch khí, điềm biến và gốc của Lục Hào"
+    "text": "Đời Hán: lịch khí, điềm biến và gốc của phép bói đồng tiền"
    },
    {
     "type": "p",
-    "text": "Mạnh Hỷ (孟喜) học Dịch với Điền Vương Tôn; Hán thư chép ông có được một sách \"đoán âm dương tai biến\" rồi nói dối là thầy trao riêng cho mình. Tên ông gắn với phép \"quái khí\" (卦氣): Khảm, Ly, Chấn, Đoài làm bốn quẻ chính ứng bốn mùa, sáu mươi quẻ còn lại chia nhau các ngày trong năm. Nhà sư làm lịch đời Đường là Nhất Hạnh nói mười hai quẻ ứng mười hai tháng lấy từ chương cú họ Mạnh.",
+    "text": "Mạnh Hỷ (孟喜) học Dịch với Điền Vương Tôn; Hán thư chép ông có được một sách của nhà Dịch về đoán âm dương tai biến, rồi nói dối là thầy lúc sắp mất trao riêng cho mình. Huệ Đống trong Dịch Hán học ghi đồ \"quái khí\" (卦氣) của họ Mạnh: Khảm, Ly, Chấn, Đoài làm bốn quẻ chính chủ bốn mùa, sáu mươi quẻ còn lại mỗi quẻ chủ sáu ngày bảy phần. Huệ Đống dẫn Nhất Hạnh đời Đường nói mười hai quẻ ứng mười hai tháng lấy từ chương cú họ Mạnh.",
     "source": "Hán thư, Nho lâm truyện (Mạnh Hỷ); Huệ Đống, Dịch Hán học, quyển 1 (dẫn Nhất Hạnh, Lục quái nghị)"
    },
    {
     "type": "p",
-    "text": "Tiêu Diên Thọ (焦延壽) và học trò Kinh Phòng (京房) dùng quẻ đoán thời tiết và tai biến. Tứ khố đề yếu coi Tiêu Diên Thọ là người mở \"phái chiêm hậu\" (đoán điềm); sách Dịch lâm mang tên ông có 4.096 lời (64 × 64), tất cả đều viết theo lối bốn chữ có vần (皆四言韻語).",
-    "source": "Tứ khố tổng mục đề yếu, quyển 109, Dịch lâm"
+    "text": "Tiêu Diên Thọ (焦延壽) dạy Dịch cho Kinh Phòng (京房); Hán thư chép thuyết của Tiêu giỏi về tai biến, Kinh Phòng dùng nó càng tinh. Tứ khố đề yếu nói trong tượng số, việc tách riêng một phái chiêm hậu (占候) bắt đầu từ Tiêu Diên Thọ; sách Dịch lâm mang tên ông lấy mỗi quẻ biến ra sáu mươi tư quẻ, cộng 4.096 biến, mỗi biến kèm một lời, đều là lời bốn chữ có vần (皆四言韻語).",
+    "source": "Hán thư, quyển 75, Kinh Phòng truyện; Tứ khố tổng mục đề yếu, quyển 109, Dịch lâm"
    },
    {
     "type": "quote",
     "han": "其說長於災變，分六十四卦，更直日用事，以風雨寒溫為候：各有占驗。",
-    "vi": "Thuyết của ông giỏi về tai biến: chia sáu mươi tư quẻ thay nhau cai quản từng ngày, lấy gió mưa nóng lạnh làm dấu để đoán, việc nào cũng có ứng nghiệm.",
+    "vi": "Thuyết của ông giỏi về tai biến: chia sáu mươi tư quẻ thay nhau cai quản từng ngày, lấy gió mưa nóng lạnh làm dấu để đoán, mỗi dấu đều có phép đoán và ứng nghiệm.",
     "source": "Hán thư, quyển 75, Kinh Phòng truyện"
    },
    {
     "type": "p",
-    "text": "Sách Kinh thị Dịch truyện còn lại không giải kinh mà xếp 64 quẻ vào tám cung, ghi thế, ứng, phi, phục, du hồn, quy hồn, phép nạp giáp (gán can chi vào hào) và các hào phụ mẫu, huynh đệ, thê tử, quan quỷ (父母、兄弟、妻子、官鬼; phép Lục Hào đời sau gọi là thê tài): những yếu tố về sau thành bộ khung của phép bói Lục Hào.",
+    "text": "Theo Tứ khố đề yếu, sách Kinh thị Dịch truyện còn lại tuy mang tên Dịch truyện nhưng không giải kinh văn: hai quyển đầu chia quẻ vào tám cung, mỗi cung một quẻ thuần thống bảy quẻ biến, ghi thế, ứng, phi, phục, du hồn, quy hồn; quyển cuối bàn phép nạp giáp, phối hai mươi bốn khí vào quẻ, và các hào phụ mẫu, huynh đệ, thê tử, quan quỷ (父母、兄弟、妻子、官鬼).",
     "source": "Tứ khố tổng mục đề yếu, quyển 109, Kinh thị Dịch truyện"
    },
    {
@@ -477,8 +501,13 @@
    },
    {
     "type": "p",
-    "text": "Cuối Hán sang Tam Quốc, Tuân Sảng và Ngu Phiên (虞翻, bề tôi nước Ngô, tự kể nhà mình năm đời truyền Dịch họ Mạnh) chú kinh theo lối tượng số. Phần lớn sách Hán nay đã mất, chỉ còn đoạn được dẫn lại.",
-    "source": "Tam quốc chí, Ngô thư, quyển 57, Ngu Phiên truyện (chú dẫn Phiên biệt truyện); Tứ khố đề yếu, quyển 6, Dịch Hán học; Wikipedia \"I Ching\""
+    "text": "Tứ khố dẫn tiếp Hạng An Thế: xét bằng Dịch họ Kinh thì sách Hỏa châu lâm lưu truyền ở đời chính là phép còn lại của nó, gieo ba đồng tiền: hai lưng một mặt là \"sách\" (坼), hai mặt một lưng là \"đơn\" (單), cả ba mặt là \"giao\" (交), cả ba lưng là \"trùng\" (重). Phần Lục Hào trong app Định Vị dùng lối gieo ba đồng xu, an tám cung, nạp giáp và lục thân (phụ mẫu, huynh đệ, tử tôn, thê tài, quan quỷ).",
+    "source": "Tứ khố tổng mục đề yếu, quyển 109, Kinh thị Dịch truyện"
+   },
+   {
+    "type": "p",
+    "text": "Theo Wikipedia, phần lớn lời chú đời Hán, như sách tượng số của Kinh Phòng, Ngu Phiên (虞翻) và Tuân Sảng (荀爽), nay không còn; chỉ còn những mảnh ngắn trong Chu Dịch tập giải đời Đường. Ngu Phiên người Dư Diêu, Cối Kê, truyện chép trong Ngô thư của Tam quốc chí; theo Phiên biệt truyện dẫn trong phần chú, nhà ông truyền Dịch họ Mạnh đến ông là năm đời.",
+    "source": "Wikipedia \"I Ching\"; Tam quốc chí, Ngô thư, quyển 57, Ngu Phiên truyện (chú dẫn Phiên biệt truyện); Tứ khố tổng mục đề yếu, quyển 6, Dịch Hán học"
    },
    {
     "type": "h",
@@ -486,7 +515,8 @@
    },
    {
     "type": "p",
-    "text": "Vương Bật (王弼, đời Ngụy) cho rằng hình tượng chỉ là phương tiện chở ý, được ý thì quên tượng. Ông phê những người bám \"Càn là ngựa, Khôn là trâu\", thấy tượng không đủ thì bày thêm hỗ thể, quái biến, rồi ngũ hành."
+    "text": "Vương Bật (王弼, đời Ngụy) viết rằng hình tượng là cái để giữ ý, được ý thì quên tượng. Ông phê những người định chắc Càn là ngựa, Khôn là trâu, thấy tượng không đủ thì bày thêm hỗ thể, quái biến, rồi suy tới ngũ hành.",
+    "source": "Vương Bật, Chu Dịch lược lệ, thiên Minh tượng"
    },
    {
     "type": "quote",
@@ -496,8 +526,8 @@
    },
    {
     "type": "p",
-    "text": "Khổng Dĩnh Đạt đời Đường vâng chiếu làm sớ (Chu Dịch chính nghĩa) chỉ tôn chú Vương Bật, từ đó các thuyết khác dần mất. Tứ khố đề yếu khen Vương Bật giữ Dịch khỏi lẫn vào thuật số, nhưng trách ông kéo Dịch vào hư vô Lão Trang.",
-    "source": "Tứ khố tổng mục đề yếu, quyển 1, Chu Dịch chú; Chu Dịch chính nghĩa"
+    "text": "Tứ khố đề yếu chép: đến khi Khổng Dĩnh Đạt đời Đường vâng chiếu làm sớ (Chu Dịch chính nghĩa) thì chỉ tôn chú Vương Bật, các thuyết khác đều bị bỏ. Tứ khố khen Vương Bật và Hàn Khang Bá làm sáng nghĩa lý, giữ Dịch khỏi lẫn vào thuật số, nhưng trách họ chuộng hư vô, kéo Dịch vào Lão Trang.",
+    "source": "Tứ khố tổng mục đề yếu, quyển 1, mục Chu Dịch chú và mục Chu Dịch chính nghĩa"
    },
    {
     "type": "h",
@@ -505,32 +535,33 @@
    },
    {
     "type": "p",
-    "text": "Theo Tứ khố đề yếu, số học của Thiệu Ung (邵雍) truyền từ đạo sĩ Trần Đoàn qua mấy đời thầy trò, tức gốc từ Đạo gia. Hoàng cực kinh thế của ông lấy quẻ suy vận trời và việc trị loạn từ đời Nghiêu. Học phái này cũng truyền các đồ \"tiên thiên\" (thứ tự quẻ được coi là của Phục Hy). Chu Hy vừa khen vừa gọi học của ông là \"Dịch ngoại biệt truyền\", một nhánh riêng ngoài Dịch.",
-    "source": "Tứ khố tổng mục đề yếu, quyển 108, Hoàng cực kinh thế thư"
+    "text": "Theo Tứ khố đề yếu, số học của Thiệu Ung (邵雍) truyền từ Trần Đoàn qua Chủng Phóng, Mục Tu, Lý Chi Tài, tức gốc từ Đạo gia. Hoàng cực kinh thế của ông lấy tượng quẻ suy dấu hưng vong trị loạn từ năm Giáp Thìn đời Nghiêu đến năm Kỷ Mùi niên hiệu Hiển Đức nhà Hậu Chu. Chu Hy vừa khen hết lời, vừa nói sách ấy không liên can gì với Dịch và gọi học của ông là \"Dịch ngoại biệt truyền\", một nhánh riêng ngoài Dịch. Cũng theo Tứ khố, các đồ \"tiên thiên\" truyền từ Trần Đoàn đến Thiệu Ung, và người truyền đồ nói đó là đồ của Phục Hy.",
+    "source": "Tứ khố tổng mục đề yếu, quyển 108, Hoàng cực kinh thế thư, Dịch thông biến; quyển 6, Dịch đồ minh biện"
    },
    {
     "type": "note",
-    "text": "Mai Hoa Dịch số (lập quẻ từ con số ngày giờ, sự việc) xưa nay truyền là của Thiệu Ung, nhưng chưa có bằng chứng sách do chính ông viết; nhiều người cho là sách đời sau mượn tên ông. Mục này chưa tìm được nghiên cứu học thuật đáng tin để định niên đại, nên chỉ ghi là \"được gán cho\" Thiệu Ung."
+    "text": "Mai Hoa Dịch số (lập quẻ từ con số ngày giờ, sự việc; app Định Vị có Mai Hoa theo giờ, theo số, theo chữ) mang tên Thiệu Ung: bản trên Wikisource đề tác giả là ông. Mục này chưa tìm được nghiên cứu học thuật đáng tin xác nhận ông là tác giả hay định niên đại sách, nên chỉ ghi là \"được gán cho\" Thiệu Ung.",
+    "source": "Mai Hoa Dịch số, Wikisource"
    },
    {
     "type": "p",
-    "text": "Trình Di (程頤) soạn Dịch truyện trên bản Vương Bật nhưng thay Lão Trang bằng đạo lý nhà Nho. Tứ khố đề yếu ghi ông không tin phép số của Thiệu Ung: một người lấy số, một người lấy lý; một người rõ đạo trời, một người sát việc người.",
+    "text": "Trình Di (程頤) soạn Dịch truyện, giải Thượng, Hạ kinh cùng Thoán, Tượng, Văn ngôn, dùng bản chú của Vương Bật. Tứ khố đề yếu ghi ông không tin phép số của Thiệu Ung: Thiệu lấy số nói Dịch, còn Truyện của Trình nói lý; một bên làm rõ đạo trời, một bên sát việc người.",
     "source": "Tứ khố tổng mục đề yếu, quyển 2, Dịch truyện (Trình Di)"
    },
    {
     "type": "p",
-    "text": "Chu Hy (朱熹) dung hợp hai lối. Chu Dịch bản nghĩa tách Kinh và Thập Dực như bản cổ, đầu sách có chín đồ (Hà đồ, Lạc thư, tiên thiên…), dù học giả đời Thanh cho rằng có thể do môn nhân thêm; Dịch học khải mông (Thái Nguyên Định viết bản nháp) dạy phép bói cỏ thi. Ông nhấn mạnh Dịch vốn là sách bói.",
+    "text": "Chu Dịch bản nghĩa của Chu Hy (朱熹) để Thượng, Hạ kinh thành hai quyển, Thập Dực riêng mười quyển, đầu sách có chín đồ theo thuyết Hà đồ, Lạc thư, tiên thiên; Vương Mậu Hoành (Bạch điền tạp trứ) đối chiếu văn tập, ngữ loại của Chu Hy mà tin chín đồ ấy do môn nhân thêm vào. Dịch học khải mông do Thái Nguyên Định viết bản nháp; Chu Hy viết trong thư rằng sách vốn muốn người học dựa vào lời Đại truyện mà tìm hiểu vạch quẻ và số cỏ thi. Trong Chu Tử ngữ loại, ông nói:",
     "source": "Tứ khố đề yếu, quyển 3, Chu Dịch bản nghĩa; quyển 6, Dịch đồ minh biện"
    },
    {
     "type": "quote",
     "han": "易只是箇卜筮之書。孔子卻就這上依傍說些道理教人。",
-    "vi": "Dịch chỉ là cuốn sách bói. Khổng Tử dựa vào đó mà nói ít đạo lý để dạy người.",
+    "vi": "Dịch chỉ là cuốn sách bói. Khổng Tử dựa vào đó mà nói một ít đạo lý để dạy người.",
     "source": "Chu Tử ngữ loại, quyển 66"
    },
    {
     "type": "p",
-    "text": "Tên Hà đồ, Lạc thư có trong Hệ từ thượng (\"sông Hà hiện đồ, sông Lạc hiện sách, thánh nhân theo đó\"), nhưng Hệ từ không tả hình dáng; các đồ chấm đen trắng mang tên ấy chỉ xuất hiện từ đầu Bắc Tống.",
+    "text": "Tên Hà đồ, Lạc thư có trong Hệ từ thượng (\"sông Hà hiện đồ, sông Lạc hiện sách, thánh nhân theo đó\"). Tứ khố đề yếu kể: Trần Đoàn diễn lý Dịch thành các đồ; người truyền lại lấy số đại diễn làm đồ năm mươi lăm chấm gọi là Hà đồ, lấy phép Thái Ất đi chín cung trong Càn tạc độ làm đồ bốn mươi lăm chấm gọi là Lạc thư.",
     "source": "Hệ từ thượng (河出圖，洛出書，聖人則之); Tứ khố đề yếu, quyển 6, Dịch đồ minh biện"
    },
    {
@@ -539,7 +570,7 @@
    },
    {
     "type": "p",
-    "text": "Hoàng Tông Hy (黃宗羲) soạn Dịch học tượng số luận, gọi nạp giáp, hào động, quái biến, tiên thiên là \"tượng giả\", và trách Chu Hy đưa học tiên thiên vào. Hồ Vị (胡渭) soạn Dịch đồ minh biện, lần từng đồ về nguồn, kết luận chúng là nhánh của Đạo gia luyện đan và thuật số, không phải gốc làm ra Dịch.",
+    "text": "Hoàng Tông Hy (黃宗羲) soạn Dịch học tượng số luận, gọi nạp giáp, hào động, quái biến, tiên thiên là \"tượng giả\" (偽象), và trách Chu Hy thêm học tiên thiên của Thiệu Ung vào là thêm một lớp che. Hồ Vị (胡渭) soạn Dịch đồ minh biện, lần lượt biện Hà đồ, Lạc thư, ngũ hành cửu cung, tiên thiên, thái cực, quái biến, dẫn văn cũ đối chiếu, cho thấy thuyết đồ thư là nhánh bên của Dịch học do hai nhà tu luyện và thuật số tách ra, không phải gốc làm ra Dịch.",
     "source": "Tứ khố tổng mục đề yếu, quyển 6, Dịch học tượng số luận; Dịch đồ minh biện"
    },
    {
@@ -550,7 +581,7 @@
    },
    {
     "type": "p",
-    "text": "Huệ Đống (惠棟) gom lời chú Hán còn sót trong Dịch Hán học, rồi soạn Chu Dịch thuật lấy Tuân Sảng, Ngu Phiên làm chủ, dựng lại lối đọc Hán nho.",
+    "text": "Tứ khố đề yếu nói từ khi Dịch của Vương Bật thịnh hành thì Hán học dứt. Huệ Đống (惠棟) gom lời chú Hán còn sót trong Dịch Hán học, rồi soạn Chu Dịch thuật lấy Tuân Sảng, Ngu Phiên làm chủ, phát huy học của Hán nho, tự chú tự sớ.",
     "source": "Tứ khố tổng mục đề yếu, quyển 6, Dịch Hán học; Chu Dịch thuật"
    },
    {
@@ -559,7 +590,7 @@
    },
    {
     "type": "p",
-    "text": "Bản Chu Dịch trên lụa ở Mã Vương Đôi (tìm thấy 1973) có thứ tự quẻ khác bản truyền thống; bản thẻ tre của Bảo tàng Thượng Hải (1994) cho thấy khoảng năm 300 TCN Chu Dịch đã có hình thức gần như ngày nay. Nhiều học giả coi phần Kinh là sách bói đời Tây Chu; Edward Shaughnessy đặt thời điểm hoàn thành vào cuối thế kỷ IX TCN.",
+    "text": "Bản Chu Dịch tìm thấy ở Mã Vương Đôi năm 1973 xếp quẻ thành tám nhóm theo quẻ trên, khác thứ tự truyền thống; bản thẻ tre trong sưu tập của Bảo tàng Thượng Hải (phát hiện năm 1994) cho thấy khoảng năm 300 TCN Chu Dịch đã được dùng ở mọi tầng lớp với hình thức gần như ngày nay. Nhiều học giả coi phần Kinh là sách bói đời Tây Chu; Edward Shaughnessy, so ngôn ngữ Chu Dịch với minh văn đồ đồng, đặt thời điểm hoàn thành vào cuối thế kỷ IX TCN.",
     "source": "Wikipedia \"I Ching\""
    },
    {
@@ -570,15 +601,11 @@
     "type": "list",
     "items": [
      "Lê Quý Đôn (1726–1784): Dịch kinh phu thuyết (易經膚說), 6 quyển.",
-     "Đặng Thái Phương (鄧泰滂, cũng đọc Đặng Thái Bàng): Chu Dịch quốc âm ca, diễn Kinh Dịch thành thơ Nôm, Vũ Khâm Lân hiệu đính.",
-     "Phan Bội Châu: Chu Dịch, bản dịch và giảng, nhà Khai Trí in năm 1969.",
-     "Ngô Tất Tố (1893–1954): Kinh Dịch, dịch và chú giải (1953).",
-     "Nguyễn Hiến Lê (1912–1984): Kinh Dịch – Đạo của người quân tử, thiên về nghĩa lý, in năm 1990."
+     "Đặng Thái Bàng (鄧泰滂) và Vũ Khâm Lân (武欽憐): Chu Dịch quốc âm ca (周易國音歌), diễn 64 quẻ Chu Dịch ra quốc âm; thư viện của Hội Bảo tồn di sản chữ Nôm có bản in năm Gia Long Ất Hợi (1815) ở Thăng Long.",
+     "Phan Bội Châu: Quốc văn Chu Dịch diễn giải.",
+     "Ngô Tất Tố (1893–1954): Kinh Dịch, chú giải (1953).",
+     "Nguyễn Hiến Lê (1912–1984): Kinh Dịch – Đạo của người quân tử (1990)."
     ]
-   },
-   {
-    "type": "note",
-    "text": "Năm soạn Chu Dịch quốc âm ca và năm Phan Bội Châu soạn bản Chu Dịch chưa kiểm được bằng nguồn học thuật; nguồn cho hai mục này là trang giới thiệu sách, không phải công trình nghiên cứu."
    },
    {
     "type": "h",
@@ -587,10 +614,10 @@
    {
     "type": "list",
     "items": [
-     "Leibniz trao đổi thư với giáo sĩ Joachim Bouvet; trong thư năm 1701 Bouvet chỉ ra rằng đồ tiên thiên 64 quẻ khớp với hệ nhị phân 0–1 của Leibniz; năm 1703 Leibniz công bố \"Explication de l'Arithmétique Binaire\", nhắc tới \"những hình cổ của Phục Hy\".",
+     "Leibniz trao đổi thư với giáo sĩ Dòng Tên Joachim Bouvet; trong các thư năm 1701 Bouvet chỉ ra rằng Kinh Dịch là một phát minh độc lập, song song, của cách ghi nhị phân; năm 1703 Leibniz công bố \"Explication de l'Arithmétique Binaire\", nhan đề nhắc tới \"những hình cổ của Phục Hy\".",
      "James Legge: The Yî King, Sacred Books of the East tập 16 (1882).",
-     "Richard Wilhelm: I Ging. Das Buch der Wandlungen (Jena, 1924; có bản in ghi 1923).",
-     "Cary F. Baynes chuyển bản Wilhelm sang tiếng Anh (1950), lời tựa của Carl Gustav Jung."
+     "Richard Wilhelm: I Ging. Das Buch der Wandlungen (Jena, Eugen Diederichs, 1923).",
+     "Cary F. Baynes chuyển bản Wilhelm sang tiếng Anh (1950), lời giới thiệu của Carl Gustav Jung."
     ]
    },
    {
@@ -616,18 +643,18 @@
       "Hán",
       "Tiêu Diên Thọ, Kinh Phòng",
       "Tượng số: chiêm hậu, tai biến",
-      "Dịch lâm; tám cung, nạp giáp, lục thân → Lục Hào"
+      "Dịch lâm; tám cung, nạp giáp, hào phụ mẫu… → bói đồng tiền"
      ],
      [
       "Hán – Tam Quốc",
       "Tuân Sảng, Ngu Phiên",
       "Tượng số chú kinh",
-      "Được Huệ Đống khôi phục"
+      "Huệ Đống lấy làm chủ trong Chu Dịch thuật"
      ],
      [
       "Ngụy",
       "Vương Bật",
-      "Nghĩa lý (pha Lão Trang)",
+      "Bỏ tượng số, giảng theo Lão Trang",
       "Chu Dịch chú → Chu Dịch chính nghĩa"
      ],
      [
@@ -639,13 +666,13 @@
      [
       "Tống",
       "Hồ Viện, Trình Di",
-      "Nghĩa lý Nho gia",
+      "Làm sáng đạo lý Nho gia",
       "Trình thị Dịch truyện"
      ],
      [
       "Tống",
       "Chu Hy",
-      "Dung hợp; Dịch vốn là sách bói",
+      "Dịch vốn là sách bói",
       "Chu Dịch bản nghĩa, Dịch học khải mông"
      ],
      [
@@ -670,12 +697,12 @@
    },
    {
     "type": "note",
-    "text": "App Định Vị đứng ở chỗ giao nhau: cách lập quẻ vay từ truyền thống tượng số, còn cách đọc quẻ để tự soi theo tinh thần nghĩa lý: quẻ gợi câu hỏi, người hỏi tự quyết."
+    "text": "App Định Vị lập quẻ theo hai phép nêu trên: Lục Hào (gieo ba đồng xu, an tám cung, nạp giáp, lục thân) và Mai Hoa (theo giờ, theo số, theo chữ). Phần đọc quẻ kèm \"Câu hỏi tự soi\" để người hỏi tự đặt lời quẻ cạnh câu hỏi của mình."
    }
   ],
   "sources": [
    {
-    "label": "Tứ khố toàn thư tổng mục đề yếu, quyển 1 (Kinh bộ tổng tự, Dịch loại tiểu tự, Chu Dịch chú), Wikisource",
+    "label": "Tứ khố toàn thư tổng mục đề yếu, quyển 1 (Kinh bộ tổng tự, Dịch loại tiểu tự, Chu Dịch chú, Chu Dịch chính nghĩa), Wikisource",
     "url": "https://zh.wikisource.org/wiki/四庫全書總目提要/卷001"
    },
    {
@@ -691,7 +718,7 @@
     "url": "https://zh.wikisource.org/wiki/四庫全書總目提要/卷006"
    },
    {
-    "label": "Tứ khố tổng mục đề yếu, quyển 108 (Hoàng cực kinh thế thư)",
+    "label": "Tứ khố tổng mục đề yếu, quyển 108 (Hoàng cực kinh thế thư, Dịch thông biến)",
     "url": "https://zh.wikisource.org/wiki/四庫全書總目提要/卷108"
    },
    {
@@ -719,11 +746,19 @@
     "url": "https://zh.wikisource.org/wiki/易漢學_(四庫全書本)/卷1"
    },
    {
-    "label": "Hệ từ thượng, Chu Dịch (Kanripo KR1a0001)",
+    "label": "Hệ từ thượng, Thuyết quái, Chu Dịch (Kanripo KR1a0001)",
     "url": "https://github.com/kanripo/KR1a0001"
    },
    {
-    "label": "Wikipedia, \"I Ching\" (Mã Vương Đôi 1973, Thượng Bác 1994, Shaughnessy, Vương Bật, Ngu Phiên, Tuân Sảng)",
+    "label": "Mai Hoa Dịch số, Wikisource (đề tác giả Thiệu Ung)",
+    "url": "https://zh.wikisource.org/wiki/梅花易數"
+   },
+   {
+    "label": "Tam quốc chí, Ngô thư, quyển 57 (Ngu Phiên truyện, chú dẫn Phiên biệt truyện)",
+    "url": "https://zh.wikisource.org/wiki/三國志/卷57"
+   },
+   {
+    "label": "Wikipedia, \"I Ching\" (hai phái Đông Hán; Kinh Phòng, Ngu Phiên, Tuân Sảng; Mã Vương Đôi 1973, Thượng Bác 1994, Shaughnessy; Wilhelm 1923, Baynes 1950)",
     "url": "https://en.wikipedia.org/wiki/I_Ching"
    },
    {
@@ -731,12 +766,12 @@
     "url": "https://vi.wikipedia.org/wiki/Lê_Quý_Đôn"
    },
    {
-    "label": "Chu Dịch quốc âm ca (giới thiệu bản Hồng Viễn đường), thaicucthieugia.com",
-    "url": "https://thaicucthieugia.com/index.php/tan-man/chim-troi-ca-nuoc-tan-man/556-chu-da-ch-qua-c-a-m-ca-e"
+    "label": "Chu Dịch quốc âm ca 周易國音歌 (1815), thư viện Vietnamese Nôm Preservation Foundation",
+    "url": "https://lib.nomfoundation.org/collection/1/volume/919/"
    },
    {
-    "label": "Chu Dịch – Phan Bội Châu (Khai Trí, 1969), metaisach.com",
-    "url": "https://metaisach.com/chu-dich-phan-boi-chau-khai-tri-1969"
+    "label": "Quốc văn Chu Dịch diễn giải – Phan Bội Châu (NXB Văn Học), Google Sách",
+    "url": "https://books.google.com/books?id=rHP0BQAAQBAJ"
    },
    {
     "label": "Wikipedia tiếng Việt, \"Ngô Tất Tố\"",
@@ -755,7 +790,7 @@
     "url": "https://en.wikipedia.org/wiki/James_Legge"
    },
    {
-    "label": "Deutsche Digitale Bibliothek: I Ging. Das Buch der Wandlungen (Diederichs, Jena)",
+    "label": "Deutsche Digitale Bibliothek: I Ging. Das Buch der Wandlungen (Eugen Diederichs, Jena, 1923)",
     "url": "https://www.deutsche-digitale-bibliothek.de/item/2DMI32YEPYAY7TV6IVODMKTD67UO3WBW"
    },
    {
@@ -767,11 +802,11 @@
  {
   "id": "thuat-ngu",
   "title": "Thuật ngữ cần nhớ",
-  "summary": "Bảng các thuật ngữ Hán Việt hay gặp khi đọc Kinh Dịch, từ hào, quái, quẻ đến trung, chính, ứng, tỉ và các lời đoán, kèm nghĩa ngắn và chỗ sách cổ định nghĩa.",
+  "summary": "Bảng các thuật ngữ hay gặp khi đọc Kinh Dịch — hào, quái, quẻ, hào động, quẻ biến, quẻ hỗ, bàng thông, đảo, chính, trung, ứng, tỉ, thừa, bốn chữ nguyên hanh lợi trinh và các lời đoán — kèm nghĩa theo chỗ sách cổ định nghĩa.",
   "blocks": [
    {
     "type": "p",
-    "text": "Kinh Dịch dùng một bộ từ riêng, phần lớn là chữ Hán đọc theo âm Hán Việt. Mục này gom các thuật ngữ thường gặp thành bảng; chỗ nào sách cổ tự định nghĩa thì dẫn nguyên văn."
+    "text": "Mục này gom các thuật ngữ thường gặp khi đọc Kinh Dịch thành bảng; chỗ nào sách cổ tự định nghĩa thì dẫn nguyên văn."
    },
    {
     "type": "h",
@@ -788,22 +823,22 @@
      [
       "Hào",
       "爻",
-      "Một vạch. Vạch liền là hào dương (cương 剛, cứng), vạch đứt là hào âm (nhu 柔, mềm). Hệ từ hạ: hào là cái “效天下之動” — mô phỏng chuyển động của thiên hạ."
+      "Một vạch. Chu Hy: vẽ một vạch lẻ (liền) để tượng dương, một vạch chẵn (đứt) để tượng âm (畫一奇以象陽，畫一耦以象陰). Hệ từ gọi hai loại vạch là cương 剛 (cứng) và nhu 柔 (mềm): “剛柔相推而生變化”, Chu Hy chú đó là hào âm dương của quẻ đẩy nhau. Hệ từ hạ: hào là cái “效天下之動” — mô phỏng chuyển động của thiên hạ."
      ],
      [
       "Quái (đơn quái)",
       "卦",
-      "Nhóm ba vạch. Có tám quái: Càn, Khôn, Chấn, Tốn, Khảm, Ly, Cấn, Đoài."
+      "Nhóm ba vạch (Chu Hy: quái ba vạch, 三畫卦). Thuyết quái chương 7 kể đủ tám quái: Càn, Khôn, Chấn, Tốn, Khảm, Ly, Cấn, Đoài."
      ],
      [
       "Quẻ (trùng quái)",
       "重卦",
-      "Sáu vạch, do hai quái chồng lên. Có 64 quẻ. App dùng “quái” cho ba vạch, “quẻ” cho sáu vạch."
+      "Sáu vạch, do hai quái chồng lên — Hệ từ hạ: “因而重之”. Chu Hy: ba vạch lại nhân lên thành sáu vạch, đặt tám quái lên trên mỗi quái mà thành 64 quẻ. App dùng “quái” cho ba vạch, “quẻ” cho sáu vạch."
      ],
      [
       "Âm, dương",
       "陰陽",
-      "Hai mặt đối đãi: cứng và mềm, động và tĩnh. Thuyết quái: đạo trời là âm dương, đạo đất là nhu cương."
+      "Thuyết quái chương 2: lập đạo trời là âm và dương, lập đạo đất là nhu và cương (立天之道曰陰與陽，立地之道曰柔與剛)."
      ],
      [
       "Nội quái / ngoại quái",
@@ -830,7 +865,7 @@
    },
    {
     "type": "p",
-    "text": "Ở quẻ Khôn, Chu Hy giải tương tự: số âm thì 6 là già, 8 là trẻ, nên hào âm gọi là lục. Chỉ hào “lão” (6 hoặc 9) mới là hào động."
+    "text": "Ở quẻ Khôn, Chu Hy giải tương tự: số âm thì 6 là già, 8 là trẻ (陰數六老而八少), nên hào âm gọi là lục. Theo lời ông vừa dẫn, hào già (6 hoặc 9) thì biến, hào trẻ (7 hoặc 8) thì không."
    },
    {
     "type": "h",
@@ -847,32 +882,32 @@
      [
       "Hào động (hào biến)",
       "動爻 / 變爻",
-      "Hào ra 6 hoặc 9 khi gieo, đang đổi thành hào ngược lại. Hệ từ thượng: “爻者、言乎變者也” — hào là nói về biến."
+      "Hào ra 6 hoặc 9 khi gieo; Dịch học khải mông thông thích chép: lão dương biến thành thiếu âm, lão âm biến thành thiếu dương. Hệ từ thượng: “爻者、言乎變者也” — hào là nói về biến."
      ],
      [
       "Quẻ chính (bản quái)",
       "本卦",
-      "Quẻ vừa gieo được."
+      "Quẻ gieo được, trước khi đổi các hào động."
      ],
      [
       "Quẻ biến (chi quái)",
       "之卦",
-      "Quẻ có được sau khi đổi mọi hào động. 之 là “đi đến”: “遇屯之比” là gặp Truân, đi đến Tỉ — ví dụ từ Tả truyện được dẫn trong Dịch học khải mông. Đây là cách hiểu của đời sau; một số học giả hiện đại (Shaughnessy, Rutt) cho rằng trong Tả truyện chữ 之 chỉ đánh dấu một hào cụ thể, và chưa thấy lệ “hào động” ở đó (Wikipedia, I Ching)."
+      "Quẻ có được sau khi đổi mọi hào động. Thiên Khảo biến chiêm của Dịch học khải mông chép lời Sa Tùy Trình thị dẫn Tả truyện: “畢萬遇屯之比，初九變也” — Tất Vạn gặp Truân chi Tỉ, là hào sơ cửu biến; 之 ở đây được hiểu là “đi đến”. Wikipedia (mục I Ching, dẫn Shaughnessy 1983, Rutt 1996, Smith 2008) ghi rằng trong Tả truyện chữ 之 chỉ đánh dấu một hào cụ thể, việc đọc 之 là “đi đến” thuộc các lần dựng lại phép bói về sau, và Tả truyện không có trường hợp “hào biến” nào."
      ],
      [
       "Quẻ hỗ (hỗ thể)",
       "互卦 / 互體",
-      "Quẻ dựng từ bốn hào giữa: hào 2–3–4 làm quái dưới, hào 3–4–5 làm quái trên. Các nhà chú giải cổ được Lý Đỉnh Tộ (đời Đường) chép trong Chu Dịch tập giải đã dùng, vd. Diêu Quy nói quẻ Đại hữu “互體有兌” (hỗ thể có quái Đoài)."
+      "Quẻ dựng từ bốn hào giữa: hào 2–3–4 làm quái dưới, hào 3–4–5 làm quái trên (app tính quẻ hỗ theo cách này). Chu Dịch tập giải của Lý Đỉnh Tộ (đời Đường) chép lời Diêu Quy nói quẻ Đại hữu “互體有兌” — hỗ thể có quái Đoài."
      ],
      [
       "Bàng thông (thác quái)",
       "旁通 / 錯卦",
-      "Quẻ đổi mọi hào âm thành dương và ngược lại. Ngu Phiên (cuối Hán) gọi là bàng thông (vd. Đại hữu “與比旁通” — bàng thông với Tỉ). Lai Tri Đức đời Minh gọi là thác."
+      "Quẻ đổi mọi hào âm thành dương và ngược lại. Chu Dịch tập giải chép lời Ngu Phiên ở quẻ Đại hữu: “與比旁通” — bàng thông với Tỉ. Tứ khố đề yếu cho biết Lai Tri Đức đời Minh gọi là thác (錯)."
      ],
      [
       "Đảo quái (tổng quái)",
       "覆卦 / 綜卦",
-      "Quẻ lật ngược trên dưới, như Truân lật thành Mông. Khổng Dĩnh Đạt gọi là “phúc” (覆), Lai Tri Đức gọi là “tổng” (綜)."
+      "Quẻ lật ngược trên dưới, như Truân lật thành Mông. Khổng Dĩnh Đạt gọi là “phúc” (覆): lật trong ra ngoài mà thành hai quẻ; Tứ khố đề yếu cho biết Lai Tri Đức gọi là “tổng” (綜)."
      ]
     ]
    },
@@ -884,11 +919,11 @@
    },
    {
     "type": "p",
-    "text": "Vì thế 64 quẻ đi thành từng đôi: phần lớn là cặp lật ngược (Truân – Mông, Nhu – Tụng…), còn tám quẻ lật lên vẫn y nguyên (Càn, Khôn, Khảm, Ly, Đại quá, Di, Trung phu, Tiểu quá) thì đi cặp với quẻ đổi hẳn âm dương. Tứ khố đề yếu tóm tắt cách gọi của Lai Tri Đức: “錯者隂陽對錯” — thác là âm dương đối nhau; tổng là một quẻ nhìn từ trên xuống và từ dưới lên."
+    "text": "Theo lời Khổng Dĩnh Đạt, các quẻ lật ngược thành quẻ khác thì đi cặp với quẻ lật (Truân – Mông, Nhu – Tụng, Sư – Tỉ…); tám quẻ lật lên vẫn chỉ thành một quẻ (Càn, Khôn, Khảm, Ly, Đại quá, Di, Trung phu, Tiểu quá) thì đi cặp với quẻ đổi hẳn âm dương. Tứ khố đề yếu tóm tắt cách gọi của Lai Tri Đức: “錯者隂陽對錯” — thác là âm dương đối nhau; “綜者一上一下” — tổng là một trên một dưới, vốn một quẻ, ở dưới là Truân, ở trên là Mông."
    },
    {
     "type": "p",
-    "text": "Về quẻ hỗ, Hệ từ hạ chương 9 nói muốn phân biệt phải trái thì “非其中爻不備” — thiếu các hào giữa thì không đủ; Chu Hy chú “trung hào” là bốn hào giữa quẻ. App hiện quẻ hỗ, bàng thông và đảo cạnh mỗi quẻ."
+    "text": "Hệ từ hạ chương 9 nói muốn phân biệt phải trái thì “非其中爻不備” — thiếu các hào giữa thì không đủ; Chu Hy chú đó là bốn hào giữa quẻ. Lai Tri Đức có phép “tượng trung hào” (中爻之象); Tứ khố đề yếu nói đó cũng chính là phép hỗ thể có từ đời Hán. Trong app, kết quả gieo quẻ ghi quẻ hỗ; trang mỗi quẻ trong Thư viện có liên kết tới quẻ bàng thông và quẻ đảo."
    },
    {
     "type": "h",
@@ -905,32 +940,32 @@
      [
       "Chính (đắc chính, đương vị)",
       "正 / 當位",
-      "Hào dương ở vị lẻ (1, 3, 5), hào âm ở vị chẵn (2, 4, 6): “đúng chỗ”. Ngược lại là bất chính, “bất đương vị” (不當位)."
+      "Hào dương ở vị lẻ (1, 3, 5), hào âm ở vị chẵn (2, 4, 6): “đúng chỗ”. Chu Hy chú hào hai, bốn là vị âm, hào ba, năm là vị dương. Ngược lại là “bất đương vị” (不當位)."
      ],
      [
       "Trung (đắc trung)",
       "中",
-      "Hào ở giữa quái: hào 2 và hào 5. Hàm ý vừa phải, không thái quá. Hào 5 dương hoặc hào 2 âm vừa trung vừa chính gọi là trung chính."
+      "Hào ở giữa quái: hào 2 và hào 5. Chu Hy chú hào hai được khen là nhờ “nhu trung” (柔中). Hào dương ở vị năm hay hào âm ở vị hai vừa trung vừa chính, Chu Hy gọi là trung chính (cửu ngũ quẻ Nhu “陽剛中正”, lục nhị quẻ Đồng nhân “中正”). Chu Dịch chiết trung: hào đương vị chưa chắc đều tốt, còn hào hai, hào năm thì lời tốt nhiều nhất (二五之中則吉者獨多)."
      ],
      [
       "Ứng",
       "應",
-      "Hào 1–4, 2–5, 3–6 là các cặp cùng vị trong hai quái. Một âm một dương thì “có ứng” (hô ứng nhau); cùng tính thì “vô ứng”."
+      "Chu Dịch chiết trung: ứng là các hào đối nhau ở quái dưới và quái trên (上下體相對應之爻) — hào 1–4, 2–5, 3–6. Cứng ứng cứng, mềm ứng mềm thì gọi là vô ứng (无應)."
      ],
      [
       "Tỉ",
       "比",
-      "Hai hào sát nhau. Chu Dịch chiết trung: tỉ hay ứng đều phải “一隂一陽” — một âm một dương — thì mới có tình tìm đến nhau."
+      "Chu Dịch chiết trung: tỉ là các hào liền nhau theo thứ vị (逐位相比連之爻); tỉ hay ứng đều phải “一隂一陽” — một âm một dương — thì mới có tình tìm đến nhau."
      ],
      [
       "Thừa 承",
       "承",
-      "Đỡ, nâng: hào ở dưới đối với hào ngay trên. Hay dùng khi hào âm ở ngay dưới hào dương — âm nương theo dương, thường được coi là thuận."
+      "Đỡ: hào ở ngay dưới đối với hào trên. Chu Dịch chiết trung: ở gần mà đỡ (hào bốn với hào năm) thì quý ở cung thuận, nên cứng không bằng mềm; hào lục tứ đỡ cửu ngũ có ở 16 quẻ, đều là lời tốt."
      ],
      [
       "Thừa 乘",
       "乘",
-      "Cưỡi: hào ở trên đối với hào ngay dưới. “Thừa cương” (乘剛) là hào âm cưỡi trên hào dương, thường bị coi là nghịch, bất an."
+      "Cưỡi: hào ở trên đối với hào ngay dưới. “Thừa cương” (乘剛) là hào âm cưỡi trên hào dương; Tượng truyện nói cái khó của hào lục nhị quẻ Truân là vì “乘剛也”."
      ],
      [
       "Hào chủ (quái chủ)",
@@ -941,12 +976,12 @@
    },
    {
     "type": "p",
-    "text": "Các thuật ngữ này có ngay trong Thập Dực. Tượng truyện quẻ Nhu giải hào cửu ngũ tốt là “以中正也” — vì trung chính; Thoán truyện quẻ Đồng nhân viết “柔得位得中而應乎乾” — hào mềm được vị, được trung, ứng với Càn; Tượng truyện hào lục nhị quẻ Truân nói hào này khó vì “乘剛也” — cưỡi trên hào cứng."
+    "text": "Nhiều thuật ngữ này có ngay trong Thập Dực. Tượng truyện quẻ Nhu giải hào cửu ngũ tốt là “以中正也” — vì trung chính; Thoán truyện quẻ Đồng nhân viết “柔得位得中而應乎乾” — hào mềm được vị, được trung, ứng với Càn; Tượng truyện hào lục nhị quẻ Truân nói hào này khó vì “乘剛也” — cưỡi trên hào cứng."
    },
    {
     "type": "note",
     "text": "Hai chữ thừa 承 và 乘 đọc giống nhau nhưng ngược chiều: 承 là ở dưới đỡ lên, 乘 là ở trên cưỡi xuống. Vương Bật nói “承乘者逆順之象也” — đỡ và cưỡi là hình ảnh của thuận và nghịch. Phần cấu trúc hào trong app ghi “thừa cương” cho 乘 và “đỡ dưới hào dương” cho 承.",
-    "source": "Vương Bật, Chu Dịch lược lệ, dẫn trong Ngự toản Chu Dịch chiết trung, quyển thủ"
+    "source": "Vương Bật, dẫn trong Ngự toản Chu Dịch chiết trung, quyển thủ"
    },
    {
     "type": "h",
@@ -957,7 +992,7 @@
     "items": [
      "Quái đức (卦德): tính chất của quái, vd. Thuyết quái chương 7: “乾、健也，坤、順也” — Càn là mạnh, Khôn là thuận.",
      "Quái tượng (卦象): hình ảnh quái tượng trưng, vd. Càn là trời, Khôn là đất (Thuyết quái chương 11). Bảng đủ tám quái ở mục Quy tắc đọc quẻ.",
-     "Quái từ (thoán từ 彖辭) và hào từ (爻辭): lời đoán cho cả quẻ và cho từng hào — Chu Hy chú là để “đoán cát hung” của một quẻ, một hào."
+     "Quái từ (thoán từ 彖辭) và hào từ (爻辭): lời gắn vào cả quẻ và vào từng hào — Chu Hy chú là lời để “斷一卦之吉凶”, “斷一爻之吉凶” — đoán cát hung của một quẻ, một hào."
     ]
    },
    {
@@ -966,7 +1001,7 @@
    },
    {
     "type": "p",
-    "text": "Bốn chữ 元亨利貞 là lời quẻ Càn, còn lặp lại ở nhiều quẻ khác. Sách cổ có hai cách hiểu chính."
+    "text": "Bốn chữ 元亨利貞 là lời quẻ Càn, còn gặp lại ở các quẻ khác như Truân, Tùy, Lâm, Vô vọng, Cách. Văn ngôn và Chu Hy đọc bốn chữ này theo hai cách."
    },
    {
     "type": "quote",
@@ -1003,12 +1038,12 @@
      [
       "Lận",
       "吝",
-      "Điều đáng thẹn, vết lỗi nhỏ do không chịu đổi. Chu Hy: lận là từ cát mà đi về phía hung; lo âu tuy chưa tới hung nhưng đã đủ “取羞” — chuốc lấy xấu hổ."
+      "Chu Hy: lận là từ cát mà đi về phía hung. Hệ từ thượng chương 2 gọi hối lận là “憂虞之象” — hình ảnh của lo âu; Chu Hy chú: lo âu tuy chưa tới hung nhưng đã đủ “致悔而取羞” — đưa đến hối và chuốc lấy xấu hổ."
      ],
      [
       "Lệ",
       "厲",
-      "Nguy, phải cảnh giác. Ở hào cửu tam quẻ Càn, Chu Hy giải chỗ đứng này là “危地” — đất nguy, nhưng biết lo sợ thì không lỗi."
+      "Nguy. Ở hào cửu tam quẻ Càn (lời hào có chữ 厲), Chu Hy giải chỗ đứng này là “危地” — đất nguy; biết lo sợ như vậy thì tuy ở đất nguy mà không lỗi."
      ],
      [
       "Vô cữu",
@@ -1031,11 +1066,11 @@
    },
    {
     "type": "p",
-    "text": "Hối và lận nằm giữa cát và hung, chỉ hướng đi chứ không chỉ điểm đến: người biết ăn năn đang đi lên, người tiếc rẻ không sửa đang đi xuống. Hệ từ thượng còn nói “震无咎者存乎悔” — được vô cữu là nhờ biết ăn năn."
+    "text": "Chu Hy chú: cát hung đối nhau, hối lận ở khoảng giữa (吉凶相對而悔吝居其中間). Hệ từ thượng chương 3 còn nói “震无咎者存乎悔” — động được tới chỗ vô cữu là nhờ hối; Chu Hy chú: biết hối thì lòng sửa lỗi được lay động mà có thể vô cữu."
    },
    {
     "type": "note",
-    "text": "Nghĩa trong các bảng trên theo Thập Dực và Chu Hy. Các nhà chú giải khác có chỗ giảng khác, nhất là với những chữ như 貞 hay 孚; khi đọc một bản dịch, nên xem người dịch theo chú giải nào."
+    "text": "Nghĩa trong các bảng trên theo Thập Dực, Chu Hy và các sách được dẫn ở từng dòng."
    }
   ],
   "sources": [
@@ -1064,23 +1099,27 @@
     "url": "https://zh.wikisource.org/wiki/周易集解_(李鼎祚)/卷四"
    },
    {
-    "label": "Tứ khố đề yếu, mục Chu Dịch chính nghĩa (chú của Vương Bật đời Ngụy, Hàn Khang Bá đời Tấn) (Wikisource)",
-    "url": "https://zh.wikisource.org/wiki/周易注疏_(四庫全書本)/提要"
+    "label": "Tứ khố toàn thư tổng mục đề yếu, quyển 1, mục Chu Dịch tập giải — “唐李鼎祚撰” (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/四庫全書總目提要/卷001"
    },
    {
     "label": "Lý Quang Địa và cộng sự, Ngự toản Chu Dịch chiết trung (1715), quyển thủ — dẫn Vương Bật (Wikisource)",
     "url": "https://zh.wikisource.org/wiki/御纂周易折中_(四庫全書本)/卷首"
+   },
+   {
+    "label": "Wikipedia, mục “I Ching”, phần về các lần bói trong Tả truyện (dẫn Shaughnessy 1983, Rutt 1996, Smith 2008)",
+    "url": "https://en.wikipedia.org/wiki/I_Ching"
    }
   ]
  },
  {
   "id": "quy-tac",
   "title": "Quy tắc đọc quẻ",
-  "summary": "Các quy tắc truyền thống để đọc một quẻ — sáu vị hào, chính, trung, ứng, tỉ, thừa, hào chủ, tượng tám quái, phép chọn lời khi có hào động của Chu Hy, cách giải tên quẻ — và chỗ app áp dụng chúng.",
+  "summary": "Các quy tắc truyền thống để đọc một quẻ theo Thập Dực, Vương Bật, Chu Hy và Chu Dịch chiết trung — sáu vị hào, chính, trung, ứng, tỉ, thừa, hào chủ, tượng tám quái, phép chọn lời khi có hào động của Chu Hy, các lối Thập Dực giải tên quẻ — và chỗ app áp dụng chúng.",
   "blocks": [
    {
     "type": "p",
-    "text": "Thập Dực và các nhà chú giải về sau rút ra một số quy tắc để hiểu vì sao hào này tốt, hào kia xấu: hào ở vị nào, có đúng chỗ không, có ai hô ứng không, hai quái mang hình ảnh gì. Đó là công cụ, không phải công thức; chính sách cổ cũng ghi nhiều ngoại lệ."
+    "text": "Mục này trình bày các quy tắc mà Thập Dực và các nhà chú giải Vương Bật, Chu Hy, Chu Dịch chiết trung dùng khi giải vì sao hào này tốt, hào kia xấu — hào ở vị nào, có đúng chỗ không, có hào nào ứng không, hai quái mang hình ảnh gì — và chỗ app áp dụng chúng."
    },
    {
     "type": "h",
@@ -1088,7 +1127,7 @@
    },
    {
     "type": "p",
-    "text": "Quẻ đếm từ dưới lên. Thuyết quái giải vì sao có sáu hào: gộp ba ngôi Trời – Đất – Người (tam tài) rồi nhân đôi (兼三才而兩之). Chu Hy chú cụ thể: hào 1–2 là Đất, 3–4 là Người, 5–6 là Trời. App dùng đúng cách chia này khi mời bạn chọn “tầng” trước rồi mới chọn hào."
+    "text": "Quẻ đếm từ dưới lên; Chu Hy: vẽ quẻ từ dưới lên nên hào dưới cùng gọi là sơ. Thuyết quái chương 2 và Hệ từ hạ chương 10 đều nói sáu hào là gộp ba ngôi Trời – Đất – Người (tam tài) rồi nhân đôi (兼三才而兩之). Chu Hy chú ở Hệ từ hạ chương 10: hai hào trên là Trời, hai hào giữa là Người, hai hào dưới là Đất. App dùng cách chia này khi mời bạn chọn “tầng” trước rồi mới chọn hào."
    },
    {
     "type": "quote",
@@ -1104,7 +1143,7 @@
    },
    {
     "type": "p",
-    "text": "Chu Hy giảng: hào bốn “gần” là gần ngôi vua ở hào năm nên phải dè dặt; hào hai ở xa mà được khen là nhờ đắc trung. Hào ba và năm cùng là vị dương nhưng sang hèn khác nhau; hào âm ở hai vị ấy thì nguy, chỉ hào dương mới kham nổi. Về hai đầu, cũng chương này nói “其初難知，其上易知，本末也” — hào đầu khó biết, hào cuối dễ biết, vì là gốc và ngọn của việc."
+    "text": "Chu Hy chú: hào bốn “gần” là gần vua (四近君) nên nhiều lo sợ; hào hai ở xa mà được khen là nhờ “nhu trung” (柔中). Hào ba và năm cùng là vị dương nhưng sang hèn khác nhau; hào âm ở hai vị ấy thì nguy, chỉ hào dương mới thắng nổi. Về hai đầu, cũng chương này nói “其初難知，其上易知，本末也” — hào đầu khó biết, hào cuối dễ biết, vì là gốc và ngọn."
    },
    {
     "type": "table",
@@ -1148,8 +1187,8 @@
    },
    {
     "type": "note",
-    "text": "Vương Bật cho rằng hào sơ và hào thượng không có vị âm dương cố định, vì Hệ từ chỉ bàn bốn hào giữa: “初上者是事之終始無隂陽定位也” (sơ và thượng là đầu và cuối của việc, không có vị âm dương định sẵn). Tuy vậy, chính Tượng truyện hào thượng lục quẻ Nhu lại nói “雖不當位” — tuy không đúng vị. App xét chính hay bất chính cho cả sáu hào.",
-    "source": "Vương Bật, Chu Dịch lược lệ, dẫn trong Chu Dịch chiết trung, quyển thủ"
+    "text": "Vương Bật cho rằng hào sơ và hào thượng không có vị âm dương cố định. Ông lập luận: Tượng truyện không nói sơ, thượng đắc vị hay thất vị; Hệ từ chỉ bàn hào hai, bốn, ba, năm; Văn ngôn nói hào thượng cửu quẻ Càn “貴而无位” (sang mà không có vị), còn Tượng truyện hào thượng lục quẻ Nhu nói “雖不當位” (tuy không đúng vị) — nếu hào trên là vị âm thì Nhu không thể nói không đúng vị, nếu là vị dương thì Càn không thể nói không có vị. Ông kết: “初上者是事之終始，無隂陽定位也” (sơ và thượng là đầu và cuối của việc, không có vị âm dương định sẵn). Chu Dịch chiết trung hiểu lại chữ “không có vị” của Vương Bật là không có tước vị, không phải không có vị âm dương. Chu Hy, ở hào thượng lục quẻ Nhu, coi âm ở trên là đương vị và ghi chữ “bất đương vị” ở đây là chưa rõ (未詳). App xét chính hay bất chính cho cả sáu hào.",
+    "source": "Vương Bật, dẫn trong Ngự toản Chu Dịch chiết trung, quyển thủ; Chu Hy, Chu Dịch bản nghĩa, quẻ Nhu"
    },
    {
     "type": "h",
@@ -1159,24 +1198,24 @@
     "type": "quote",
     "han": "觀變動者存乎應，察安危者存乎位，辨逆順者存乎承乘",
     "vi": "Muốn xem sự biến động thì xét ở ứng; muốn biết yên hay nguy thì xét ở vị; muốn phân thuận hay nghịch thì xét ở chỗ đỡ và cưỡi.",
-    "source": "Vương Bật, Chu Dịch lược lệ, dẫn trong Chu Dịch chiết trung, quyển thủ"
+    "source": "Vương Bật, dẫn trong Ngự toản Chu Dịch chiết trung, quyển thủ"
    },
    {
     "type": "list",
     "items": [
      "Chính: dương ở vị lẻ, âm ở vị chẵn là đúng chỗ.",
      "Trung: hào 2 và 5 — như Chu Hy vừa giải, hào hai được khen là nhờ trung.",
-     "Ứng: hào 1–4, 2–5, 3–6; một âm một dương là có ứng.",
-     "Tỉ và thừa: xét hào sát bên. Âm ở dưới đỡ dương (承) là thuận; âm ở trên cưỡi dương (乘) là nghịch."
+     "Ứng: hào 1–4, 2–5, 3–6; theo Chiết trung, một âm một dương mới là có ứng.",
+     "Tỉ và thừa: xét hào liền bên. Chiết trung: ở gần mà đỡ hào trên (承) thì quý ở cung thuận. Tượng truyện giải cái khó, cái nguy của hào lục nhị quẻ Truân và lục nhị quẻ Chấn là vì “乘剛” — cưỡi trên hào cứng."
     ]
    },
    {
     "type": "p",
-    "text": "Chu Dịch chiết trung (Lý Quang Địa soạn theo lệnh vua Khang Hy, 1715) đã đếm thử để kiểm các quy tắc này. Hào lục tứ đỡ cửu ngũ có ở 16 quẻ và đều được lời tốt; hào cửu tứ ở dưới lục ngũ cũng 16 quẻ nhưng “凶者多” — nhiều lời xấu. Hào cửu nhị ứng với lục ngũ ở 16 quẻ đều tốt; lục nhị ứng cửu ngũ thì không đều tốt. Chiết trung giải rằng cái mềm hợp ở gần, cái cứng hợp ở xa (柔之道利近，剛之道利逺) — nên hào mềm ở ngôi năm dựa vào hào cứng thì tốt hơn chiều ngược lại."
+    "text": "Chu Dịch chiết trung (Lý Quang Địa soạn theo lệnh vua Khang Hy; lời tựa đề năm Khang Hy 54, tức 1715) dẫn Hệ từ hạ chương 9 rồi suy ra: cái mềm hợp ở gần, cái cứng hợp ở xa (柔之道利近，剛之道利逺). Gần mà đỡ (hào bốn với hào năm) thì quý ở cung thuận, nên cứng không bằng mềm; xa mà ứng (hào hai với hào năm) thì quý ở mạnh mẽ, nên mềm không bằng cứng. Theo lệ ấy sách kê: hào lục tứ đỡ cửu ngũ có ở 16 quẻ, đều là lời tốt; cửu tứ đỡ lục ngũ cũng 16 quẻ nhưng không đều tốt mà “凶者多” — nhiều lời xấu; cửu nhị ứng lục ngũ ở 16 quẻ đều tốt; lục nhị ứng cửu ngũ cũng 16 quẻ thì không đều tốt, có lời hung, lời lận."
    },
    {
     "type": "note",
-    "text": "Cũng sách này nhắc: khi một hào là hào chủ của quẻ thì “不可以尋常比應之例論也” — không thể xét theo lệ tỉ, ứng thông thường. Quy tắc cấu trúc cho biết xu hướng, còn lời hào mới là chỗ quyết định.",
+    "text": "Cũng sách này nhắc: khi một hào là hào chủ của quẻ thì các hào khác theo quan hệ tỉ, ứng với nó mà có lời tốt xấu, điều này “不可以尋常比應之例論也” — không thể xét theo lệ tỉ, ứng thông thường. Ví dụ sách nêu: quẻ Dự lấy hào bốn làm chủ, nên hào đầu (ứng với hào bốn) “kêu” mà hào ba (sát dưới hào bốn) “ngước nhìn”.",
     "source": "Ngự toản Chu Dịch chiết trung, quyển thủ"
    },
    {
@@ -1191,7 +1230,7 @@
    },
    {
     "type": "p",
-    "text": "Chiết trung giải: hào “thành quái” là hào mà nghĩa quẻ nhờ nó mà có, bất kể vị cao thấp, đức tốt xấu; hào “chủ quái” phải có đức tốt, được thời, được vị, nên phần nhiều là hào năm. Có quẻ hai loại trùng vào một hào, như Càn lấy cửu ngũ, Khôn lấy lục nhị. Trước đó Vương Bật đã nêu: “一卦五陽而一隂，則一隂為之主” — quẻ năm dương một âm thì hào âm ấy làm chủ, và ngược lại, vì cái hiếm định hình cả quẻ. Như quẻ Dự chỉ một hào dương ở vị bốn, quẻ Quải chỉ một hào âm trên cùng; Chiết trung đều coi đó là hào chủ."
+    "text": "Chiết trung giải: hào “thành quái” là hào mà nghĩa quẻ nhờ nó mà có, bất kể vị cao thấp, đức tốt xấu; hào “chủ quái” phải có đức tốt, được thời, được vị, nên phần nhiều là hào năm. Có quẻ chỉ một hào chủ, có quẻ hai; sách lấy cửu ngũ làm chủ quẻ Càn, lục nhị làm chủ quẻ Khôn. Trước đó Vương Bật đã nêu: “一卦五陽而一隂，則一隂為之主” — quẻ năm dương một âm thì hào âm ấy làm chủ, và ngược lại; hào âm tuy hèn mà làm chủ là vì ở chỗ ít nhất (處其至少之地也). Như quẻ Dự chỉ một hào dương ở vị bốn, quẻ Quải chỉ một hào âm trên cùng; Chiết trung đều coi đó là hào chủ."
    },
    {
     "type": "h",
@@ -1288,7 +1327,7 @@
    },
    {
     "type": "p",
-    "text": "Thứ tự trong nhà theo phép “cầu” (索) của Thuyết quái: Chấn là “一索而得男” — cầu lần đầu được con trai, Khảm lần hai, Cấn lần ba; Tốn, Ly, Đoài tương tự là con gái. Nhìn hình vạch: quái nam chỉ có một hào dương, hào ấy ở dưới, giữa hay trên cho biết là trưởng, giữa hay út; quái nữ cũng vậy với một hào âm. Bước Tự định vị trong app hỏi bạn chọn quái dưới (trạng thái bên trong) và quái trên (hoàn cảnh bên ngoài) theo đức và tượng tám quái này."
+    "text": "Thứ tự trong nhà theo phép “cầu” (索) của Thuyết quái chương 10: Chấn là “一索而得男” — cầu lần đầu được con trai, Khảm cầu lần hai, Cấn cầu lần ba; Tốn, Ly, Đoài là con gái theo thứ tự ấy. Chu Hy chú: “nam nữ” là chỉ hào một âm, một dương trong quái (男女指卦中一陰一陽之爻而言); ở Hệ từ hạ ông chú Chấn, Khảm, Cấn là quái dương, đều một dương hai âm, còn Tốn, Ly, Đoài là quái âm, đều một âm hai dương. Bước Tự định vị trong app hỏi bạn chọn quái dưới (trạng thái bên trong) và quái trên (hoàn cảnh bên ngoài); mỗi lựa chọn ghi tên và tượng của quái."
    },
    {
     "type": "h",
@@ -1296,7 +1335,7 @@
    },
    {
     "type": "p",
-    "text": "Kinh không nói rõ gặp nhiều hào động thì đọc lời nào. Chu Hy, trong thiên Khảo biến chiêm của Dịch học khải mông, dựa vào các lần bói chép trong Tả truyện (như chuyện Tất Vạn, chuyện Mục Khương) và suy thêm, lập ra bảng quy tắc dưới đây."
+    "text": "Chu Hy, trong thiên Khảo biến chiêm của Dịch học khải mông, lập quy tắc chọn lời theo số hào động, kèm các lần bói chép trong Tả truyện và Quốc ngữ (như chuyện Tất Vạn, chuyện Mục Khương, chuyện Trùng Nhĩ) làm ví dụ."
    },
    {
     "type": "quote",
@@ -1351,8 +1390,8 @@
    },
    {
     "type": "note",
-    "text": "Chu Hy tự nói quy tắc cho trường hợp hai và bốn hào động là suy ra, không có trong kinh truyện: “今以例推之當如此” — nay suy theo lệ thì nên như vậy. Lời ông được chép kèm giải thích lấy hào trên làm chính vì phải nhìn vào chỗ biến đến cùng (凡變須就其變之極處看). Phép Lục Hào (app có bảng riêng) đọc theo lối khác, không theo bảng này.",
-    "source": "Chu Hy, Dịch học khải mông, Khảo biến chiêm"
+    "text": "Với trường hợp hai và bốn hào động, Khải mông ghi “經无文，今以例推之當如此” — kinh không có văn, nay suy theo lệ thì nên như vậy. Hồ Phương Bình chép kèm lời Chu Hy giải vì sao lấy hào trên làm chính: phải nhìn vào chỗ biến đến cùng (凡變須就其變之極處看). Bảng Lục Hào trong app là phần riêng, không chọn lời theo bảng này.",
+    "source": "Chu Hy, Dịch học khải mông, Khảo biến chiêm (chép trong Hồ Phương Bình, Dịch học khải mông thông thích)"
    },
    {
     "type": "p",
@@ -1364,29 +1403,29 @@
    },
    {
     "type": "p",
-    "text": "Vương Bật nói “舉卦之名，義有主矣” — nêu tên quẻ là nghĩa đã có chỗ chủ; nhưng cũng có khi tên quẻ không do một hào mà do hai quái ghép lại. Thập Dực cho thấy ít nhất bốn lối vào tên một quẻ, và nên thử cả bốn:"
+    "text": "Vương Bật nói “舉卦之名，義有主矣” — nêu tên quẻ là nghĩa đã có chỗ chủ; ông cũng nói có khi bỏ hào mà lấy hai thể (或有遺爻而舉二體者), tức tên quẻ không do một hào mà do hai quái. Lấy quẻ Đại hữu làm ví dụ, Thập Dực giải quẻ theo mấy lối:"
    },
    {
     "type": "list",
     "items": [
-     "Từ hai tượng: Đại tượng quẻ Đại hữu nói “火在天上” — lửa ở trên trời, soi khắp, nên là “có lớn”.",
-     "Từ hào chủ và cấu trúc: Thoán truyện cùng quẻ lại giải “柔得尊位大中而上下應之曰大有” — hào mềm được ngôi tôn ở giữa, trên dưới đều ứng, nên gọi là Đại hữu.",
-     "Từ đức của hai quái: cũng Thoán truyện ấy nói đức quẻ “剛健而文明” — cứng mạnh (Càn dưới) mà sáng đẹp (Ly trên).",
-     "Từ vị trí trong chuỗi: Tự quái giải Truân đến sau Càn Khôn vì “屯者、盈也” — đầy, lúc vạn vật mới sinh; Tạp quái đặt các quẻ thành cặp nghĩa như “乾剛坤柔，比樂師憂”."
+     "Đại tượng: “火在天上” — lửa ở trên trời; Chu Hy chú: lửa trên trời soi được rộng, là tượng của “có lớn” (所照者廣為大有之象).",
+     "Thoán truyện: “柔得尊位大中而上下應之曰大有” — hào mềm được ngôi tôn, ở giữa, trên dưới đều ứng, nên gọi là Đại hữu; Chu Hy chú đây là lấy thể quẻ giải tên quẻ (以卦體釋卦名義).",
+     "Cũng Thoán truyện ấy nói đức quẻ “剛健而文明” — cứng mạnh mà sáng đẹp; Chu Hy chú Càn là mạnh, Ly là sáng, và đây là lấy đức quẻ, thể quẻ giải lời quẻ (以卦德卦體釋卦辭).",
+     "Tự quái giải vị trí trong chuỗi: sau Đồng nhân là Đại hữu vì “與人同者物必歸焉” — cùng với người thì vật tất quy về; Tạp quái đặt Đại hữu cặp với Đồng nhân: “大有眾也，同人親也” — Đại hữu là đông, Đồng nhân là thân."
     ]
    },
    {
     "type": "p",
-    "text": "Trong app, phần cấu trúc hào tự tính chính, trung, ứng, thừa cho từng hào; quẻ hỗ, bàng thông, đảo và vị trí trong Tự quái hiện cạnh quẻ. Đó là dữ kiện để bạn tự hỏi: mình thiếu ứng ở đâu, đang cưỡi lên cái gì, ai là “hào chủ” trong chuyện này."
+    "text": "Trong app, phần cấu trúc hào tự tính chính, trung, ứng, thừa cho từng hào; kết quả gieo quẻ ghi quẻ hỗ; trang mỗi quẻ trong Thư viện ghi quẻ đứng trước, đứng sau theo Tự quái và có liên kết tới quẻ bàng thông, quẻ đảo."
    }
   ],
   "sources": [
    {
-    "label": "Chu Dịch — Hệ từ hạ, Thuyết quái, Tự quái, Tạp quái, Thoán và Tượng quẻ Đại hữu (Kanripo KR1a0001)",
+    "label": "Chu Dịch — Hệ từ hạ, Thuyết quái, Tự quái, Tạp quái, Văn ngôn quẻ Càn, Thoán và Tượng các quẻ Nhu, Truân, Chấn, Đại hữu (Kanripo KR1a0001)",
     "url": "https://github.com/kanripo/KR1a0001"
    },
    {
-    "label": "Chu Hy, Chu Dịch bản nghĩa — chú Hệ từ thượng chương 2, Hệ từ hạ chương 9 (Kanripo KR1a0032)",
+    "label": "Chu Hy, Chu Dịch bản nghĩa — chú quẻ Càn, Nhu, Đại hữu; Hệ từ hạ chương 4, 9, 10; Thuyết quái chương 10 (Kanripo KR1a0032)",
     "url": "https://github.com/kanripo/KR1a0032"
    },
    {
@@ -1406,11 +1445,11 @@
  {
   "id": "dao-troi",
   "title": "Đạo trời",
-  "summary": "Các truyện của Kinh Dịch nhìn trời đất như một dòng biến đổi có trật tự: từ một chia thành hai, âm dương thay nhau, sinh ra không ngừng. Mục này đọc lại những câu gốc trong Hệ từ và cách người xưa giảng chữ “Dịch” thành ba nghĩa, rồi hai nghĩa.",
+  "summary": "Những câu trong Hệ từ truyện nói về Thái cực, âm dương và “sinh sinh”, kèm chú của Chu Hy và Khổng Dĩnh Đạt; ba nghĩa của chữ “Dịch” theo Dịch vĩ và Trịnh Huyền, hai nghĩa theo Chu Hy; và câu “cùng thì biến”.",
   "blocks": [
    {
     "type": "p",
-    "text": "Phần Kinh (lời quẻ, lời hào) gần như không bàn chuyện vũ trụ; nó nói về những tình huống cụ thể: qua sông, ra trận, cưới hỏi, tế lễ. Những ý lớn về “đạo trời” (thiên đạo — cái lẽ vận hành của trời đất) chủ yếu nằm trong Hệ từ truyện, thiên triết lý nhất của Thập Dực. Đọc các câu ấy giúp hiểu vì sao người xưa tin rằng sáu vạch trên một quẻ có thể phản chiếu một tình huống đời người."
+    "text": "Mục này đọc những câu trong Hệ từ truyện (một thiên của Thập Dực) nói về Thái cực, âm dương và biến đổi, cùng lời chú của Chu Hy (Chu Dịch bản nghĩa) và Khổng Dĩnh Đạt (Chu Dịch chính nghĩa), rồi xem các sách ấy và Chu Tử ngữ loại giảng chữ “Dịch” ra sao."
    },
    {
     "type": "h",
@@ -1424,7 +1463,7 @@
    },
    {
     "type": "p",
-    "text": "Thái cực (太極, “cái cực lớn nhất”, điểm khởi đầu) là cái một chưa phân. Lưỡng nghi (兩儀, “hai khuôn mẫu”) là âm và dương, trên quẻ vẽ bằng vạch đứt và vạch liền. Chồng thêm một vạch lên mỗi nghi thì được tứ tượng (四象, bốn hình): thái dương, thiếu âm, thiếu dương, thái âm. Chồng thêm vạch thứ ba thì được tám quái (八卦) — Càn, Đoài, Ly, Chấn, Tốn, Khảm, Cấn, Khôn. Hai quái chồng lên nhau thành một trong 64 quẻ."
+    "text": "Chu Hy chú: Dịch là sự biến của âm dương, Thái cực (太極) là cái lý của nó. Lưỡng nghi (兩儀) là lúc mới vẽ một vạch để chia âm dương — trên quẻ là vạch liền và vạch đứt. Tứ tượng (四象) là vẽ tiếp thành hai vạch để chia già và trẻ (thái, thiếu); ở chú chương 9 ông kể theo thứ tự thái dương, thiếu âm, thiếu dương, thái âm. Bát quái (八卦) là vẽ thành ba vạch, lúc ấy tượng ba tài (trời, người, đất) mới đủ. Chú Hệ từ hạ chương 1, ông kể tám quái theo thứ tự Càn, Đoài, Ly, Chấn, Tốn, Khảm, Cấn, Khôn, và giảng “nhân đó mà chồng lên” (因而重之) là lấy từng quái mà lần lượt chồng tám quái lên, thành 64 quẻ."
    },
    {
     "type": "quote",
@@ -1434,12 +1473,12 @@
    },
    {
     "type": "p",
-    "text": "Chu Hy giảng câu này như thứ tự vẽ quẻ: một vạch chia âm dương, hai vạch phân già trẻ (thái/thiếu), ba vạch thì đủ ba tầng trời–người–đất. Ông cũng nói thứ tự ấy đúng cho cả việc vạch quẻ lẫn việc bói cỏ thi, và ghi rằng cả chương này “chuyên nói về bói” (專言卜筮)."
+    "text": "Chu Hy nói thứ tự ấy là thứ tự tự nhiên khi thánh nhân làm ra Dịch, không nhờ chút sức trí nào của người; việc vạch quẻ và việc bói cỏ thi đều theo thứ tự đó. Cuối chương, ông ghi chương này “chuyên nói về bói” (專言卜筮)."
    },
    {
     "type": "note",
-    "text": "Câu “Dịch hữu Thái cực” có hai hướng đọc chính. Một hướng đọc như một thuyết vũ trụ sinh thành (từ một khối nguyên sơ mà sinh ra muôn vật); hướng kia, như chú của Chu Hy, xem đây trước hết là trật tự tạo quẻ và phép gieo, đặt trong một chương bàn về bói. Hai cách đọc không loại trừ nhau, nhưng không nên coi câu này là một thuyết vật lý.",
-    "source": "Chu Hy, Chu Dịch bản nghĩa"
+    "text": "Khổng Dĩnh Đạt (Chu Dịch chính nghĩa) giảng câu này theo cách khác: Thái cực là nguyên khí hỗn làm một trước khi trời đất chia ra, và ông dẫn câu “Đạo sinh một” của Lão Tử; Thái cực sinh lưỡng nghi là khi hỗn nguyên đã chia thì có trời đất; bốn tượng là kim, mộc, thủy, hỏa. Chu Hy thì giảng Thái cực là lý, và đọc câu này là thứ tự vạch quẻ, bói cỏ thi.",
+    "source": "Khổng Dĩnh Đạt, Chu Dịch chính nghĩa, Hệ từ thượng (chương 11); Chu Hy, Chu Dịch bản nghĩa"
    },
    {
     "type": "h",
@@ -1448,22 +1487,22 @@
    {
     "type": "quote",
     "han": "一陰一陽之謂道，繼之者善也，成之者性也。",
-    "vi": "Một lần âm, một lần dương, gọi là Đạo. Nối tiếp được nó là điều thiện; làm nó thành hình là bản tính.",
+    "vi": "Một âm một dương gọi là Đạo. Cái nối tiếp nó là thiện; cái làm thành nó là tính.",
     "source": "Hệ từ thượng, chương 5"
    },
    {
     "type": "p",
-    "text": "Câu này không nói đạo là âm, cũng không nói đạo là dương, mà nói đạo là sự luân phiên giữa hai: ngày rồi đêm, nóng rồi lạnh, co rồi duỗi. Chu Hy chú rằng cái luân phiên ấy là “khí”, còn cái lẽ khiến nó luân phiên mới gọi là đạo. Cũng trong chương này, Hệ từ nói người nhân thấy nó thì gọi là nhân, người trí thấy nó thì gọi là trí, còn dân thường dùng hằng ngày mà không biết — tức đạo ở ngay trong việc thường."
+    "text": "Chu Hy chú: âm dương thay nhau vận hành là khí, còn cái lý của nó mới gọi là đạo. Cũng trong chương này, Hệ từ nói người nhân thấy đạo thì gọi là nhân, người trí thấy thì gọi là trí, trăm họ dùng hằng ngày mà không biết, nên đạo của người quân tử ít ai thấy trọn. Chu Hy chú thêm: dù vậy, không ai là không có đạo ấy."
    },
    {
     "type": "quote",
     "han": "富有之謂大業，日新之謂盛德。生生之謂易",
-    "vi": "Giàu có đầy đủ gọi là nghiệp lớn, mỗi ngày một mới gọi là đức thịnh. Sinh rồi lại sinh, gọi là Dịch.",
+    "vi": "Giàu có gọi là nghiệp lớn, mỗi ngày một mới gọi là đức thịnh. Sinh rồi lại sinh, gọi là Dịch.",
     "source": "Hệ từ thượng, chương 5"
    },
    {
     "type": "p",
-    "text": "“Sinh sinh” (生生) là chữ sinh lặp lại: cái này sinh ra cái kia, cái kia lại sinh tiếp, không có điểm dừng. Chu Hy chú gọn: âm sinh dương, dương sinh âm, biến hóa không cùng. Hệ từ hạ nói cùng ý theo cách khác: “đức lớn của trời đất là sinh” (天地之大德曰生). Vì thế trong Dịch, biến đổi không phải là tai nạn mà là trạng thái bình thường của mọi vật."
+    "text": "“Sinh sinh” (生生) là chữ sinh lặp lại. Chu Hy chú: âm sinh dương, dương sinh âm, biến hóa không cùng; lý và sách đều như thế. Hệ từ hạ chương 1 có câu: “đức lớn của trời đất là sinh” (天地之大德曰生)."
    },
    {
     "type": "h",
@@ -1471,12 +1510,12 @@
    },
    {
     "type": "p",
-    "text": "Chữ Dịch (易) vừa có nghĩa là “dễ, giản dị”, vừa có nghĩa là “đổi”. Từ đời Hán, người ta đã giảng tên sách thành ba nghĩa. Nguồn còn giữ được đầy đủ nhất là phần “Luận Dịch chi tam danh” (bàn ba tên gọi của Dịch) mở đầu Chu Dịch chính nghĩa do Khổng Dĩnh Đạt chủ biên đời Đường; ông dẫn sách vĩ Dịch vĩ Càn tạc độ và lời của Trịnh Huyền (nhà kinh học cuối Hán)."
+    "text": "Chu Dịch chính nghĩa, sách chú sớ đời Đường do Khổng Dĩnh Đạt cùng các học quan phụng chiếu soạn, mở đầu bằng phần “Luận Dịch chi tam danh” (bàn ba tên gọi của Dịch). Ở đó ông dẫn sách vĩ Dịch vĩ Càn tạc độ và lời của Trịnh Huyền (Trịnh Khang Thành)."
    },
    {
     "type": "quote",
     "han": "易一名而含三義，所謂易也，變易也，不易也",
-    "vi": "Một tên Dịch mà chứa ba nghĩa: giản dị, biến đổi, và không đổi.",
+    "vi": "Một tên Dịch mà chứa ba nghĩa: dịch (giản dị), biến dịch, và bất dịch.",
     "source": "Dịch vĩ Càn tạc độ, dẫn trong Khổng Dĩnh Đạt, Chu Dịch chính nghĩa, “Đệ nhất luận Dịch chi tam danh”"
    },
    {
@@ -1489,30 +1528,30 @@
     "type": "table",
     "head": [
      "Nghĩa",
-     "Ý chính",
+     "Lời giảng của Trịnh Huyền",
      "Câu Hệ từ mà Trịnh Huyền dẫn làm chứng"
     ],
     "rows": [
      [
       "Giản dị (易簡)",
-      "Lẽ trời đất đơn giản, dễ biết dễ theo",
+      "Phép tắc dễ và giản (易簡之法則): dễ thì dễ biết, giản thì dễ theo",
       "夫乾確然示人易矣，夫坤隤然示人簡矣 — Càn vững vàng chỉ cho người sự dễ, Khôn thuận theo chỉ cho người sự giản (Hệ từ hạ, ch. 1)"
      ],
      [
       "Biến dịch (變易)",
-      "Mọi thứ luôn chuyển, không đứng yên",
+      "Theo thời mà biến đổi, ra vào dời động (順時變易出入移動)",
       "變動不居，周流六虛 — biến động không ở yên, chảy khắp sáu vị trống (Hệ từ hạ, ch. 8)"
      ],
      [
       "Bất dịch (不易)",
-      "Trật tự và vị trí có cái không đổi",
+      "Sự bày đặt, xếp đặt không đổi (張設布列不易)",
       "天尊地卑，乾坤定矣 — trời cao đất thấp, Càn Khôn định rồi (Hệ từ thượng, ch. 1)"
      ]
     ]
    },
    {
     "type": "p",
-    "text": "Ba nghĩa này nghe như mâu thuẫn — vừa đổi vừa không đổi — nhưng thật ra bổ sung cho nhau: cái đổi là sự vật và tình thế, cái không đổi là quy luật đổi và các vị trí trong cấu trúc. Khổng Dĩnh Đạt cũng ghi rằng có học giả khác (ông nêu Chu Giản Tử, họ Trương, họ Hà) hiểu chữ “dịch” đầu tiên theo nghĩa “thay thế” chứ không phải “giản dị”, và ông bác cách hiểu đó để theo Trịnh Huyền."
+    "text": "Cũng theo đoạn Khổng Dĩnh Đạt dẫn, Càn tạc độ nói: dịch là đức của nó, biến dịch là khí của nó, bất dịch là vị của nó — trời ở trên, đất ở dưới, vua quay mặt về nam, bề tôi quay mặt về bắc. Khổng Dĩnh Đạt còn ghi rằng Chu Giản Tử, họ Trương, họ Hà hiểu chữ “dịch” đầu tiên theo nghĩa “thay thế” (易代, 換代) chứ không phải “giản dị”; ông chê cách hiểu ấy là dùng chữ của sách vĩ mà trái nghĩa của nó, và theo Trịnh Huyền."
    },
    {
     "type": "h",
@@ -1526,7 +1565,7 @@
    },
    {
     "type": "p",
-    "text": "Chu Hy đổi cách nhìn: thay vì ba nghĩa, ông nêu hai mặt của âm dương. Giao dịch (交易) là âm dương đứng đối và giao nhau cùng lúc, như trời–đất, núi–đầm trên đồ hình tám quái. Biến dịch (變易) là âm dương thay nhau theo thời gian, như ngày–đêm, nóng–lạnh. Ông còn nối nghĩa biến dịch thẳng với phép bói:"
+    "text": "Chu Hy nêu hai nghĩa. Trong cùng quyển, ông giảng: giao dịch (交易) là dương giao với âm, âm giao với dương, là cái trên đồ hình quẻ, như câu Thuyết quái “trời đất định vị, núi đầm thông khí”; biến dịch (變易) thì như ngày đêm, nóng lạnh, co duỗi qua lại. Ông nối nghĩa biến dịch thẳng với phép bói:"
    },
    {
     "type": "quote",
@@ -1536,7 +1575,7 @@
    },
    {
     "type": "p",
-    "text": "Đây chính là cơ chế của hào động: khi gieo, vạch “già” (số 9 hoặc 6) được coi là đã đến cực và sẽ đổi sang mặt kia, tạo ra quẻ biến. Trong app, khi bạn gieo quẻ, các hào động và quẻ biến được tính theo đúng nguyên tắc này."
+    "text": "Theo chú của Chu Hy ở Hệ từ thượng chương 9, dương già ứng với số 9 và âm già ứng với số 6; âm trẻ, dương trẻ thì “chưa đến cực”. Trong app, khi gieo ba đồng xu, hào được số 9 hoặc 6 là hào động; quẻ biến được lập bằng cách đổi các hào động sang mặt kia, dương thành âm, âm thành dương."
    },
    {
     "type": "h",
@@ -1550,22 +1589,22 @@
    },
    {
     "type": "p",
-    "text": "Câu này nằm trong đoạn Hệ từ kể các thánh vương xưa chế ra lưới, cày, chợ, thuyền, nhà cửa, chữ viết — mỗi thứ được nói là “lấy ý” từ một quẻ. Ý chung là: khi một cách làm đã đi đến giới hạn, người biết Dịch không cố giữ nó mà đổi, và nhờ đổi mà việc lại chạy được lâu dài. Như vậy “đạo trời” trong Dịch không phải là bức tranh tĩnh để chiêm ngưỡng, mà là một nhịp vận hành để hòa theo: biết mình đang ở đoạn nào của nhịp, và biết lúc nào nên đổi."
+    "text": "Câu này nằm trong đoạn Hệ từ kể các thánh vương xưa làm ra lưới, cày, chợ, thuyền, nhà cửa, chữ viết — mỗi thứ được nói là “lấy ở” (蓋取諸) một quẻ. Nó đứng ngay sau câu nói Hoàng Đế, Nghiêu, Thuấn “thông sự biến, khiến dân không mỏi” (通其變，使民不倦)."
    },
    {
     "type": "list",
     "items": [
-     "Thái cực → lưỡng nghi → tứ tượng → bát quái: từ một chia đôi, mỗi lần thêm một vạch.",
-     "Đạo là sự luân phiên âm dương; “sinh sinh” là biến hóa không ngừng.",
-     "Ba nghĩa (Trịnh Huyền, Khổng Dĩnh Đạt): giản dị, biến dịch, bất dịch.",
-     "Hai nghĩa (Chu Hy): giao dịch — âm dương đối đãi; biến dịch — âm dương lưu hành, cũng là gốc của hào động.",
-     "Cùng tắc biến, biến tắc thông, thông tắc cửu: giới hạn là lúc phải đổi."
+     "Thái cực → lưỡng nghi → tứ tượng → bát quái: theo Chu Hy, mỗi lần thêm một vạch; theo Khổng Dĩnh Đạt, từ nguyên khí chia ra trời đất.",
+     "Một âm một dương gọi là đạo; sinh rồi lại sinh gọi là Dịch.",
+     "Ba nghĩa (Dịch vĩ Càn tạc độ, Trịnh Huyền, Khổng Dĩnh Đạt): giản dị, biến dịch, bất dịch.",
+     "Hai nghĩa (Chu Hy): giao dịch — âm dương đối đãi; biến dịch — âm dương lưu hành, cũng là phép bói (già biến sang trẻ).",
+     "Cùng thì biến, biến thì thông, thông thì lâu bền (Hệ từ hạ, chương 2)."
     ]
    }
   ],
   "sources": [
    {
-    "label": "Hệ từ truyện thượng, hạ — Chu Dịch (Kanripo KR1a0001)",
+    "label": "Hệ từ truyện thượng, hạ; Thuyết quái — Chu Dịch (Kanripo KR1a0001)",
     "url": "https://github.com/kanripo/KR1a0001"
    },
    {
@@ -1577,6 +1616,10 @@
     "url": "https://ehipassa.org/classics/i/00/"
    },
    {
+    "label": "Khổng Dĩnh Đạt, Chu Dịch chính nghĩa, Hệ từ thượng đệ thất (bản chỉnh lý của trang 往見)",
+    "url": "https://ehipassa.org/classics/i/07/"
+   },
+   {
     "label": "Chu Tử ngữ loại, quyển 65 (Dịch nhất) — Wikisource",
     "url": "https://zh.wikisource.org/wiki/%E6%9C%B1%E5%AD%90%E8%AA%9E%E9%A1%9E/065"
    }
@@ -1584,16 +1627,16 @@
  },
  {
   "id": "dinh-menh",
-  "title": "Định mệnh và tự do trong Kinh Dịch",
-  "summary": "Kinh Dịch sinh ra từ việc bói, nhưng các truyện của nó không dạy rằng mọi thứ đã an bài. Tốt xấu được nói là sinh ra từ hành động, thấy trước được qua những dấu hiệu nhỏ, và tích lũy dần từ việc làm — nên người đọc quẻ vẫn là người quyết định.",
+  "title": "Mệnh, tốt xấu và việc bói",
+  "summary": "Những câu trong Hệ từ, Thuyết quái, Văn ngôn và Luận ngữ nói về “biết mệnh”, về việc tốt xấu sinh ra từ chỗ động, về “cơ”, về sự tích dần của thiện và bất thiện, và về chỗ đứng của việc bói — kèm chú của Chu Hy, Trịnh Huyền.",
   "blocks": [
    {
     "type": "p",
-    "text": "Một câu hỏi tự nhiên với người mới gặp Kinh Dịch: nếu gieo quẻ mà biết được việc sắp tới, thì chẳng phải tương lai đã định sẵn sao? Các truyện trong Chu Dịch, nhất là Hệ từ và Văn ngôn, trả lời câu này khá rõ, và câu trả lời không phải là thuyết định mệnh cứng (tức niềm tin rằng mọi việc đã được an bài, con người không đổi được). Mục này đi qua những câu gốc để thấy các tác giả truyện đặt chữ “mệnh” và chữ “người” ở đâu."
+    "text": "Mục này gom những câu trong các truyện của Chu Dịch (Hệ từ, Thuyết quái, Văn ngôn) và trong Luận ngữ có nói đến mệnh, đến chỗ tốt xấu từ đâu mà ra, và đến việc bói, cùng lời chú của Chu Hy và các nhà chú khác."
    },
    {
     "type": "h",
-    "text": "Biết mệnh để không lo, không phải để buông"
+    "text": "Vui trời, biết mệnh"
    },
    {
     "type": "quote",
@@ -1603,17 +1646,17 @@
    },
    {
     "type": "p",
-    "text": "“Mệnh” (命) ở đây là phần đời không do mình chọn: thời thế, hoàn cảnh, giới hạn. “Tri mệnh” là thấy rõ phần ấy, và nhờ thấy rõ nên không lo âu vô ích. Nhưng câu này không dừng ở “biết mệnh”: ngay sau đó là “dày lòng nhân nên thương được người” — một đòi hỏi hành động. Chu Hy chú đây là việc của bậc “tận tính”, sống trọn bản tính của mình, chứ không phải của người phó mặc."
+    "text": "Chu Hy chú đây là việc “tận tính” (sống trọn cái tính) của thánh nhân: “đi khắp” là cái trí biết quyền biến, “không trôi theo” là cái nhân giữ điều chính; đã vui với lý trời lại biết mệnh trời nên không lo; ở đâu cũng yên mà không lúc nào không nhân, nên không quên lòng giúp vật."
    },
    {
     "type": "quote",
     "han": "和順於道德而理於義，窮理盡性以至於命。",
-    "vi": "Hòa thuận với đạo và đức, xét theo lẽ phải; tìm cho cùng cái lý, sống cho trọn cái tính, để đạt tới mệnh.",
+    "vi": "Hòa thuận với đạo và đức mà sắp xếp cho hợp nghĩa; xét cùng cái lý, làm trọn cái tính, để đến mệnh.",
     "source": "Thuyết quái, chương 1"
    },
    {
     "type": "p",
-    "text": "Thứ tự trong câu Thuyết quái đáng chú ý: mệnh đứng ở cuối, là chỗ đi tới, sau hai việc phải tự làm là “cùng lý” (hiểu cho thấu) và “tận tính” (sống cho trọn). Chu Hy giảng là hiểu hết lý thiên hạ, trọn tính người và vật mà hợp với đạo trời — và gọi đó là cái công lớn nhất của việc làm ra Dịch."
+    "text": "Trong câu, “cùng lý” (xét cho thấu cái lý) và “tận tính” (làm trọn cái tính) đứng trước, “đến mệnh” (以至於命) đứng sau. Chu Hy giảng là xét cùng lý của thiên hạ, làm trọn tính của người và vật mà hợp với đạo trời — và gọi đó là cái công lớn nhất của việc thánh nhân làm ra Dịch."
    },
    {
     "type": "h",
@@ -1627,7 +1670,7 @@
    },
    {
     "type": "p",
-    "text": "Trong ngôn ngữ Dịch, cát (吉) là tốt, hung (凶) là xấu, hối (悔) là ăn năn, lận (吝) là tiếc nuối vì bế tắc. Hệ từ hạ nói cả bốn đều sinh ra “từ động” — theo Chu Hy, nghĩa trực tiếp là chúng hiện ra qua hào động của quẻ; nhưng đặt trong cả thiên, “động” cũng là hành động của người. Hệ từ thượng định nghĩa thêm: hối lận là “hình ảnh của lo lắng”, còn vô cữu (无咎, không lỗi) là “khéo sửa lỗi” (善補過). Tức là lời quẻ không chỉ báo kết quả mà còn chừa chỗ cho việc sửa."
+    "text": "Cát (吉) là tốt, hung (凶) là xấu. Về hối (悔) và lận (吝), Chu Hy chú ở Hệ từ thượng chương 2: hối là từ hung mà hướng về cát, lận là từ cát mà hướng về hung. Ở câu Hệ từ hạ này, ông chú: cát hung hối lận đều là lời (của quẻ, hào) nói ra, nhưng phải nhân chỗ động của quẻ, hào mới thấy. Hệ từ thượng còn nói hối lận là “tượng của lo và ngại” (憂虞之象), vô cữu (无咎, không lỗi) là “khéo bù lỗi” (善補過), và “chấn động mà không lỗi là nhờ ăn năn” (震无咎者存乎悔); Chu Hy chú câu sau: biết hối thì khởi được lòng bù lỗi, nên có thể không lỗi."
    },
    {
     "type": "quote",
@@ -1647,12 +1690,12 @@
    },
    {
     "type": "p",
-    "text": "Cơ (幾) là dấu hiệu sớm của một chuyển động, khi mọi thứ còn nhỏ và còn đổi được. Nếu tương lai đã cố định thì biết cơ chẳng để làm gì; chính vì chưa cố định nên thấy sớm mới có giá trị. Hệ từ dẫn lời hào quẻ Dự “介于石，不終日，貞吉” (vững như đá, không đợi hết ngày, giữ chính thì tốt) để nói: thấy rồi thì quyết, không chần chừ."
+    "text": "Cơ (幾), theo câu này, là cái động còn nhỏ bé (動之微). Hệ từ dẫn lời hào quẻ Dự “介于石，不終日，貞吉” (vững như đá, không đợi hết ngày, giữ chính thì tốt), rồi giảng: “vững như đá, cần gì đợi hết ngày, quyết đoán được rõ vậy” (介如石焉，寧用終日，斷可識矣)."
    },
    {
     "type": "note",
-    "text": "Chu Hy ghi rằng bản trong Hán thư có thêm chữ “hung” (凶) vào câu, thành “điều tốt xấu hiện ra trước”. Bản thông hành chỉ có chữ “cát”.",
-    "source": "Chu Hy, Chu Dịch bản nghĩa, chú Hệ từ hạ chương 5"
+    "text": "Chu Hy ghi rằng bản trong Hán thư có thêm chữ “hung” (凶) vào câu, thành “điều tốt xấu hiện ra trước”. Bản Kanripo và bản Chu Hy dùng chỉ có chữ “cát”.",
+    "source": "Chu Hy, Chu Dịch bản nghĩa, chú Hệ từ hạ chương 5; Kanripo KR1a0001"
    },
    {
     "type": "h",
@@ -1666,11 +1709,11 @@
    },
    {
     "type": "p",
-    "text": "Câu nổi tiếng này thường bị hiểu như luật báo ứng. Đọc tiếp đoạn Văn ngôn thì thấy trọng tâm là sự tích dần: bề tôi giết vua, con giết cha “không phải cớ một sớm một chiều, cái do đến là dần dần” (非一朝一夕之故，其所由來者漸矣), vì đã không sớm nhận ra. Đoạn này giảng lời hào đầu quẻ Khôn “履霜，堅冰至” — giẫm lên sương thì biết băng cứng sắp tới. Hệ từ hạ nói cùng ý: “điều thiện không tích thì không đủ thành danh, điều ác không tích thì không đủ hại thân” (善不積不足以成名，惡不積不足以滅身). Kết quả là tổng của nhiều lựa chọn nhỏ, không phải bản án viết sẵn."
+    "text": "Đoạn Văn ngôn nói tiếp: bề tôi giết vua, con giết cha “không phải cớ một sớm một chiều, cái do đến là dần dần” (非一朝一夕之故，其所由來者漸矣), do không sớm phân biệt ra (由辯之不早辯也). Đoạn này giảng lời hào đầu quẻ Khôn “履霜，堅冰至” — giẫm lên sương, băng cứng sẽ tới. Hệ từ hạ chương 5 có câu: “điều thiện không tích thì không đủ thành danh, điều ác không tích thì không đủ hại thân” (善不積不足以成名，惡不積不足以滅身)."
    },
    {
     "type": "h",
-    "text": "Vậy bói để làm gì?"
+    "text": "Chỗ đứng của việc bói"
    },
    {
     "type": "quote",
@@ -1680,21 +1723,21 @@
    },
    {
     "type": "p",
-    "text": "Bói chỉ là một trong bốn cách dùng. Ngay sau câu này, Hệ từ tả người quân tử “sắp làm gì, sắp đi đâu” thì hỏi Dịch — tức hỏi để làm, không phải hỏi thay cho việc làm. Hệ từ hạ nói về việc quyết định: “người mưu, quỷ thần mưu, dân chúng cũng dự vào” (人謀鬼謀，百姓與能): việc hỏi thần linh đứng cạnh việc người tự tính, không thay thế nó."
+    "text": "Bói là một trong bốn điều ấy. Ngay sau câu này, Hệ từ tả người quân tử “sắp làm gì, sắp đi đâu” thì hỏi Dịch. Chu Hy chú: người ta dùng cỏ thi hỏi Dịch, tìm lời quẻ, lời hào, rồi dựa vào đó mà nói năng, xử việc. Hệ từ hạ chương 12 có câu “người mưu, quỷ thần mưu, trăm họ cũng dự vào” (人謀鬼謀，百姓與能); Chu Hy chú: thánh nhân làm ra Dịch để thành công việc của trời đất, nhờ đó mưu của người, mưu của quỷ thần, dù trăm họ ngu tối cũng được dự vào."
    },
    {
     "type": "quote",
     "han": "「不恆其德，或承之羞」子曰：「不占而已矣。」",
-    "vi": "“Đức không bền thì có khi chuốc lấy xấu hổ.” Khổng Tử nói: “Chẳng bói nữa là xong.”",
+    "vi": "“Đức không bền thì có khi chuốc lấy xấu hổ.” Khổng Tử nói: “Không bói mà thôi.”",
     "source": "Luận ngữ, thiên Tử Lộ"
    },
    {
     "type": "p",
-    "text": "Trong Luận ngữ, Khổng Tử khen câu tục ngữ phương Nam “người không có sự bền bỉ thì không làm nổi thầy cúng, thầy thuốc”, dẫn lời hào Cửu tam quẻ Hằng (不恆其德，或承之羞), rồi nói “bất chiêm nhi dĩ hĩ”. Dù hiểu theo cách nào (xem ghi chú dưới), đoạn này cho thấy lời Dịch đã sớm được đọc như lời khuyên về đức hạnh — sự bền bỉ của chính mình — hơn là lời tiên tri."
+    "text": "Trong Luận ngữ, Khổng Tử khen câu của người phương Nam “người không có sự bền bỉ thì không làm nổi thầy cúng, thầy thuốc”, và câu “不恆其德，或承之羞” (theo Luận ngữ chú sớ và Chu Hy, đó là lời hào Cửu tam quẻ Hằng), rồi nói “bất chiêm nhi dĩ hĩ”."
    },
    {
     "type": "note",
-    "text": "Câu “bất chiêm nhi dĩ hĩ” khó hiểu từ xưa. Trịnh Huyền (chú đời Hán, dẫn trong Luận ngữ chú sớ) hiểu là: Dịch dùng để bói tốt xấu, nhưng người không có sự bền bỉ thì Dịch không bói cho (易所不占). Chu Hy (Luận ngữ tập chú) nói thẳng “nghĩa chưa rõ” (其義未詳), rồi dẫn Dương Thời: người quân tử nghiền ngẫm lời chiêm thì biết sự thất thường chuốc lấy xấu hổ, nên kẻ thất thường là kẻ không chịu xem lời chiêm vậy; Chu Hy cho ý ấy “cũng tạm thông”.",
+    "text": "Câu “bất chiêm nhi dĩ hĩ” có nhiều cách hiểu. Trịnh Huyền (lời chú dẫn trong Luận ngữ chú sớ) hiểu là: Dịch dùng để bói tốt xấu, nhưng người không có sự bền bỉ thì Dịch không bói cho (易所不占). Chu Hy (Luận ngữ tập chú) nói thẳng “nghĩa chưa rõ” (其義未詳), rồi dẫn Dương Thời: người quân tử nghiền ngẫm lời chiêm thì biết sự thất thường chuốc lấy xấu hổ, nên kẻ thất thường là kẻ không chịu xem lời chiêm vậy; Chu Hy cho ý ấy “cũng tạm thông”.",
     "source": "Luận ngữ chú sớ, quyển 13; Chu Hy, Luận ngữ tập chú, quyển 7"
    },
    {
@@ -1704,16 +1747,16 @@
    {
     "type": "list",
     "items": [
-     "Có phần không chọn được (mệnh); biết rõ nó để không lo vô ích, không phải để bỏ mặc.",
-     "Tốt xấu “sinh ra từ động”: lời quẻ nói về hướng đi của tình thế và cách mình ứng xử trong đó.",
-     "Dấu hiệu sớm (cơ) có giá trị vì tương lai còn đổi được.",
-     "Kết quả là tích lũy dần — “không phải một sớm một chiều”.",
-     "Bói là để hỏi trước khi làm; đức hạnh và suy xét của người vẫn đứng trước."
+     "“Vui trời biết mệnh nên không lo” (Hệ từ thượng); “cùng lý tận tính để đến mệnh” (Thuyết quái).",
+     "Cát, hung, hối, lận “sinh ra từ động”; Chu Hy: thuận lý thì tốt, nghịch lý thì xấu.",
+     "Cơ là cái động còn nhỏ; người quân tử thấy cơ thì làm.",
+     "Tích thiện, tích bất thiện — “không phải một sớm một chiều”.",
+     "Bói là một trong bốn đạo của thánh nhân trong Dịch; người quân tử sắp làm gì thì hỏi Dịch."
     ]
    },
    {
     "type": "p",
-    "text": "App Định Vị đi theo tinh thần đó: quẻ và hào gọi tên chỗ bạn đang đứng và gợi những câu hỏi đáng hỏi, nhưng không phán việc gì chắc chắn sẽ xảy ra. Bước chốt cuối cùng — chọn quẻ, hào, mức độ chắc chắn và một điều mình sẽ không làm — là quyết định của bạn."
+    "text": "Trong app Định Vị, mỗi hào được giới thiệu như ghi chép về một dạng tình huống: người ở đó thường gặp gì, thường vấp ở đâu, và những câu hỏi đáng tự hỏi. Ở bước cuối, bạn tự chốt quẻ, hào, độ chắc chắn và một điều mình chọn không làm."
    }
   ],
   "sources": [
@@ -1746,11 +1789,11 @@
  {
   "id": "tu-than",
   "title": "Việc người và tu thân",
-  "summary": "Bên cạnh việc bói, các truyện của Kinh Dịch dùng quẻ như tấm gương để rèn mình: chín quẻ làm nền đức trong Hệ từ, những câu “quân tử dĩ…” trong Đại tượng, và lời dặn nghiền ngẫm tượng và lời ngay cả khi không gieo. App Định Vị dùng quẻ theo tinh thần ấy.",
+  "summary": "Chín quẻ mà Hệ từ hạ ba lần bày ra để nói về đức, kèm chú của Chu Hy; những câu Đại tượng “quân tử dĩ…”; lời Hệ từ về việc xem tượng, ngẫm lời lúc ở yên; và các bước của app Định Vị.",
   "blocks": [
    {
     "type": "p",
-    "text": "Tu thân (修身) là sửa mình: nhìn ra chỗ lệch của bản thân và chỉnh lại. Nhiều học giả Dịch đời sau coi đây là cách dùng Dịch quan trọng nhất, và các truyện trong Chu Dịch đã mở đường cho cách đọc đó. Hệ từ hạ đặt việc làm ra Dịch trong bối cảnh lo âu:"
+    "text": "Tu thân (修身) là sửa mình. Chữ này có trong chú của Chu Hy cho chín quẻ ở Hệ từ hạ: “răn giận, lấp dục để sửa mình” (懲忿窒慾以修身). Đoạn chín quẻ ấy mở đầu bằng câu:"
    },
    {
     "type": "quote",
@@ -1760,15 +1803,15 @@
    },
    {
     "type": "p",
-    "text": "Câu hỏi ở đây mang giọng phỏng đoán (“chăng?”), nên không nên đọc như lời xác nhận niên đại hay tác giả. Nhưng ý chính rõ ràng: Dịch là sách của người đang ở trong khó khăn, tìm cách đứng cho vững. Ngay sau câu ấy là đoạn “ba lần bày chín quẻ”."
+    "text": "Chu Hy chú: cuối đời Hạ, Thương, đạo Dịch suy giữa chừng; Văn Vương bị giam ở Dũ Lý mà viết lời thoán, đạo Dịch lại hưng. Ngay sau câu ấy là đoạn “ba lần bày chín quẻ”."
    },
    {
     "type": "h",
-    "text": "Chín quẻ, chín nền đức"
+    "text": "Chín quẻ và đức"
    },
    {
     "type": "p",
-    "text": "Hệ từ hạ chọn chín quẻ và nói về mỗi quẻ ba lần: lần thứ nhất nói quẻ ấy là phần nào của đức (nền, cán, gốc…), lần thứ hai nói tính chất của nó, lần thứ ba nói nó dùng vào việc gì. Chữ Hán trong bảng lấy nguyên văn Hệ từ hạ; phần giải nghĩa là của người viết."
+    "text": "Hệ từ hạ nêu chín quẻ và nói về mỗi quẻ ba lần: lần thứ nhất nói quẻ ấy là gì của đức (nền, cán, gốc…), lần thứ hai nói tính chất của nó, lần thứ ba nói nó dùng để làm gì. Chữ Hán trong bảng lấy nguyên văn Hệ từ hạ; phần dịch bám theo chữ và theo chú của Chu Hy."
    },
    {
     "type": "table",
@@ -1780,16 +1823,16 @@
     ],
     "rows": [
      [
-      "Lý 履 (bước đi, lễ)",
+      "Lý 履 (Chu Hy: lễ)",
       "德之基 — nền của đức",
       "和而至 — hòa mà đến nơi",
-      "以和行 — đi lại cho hòa"
+      "以和行 — làm việc cho hòa"
      ],
      [
       "Khiêm 謙 (khiêm nhường)",
       "德之柄 — cán cầm của đức",
       "尊而光 — được tôn mà sáng",
-      "以制禮 — giữ chừng mực lễ"
+      "以制禮 — chế định lễ"
      ],
      [
       "Phục 復 (trở lại)",
@@ -1817,21 +1860,21 @@
      ],
      [
       "Khốn 困 (khốn cùng)",
-      "德之辯 — phép thử của đức",
+      "德之辯 — chỗ phân biệt của đức",
       "窮而通 — cùng mà thông",
       "以寡怨 — ít oán trách"
      ],
      [
       "Tỉnh 井 (giếng)",
       "德之地 — chỗ đứng của đức",
-      "居其所而遷 — ở yên chỗ mà ơn lan xa",
+      "居其所而遷 — ở yên chỗ mình mà đến được với vật (Chu Hy: không động mà tới vật)",
       "以辯義 — phân định điều nghĩa"
      ],
      [
-      "Tốn 巽 (thuận, vào sâu)",
+      "Tốn 巽 (thuận, vào)",
       "德之制 — chỗ tiết chế của đức",
       "稱而隱 — cân xứng mà kín đáo",
-      "以行權 — biết quyền biến"
+      "以行權 — làm việc quyền biến"
      ]
     ]
    },
@@ -1843,11 +1886,11 @@
    },
    {
     "type": "p",
-    "text": "Chu Hy còn thấy trong chín quẻ một thứ tự: có nền rồi mới có chỗ cầm, lòng không chạy ra ngoài thì mối thiện còn, giữ được lâu; rồi bớt giận bớt dục để sửa mình, theo điều thiện sửa lỗi để lớn thêm; lấy cảnh khốn để tự thử sức, lấy giếng để giữ chỗ đứng, sau cùng mới đủ sức thuận theo lẽ mà xử việc biến. Đáng chú ý là trong danh sách có cả Khốn — cảnh cùng quẫn cũng được xem là chỗ rèn đức, không chỉ là vận xấu."
+    "text": "Chu Hy còn thấy trong chín quẻ một thứ tự: nền để đứng, cán để cầm; Phục là lòng không chạy ra ngoài nên mối thiện còn; Hằng là giữ không đổi nên thường và lâu; Tổn là răn giận lấp dục để sửa mình, Ích là theo điều thiện, sửa lỗi để thêm lớn điều thiện; Khốn để tự nghiệm sức mình, Tỉnh để giữ chỗ không đổi; sau đó mới thuận theo lý mà xử việc biến (Tốn)."
    },
    {
     "type": "note",
-    "text": "Cách chia ba lần “tam trần cửu quái” (三陳九卦) là theo lời Chu Hy ở cuối chương 7. Bản Chu Dịch bản nghĩa ông dùng chép “井以辨義”, bản Kanripo chép “井以辯義”; hai chữ dùng thông nhau.",
+    "text": "Cách gọi “ba lần bày chín quẻ” (三陳九卦) là theo lời Chu Hy ở cuối chương 7. Bản Chu Dịch bản nghĩa chép “井以辨義”, bản Kanripo chép “井以辯義”.",
     "source": "Chu Hy, Chu Dịch bản nghĩa; Kanripo KR1a0001"
    },
    {
@@ -1856,7 +1899,7 @@
    },
    {
     "type": "p",
-    "text": "Đại tượng truyện (lời tượng lớn, một phần của Tượng truyện) có một khuôn cố định cho cả 64 quẻ: trước tả hình ảnh hai quái chồng lên nhau, sau nói “quân tử dĩ…” — người quân tử nhìn hình ảnh ấy mà làm gì. Không câu nào nói về bói; tất cả là bài học hành xử. Vài ví dụ (chữ Hán như trong dữ liệu quẻ của app, đã đối chiếu Kanripo):"
+    "text": "Đại tượng truyện (lời tượng lớn, một phần của Tượng truyện) có cho mỗi quẻ một câu: trước nêu hình ảnh hai quái trên dưới, sau nói người quân tử lấy đó mà làm gì. Trong dữ liệu quẻ của app, 53 quẻ dùng “quân tử dĩ…”; các quẻ còn lại dùng “tiên vương dĩ…” (7 quẻ), “hậu dĩ…” (2 quẻ), “thượng dĩ…” và “đại nhân dĩ…” (mỗi thứ 1 quẻ). Vài ví dụ (chữ Hán như trong dữ liệu quẻ của app, đã đối chiếu Kanripo):"
    },
    {
     "type": "quote",
@@ -1869,7 +1912,7 @@
     "head": [
      "Quẻ",
      "Lời Đại tượng",
-     "Ý rút ra"
+     "Dịch"
     ],
     "rows": [
      [
@@ -1890,7 +1933,7 @@
      [
       "Kiển 蹇",
       "山上有水，《蹇》。君子以反身修德。",
-      "Nước trên núi, đường khó; quay về mình mà sửa đức."
+      "Nước trên núi; quay về mình mà sửa đức."
      ],
      [
       "Tổn 損",
@@ -1905,7 +1948,7 @@
      [
       "Chấn 震",
       "洊雷、《震》。君子以恐懼脩省。",
-      "Sấm dồn dập; biết sợ mà sửa mình, xét mình."
+      "Sấm nối nhau; biết sợ mà sửa mình, xét mình."
      ],
      [
       "Cấn 艮",
@@ -1913,10 +1956,6 @@
       "Hai núi chồng; suy nghĩ không vượt khỏi vị trí của mình."
      ]
     ]
-   },
-   {
-    "type": "p",
-    "text": "Đọc liền các câu này sẽ thấy một điểm chung: hoàn cảnh (núi, nước, sấm, gió) không đổi được, nhưng cách mình đáp lại thì do mình chọn. Quẻ Kiển là ví dụ rõ nhất — gặp đường hiểm, lời khuyên không phải là than vận mà là “phản thân tu đức”, quay về xét mình."
    },
    {
     "type": "h",
@@ -1930,40 +1969,38 @@
    },
    {
     "type": "p",
-    "text": "Câu này chia hai lúc. Khi sắp làm việc, người ta gieo quẻ và xem hào biến. Còn lúc bình thường, không có việc gì phải hỏi, vẫn đọc tượng và lời quẻ để hiểu mình và hiểu thời. Nghĩa là Dịch không chỉ là công cụ cho lúc khẩn cấp, mà là sách đọc thường xuyên để soi mình."
+    "text": "Câu này chia hai lúc: lúc ở yên (居) thì xem tượng, ngẫm lời; lúc động (動) thì xem biến, ngẫm lời chiêm. Chu Hy chú: chiêm là lời quyết tốt xấu mà mình gặp; và ông gọi cả chương này là nói việc thánh nhân làm ra Dịch và việc người quân tử học Dịch."
    },
    {
     "type": "quote",
     "han": "神而明之存乎其人，默而成之，不言而信，存乎德行。",
-    "vi": "Làm cho nó linh diệu và sáng tỏ là tùy ở người; lặng lẽ mà nên, không nói mà được tin, là tùy ở đức hạnh.",
+    "vi": "Làm cho nó linh diệu và sáng tỏ là ở nơi người; lặng lẽ mà nên, không nói mà được tin, là ở nơi đức hạnh.",
     "source": "Hệ từ thượng, chương 12"
    },
    {
     "type": "p",
-    "text": "Hệ từ hạ nói cùng ý: “nếu không đúng người thì đạo không tự đi suông” (苟非其人，道不虛行). Hệ từ hạ cũng lấy Nhan Hồi làm gương cho hào đầu quẻ Phục: có điều bất thiện thì không lúc nào không biết, biết rồi thì không lặp lại. Tự biết mình (Phục “dĩ tự tri”) và không lặp lỗi là cái đích của việc soi quẻ."
+    "text": "Chu Hy chú: cái làm cho quẻ hào biến thông là ở người, cái làm cho người có thể “thần nhi minh chi” là ở đức. Hệ từ hạ chương 8 có câu “nếu không đúng người thì đạo không tự đi suông” (苟非其人，道不虛行), và Chu Hy chú câu ấy bằng chính ý “thần nhi minh chi tồn hồ kỳ nhân”. Hệ từ hạ chương 5 lấy Nhan Hồi để giảng hào đầu quẻ Phục: có điều bất thiện thì không lúc nào không biết, biết rồi thì không làm lại."
    },
    {
     "type": "h",
-    "text": "Nối tới cách dùng quẻ trong app"
+    "text": "Các bước trong app"
    },
    {
     "type": "p",
-    "text": "App Định Vị không dùng quẻ để đoán tương lai. Mỗi quẻ, mỗi hào được xem như một ghi chép về một dạng tình huống: người ở vị trí đó thường gặp gì, thường vấp ở đâu, và nên tự hỏi gì. Quy trình tám bước chính là “xem tượng, nghiền lời” theo kiểu hiện đại:"
+    "text": "Trong app Định Vị, mỗi hào được giới thiệu như ghi chép về một dạng tình huống: người ở đó thường gặp gì, thường vấp ở đâu, và những câu hỏi đáng tự hỏi. Một lần định vị đi qua tám bước:"
    },
    {
     "type": "list",
     "items": [
-     "Viết ba câu mô tả điều người ngoài thấy được — nhìn sự việc trước khi nhìn quẻ.",
-     "Tự ghép hai quái có bằng chứng, hoặc gieo quẻ — quẻ là giả thuyết, không phải phán quyết.",
-     "Đọc lời hào và tìm câu làm mình khó chịu — giống tinh thần “phản thân tu đức”.",
-     "Hỏi một người phê bình nghiêm khắc và một người biết rõ việc — không tin một mình mình.",
-     "Chốt quẻ, hào, độ chắc chắn và một điều chọn không làm — quyết định là của bạn.",
-     "Kỳ sau nhìn lại kỳ trước — như Nhan Hồi “biết rồi không lặp lại”."
+     "Viết ba câu mô tả điều người ngoài thấy được.",
+     "Tự ghép hai quái kèm bằng chứng, hoặc gieo quẻ.",
+     "Xem quẻ đứng trước (theo thứ tự Tự quái) có giống quãng vừa qua không.",
+     "Chọn tầng rồi chọn hào, đối chiếu dấu hiệu hành vi — hào là do bạn chọn.",
+     "Đọc lời hào và tìm câu làm mình khó chịu.",
+     "Hỏi xem người phê bình nghiêm khắc nhất đặt bạn ở đâu.",
+     "Hỏi một người biết rõ việc này.",
+     "Chốt quẻ, hào, độ chắc chắn và một điều chọn không làm. Kỳ sau, nhìn lại kỳ trước: thực sự đã ở đâu, chuyện gì đã xảy ra."
     ]
-   },
-   {
-    "type": "note",
-    "text": "Việc nối các câu cổ với quy trình của app là cách hiểu của người viết, không phải điều sách xưa nói. Sách xưa chỉ cho thấy một truyền thống dùng quẻ để tự xét mình song song với việc bói; app chọn đi theo truyền thống đó."
    }
   ],
   "sources": [
