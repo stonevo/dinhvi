@@ -19,11 +19,14 @@ import { StudyPage } from './pages/StudyPage';
 import { NavMenu, castMenuItems } from './ui/NavMenu';
 import { CAST_METHODS } from './types/schema';
 import { IntroPage, IntroSectionPage } from './pages/IntroPage';
+import { useIntro } from './data/load';
 import { SharePage } from './pages/SharePage';
 import { QuickNotePage } from './pages/QuickNotePage';
 import { WitnessPage } from './pages/WitnessPage';
 
 export function App() {
+  // Tên các bài Nhập môn cho menu cấp 2 (file nhỏ, đã precache).
+  const intro = useIntro();
   const { pathname, state } = useLocation();
   const justOnboarded = (state as { onboarded?: boolean } | null)?.onboarded === true;
   const isWitness = pathname === '/witness';
@@ -59,7 +62,7 @@ export function App() {
             to="/library"
             items={[
               { to: '/library', label: t('nav.library64') },
-              { to: '/intro', label: t('nav.intro') },
+              { to: '/intro', label: t('nav.intro'), children: (intro ?? []).map((s) => ({ to: `/intro/${s.id}`, label: s.title })) },
             ]}
             activeWhen={(p) => p.startsWith('/library') || p.startsWith('/intro')}
             menuLabel={t('nav.libraryMenu')}

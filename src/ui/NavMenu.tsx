@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { t } from '../i18n';
 
-export type NavMenuItem = { to: string; label: string; separated?: boolean };
+/** Mục trong menu xổ; `children` = menu cấp 2 (vd. các bài Nhập môn). */
+export type NavMenuItem = { to: string; label: string; separated?: boolean; children?: NavMenuItem[] };
 
 /**
  * Một mục menu chính có menu xổ: chữ là link tới trang chính của mục, mũi tên ▾
@@ -57,9 +58,46 @@ export function NavMenu({
       </button>
       {open && (
         <div className="nav-menu-list" role="menu">
-          {items.map((it) => (
-            <Link key={it.to} role="menuitem" className={it.separated ? 'nav-menu-sep' : undefined} to={it.to} onClick={() => setOpen(false)}>
-              {it.label}
+          {items.map((it) =>
+            it.children?.length ? (
+              <SubMenu key={it.to} item={it} canHover={canHover} onPick={() => setOpen(false)} />
+            ) : (
+              <Link key={it.to} role="menuitem" className={it.separated ? 'nav-menu-sep' : undefined} to={it.to} onClick={() => setOpen(false)}>
+                {it.label}
+              </Link>
+            ),
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Menu cấp 2: máy có chuột — rê vào thì bật sang phải; máy cảm ứng — chạm ▸ để mở
+ * danh sách ngay bên dưới. Chữ của mục vẫn là link tới trang chính của mục.
+ */
+function SubMenu({ item, canHover, onPick }: { item: NavMenuItem; canHover: () => boolean; onPick: () => void }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div
+      className={'nav-sub' + (open ? ' open' : '')}
+      onMouseEnter={() => canHover() && setOpen(true)}
+      onMouseLeave={() => canHover() && setOpen(false)}
+    >
+      <div className="nav-sub-head">
+        <Link role="menuitem" to={item.to} onClick={onPick}>
+          {item.label}
+        </Link>
+        <button type="button" className="nav-sub-toggle" aria-expanded={open} aria-label={t('nav.subMenu', { label: item.label })} onClick={() => setOpen((o) => !o)}>
+          <span aria-hidden>▸</span>
+        </button>
+      </div>
+      {open && (
+        <div className="nav-sub-list" role="menu">
+          {item.children!.map((c) => (
+            <Link key={c.to} role="menuitem" to={c.to} onClick={onPick}>
+              {c.label}
             </Link>
           ))}
         </div>

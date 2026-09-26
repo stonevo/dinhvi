@@ -765,3 +765,19 @@ a.button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; 
 .intro-table th, .intro-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .intro-table th { font-family: var(--font-heading); background: var(--surface-2); }
 .intro-pager { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 12px; }
+
+/* Menu cấp 2 */
+.nav-sub { position: relative; }
+.nav-sub-head { display: flex; align-items: center; }
+.nav-sub-head a { flex: 1; }
+.nav-sub-toggle { background: none; border: 0; padding: 6px 12px; color: var(--muted); cursor: pointer; font: inherit; }
+.nav-sub.open > .nav-sub-head .nav-sub-toggle { color: var(--accent); }
+.nav-sub-list { display: flex; flex-direction: column; background: var(--surface); }
+.topbar .nav-sub-list a { font-size: 0.95rem; padding: 7px 14px 7px 26px; color: var(--ink); white-space: nowrap; }
+.topbar .nav-sub-list a:hover, .topbar .nav-sub-list a:focus { background: var(--surface-2); }
+@media (hover: hover) and (pointer: fine) and (min-width: 700px) {
+  .nav-sub-list { position: absolute; left: 100%; top: -6px; min-width: 17rem; padding: 6px 0;
+    border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); }
+  .nav-sub-list::before { content: ''; position: absolute; left: -10px; top: 0; bottom: 0; width: 10px; }
+  .topbar .nav-sub-list a { padding-left: 14px; }
+}

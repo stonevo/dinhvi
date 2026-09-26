@@ -335,6 +335,7 @@ export const vi = {
   'nav.library64': '64 quẻ',
   'nav.intro': 'Nhập môn Kinh Dịch',
   'nav.libraryMenu': 'Mở mục Thư viện',
+  'nav.subMenu': 'Mở danh sách {label}',
   'intro.title': 'Nhập môn Kinh Dịch',
   'intro.lead': 'Tám bài ngắn để hiểu Kinh Dịch trước khi dùng: sách từ đâu ra, gồm những gì, các cách hiểu qua hai nghìn năm, thuật ngữ, quy tắc đọc quẻ, và cách người xưa nhìn trời đất, số mệnh, việc tu thân. Mỗi ý có ghi nguồn.',
   'intro.sources': 'Nguồn',
