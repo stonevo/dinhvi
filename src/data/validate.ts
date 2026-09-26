@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramSchema, lineTierSchema, trigramSchema, TRIGRAM_KEYS,
+  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, lineTierSchema, trigramSchema, TRIGRAM_KEYS,
   type CommentaryPart, type Hexagram, type HexagramCommentary, type Line, type LinePosition, type LineTier, type Trigram,
 } from '../types/schema';
 import {
@@ -179,6 +179,20 @@ export function validateCommentary(raw: unknown): string[] {
       if (!w.vi.trim()) errors.push(`quẻ ${n}.văn ngôn ${j + 1}.vi trống`);
       if (!w.explain.trim()) errors.push(`quẻ ${n}.văn ngôn ${j + 1}.explain trống`);
     });
+  });
+  return errors;
+}
+
+/** Diễn giải theo ngữ cảnh: đủ 64 quẻ theo thứ tự, Dụng cửu / Dụng lục chỉ ở Càn, Khôn. */
+export function validateContexts(raw: unknown): string[] {
+  const parsed = z.array(hexagramContextsSchema).safeParse(raw);
+  if (!parsed.success) return zodErrors('contexts', parsed.error);
+  const errors: string[] = [];
+  if (parsed.data.length !== 64) errors.push(`cần đủ 64 quẻ (có ${parsed.data.length})`);
+  parsed.data.forEach((c, i) => {
+    if (c.kingWenNumber !== i + 1) errors.push(`contexts[${i}]: quẻ ${c.kingWenNumber} sai thứ tự`);
+    if (Boolean(c.allMoving) !== (c.kingWenNumber === 1 || c.kingWenNumber === 2))
+      errors.push(`quẻ ${c.kingWenNumber}: allMoving chỉ có ở Càn, Khôn`);
   });
   return errors;
 }
