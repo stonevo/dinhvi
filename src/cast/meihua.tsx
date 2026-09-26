@@ -71,6 +71,9 @@ export function MeihuaCaster({
   const [num, setNum] = useState('');
   const [num2, setNum2] = useState('');
   const [text, setText] = useState('');
+  // Một chữ Hán: người dùng tự đếm nét phần trái / phần phải (máy không tách được bộ phận).
+  const [left, setLeft] = useState('');
+  const [right, setRight] = useState('');
   const [addHour, setAddHour] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [strokes, setStrokes] = useState<Record<string, number> | null>(null);
@@ -85,6 +88,7 @@ export function MeihuaCaster({
   }, [method]);
 
   const parts = vnParts(now, { ziStartsNextDay });
+  const singleHan = method === 'meihua-text' && /^\p{Script=Han}$/u.test(text.trim());
 
   function go() {
     setError(null);
@@ -106,8 +110,9 @@ export function MeihuaCaster({
           input = num;
         }
       } else {
-        cast = byText(text, { strokes: (ch) => strokes?.[ch], hourBranchNumber: hour });
-        input = text;
+        const lr: [number, number] | undefined = singleHan && left && right ? [Number(left), Number(right)] : undefined;
+        cast = byText(text, { strokes: (ch) => strokes?.[ch], hourBranchNumber: hour, singleCharLeftRight: lr });
+        input = lr ? `${text.trim()} (${lr[0]} | ${lr[1]})` : text;
       }
       onDone({ cast, at, input });
     } catch (e) {
@@ -141,6 +146,22 @@ export function MeihuaCaster({
             <span className="small muted">{t('meihua.text')}</span>
             <input value={text} onChange={(e) => setText(e.target.value)} placeholder="梅花 · Hưng Thịnh" />
           </label>
+          {singleHan && (
+            <div className="stack">
+              <p className="small">{t('meihua.singleChar', { ch: text.trim(), n: strokes?.[text.trim()] ?? '?' })}</p>
+              <div className="row-inline">
+                <label className="field">
+                  <span className="small muted">{t('meihua.leftStrokes')}</span>
+                  <input inputMode="numeric" value={left} onChange={(e) => setLeft(e.target.value.replace(/\D/g, ''))} />
+                </label>
+                <label className="field">
+                  <span className="small muted">{t('meihua.rightStrokes')}</span>
+                  <input inputMode="numeric" value={right} onChange={(e) => setRight(e.target.value.replace(/\D/g, ''))} />
+                </label>
+              </div>
+              {!(left && right) && <p className="small muted">{t('meihua.singleCharFallback')}</p>}
+            </div>
+          )}
         </>
       )}
       {method !== 'meihua-time' && (
