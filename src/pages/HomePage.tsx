@@ -10,6 +10,7 @@ import { newId } from '../lib/id';
 import { reminderState } from '../lib/reminder';
 import { dueChecks, vnDateString } from '../lib/castLog';
 import { HexagramFigure } from '../ui/HexagramFigure';
+import { monthHexagram, TIEU_TUC_NOTES } from '../lib/tieuTuc';
 import type { Domain, Positioning } from '../types/schema';
 
 const STATUS_KEY = {
@@ -57,6 +58,7 @@ export function HomePage() {
       )}
       <h2 className="period">{t('home.period', { period: formatPeriod(period) })}</h2>
       {reminder.inAppDue && <p className="note">{t('home.reminderDue')}</p>}
+      <MonthHexagramCard now={now} staticData={staticData} />
 
       <div className="domain-cards">
         {data.domains.map((d) => (
@@ -82,6 +84,32 @@ export function HomePage() {
       </form>
       <p className="muted small">{t('home.aloneNote')}</p>
     </section>
+  );
+}
+
+/** Chi tháng hiện tại theo tiết khí và quẻ tiêu tức ứng với tháng đó (tham khảo). */
+function MonthHexagramCard({ now, staticData }: { now: Date; staticData: StaticData | null }) {
+  const m = monthHexagram(now);
+  const hex = staticData?.hexagram(m.hexagram);
+  if (!hex) return null;
+  const date = m.term.date.toLocaleDateString('vi-VN', { day: 'numeric', month: 'numeric', timeZone: 'Asia/Ho_Chi_Minh' });
+  return (
+    <aside className="card month-hex">
+      <HexagramFigure binary={hex.binary} size={40} label={hex.nameHanViet} />
+      <div className="month-hex-body">
+        <p className="small-caps">{t('home.monthHex.title')}</p>
+        <p>
+          <Link to={`/library/${hex.kingWenNumber}`}>
+            {hex.nameHanViet} <span className="han">{hex.nameHan}</span>
+          </Link>{' '}
+          · {t('home.monthHex.month', { branch: m.branchName, term: m.term.name, date })}
+        </p>
+        <p className="muted small">{TIEU_TUC_NOTES[m.branch]}</p>
+        <p className="muted small">
+          {t('home.monthHex.convention')} <Link to="/intro/tieu-tuc">{t('home.monthHex.more')} →</Link>
+        </p>
+      </div>
+    </aside>
   );
 }
 

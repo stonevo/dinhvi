@@ -1443,6 +1443,228 @@
   ]
  },
  {
+  "id": "thoi-vi",
+  "title": "Thời và vị",
+  "summary": "Vương Bật viết “quẻ là thời, hào là sự biến cho hợp thời”. Mục này đọc câu ấy, mười hai câu Thoán truyện khen “thời” của một quẻ, vài câu Hệ từ, Trung Dung, Mạnh Tử và lời tựa Dịch truyện của Trình Di, rồi nói app dùng quẻ và hào thế nào.",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Mục này đọc câu Vương Bật (王弼, đời Ngụy) viết về quẻ và hào trong Chu Dịch lược lệ, những câu Thoán truyện khen “thời” của từng quẻ, vài câu Hệ từ truyện nói về biến thông và thời, rồi chữ “thời” trong Trung Dung, Mạnh Tử và lời tựa Dịch truyện của Trình Di."
+   },
+   {
+    "type": "h",
+    "text": "Quẻ là thời, hào là biến trong thời"
+   },
+   {
+    "type": "quote",
+    "han": "夫卦者，時也；爻者，適時之變者也。",
+    "vi": "Quẻ là thời; hào là sự biến đổi cho hợp với thời.",
+    "source": "Vương Bật, Chu Dịch lược lệ, thiên Minh quái thích biến thông hào"
+   },
+   {
+    "type": "p",
+    "text": "Thời (時) ở đây là thời thế, lúc. Thích thời (適時) là đi theo, hợp với thời. Vương Bật viết tiếp: thời có bĩ (bế tắc) có thái (thông), nên việc dùng có lúc ra làm có lúc ẩn đi (夫時有否泰，故用有行藏); quẻ có lớn nhỏ, nên lời có hiểm có dễ; phép tắc của một thời có thể dùng ngược lại, cái tốt của một thời có thể trở thành xấu. Ông nói: theo tên quẻ để xem tốt xấu, nêu thời để xem động hay tĩnh (尋名以觀其吉兇，舉時以觀其動靜).",
+    "source": "Vương Bật, Chu Dịch lược lệ, thiên Minh quái thích biến thông hào"
+   },
+   {
+    "type": "p",
+    "text": "Cũng trong thiên ấy, Vương Bật kể các mặt của một hào: ứng là tượng cùng chí hướng; vị là tượng chỗ hào đứng; thừa (承, đỡ) và thừa (乘, cưỡi) là tượng thuận nghịch; xa gần là tượng hiểm dễ; trong ngoài là tượng ra làm hay ở ẩn; hào đầu và hào trên là tượng khởi đầu và kết thúc. Ông viết: tuy hiểm mà ở được là vì được thời (雖險而可以處者，得其時也).",
+    "source": "Vương Bật, Chu Dịch lược lệ, thiên Minh quái thích biến thông hào"
+   },
+   {
+    "type": "quote",
+    "han": "吉兇有時，不可犯也。動靜有適，不可過也。",
+    "vi": "Tốt xấu có thời của nó, không thể phạm vào; động tĩnh có chỗ thích hợp, không thể vượt quá.",
+    "source": "Vương Bật, Chu Dịch lược lệ, thiên Minh quái thích biến thông hào"
+   },
+   {
+    "type": "p",
+    "text": "Về “vị” (位), thiên Biện vị định nghĩa: vị là chỗ bày ra sang hèn, là nơi chờ tài năng đến dùng (夫位者，列貴賤之地，待才用之宅也); hào là cái giữ phần việc của vị ấy. Vị có tôn ti, hào có âm dương. Ông cũng viết hào đầu và hào trên là đầu cuối của thể quẻ, trước sau của sự việc (初上者，體之終始，事之先後也). Lập luận của ông về hai hào này có ở bài Quy tắc đọc quẻ.",
+    "source": "Vương Bật, Chu Dịch lược lệ, thiên Biện vị"
+   },
+   {
+    "type": "h",
+    "text": "Mười hai quẻ được khen “thời”"
+   },
+   {
+    "type": "p",
+    "text": "Thoán truyện của mười hai quẻ kết bằng câu “… chi thời … đại hĩ tai” (… 之時…大矣哉): “lớn thay thời của quẻ …”. Có ba dạng: năm quẻ nói thời nghĩa (時義, nghĩa của thời), ba quẻ nói thời dụng (時用, chỗ dùng của thời), bốn quẻ nói thời. Nguyên văn theo bản Chu Dịch của Kanripo:",
+    "source": "Thoán truyện, Chu Dịch (Kanripo KR1a0001)"
+   },
+   {
+    "type": "table",
+    "head": [
+     "Quẻ",
+     "Nguyên văn Thoán truyện",
+     "Dạng"
+    ],
+    "rows": [
+     [
+      "16 Dự 豫",
+      "豫之時義大矣哉",
+      "thời nghĩa"
+     ],
+     [
+      "17 Tùy 隨",
+      "隨之時義大矣哉",
+      "thời nghĩa"
+     ],
+     [
+      "27 Di 頤",
+      "頤之時大矣哉",
+      "thời"
+     ],
+     [
+      "28 Đại quá 大過",
+      "大過之時大矣哉",
+      "thời"
+     ],
+     [
+      "29 Khảm 坎",
+      "險之時用大矣哉",
+      "thời dụng"
+     ],
+     [
+      "33 Độn 遯",
+      "遯之時義大矣哉",
+      "thời nghĩa"
+     ],
+     [
+      "38 Khuê 睽",
+      "睽之時用大矣哉",
+      "thời dụng"
+     ],
+     [
+      "39 Kiển 蹇",
+      "蹇之時用大矣哉",
+      "thời dụng"
+     ],
+     [
+      "40 Giải 解",
+      "解之時大矣哉",
+      "thời"
+     ],
+     [
+      "44 Cấu 姤",
+      "姤之時義大矣哉",
+      "thời nghĩa"
+     ],
+     [
+      "49 Cách 革",
+      "革之時大矣哉",
+      "thời"
+     ],
+     [
+      "56 Lữ 旅",
+      "旅之時義大矣哉",
+      "thời nghĩa"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Ở quẻ Khảm, câu này nói “thời dụng của hiểm” (險) chứ không lặp tên quẻ. Thoán truyện còn nhắc thời ở chỗ khác: quẻ Tổn nói “bớt, thêm, đầy, vơi, cùng đi với thời” (損益盈虛，與時偕行); quẻ Ích nói “phàm đạo của Ích là cùng đi với thời” (凡益之道，與時偕行); quẻ Cấn nói:",
+    "source": "Thoán truyện các quẻ Khảm, Tổn, Ích, Cấn (Kanripo KR1a0001)"
+   },
+   {
+    "type": "quote",
+    "han": "時止則止，時行則行，動靜不失其時，其道光明。",
+    "vi": "Thời nên dừng thì dừng, thời nên đi thì đi; động hay tĩnh đều không lỡ thời của nó, thì đạo ấy sáng sủa.",
+    "source": "Thoán truyện quẻ Cấn"
+   },
+   {
+    "type": "h",
+    "text": "Hệ từ: biến thông là để theo thời"
+   },
+   {
+    "type": "quote",
+    "han": "剛柔者，立本者也；變通者，趣時者也。",
+    "vi": "Cứng và mềm là cái lập nên gốc; biến và thông là cái để hướng theo thời.",
+    "source": "Hệ từ hạ, chương 1"
+   },
+   {
+    "type": "p",
+    "text": "Cương nhu (剛柔) là hào dương và hào âm; xu (趣) là hướng tới, theo tới. Hệ từ thượng cũng có câu “biến thông sánh với bốn mùa” (變通配四時).",
+    "source": "Hệ từ thượng, hạ (Kanripo KR1a0001)"
+   },
+   {
+    "type": "quote",
+    "han": "六爻相雜，唯其時物也。",
+    "vi": "Sáu hào xen lẫn nhau, chỉ là theo thời và vật của từng hào.",
+    "source": "Hệ từ hạ, chương 9"
+   },
+   {
+    "type": "p",
+    "text": "Ngay sau câu này, cùng chương nói hào đầu khó biết, hào trên dễ biết, vì là gốc và ngọn (其初難知，其上易知，本末也)."
+   },
+   {
+    "type": "h",
+    "text": "Chữ “thời” ở Trung Dung, Mạnh Tử và Trình Di"
+   },
+   {
+    "type": "quote",
+    "han": "君子之中庸也，君子而時中。",
+    "vi": "Quân tử giữ trung dung, ấy là bậc quân tử biết trúng mực theo từng lúc.",
+    "source": "Lễ ký, Trung Dung (lời Trọng Ni)"
+   },
+   {
+    "type": "p",
+    "text": "Mạnh Tử kể: Khổng Tử lúc nên đi nhanh thì đi nhanh, nên ở lâu thì ở lâu, nên ở ẩn thì ở ẩn, nên ra làm quan thì ra làm (可以速而速，可以久而久，可以處而處，可以仕而仕). Rồi ông so bốn bậc thánh:",
+    "source": "Mạnh Tử, Vạn Chương hạ"
+   },
+   {
+    "type": "quote",
+    "han": "伯夷，聖之清者也；伊尹，聖之任者也；柳下惠，聖之和者也；孔子，聖之時者也。",
+    "vi": "Bá Di là bậc thánh trong sạch; Y Doãn là bậc thánh gánh vác; Liễu Hạ Huệ là bậc thánh hòa nhã; Khổng Tử là bậc thánh hợp thời.",
+    "source": "Mạnh Tử, Vạn Chương hạ"
+   },
+   {
+    "type": "p",
+    "text": "Lời tựa Dịch truyện của Trình Di (程頤, đời Tống) mở đầu bằng câu: “易，變易也，隨時變易以從道也” — Dịch là biến đổi, theo thời mà biến đổi để theo đạo.",
+    "source": "Trình Di, Dịch truyện, tựa (Y Xuyên Dịch truyện, bản Tứ khố)"
+   },
+   {
+    "type": "h",
+    "text": "Trong app"
+   },
+   {
+    "type": "p",
+    "text": "Trong luồng Tự định vị, mỗi kỳ (hàng tháng hoặc hàng quý, tùy phần Cài đặt), với từng lĩnh vực, bạn chọn một quẻ — tự ghép hai quái hoặc gieo quẻ — và một hào. Ở bước chọn hào, app dẫn câu của Vương Bật và nối về bài này. Trang chủ có thẻ “Quẻ tiêu tức của tháng”, giải thích ở bài Mười hai quẻ tiêu tức.",
+    "source": "App Định Vị"
+   },
+   {
+    "type": "note",
+    "text": "Việc dùng một quẻ để ghi tình thế của một lĩnh vực trong một kỳ, và một hào để ghi chỗ mình đứng trong tình thế ấy, là cách áp dụng của app; Vương Bật và các sách dẫn trên nói về quẻ và hào trong Kinh Dịch, không nói về việc này."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Vương Bật, Chu Dịch lược lệ · Minh quái thích biến thông hào (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/周易略例/明卦適變通爻"
+   },
+   {
+    "label": "Vương Bật, Chu Dịch lược lệ · Biện vị (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/周易略例/辯位"
+   },
+   {
+    "label": "Chu Dịch: Thoán truyện, Hệ từ truyện (Kanripo KR1a0001)",
+    "url": "https://github.com/kanripo/KR1a0001"
+   },
+   {
+    "label": "Lễ ký · Trung Dung (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/禮記/中庸"
+   },
+   {
+    "label": "Mạnh Tử · Vạn Chương hạ (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/孟子/萬章下"
+   },
+   {
+    "label": "Trình Di, Y Xuyên Dịch truyện, bản Tứ khố toàn thư (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/伊川易傳_(四庫全書本)"
+   }
+  ]
+ },
+ {
   "id": "dao-troi",
   "title": "Đạo trời",
   "summary": "Những câu trong Hệ từ truyện nói về Thái cực, âm dương và “sinh sinh”, kèm chú của Chu Hy và Khổng Dĩnh Đạt; ba nghĩa của chữ “Dịch” theo Dịch vĩ và Trịnh Huyền, hai nghĩa theo Chu Hy; và câu “cùng thì biến”.",
@@ -1622,6 +1844,289 @@
    {
     "label": "Chu Tử ngữ loại, quyển 65 (Dịch nhất) — Wikisource",
     "url": "https://zh.wikisource.org/wiki/%E6%9C%B1%E5%AD%90%E8%AA%9E%E9%A1%9E/065"
+   }
+  ]
+ },
+ {
+  "id": "tieu-tuc",
+  "title": "Mười hai quẻ tiêu tức",
+  "summary": "Mười hai quẻ từ Phục đến Khôn, ghép với mười hai tháng: nghĩa hai chữ “tiêu tức”, bảng ghép theo Ngụy thư, nguồn gốc theo Tân Đường thư (chương cú họ Mạnh), và cách các nhà chú đọc “bảy ngày trở lại” (quẻ Phục), “đến tháng tám có hung” (quẻ Lâm).",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Mục này nói về mười hai quẻ gọi là quẻ tiêu tức, hay quẻ tích (辟卦), được ghép với mười hai tháng: nghĩa hai chữ tiêu tức, bảng ghép theo sách lịch trong Ngụy thư, nguồn gốc theo Tân Đường thư, và hai câu kinh văn mà các nhà chú giải liên hệ với tháng."
+   },
+   {
+    "type": "h",
+    "text": "Tiêu và tức"
+   },
+   {
+    "type": "quote",
+    "han": "君子尚消息盈虛，天行也。",
+    "vi": "Người quân tử chuộng sự lui và lớn, đầy và vơi — ấy là trời vận hành.",
+    "source": "Thoán truyện quẻ Bác"
+   },
+   {
+    "type": "p",
+    "text": "Khổng Dĩnh Đạt (Chu Dịch chính nghĩa) giảng câu này: người quân tử thông lẽ vật, lúc đạo tiêu thì theo đạo tiêu, lúc đạo tức thì theo đạo tức, lúc đầy theo đạo đầy, lúc vơi theo đạo vơi; “thiên hành” là theo thời mà tiêu tức đầy vơi, đó là chỗ đạo trời vận hành — xuân hạ khí trời thịnh lớn, thu đông khí trời tiêu giảm.",
+    "source": "Khổng Dĩnh Đạt, Chu Dịch chính nghĩa, quẻ Bác"
+   },
+   {
+    "type": "quote",
+    "han": "日中則昃，月盈則食，天地盈虛，與時消息",
+    "vi": "Mặt trời đứng bóng thì xế, mặt trăng tròn thì khuyết; trời đất đầy vơi, cùng thời mà lui mà lớn.",
+    "source": "Thoán truyện quẻ Phong"
+   },
+   {
+    "type": "p",
+    "text": "Về nghĩa từng chữ, Huệ Đống (惠棟, đời Thanh), trong Dịch Hán học, chép chú của Cửu gia Dịch ở quẻ Thái: dương tức mà lên, âm tiêu mà xuống (陽息而升，隂消而降); dương gọi là tức, tức là lớn (陽稱息者長也). Dưới mục “Dịch của Mạnh Trường Khanh” (孟長卿易), ông tả quái khí đồ của họ Mạnh: trong đó mười hai quẻ tích gọi là quẻ tiêu tức, Càn thêm lên là tức, Khôn vơi đi là tiêu (辟卦十二謂之消息卦，乾益為息，坤虛為消). Ngu Phiên (虞翻, đời Tam Quốc) chú Thuyết quái:",
+    "source": "Huệ Đống, Dịch Hán học, quyển 1"
+   },
+   {
+    "type": "quote",
+    "han": "數往者順，謂坤消從午至亥，上下，故順也。知來者逆，謂乾息從子至巳，下上，故逆也。",
+    "vi": "“Đếm cái đã qua là thuận”: tức Khôn tiêu từ Ngọ đến Hợi, từ trên xuống, nên thuận. “Biết cái sắp tới là nghịch”: tức Càn tức từ Tý đến Tỵ, từ dưới lên, nên nghịch.",
+    "source": "Ngu Phiên, dẫn trong Lý Đỉnh Tộ, Chu Dịch tập giải, quyển 17"
+   },
+   {
+    "type": "p",
+    "text": "Tức là Càn tức (dương lớn) qua sáu chi từ Tý đến Tỵ, Khôn tiêu qua sáu chi từ Ngọ đến Hợi. Huệ Đống cũng dẫn Mạnh Khang chú Hán thư: Kinh Phòng lấy quẻ tiêu tức làm quẻ tích, tích nghĩa là vua (房以消息卦為辟，辟，君也); quẻ tiêu gọi là thái âm, quẻ tức gọi là thái dương. Ở chỗ ấy Huệ Đống chua: quẻ tiêu là Cấu, Độn, Bĩ, Quan, Bác, Khôn; quẻ tức là Phục, Lâm, Thái, Đại tráng, Quải, Càn.",
+    "source": "Chu Dịch tập giải, quyển 17; Huệ Đống, Dịch Hán học, quyển 1"
+   },
+   {
+    "type": "h",
+    "text": "Bảng mười hai tháng"
+   },
+   {
+    "type": "p",
+    "text": "Ngụy thư, phần Luật lịch chí, chép phép lịch Chính Quang và phép lịch Hưng Hòa của triều Bắc Ngụy. Ở mục tính quẻ (推四正卦術), cả hai liệt kê mỗi tháng năm quẻ, bắt đầu từ tháng mười một; quẻ cuối của mỗi tháng lần lượt là Phục, Lâm, Thái, Đại tráng, Quải, Càn, Cấu, Độn, Bĩ, Quan, Bác, Khôn. Sách ghi thêm:",
+    "source": "Ngụy thư, quyển 107 thượng (Chính Quang lịch) và 107 hạ (Hưng Hòa lịch)"
+   },
+   {
+    "type": "quote",
+    "han": "四正為方伯，中孚為三公，復為天子，屯為諸侯，謙為大夫，睽為九卿，升還從三公，周而復始。",
+    "vi": "Bốn quẻ chính là phương bá; Trung phu là tam công, Phục là thiên tử, Truân là chư hầu, Khiêm là đại phu, Khuê là cửu khanh; Thăng trở lại từ tam công, hết vòng lại bắt đầu.",
+    "source": "Ngụy thư, quyển 107 hạ, Hưng Hòa lịch"
+   },
+   {
+    "type": "p",
+    "text": "Theo vòng công – thiên tử – hầu – đại phu – khanh ấy, quẻ thứ năm của mỗi tháng trong danh sách rơi vào ngôi thiên tử. Khổng Dĩnh Đạt gọi Lâm là quẻ của tháng kiến Sửu (建丑之月), tức tháng mười hai; Chu Hy (Chu Dịch bản nghĩa) viết tháng mười một thì quẻ là Phục, Lâm là quẻ tháng mười hai, Khôn thuần là quẻ tháng mười. Ghép lại thành bảng:"
+   },
+   {
+    "type": "table",
+    "head": [
+     "Chi tháng",
+     "Tháng trong Ngụy thư",
+     "Quẻ",
+     "Hào"
+    ],
+    "rows": [
+     [
+      "Tý",
+      "tháng 11",
+      "24 Phục 復",
+      "một dương dưới năm âm"
+     ],
+     [
+      "Sửu",
+      "tháng 12",
+      "19 Lâm 臨",
+      "hai dương dưới bốn âm"
+     ],
+     [
+      "Dần",
+      "tháng giêng",
+      "11 Thái 泰",
+      "ba dương dưới ba âm"
+     ],
+     [
+      "Mão",
+      "tháng 2",
+      "34 Đại tráng 大壯",
+      "bốn dương dưới hai âm"
+     ],
+     [
+      "Thìn",
+      "tháng 3",
+      "43 Quải 夬",
+      "năm dương dưới một âm"
+     ],
+     [
+      "Tỵ",
+      "tháng 4",
+      "1 Càn 乾",
+      "sáu dương"
+     ],
+     [
+      "Ngọ",
+      "tháng 5",
+      "44 Cấu 姤",
+      "một âm dưới năm dương"
+     ],
+     [
+      "Mùi",
+      "tháng 6",
+      "33 Độn 遯",
+      "hai âm dưới bốn dương"
+     ],
+     [
+      "Thân",
+      "tháng 7",
+      "12 Bĩ 否",
+      "ba âm dưới ba dương"
+     ],
+     [
+      "Dậu",
+      "tháng 8",
+      "20 Quan 觀",
+      "bốn âm dưới hai dương"
+     ],
+     [
+      "Tuất",
+      "tháng 9",
+      "23 Bác 剝",
+      "năm âm dưới một dương"
+     ],
+     [
+      "Hợi",
+      "tháng 10",
+      "2 Khôn 坤",
+      "sáu âm"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Chu Hy cũng nói về phép này: có một thuyết đặt tám quái theo phương (Chấn đông, Ly nam, Đoài tây, Khảm bắc), một thuyết chia mười hai quẻ tích thuộc mười hai chi (十二辟卦分屬十二辰); Tiêu Diên Thọ gộp hai thuyết làm một. Ông chỉ ra chỗ mâu thuẫn: nếu lấy tám quái làm chủ thì Càn không nên là quẻ tích của Tỵ, Khôn không nên là quẻ tích của Hợi. Ông cũng viết việc chia bốn mươi tám quẻ làm công, hầu, khanh, đại phu để phụ vào mười hai quẻ tích “vốn không có phép tượng, chỉ theo ý mà nói” (初無法象而直以意言).",
+    "source": "Chu Hy, dẫn trong Ngự toản Chu Dịch chiết trung, quyển thủ"
+   },
+   {
+    "type": "h",
+    "text": "Nguồn gốc: chương cú họ Mạnh"
+   },
+   {
+    "type": "quote",
+    "han": "十二月卦出於孟氏章句，其說易本於氣，而後以人事明之。",
+    "vi": "Quẻ mười hai tháng ra từ sách chương cú của họ Mạnh; thuyết ấy giảng Dịch lấy khí làm gốc, rồi sau mới lấy việc người mà làm sáng tỏ.",
+    "source": "Tân Đường thư, quyển 27 thượng (Lịch chí), Quái nghị"
+   },
+   {
+    "type": "p",
+    "text": "Quái nghị (卦議) là một trong mười thiên Lịch nghị của lịch Đại Diễn: Tân Đường thư chép tăng Nhất Hạnh (一行) được lệnh làm lịch mới, bản thảo vừa xong thì mất, Trương Duyệt cùng các quan lịch biên thành bảy thiên lịch thuật, một thiên lược lệ và mười thiên lịch nghị. Chương cú (章句) là sách giảng giải từng chương từng câu. Cũng trong Quái nghị có câu “nên theo họ Mạnh, từ đầu Đông chí, quẻ Trung phu dùng việc” (當據孟氏，自冬至初，中孚用事). Huệ Đống xếp quái khí đồ họ Mạnh dưới mục Dịch của Mạnh Trường Khanh; Hán thư, Nho lâm truyện chép Mạnh Hỷ (孟喜), tự Trường Khanh, học Dịch với Điền Vương Tôn, và có được sách của nhà Dịch về việc xem âm dương tai biến (得易家候陰陽災變書). Tứ khố toàn thư tổng mục đề yếu, ở lời tựa Dịch loại, viết: các nhà Nho đời Hán bàn tượng số, còn cách thời xưa chưa xa (漢儒言象數，去古未遠也).",
+    "source": "Tân Đường thư, quyển 27 thượng; Huệ Đống, Dịch Hán học, quyển 1; Hán thư, quyển 88, Nho lâm truyện; Tứ khố tổng mục đề yếu, quyển 1, Dịch loại tiểu tự"
+   },
+   {
+    "type": "note",
+    "text": "Hai bản lịch trong Ngụy thư khác nhau ở thứ tự hai quẻ Tụng, Dự của tháng ba (Chính Quang: 訟、豫; Hưng Hòa: 豫、訟). Quẻ cuối tháng năm, bản Chính Quang lịch trên Wikisource chép là 始, bản Hưng Hòa chép là 姤 (Cấu)."
+   },
+   {
+    "type": "h",
+    "text": "“Bảy ngày trở lại” và “đến tháng tám có hung”"
+   },
+   {
+    "type": "quote",
+    "han": "反復其道，七日來復",
+    "vi": "Trở đi trở lại theo đạo của nó, qua bảy ngày thì quay về.",
+    "source": "Quái từ quẻ Phục"
+   },
+   {
+    "type": "p",
+    "text": "Vương Bật chú: từ lúc dương khí vừa bị bóc hết đến lúc trở lại, cả thảy bảy ngày. Khổng Dĩnh Đạt chép thuyết của họ Trử và họ Trang: từ tháng năm một âm sinh đến tháng mười một một dương sinh là bảy tháng, nói “ngày” thay “tháng” để tỏ dương lớn cần nhanh; còn ông cho rằng chú của Vương Bật dùng phép “sáu ngày bảy phần” của Dịch vĩ, giống thuyết Trịnh Khang Thành: dương khí quẻ Bác hết vào cuối tháng chín, tháng mười quẻ Khôn dùng việc sáu ngày bảy phần, hết Khôn thì dương của Phục đến, nói số tròn là bảy ngày. Chu Hy viết: từ quẻ Cấu tháng năm một âm mới sinh, đến đây qua bảy hào thì một dương trở lại. Quái nghị trong Tân Đường thư thì chê Kinh Phòng bớt bảy mươi ba phần để làm hậu cho bốn quẻ chính là thuyết không hợp kinh, chỉ cốt gán vào chữ “bảy ngày trở lại” trong sách vĩ (緯文).",
+    "source": "Chu Dịch chính nghĩa (chú Vương Bật, sớ Khổng Dĩnh Đạt), quẻ Phục; Chu Hy, Chu Dịch bản nghĩa, quẻ Phục; Tân Đường thư, quyển 27 thượng"
+   },
+   {
+    "type": "quote",
+    "han": "至于八月有凶。……「至于八月有凶」、消不久也。",
+    "vi": "Đến tháng tám thì có hung. … “Đến tháng tám thì có hung”: vì sự tiêu lui không bao lâu nữa.",
+    "source": "Quái từ và Thoán truyện quẻ Lâm"
+   },
+   {
+    "type": "table",
+    "head": [
+     "Người chú",
+     "Cách hiểu “tháng tám”"
+    ],
+    "rows": [
+     [
+      "Vương Bật",
+      "Tháng tám là lúc dương suy mà âm lớn, đạo kẻ tiểu nhân lớn, đạo người quân tử tiêu."
+     ],
+     [
+      "Khổng Dĩnh Đạt",
+      "Lâm là tháng kiến Sửu; từ kiến Sửu đến tháng bảy kiến Thân thì ba âm đã thịnh, ba dương đang lui, nên tháng tám có hung. Giảng chú Vương Bật, ông tính từ Lâm (kiến Sửu) đến Bĩ (kiến Thân) là tám tháng, và chép hai thuyết khác: họ Hà tính từ kiến Tý đến kiến Mùi, họ Trử từ kiến Dần đến kiến Dậu."
+     ],
+     [
+      "Chu Hy",
+      "Tám tháng tính từ tháng của quẻ Phục (một dương) đến tháng của quẻ Độn (hai âm). Ông chép thêm một thuyết: là tháng tám lịch nhà Hạ, ứng với quẻ Quan, cũng là quẻ ngược của Lâm."
+     ]
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Trong app"
+   },
+   {
+    "type": "p",
+    "text": "Trang chủ có thẻ “Quẻ tiêu tức của tháng”. App tính chi tháng theo tiết khí, giờ Việt Nam — tháng Dần bắt đầu từ tiết Lập Xuân, tháng Tý từ tiết Đại Tuyết — rồi hiện tiết đang hiệu lực, ngày bắt đầu của tiết và quẻ theo bảng trên, bấm vào để mở quẻ trong Thư viện. Thẻ ghi rõ phép ghép này là quy ước của phái tượng số, để tham khảo, không phải lời bói.",
+    "source": "App Định Vị"
+   },
+   {
+    "type": "note",
+    "text": "Ngụy thư liệt kê theo số tháng (tháng mười một, tháng mười hai…); việc đổi tháng tại tiết khí là cách app tính chi tháng."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Chu Dịch: Thoán truyện các quẻ Bác, Phong, Phục, Lâm (Kanripo KR1a0001)",
+    "url": "https://github.com/kanripo/KR1a0001"
+   },
+   {
+    "label": "Khổng Dĩnh Đạt, Chu Dịch chính nghĩa · Bác (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/周易正義/03剝"
+   },
+   {
+    "label": "Khổng Dĩnh Đạt, Chu Dịch chính nghĩa · Phục (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/周易正義/03復"
+   },
+   {
+    "label": "Khổng Dĩnh Đạt, Chu Dịch chính nghĩa · Lâm (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/周易正義/03臨"
+   },
+   {
+    "label": "Lý Đỉnh Tộ, Chu Dịch tập giải, quyển 17 (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/周易集解_(李鼎祚)/卷十七"
+   },
+   {
+    "label": "Huệ Đống, Dịch Hán học, quyển 1, bản Tứ khố (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/易漢學_(四庫全書本)/卷1"
+   },
+   {
+    "label": "Ngụy thư, quyển 107 thượng · Luật lịch chí 3 thượng (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/魏書/卷107上"
+   },
+   {
+    "label": "Ngụy thư, quyển 107 hạ · Luật lịch chí 3 hạ (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/魏書/卷107下"
+   },
+   {
+    "label": "Tân Đường thư, quyển 27 thượng · Lịch chí 3 thượng (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/新唐書/卷027上"
+   },
+   {
+    "label": "Hán thư, quyển 88 · Nho lâm truyện (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/漢書/卷088"
+   },
+   {
+    "label": "Chu Hy, Chu Dịch bản nghĩa, quyển 1, bản Tứ khố (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/周易本義_(四庫全書本)/卷1"
+   },
+   {
+    "label": "Ngự toản Chu Dịch chiết trung, quyển thủ, bản Tứ khố (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/御纂周易折中_(四庫全書本)/卷首"
+   },
+   {
+    "label": "Tứ khố toàn thư tổng mục đề yếu, quyển 1 (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/四庫全書總目提要/卷001"
    }
   ]
  },

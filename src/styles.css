@@ -345,6 +345,9 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .row-inline { display: inline-flex; gap: 12px; }
 
 /* ---------- Trang chủ dạng thẻ ---------- */
+.month-hex { display: flex; gap: 14px; align-items: center; padding: 12px 16px; border-left: 3px solid var(--gold, var(--accent)); }
+.month-hex p { margin: 0; }
+.month-hex-body { display: grid; gap: 3px; }
 .domain-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
 .domain-card {
   display: flex; flex-direction: column; gap: 10px; padding: 14px 16px;

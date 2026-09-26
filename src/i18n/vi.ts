@@ -11,6 +11,10 @@ export const vi = {
   'home.intro':
     'Mỗi kỳ, với từng lĩnh vực, bạn xác định mình đang đứng ở quẻ nào, hào nào — tự ghép hai quái hoặc gieo quẻ — rồi đọc lời hào như ghi chép của những người từng đứng ở đúng chỗ ấy.',
   'home.period': 'Kỳ hiện tại: {period}',
+  'home.monthHex.title': 'Quẻ tiêu tức của tháng',
+  'home.monthHex.month': 'tháng {branch} theo tiết khí · đang ở tiết {term} (từ {date})',
+  'home.monthHex.convention': 'Phép ghép mười hai quẻ với mười hai tháng, theo Tân Đường thư, ra từ chương cú họ Mạnh (Mạnh Hỷ); để tham khảo, không phải lời bói.',
+  'home.monthHex.more': 'Mười hai quẻ tiêu tức',
   'home.addDomain': 'Thêm lĩnh vực',
   'home.domainPlaceholder': 'Tên lĩnh vực',
   'home.archive': 'Cất đi',
@@ -337,7 +341,7 @@ export const vi = {
   'nav.libraryMenu': 'Mở mục Thư viện',
   'nav.subMenu': 'Mở danh sách {label}',
   'intro.title': 'Nhập môn Kinh Dịch',
-  'intro.lead': 'Tám bài ngắn để hiểu Kinh Dịch trước khi dùng: sách từ đâu ra, gồm những gì, các cách hiểu qua hai nghìn năm, thuật ngữ, quy tắc đọc quẻ, và cách người xưa nhìn trời đất, số mệnh, việc tu thân. Mỗi ý có ghi nguồn.',
+  'intro.lead': 'Mười bài ngắn để hiểu Kinh Dịch trước khi dùng: sách từ đâu ra, gồm những gì, các cách hiểu qua hai nghìn năm, thuật ngữ, quy tắc đọc quẻ, thời và vị, mười hai quẻ tiêu tức, và cách người xưa nhìn trời đất, số mệnh, việc tu thân. Mỗi ý có ghi nguồn.',
   'intro.sources': 'Nguồn',
   'intro.prev': 'Bài trước',
   'intro.next': 'Bài sau',
@@ -417,6 +421,8 @@ export const vi = {
   'step3.backTo2': 'Xem lại bước 2',
   'step3.note': 'Ghi chú (tùy chọn)',
 
+  'step4.timeNote': 'Vương Bật (Chu Dịch lược lệ) viết: quẻ là thời, hào là sự biến đổi cho hợp với thời.',
+  'step4.timeLink': 'Thời và vị',
   'step4.warning':
     'Đa số người tự đặt mình cao hơn một hào so với thực tế, thường là nghĩ mình ở hào 5 khi đang ở hào 3. Ai đang thực sự quyết? Việc gì dừng lại nếu bạn nghỉ hai tuần?',
   'step4.tierQuestion':

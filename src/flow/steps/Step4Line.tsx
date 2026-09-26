@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { t } from '../../i18n';
 import type { LinePosition, Tier } from '../../types/schema';
 import { linesOfTier } from '../../lib/iching';
@@ -20,6 +21,9 @@ export function Step4Line({ d, set, data }: StepProps) {
   return (
     <div className="stack">
       <p className="warning" role="note">{t('step4.warning')}</p>
+      <p className="muted small">
+        {t('step4.timeNote')} <Link to="/intro/thoi-vi">{t('step4.timeLink')} →</Link>
+      </p>
       {d.method === 'cast' && d.castLines?.length === 6 && readCast(d.castLines).moving.length > 0 && (
         <p className="note">{t('step4.movingNote', { lines: readCast(d.castLines).moving.join(', ') })}</p>
       )}
