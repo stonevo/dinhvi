@@ -205,6 +205,24 @@ export const positioningSchema = z.object({
 });
 export type Positioning = z.infer<typeof positioningSchema>;
 
+/** Ngữ cảnh câu hỏi khi gieo (dùng cho diễn giải theo ngữ cảnh và Dụng thần). */
+export const CONTEXT_KEYS = ['work', 'love', 'money', 'health', 'travel'] as const;
+export const contextKey = z.enum(CONTEXT_KEYS);
+export type ContextKey = z.infer<typeof contextKey>;
+
+/** Cách lập quẻ của một lần gieo. */
+export const CAST_METHODS = ['coins', 'coins-manual', 'meihua-time', 'meihua-number', 'meihua-text'] as const;
+export const castMethod = z.enum(CAST_METHODS);
+export type CastMethod = z.infer<typeof castMethod>;
+
+/** Đối chiếu kết quả của một lần gieo. */
+export const castOutcomeSchema = z.object({
+  verdict: z.enum(['yes', 'partial', 'no']),
+  note: z.string(),
+  at: isoDate,
+});
+export type CastOutcome = z.infer<typeof castOutcomeSchema>;
+
 /** Một lần gieo ở mục "Gieo quẻ" — tách khỏi bản ghi định vị. */
 export const castRecordSchema = z.object({
   id: z.string().min(1),
@@ -216,6 +234,16 @@ export const castRecordSchema = z.object({
   moving: z.array(z.number().int().min(1).max(6)),
   transformed: z.number().int().min(1).max(64).nullable(),
   notes: z.string(),
+  /** Ngữ cảnh câu hỏi (bản ghi cũ không có). */
+  context: contextKey.optional(),
+  method: castMethod.default('coins'),
+  /** Dữ liệu đầu vào của phép lập quẻ (số, chữ, giờ) để xem lại. */
+  methodInput: z.string().optional(),
+  /** Ngày hẹn đối chiếu kết quả (YYYY-MM-DD). */
+  checkOn: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  outcome: castOutcomeSchema.optional(),
+  /** Giới tính người hỏi (chỉ dùng chọn Dụng thần khi hỏi tình cảm). */
+  askerGender: z.enum(['male', 'female']).optional(),
 });
 export type CastRecord = z.infer<typeof castRecordSchema>;
 
@@ -257,6 +285,12 @@ export const settingsSchema = z.object({
   activeProfileId: z.string().min(1).default(DEFAULT_PROFILE_ID),
   /** Đã xem màn hướng dẫn lần đầu. */
   onboarded: z.boolean().optional(),
+  /** Ngày (YYYY-MM-DD, giờ VN) đã nhắc đối chiếu lần gieo — mỗi ngày nhắc tối đa một lần. */
+  lastCastReminderOn: z.string().optional(),
+  /** Âm thanh và rung khi gieo xu. */
+  castSound: z.boolean().default(true),
+  /** Từ 23h tính sang ngày mới (giờ Tý đầu ngày) khi lấy can chi và ngày âm. */
+  ziStartsNextDay: z.boolean().default(true),
 });
 export type Settings = z.infer<typeof settingsSchema>;
 
@@ -267,6 +301,8 @@ export const DEFAULT_SETTINGS: Settings = {
   notificationsEnabled: false,
   locale: 'vi',
   activeProfileId: DEFAULT_PROFILE_ID,
+  castSound: true,
+  ziStartsNextDay: true,
 };
 
 /** Tiến độ học một thẻ ở trang "Học" (lặp lại ngắt quãng), theo hồ sơ. */
@@ -359,3 +395,23 @@ export const hexagramCommentarySchema = z.object({
     .optional(),
 });
 export type HexagramCommentary = z.infer<typeof hexagramCommentarySchema>;
+
+// ---- Diễn giải theo ngữ cảnh (công việc, tình cảm, tài chính, sức khoẻ, đi xa) ----
+// Lời diễn giải của app, bám nghĩa lời quẻ / lời hào; public/data/contexts.json.
+
+export const contextTextsSchema = z.object({
+  work: z.string().min(1),
+  love: z.string().min(1),
+  money: z.string().min(1),
+  health: z.string().min(1),
+  travel: z.string().min(1),
+});
+export type ContextTexts = z.infer<typeof contextTextsSchema>;
+
+export const hexagramContextsSchema = z.object({
+  kingWenNumber: z.number().int().min(1).max(64),
+  judgment: contextTextsSchema,
+  lines: z.array(contextTextsSchema).length(6),
+  allMoving: contextTextsSchema.optional(),
+});
+export type HexagramContexts = z.infer<typeof hexagramContextsSchema>;

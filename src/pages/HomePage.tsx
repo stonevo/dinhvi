@@ -8,6 +8,7 @@ import { comparePeriods, formatPeriod, periodOf } from '../lib/period';
 import { domainStatus, unreviewedBefore, type DomainStatus } from '../lib/status';
 import { newId } from '../lib/id';
 import { reminderState } from '../lib/reminder';
+import { dueChecks, vnDateString } from '../lib/castLog';
 import { HexagramFigure } from '../ui/HexagramFigure';
 import type { Domain, Positioning } from '../types/schema';
 
@@ -28,7 +29,8 @@ export function HomePage() {
   const { data: staticData } = useStaticData();
   const data = useLiveQuery(async () => {
     const p = await activeProfileData(db);
-    return { ...p, domains: p.domains.filter((d) => !d.archived) };
+    const casts = await db.casts.where('profileId').equals(p.profileId).toArray();
+    return { ...p, domains: p.domains.filter((d) => !d.archived), castDue: dueChecks(casts, vnDateString(new Date())).length };
   });
   const [name, setName] = useState('');
 
@@ -48,6 +50,11 @@ export function HomePage() {
   return (
     <section className="stack">
       <p className="intro">{t('home.intro')}</p>
+      {data.castDue > 0 && (
+        <p className="warning">
+          {t('home.castDue', { n: data.castDue })} <Link to="/cast">{t('home.castDueLink')}</Link>
+        </p>
+      )}
       <h2 className="period">{t('home.period', { period: formatPeriod(period) })}</h2>
       {reminder.inAppDue && <p className="note">{t('home.reminderDue')}</p>}
 

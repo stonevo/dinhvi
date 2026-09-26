@@ -113,6 +113,16 @@ export function SettingsPage() {
         </>
       )}
 
+      <h2>{t('settings.cast')}</h2>
+      <label className="row-inline">
+        <input type="checkbox" checked={settings.castSound ?? true} onChange={(e) => patch({ castSound: e.target.checked })} /> {t('settings.castSound')}
+      </label>
+      <label className="row-inline">
+        <input type="checkbox" checked={settings.ziStartsNextDay ?? true} onChange={(e) => patch({ ziStartsNextDay: e.target.checked })} />{' '}
+        {t('settings.ziStartsNextDay')}
+      </label>
+      <p className="muted small">{t('settings.ziStartsNextDay.hint')}</p>
+
       <h2>{t('settings.backup')}</h2>
       <p className="muted">{t('settings.backup.hint')}</p>
       <div className="row">

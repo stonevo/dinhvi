@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramSchema, lineTierSchema, trigramSchema,
-  type Hexagram, type HexagramCommentary, type LineTier, type Trigram, type TrigramKey,
+  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, lineTierSchema, trigramSchema,
+  type Hexagram, type HexagramCommentary, type HexagramContexts, type LineTier, type Trigram, type TrigramKey,
 } from '../types/schema';
 
 // Dữ liệu tĩnh nằm ở public/data để người tự host sửa được mà không build lại.
@@ -88,6 +88,35 @@ export function useCommentary(n: number): HexagramCommentary | null {
   useEffect(() => {
     let alive = true;
     loadCommentary().then(
+      (m) => alive && setState(m.get(n) ?? null),
+      () => alive && setState(null),
+    );
+    return () => {
+      alive = false;
+    };
+  }, [n]);
+  return state;
+}
+
+// Diễn giải theo ngữ cảnh, file riêng, tải khi cần.
+let contextsCache: Promise<Map<number, HexagramContexts>> | null = null;
+
+export function loadContexts(): Promise<Map<number, HexagramContexts>> {
+  contextsCache ??= fetchJson('contexts.json', z.array(hexagramContextsSchema).length(64)).then(
+    (list) => new Map(list.map((c) => [c.kingWenNumber, c])),
+  );
+  contextsCache.catch(() => {
+    contextsCache = null;
+  });
+  return contextsCache;
+}
+
+/** Diễn giải theo ngữ cảnh của một quẻ; null khi đang tải hoặc chưa có dữ liệu. */
+export function useContexts(n: number): HexagramContexts | null {
+  const [state, setState] = useState<HexagramContexts | null>(null);
+  useEffect(() => {
+    let alive = true;
+    loadContexts().then(
       (m) => alive && setState(m.get(n) ?? null),
       () => alive && setState(null),
     );

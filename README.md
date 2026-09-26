@@ -18,6 +18,10 @@ Dùng cho mình và cho người khác:
 |---|---|
 | Luồng 8 bước: sự thật → có quẻ (tự ghép hoặc gieo) → Tự quái → hào → phép thử đau → người phê bình → nhân chứng → kết luận | `src/flow/` |
 | Gieo ba đồng xu (6/7/8/9), hào động, quẻ biến; nguồn ngẫu nhiên `crypto.getRandomValues` | `src/lib/cast.ts` |
+| Âm lịch và tiết khí Việt Nam (Hồ Ngọc Đức + Meeus, UTC+7), can chi năm / tháng (theo tiết) / ngày / giờ, quy ước giờ Tý 23h | `src/lib/lunar.ts` |
+| Lục Hào nạp giáp: tám cung, Thế – Ứng, lục thân, lục thần, không vong, phục thần, nhật thần, nguyệt lệnh, hào biến, quẻ hỗ, Dụng thần | `src/lib/liuyao.ts` |
+| Mai Hoa: theo giờ, theo số, theo chữ; Thể – Dụng, ngũ hành sinh khắc, hỗ, biến, vượng suy | `src/lib/meihua.ts` |
+| Gieo có nghi thức (câu hỏi và ngữ cảnh trước, tĩnh tâm, xu 3D, tiếng, rung), nhập tay khi gieo xu thật; nhật ký gieo có hẹn đối chiếu, đánh dấu ứng nghiệm, thống kê | `src/cast/`, `src/lib/castLog.ts` |
 | Vòng lặp định vị → nhìn lại → hiệu chỉnh: nhìn lại là tùy chọn, trang chủ gợi ý kỳ nào chưa nhìn lại; mỗi lĩnh vực một bản ghi mỗi kỳ | `src/lib/status.ts`, `src/pages/ReviewPage.tsx` |
 | Thống kê hiệu chỉnh, mọi con số kèm n, gồm độ đúng khi tự ghép so với khi gieo | `src/lib/calibration.ts` |
 | Trang Học: thẻ ghi nhớ lặp lại ngắt quãng (8 quái, hình ↔ tên, dựng quẻ, ý nghĩa, thứ tự, quẻ cặp, 384 lời hào), tiến độ theo hồ sơ; hai bài ca nhớ quẻ của Chu Hy | `src/lib/study.ts`, `src/pages/StudyPage.tsx`, `src/data/verses.ts` |
@@ -42,6 +46,8 @@ Bản build là trang tĩnh (HashRouter, đường dẫn tương đối) — đ�
   - `trigrams.json` — 8 quái như trạng thái bên trong / hoàn cảnh bên ngoài
   - `lineTiers.json` — dấu hiệu chung của 6 vị trí hào, câu kiểm chứng có/không
   - `hexagrams.json` — 64 quẻ, 384 hào, Dụng cửu / Dụng lục; phiên âm Hán Việt kèm chữ Hán gốc (kinh văn theo [Kanripo KR1a0001](https://github.com/kanripo/KR1a0001))
+  - `contexts.json` — diễn giải theo 5 ngữ cảnh (công việc, tình cảm, tài chính, sức khoẻ, đi xa) cho 64 lời quẻ và 384 hào
+  - `strokes.json` — số nét chữ Hán (Unihan kTotalStrokes) cho Mai Hoa theo chữ
   - `commentary.json` — Kinh & Truyện: dịch sát lời quẻ/lời hào, Thoán truyện, Đại tượng, Tiểu tượng (chữ Hán trích tự động từ KR1a0001), giảng, và ý của Trình Di ([Y Xuyên Dịch truyện, KR1a0016](https://github.com/kanripo/KR1a0016)) và Chu Hy ([Chu Dịch bản nghĩa, KR1a0031](https://github.com/kanripo/KR1a0031)), kèm tóm tắt bằng lời riêng những chỗ Nguyễn Hiến Lê hiểu khác. Phần tiếng Việt tự dịch từ chữ Hán, không dựa vào bản dịch hiện đại còn bản quyền. Cấu trúc hào (chính, trung, ứng, thừa) tính tự động từ hình quẻ (`src/lib/structure.ts`).
 - Schema: `src/types/schema.ts` (zod — nguồn duy nhất cho type TS và validate).
 - Hướng dẫn viết/sửa: [docs/huong-dan-viet-du-lieu.md](docs/huong-dan-viet-du-lieu.md). Lời hào gốc cần người duyệt: [docs/can-duyet-loi-hao.md](docs/can-duyet-loi-hao.md). Nguồn tham khảo: [docs/nguon-du-lieu-kinh-dich.md](docs/nguon-du-lieu-kinh-dich.md). Quy trình dịch, đối chiếu và trích nguồn: [docs/quy-trinh-noi-dung.md](docs/quy-trinh-noi-dung.md).
