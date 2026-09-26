@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation, useSearchParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from '../db/db';
 import { useStaticData } from '../data/load';
@@ -7,7 +8,7 @@ import { newId } from '../lib/id';
 import { readCast, type LineValue } from '../lib/cast';
 import { addDays, vnDateString } from '../lib/castLog';
 import type { MeihuaCast } from '../lib/meihua';
-import type { CastRecord } from '../types/schema';
+import { CAST_METHODS, type CastMethod, type CastRecord } from '../types/schema';
 import { TextArea } from '../ui/controls';
 import { CastHistory } from '../cast/CastHistory';
 import { CastResult, type CastView } from '../cast/CastResult';
@@ -30,11 +31,29 @@ export function CastPage() {
     const casts = await db.casts.where('profileId').equals(settings.activeProfileId).sortBy('createdAt');
     return { settings, history: casts.reverse() };
   });
+  const [params] = useSearchParams();
+  const fromMenu = params.get('m');
+  const pickedMethod = (CAST_METHODS as readonly string[]).includes(fromMenu ?? '') ? (fromMenu as CastMethod) : null;
   const [stage, setStage] = useState<Stage>('ask');
-  const [draft, setDraft] = useState<AskDraft>(NEW_DRAFT);
   const [view, setView] = useState<CastView | null>(null);
   const [notes, setNotes] = useState('');
   const [viewing, setViewing] = useState<string | null>(null);
+  const [draft, setDraft] = useState<AskDraft>(() => (pickedMethod ? { ...NEW_DRAFT, method: pickedMethod } : NEW_DRAFT));
+
+  // "Lịch sử và đối chiếu" trên menu: cuộn tới phần lịch sử.
+  const { hash } = useLocation();
+  const loaded = Boolean(q && data);
+  useEffect(() => {
+    if (hash === '#history' && loaded) document.getElementById('history')?.scrollIntoView({ behavior: 'smooth' });
+  }, [hash, loaded]);
+
+  // Chọn một cách lập quẻ từ menu: quay về bước hỏi, giữ câu hỏi đang gõ, đổi cách lập quẻ.
+  useEffect(() => {
+    if (!pickedMethod) return;
+    setStage('ask');
+    setView(null);
+    setDraft((d) => ({ ...d, method: pickedMethod }));
+  }, [pickedMethod]);
 
   if (!data || !q) return <p className="muted">{t('common.loading')}</p>;
   const { settings, history } = q;
@@ -146,7 +165,11 @@ export function CastPage() {
         </section>
       )}
 
-      {stage === 'ask' && <CastHistory history={history} data={data} viewing={viewing} onView={setViewing} />}
+      {stage === 'ask' && (
+        <div id="history">
+          <CastHistory history={history} data={data} viewing={viewing} onView={setViewing} />
+        </div>
+      )}
     </div>
   );
 }

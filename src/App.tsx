@@ -16,6 +16,7 @@ import { CastPage } from './pages/CastPage';
 import { ReviewPage } from './pages/ReviewPage';
 import { HexagramPage, LibraryPage } from './pages/LibraryPage';
 import { StudyPage } from './pages/StudyPage';
+import { NavCastMenu } from './ui/NavCastMenu';
 import { SharePage } from './pages/SharePage';
 import { QuickNotePage } from './pages/QuickNotePage';
 import { WitnessPage } from './pages/WitnessPage';
@@ -42,7 +43,7 @@ export function App() {
           <NavLink to="/" end>{t('nav.home')}</NavLink>
           <NavLink to="/trajectory">{t('nav.trajectory')}</NavLink>
           <NavLink to="/calibration">{t('nav.calibration')}</NavLink>
-          <NavLink to="/cast">{t('nav.cast')}</NavLink>
+          <NavCastMenu />
           <NavLink to="/library">{t('nav.library')}</NavLink>
           <NavLink to="/study">{t('nav.study')}</NavLink>
           <NavLink to="/settings">{t('nav.settings')}</NavLink>

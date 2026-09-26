@@ -530,3 +530,18 @@ fieldset.field legend { margin-bottom: 6px; }
 .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
 .tab { border: 1px solid transparent; border-bottom: none; border-radius: 8px 8px 0 0; background: transparent; padding: 6px 14px; margin-bottom: -1px; color: var(--muted); }
 .tab.on { border-color: var(--line); background: var(--bg); color: var(--ink); font-weight: 600; }
+
+/* Menu xổ "Gieo quẻ ▾" */
+.nav-menu { position: relative; display: inline-flex; }
+.nav-menu-trigger { background: none; border: 0; padding: 4px 0; font: inherit; color: var(--muted); cursor: pointer; }
+.nav-menu-trigger:hover, .nav-menu.open .nav-menu-trigger { color: var(--ink); }
+.nav-menu-trigger.active { color: var(--ink); border-bottom: 1px solid var(--ink); border-radius: 0; }
+.nav-menu-list {
+  position: absolute; top: 100%; left: 0; z-index: 30; min-width: 15rem; margin-top: 4px;
+  display: flex; flex-direction: column; padding: 6px 0;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+.nav-menu-list::before { content: ''; position: absolute; top: -8px; left: 0; right: 0; height: 8px; }
+.topbar .nav-menu-list a { padding: 8px 14px; color: var(--ink); font-size: 1rem; white-space: nowrap; border: 0; }
+.topbar .nav-menu-list a:hover, .topbar .nav-menu-list a:focus { background: var(--surface-2); }
+.nav-menu-list .nav-menu-sep { border-top: 1px solid var(--line) !important; margin-top: 4px; color: var(--muted) !important; }

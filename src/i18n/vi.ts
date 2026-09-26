@@ -307,6 +307,7 @@ export const vi = {
   'nav.cast': 'Gieo quẻ',
   'nav.library': 'Thư viện',
   'nav.study': 'Học',
+  'nav.castHistory': 'Lịch sử và đối chiếu',
   'study.intro': 'Thẻ ghi nhớ lặp lại ngắt quãng: trả lời đúng thì thẻ được hẹn lại xa dần (1, 3, 7… ngày), sai thì hỏi lại sau ít phút. Mỗi ngày có tối đa 15 thẻ mới. Tiến độ lưu theo hồ sơ, trong máy này.',
   'study.decks': 'Chọn kiểu thẻ',
   'study.deck.trigram': '8 quái',
