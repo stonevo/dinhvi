@@ -706,9 +706,10 @@ body::before {
 .topbar {
   position: relative; border-bottom: 0; color: var(--band-ink);
   background: var(--band);
-  box-shadow: 0 0 0 100vmax var(--band); clip-path: inset(0 -100vmax);
   padding-left: 0; padding-right: 0;
 }
+/* Nền dải tràn hết chiều ngang (không dùng clip-path để menu xổ không bị cắt). */
+.topbar::before { content: ''; position: absolute; top: 0; bottom: 0; left: -100vmax; right: -100vmax; background: var(--band); z-index: -1; }
 .topbar::after {
   content: ''; position: absolute; left: -100vmax; right: -100vmax; bottom: 0; height: 2px;
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
