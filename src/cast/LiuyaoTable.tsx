@@ -73,7 +73,9 @@ export function LiuyaoTable({
         </table>
       </div>
 
+      {chart.assessment && <PatternCard a={chart.assessment} />}
       {chart.assessment?.useGod && <UseGodCard a={chart.assessment.useGod} />}
+      {chart.assessment?.timing && <TimingCard t={chart.assessment.timing} />}
 
       {chart.missing.length > 0 && <p className="small muted">{t('liuyao.missing', { list: chart.missing.map((m) => m.label).join(', ') })}</p>}
 
@@ -187,6 +189,58 @@ function UseGodCard({ a }: { a: NonNullable<NonNullable<LiuyaoChart['assessment'
         </p>
       ))}
       <p className="small muted">{t('liuyao.assessNote')}</p>
+    </div>
+  );
+}
+
+/** Cấp quẻ: lục hợp / lục xung, phản ngâm / phục ngâm; tam hợp cục; tam hình. */
+function PatternCard({ a }: { a: NonNullable<LiuyaoChart['assessment']> }) {
+  const h = a.hexagram;
+  const items: { text: string; source?: string }[] = [];
+  for (const r of h.reasons) items.push({ text: r.label, source: r.source });
+  for (const c of a.sanHe)
+    items.push({ text: `${c.label} — ${c.statusLabel}${c.useGodRole ? ` · ${c.useGodRole.label}` : ''}`, source: c.reasons[0]?.source });
+  for (const x of a.xing) items.push({ text: `${x.label}${x.status === 'virtual' ? ' (thiếu một chi)' : ''} — ${x.weight}`, source: x.reasons[0]?.source });
+  if (!items.length && !h.primaryLabel && !h.transformedLabel) return null;
+  return (
+    <div className="card stack">
+      <p className="small-caps">{t('liuyao.patterns')}</p>
+      {(h.primaryLabel || h.transformedLabel || h.transitionLabel) && (
+        <p className="small">
+          {[
+            h.primaryLabel && `${t('liuyao.primary')}: ${h.primaryLabel.split(' (')[0]}`,
+            h.transformedLabel && `${t('liuyao.transformed')}: ${h.transformedLabel.split(' (')[0]}`,
+          ]
+            .filter(Boolean)
+            .join(' · ')}
+        </p>
+      )}
+      <ul className="small">
+        {items.map((it, i) => (
+          <li key={i}>
+            {it.text} {it.source && <span className="muted">({it.source})</span>}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+/** Gợi ý ứng kỳ theo nguyên tắc sách — chỉ là gợi ý. */
+function TimingCard({ t: tm }: { t: NonNullable<NonNullable<LiuyaoChart['assessment']>['timing']> }) {
+  if (!tm.hints.length) return null;
+  return (
+    <div className="card stack">
+      <p className="small-caps">{t('liuyao.timing', { target: tm.target.label })}</p>
+      <ul className="small">
+        {tm.hints.map((h) => (
+          <li key={h.key}>
+            {h.label}
+            {h.branchLabels.length > 0 && <> — {h.branchLabels.join(', ')}</>} <span className="muted">({h.source})</span>
+          </li>
+        ))}
+      </ul>
+      <p className="small muted">{tm.disclaimer}</p>
     </div>
   );
 }

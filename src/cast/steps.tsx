@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { t } from '../i18n';
 import { tossCoins, type LineValue } from '../lib/cast';
-import { playBell, playCoins, prefersReducedMotion, vibrate } from '../lib/feedback';
+import { playBowl, playCoins, prefersReducedMotion, vibrate } from '../lib/feedback';
 import { CAST_METHODS, CONTEXT_KEYS, type CastMethod, type ContextKey } from '../types/schema';
 import { CoinToss } from '../ui/CoinToss';
+import { Taiji } from '../ui/Taiji';
+import { RitualLines } from './Ritual';
 
 export type AskDraft = {
   question: string;
@@ -18,7 +20,10 @@ export type AskDraft = {
 export function AskStep({ draft, onChange, onNext }: { draft: AskDraft; onChange: (d: AskDraft) => void; onNext: () => void }) {
   const ok = draft.question.trim().length >= 3;
   return (
-    <section className="stack">
+    <section className="stack ask-scroll">
+      <span className="seal" aria-hidden>
+        問
+      </span>
       <label className="field">
         <span>{t('ritual.question')}</span>
         <textarea rows={3} value={draft.question} placeholder={t('ritual.questionPlaceholder')} onChange={(e) => onChange({ ...draft, question: e.target.value })} />
@@ -88,11 +93,12 @@ export function AskStep({ draft, onChange, onNext }: { draft: AskDraft; onChange
   );
 }
 
-/** Bước 2: tĩnh tâm — nhịp thở chậm, có thể bỏ qua. */
-export function CalmStep({ question, onDone }: { question: string; onDone: () => void }) {
+/** Bước 2: tĩnh tâm — chuông ngân, Thái cực thở theo nhịp, ba nhịp thở; có thể bỏ qua. */
+export function CalmStep({ sound, onDone }: { sound: boolean; onDone: () => void }) {
   const [phase, setPhase] = useState<'in' | 'out'>('in');
   const [breaths, setBreaths] = useState(0);
   useEffect(() => {
+    if (sound) playBowl();
     const id = setInterval(() => {
       setPhase((p) => {
         if (p === 'out') setBreaths((b) => b + 1);
@@ -100,23 +106,23 @@ export function CalmStep({ question, onDone }: { question: string; onDone: () =>
       });
     }, 4000);
     return () => clearInterval(id);
-  }, []);
+  }, [sound]);
+  const settled = breaths >= 3;
   return (
     <section className="calm">
-      <blockquote className="cast-question">{question}</blockquote>
-      <div className="calm-circle" aria-hidden />
-      <p className="lead">{t(phase === 'in' ? 'ritual.breatheIn' : 'ritual.breatheOut')}</p>
-      <p className="small muted">{t('ritual.calmHint', { n: breaths })}</p>
-      <div className="row">
-        <button type="button" className="primary" onClick={onDone}>
-          {t('ritual.ready')}
-        </button>
+      <div className={'calm-taiji ' + phase}>
+        <Taiji size={150} />
       </div>
+      <p className="calm-phase">{t(phase === 'in' ? 'ritual.breatheIn' : 'ritual.breatheOut')}</p>
+      <p className="calm-hint">{settled ? t('ritual.settled') : t('ritual.calmHint', { n: breaths })}</p>
+      <button type="button" className={'ritual-btn' + (settled ? ' glow' : '')} onClick={onDone}>
+        {settled ? t('ritual.begin') : t('ritual.ready')}
+      </button>
     </section>
   );
 }
 
-/** Gieo ba đồng xu bằng máy: mỗi lần một hào, có hiệu ứng, tiếng, rung. */
+/** Gieo ba đồng xu bằng máy: mỗi lần một hào; xu bay lên, xoay, rơi, kêu và rung khi chạm. */
 export function CoinsCaster({ sound, onDone }: { sound: boolean; onDone: (lines: LineValue[], coins: (2 | 3)[][]) => void }) {
   const [lines, setLines] = useState<LineValue[]>([]);
   const [log, setLog] = useState<(2 | 3)[][]>([]);
@@ -129,41 +135,39 @@ export function CoinsCaster({ sound, onDone }: { sound: boolean; onDone: (lines:
     const { coins, value } = tossCoins();
     const nextLines = [...lines, value];
     const nextLog = [...log, coins];
+    const quick = prefersReducedMotion();
     setTossing(true);
-    if (sound) {
-      playCoins();
-      vibrate([20, 40, 20]);
-    }
     timer.current = window.setTimeout(
       () => {
+        // Xu chạm mặt: tiếng leng keng và rung nhẹ.
+        if (sound) {
+          playCoins();
+          vibrate([15, 30, 15, 30, 15]);
+        }
         setTossing(false);
         setLines(nextLines);
         setLog(nextLog);
-        if (nextLines.length === 6) {
-          if (sound) {
-            playBell();
-            vibrate(60);
-          }
-          onDone(nextLines, nextLog);
-        }
+        if (nextLines.length === 6) timer.current = window.setTimeout(() => onDone(nextLines, nextLog), quick ? 0 : 700);
       },
-      prefersReducedMotion() ? 0 : 950,
+      quick ? 0 : 1100,
     );
   }
 
   const n = lines.length + 1;
   return (
-    <section className="stack center">
+    <section className="caster">
+      <RitualLines lines={lines} />
       <CoinToss coins={tossing ? null : (log.at(-1) ?? null)} tossing={tossing} />
-      <LinesSoFar lines={lines} />
+      <p className="calm-hint">
+        {lines.length
+          ? t('ritual.lastLine', { n: lines.length, v: lines.at(-1)!, name: t(`cast.value.${lines.at(-1)}` as 'cast.value.6') })
+          : t('ritual.coinsHint')}
+      </p>
       {lines.length < 6 && (
-        <div className="row">
-          <button type="button" className="primary" disabled={tossing} onClick={toss}>
-            {t('cast.toss', { n })}
-          </button>
-        </div>
+        <button type="button" className="ritual-btn" disabled={tossing} onClick={toss}>
+          {t('ritual.tossLine', { n })}
+        </button>
       )}
-      <p className="small muted">{t('ritual.coinsHint')}</p>
     </section>
   );
 }
@@ -184,15 +188,19 @@ export function ManualCaster({ onDone }: { onDone: (lines: LineValue[]) => void 
     { v: 9, heads: 3 },
   ];
   return (
-    <section className="stack">
-      <p>{t('manual.intro')}</p>
-      <LinesSoFar lines={lines} />
+    <section className="caster">
+      <RitualLines lines={lines} />
+      <p className="calm-hint">{t('manual.intro')}</p>
       {lines.length < 6 && (
         <>
-          <p className="small-caps">{t('manual.line', { n })}</p>
-          <div className="study-options">
+          <p className="ritual-step">{t('manual.line', { n })}</p>
+          <div className="ritual-options">
             {options.map((o) => (
-              <button key={o.v} type="button" className="study-option" onClick={() => pick(o.v)}>
+              <button key={o.v} type="button" className="ritual-option" onClick={() => pick(o.v)}>
+                <span className="heads-dots" aria-hidden>
+                  {'●'.repeat(o.heads)}
+                  {'○'.repeat(3 - o.heads)}
+                </span>
                 {t('manual.option', { heads: o.heads, tails: 3 - o.heads, v: o.v, name: t(`cast.value.${o.v}` as 'cast.value.6') })}
               </button>
             ))}
@@ -200,29 +208,10 @@ export function ManualCaster({ onDone }: { onDone: (lines: LineValue[]) => void 
         </>
       )}
       {lines.length > 0 && lines.length < 6 && (
-        <div className="row">
-          <button type="button" onClick={() => setLines(lines.slice(0, -1))}>
-            {t('manual.undo')}
-          </button>
-        </div>
+        <button type="button" className="ritual-link" onClick={() => setLines(lines.slice(0, -1))}>
+          {t('manual.undo')}
+        </button>
       )}
     </section>
-  );
-}
-
-/** Các hào đã có, vẽ từ dưới lên (hào mới nhất ở trên). */
-function LinesSoFar({ lines }: { lines: LineValue[] }) {
-  if (!lines.length) return null;
-  return (
-    <ol className="lines-so-far" reversed>
-      {[...lines].reverse().map((v, i) => (
-        <li key={i}>
-          <span className={'bar ' + (v === 7 || v === 9 ? 'yang' : 'yin')} />
-          <span className="small muted">
-            {t('line.n', { n: lines.length - i })} · {v} · {t(`cast.value.${v}` as 'cast.value.6')}
-          </span>
-        </li>
-      ))}
-    </ol>
   );
 }

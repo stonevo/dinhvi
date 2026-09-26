@@ -5,7 +5,10 @@ import {
   ADVANCE_PAIRS,
   BRANCH_HANZI,
   PALACE_ORDER,
+  TIMING_DISCLAIMER,
   branchesClash,
+  branchesCombine,
+  hexagramPattern,
   hiddenSpirits,
   liuyaoChart,
   monthStatus,
@@ -507,5 +510,377 @@ describe('gợi ý dụng thần kèm nguồn', () => {
     const c1 = liuyaoChart(input);
     expect(JSON.parse(JSON.stringify(c1))).toEqual(c1);
     expect(liuyaoChart(input)).toEqual(c1);
+  });
+});
+
+// ---------- Lục hợp, tam hợp, tam hình, mộ, phản/phục ngâm, ứng kỳ ----------
+// Nguồn: docs/luc-hao-nguon.md mục 10–15. Ca có tên chương là ví dụ nguyên văn của sách;
+// ghi chú ngay trên mỗi ca là lời đoán của sách.
+
+const hintBranches = (chart: ReturnType<typeof liuyaoChart>, key: string) =>
+  chart.assessment.timing!.hints.filter((h) => h.key === key).flatMap((h) => h.branches);
+
+describe('bảng lục hợp, quẻ lục hợp / lục xung', () => {
+  it('lục hợp Tý-Sửu, Dần-Hợi, Mão-Tuất, Thìn-Dậu, Tỵ-Thân, Ngọ-Mùi', () => {
+    const pairs = [[0, 1], [2, 11], [3, 10], [4, 9], [5, 8], [6, 7]];
+    for (const [a, b] of pairs) expect(branchesCombine(a, b) && branchesCombine(b, a)).toBe(true);
+    expect(branchesCombine(0, 6)).toBe(false);
+    expect(branchesCombine(2, 5)).toBe(false);
+  });
+  it('否, 泰, 復 là lục hợp; 乾, 无妄, 大壯, 坤 là lục xung (增刪卜易·六合章: 天地否卦內外六爻自相和合)', () => {
+    expect([12, 11, 24].map(hexagramPattern)).toEqual(['sixHe', 'sixHe', 'sixHe']);
+    expect([1, 25, 34, 2].map(hexagramPattern)).toEqual(['sixClash', 'sixClash', 'sixClash', 'sixClash']);
+    expect(hexagramPattern(44)).toBeNull();
+  });
+});
+
+describe('hợp bán, Tý Mão hình — 增刪卜易·六合章 (申月丙子日, 明夷 hóa 小過)', () => {
+  // Sách: 「合住必有事絆，不能動身」, 「夫應不去者，世動而逢合也」; 「卯木子孫申月絕之，子日刑之」.
+  const chart = liuyaoChart({ lines: [9, 8, 7, 6, 8, 8], day: sb(2, 0), month: sb(6, 8) });
+  const a = chart.assessment.lines;
+  it('an đúng quẻ, Thế hào 4 Sửu', () => {
+    expect(chart.primary.number).toBe(36);
+    expect(chart.transformed?.number).toBe(62);
+    expect(chart.palace.shi).toBe(4);
+  });
+  it('hào 4 Sửu động gặp ngày Tý hợp → hợp bán, chờ ngày xung khai', () => {
+    expect(a[3].he).toMatchObject({ day: true, state: 'heBan' });
+    expect(a[3].he.reasons[0]).toMatchObject({ key: 'he-ban', source: expect.stringContaining('六合章') });
+  });
+  it('ngày Tý với hào 1 Mão động: Tý Mão tương hình', () => {
+    const x = chart.assessment.xing.find((i) => i.kind === 'ziMao')!;
+    expect(x).toMatchObject({ status: 'complete', active: true });
+    expect(x.positions).toContain(1);
+    expect(x.members.map((m) => m.source).sort()).toEqual(['day', 'moving']);
+  });
+});
+
+describe('lục xung biến lục hợp — 增刪卜易·六合章 (未月丁巳日, 離 hóa 旅)', () => {
+  // Sách: 「因得屢驗六沖變合，散而復聚，離而必合，此婚一定還成」.
+  const chart = liuyaoChart({ lines: [9, 8, 7, 7, 8, 7], day: sb(3, 5), month: sb(7, 7) });
+  it('離 lục xung → 旅 lục hợp: xung trung phùng hợp', () => {
+    expect(chart.transformed?.number).toBe(56);
+    const h = chart.assessment.hexagram;
+    expect(h).toMatchObject({ primary: 'sixClash', transformed: 'sixHe', transition: 'clashToHe' });
+    expect(h.patterns).toContain('chongZhongFengHe');
+    expect(h.reasons.find((r) => r.key === 'hex-clashToHe')?.effect).toBe(1);
+  });
+});
+
+describe('lục hợp biến lục hợp, tam hình mà sách bỏ qua — 增刪卜易·六合章 (卯月甲寅日, 困 hóa 節)', () => {
+  // Sách: 「亥水子孫化申金生之」, kết luận 「六合萬載安然」 — không nhắc tam hình.
+  const chart = liuyaoChart({ lines: [6, 7, 8, 9, 7, 8], day: sb(0, 2), month: sb(1, 3) });
+  it('困 → 節: lục hợp biến lục hợp', () => {
+    expect(chart.primary.number).toBe(47);
+    expect(chart.transformed?.number).toBe(60);
+    expect(chart.assessment.hexagram.transition).toBe('heToHe');
+  });
+  it('Dần (hào 1 động, ngày) hóa Tỵ, Hợi hóa Thân: đủ tam hình Dần Tỵ Thân nhưng chỉ là ghi chú (effect 0)', () => {
+    const x = chart.assessment.xing.find((i) => i.kind === 'yinSiShen')!;
+    expect(x).toMatchObject({ status: 'complete', active: true });
+    expect(x.reasons.every((r) => r.effect === 0)).toBe(true);
+    expect(x.weight).toContain('增刪卜易');
+  });
+});
+
+describe('tam hợp nội ngoại — 增刪卜易·六合章 (卯月丁巳日, 離 hóa 坤)', () => {
+  // Sách: 「內卦爲我村，亥卯未合成木局，外卦爲人村，巳酉丑合金局來克木，幸衰金不克旺木」, 「況系六沖卦變六沖」.
+  const chart = liuyaoChart({ lines: [9, 8, 9, 9, 8, 9], day: sb(3, 5), month: sb(1, 3) });
+  const byEl = (e: string) => chart.assessment.sanHe.find((s) => s.element === e)!;
+  it('nội quái: Hợi (3), Mão (1) động, Mão hóa Mùi → Mộc cục thành', () => {
+    const wood = byEl('wood');
+    expect(wood).toMatchObject({ status: 'formed', half: 'inner', missing: null });
+    expect(wood.members.map((m) => [m.branch, m.source, m.position])).toEqual([
+      [11, 'moving', 3], [3, 'moving', 1], [7, 'changed', 1],
+    ]);
+  });
+  it('ngoại quái: Tỵ (6), Dậu (4) động, Dậu hóa Sửu → Kim cục thành', () => {
+    const metal = byEl('metal');
+    expect(metal).toMatchObject({ status: 'formed', half: 'outer' });
+    expect(metal.members.find((m) => m.branch === 1)).toMatchObject({ source: 'changed', position: 4 });
+  });
+  it('tháng Mão: Mộc vượng, Kim tù (衰金不克旺木); lục xung biến lục xung', () => {
+    expect(monthStatus('wood', 'wood')).toBe('wang');
+    expect(monthStatus('wood', 'metal')).toBe('qiu');
+    expect(chart.assessment.hexagram.transition).toBe('clashToClash');
+  });
+});
+
+describe('hư nhất đãi dụng (tam hợp) — 增刪卜易·增刪黃金策千金賦章 (酉月乙巳日, 萃 hóa 否)', () => {
+  // Sách: 「巳日沖動亥月與發動之未爻﹐欲成三合﹐因少卯字﹐明年卯月必升﹐此乃虛一待用」.
+  const chart = liuyaoChart({ lines: [8, 8, 8, 7, 7, 6], day: sb(1, 5), month: sb(3, 9), topic: 'work' });
+  it('Hợi ám động (ngày Tỵ xung, tướng ở tháng Dậu), Mùi động, Mão chỉ là hào tĩnh → chờ ngày/tháng Mão', () => {
+    expect(chart.primary.number).toBe(45);
+    expect(chart.assessment.lines[3].day.clash?.kind).toBe('hiddenMove');
+    const wood = chart.assessment.sanHe.find((s) => s.element === 'wood')!;
+    expect(wood).toMatchObject({ status: 'staticMember', missing: 3 });
+    expect(wood.members.map((m) => m.source)).toEqual(['hiddenMove', 'static', 'moving']);
+  });
+  it('Mộc cục sinh Quan Quỷ Tỵ Hỏa (dụng thần) → cục nguyên thần; ứng kỳ có chi Mão', () => {
+    const wood = chart.assessment.sanHe.find((s) => s.element === 'wood')!;
+    expect(wood.useGodRole?.role).toBe('yuan');
+    expect(hintBranches(chart, 'sanhe-static')).toEqual([3]);
+  });
+});
+
+describe('tam hợp chờ hào tĩnh trị nhật — 卜筮正宗·十八問答第四問 (巳日, 乾 hóa 需)', () => {
+  // Sách: 「寅午戌三合官局生世，此缺必得．内少寅字发动，须寅日递呈可也．后果验此虚一待用也」.
+  const chart = liuyaoChart({ lines: [7, 7, 7, 9, 7, 9], day: sb(3, 5), month: sb(9, 9) });
+  it('Ngọ (4), Tuất (6) động; Dần (2) tĩnh → chờ ngày Dần; Thế Tuất ở trong cục', () => {
+    expect(chart.transformed?.number).toBe(5);
+    const fire = chart.assessment.sanHe.find((s) => s.element === 'fire')!;
+    expect(fire).toMatchObject({ status: 'staticMember', missing: 2, includesShi: true });
+    expect(fire.waits[0].branches).toEqual([2]);
+  });
+});
+
+describe('xung trung phùng hợp, hào phản ngâm — 增刪卜易·六沖章 (午月丙辰日, 恆 hóa 豫)', () => {
+  // Sách: 「世爻酉金化卯相沖及反復之卦，幸辰日合之，沖中逢合，又得戌土爲財，暗動生世」.
+  // 卜筮正宗·十八問答第十一問 cùng quẻ: 「正谓反吟卦也」.
+  const chart = liuyaoChart({ lines: [8, 9, 9, 7, 8, 8], day: sb(2, 4), month: sb(0, 6) });
+  const a = chart.assessment.lines;
+  it('hào 3 Dậu (Thế) hóa Mão hồi đầu xung, ngày Thìn hợp → xung trung phùng hợp', () => {
+    expect(chart.palace.shi).toBe(3);
+    expect(a[2].change).toMatchObject({ branch: 3, fanYin: true, fuYin: false });
+    expect(a[2].he.day).toBe(true);
+    expect(a[2].he.patterns).toEqual(['chongZhongFengHe']);
+  });
+  it('Tuất (hào 6) ám động; nội quái Tốn biến Khôn: hào phản ngâm', () => {
+    expect(a[5].day.clash?.kind).toBe('hiddenMove');
+    expect(chart.assessment.hexagram.inner.fanYin).toBe('branch');
+    expect(chart.assessment.hexagram.fanYin).toBe('inner');
+  });
+});
+
+describe('lục hợp biến lục xung — 增刪卜易·六沖章 (巳月甲寅日, 否 hóa 乾)', () => {
+  // Sách: 「獨嫌卦變六沖，合而變沖，不久之兆」.
+  const chart = liuyaoChart({ lines: [6, 6, 6, 7, 7, 7], day: sb(0, 2), month: sb(5, 5) });
+  it('hợp xứ phùng xung ở cấp quẻ', () => {
+    expect(chart.assessment.hexagram).toMatchObject({ primary: 'sixHe', transformed: 'sixClash', transition: 'heToClash' });
+    expect(chart.assessment.hexagram.patterns).toContain('heChuFengChong');
+  });
+});
+
+describe('nội ngoại phản ngâm — 增刪卜易·六沖章 (申月己卯日, 巽 hóa 坤)', () => {
+  // Sách: 「六沖亂室」; 卜筮正宗·十八問答第十三問 cùng quẻ: 「内外爻见反吟，乱冲乱击」.
+  const chart = liuyaoChart({ lines: [8, 9, 9, 8, 9, 9], day: sb(5, 3), month: sb(6, 8) });
+  it('hai quái Tốn → Khôn: ba chi đều xung', () => {
+    const h = chart.assessment.hexagram;
+    expect(h.fanYin).toBe('both');
+    expect([h.inner.fanYin, h.outer.fanYin]).toEqual(['branch', 'branch']);
+    expect(h.transition).toBe('clashToClash');
+  });
+});
+
+describe('phản ngâm với dụng thần — 增刪卜易·反伏章', () => {
+  it('卯月壬申日 比 hóa 井: nội quái phản ngâm, Thế Quan Quỷ Mão hóa Dậu hồi đầu xung khắc → hung', () => {
+    // Sách: 「因內卦反伏，事有反復，不宜世爻絕於申日又化回頭沖克，此行不吉」.
+    const chart = liuyaoChart({ lines: [8, 6, 6, 8, 7, 8], day: sb(8, 8), month: sb(1, 3), topic: 'work' });
+    expect(chart.transformed?.number).toBe(48);
+    expect(chart.assessment.hexagram.inner.fanYin).toBe('branch');
+    const ug = chart.assessment.useGod!;
+    expect(ug.primary).toBe(3);
+    expect(ug.relationReasons.find((r) => r.key === 'fan-yin-use-god-hit')?.effect).toBe(-1);
+  });
+  it('卯月己亥日 臨 hóa 中孚: ngoại quái phản ngâm, Quan Quỷ không hóa xung khắc → phản phục mà vẫn thành', () => {
+    // Sách: 「許之卽升…復任江西者，外卦反伏，去之而復反也」.
+    const chart = liuyaoChart({ lines: [7, 7, 8, 8, 6, 6], day: sb(5, 11), month: sb(1, 3), topic: 'work' });
+    expect(chart.transformed?.number).toBe(61);
+    expect(chart.assessment.hexagram.outer.fanYin).toBe('branch');
+    expect(chart.assessment.useGod!.relationReasons.map((r) => r.key)).toContain('fan-yin-use-god-ok');
+  });
+  it('卜筮正宗·反吟卦定例: 姤 hóa 小畜 là quái phản ngâm (Càn–Tốn đổi chỗ)', () => {
+    const chart = liuyaoChart({ lines: [6, 7, 7, 9, 7, 7], day: sb(0, 0), month: sb(0, 0) });
+    expect(chart.transformed?.number).toBe(9);
+    const h = chart.assessment.hexagram;
+    expect([h.inner.fanYin, h.outer.fanYin]).toEqual(['trigram', 'trigram']);
+  });
+});
+
+describe('phục ngâm — 增刪卜易·反伏章, 卜筮正宗·伏吟卦定例', () => {
+  it('申月癸巳日 姤 hóa 恆: ngoại quái Càn → Chấn, chi y nguyên; ứng kỳ có chi Thìn (xung Tuất)', () => {
+    // Sách: 「獨憂卦得伏吟…伏吟欲歸而不能，辰年可歸」.
+    const chart = liuyaoChart({ lines: [8, 7, 7, 7, 9, 9], day: sb(9, 5), month: sb(6, 8), useGod: 'parent' });
+    expect(chart.transformed?.number).toBe(32);
+    expect(chart.assessment.hexagram).toMatchObject({ fuYin: 'outer', fanYin: 'none' });
+    expect(chart.assessment.lines[5].change?.fuYin).toBe(true);
+    expect(chart.assessment.useGod!.primary).toBe(6);
+    expect(hintBranches(chart, 'fu-yin-open')).toEqual([4]);
+  });
+  it('无妄 hóa 大壯: nội ngoại phục ngâm (卜筮正宗·十八問答第六問)', () => {
+    const chart = liuyaoChart({ lines: [7, 6, 6, 7, 9, 9], day: sb(1, 3), month: sb(6, 8) });
+    expect(chart.transformed?.number).toBe(34);
+    expect(chart.assessment.hexagram.fuYin).toBe('both');
+  });
+});
+
+describe('tùy quỷ nhập mộ — 增刪卜易·隨鬼入墓章', () => {
+  it('申月戊辰日 同人 (vợ hỏi bệnh chồng): Hợi Quan Quỷ trì Thế mộ ở ngày Thìn, tướng ở tháng Thân → mộ không thật; tuần không chờ ngày Tỵ', () => {
+    // Sách: 「古法斷之必死﹐予曰﹕不獨不死﹐明日愈…明日己巳沖起亥水」.
+    const chart = liuyaoChart({ lines: [7, 8, 7, 7, 9, 7], day: sb(4, 4), month: sb(6, 8), topic: 'love', askerGender: 'female' });
+    expect(chart.primary.number).toBe(13);
+    const t = chart.assessment.lines[2].tomb!;
+    expect(t).toMatchObject({ branch: 4, kinds: ['day'], withGhost: true, genuine: false, openBranch: 10 });
+    expect(chart.assessment.useGod!.primary).toBe(3);
+    expect(hintBranches(chart, 'void-fill')).toEqual([11, 5]);
+  });
+  it('申月己丑日 恆 (tự hỏi bệnh): Dậu Quan Quỷ trì Thế mộ ở ngày Sửu, vượng → mộ không thật; chờ ngày Mùi xung khai', () => {
+    // Sách: 「因世爻旺相﹐許未日愈﹐果起牀於未日者﹐沖開丑墓之日而出也」.
+    const chart = liuyaoChart({ lines: [8, 7, 7, 7, 8, 8], day: sb(5, 1), month: sb(8, 8), topic: 'health' });
+    const t = chart.assessment.lines[2].tomb!;
+    expect(t).toMatchObject({ kinds: ['day'], withGhost: true, genuine: false });
+    expect(t.reasons[0]).toContain('vượng');
+    expect(hintBranches(chart, 'tomb-open')).toEqual([7]);
+  });
+  it('未月戊辰日 蠱: Dậu nhập động mộ (Sửu động) và hóa mộ, nhưng Sửu bị tháng Mùi xung phá → dễ ra', () => {
+    // Sách: 「世爻隨鬼入動墓﹐又動而化墓﹐古以爲凶﹐予以爲吉。日月生世﹐丑墓月破﹐破羅破网﹐容易而出」.
+    const chart = liuyaoChart({ lines: [6, 7, 9, 8, 8, 7], day: sb(4, 4), month: sb(7, 7), useGod: 'self' });
+    expect(chart.primary.number).toBe(18);
+    expect(chart.transformed?.number).toBe(41);
+    const t = chart.assessment.lines[2].tomb!;
+    expect(t).toMatchObject({ kinds: ['moving', 'change'], movingPositions: [1], withGhost: true, genuine: false });
+    expect(t.reasons.join(' ')).toContain('xung phá');
+  });
+  it('戌月甲寅日 小過 (hỏi thi): Ngọ nhập nguyệt mộ, động mộ, hóa mộ; nhật nguyệt hợp thành Hỏa cục; chờ Thìn xung khai', () => {
+    // Sách: 「世爻隨官入三墓﹐動墓﹐化墓﹐又入月德之墓﹐明歲辰年沖開墓庫…日月合成官局旺相當時」.
+    const chart = liuyaoChart({ lines: [8, 8, 7, 9, 8, 6], day: sb(0, 2), month: sb(0, 10), useGod: 'self' });
+    expect(chart.primary.number).toBe(62);
+    const t = chart.assessment.lines[3].tomb!;
+    expect(t).toMatchObject({ kinds: ['month', 'moving', 'change'], withGhost: true, genuine: false });
+    const fire = chart.assessment.sanHe.find((s) => s.element === 'fire')!;
+    expect(fire).toMatchObject({ status: 'formed', useGodRole: { role: 'useGod' } });
+    // Dần có cả ở nhật thần lẫn hào biến (Tuất hóa Dần); engine ưu tiên hào biến, Tuất có cả hào động lẫn nguyệt kiến.
+    expect(fire.members.map((m) => m.source)).toEqual(['changed', 'moving', 'moving']);
+    expect(hintBranches(chart, 'tomb-open')).toEqual([4]);
+  });
+  it('ca dựng tay: hào hưu tù, bị hào động khắc, mộ không bị phá → nhập mộ thật', () => {
+    // 乾 động hào 1 (Tý hóa Sửu), tháng Tý, ngày Giáp Tuất: Ngọ (hào 4) tử ở tháng Thủy, bị Tý động khắc, mộ ở ngày Tuất.
+    const chart = liuyaoChart({ lines: [9, 7, 7, 7, 7, 7], day: sb(0, 10), month: sb(0, 0), useGod: 'officer' });
+    const t = chart.assessment.lines[3].tomb!;
+    expect(t).toMatchObject({ kinds: ['day'], genuine: true, withGhost: false });
+    expect(chart.assessment.useGod!.relationReasons.find((r) => r.key === 'tomb-genuine')?.effect).toBe(-1);
+  });
+});
+
+describe('tam hình — 增刪卜易·三刑章 (寅月庚申日, 家人 hóa 離), 卜筮正宗·十八問答第十四問', () => {
+  // 增刪卜易: 「巳火子孫旣當春令，子孫旺相許之可治，後死於寅日寅時…獨此一卦」 — chính tác giả nói hiếm khi nghiệm.
+  const chart = liuyaoChart({ lines: [7, 8, 7, 6, 9, 7], day: sb(6, 8), month: sb(4, 2), useGod: 'child' });
+  it('tháng Dần, ngày Thân, Tỵ Tử Tôn (hào 5 động) đủ tam hình Dần Tỵ Thân', () => {
+    expect(chart.primary.number).toBe(37);
+    const x = chart.assessment.xing.find((i) => i.kind === 'yinSiShen')!;
+    expect(x).toMatchObject({ status: 'complete', active: true, involvesUseGod: true });
+    expect(x.members.map((m) => m.source)).toEqual(['month', 'moving', 'day']);
+  });
+  it('dụng thần vượng tướng nên engine chỉ ghi chú (effect 0) theo quy tắc của sách', () => {
+    const r = chart.assessment.useGod!.relationReasons.find((i) => i.key.startsWith('xing-use-god'))!;
+    expect(r).toMatchObject({ key: 'xing-use-god-note', effect: 0 });
+  });
+});
+
+describe('tam hình thiếu một chi — 增刪卜易·增刪黃金策千金賦章 (巳月未日, 困 hóa 兌)', () => {
+  // Sách: 「世爻寅木化出巳爻﹐寅能刑巳﹐三刑少申字﹐防申日之危﹐果卒於申日」.
+  it('Dần động hóa Tỵ, thiếu Thân → hư nhất đãi dụng, chờ ngày Thân', () => {
+    const chart = liuyaoChart({ lines: [6, 7, 8, 7, 7, 8], day: sb(1, 7), month: sb(5, 5) });
+    const x = chart.assessment.xing.find((i) => i.kind === 'yinSiShen')!;
+    expect(x).toMatchObject({ status: 'virtual', missing: 8 });
+    expect(x.weight).toContain('黃金策');
+  });
+});
+
+describe('tự hình, hợp khởi, hợp trung đới khắc (ca dựng tay)', () => {
+  it('乾 tĩnh, ngày Ngọ: hào 4 Ngọ gặp Ngọ → tự hình (điều kiện là quy ước engine)', () => {
+    const chart = liuyaoChart({ lines: still('111111'), day: sb(0, 6), month: sb(0, 0) });
+    const x = chart.assessment.xing.find((i) => i.kind === 'self')!;
+    expect(x).toMatchObject({ branches: [6], positions: [4], active: false });
+    expect(x.reasons[0].source).toContain('quy ước của engine');
+  });
+  it('乾 tĩnh, ngày Sửu: hào 1 Tý tĩnh gặp hợp → hợp khởi', () => {
+    const chart = liuyaoChart({ lines: still('111111'), day: sb(1, 1), month: sb(0, 0) });
+    expect(chart.assessment.lines[0].he).toMatchObject({ day: true, state: 'heQi' });
+    expect(chart.assessment.lines[0].he.reasons[0].effect).toBe(1);
+  });
+  it('乾 động hào 1: Tý hóa Sửu → hợp trung đới khắc; tháng Tý vượng nên luận hợp (卜筮正宗·合中帶克論)', () => {
+    const chart = liuyaoChart({ lines: [9, 7, 7, 7, 7, 7], day: sb(0, 0), month: sb(0, 0) });
+    const he = chart.assessment.lines[0].he;
+    expect(he).toMatchObject({ change: true, changeKind: 'heWithKe' });
+    expect(he.reasons.find((r) => r.key === 'he-change-with-ke')?.effect).toBe(1);
+  });
+  it('震 động hào 4-5-6 → 益: hào 5 Thân hóa Tỵ là hóa hợp hóa trường sinh; tháng Dần thì là tam hình hội tụ', () => {
+    const lines: LineValue[] = [7, 8, 8, 9, 6, 6];
+    const plain = liuyaoChart({ lines, day: sb(0, 0), month: sb(0, 0) });
+    expect(plain.transformed?.number).toBe(42);
+    expect(plain.assessment.lines[4].change?.branch).toBe(5);
+    expect(plain.assessment.lines[4].he.changeKind).toBe('heChangSheng');
+    expect(plain.assessment.lines[4].he.reasons.find((r) => r.key === 'he-change-changsheng')?.effect).toBe(1);
+    const yin = liuyaoChart({ lines, day: sb(0, 0), month: sb(0, 2) });
+    expect(yin.assessment.lines[4].he.reasons.find((r) => r.key === 'he-change-changsheng')?.effect).toBe(-1);
+  });
+  it('hào tĩnh hợp hào tĩnh: không tính hợp (增刪卜易: 「兩爻皆動﹐始爲合」)', () => {
+    // 否 tĩnh: ba cặp hào đều hợp nhưng không hào nào động.
+    const chart = liuyaoChart({ lines: still('000111'), day: sb(0, 0), month: sb(0, 0) });
+    expect(chart.assessment.lines[0].he).toMatchObject({ state: null, staticPairs: [4] });
+  });
+});
+
+describe('ứng kỳ', () => {
+  it('增刪卜易·月破章 辰月戊子日 乾 hóa 夬: phá mà gặp hợp (Mão), hóa Mùi (ngày Mùi về)', () => {
+    // Sách: 「卯日有信﹐午未日必歸…應卯日得信者﹐破而逢合之日也。應未日歸者﹐父化未土旬空出空之日到也」.
+    const chart = liuyaoChart({ lines: [7, 7, 7, 7, 7, 9], day: sb(4, 0), month: sb(2, 4), useGod: 'self' });
+    const t = chart.assessment.timing!;
+    expect(t.target).toMatchObject({ kind: 'line', position: 6, branch: 10 });
+    expect(hintBranches(chart, 'break-fill')).toEqual([10, 3]);
+    expect(hintBranches(chart, 'change-value')).toEqual([10, 7]);
+    expect(t.disclaimer).toBe(TIMING_DISCLAIMER);
+    expect(t.hints.every((h) => h.source.length > 0)).toBe(true);
+  });
+  it('增刪卜易·月破章 亥月己丑日 兌 hóa 訟: Quan Quỷ Tỵ nguyệt phá → năm/ngày thực phá Tỵ', () => {
+    // Sách: 「前卦官臨月破﹐定於實破之年﹐果於巳年承襲長房世職」.
+    const chart = liuyaoChart({ lines: [9, 7, 8, 7, 7, 6], day: sb(5, 1), month: sb(1, 11), topic: 'work' });
+    expect(hintBranches(chart, 'break-fill')).toContain(5);
+  });
+  it('增刪卜易·六沖章 巳月戊戌日 益: Thìn Tài trì Thế tuần không, ngày Tuất xung → ứng ngay', () => {
+    // Sách: 「辰土財爻持世，因值旬空，戌日沖空塡實，本日辰得財」.
+    const chart = liuyaoChart({ lines: [7, 8, 8, 8, 7, 7], day: sb(4, 10), month: sb(5, 5), topic: 'money' });
+    expect(chart.primary.number).toBe(42);
+    expect(chart.assessment.useGod!.primary).toBe(3);
+    const h = chart.assessment.timing!.hints.find((x) => x.key === 'void-fill')!;
+    expect(h.branches).toEqual([10]);
+    expect(h.label).toContain('ngay');
+  });
+  it('dụng thần vắng, có phục thần: gợi ý xung khai phi thần', () => {
+    const chart = liuyaoChart({ lines: still('011111'), day: sb(0, 0), month: sb(0, 0), topic: 'money' });
+    const t = chart.assessment.timing!;
+    expect(t.target).toMatchObject({ kind: 'hidden', position: 2 });
+    expect(hintBranches(chart, 'hidden-flying-open')).toEqual([5]); // phi thần Hợi → ngày Tỵ
+  });
+  it('không có dụng thần → timing null; các khối mới vẫn có và JSON hóa được', () => {
+    const chart = liuyaoChart({ lines: [9, 8, 9, 9, 8, 9], day: sb(3, 5), month: sb(1, 3) });
+    expect(chart.assessment.timing).toBeNull();
+    expect(chart.assessment.sanHe.length).toBe(2);
+    expect(JSON.parse(JSON.stringify(chart))).toEqual(chart);
+  });
+});
+
+describe('nguồn cho mọi lý do mới', () => {
+  it('mọi Reason trong các khối mới đều có source', () => {
+    const inputs = [
+      { lines: [9, 8, 7, 6, 8, 8] as LineValue[], day: sb(2, 0), month: sb(6, 8), topic: 'work' as const },
+      { lines: [8, 9, 9, 7, 8, 8] as LineValue[], day: sb(2, 4), month: sb(0, 6), topic: 'money' as const },
+      { lines: [8, 8, 7, 9, 8, 6] as LineValue[], day: sb(0, 2), month: sb(0, 10), useGod: 'self' as const },
+    ];
+    for (const input of inputs) {
+      const a = liuyaoChart(input).assessment;
+      const rs = [
+        ...a.lines.flatMap((l) => l.he.reasons),
+        ...a.hexagram.reasons,
+        ...a.sanHe.flatMap((s) => s.reasons),
+        ...a.xing.flatMap((x) => x.reasons),
+        ...(a.useGod?.relationReasons ?? []),
+      ];
+      expect(rs.length).toBeGreaterThan(0);
+      for (const r of rs) expect(r.source).toMatch(/[一-鿿]|engine/);
+      for (const h of a.timing?.hints ?? []) expect(h.source.length).toBeGreaterThan(0);
+      for (const l of a.lines) if (l.tomb) expect(l.tomb.source).toContain('隨鬼入墓章');
+    }
   });
 });

@@ -83,3 +83,24 @@ Engine không phụ thuộc phần diễn giải.
 - ✅ (bổ sung) Dụng thần theo chủ đề đã đối chiếu Tăng San Bốc Dịch và Bốc Phệ Chính Tông (khớp); có ô chọn Dụng thần bằng tay.
 - Mai Hoa theo chữ Quốc ngữ là cách thích ứng hiện đại, app ghi rõ điều này. Chữ Hán đếm nét theo Unihan kTotalStrokes (bản phồn thể), không theo cách tính bộ thủ Khang Hy.
 - Rung không chạy trên iPhone (Safari không hỗ trợ `navigator.vibrate`).
+
+## Việc tiếp theo (ghi 26/09/2026)
+| # | Việc | Trạng thái |
+|---|---|---|
+| 1 | Lục Hào: lục hợp (hào hợp nhật / nguyệt, động hợp, hóa hợp; hợp khởi, hợp trú, xung khai) | ✅ |
+| 2 | Lục Hào: tam hợp cục (động hào hợp thành cục, cục sinh / khắc Dụng thần) | ✅ |
+| 3 | Lục Hào: tam hình, tự hình | ✅ |
+| 4 | Lục Hào: tùy quỷ nhập mộ, nhập mộ nhật / động / hóa | ✅ |
+| 5 | Lục Hào: phản ngâm, phục ngâm (quẻ và hào) | ✅ |
+| 6 | Lục Hào: gợi ý ứng kỳ theo nguyên tắc sách (không vong thì xuất không, phá thì điền thực, động thì hợp / trị, tĩnh thì xung…), ghi rõ chỉ là gợi ý | ✅ |
+| 7 | Mọi quy tắc 1–6 kèm nguồn nguyên văn trong `luc-hao-nguon.md`; hiển thị trong bảng Lục Hào và khung Luận Dụng thần | ✅ |
+| — | Rung trên iPhone | ❌ không làm được (Safari không hỗ trợ `navigator.vibrate`) |
+
+## Góp ý thêm của người dùng: nghi thức chưa đủ trang trọng (26/09/2026) — ✅ đã làm
+- Không gian nghi thức toàn màn hình khi tĩnh tâm và gieo: nền đêm trầm, ánh nến, khói hương, vòng Bát quái xoay chậm, câu hỏi chữ vàng như lời khấn; Esc hoặc ✕ để rời.
+- Tĩnh tâm: tiếng chuông xoay (singing bowl), Thái cực thở theo nhịp, gợi ý ba nhịp thở rồi mới bắt đầu (vẫn bỏ qua được).
+- Xu: tiền cổ lỗ vuông bằng đồng, mặt chữ 開元通寶 / mặt lưng; tung lên, xoay, rơi có bóng, chạm đất mới kêu và rung.
+- Hào hiện dần thành vạch vàng từ dưới lên (hào động màu son); đủ sáu hào: chuông ngân, quẻ sáng lên, "Quẻ đã thành".
+- Bước viết câu hỏi trình bày như lá sớ (giấy, trục gỗ, dấu son 問).
+- Tôn trọng "giảm chuyển động" của hệ điều hành.
+- Menu chính có "Gieo quẻ ▾" xổ ra 5 cách lập quẻ và lịch sử.

@@ -14,8 +14,9 @@ import { CastHistory } from '../cast/CastHistory';
 import { CastResult, type CastView } from '../cast/CastResult';
 import { MeihuaCaster, linesFromMeihua, type MeihuaMethodKey } from '../cast/meihua';
 import { AskStep, CalmStep, CoinsCaster, ManualCaster, type AskDraft } from '../cast/steps';
+import { Formed, RitualShell } from '../cast/Ritual';
 
-type Stage = 'ask' | 'calm' | 'cast' | 'result';
+type Stage = 'ask' | 'calm' | 'cast' | 'formed' | 'result';
 
 const NEW_DRAFT: AskDraft = { question: '', method: 'coins', checkInDays: 30 };
 
@@ -70,7 +71,7 @@ export function CastPage() {
       askerGender: draft.gender,
       meihua: extra.meihua,
     });
-    setStage('result');
+    setStage('formed');
   }
 
   async function save() {
@@ -108,25 +109,22 @@ export function CastPage() {
       {stage === 'ask' && <p className="muted">{t('ritual.intro')}</p>}
 
       {stage === 'ask' && <AskStep draft={draft} onChange={setDraft} onNext={() => setStage('calm')} />}
-      {stage === 'calm' && <CalmStep question={draft.question} onDone={() => setStage('cast')} />}
-      {stage === 'cast' && (
-        <>
-          <blockquote className="cast-question">{draft.question}</blockquote>
-          {draft.method === 'coins' && <CoinsCaster sound={settings.castSound ?? true} onDone={(lines) => finish(lines)} />}
-          {draft.method === 'coins-manual' && <ManualCaster onDone={(lines) => finish(lines)} />}
-          {draft.method.startsWith('meihua') && (
-            <MeihuaCaster
-              method={draft.method as MeihuaMethodKey}
-              ziStartsNextDay={settings.ziStartsNextDay ?? true}
-              onDone={({ cast, at, input }) => finish(linesFromMeihua(cast), { at, input, meihua: cast })}
-            />
+      {(stage === 'calm' || stage === 'cast' || stage === 'formed') && (
+        <RitualShell question={draft.question} onExit={restart}>
+          {stage === 'calm' && <CalmStep sound={settings.castSound ?? true} onDone={() => setStage('cast')} />}
+          {stage === 'cast' && draft.method === 'coins' && <CoinsCaster sound={settings.castSound ?? true} onDone={(lines) => finish(lines)} />}
+          {stage === 'cast' && draft.method === 'coins-manual' && <ManualCaster onDone={(lines) => finish(lines)} />}
+          {stage === 'cast' && draft.method.startsWith('meihua') && (
+            <div className="ritual-form">
+              <MeihuaCaster
+                method={draft.method as MeihuaMethodKey}
+                ziStartsNextDay={settings.ziStartsNextDay ?? true}
+                onDone={({ cast, at, input }) => finish(linesFromMeihua(cast), { at, input, meihua: cast })}
+              />
+            </div>
           )}
-          <div className="row">
-            <button type="button" className="link" onClick={restart}>
-              {t('ritual.cancel')}
-            </button>
-          </div>
-        </>
+          {stage === 'formed' && view && <Formed lines={view.lines} data={data} sound={settings.castSound ?? true} onView={() => setStage('result')} />}
+        </RitualShell>
       )}
       {stage === 'result' && view && (
         <>

@@ -40,6 +40,29 @@ export function playCoins(): void {
   [0, 0.07, 0.13].forEach((dt, i) => clink(ac, t0 + dt, 1900 + i * 260));
 }
 
+/** Tiếng chuông xoay (singing bowl) mở đầu tĩnh tâm: âm trầm, ngân dài. */
+export function playBowl(): void {
+  const ac = audio();
+  if (!ac) return;
+  const at = ac.currentTime + 0.05;
+  const out = ac.createGain();
+  out.gain.setValueAtTime(0.0001, at);
+  out.gain.exponentialRampToValueAtTime(0.22, at + 0.08);
+  out.gain.exponentialRampToValueAtTime(0.0001, at + 6);
+  out.connect(ac.destination);
+  // Họa âm của bát đồng: lệch nhẹ để có tiếng "ngân" (beating).
+  for (const [f, g] of [[196, 1], [198.5, 0.7], [530, 0.35], [1010, 0.15]] as const) {
+    const osc = ac.createOscillator();
+    const gain = ac.createGain();
+    gain.gain.value = g;
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(f, at);
+    osc.connect(gain).connect(out);
+    osc.start(at);
+    osc.stop(at + 6.2);
+  }
+}
+
 /** Tiếng chuông nhỏ khi đủ sáu hào. */
 export function playBell(): void {
   const ac = audio();
