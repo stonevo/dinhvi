@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, introSectionSchema, lineTierSchema, trigramSchema, TRIGRAM_KEYS,
+  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, introSectionSchema, lineTierSchema, tenWingsBookSchema, trigramSchema, TRIGRAM_KEYS,
   type CommentaryPart, type Hexagram, type HexagramCommentary, type Line, type LinePosition, type LineTier, type Trigram,
 } from '../types/schema';
 import {
@@ -204,5 +204,25 @@ export function validateIntro(raw: unknown): string[] {
   const errors: string[] = [];
   const ids = parsed.data.map((s) => s.id);
   if (new Set(ids).size !== ids.length) errors.push('id bài bị trùng');
+  return errors;
+}
+
+/** Thập Dực: đủ năm thiên theo thứ tự, chương đánh số liền, Tự quái và Tạp quái mỗi quẻ đúng một lần. */
+export function validateTenWings(raw: unknown): string[] {
+  const parsed = z.array(tenWingsBookSchema).safeParse(raw);
+  if (!parsed.success) return zodErrors('tenwings', parsed.error);
+  const errors: string[] = [];
+  const want = ['he-tu-thuong', 'he-tu-ha', 'thuyet-quai', 'tu-quai', 'tap-quai'];
+  const ids = parsed.data.map((b) => b.id);
+  if (ids.join() !== want.join()) errors.push(`thứ tự thiên phải là ${want.join(', ')}`);
+  for (const b of parsed.data) {
+    b.chapters.forEach((c, i) => c.n !== i + 1 && errors.push(`${b.id}: chương ${c.n} sai thứ tự`));
+    if (b.id === 'tu-quai' || b.id === 'tap-quai') {
+      const seen = b.chapters.flatMap((c) => c.paras.flatMap((p) => p.hex ?? []));
+      const counts = new Map<number, number>();
+      seen.forEach((n) => counts.set(n, (counts.get(n) ?? 0) + 1));
+      for (let n = 1; n <= 64; n++) if (counts.get(n) !== 1) errors.push(`${b.id}: quẻ ${n} xuất hiện ${counts.get(n) ?? 0} lần`);
+    }
+  }
   return errors;
 }

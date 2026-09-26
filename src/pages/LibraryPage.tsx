@@ -11,6 +11,7 @@ import { LineReading } from '../ui/LineReading';
 import { TRIGRAM_SYMBOL } from '../flow/steps/Step2Trigrams';
 import { Term } from '../ui/Term';
 import { JudgmentClassic, LineClassic, WenyanClassic } from '../ui/Classic';
+import { HexTenWings } from './TenWingsPage';
 
 /** Thư viện: tra cứu 64 quẻ. */
 export function LibraryPage() {
@@ -116,6 +117,7 @@ export function HexagramPage() {
 
       <section>
         <h2>{t('library.sequence')}</h2>
+        <HexTenWings n={num} />
         <p className="muted">{h.sequenceNote}</p>
         <p className="row-inline">
           {prev && <HexLink data={data} n={prev} label={`← ${t('library.prev')}`} />}

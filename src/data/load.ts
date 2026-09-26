@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramContextsSchema, introSectionSchema, hexagramSchema, lineTierSchema, trigramSchema,
-  type Hexagram, type HexagramCommentary, type HexagramContexts, type IntroSection, type LineTier, type Trigram, type TrigramKey,
+  hexagramCommentarySchema, hexagramContextsSchema, introSectionSchema, hexagramSchema, lineTierSchema, tenWingsBookSchema, trigramSchema,
+  type Hexagram, type HexagramCommentary, type HexagramContexts, type IntroSection, type LineTier, type TenWingsBook, type Trigram, type TrigramKey,
 } from '../types/schema';
 
 // Dữ liệu tĩnh nằm ở public/data để người tự host sửa được mà không build lại.
@@ -139,6 +139,28 @@ export function useIntro(): IntroSection[] | null {
       introCache = null;
     });
     introCache.then(
+      (v) => alive && setState(v),
+      () => alive && setState([]),
+    );
+    return () => {
+      alive = false;
+    };
+  }, []);
+  return state;
+}
+
+// Thập Dực (Hệ từ, Thuyết quái, Tự quái, Tạp quái), file riêng.
+let tenWingsCache: Promise<TenWingsBook[]> | null = null;
+
+export function useTenWings(): TenWingsBook[] | null {
+  const [state, setState] = useState<TenWingsBook[] | null>(null);
+  useEffect(() => {
+    let alive = true;
+    tenWingsCache ??= fetchJson('tenwings.json', z.array(tenWingsBookSchema).min(1));
+    tenWingsCache.catch(() => {
+      tenWingsCache = null;
+    });
+    tenWingsCache.then(
       (v) => alive && setState(v),
       () => alive && setState([]),
     );

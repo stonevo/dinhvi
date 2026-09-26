@@ -4,7 +4,7 @@
 //   npx tsx scripts/check-data.ts --partial-complete f.json → kiểm một phần, không cho draft
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { validateCommentary, validateContexts, validateIntro, validateHexagrams, validateLineTiers, validateTrigrams } from '../src/data/validate';
+import { validateCommentary, validateContexts, validateIntro, validateTenWings, validateHexagrams, validateLineTiers, validateTrigrams } from '../src/data/validate';
 
 const DATA = join(import.meta.dirname, '..', 'public', 'data');
 const read = (p: string) => JSON.parse(readFileSync(p, 'utf8'));
@@ -27,6 +27,7 @@ if (args[0] === '--partial' || args[0] === '--partial-complete') {
     ...validateCommentary(read(join(DATA, 'commentary.json'))).map((e) => `commentary.json: ${e}`),
     ...validateContexts(read(join(DATA, 'contexts.json'))).map((e) => `contexts.json: ${e}`),
     ...validateIntro(read(join(DATA, 'intro.json'))).map((e) => `intro.json: ${e}`),
+    ...validateTenWings(read(join(DATA, 'tenwings.json'))).map((e) => `tenwings.json: ${e}`),
   ];
 }
 

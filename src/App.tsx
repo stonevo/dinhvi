@@ -19,7 +19,8 @@ import { StudyPage } from './pages/StudyPage';
 import { NavMenu, castMenuItems } from './ui/NavMenu';
 import { CAST_METHODS } from './types/schema';
 import { IntroPage, IntroSectionPage } from './pages/IntroPage';
-import { useIntro } from './data/load';
+import { useIntro, useTenWings } from './data/load';
+import { TenWingsBookPage, TenWingsPage } from './pages/TenWingsPage';
 import { SharePage } from './pages/SharePage';
 import { QuickNotePage } from './pages/QuickNotePage';
 import { WitnessPage } from './pages/WitnessPage';
@@ -27,6 +28,7 @@ import { WitnessPage } from './pages/WitnessPage';
 export function App() {
   // Tên các bài Nhập môn cho menu cấp 2 (file nhỏ, đã precache).
   const intro = useIntro();
+  const tenWings = useTenWings();
   const { pathname, state } = useLocation();
   const justOnboarded = (state as { onboarded?: boolean } | null)?.onboarded === true;
   const isWitness = pathname === '/witness';
@@ -63,8 +65,9 @@ export function App() {
             items={[
               { to: '/library', label: t('nav.library64') },
               { to: '/intro', label: t('nav.intro'), children: (intro ?? []).map((s) => ({ to: `/intro/${s.id}`, label: s.title })) },
+              { to: '/tenwings', label: t('nav.tenwings'), children: (tenWings ?? []).map((b) => ({ to: `/tenwings/${b.id}`, label: b.title })) },
             ]}
-            activeWhen={(p) => p.startsWith('/library') || p.startsWith('/intro')}
+            activeWhen={(p) => p.startsWith('/library') || p.startsWith('/intro') || p.startsWith('/tenwings')}
             menuLabel={t('nav.libraryMenu')}
           />
           <NavLink to="/study">{t('nav.study')}</NavLink>
@@ -91,6 +94,8 @@ export function App() {
           <Route path="/study" element={<StudyPage />} />
           <Route path="/intro" element={<IntroPage />} />
           <Route path="/intro/:id" element={<IntroSectionPage />} />
+          <Route path="/tenwings" element={<TenWingsPage />} />
+          <Route path="/tenwings/:id" element={<TenWingsBookPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
         </ErrorBoundary>

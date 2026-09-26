@@ -435,3 +435,25 @@ export const introSectionSchema = z.object({
   sources: z.array(z.object({ label: z.string().min(1), url: z.string().url().optional() })).min(1),
 });
 export type IntroSection = z.infer<typeof introSectionSchema>;
+
+// ---- Thập Dực: Hệ từ, Thuyết quái, Tự quái, Tạp quái — nguyên văn và bản dịch (public/data/tenwings.json) ----
+export const tenWingsParaSchema = z.object({
+  han: z.string().min(1),
+  vi: z.string().min(1),
+  /** Chỉ ghi lời chú cổ có thật, ghi rõ người chú (chủ yếu Chu Hy, Chu Dịch bản nghĩa). */
+  note: z.string().min(1).optional(),
+  /** Đoạn nói về quẻ nào (Tự quái, Tạp quái). */
+  hex: z.array(z.number().int().min(1).max(64)).min(1).optional(),
+});
+export type TenWingsPara = z.infer<typeof tenWingsParaSchema>;
+
+export const tenWingsBookSchema = z.object({
+  id: z.enum(['he-tu-thuong', 'he-tu-ha', 'thuyet-quai', 'tu-quai', 'tap-quai']),
+  title: z.string().min(1),
+  titleHan: z.string().min(1),
+  summary: z.string().min(1),
+  chapters: z
+    .array(z.object({ n: z.number().int().min(1), title: z.string().min(1), paras: z.array(tenWingsParaSchema).min(1) }))
+    .min(1),
+});
+export type TenWingsBook = z.infer<typeof tenWingsBookSchema>;

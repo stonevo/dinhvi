@@ -1,0 +1,2134 @@
+[
+ {
+  "id": "he-tu-thuong",
+  "title": "Hệ từ thượng",
+  "titleHan": "繫辭上",
+  "summary": "Phần trên của Hệ từ truyện, Chu Hy (Chu Dịch bản nghĩa) chia làm 12 chương; theo Chu Hy, thiên này bàn chung về đại thể và thể lệ của Kinh Dịch, trong đó chương 9 nói số đại diễn và phép bói cỏ thi.",
+  "chapters": [
+   {
+    "n": 1,
+    "title": "Chương 1: Tạo hoá và lẽ làm Kinh",
+    "paras": [
+     {
+      "han": "天尊地卑，乾坤定矣。卑高以陳，貴賤位矣。",
+      "vi": "Trời cao trọng, đất thấp, thế là Càn Khôn được định. Thấp cao đã bày ra, thì sang hèn có ngôi thứ.",
+      "note": "Theo Chu Hy: Càn Khôn ở đây là tên hai quẻ thuần dương, thuần âm trong Dịch; sang hèn là vị trí trên dưới của quẻ và hào."
+     },
+     {
+      "han": "動靜有常，剛柔斷矣。方以類聚，物以群分，吉凶生矣。",
+      "vi": "Động và tĩnh có lẽ thường, thì cứng mềm được phân định. Sự việc theo hướng mà họp thành loại, vật theo bầy mà chia ra, thì cát hung sinh ra.",
+      "note": "Theo Chu Hy: động là lẽ thường của dương, tĩnh là lẽ thường của âm; cứng mềm là tên gọi âm dương của quẻ hào; \"phương\" là chỗ hướng tới của sự tình."
+     },
+     {
+      "han": "在天成象，在地成形，變化見矣。",
+      "vi": "Ở trời thành tượng, ở đất thành hình, thì sự biến hoá hiện ra.",
+      "note": "Theo Chu Hy: tượng là loại mặt trời, mặt trăng, sao; hình là loại núi sông, loài động vật, cây cỏ."
+     },
+     {
+      "han": "是故剛柔相摩，八卦相盪，鼓之以雷霆，潤之以風雨。日月運行，一寒一暑。",
+      "vi": "Cho nên cứng mềm cọ xát nhau, tám quẻ xô đẩy nhau; lấy sấm sét mà khua động, lấy gió mưa mà thấm nhuần; mặt trời mặt trăng vận hành, lúc lạnh lúc nóng.",
+      "note": "Theo Chu Hy: ban đầu của sáu mươi tư quẻ chỉ là hai vạch cứng mềm; hai cọ nhau thành bốn, bốn cọ nhau thành tám, tám xô nhau thành sáu mươi tư."
+     },
+     {
+      "han": "乾道成男，坤道成女，乾知大始，坤作成物。",
+      "vi": "Đạo Càn làm thành nam, đạo Khôn làm thành nữ. Càn chủ việc khởi đầu lớn, Khôn làm cho vật thành.",
+      "note": "Theo Chu Hy: chữ \"tri\" ở đây như chữ \"chủ\"; Càn chủ việc bắt đầu vật, còn Khôn làm cho vật thành."
+     },
+     {
+      "han": "乾以易知，坤以簡能。易則易知，簡則易從。",
+      "vi": "Càn nhờ dễ dàng mà chủ, Khôn nhờ giản dị mà làm được. Dễ thì dễ biết, giản thì dễ theo."
+     },
+     {
+      "han": "易知則有親，易從則有功。有親則可久，有功則可大。可久則賢人之德，可大則賢人之業。",
+      "vi": "Dễ biết thì có người gần gũi, dễ theo thì có công. Có người gần gũi thì lâu dài được, có công thì lớn được. Lâu dài được là đức của người hiền, lớn được là nghiệp của người hiền."
+     },
+     {
+      "han": "易簡而天下之理得矣。天下之理得，而成位乎其中矣。",
+      "vi": "Dễ và giản thì nắm được lẽ của thiên hạ. Nắm được lẽ của thiên hạ thì thành được ngôi vị ở khoảng giữa.",
+      "note": "Theo Chu Hy: \"thành vị\" là thành ngôi vị của con người; \"ở giữa\" là ở giữa trời đất."
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title": "Chương 2: Thánh nhân làm Dịch, quân tử học Dịch",
+    "paras": [
+     {
+      "han": "聖人設卦觀象，繫辭焉而明吉凶。剛柔相推而生變化。",
+      "vi": "Thánh nhân đặt quẻ, xem tượng, buộc lời vào để làm rõ cát hung. Cứng và mềm xô đẩy lẫn nhau, biến hoá từ đó mà sinh."
+     },
+     {
+      "han": "是故吉凶者、失得之象也，悔吝者、憂虞之象也，",
+      "vi": "Cho nên cát hung là tượng của mất và được; hối lận là tượng của lo âu và trù tính.",
+      "note": "Theo Chu Hy: hối là từ hung mà hướng về cát, lận là từ cát mà hướng về hung."
+     },
+     {
+      "han": "變化者、進退之象也，剛柔者、晝夜之象也。六爻之動、三極之道也。",
+      "vi": "Biến hoá là tượng của tiến lui; cứng mềm là tượng của ngày đêm. Sự động của sáu hào là đạo của ba cực.",
+      "note": "Theo Chu Hy: trong sáu hào, hào đầu và hào hai là đất, hào ba và bốn là người, hào năm và hào trên là trời; ba cực là lẽ tột cùng của trời, đất, người."
+     },
+     {
+      "han": "是故君子所居而安者、《易》之序也，所樂而玩者、爻之辭也。",
+      "vi": "Cho nên điều mà quân tử ở vào thì yên, là thứ tự của Dịch; điều mà quân tử vui thích nghiền ngẫm, là lời của hào.",
+      "note": "Theo Chu Hy: thứ tự của Dịch là trình tự đương nhiên của sự lý mà quẻ hào bày ra."
+     },
+     {
+      "han": "是故君子居則觀其象而玩其辭，動則觀其變而玩其占，是以自天祐之，吉无不利。",
+      "vi": "Cho nên người quân tử, lúc ở yên thì quan sát tượng và ngẫm nghĩ lời, lúc hành động thì quan sát biến và ngẫm nghĩ lời chiêm; vì vậy được trời giúp, tốt, không gì không lợi.",
+      "note": "Theo Chu Hy: chiêm là lời quyết cát hung ứng với chỗ mình gặp."
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title": "Chương 3: Thể lệ lời quẻ, lời hào",
+    "paras": [
+     {
+      "han": "彖者、言乎象者也，爻者、言乎變者也，",
+      "vi": "Thoán là nói về tượng; hào là nói về biến.",
+      "note": "Theo Chu Hy: thoán là lời quẻ, do Văn Vương làm; hào là lời hào, do Chu Công làm; tượng chỉ toàn thể, biến chỉ một phần."
+     },
+     {
+      "han": "吉凶者、言乎其失得也，悔吝者、言乎其小疵也，无咎者、善補過也。",
+      "vi": "Cát hung là nói về chỗ mất được; hối lận là nói về lỗi nhỏ; vô cữu là giỏi bù đắp lỗi lầm."
+     },
+     {
+      "han": "是故列貴賤者存乎位，齊小大者存乎卦，辯吉凶者存乎辭，",
+      "vi": "Cho nên xếp sang hèn là ở vị; định nhỏ lớn là ở quẻ; phân biệt cát hung là ở lời.",
+      "note": "Theo Chu Hy: vị là vị trí của sáu hào; \"tề\" như \"định\"; nhỏ là âm, lớn là dương."
+     },
+     {
+      "han": "憂悔吝者存乎介，震无咎者存乎悔。",
+      "vi": "Lo về hối lận là ở chỗ manh mối; làm cho động lòng để được không lỗi là ở sự hối.",
+      "note": "Theo Chu Hy: \"giới\" là đầu mối phân biệt, lúc thiện ác đã động mà chưa thành hình; \"chấn\" là động: biết hối thì động được lòng sửa lỗi mà có thể không lỗi."
+     },
+     {
+      "han": "是故卦有小大，辭有險易。辭也者、各指其所之。",
+      "vi": "Cho nên quẻ có nhỏ có lớn, lời có hiểm có dễ. Lời là chỉ chỗ mà mỗi cái hướng tới.",
+      "note": "Theo Chu Hy: nhỏ thì hiểm, lớn thì dễ, mỗi cái theo chỗ nó hướng tới."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title": "Chương 4: Đạo Dịch rộng lớn",
+    "paras": [
+     {
+      "han": "《易》與天地準，故能彌綸天地之道。",
+      "vi": "Dịch ngang bằng với trời đất, nên bao trọn và sắp đặt được đạo của trời đất.",
+      "note": "Theo Chu Hy: \"di\" có ý trọn vẹn, liền khắp; \"luân\" có ý chọn lựa, có thứ lớp."
+     },
+     {
+      "han": "仰以觀於天文，俯以察於地理，是故知幽明之故。原始反終，故知死生之說。",
+      "vi": "Ngửa lên xem văn trời, cúi xuống xét lý đất, nên biết cớ của tối và sáng. Truy về lúc đầu, quay lại lúc cuối, nên biết lẽ sống chết.",
+      "note": "Theo Chu Hy: \"dĩ\" là thánh nhân dùng sách Dịch; \"nguyên\" là suy ra phía trước, \"phản\" là tìm về phía sau."
+     },
+     {
+      "han": "精氣為物，遊魂為變，是故知鬼神之情狀。",
+      "vi": "Tinh khí kết thành vật, hồn đi rong thành biến, nên biết tình trạng của quỷ thần.",
+      "note": "Theo Chu Hy: tinh của âm, khí của dương tụ lại thành vật, đó là thần duỗi ra; hồn bay phách xuống, tan ra thành biến, đó là quỷ trở về."
+     },
+     {
+      "han": "與天地相似，故不違。知周乎萬物，而道濟天下，故不過。",
+      "vi": "Giống với trời đất nên không trái. Trí biết khắp muôn vật mà đạo giúp được thiên hạ, nên không sai quá."
+     },
+     {
+      "han": "旁行而不流，樂天知命，故不憂。安土敦乎仁，故能愛。",
+      "vi": "Đi khắp mọi bề mà không trôi dạt; vui với trời, biết mệnh, nên không lo. Yên nơi mình ở, dày dặn điều nhân, nên có thể yêu thương.",
+      "note": "Theo Chu Hy: \"bàng hành\" là cái trí biết quyền biến, \"bất lưu\" là điều nhân giữ chính; \"an thổ\" là ở đâu cũng yên."
+     },
+     {
+      "han": "範圍天地之化而不過，曲成萬物而不遺，通乎晝夜之道而知，故神无方而易无體。",
+      "vi": "Làm khuôn khổ cho sự hoá của trời đất mà không vượt quá, uốn nắn làm nên muôn vật mà không sót, thấu suốt đạo của ngày và đêm mà biết; cho nên thần không có phương sở, Dịch không có hình thể.",
+      "note": "Theo Chu Hy: \"phạm\" như khuôn đúc kim loại, \"vi\" là vành bao quanh; \"thông\" như \"kiêm\"; ngày đêm tức là tối sáng, sống chết, quỷ thần."
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title": "Chương 5: Đạo và âm dương",
+    "paras": [
+     {
+      "han": "一陰一陽之謂道，繼之者善也，成之者性也。",
+      "vi": "Một lần âm một lần dương, thế gọi là đạo. Nối tiếp nó là thiện, làm nó thành là tính.",
+      "note": "Theo Chu Hy: âm dương thay nhau vận hành là khí, lý của nó gọi là đạo; \"kế\" nói lúc phát ra; \"tính\" là cái mà vật nhận được."
+     },
+     {
+      "han": "仁者見之謂之仁，知者見之謂之知，百姓日用而不知，故君子之道鮮矣。",
+      "vi": "Người nhân thấy nó thì gọi là nhân, người trí thấy nó thì gọi là trí; trăm họ ngày ngày dùng mà không biết; cho nên đạo của quân tử hiếm có vậy."
+     },
+     {
+      "han": "顯諸仁，藏諸用，鼓萬物而不與聖人同憂，盛德大業至矣哉！",
+      "vi": "Hiện ra ở điều nhân, ẩn vào trong công dụng; khua động muôn vật mà không cùng lo với thánh nhân; đức thịnh nghiệp lớn đến tột bậc thay!",
+      "note": "Theo Chu Hy (dẫn Trình Tử): trời đất không có lòng mà thành sự hoá, thánh nhân có lòng mà không làm."
+     },
+     {
+      "han": "富有之謂大業，日新之謂盛德。生生之謂易，",
+      "vi": "Giàu có gọi là nghiệp lớn, ngày một mới gọi là đức thịnh. Sinh rồi lại sinh gọi là Dịch.",
+      "note": "Theo Chu Hy: âm sinh dương, dương sinh âm, biến đổi không cùng."
+     },
+     {
+      "han": "成象之謂乾，效法之謂坤，極數知來之謂占，通變之謂事，陰陽不測之謂神。",
+      "vi": "Thành tượng gọi là Càn, bày ra phép tắc gọi là Khôn, suy cùng số mà biết việc sắp tới gọi là chiêm, thông suốt sự biến gọi là sự, âm dương không lường được gọi là thần.",
+      "note": "Theo Chu Hy: \"hiệu\" là bày ra; \"chiêm\" là bói; dẫn Trương Tử: hai mặt cùng có nên không lường được."
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "title": "Chương 6",
+    "paras": [
+     {
+      "han": "夫《易》、廣矣大矣，以言乎遠則不禦，以言乎邇則靜而正，以言乎天地之間則備矣。",
+      "vi": "Dịch rộng thay, lớn thay! Nói về xa thì không gì ngăn được; nói về gần thì yên tĩnh mà ngay chính; nói về khoảng giữa trời đất thì đầy đủ cả.",
+      "note": "Theo Chu Hy: \"không ngăn\" là không cùng tận; \"tĩnh mà chính\" là ngay nơi vật mà lý có sẵn; \"đầy đủ\" là không gì không có."
+     },
+     {
+      "han": "夫乾，其靜也專，其動也直，是以大生焉。",
+      "vi": "Càn, khi tĩnh thì chuyên nhất, khi động thì thẳng, vì thế mà sinh ra cái lớn."
+     },
+     {
+      "han": "夫坤，其靜也翕，其動也闢，是以廣生焉。",
+      "vi": "Khôn, khi tĩnh thì khép lại, khi động thì mở ra, vì thế mà sinh ra cái rộng.",
+      "note": "Theo Chu Hy: Càn là một mà đặc, nên nói về chất mà gọi là \"lớn\"; Khôn là hai mà rỗng, nên nói về lượng mà gọi là \"rộng\"."
+     },
+     {
+      "han": "變通配四時，陰陽之義配日月，易簡之善配至德。",
+      "vi": "Biến thông sánh với bốn mùa, nghĩa âm dương sánh với mặt trời mặt trăng, cái hay của dễ và giản sánh với đức tột bậc.",
+      "note": "Theo Chu Hy (bản Bản nghĩa): trước câu này còn có câu 廣大配天地 \"rộng lớn sánh với trời đất\"; ông giải: sự rộng lớn, biến thông của Dịch cùng thuyết âm dương và đức dễ giản mà Dịch nói, đem sánh với đạo trời và việc người thì như thế."
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "title": "Chương 7",
+    "paras": [
+     {
+      "han": "子曰：「《易》、其至矣乎！夫《易》、聖人所以崇德而廣業也。",
+      "vi": "Khổng Tử nói: Dịch thật là tột bậc thay! Dịch là cái mà thánh nhân dùng để nâng cao đức, mở rộng nghiệp.",
+      "note": "Theo Chu Hy: Thập dực đều do Khổng Tử làm, không lẽ tự ghi chữ \"Tử viết\", ngờ rằng đều do người sau thêm vào."
+     },
+     {
+      "han": "知崇禮卑，崇效天，卑法地。",
+      "vi": "Trí thì cao, lễ thì thấp; cao là bắt chước trời, thấp là noi theo đất.",
+      "note": "Theo Chu Hy: cùng lý thì trí cao như trời mà đức cao; theo lý thì lễ thấp như đất mà nghiệp rộng."
+     },
+     {
+      "han": "天地設位，而《易》行乎其中矣。成性存存，道義之門。」",
+      "vi": "Trời đất đặt ngôi, mà Dịch vận hành ở giữa. Giữ gìn mãi cái tính đã thành, đó là cửa của đạo và nghĩa.",
+      "note": "Theo Chu Hy: \"thành tính\" là cái tính vốn đã thành; \"tồn tồn\" là giữ rồi lại giữ, không thôi."
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "title": "Chương 8: Dụng của quẻ hào",
+    "paras": [
+     {
+      "han": "聖人有以見天下之賾，而擬諸其形容，象其物宜，是故謂之象。",
+      "vi": "Thánh nhân thấy được sự rối tạp của thiên hạ, bèn phỏng theo hình dáng của nó, tượng trưng cho cái thích hợp của vật, cho nên gọi là tượng.",
+      "note": "Theo Chu Hy: \"trách\" là rối tạp; tượng là tượng của quẻ, như những gì Thuyết quái kể ra."
+     },
+     {
+      "han": "聖人有以見天下之動，而觀其會通，以行其典禮，繫辭焉以斷其吉凶，是故謂之爻，",
+      "vi": "Thánh nhân thấy được sự động của thiên hạ, bèn xem chỗ hội tụ và chỗ thông suốt của nó, để thi hành điển lễ, buộc lời vào để đoán cát hung, cho nên gọi là hào.",
+      "note": "Theo Chu Hy: \"hội\" là chỗ lý tụ lại, không bỏ sót được; \"thông\" là chỗ lý đi được, không vướng mắc."
+     },
+     {
+      "han": "言天下之至賾而不可惡也，言天下之至動而不可亂也。",
+      "vi": "Nói đến chỗ rối tạp nhất của thiên hạ mà không thể chán ghét; nói đến chỗ động nhất của thiên hạ mà không thể rối loạn.",
+      "note": "Theo Chu Hy: \"ố\" như \"yếm\", nghĩa là chán."
+     },
+     {
+      "han": "擬之而後言，議之而後動，擬議以成其變化。",
+      "vi": "Phỏng xét rồi mới nói, bàn định rồi mới động; phỏng xét, bàn định để thành sự biến hoá.",
+      "note": "Theo Chu Hy: tức là xem tượng ngẫm lời, xem biến ngẫm chiêm mà làm theo; bảy hào dưới đây là ví dụ."
+     },
+     {
+      "han": "「鳴鶴在陰，其子和之。我有好爵，吾與爾靡之。」",
+      "vi": "\"Hạc kêu ở chỗ khuất, con nó hoạ theo. Ta có chén rượu tốt, ta cùng ngươi chia nhau.\"",
+      "note": "Theo Chu Hy: câu dẫn này cùng lời Khổng Tử tiếp theo là giải nghĩa hào Cửu nhị quẻ Trung Phu."
+     },
+     {
+      "han": "子曰：「君子居其室，出其言善，則千里之外應之，況其邇者乎？",
+      "vi": "Khổng Tử nói: Quân tử ở trong nhà, nói ra lời hay thì người ở ngoài nghìn dặm cũng đáp lại, huống hồ là người ở gần?"
+     },
+     {
+      "han": "居其室，出其言不善，則千里之外違之，況其邇者乎？",
+      "vi": "Ở trong nhà, nói ra lời không hay thì người ở ngoài nghìn dặm cũng chống lại, huống hồ là người ở gần?"
+     },
+     {
+      "han": "言出乎身，加乎民；行發乎邇，見乎遠。言行、君子之樞機。",
+      "vi": "Lời từ bản thân nói ra mà tác động đến dân; việc làm phát ra từ chỗ gần mà hiện ra ở chỗ xa. Lời nói và việc làm là bản lề và cái lẫy của quân tử."
+     },
+     {
+      "han": "樞機之發、榮辱之主也，言行、君子之所以動天地也。可不慎乎！」",
+      "vi": "Bản lề và cái lẫy ấy phát động là chủ của vinh nhục. Lời nói và việc làm là cái quân tử dùng để làm động trời đất. Có thể không cẩn thận sao!"
+     },
+     {
+      "han": "「同人先號咷而後笑。」子曰：「君子之道，或出或處，或默或語。",
+      "vi": "\"Cùng người, trước kêu khóc, sau cười.\" Khổng Tử nói: Đạo của quân tử, có lúc ra làm, có lúc ở yên, có lúc im lặng, có lúc nói.",
+      "note": "Theo Chu Hy: giải nghĩa hào Cửu ngũ quẻ Đồng Nhân; ý nói đạo của quân tử ban đầu như không giống nhau mà về sau thật không có gì ngăn cách."
+     },
+     {
+      "han": "二人同心，其利斷金。同心之言，其臭如蘭。」",
+      "vi": "Hai người cùng lòng thì sắc bén chặt đứt kim loại; lời nói cùng lòng thì mùi thơm như hoa lan.",
+      "note": "Theo Chu Hy: \"chặt đứt kim loại\", \"như hoa lan\" là nói không vật gì chen vào được, và lời ấy có hương vị."
+     },
+     {
+      "han": "「初六：藉用白茅，无咎。」子曰：「苟錯諸地而可矣，藉之用茅，何咎之有？慎之至也。",
+      "vi": "\"Sơ lục: lót bằng cỏ tranh trắng, không lỗi.\" Khổng Tử nói: Cứ để ngay trên đất là đủ rồi; lại còn lót bằng cỏ tranh, thì lỗi gì đâu? Đó là cẩn thận đến cùng.",
+      "note": "Theo Chu Hy: giải nghĩa hào Sơ lục quẻ Đại Quá."
+     },
+     {
+      "han": "夫茅之為物薄，而用可重也。慎斯術也以往，其无所失矣。」",
+      "vi": "Cỏ tranh là vật mỏng mọn, nhưng dùng vào việc thì có thể quý trọng. Giữ cách cẩn thận ấy mà làm tiếp thì không có gì sơ thất."
+     },
+     {
+      "han": "「勞謙，君子有終，吉。」子曰：「勞而不伐，有功而不德，厚之至也。語以其功下人者也。",
+      "vi": "\"Có công lao mà khiêm tốn, quân tử có kết cục, tốt.\" Khổng Tử nói: Nhọc nhằn mà không khoe, có công mà không tự cho là ân đức, đó là đôn hậu đến cùng. Ấy là nói người có công mà vẫn đứng dưới người khác.",
+      "note": "Theo Chu Hy: giải nghĩa hào Cửu tam quẻ Khiêm."
+     },
+     {
+      "han": "德言盛，禮言恭。謙也者、致恭以存其位者也。」",
+      "vi": "Về đức thì nói thịnh, về lễ thì nói cung kính. Khiêm là hết mực cung kính để giữ được ngôi vị của mình.",
+      "note": "Theo Chu Hy: ý là đức thì muốn cho thịnh, lễ thì muốn cho cung kính."
+     },
+     {
+      "han": "「亢龍有悔。」子曰：「貴而无位，高而无民，賢人在下位而无輔，是以動而有悔也。」",
+      "vi": "\"Rồng lên quá cao, có hối.\" Khổng Tử nói: Quý mà chẳng có ngôi, ở cao mà chẳng có dân, người hiền ở ngôi dưới mà mình không có ai phò giúp, vì vậy động thì có hối.",
+      "note": "Theo Chu Hy: giải nghĩa hào Thượng cửu quẻ Càn; câu này nên thuộc Văn ngôn, ở đây có lẽ là lặp lại."
+     },
+     {
+      "han": "「不出戶庭，无咎。」子曰：「亂之所生也，則言語以為階。",
+      "vi": "\"Không ra khỏi sân trước cửa, không lỗi.\" Khổng Tử nói: Loạn nảy sinh là lấy lời nói làm bậc thang.",
+      "note": "Theo Chu Hy: giải nghĩa hào Sơ cửu quẻ Tiết."
+     },
+     {
+      "han": "君不密則失臣，臣不密則失身，幾事不密則害成。是以君子慎密而不出也。」",
+      "vi": "Vua không giữ kín thì mất bầy tôi, bầy tôi không giữ kín thì hại đến thân, việc hệ trọng lúc mới manh nha mà không kín thì hại đến sự thành. Vì vậy quân tử cẩn thận giữ kín mà không để lộ ra."
+     },
+     {
+      "han": "子曰：「作《易》者、其知盜乎？《易》曰：『負且乘，致寇至。』",
+      "vi": "Khổng Tử nói: Người làm ra Dịch hẳn biết về trộm cướp chăng? Dịch nói: \"Vác đồ mà lại ngồi xe, khiến giặc cướp kéo đến.\"",
+      "note": "Theo Chu Hy: giải nghĩa hào Lục tam quẻ Giải."
+     },
+     {
+      "han": "負也者、小人之事也，乘也者、君子之器也。小人而乘君子之器，盜思奪之矣。",
+      "vi": "Vác đồ là việc của kẻ tiểu nhân; ngồi xe là thứ dành cho bậc quân tử. Tiểu nhân mà ngồi lên thứ dành cho quân tử thì kẻ cướp nghĩ đến chuyện đoạt lấy."
+     },
+     {
+      "han": "上慢下暴，盜思伐之矣。慢藏誨盜，冶容誨淫。《易》曰：『負且乘，致寇至。』，盜之招也。」",
+      "vi": "Trên thì khinh nhờn, dưới thì tàn bạo, kẻ cướp nghĩ đến chuyện đánh. Cất giữ lơ là là dạy kẻ trộm, trang điểm lả lơi là dạy sự dâm. Dịch nói \"vác đồ mà lại ngồi xe, khiến giặc cướp kéo đến\", đó là tự vời trộm cướp tới vậy."
+     }
+    ]
+   },
+   {
+    "n": 9,
+    "title": "Chương 9: Số đại diễn và phép bói cỏ thi",
+    "paras": [
+     {
+      "han": "大衍之數五十，其用四十有九。",
+      "vi": "Số đại diễn là năm mươi, dùng bốn mươi chín.",
+      "note": "Theo Chu Hy: số đại diễn năm mươi có lẽ lấy số trời 5 ở cung giữa Hà đồ nhân với số đất 10 mà ra; đến khi dùng để bói thì chỉ dùng bốn mươi chín."
+     },
+     {
+      "han": "分而為二以象兩。掛一以象三，揲之以四以象四時，歸奇於扐以象閏。",
+      "vi": "Chia ra hai phần để tượng hai; treo một để tượng ba; đếm từng bốn một để tượng bốn mùa; dồn số lẻ kẹp vào kẽ ngón tay để tượng tháng nhuận.",
+      "note": "Theo Chu Hy: hai là trời đất; \"quải\" là treo một cọng vào giữa ngón út tay trái; ba là tam tài; \"thiệt\" là tách ra mà đếm; \"cơ\" là số dư khi đếm từng bốn; \"lặc\" là kẹp vào hai kẽ của ba ngón giữa tay trái; nhuận là số ngày dư tích lại thành tháng."
+     },
+     {
+      "han": "五歲再閏，故再扐而後掛。",
+      "vi": "Năm năm có hai lần nhuận, nên kẹp hai lần rồi sau mới treo.",
+      "note": "Theo Chu Hy: trong năm năm có hai lần nhuận rồi mới bắt đầu tính lại; cũng thế, sau một lần treo, bên trái bên phải mỗi bên đếm một lần và kẹp một lần, nên trong năm thao tác có hai lần kẹp rồi mới bắt đầu lần treo khác."
+     },
+     {
+      "han": "天數五，地數五。五位相得而各有合，",
+      "vi": "Số trời có năm, số đất có năm. Năm ngôi được nhau mà mỗi cái đều có chỗ hợp.",
+      "note": "Theo Chu Hy: đoạn \"Thiên số ngũ… hành quỷ thần\" vốn ở sau đoạn \"Đại diễn\", nay xét nên đặt ở chỗ này trong chương 9 của ông (ngay sau câu \"Thiên nhất địa nhị… thiên cửu địa thập\", trước đoạn \"Đại diễn\"). Số trời là 1, 3, 5, 7, 9 (lẻ), số đất là 2, 4, 6, 8, 10 (chẵn); \"được nhau\" là một cặp hai, ba cặp bốn, năm cặp sáu, bảy cặp tám, chín cặp mười, lẻ chẵn theo loại mà được nhau; \"có hợp\" là một hợp sáu, hai hợp bảy, ba hợp tám, bốn hợp chín, năm hợp mười."
+     },
+     {
+      "han": "天數二十有五，地數三十，凡天地之數五十有五，此所以成變化而行鬼神也。",
+      "vi": "Số trời là hai mươi lăm, số đất là ba mươi, gộp số trời đất là năm mươi lăm; đó là cái làm nên biến hoá và vận hành quỷ thần.",
+      "note": "Theo Chu Hy: hai mươi lăm là tổng năm số lẻ, ba mươi là tổng năm số chẵn; quỷ thần là sự co duỗi qua lại của các số lẻ chẵn khi sinh và thành."
+     },
+     {
+      "han": "《乾》之策二百一十有六，《坤》之策百四十有四，凡三百有六十，當期之日。",
+      "vi": "Số cọng của Càn là hai trăm mười sáu, số cọng của Khôn là một trăm bốn mươi bốn, cộng lại là ba trăm sáu mươi, ứng với số ngày của một năm.",
+      "note": "Theo Chu Hy: ở đây chỉ lấy lão dương, lão âm để tính số cọng sáu hào của Càn Khôn; một năm có ba trăm sáu mươi lăm ngày và một phần tư, đây chỉ nêu số tròn."
+     },
+     {
+      "han": "二篇之策萬有一千五百二十，當萬物之數也。",
+      "vi": "Số cọng của hai thiên là một vạn một nghìn năm trăm hai mươi, ứng với số của muôn vật.",
+      "note": "Theo Chu Hy: hai thiên là Thượng kinh và Hạ kinh; một trăm chín mươi hai hào dương được 6912 cọng, một trăm chín mươi hai hào âm được 4608 cọng, cộng lại thành số này."
+     },
+     {
+      "han": "是故四營而成《易》，十有八變而成卦，八卦而小成。",
+      "vi": "Cho nên bốn bước thao tác thì thành một lần dịch, mười tám lần biến thì thành quẻ, tám quẻ là thành nhỏ.",
+      "note": "Theo Chu Hy: bốn bước là chia hai, treo một, đếm bốn, dồn số lẻ; \"dịch\" là biến dịch, tức một lần biến; ba biến thì thành một hào, mười tám biến thì đủ sáu hào; \"tám quẻ là thành nhỏ\" là chín lần biến thành ba vạch, được quẻ trong."
+     },
+     {
+      "han": "引而伸之，觸類而長之，天下之能事畢矣。",
+      "vi": "Kéo ra mà duỗi rộng, gặp loại mà tăng thêm, thì mọi việc có thể làm trong thiên hạ đều trọn cả.",
+      "note": "Theo Chu Hy: đã thành sáu hào rồi, xem hào nào biến hào nào không để làm động tĩnh, thì mỗi quẻ có thể chuyển thành sáu mươi tư quẻ để định cát hung, cộng là 4096 quẻ."
+     },
+     {
+      "han": "顯道、神德行，是故可與酬酢，可與祐神矣。",
+      "vi": "Làm sáng tỏ đạo, làm cho đức hạnh thành thần diệu, cho nên có thể cùng thù đáp, có thể giúp thần.",
+      "note": "Theo Chu Hy: đạo nhờ lời mà sáng tỏ, việc làm nhờ số mà thành thần diệu; \"thù tạc\" là ứng đáp, \"hựu thần\" là giúp công thần hoá."
+     },
+     {
+      "han": "子曰：「知變化之道者，其知神之所為乎。」",
+      "vi": "Khổng Tử nói: Ai hiểu đạo biến hoá, hẳn hiểu được điều thần làm ra chăng!",
+      "note": "Theo Chu Hy: đạo biến hoá tức là phép số nói ở trên, đều không phải sức người làm được, nên Khổng Tử khen; môn nhân thêm chữ \"Tử viết\" để phân biệt với đoạn trên."
+     }
+    ]
+   },
+   {
+    "n": 10,
+    "title": "Chương 10: Bốn điều thuộc đạo thánh nhân trong Dịch",
+    "paras": [
+     {
+      "han": "《易》有聖人之道四焉：以言者尚其辭，以動者尚其變，以制器者尚其象，以卜筮者尚其占。",
+      "vi": "Dịch có bốn điều thuộc đạo thánh nhân: dùng để nói năng thì chuộng lời, dùng để hành động thì chuộng biến, dùng để chế đồ vật thì chuộng tượng, dùng để bói toán thì chuộng lời chiêm."
+     },
+     {
+      "han": "是以君子將有為也，將有行也，問焉而以言。其受命也如響。无有遠近幽深，遂知來物。非天下之至精，其孰能與於此。",
+      "vi": "Vì vậy quân tử khi sắp có việc làm, sắp có việc đi, thì hỏi Dịch rồi dựa vào đó mà nói năng; Dịch nhận mệnh như tiếng vang đáp lại. Không kể xa gần sâu kín, liền biết được việc sắp tới. Chẳng phải chỗ tinh vi tột bậc của thiên hạ thì cái gì dự được vào việc này?",
+      "note": "Theo Chu Hy: đây là việc chuộng lời, chuộng chiêm; người dùng cỏ thi hỏi Dịch, cầu lời quẻ hào để nói năng làm việc, thì Dịch nhận mệnh của người mà báo cho, như tiếng vang ứng với tiếng; chữ \"dĩ ngôn\" ở đây cùng nghĩa với \"dĩ ngôn\" trong câu \"dùng để nói năng thì chuộng lời\"."
+     },
+     {
+      "han": "參伍以變，錯綜其數。通其變，遂成天下之文；極其數，遂定天下之象。非天下之至變，其孰能與於此？",
+      "vi": "Lấy ba lấy năm mà biến, đan xen gom góp các số. Thông suốt sự biến thì thành văn vẻ của thiên hạ; suy cùng các số thì định được tượng của thiên hạ. Chẳng phải chỗ biến hoá tột bậc của thiên hạ thì cái gì dự được vào việc này?",
+      "note": "Theo Chu Hy: đây là việc chuộng tượng; \"tham\" là đếm theo ba, \"ngũ\" là đếm theo năm, để xét số nhiều ít; \"thác\" là đan chéo qua lại, \"tống\" là gom lại mà nhấc lên; đều nói việc đếm cỏ thi tìm quẻ."
+     },
+     {
+      "han": "《易》无思也，无為也，寂然不動，感而遂通天下之故。非天下之至神，其孰能與於此？",
+      "vi": "Dịch không nghĩ, không làm, lặng yên không động, cảm thì thông suốt mọi lẽ trong thiên hạ. Chẳng phải chỗ thần diệu tột bậc của thiên hạ thì cái gì dự được vào việc này?",
+      "note": "Theo Chu Hy: \"Dịch\" ở đây chỉ cỏ thi và quẻ; không nghĩ không làm là nói nó không có lòng."
+     },
+     {
+      "han": "夫《易》、聖人之所以極深而研幾也。唯深也，故能通天下之志；唯幾也，故能成天下之務；唯神也，故不疾而速，不行而至。",
+      "vi": "Dịch là cái mà thánh nhân dùng để đi tới tận chỗ sâu và xét kỹ chỗ vi tế. Chỉ vì sâu nên thông được chí của thiên hạ; chỉ vì vi tế nên làm xong được việc của thiên hạ; chỉ vì thần diệu nên không vội mà nhanh, không đi mà đến.",
+      "note": "Theo Chu Hy: \"nghiên\" như \"thẩm\" (xét kỹ); \"cơ\" là vi tế."
+     },
+     {
+      "han": "子曰：「《易》有聖人之道四焉」者，此之謂也。",
+      "vi": "Khổng Tử nói \"Dịch có bốn điều thuộc đạo thánh nhân\", là nói điều này vậy."
+     }
+    ]
+   },
+   {
+    "n": 11,
+    "title": "Chương 11: Về bói toán",
+    "paras": [
+     {
+      "han": "天一，地二；天三，地四；天五，地六；天七，地八；天九，地十。",
+      "vi": "Trời một, đất hai; trời ba, đất bốn; trời năm, đất sáu; trời bảy, đất tám; trời chín, đất mười.",
+      "note": "Theo Chu Hy: thẻ tre này vốn ở đầu chương thứ mười; Trình Tử nói nên đặt ở đầu chương 9 (trước đoạn \"Thiên số ngũ… \" và \"Đại diễn\"), Chu Hy theo đó. Đây nói số trời đất, dương lẻ âm chẵn, tức là cái gọi là Hà đồ."
+     },
+     {
+      "han": "子曰：「夫《易》、何為者也？夫《易》、開物成務，冒天下之道，如斯而已者也。」",
+      "vi": "Khổng Tử nói: Dịch để làm gì? Dịch mở ra sự vật, làm thành công việc, bao trùm đạo của thiên hạ, chỉ như thế mà thôi.",
+      "note": "Theo Chu Hy: \"khai vật thành vụ\" là khiến người bói để biết cát hung mà làm nên sự nghiệp; \"bao trùm đạo thiên hạ\" là quẻ hào đã đặt thì đạo của thiên hạ đều ở trong đó."
+     },
+     {
+      "han": "是故聖人以通天下之志，以定天下之業，以斷天下之疑。",
+      "vi": "Vì thế thánh nhân lấy nó mà thông chí thiên hạ, định nghiệp thiên hạ, quyết điều ngờ của thiên hạ."
+     },
+     {
+      "han": "是故蓍之德圓而神，卦之德方以知，六爻之義易以貢。",
+      "vi": "Cho nên đức của cỏ thi tròn mà thần diệu, đức của quẻ vuông mà có trí, nghĩa sáu hào thì đổi thay để mách bảo người.",
+      "note": "Theo Chu Hy: \"tròn mà thần\" là biến hoá không có phương sở; \"vuông mà trí\" là sự việc có lý nhất định; \"dịch dĩ cống\" là đổi thay để mách bảo người."
+     },
+     {
+      "han": "聖人以此洗心，退藏於密，吉凶與民同患。",
+      "vi": "Thánh nhân dùng điều này để rửa lòng, lui về cất giấu nơi kín đáo; về cát hung thì cùng lo với dân.",
+      "note": "Theo Chu Hy: thánh nhân có đủ đức của ba điều ấy mà không vướng một hạt bụi; không có việc thì lòng lặng yên, người không dò được; có việc thì cái dụng của thần và trí theo cảm mà ứng."
+     },
+     {
+      "han": "神以知來，知以藏往，其孰能與此哉！古之聰明叡知神武而不殺者夫！",
+      "vi": "Thần để biết việc tới, trí để chứa việc đã qua; ai có thể dự vào được điều này? Hẳn là người xưa thông minh, sáng suốt, có trí, thần vũ mà không giết chóc chăng!",
+      "note": "Theo Chu Hy: \"thần vũ mà không giết\" là nắm được lý mà không cần mượn đến vật."
+     },
+     {
+      "han": "是以明於天之道，而察於民之故，是興神物以前民用。",
+      "vi": "Vì vậy hiểu rõ đạo trời, xét kỹ việc dân, bèn dấy lên vật thần để đi trước cho dân dùng.",
+      "note": "Theo Chu Hy: vật thần là cỏ thi và mai rùa; hiểu đạo trời nên biết vật thần có thể dấy lên, xét việc dân nên biết phải mở đường trước cho dân dùng, vì vậy làm ra việc bói để dạy người."
+     },
+     {
+      "han": "聖人以此齊戒，以神明其德夫。",
+      "vi": "Thánh nhân dùng điều này để trai giới, để làm cho đức mình thần minh.",
+      "note": "Theo Chu Hy: trong lặng thuần nhất gọi là trai, nghiêm túc cảnh tỉnh gọi là giới."
+     },
+     {
+      "han": "是故闔戶謂之坤，闢戶謂之乾，一闔一闢謂之變，往來不窮謂之通，",
+      "vi": "Cho nên đóng cửa gọi là Khôn, mở cửa gọi là Càn; khi đóng khi mở gọi là biến; đi lại không dứt gọi là thông.",
+      "note": "Theo Chu Hy: đóng mở là then máy của động tĩnh; nói Khôn trước là vì từ tĩnh mà động."
+     },
+     {
+      "han": "見乃謂之象，形乃謂之器，制而用之謂之法，利用出入，民咸用之謂之神。",
+      "vi": "Hiện ra thì gọi là tượng, thành hình rồi gọi là khí; chế ra mà dùng gọi là phép; lợi dụng vào ra, dân đều dùng nó, gọi là thần.",
+      "note": "Theo Chu Hy: tượng rồi khí là thứ tự sinh ra của vật; phép là việc thánh nhân sửa đạo mà làm, còn thần là cái trăm họ tự nhiên dùng hằng ngày."
+     },
+     {
+      "han": "是故《易》有太極，是生兩儀。兩儀生四象。四象生八卦。",
+      "vi": "Cho nên Dịch có thái cực, từ đó sinh ra hai nghi; hai nghi sinh ra bốn tượng; bốn tượng sinh ra tám quẻ.",
+      "note": "Theo Chu Hy: một lại sinh hai là lẽ tự nhiên; Dịch là sự biến của âm dương, thái cực là lý của nó; hai nghi bắt đầu từ một vạch để chia âm dương, bốn tượng là hai vạch để chia thái và thiếu, tám quẻ là ba vạch, bấy giờ tượng tam tài mới đủ."
+     },
+     {
+      "han": "八卦定吉凶。吉凶生大業。",
+      "vi": "Tám quẻ định ra cát hung; từ cát hung mà sinh nghiệp lớn."
+     },
+     {
+      "han": "是故法象莫大乎天地。變通莫大乎四時。縣象著明莫大乎日月。崇高莫大乎富貴。",
+      "vi": "Cho nên trong khuôn phép hình tượng chẳng gì lớn hơn trời đất; trong biến thông chẳng gì lớn hơn bốn mùa; tượng treo sáng rõ chẳng gì lớn hơn mặt trời, mặt trăng; cao quý chẳng gì lớn hơn giàu sang.",
+      "note": "Theo Chu Hy: giàu sang là có thiên hạ, ở ngôi vua."
+     },
+     {
+      "han": "備物致用，立功成器，以為天下利，莫大乎聖人。",
+      "vi": "Sắm đủ vật, đưa vào dùng, lập công, làm thành đồ dùng để làm lợi cho thiên hạ, chẳng ai lớn hơn thánh nhân."
+     },
+     {
+      "han": "探賾索隱，鉤深致遠，以定天下之吉凶，成天下之亹亹者，莫善乎蓍龜。",
+      "vi": "Dò chỗ rối tạp, tìm chỗ ẩn kín, móc lấy chỗ sâu, đưa tới chỗ xa, để định cát hung của thiên hạ, làm nên sự gắng gỏi không thôi của thiên hạ, chẳng gì hay hơn cỏ thi và mai rùa.",
+      "note": "Theo Chu Hy: \"vỉ vỉ\" như \"miễn miễn\" (gắng gỏi); ngờ thì trễ nải, quyết được nên gắng."
+     },
+     {
+      "han": "是故天生神物，聖人則之。天地變化，聖人效之。天垂象，見吉凶，聖人象之。河出圖，洛出書，聖人則之。",
+      "vi": "Cho nên trời sinh ra vật thần, thánh nhân noi theo; trời đất biến hoá, thánh nhân bắt chước; trời rủ tượng, hiện ra cát hung, thánh nhân mô phỏng; sông Hà đưa ra Đồ, sông Lạc đưa ra Thư, thánh nhân noi theo.",
+      "note": "Theo Chu Hy: bốn điều này là chỗ do đó thánh nhân làm ra Dịch."
+     },
+     {
+      "han": "《易》有四象，所以示也。繫辭焉，所以告也。定之以吉凶，所以斷也。",
+      "vi": "Dịch có bốn tượng là để chỉ cho thấy; buộc lời vào là để báo cho biết; định bằng cát hung là để quyết đoán.",
+      "note": "Theo Chu Hy: bốn tượng là âm dương già và trẻ; \"chỉ cho thấy\" là chỉ cho người thấy quẻ hào mình gặp."
+     }
+    ]
+   },
+   {
+    "n": 12,
+    "title": "Chương 12",
+    "paras": [
+     {
+      "han": "《易》曰：「自天祐之，吉无不利。」子曰：「祐者、助也。天之所助者、順也，人之所助者、信也。",
+      "vi": "Dịch nói: \"Từ trời giúp cho, tốt, không gì không lợi.\" Khổng Tử nói: Hựu là giúp. Người được trời giúp là người thuận; người được người giúp là người có tín.",
+      "note": "Theo Chu Hy: giải nghĩa hào Thượng cửu quẻ Đại Hữu; nhưng ở đây không thuộc vào đâu, e là thẻ tre lộn chỗ, nên đặt ở cuối chương 8."
+     },
+     {
+      "han": "履信思乎順，又以尚賢也。是以自天祐之，吉无不利也。」",
+      "vi": "Giữ vững đức tín, nghĩ đến sự thuận, lại tôn trọng người hiền; vì vậy từ trời giúp cho, tốt, không gì không lợi."
+     },
+     {
+      "han": "子曰：「書不盡言，言不盡意。」然則聖人之意，其不可見乎？",
+      "vi": "Khổng Tử nói: Sách không ghi hết được lời, lời không diễn hết được ý. Thế thì ý của thánh nhân chẳng lẽ không thể thấy được sao?"
+     },
+     {
+      "han": "子曰：「聖人立象以盡意，設卦以盡情偽，繫辭焉以盡其言。變而通之以盡利，鼓之舞之以盡神。」",
+      "vi": "Khổng Tử nói: Thánh nhân lập tượng để nói hết ý, đặt quẻ để nói hết thật giả, buộc lời vào để nói hết lời mình; biến đổi mà làm cho thông để tận cái lợi, khua lên múa lên để tận cái thần.",
+      "note": "Theo Chu Hy: điều lời truyền được thì cạn, điều tượng chỉ ra thì sâu; biến thông, cổ vũ là nói về việc; hai chữ \"Tử viết\" ở đây ngờ là thừa một."
+     },
+     {
+      "han": "乾坤、其《易》之縕邪？乾坤成列，而《易》立乎其中矣。",
+      "vi": "Càn Khôn là chỗ chứa của Dịch chăng? Càn Khôn bày thành hàng thì Dịch đứng ở giữa.",
+      "note": "Theo Chu Hy: \"uẩn\" là chỗ bao chứa, như lớp bông trong áo; cái Dịch có chỉ là âm dương, phàm dương đều là Càn, phàm âm đều là Khôn; vạch quẻ định ngôi thì hai thứ ấy bày thành hàng mà thể của Dịch được lập."
+     },
+     {
+      "han": "乾坤毀，則无以見《易》。《易》不可見，則乾坤或幾乎息矣。",
+      "vi": "Càn Khôn bị huỷ thì không lấy gì thấy được Dịch; Dịch không thấy được thì Càn Khôn hầu như ngừng rồi.",
+      "note": "Theo Chu Hy: \"Càn Khôn huỷ\" là vạch quẻ không lập; \"Càn Khôn ngừng\" là biến hoá không vận hành."
+     },
+     {
+      "han": "是故形而上者謂之道，形而下者謂之器。",
+      "vi": "Cho nên cái ở trên hình gọi là đạo, cái ở dưới hình gọi là khí.",
+      "note": "Theo Chu Hy: âm dương của quẻ hào đều là cái ở dưới hình, còn lý của nó là đạo."
+     },
+     {
+      "han": "化而裁之謂之變，推而行之謂之通，舉而錯之天下之民謂之事業。",
+      "vi": "Nhân sự hoá mà cắt đặt gọi là biến, đẩy tới mà thi hành gọi là thông, đem ra đặt cho dân thiên hạ gọi là sự nghiệp.",
+      "note": "Theo Chu Hy: nhân sự hoá tự nhiên mà cắt đặt, đó là nghĩa của biến; hai chữ biến thông, chương trên nói theo trời, chương này nói theo người."
+     },
+     {
+      "han": "是故夫象、聖人有以見天下之賾，而擬諸其形容，象其物宜，是故謂之象。",
+      "vi": "Cho nên tượng là: thánh nhân thấy được sự rối tạp của thiên hạ, bèn phỏng theo hình dáng của nó, tượng trưng cho cái thích hợp của vật, cho nên gọi là tượng.",
+      "note": "Theo Chu Hy: đoạn này lặp lại để mở ra ý bên dưới."
+     },
+     {
+      "han": "聖人有以見天下之動，而觀其會通，以行其典禮，繫辭焉以斷其吉凶，是故謂之爻。",
+      "vi": "Thánh nhân thấy được sự động của thiên hạ, bèn xem chỗ hội tụ và chỗ thông suốt của nó, để thi hành điển lễ, buộc lời vào để đoán cát hung, cho nên gọi là hào."
+     },
+     {
+      "han": "極天下之賾者存乎卦，鼓天下之動者存乎辭，化而裁之存乎變，推而行之存乎通，",
+      "vi": "Cùng tận chỗ rối tạp của thiên hạ là ở quẻ; khua động sự động của thiên hạ là ở lời; nhân sự hoá mà cắt đặt là ở biến; đẩy tới mà thi hành là ở thông.",
+      "note": "Theo Chu Hy: quẻ tức là tượng, lời tức là hào."
+     },
+     {
+      "han": "神而明之存乎其人，默而成之，不言而信，存乎德行。",
+      "vi": "Làm cho nó thần diệu mà sáng tỏ là ở con người; im lặng mà thành tựu, chẳng nói mà người tin, là ở đức hạnh.",
+      "note": "Theo Chu Hy: quẻ hào sở dĩ biến thông được là ở người; người sở dĩ làm cho nó thần diệu mà sáng tỏ được là ở đức."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-tu-ha",
+  "title": "Hệ từ hạ",
+  "titleHan": "繫辭下",
+  "summary": "Thiên hạ của Hệ từ truyện, theo Chu Hy Bản nghĩa chia 12 chương: bàn về quẻ hào và sự biến động, thánh nhân chế đồ vật theo tượng quẻ, giảng nghĩa mười một lời hào, chín quẻ để ở trong lo hoạn, ý nghĩa các ngôi hào và ba tài.",
+  "chapters": [
+   {
+    "n": 1,
+    "title": "Chương 1",
+    "paras": [
+     {
+      "han": "八卦成列，象在其中矣。因而重之，爻在其中矣。剛柔相推，變在其中矣。繫辭焉而命之，動在其中矣。",
+      "vi": "Tám quẻ xếp thành hàng, tượng đã ở trong đó. Nhân đó chồng chúng lên, hào đã ở trong đó. Cương nhu đẩy nhau, biến đổi ở trong đó. Gắn lời vào để chỉ bảo, sự động ở trong đó.",
+      "note": "Theo Chu Hy: \"tượng\" là hình thể của quẻ; \"chồng lên\" là lấy mỗi quẻ lần lượt thêm tám quẻ mà thành sáu mươi bốn; thánh nhân gắn lời vào để định lành dữ."
+     },
+     {
+      "han": "吉凶悔吝者、生乎動者也，剛柔者、立本者也，變通者、趣時者也，吉凶者、貞勝者也。",
+      "vi": "Lành, dữ, hối, lận là do động mà sinh ra. Cương nhu là cái lập nên gốc. Biến thông là cái hướng theo thời. Lành dữ là cái theo lẽ chính thường mà thắng nhau.",
+      "note": "Theo Chu Hy: \"trinh\" là chính, là thường; việc trong thiên hạ không lành thì dữ, không dữ thì lành, luôn thắng nhau không dứt."
+     },
+     {
+      "han": "天地之道，貞觀者也。日月之道、貞明者也，天下之動、貞夫一者也。",
+      "vi": "Đạo của trời đất là chính mà bày ra cho thấy. Đạo của mặt trời mặt trăng là chính mà sáng. Sự động của thiên hạ là chính ở một mà thôi.",
+      "note": "Theo Chu Hy: \"quan\" là bày cho thấy; sự động của thiên hạ biến đổi vô cùng, nhưng thuận lý thì lành, nghịch lý thì dữ, nên cái chính mà thường cũng chỉ là một lý."
+     },
+     {
+      "han": "夫乾、確然示人易矣，夫坤、隤然示人簡矣。爻也者、效此者也，象也者、像此者也。",
+      "vi": "Càn thì cứng chắc, bày cho người thấy sự dễ; Khôn thì mềm thuận, bày cho người thấy sự giản. Hào là bắt chước cái ấy; tượng là phỏng hình cái ấy.",
+      "note": "Theo Chu Hy: \"xác nhiên\" là dáng mạnh, \"đồi nhiên\" là dáng thuận; \"cái ấy\" chỉ lý mà Càn Khôn bày ra ở câu trên."
+     },
+     {
+      "han": "爻象動乎內，吉凶見乎外，功業見乎變，聖人之情見乎辭。",
+      "vi": "Hào và tượng động ở bên trong, lành dữ lộ ra bên ngoài; công nghiệp thấy được nơi sự biến, tình của thánh nhân thấy được nơi lời.",
+      "note": "Theo Chu Hy: \"trong\" là trong việc bói cỏ thi và lập quẻ, \"ngoài\" là ngoài việc ấy; biến tức là cái biến động ở trong, lời tức là lời hiện ra ở ngoài."
+     },
+     {
+      "han": "天地之大德曰生，聖人之大寶曰位。何以守位曰仁，何以聚人曰財，理財正辭、禁民為非曰義。",
+      "vi": "Trời đất có đức lớn là sinh; thánh nhân có của báu lớn là ngôi vị. Lấy gì giữ ngôi? Là nhân. Lấy gì tụ người? Là của cải. Sắp đặt của cải, sửa lời cho đúng, cấm dân làm điều sai trái, gọi là nghĩa.",
+      "note": "Theo Chu Hy: chữ 仁 (nhân) trong \"giữ ngôi là nhân\" là chữ 人 (người), bản nay viết thành 仁, họ Lã theo bản cổ; ý như câu \"không có dân chúng thì không lấy ai cùng giữ nước\"."
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title": "Chương 2: Thánh nhân chế đồ vật theo tượng quẻ",
+    "paras": [
+     {
+      "han": "古者包犧氏之王天下也，仰則觀象於天，俯則觀法於地，觀鳥獸之文與地之宜，近取諸身，遠取諸物，於是始作八卦，以通神明之德，以類萬物之情。",
+      "vi": "Thời xưa họ Bao Hy làm vua thiên hạ, ngẩng lên xem tượng ở trời, cúi xuống xem phép ở đất, xem vằn vẻ của chim thú cùng những gì hợp với đất; gần lấy từ thân mình, xa lấy từ muôn vật; từ đó mới làm ra tám quẻ, để thông với đức của thần minh, để xếp loại tình trạng của muôn vật.",
+      "note": "Theo Chu Hy: đức của thần minh như tính mạnh, thuận, động, dừng; tình của muôn vật như tượng sấm, gió, núi, chằm."
+     },
+     {
+      "han": "作結繩而為罔罟，以佃以漁，蓋取諸《離》。",
+      "vi": "Thắt dây làm lưới, làm chài, để săn thú, để bắt cá; có lẽ lấy ý ở quẻ Ly.",
+      "note": "Theo Chu Hy: hai mắt nối nhau mà vật mắc vào.",
+      "hex": [
+       30
+      ]
+     },
+     {
+      "han": "包犧氏沒，神農氏作，斲木為耜，揉木為耒，耒耨之利，以教天下，蓋取諸《益》。",
+      "vi": "Họ Bao Hy mất, họ Thần Nông nổi lên; đẽo gỗ làm lưỡi cày, uốn gỗ làm cán cày, lấy lợi ích của cày cuốc mà dạy thiên hạ; có lẽ lấy ý ở quẻ Ích.",
+      "note": "Theo Chu Hy: hai thể đều là mộc, trên thì vào, dưới thì động; điều ích cho thiên hạ không gì lớn hơn thế.",
+      "hex": [
+       42
+      ]
+     },
+     {
+      "han": "日中為市，致天下之民，聚天下之貨，交易而退，各得其所，蓋取諸《噬嗑》。",
+      "vi": "Lấy giữa trưa làm phiên chợ, gọi dân thiên hạ tới, gom hàng hóa thiên hạ lại, đổi chác xong thì về, mỗi người được cái phần của mình; có lẽ lấy ý ở quẻ Phệ hạp.",
+      "note": "Theo Chu Hy: giữa trưa làm chợ là trên sáng dưới động; lại mượn chữ \"phệ\" làm \"chợ\", chữ \"hạp\" làm \"hợp\".",
+      "hex": [
+       21
+      ]
+     },
+     {
+      "han": "神農氏沒，黃帝、堯、舜氏作，通其變，使民不倦，神而化之，使民宜之。《易》，窮則變，變則通，通則久。是以自天祐之，吉无不利。",
+      "vi": "Họ Thần Nông mất, các họ Hoàng Đế, Nghiêu, Thuấn dấy lên, làm thông sự biến đổi khiến dân không mỏi mệt, làm một cách thần diệu mà cảm hóa khiến dân thấy thích hợp. Dịch là: cùng thì biến, biến thì thông, thông thì lâu. Vì thế được trời giúp, lành, không gì không lợi."
+     },
+     {
+      "han": "黃帝、堯、舜垂衣裳而天下治，蓋取諸《乾》《坤》。",
+      "vi": "Hoàng Đế, Nghiêu, Thuấn rủ áo xiêm mà thiên hạ yên trị; có lẽ lấy ý ở quẻ Càn, quẻ Khôn.",
+      "note": "Theo Chu Hy: Càn Khôn biến hóa mà vô vi.",
+      "hex": [
+       1,
+       2
+      ]
+     },
+     {
+      "han": "刳木為舟，剡木為楫，舟楫之利，以濟不通，致遠以利天下，蓋取諸《渙》。",
+      "vi": "Khoét gỗ làm thuyền, vót gỗ làm mái chèo; cái lợi của thuyền và chèo là để qua chỗ không thông, tới nơi xa để làm lợi cho thiên hạ; có lẽ lấy ý ở quẻ Hoán.",
+      "note": "Theo Chu Hy: gỗ ở trên nước; câu \"tới nơi xa để làm lợi cho thiên hạ\" ngờ là chữ thừa.",
+      "hex": [
+       59
+      ]
+     },
+     {
+      "han": "服牛乘馬，引重致遠，以利天下，蓋取諸《隨》。",
+      "vi": "Đóng ách cho trâu, cưỡi ngựa, kéo vật nặng đi xa để làm lợi cho thiên hạ; có lẽ lấy ý ở quẻ Tùy.",
+      "note": "Theo Chu Hy: dưới động, trên vui.",
+      "hex": [
+       17
+      ]
+     },
+     {
+      "han": "重門擊柝，以待暴客，蓋取諸《豫》。",
+      "vi": "Làm nhiều lớp cửa, gõ mõ canh, để đợi kẻ cướp hung bạo; có lẽ lấy ý ở quẻ Dự.",
+      "note": "Theo Chu Hy: là ý phòng bị trước.",
+      "hex": [
+       16
+      ]
+     },
+     {
+      "han": "斷木為杵，掘地為臼，臼、杵之利，萬民以濟，蓋取諸《小過》。",
+      "vi": "Chặt gỗ làm chày, khoét đất làm cối; nhờ cái lợi của cối chày mà muôn dân được giúp; có lẽ lấy ý ở quẻ Tiểu quá.",
+      "note": "Theo Chu Hy: dưới dừng, trên động.",
+      "hex": [
+       62
+      ]
+     },
+     {
+      "han": "弦木為弧，剡木為矢，弧、矢之利，以威天下，蓋取諸《睽》。",
+      "vi": "Căng dây vào gỗ làm cung, vót gỗ làm tên; cái lợi của cung tên là để ra oai với thiên hạ; có lẽ lấy ý ở quẻ Khuê.",
+      "note": "Theo Chu Hy: có chống trái rồi sau mới dùng oai để khiến phục.",
+      "hex": [
+       38
+      ]
+     },
+     {
+      "han": "上古穴居而野處，後世聖人易之以宮室，上棟下宇，以待風雨，蓋取諸《大壯》。",
+      "vi": "Thời thượng cổ ở hang, sống ngoài đồng; thánh nhân đời sau đổi lại bằng nhà cửa, đòn nóc ở trên, mái hiên ở dưới, để đợi gió mưa; có lẽ lấy ý ở quẻ Đại tráng.",
+      "note": "Theo Chu Hy: là ý vững chắc.",
+      "hex": [
+       34
+      ]
+     },
+     {
+      "han": "古之葬者，厚衣之以薪，葬之中野，不封不樹，喪期无數。後世聖人易之以棺椁，蓋取諸《大過》。",
+      "vi": "Thời xưa chôn người chết thì lấy củi phủ dày lên, chôn giữa đồng, không đắp mộ, không trồng cây, kỳ tang không có số ngày nhất định; thánh nhân đời sau đổi lại bằng quan quách; có lẽ lấy ý ở quẻ Đại quá.",
+      "note": "Theo Chu Hy: tiễn đưa người chết là việc lớn nên vượt về phía hậu.",
+      "hex": [
+       28
+      ]
+     },
+     {
+      "han": "上古結繩而治，後世聖人易之以書契，百官以治，萬民以察，蓋取諸《夬》。",
+      "vi": "Đời thượng cổ cai trị bằng cách thắt nút dây; về sau thánh nhân đổi lại bằng chữ viết và khế khắc, trăm quan nhờ đó mà làm việc, muôn dân nhờ đó mà xét rõ; có lẽ lấy ý ở quẻ Quải.",
+      "note": "Theo Chu Hy: là ý sáng suốt quyết đoán.",
+      "hex": [
+       43
+      ]
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title": "Chương 3: Tượng, thoán, hào",
+    "paras": [
+     {
+      "han": "是故《易》者、象也，象也者、像也。彖者、材也，爻也者、效天下之動者也。是故吉凶生而悔吝著也。",
+      "vi": "Cho nên Dịch là tượng; tượng là phỏng theo hình. Thoán là tài chất; hào là bắt chước sự động của thiên hạ. Cho nên lành dữ sinh ra mà hối lận hiện rõ.",
+      "note": "Theo Chu Hy: hình quẻ của Dịch là cái giống với lý; thoán nói tài chất của một quẻ; \"hiệu\" là phỏng theo; hối lận vốn nhỏ, nhân đó mà rõ ra."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title": "Chương 4: Quẻ dương, quẻ âm",
+    "paras": [
+     {
+      "han": "陽卦多陰，陰卦多陽，其故何也？陽卦奇，陰卦耦。",
+      "vi": "Quẻ dương nhiều hào âm, quẻ âm nhiều hào dương, cớ sao vậy? Vì quẻ dương là số lẻ, quẻ âm là số chẵn.",
+      "note": "Theo Chu Hy: Chấn, Khảm, Cấn là quẻ dương, đều một dương hai âm; Tốn, Ly, Đoài là quẻ âm, đều một âm hai dương; quẻ dương đều năm nét, quẻ âm đều bốn nét."
+     },
+     {
+      "han": "其德行何也？陽、一君而二民，君子之道也；陰、二君而一民，小人之道也。",
+      "vi": "Đức hạnh của chúng thế nào? Dương thì một vua hai dân, ấy là đạo quân tử; âm thì hai vua một dân, ấy là đạo tiểu nhân.",
+      "note": "Theo Chu Hy: \"vua\" chỉ dương, \"dân\" chỉ âm."
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title": "Chương 5: Giảng nghĩa mười một lời hào",
+    "paras": [
+     {
+      "han": "《易》曰：「憧憧往來，朋從爾思。」子曰：「天下何思何慮？天下同歸而殊塗，一致而百慮。",
+      "vi": "Dịch nói: \"Lăng xăng qua lại, bạn bè theo ý nghĩ của anh.\" Khổng Tử nói: \"Thiên hạ nghĩ gì lo gì? Thiên hạ cùng về một chốn mà đường đi khác nhau, cùng tới một chỗ mà trăm mối lo nghĩ.",
+      "note": "Theo Chu Hy: đây dẫn lời hào Cửu tứ quẻ Hàm mà giảng; lý vốn không hai, đường khác nhau và trăm mối lo nghĩ đều là tự nhiên, cần gì phải nghĩ lo; phải nghĩ rồi mới theo thì cái theo mình cũng hẹp.",
+      "hex": [
+       31
+      ]
+     },
+     {
+      "han": "天下何思何慮？日往則月來，月往則日來，日月相推而明生焉。寒往則暑來，暑往則寒來，寒暑相推而歲成焉。",
+      "vi": "Thiên hạ nghĩ gì lo gì? Mặt trời đi thì mặt trăng đến, mặt trăng đi thì mặt trời đến, mặt trời mặt trăng đẩy nhau mà ánh sáng sinh ra. Lạnh đi thì nóng đến, nóng đi thì lạnh đến, lạnh nóng đẩy nhau mà thành năm.",
+      "hex": [
+       31
+      ]
+     },
+     {
+      "han": "往者屈也，來者信也，屈、信相感而利生焉。",
+      "vi": "Cái đi là co lại, cái đến là duỗi ra; co duỗi cảm nhau mà cái lợi sinh ra.",
+      "note": "Theo Chu Hy: chữ 信 đọc âm 申 (thân, duỗi); qua lại co duỗi đều là lẽ thường cảm ứng tự nhiên, thêm lòng lăng xăng vào thì sa vào tư riêng.",
+      "hex": [
+       31
+      ]
+     },
+     {
+      "han": "尺蠖之屈，以求信也。龍蛇之蟄，以存身也。精義入神，以致用也。利用安身，以崇德也。",
+      "vi": "Sâu đo co mình là để duỗi ra; rồng rắn nằm ẩn là để giữ thân. Tinh xét nghĩa lý tới chỗ thần diệu là để đem ra dùng; lợi cho việc dùng, yên thân mình là để nâng cao đức.",
+      "note": "Theo Chu Hy: tinh nghiên nghĩa lý tới chỗ nhập thần là chỗ cùng cực của co, mà chính là gốc để ra mà dùng; lợi việc dùng, đi đâu cũng yên là chỗ cùng cực của duỗi, mà chính là chỗ dựa để vào mà nâng đức; trong ngoài nuôi nhau.",
+      "hex": [
+       31
+      ]
+     },
+     {
+      "han": "過此以往，未之或知也。窮神知化，德之盛也。」",
+      "vi": "Vượt quá đó trở đi thì chưa ai biết được. Cùng tột cái thần, biết được sự hóa, ấy là đức thịnh.\"",
+      "note": "Theo Chu Hy: việc hạ học là dốc sức vào tinh nghĩa, lợi dụng; từ đó trở lên thì không còn chỗ dùng sức, còn cùng thần biết hóa là do đức thịnh nhân chín mà tự đến; bốn đoạn trên đều giảng nghĩa hào Cửu tứ quẻ Hàm.",
+      "hex": [
+       31
+      ]
+     },
+     {
+      "han": "《易》曰：「困于石，據于蒺蔾，入于其宮，不見其妻，凶。」",
+      "vi": "Dịch nói: \"Khốn ở đá, dựa vào cây gai tật lê, vào nhà mình không thấy vợ, dữ.\"",
+      "hex": [
+       47
+      ]
+     },
+     {
+      "han": "子曰：「非所困而困焉，名必辱。非所據而據焉，身必危。既辱且危，死期將至，妻其可得見耶！」",
+      "vi": "Khổng Tử nói: \"Chẳng phải chỗ đáng khốn mà khốn thì tên tuổi ắt nhục; chẳng phải chỗ nên dựa mà dựa thì thân ắt nguy. Đã nhục lại nguy, ngày chết sắp tới, còn thấy được vợ sao!\"",
+      "note": "Theo Chu Hy: giảng nghĩa hào Lục tam quẻ Khốn.",
+      "hex": [
+       47
+      ]
+     },
+     {
+      "han": "《易》曰：「公用射隼于高墉之上，獲之，无不利。」子曰：「隼者、禽也，弓矢者、器也，射之者、人也。",
+      "vi": "Dịch nói: \"Bậc công bắn chim cắt trên tường cao, bắt được, không gì không lợi.\" Khổng Tử nói: \"Chim cắt là cầm điểu; cung tên là khí cụ; kẻ bắn là con người.",
+      "hex": [
+       40
+      ]
+     },
+     {
+      "han": "君子藏器於身，待時而動，何不利之有？動而不括，是以出而有獲，語成器而動者也。」",
+      "vi": "Người quân tử giữ khí cụ sẵn trong mình, đợi thời mà động, thì có gì không lợi? Động mà không vướng mắc, vì thế ra là có thu được; ấy là nói có sẵn khí cụ rồi mới động.\"",
+      "note": "Theo Chu Hy: \"quát\" là vướng mắc; đây giảng nghĩa hào Thượng lục quẻ Giải.",
+      "hex": [
+       40
+      ]
+     },
+     {
+      "han": "子曰：「小人不恥不仁，不畏不義，不見利不勸，不威不懲。小懲而大誡，此小人之福也。《易》曰：『屨校滅趾，无咎。』此之謂也。」",
+      "vi": "Khổng Tử nói: \"Kẻ tiểu nhân chẳng biết thẹn với việc bất nhân, chẳng biết sợ việc bất nghĩa; chẳng thấy lợi thì chẳng hăng hái, chẳng bị uy thì chẳng chừa. Phạt nhỏ mà răn lớn, ấy là phúc của kẻ tiểu nhân. Dịch nói: 'Mang cùm lấp mất ngón chân, không lỗi', là nói điều này.",
+      "note": "Theo Chu Hy: giảng nghĩa hào Sơ cửu quẻ Phệ hạp.",
+      "hex": [
+       21
+      ]
+     },
+     {
+      "han": "「善不積不足以成名，惡不積不足以滅身。小人以小善為无益而弗為也，以小惡為无傷而弗去也，故惡積而不可揜，罪大而不可解。《易》曰：『何校滅耳，凶。』」",
+      "vi": "Điều thiện không tích lại thì không đủ để thành danh, điều ác không tích lại thì không đủ để hại thân. Kẻ tiểu nhân thấy việc thiện nhỏ không ích gì nên chẳng làm, thấy việc ác nhỏ không hại gì nên chẳng bỏ, vì thế ác chồng chất tới mức không che được, tội lớn tới mức không gỡ được. Dịch nói: 'Vác gông lấp mất tai, dữ.'\"",
+      "note": "Theo Chu Hy: giảng nghĩa hào Thượng cửu quẻ Phệ hạp.",
+      "hex": [
+       21
+      ]
+     },
+     {
+      "han": "子曰：「危者、安其位者也，亡者、保其存者也，亂者、有其治者也。",
+      "vi": "Khổng Tử nói: \"Nguy là do yên ổn với ngôi vị của mình; mất là do giữ lấy sự còn của mình; loạn là do có được sự trị của mình.",
+      "hex": [
+       12
+      ]
+     },
+     {
+      "han": "是故君子安而不忘危，存而不忘亡，治而不忘亂，是以身安而國家可保也。《易》曰：『其亡其亡，繫于苞桑。』」",
+      "vi": "Cho nên người quân tử yên mà không quên nguy, còn mà không quên mất, trị mà không quên loạn, nhờ vậy thân yên mà nước nhà giữ được. Dịch nói: 'Sắp mất rồi, sắp mất rồi, buộc vào bụi dâu.'\"",
+      "note": "Theo Chu Hy: giảng nghĩa hào Cửu ngũ quẻ Bĩ.",
+      "hex": [
+       12
+      ]
+     },
+     {
+      "han": "子曰：「德薄而位尊，知小而謀大，力少而任重，鮮不及矣。《易》曰：『鼎折足，覆公餗，其形渥，凶。』言不勝其任也。」",
+      "vi": "Khổng Tử nói: \"Đức mỏng mà ngôi cao, hiểu biết ít mà mưu toan lớn, sức yếu mà gánh vác việc nặng, ít khi không chuốc lấy vạ. Dịch nói: 'Vạc gãy chân, đổ cháo của bậc công, thân vạc ướt đẫm, dữ.' Là nói không kham nổi việc được giao.\"",
+      "note": "Theo Chu Hy: giảng nghĩa hào Cửu tứ quẻ Đỉnh.",
+      "hex": [
+       50
+      ]
+     },
+     {
+      "han": "子曰：「知幾其神乎！君子上交不諂，下交不瀆，其知幾乎？幾者、動之微、吉之先見者也。君子見幾而作。不俟終日。",
+      "vi": "Khổng Tử nói: \"Biết cơ vi thì thần diệu thay! Người quân tử giao với bề trên không nịnh, giao với bề dưới không nhờn, ấy là biết cơ vi chăng? Cơ là cái nhỏ nhiệm của sự động, là cái lành hiện ra trước. Người quân tử thấy cơ là làm ngay, không đợi hết ngày.",
+      "hex": [
+       16
+      ]
+     },
+     {
+      "han": "《易》曰：『介于石，不終日，貞吉。』介如石焉，寧用終日，斷可識矣。君子知微知彰，知柔知剛，萬夫之望。」",
+      "vi": "Dịch nói: 'Vững như đá, không đợi hết ngày, chính thì lành.' Đã vững như đá thì cần gì đợi hết ngày, điều ấy hẳn có thể biết. Người quân tử biết cái nhỏ, biết cái rõ, biết cái mềm, biết cái cứng, là chỗ muôn người trông vào.\"",
+      "note": "Theo Chu Hy: giảng nghĩa hào Lục nhị quẻ Dự; sách Hán thư, giữa chữ 吉 và chữ 之 (trong câu \"cái lành hiện ra trước\") có chữ 凶 (dữ).",
+      "hex": [
+       16
+      ]
+     },
+     {
+      "han": "子曰：「顏氏之子，其殆庶幾乎？有不善未嘗不知，知之未嘗復行也。《易》曰：『不遠復，无衹悔，元吉。』」",
+      "vi": "Khổng Tử nói: \"Người con họ Nhan có lẽ đã gần rồi chăng? Có điều chẳng lành thì chưa từng không biết, biết rồi thì chưa từng làm lại. Dịch nói: 'Đi chưa xa đã trở lại, không đến nỗi hối, rất lành.'\"",
+      "note": "Theo Chu Hy: \"thứ cơ\" là ý gần, nói gần với đạo; đây giảng nghĩa hào Sơ cửu quẻ Phục.",
+      "hex": [
+       24
+      ]
+     },
+     {
+      "han": "天地絪縕，萬物化醇。男女構精，萬物化生。《易》曰：『三人行則損一人，一人行則得其友。』言致一也。",
+      "vi": "Trời đất quấn quýt giao hòa, muôn vật hóa thành đậm đặc; trai gái hợp tinh, muôn vật hóa sinh. Dịch nói: 'Ba người đi chung thì mất một người, một mình đi thì gặp bạn.' Là nói tới chỗ chuyên nhất.",
+      "note": "Theo Chu Hy: \"nhân uân\" là dáng giao hòa khít khao; \"thuần\" là dày mà đọng lại; câu trước nói khí hóa, câu sau nói hình hóa; đây giảng nghĩa hào Lục tam quẻ Tổn.",
+      "hex": [
+       41
+      ]
+     },
+     {
+      "han": "子曰：「君子安其身而後動，易其心而後語，定其交而後求。君子脩此三者，故全也。",
+      "vi": "Khổng Tử nói: \"Người quân tử yên thân rồi sau mới động, bình lòng rồi sau mới nói, định rõ chỗ giao kết rồi sau mới cầu. Người quân tử sửa được ba điều ấy nên được vẹn toàn.",
+      "hex": [
+       42
+      ]
+     },
+     {
+      "han": "危以動，則民不與也。懼以語，則民不應也。无交而求，則民不與也。莫之與，則傷之者至矣。《易》曰：『莫益之，或擊之，立心勿恆，凶。』」",
+      "vi": "Nguy mà động thì dân không theo; sợ mà nói thì dân không hưởng ứng; không giao kết mà cầu thì dân không cho. Không ai theo mình thì kẻ hại mình tới. Dịch nói: 'Chẳng ai làm lợi cho, lại có kẻ đánh, lập lòng không bền, dữ.'\"",
+      "note": "Theo Chu Hy: giảng nghĩa hào Thượng cửu quẻ Ích.",
+      "hex": [
+       42
+      ]
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "title": "Chương 6: Càn Khôn là cửa của Dịch",
+    "paras": [
+     {
+      "han": "子曰：「乾坤，其《易》之門邪？」乾、陽物也，坤、陰物也。陰陽合德，而剛柔有體。以體天地之撰，以通神明之德。",
+      "vi": "Khổng Tử nói: \"Càn Khôn có phải là cửa của Dịch chăng?\" Càn là vật dương, Khôn là vật âm. Âm dương hợp đức mà cương nhu có thể, để thể hiện việc của trời đất, để thông với đức của thần minh.",
+      "note": "Theo Chu Hy: thể cương nhu của các quẻ đều do Càn Khôn hợp đức mà thành, nên gọi Càn Khôn là cửa ngõ của Dịch; \"soạn\" như là \"việc\"."
+     },
+     {
+      "han": "其稱名也，雜而不越。於稽其類，其衰世之意邪？",
+      "vi": "Tên gọi của nó thì lẫn tạp mà không vượt ra ngoài; xét đến loại của nó, có lẽ là ý của đời suy chăng?",
+      "note": "Theo Chu Hy: muôn vật tuy nhiều đều ra từ sự biến của âm dương, nên nghĩa quẻ hào tuy lẫn tạp mà không sai lệch; nhưng đó không phải điều thời thượng cổ thuần phác nghĩ tới, nên cho là ý của đời suy, chỉ thời Văn Vương với Trụ."
+     },
+     {
+      "han": "夫《易》、彰往而察來，而微顯、闡幽，開而當名，辯物正言，斷辭則備矣。",
+      "vi": "Dịch soi rõ việc đã qua, xét biết việc sẽ tới, làm hiện cái nhỏ nhiệm, mở tỏ cái u tối; mở ra mà gọi tên xứng đáng, phân biệt sự vật, nói lời ngay chính, lời đoán định thì đủ cả.",
+      "note": "Theo Chu Hy: \"而微顯\" e nên là \"微顯而\", chữ \"而\" trong \"開而\" cũng ngờ có sai."
+     },
+     {
+      "han": "其稱名也小，其取類也大。其旨遠，其辭文，其言曲而中，其事肆而隱。因貳以濟民行，以明失得之報。",
+      "vi": "Nó gọi tên thì nhỏ, lấy loại thì lớn; ý chỉ thì xa, lời thì có văn vẻ; lời nói quanh co mà trúng, việc bày ra mà ẩn sâu. Nhân chỗ ngờ mà giúp dân hành động, để làm rõ sự báo ứng của được và mất.",
+      "note": "Theo Chu Hy: \"tứ\" là bày ra, \"nhị\" là ngờ; chương này nhiều chỗ thiếu chữ, chữ đáng ngờ, không thể thông hết."
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "title": "Chương 7: Chín quẻ và đạo ở trong lo hoạn",
+    "paras": [
+     {
+      "han": "《易》之興也，其於中古乎？作《易》者、其有憂患乎？",
+      "vi": "Dịch hưng lên có lẽ vào đời trung cổ chăng? Kẻ làm ra Dịch hẳn có mối lo hoạn chăng?",
+      "note": "Theo Chu Hy: cuối đời Hạ, Thương, đạo Dịch suy giữa chừng; Văn Vương bị giam ở Dũ Lý mà gắn lời thoán, đạo Dịch lại hưng."
+     },
+     {
+      "han": "是故《履》、德之基也，《謙》、德之柄也，《復》、德之本也，《恆》、德之固也，《損》、德之脩也，《益》、德之裕也，《困》、德之辯也，《井》、德之地也，《巽》、德之制也，",
+      "vi": "Cho nên Lý là nền của đức, Khiêm là cán của đức, Phục là gốc của đức, Hằng là chỗ bền của đức, Tổn là sự sửa của đức, Ích là sự dồi dào của đức, Khốn là chỗ phân biệt của đức, Tỉnh là đất của đức, Tốn là sự chế định của đức.",
+      "note": "Theo Chu Hy: chín quẻ đều là việc quay về mình sửa đức để ở trong lo hoạn, và có thứ tự: nền để đứng, cán để cầm; Phục là lòng không chạy ra ngoài mà mối thiện còn; Hằng là giữ không đổi mà thường lâu; răn giận ngăn dục để sửa mình (Tổn), theo thiện sửa lỗi để lớn điều thiện (Ích); Khốn để tự nghiệm sức mình; Tỉnh để không đổi chỗ của mình, rồi sau mới có thể nhún thuận theo lý (Tốn) mà chế ngự việc biến.",
+      "hex": [
+       10,
+       15,
+       24,
+       32,
+       41,
+       42,
+       47,
+       48,
+       57
+      ]
+     },
+     {
+      "han": "《履》、和而至，《謙》、尊而光，《復》、小而辨於物，《恆》、雜而不厭，《損》、先難而後易，《益》、長裕而不設，《困》、窮而通，《井》、居其所而遷，《巽》、稱而隱。",
+      "vi": "Lý thì hòa mà đến nơi; Khiêm thì được tôn mà sáng; Phục thì nhỏ mà phân biệt được với vật; Hằng thì ở chỗ lẫn tạp mà không chán; Tổn thì trước khó sau dễ; Ích thì lớn thêm dồi dào mà không bày đặt; Khốn thì cùng mà thông; Tỉnh thì ở yên chỗ mình mà vẫn dời đi; Tốn thì cân nhắc mà ẩn kín.",
+      "note": "Theo Chu Hy: Phục là dương nhỏ mà không bị đám âm làm rối; Ích chỉ lớn thêm mà không tạo tác; Tỉnh không động mà tới được vật; Tốn là cân đúng điều hợp với vật mà ẩn kín không lộ.",
+      "hex": [
+       10,
+       15,
+       24,
+       32,
+       41,
+       42,
+       47,
+       48,
+       57
+      ]
+     },
+     {
+      "han": "《履》以和行，《謙》以制禮，《復》以自知，《恆》以一德，《損》以遠害，《益》以興利，《困》以寡怨，《井》以辯義，《巽》以行權。",
+      "vi": "Lý để làm cho việc làm hòa hợp; Khiêm để định lễ; Phục để tự biết mình; Hằng để đức được chuyên một; Tổn để tránh xa điều hại; Ích để làm nảy điều lợi; Khốn để ít oán hận; Tỉnh để phân biệt điều nghĩa; Tốn để thực hành quyền biến.",
+      "note": "Theo Chu Hy: \"quả oán\" là ít điều oán trách; \"biện nghĩa\" là yên mà biết suy xét.",
+      "hex": [
+       10,
+       15,
+       24,
+       32,
+       41,
+       42,
+       47,
+       48,
+       57
+      ]
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "title": "Chương 8",
+    "paras": [
+     {
+      "han": "《易》之為書也不可遠，為道也屢遷，變動不居，周流六虛，上下无常，剛柔相易，不可為典要，唯變所適。",
+      "vi": "Dịch là sách không thể xa rời; đạo của nó thường dời đổi, biến động không ở yên, chảy khắp sáu ngôi trống, lên xuống không thường, cương nhu đổi cho nhau, không thể lấy làm khuôn mẫu cố định, chỉ theo chỗ biến mà đi.",
+      "note": "Theo Chu Hy: \"xa\" như là quên; \"chảy khắp sáu hư\" là âm dương lưu hành ở sáu ngôi của quẻ."
+     },
+     {
+      "han": "其出入以度外內，使知懼。又明於憂患與故。无有師保，如臨父母。",
+      "vi": "Ra vào lấy chừng mực ngoài trong, khiến biết sợ. Lại làm rõ nỗi lo hoạn cùng nguyên cớ của nó. Không có thầy dạy người giữ, mà như cha mẹ đứng trước mặt.",
+      "note": "Theo Chu Hy: câu \"其出入以度外內，使知懼\" chưa rõ nghĩa, ngờ có chữ sót, chữ sai; tuy không có thầy dạy người giữ mà luôn như cha mẹ đứng đó, là răn sợ đến cùng cực."
+     },
+     {
+      "han": "初率其辭而揆其方，既有典常。苟非其人，道不虛行。",
+      "vi": "Ban đầu theo lời của nó mà đo xét đạo lý, thì thấy đã có phép tắc thường. Nếu không phải người xứng đáng thì đạo không tự đi suông.",
+      "note": "Theo Chu Hy: \"phương\" là đạo; bắt đầu do lời mà suy lường lý thì thấy có phép tắc thường, nhưng làm cho thần diệu sáng tỏ thì ở nơi con người."
+     }
+    ]
+   },
+   {
+    "n": 9,
+    "title": "Chương 9: Các hào trong quẻ",
+    "paras": [
+     {
+      "han": "《易》之為書也，原始要終，以為質也。六爻相雜，唯其時物也。",
+      "vi": "Dịch là sách truy về lúc đầu, tóm lấy lúc cuối để làm thể chất. Sáu hào xen lẫn nhau, chỉ là theo thời và vật của nó.",
+      "note": "Theo Chu Hy: \"chất\" là thể của quẻ; quẻ phải nêu đủ đầu cuối rồi mới thành thể, còn hào thì chỉ theo thời và vật mà thôi."
+     },
+     {
+      "han": "其初難知，其上易知，本末也。初辭擬之，卒成之終。",
+      "vi": "Hào đầu khó biết, hào trên dễ biết, vì là gốc và ngọn. Lời hào đầu thì phỏng định, tới cuối mới thành ở hào chót.",
+      "note": "Theo Chu Hy: đây nói hai hào đầu và trên."
+     },
+     {
+      "han": "若夫雜物撰德，辯是與非，則非其中爻不備。噫亦要存亡吉凶，則居可知矣。知者觀其彖辭，則思過半矣。",
+      "vi": "Còn như xen lẫn các vật, bày các đức, phân biệt phải trái, thì không có các hào giữa sẽ không đủ. Ôi, cũng là để tóm lấy lẽ còn mất lành dữ, thì ở yên cũng biết được. Người trí xem lời thoán thì đã nghĩ được quá nửa.",
+      "note": "Theo Chu Hy: đây nói bốn hào giữa của quẻ; thoán là bàn chung thể sáu hào của một quẻ."
+     },
+     {
+      "han": "二與四同功而異位，其善不同，二多譽，四多懼，近也。柔之為道不利遠者。其要无咎，其用柔中也。",
+      "vi": "Hào hai và hào bốn cùng công mà khác ngôi, chỗ tốt không giống nhau: hào hai nhiều khen, hào bốn nhiều sợ, vì gần. Đạo của nhu vốn không lợi cho kẻ ở xa; cốt ở chỗ không lỗi, là nhờ dùng nhu mà đắc trung.",
+      "note": "Theo Chu Hy: cùng công là đều là ngôi âm, khác ngôi là xa gần không giống; hào bốn gần vua nên nhiều sợ; nhu không lợi ở xa mà hào hai nhiều khen là vì nhu mà đắc trung."
+     },
+     {
+      "han": "三與五同功而異位，三多凶，五多功，貴賤之等也。其柔危，其剛勝邪？",
+      "vi": "Hào ba và hào năm cùng công mà khác ngôi: hào ba nhiều dữ, hào năm nhiều công, là do thứ bậc sang hèn. Hào nhu ở đó thì nguy, hào cương thì thắng được chăng?",
+      "note": "Theo Chu Hy: ba và năm cùng là ngôi dương mà sang hèn khác nhau; lấy nhu ở đó thì nguy, chỉ cương mới thắng được."
+     }
+    ]
+   },
+   {
+    "n": 10,
+    "title": "Chương 10: Ba tài và sáu hào",
+    "paras": [
+     {
+      "han": "《易》之為書也，廣大悉備。有天道焉，有人道焉，有地道焉。兼三材而兩之，故六。六者非它也，三材之道也。",
+      "vi": "Dịch là sách rộng lớn, đủ cả; trong đó có đạo của trời, của người, của đất. Gồm ba tài mà nhân đôi lên, nên có sáu. Sáu ấy chẳng phải gì khác, chính là đạo ba tài.",
+      "note": "Theo Chu Hy: ba nét đã đủ ba tài, chồng lên nên thành sáu; lấy hai hào trên là trời, hai hào giữa là người, hai hào dưới là đất."
+     },
+     {
+      "han": "道有變動，故曰爻。爻有等，故曰物。物相雜，故曰文。文不當，故吉凶生焉。",
+      "vi": "Đạo có biến động nên gọi là hào; hào có thứ bậc nên gọi là vật; vật xen lẫn nhau nên gọi là văn; văn không xứng đáng nên lành dữ sinh ra.",
+      "note": "Theo Chu Hy: \"đạo có biến động\" chỉ một thể của quẻ; \"bậc\" là sự chênh lệch xa gần sang hèn; \"xen lẫn\" là ngôi cương nhu xen nhau; \"không đáng\" là hào không đáng ngôi."
+     }
+    ]
+   },
+   {
+    "n": 11,
+    "title": "Chương 11",
+    "paras": [
+     {
+      "han": "《易》之興也，其當殷之末世，周之盛德邪？當文王與紂之事邪？是故其辭危。",
+      "vi": "Dịch hưng khởi có lẽ vào cuối đời Ân, khi nhà Chu đức đang thịnh chăng? Vào lúc có việc giữa Văn Vương và vua Trụ chăng? Cho nên lời của nó đầy lo nguy."
+     },
+     {
+      "han": "危者使平，易者使傾。其道甚大，百物不廢。懼以終始，其要无咎，此之謂《易》之道也。",
+      "vi": "Biết lo nguy thì được bình yên, khinh dễ thì bị nghiêng đổ. Đạo ấy rất lớn, trăm vật không bỏ sót. Lo sợ từ đầu đến cuối, cốt ở chỗ không lỗi; đó gọi là đạo của Dịch.",
+      "note": "Theo Chu Hy: lo nguy sợ hãi thì được bình yên, khinh dễ thì ắt nghiêng đổ, đó là đạo của Dịch."
+     }
+    ]
+   },
+   {
+    "n": 12,
+    "title": "Chương 12",
+    "paras": [
+     {
+      "han": "夫乾、天下之至健也，德行恆易以知險。夫坤、天下之至順也，德行恆簡以知阻。",
+      "vi": "Càn là cái cực mạnh của thiên hạ, đức hạnh của nó luôn dễ mà biết chỗ hiểm; Khôn là cái cực thuận của thiên hạ, đức hạnh của nó luôn giản mà biết chỗ ngăn trở.",
+      "note": "Theo Chu Hy: mạnh tới cùng thì việc làm không khó nên dễ, thuận tới cùng thì việc làm không phiền nên giản, nhưng đối với việc đều biết cái khó mà không dám coi thường; mạnh thì như từ cao nhìn xuống mà biết chỗ hiểm, thuận thì như từ dưới đi lên mà biết chỗ ngăn trở."
+     },
+     {
+      "han": "能說諸心，能研諸侯之慮，定天下之吉凶，成天下之亹亹者。",
+      "vi": "Có thể làm vui trong lòng, có thể nghiền xét các mối lo nghĩ, định được lành dữ của thiên hạ, làm nên những việc gắng gỏi không ngừng của thiên hạ.",
+      "note": "Theo Chu Hy: hai chữ \"侯之\" là thừa; làm vui trong lòng là lòng hợp với lý, là việc của Càn; nghiền xét lo nghĩ là lý nhờ lo nghĩ mà rõ, là việc của Khôn."
+     },
+     {
+      "han": "是故變化云為，吉事有祥。象事知器，占事知來。",
+      "vi": "Cho nên biến hóa, nói năng, làm việc, thì việc lành có điềm báo. Xem tượng của việc thì biết đồ vật, bói việc thì biết điều sắp tới.",
+      "note": "Theo Chu Hy: biến hóa nói làm nên xem tượng việc có thể biết đồ vật; việc lành có điềm nên bói việc có thể biết điều sắp tới."
+     },
+     {
+      "han": "天地設位，聖人成能。人謀鬼謀，百姓與能。",
+      "vi": "Trời đất đặt ngôi, thánh nhân làm nên công năng. Mưu của người, mưu của quỷ thần, trăm họ đều dự được vào công năng ấy.",
+      "note": "Theo Chu Hy: trời đất đặt ngôi mà thánh nhân làm ra Dịch để thành công việc ấy; khi đó mưu người mưu quỷ, dù trăm họ ngu cũng đều dự được vào công năng ấy."
+     },
+     {
+      "han": "八卦以象告，爻彖以情言，剛柔雜居，而吉凶可見矣。變動以利言，吉凶以情遷。",
+      "vi": "Tám quẻ lấy tượng mà báo, hào và thoán lấy tình mà nói; cương nhu ở xen nhau mà lành dữ có thể thấy được. Biến động thì lấy lợi mà nói, lành dữ thì theo tình mà dời đổi.",
+      "note": "Theo Chu Hy: \"tượng\" là nét quẻ; \"hào thoán\" là lời quẻ, lời hào."
+     },
+     {
+      "han": "是故愛惡相攻而吉凶生，遠近相取而悔吝生，情偽相感而利害生。凡《易》之情，近而不相得則凶，或害之，悔且吝。",
+      "vi": "Cho nên yêu ghét đánh nhau mà lành dữ sinh ra, xa gần lấy nhau mà hối lận sinh ra, thật giả cảm nhau mà lợi hại sinh ra. Phàm tình của Dịch, gần mà không hợp nhau thì dữ, hoặc có kẻ hại, hối và lận.",
+      "note": "Theo Chu Hy: \"không hợp nhau\" là ghét nhau; dữ, hại, hối, lận đều từ đó sinh ra."
+     },
+     {
+      "han": "將叛者其辭慚，中心疑者其辭枝，吉人之辭寡，躁人之辭多，誣善之人其辭游，失其守者其辭屈。",
+      "vi": "Kẻ sắp phản thì lời hổ thẹn; kẻ trong lòng ngờ thì lời rẽ nhánh; người lành lời ít; người nóng nảy lời nhiều; kẻ vu người thiện thì lời trôi nổi; kẻ mất chỗ giữ thì lời khuất phục.",
+      "note": "Theo Chu Hy: lời quẻ, lời hào cũng giống như thế."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "thuyet-quai",
+  "title": "Thuyết quái",
+  "titleHan": "說卦",
+  "summary": "Thuyết quái truyện, theo Chu Hy chia 11 chương: nói việc thánh nhân làm Dịch, vị trí và tính tình của tám quẻ, và các tượng (vật, thân người, cha mẹ và sáu con…) ứng với tám quẻ.",
+  "chapters": [
+   {
+    "n": 1,
+    "title": "Chương 1: Thánh nhân làm Dịch",
+    "paras": [
+     {
+      "han": "昔者聖人之作《易》也，幽贊於神明而生蓍，參天兩地而倚數，",
+      "vi": "Ngày xưa thánh nhân làm ra Dịch, thầm giúp vào thần minh mà sinh ra cỏ thi, lấy trời là ba, đất là hai mà dựa vào đó lập số,",
+      "note": "Theo Chu Hy: \"thầm giúp thần minh\" cũng như nói giúp vào sự hoá dục. Trời tròn đất vuông; tròn thì một mà vòng quanh ba, ba đều lẻ, nên \"ba trời\" thành ba; vuông thì một mà vòng quanh bốn, bốn hợp thành hai chẵn, nên \"hai đất\" thành hai; các số đều dựa vào đó mà khởi."
+     },
+     {
+      "han": "觀變於陰陽而立卦，發揮於剛柔而生爻，和順於道德而理於義，窮理盡性以至於命。",
+      "vi": "xem sự biến đổi của âm dương mà lập quẻ, phát huy cương nhu mà sinh ra hào, hoà thuận theo đạo đức mà sắp đặt hợp với nghĩa, xét cho tột cùng lẽ, làm trọn hết tính để đạt tới mệnh.",
+      "note": "Theo Chu Hy: \"hoà thuận\" là thong dong không có gì trái nghịch, nói chung; \"lý\" là theo từng việc mà được thứ lớp, nói riêng. Cùng xét lẽ trong thiên hạ, trọn hết tính của người và vật mà hợp với đạo trời, đó là công lớn nhất của thánh nhân khi làm Dịch."
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title": "Chương 2: Ba tài và sáu hào",
+    "paras": [
+     {
+      "han": "昔者聖人之作《易》也，將以順性命之理，是以立天之道曰陰與陽，立地之道曰柔與剛，立人之道曰仁與義。",
+      "vi": "Ngày xưa thánh nhân làm ra Dịch là để thuận theo lẽ của tính và mệnh; vì vậy lập đạo của trời gọi là âm và dương, lập đạo của đất gọi là nhu và cương, lập đạo của người gọi là nhân và nghĩa."
+     },
+     {
+      "han": "兼三才而兩之，故《易》六畫而成卦。",
+      "vi": "Gồm ba tài mà nhân đôi lên, nên Dịch có sáu nét thì thành một quẻ."
+     },
+     {
+      "han": "分陰分陽，迭用柔剛，故《易》六位而成章。",
+      "vi": "Chia ra âm, chia ra dương, dùng xen nhau nhu và cương, nên Dịch có sáu ngôi thì thành văn vẻ.",
+      "note": "Theo Chu Hy: \"gồm ba tài mà nhân đôi\" là nói chung sáu nét; lại chia nhỏ ra thì các ngôi âm dương xen lẫn nhau mà thành văn vẻ."
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title": "Chương 3",
+    "paras": [
+     {
+      "han": "天地定位，山澤通氣，雷風相薄，水火不相射，八封相錯。",
+      "vi": "Trời đất định ngôi, núi chằm thông khí, sấm gió xô vào nhau, nước lửa không bắn phá nhau, tám quẻ đan xen nhau.",
+      "note": "Theo Chu Hy: Thiệu Tử nói đây là vị trí tám quẻ của Phục Hy: Càn phía nam, Khôn phía bắc, Ly phía đông, Khảm phía tây, Đoài đông nam, Chấn đông bắc, Tốn tây nam, Cấn tây bắc; từ đó tám quẻ giao nhau, thành ra 64 quẻ, gọi là học Tiên thiên."
+     },
+     {
+      "han": "數往者順，知來者逆，是故《易》逆數也。",
+      "vi": "Đếm cái đã qua là thuận, biết cái sắp đến là nghịch; cho nên Dịch là đếm ngược.",
+      "note": "Theo Chu Hy: khởi từ Chấn, qua Ly, Đoài đến Càn là đếm các quẻ đã sinh; từ Tốn qua Khảm, Cấn đến Khôn là suy các quẻ chưa sinh. Dịch sinh quẻ theo thứ tự Càn, Đoài, Ly, Chấn, Tốn, Khảm, Cấn, Khôn, nên đều là đếm ngược."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title": "Chương 4",
+    "paras": [
+     {
+      "han": "雷以動之，風以散之，雨以潤之，日以烜之，艮以止之，兌以說之，乾以君之，坤以藏之。",
+      "vi": "Sấm để làm động, gió để làm tan, mưa để làm thấm, mặt trời để làm khô, Cấn để làm dừng, Đoài để làm vui, Càn để làm chủ, Khôn để cất chứa.",
+      "note": "Theo Chu Hy: vị trí các quẻ đối nhau ở đây giống như chương trên."
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title": "Chương 5: Đế ra ở Chấn",
+    "paras": [
+     {
+      "han": "帝出乎震，齊乎巽，相見乎離，致役乎坤，說言乎兌，戰乎乾，勞乎坎，成言乎艮。",
+      "vi": "Đế ra ở Chấn, làm cho tề chỉnh ở Tốn, cùng thấy nhau ở Ly, dốc sức làm việc ở Khôn, vui nói ở Đoài, giao chiến ở Càn, mệt nhọc ở Khảm, nói sự hoàn thành ở Cấn.",
+      "note": "Theo Chu Hy: \"Đế\" là đấng chủ tể của trời. Thiệu Tử nói vị trí quẻ này do Văn Vương định, gọi là học Hậu thiên."
+     },
+     {
+      "han": "萬物出乎震，震東方也。齊乎巽，巽東南也，齊也者、言萬物之絜齊也。",
+      "vi": "Muôn vật ra ở Chấn; Chấn là phương đông. Tề chỉnh ở Tốn; Tốn là đông nam. \"Tề\" nghĩa là muôn vật sạch sẽ chỉnh tề.",
+      "note": "Theo Chu Hy: trên nói \"Đế\", đây nói \"muôn vật\", là muôn vật theo Đế mà ra vào."
+     },
+     {
+      "han": "離也者、明也，萬物皆相見，南方之卦也。聖人南面而聽天下，嚮明而治，蓋取諸此也。",
+      "vi": "Ly là sáng; muôn vật đều thấy nhau, là quẻ của phương nam. Thánh nhân quay mặt về nam mà nghe việc thiên hạ, hướng về chỗ sáng mà trị, có lẽ là lấy ở đây."
+     },
+     {
+      "han": "坤也者、地也，萬物皆致養焉，故曰：致役乎坤。",
+      "vi": "Khôn là đất; muôn vật đều được nuôi ở đó, nên nói: dốc sức làm việc ở Khôn."
+     },
+     {
+      "han": "兌、正秋也，萬物之所說也，故曰：說言乎兌。",
+      "vi": "Đoài là chính giữa mùa thu, là chỗ muôn vật vui vẻ, nên nói: vui nói ở Đoài."
+     },
+     {
+      "han": "戰乎乾，乾、西北之卦也，言陰陽相薄也。",
+      "vi": "Giao chiến ở Càn: Càn là quẻ phương tây bắc, ý nói âm dương xô vào nhau."
+     },
+     {
+      "han": "坎者、水也，正北方之卦也，勞卦也，萬物之所歸也，故曰：勞乎坎。",
+      "vi": "Khảm là nước, là quẻ của chính phương bắc, là quẻ mệt nhọc, là chỗ muôn vật trở về, nên nói: mệt nhọc ở Khảm."
+     },
+     {
+      "han": "艮、東北之卦也。萬物之所成終而所成始也。故曰：成言乎艮。",
+      "vi": "Cấn là quẻ phương đông bắc, là chỗ muôn vật hoàn tất sự kết thúc và cũng hoàn tất sự khởi đầu, nên nói: nói sự hoàn thành ở Cấn.",
+      "note": "Theo Chu Hy: những thuyết về vị trí quẻ được suy ra trong chương này phần nhiều chưa rõ."
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "title": "Chương 6",
+    "paras": [
+     {
+      "han": "神也者、妙萬物而為言者也。",
+      "vi": "Nói \"thần\" là nói cái làm cho muôn vật mầu nhiệm.",
+      "note": "Theo Chu Hy: chương này bỏ Càn Khôn ra mà chỉ nói sáu quẻ con, để thấy việc làm của thần; nhưng thứ tự vị trí cũng dùng thuyết ở chương trên, chưa rõ nghĩa."
+     },
+     {
+      "han": "動萬物者莫疾乎雷，橈萬物者莫疾乎風，燥萬物者莫熯乎火，說萬物者莫說乎澤，潤萬物者莫潤乎水，終萬物、始萬物者、莫盛乎艮。",
+      "vi": "Làm động muôn vật không gì nhanh bằng sấm, làm lay muôn vật không gì nhanh bằng gió, làm khô muôn vật không gì hanh bằng lửa, làm vui muôn vật không gì vui bằng chằm, làm thấm muôn vật không gì thấm bằng nước, làm cho muôn vật kết thúc và bắt đầu không gì thịnh bằng Cấn."
+     },
+     {
+      "han": "故水火相逮，雷風不相悖，山澤通氣，然後能變化，既成萬物也。",
+      "vi": "Cho nên nước lửa cùng tới nhau, sấm gió không trái nhau, núi chằm thông khí, rồi sau mới biến hoá được, làm thành đủ muôn vật."
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "title": "Chương 7: Tính tình tám quẻ",
+    "paras": [
+     {
+      "han": "乾、健也，坤、順也，震、動也，巽、入也，坎、陷也，離、麗也，艮、止也，兌、說也。",
+      "vi": "Càn tức là mạnh mẽ, Khôn tức là thuận theo, Chấn tức là động, Tốn tức là đi vào, Khảm tức là sa hãm, Ly tức là bám vào, Cấn tức là dừng lại, Đoài tức là vui.",
+      "note": "Theo Chu Hy: đây nói tính tình của tám quẻ."
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "title": "Chương 8: Tám quẻ và loài vật",
+    "paras": [
+     {
+      "han": "乾為馬。坤為牛。震為龍。巽為雞。坎為豕。離為雉。艮為狗。兌為羊。",
+      "vi": "Càn là ngựa. Khôn là trâu bò. Chấn là rồng. Tốn là gà. Khảm là lợn. Ly là chim trĩ. Cấn là chó. Đoài là dê.",
+      "note": "Theo Chu Hy: lấy xa ở các vật là như thế."
+     }
+    ]
+   },
+   {
+    "n": 9,
+    "title": "Chương 9: Tám quẻ và thân người",
+    "paras": [
+     {
+      "han": "乾為首。坤為腹。震為足。巽為股。坎為耳。離為目。艮為手。兌為口。",
+      "vi": "Càn là đầu. Khôn là bụng. Chấn là chân. Tốn là đùi. Khảm là tai. Ly là mắt. Cấn là tay. Đoài là miệng.",
+      "note": "Theo Chu Hy: lấy gần ở thân mình là như thế."
+     }
+    ]
+   },
+   {
+    "n": 10,
+    "title": "Chương 10: Cha mẹ và sáu con",
+    "paras": [
+     {
+      "han": "乾、天也，故稱乎父。坤、地也，故稱乎母。",
+      "vi": "Càn là trời, nên gọi là cha. Khôn là đất, nên gọi là mẹ."
+     },
+     {
+      "han": "震一索而得男，故謂之長男。巽一索而得女，故謂之長女。",
+      "vi": "Chấn cầu lần thứ nhất mà được con trai, nên gọi là trai trưởng. Tốn cầu lần thứ nhất mà được con gái, nên gọi là gái trưởng.",
+      "note": "Theo Chu Hy: \"sách\" (索) là cầu, tức bói cỏ thi để cầu hào; trai gái là chỉ một hào âm hay một hào dương trong quẻ."
+     },
+     {
+      "han": "坎再索而得男，故謂之中男。離再索而得女，故謂之中女。",
+      "vi": "Khảm cầu lần thứ hai mà được con trai, nên gọi là trai giữa. Ly cầu lần thứ hai mà được con gái, nên gọi là gái giữa."
+     },
+     {
+      "han": "艮三索而得男，故謂之少男。兌三索而得女，故謂之少女。",
+      "vi": "Cấn cầu lần thứ ba mà được con trai, nên gọi là trai út. Đoài cầu lần thứ ba mà được con gái, nên gọi là gái út."
+     }
+    ]
+   },
+   {
+    "n": 11,
+    "title": "Chương 11: Mở rộng các tượng của tám quẻ",
+    "paras": [
+     {
+      "han": "乾為天，為圜，為君，為父，為玉，為金，為寒，為冰，為大赤，為良馬，為老馬，為瘠馬，為駁馬，為木果。",
+      "vi": "Càn là trời, là tròn, là vua, là cha, là ngọc, là kim loại, là lạnh, là băng, là màu đỏ thẫm, là ngựa tốt, là ngựa già, là ngựa gầy, là ngựa loang lổ, là quả trên cây.",
+      "note": "Theo Chu Hy: chương này mở rộng các tượng của tám quẻ, trong đó nhiều chỗ không thể hiểu được, tìm trong kinh cũng không hoàn toàn khớp."
+     },
+     {
+      "han": "坤為地，為母，為布，為釜，為吝嗇，為均，為子母牛，為大輿，為文，為眾，為柄，其於地也為黑。",
+      "vi": "Khôn là đất, là mẹ, là vải, là nồi, là keo kiệt, là đều nhau, là bò mẹ bò con, là xe lớn, là văn vẻ, là đông người, là cán cầm; đối với đất thì là màu đen."
+     },
+     {
+      "han": "震為雷，為龍，為玄黃，為旉，為大塗，為長子，為決躁，為蒼筤竹，為萑葦。",
+      "vi": "Chấn là sấm, là rồng, là màu đen lẫn vàng, là hoa nở rộ, là đường lớn, là con trưởng, là quyết liệt nóng nảy, là tre non xanh, là lau sậy."
+     },
+     {
+      "han": "其於馬也，為善鳴，為馵足，為作足，為的顙。其於稼也，為反生。其究為健，為蕃鮮。",
+      "vi": "Đối với ngựa thì là ngựa hí hay, là ngựa chân sau trắng, là ngựa nhấc chân, là ngựa trán trắng. Đối với lúa má thì là mọc ngược lên. Đến cùng thì thành mạnh, là tươi tốt."
+     },
+     {
+      "han": "巽為木，為風，為長女，為繩直，為工，為白，為長，為高，為進退，為不果，為臭。",
+      "vi": "Tốn là cây, là gió, là gái trưởng, là dây mực thẳng, là thợ, là màu trắng, là dài, là cao, là tiến lui, là không quả quyết, là mùi."
+     },
+     {
+      "han": "其於人也，為宣髮，為廣顙，為多白眼，為近利市三倍，其究為躁卦。",
+      "vi": "Đối với người thì là tóc thưa, là trán rộng, là mắt nhiều lòng trắng, là gần lợi, buôn bán lời gấp ba; đến cùng thì thành quẻ nóng nảy."
+     },
+     {
+      "han": "坎為水，為溝瀆，為隱伏，為矯輮，為弓輪。其於人也，為加憂，為心病，為耳痛，為血卦，為赤。",
+      "vi": "Khảm là nước, là ngòi rãnh, là ẩn nấp, là uốn thẳng uốn cong, là cung và bánh xe. Đối với người thì là thêm lo, là bệnh ở tim, là đau tai, là quẻ máu, là màu đỏ."
+     },
+     {
+      "han": "其於馬也，為美脊，為亟心，為下首，為薄蹄，為曳。其於輿也，為多眚，為通，為月，為盜。其於木也，為堅多心。",
+      "vi": "Đối với ngựa thì là sống lưng đẹp, là tính nôn nóng, là cúi đầu, là móng mỏng, là lê bước. Đối với xe thì là nhiều hư hỏng, là thông suốt, là mặt trăng, là kẻ trộm. Đối với cây thì là cứng mà nhiều lõi."
+     },
+     {
+      "han": "離為火，為日，為電，為中女，為甲冑，為戈兵。其於人也，為大腹。為乾卦，為鱉，為蟹，為蠃，為蚌，為龜。其於木也，為科上槁。",
+      "vi": "Ly là lửa, là mặt trời, là chớp, là gái giữa, là áo giáp mũ trụ, là giáo mác binh khí. Đối với người thì là bụng to. Là quẻ khô, là ba ba, là cua, là ốc, là trai, là rùa. Đối với cây thì là cây rỗng ruột, ngọn khô.",
+      "note": "Theo Chu Hy: chữ 乾 ở đây đọc âm 干 (can)."
+     },
+     {
+      "han": "艮為山，為徑路，為小石，為門闕，為果蓏，為閽寺，為指，為狗，為鼠，為黔喙之屬。其於木也，為堅多節。",
+      "vi": "Cấn là núi, là đường tắt, là đá nhỏ, là cổng cửa, là quả cây quả dây, là người giữ cửa và hoạn quan, là ngón tay, là chó, là chuột, là loài mỏ đen. Đối với cây thì là cứng mà nhiều mắt."
+     },
+     {
+      "han": "兌為澤，為少女，為巫，為口舌，為毀折，為附決。其於地也，為剛鹵。為妾，為羊。",
+      "vi": "Đoài là chằm, là gái út, là đồng cốt, là miệng lưỡi, là gãy hỏng, là bám rồi đứt lìa. Đối với đất thì là đất cứng mặn. Là thiếp, là dê."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tu-quai",
+  "title": "Tự quái",
+  "titleHan": "序卦",
+  "summary": "Tự quái truyện giải thích thứ tự 64 quẻ: vì sao quẻ trước dẫn sang quẻ sau. Chu Hy (Bản nghĩa) chia làm thượng thiên và hạ thiên.",
+  "chapters": [
+   {
+    "n": 1,
+    "title": "Chương 1: Thượng thiên",
+    "paras": [
+     {
+      "han": "有天地，然後萬物生焉。",
+      "vi": "Có trời đất rồi muôn vật mới sinh ra.",
+      "hex": [
+       1,
+       2
+      ]
+     },
+     {
+      "han": "盈天地之間者唯萬物，故受之以屯。屯者、盈也。屯者、物之始生也。",
+      "vi": "Cái đầy khắp khoảng giữa trời đất chỉ là muôn vật, vì thế kế đến quẻ Truân. Truân nghĩa là đầy. Truân là lúc vật mới bắt đầu sinh.",
+      "hex": [
+       3
+      ]
+     },
+     {
+      "han": "物生必蒙，故受之以蒙。蒙者、蒙也，物之稺也。",
+      "vi": "Vật sinh ra thì tất còn non tối, vì thế kế đến quẻ Mông. Mông là mờ tối, là vật còn non nớt.",
+      "hex": [
+       4
+      ]
+     },
+     {
+      "han": "物稺不可不養也，故受之以需。需者、飲食之道也。",
+      "vi": "Vật còn non thì không thể không nuôi, vì thế kế đến quẻ Nhu. Nhu là đạo của việc ăn uống.",
+      "hex": [
+       5
+      ]
+     },
+     {
+      "han": "飲食必有訟，故受之以訟。",
+      "vi": "Có ăn uống thì tất có tranh chấp, vì thế kế đến quẻ Tụng.",
+      "hex": [
+       6
+      ]
+     },
+     {
+      "han": "訟必有眾起，故受之以師。師者、眾也。",
+      "vi": "Tranh chấp thì tất có đám đông nổi lên, vì thế kế đến quẻ Sư. Sư là đông người.",
+      "hex": [
+       7
+      ]
+     },
+     {
+      "han": "眾必有所比，故受之以比。比者、比也。",
+      "vi": "Đông người thì tất phải có chỗ gần gũi nương nhau, vì thế kế đến quẻ Tỷ. Tỷ là gần gũi.",
+      "hex": [
+       8
+      ]
+     },
+     {
+      "han": "比必有所畜，故受之以小畜。",
+      "vi": "Gần gũi nhau thì tất có chỗ góp chứa, vì thế kế đến quẻ Tiểu súc.",
+      "hex": [
+       9
+      ]
+     },
+     {
+      "han": "物畜然後有禮，故受之以履。履者、禮也。",
+      "vi": "Vật đã góp chứa rồi mới có lễ, vì thế kế đến quẻ Lý. Lý là lễ.",
+      "hex": [
+       10
+      ]
+     },
+     {
+      "han": "履而泰然後安，故受之以泰。泰者、通也。",
+      "vi": "Theo lễ mà thư thái rồi mới yên ổn, vì thế kế đến quẻ Thái. Thái là thông suốt.",
+      "hex": [
+       11
+      ]
+     },
+     {
+      "han": "物不可以終通，故受之以否。",
+      "vi": "Vật không thể thông suốt mãi, vì thế kế đến quẻ Bĩ.",
+      "hex": [
+       12
+      ]
+     },
+     {
+      "han": "物不可以終否，故受之以同人。",
+      "vi": "Vật không thể bế tắc mãi, vì thế kế đến quẻ Đồng nhân.",
+      "hex": [
+       13
+      ]
+     },
+     {
+      "han": "與人同者，物必歸焉，故受之以大有。",
+      "vi": "Ai cùng chung với người thì vật tất quy về, vì thế kế đến quẻ Đại hữu.",
+      "hex": [
+       14
+      ]
+     },
+     {
+      "han": "有大者不可以盈，故受之以謙。",
+      "vi": "Có cái lớn thì không thể để đầy tràn, vì thế kế đến quẻ Khiêm.",
+      "hex": [
+       15
+      ]
+     },
+     {
+      "han": "有大而能謙必豫，故受之以豫。",
+      "vi": "Có cái lớn mà biết khiêm thì tất vui vẻ, vì thế kế đến quẻ Dự.",
+      "hex": [
+       16
+      ]
+     },
+     {
+      "han": "豫必有隨，故受之以隨。",
+      "vi": "Vui vẻ thì tất có sự đi theo, vì thế kế đến quẻ Tùy.",
+      "hex": [
+       17
+      ]
+     },
+     {
+      "han": "以喜隨人者必有事，故受之以蠱。蠱者、事也。",
+      "vi": "Lấy vui mà theo người thì tất sinh việc, vì thế kế đến quẻ Cổ. Cổ là việc.",
+      "hex": [
+       18
+      ]
+     },
+     {
+      "han": "有事而後可大，故受之以臨。臨者、大也。",
+      "vi": "Có việc rồi sau mới có thể lớn, vì thế kế đến quẻ Lâm. Lâm là lớn.",
+      "hex": [
+       19
+      ]
+     },
+     {
+      "han": "物大然後可觀，故受之以觀。",
+      "vi": "Vật lớn rồi mới đáng xem, vì thế kế đến quẻ Quan.",
+      "hex": [
+       20
+      ]
+     },
+     {
+      "han": "可觀而後有所合，故受之以噬嗑。嗑者、合也。",
+      "vi": "Đáng xem rồi sau mới có chỗ hợp lại, vì thế kế đến quẻ Phệ hạp. Hạp là hợp.",
+      "hex": [
+       21
+      ]
+     },
+     {
+      "han": "物不可以苟合而已，故受之以賁。賁者、飾也。",
+      "vi": "Vật không thể chỉ hợp nhau qua loa mà thôi, vì thế kế đến quẻ Bí. Bí là trang sức.",
+      "hex": [
+       22
+      ]
+     },
+     {
+      "han": "致飾然後亨則盡矣，故受之以剝。剝者、剝也。",
+      "vi": "Trang sức đến tột bậc mà hanh thông thì cũng là cạn hết, vì thế kế đến quẻ Bác. Bác là bóc mòn.",
+      "hex": [
+       23
+      ]
+     },
+     {
+      "han": "物不可以終盡剝，窮上反下，故受之以復。",
+      "vi": "Vật không thể bị bóc mòn hết mãi; cùng ở trên thì quay về dưới, vì thế kế đến quẻ Phục.",
+      "hex": [
+       24
+      ]
+     },
+     {
+      "han": "復則不妄矣，故受之以无妄。",
+      "vi": "Trở lại thì không còn càn bậy, vì thế kế đến quẻ Vô vọng.",
+      "hex": [
+       25
+      ]
+     },
+     {
+      "han": "有无妄，物然後可畜，故受之以大畜。",
+      "vi": "Có được sự không càn bậy thì vật mới có thể góp chứa, vì thế kế đến quẻ Đại súc.",
+      "hex": [
+       26
+      ]
+     },
+     {
+      "han": "物畜然後可養，故受之以頤。頤者、養也。",
+      "vi": "Vật được góp chứa rồi mới có thể nuôi, vì thế kế đến quẻ Di. Di là nuôi.",
+      "hex": [
+       27
+      ]
+     },
+     {
+      "han": "不養則不可動，故受之以大過。",
+      "vi": "Không được nuôi thì không động được, vì thế kế đến quẻ Đại quá.",
+      "hex": [
+       28
+      ]
+     },
+     {
+      "han": "物不可以終過，故受之以坎。坎者、陷也。",
+      "vi": "Vật không thể vượt quá mãi, vì thế kế đến quẻ Khảm. Khảm là sa hãm.",
+      "hex": [
+       29
+      ]
+     },
+     {
+      "han": "陷必有所麗，故受之以離。離者、麗也。",
+      "vi": "Sa hãm thì tất có chỗ bám vào, vì thế kế đến quẻ Ly. Ly là bám dựa.",
+      "hex": [
+       30
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title": "Chương 2: Hạ thiên",
+    "paras": [
+     {
+      "han": "有天地然後有萬物，有萬物然後有男女，有男女然後有夫婦，有夫婦然後有父子，有父子然後有君臣，有君臣然後有上下，有上下然後禮義有所錯。",
+      "vi": "Có trời đất, sau đó có muôn vật; có muôn vật, sau đó có trai gái; có trai gái, sau đó có vợ chồng; có vợ chồng, sau đó có cha con; có cha con, sau đó có vua tôi; có vua tôi, sau đó có trên dưới; có trên dưới, sau đó lễ nghĩa mới có chỗ đặt để.",
+      "note": "Theo Hàn Khang Bá, Chu Dịch chú (phần Tự quái): đoạn này nói nghĩa của quẻ Hàm — Hàm mềm ở trên, cứng ở dưới, cảm ứng mà cùng nhau; tượng vợ chồng không gì đẹp bằng.",
+      "hex": [
+       31
+      ]
+     },
+     {
+      "han": "夫婦之道不可以不久也，故受之以恆。恆者、久也。",
+      "vi": "Đạo vợ chồng không thể không lâu dài, vì thế kế đến quẻ Hằng. Hằng là lâu dài.",
+      "hex": [
+       32
+      ]
+     },
+     {
+      "han": "物不可以久居其所，故受之以遯。遯者、退也。",
+      "vi": "Vật không thể ở lâu một chỗ, vì thế kế đến quẻ Độn. Độn là lui.",
+      "hex": [
+       33
+      ]
+     },
+     {
+      "han": "物不可以終遯，故受之以大壯。",
+      "vi": "Vật không thể lui mãi, vì thế kế đến quẻ Đại tráng.",
+      "hex": [
+       34
+      ]
+     },
+     {
+      "han": "物不可以終壯，故受之以晉。晉者、進也。",
+      "vi": "Vật không thể mạnh mãi, vì thế kế đến quẻ Tấn. Tấn là tiến.",
+      "hex": [
+       35
+      ]
+     },
+     {
+      "han": "進必有所傷，故受之以明夷。夷者、傷也。",
+      "vi": "Tiến thì tất có chỗ bị tổn thương, vì thế kế đến quẻ Minh di. Di là tổn thương.",
+      "hex": [
+       36
+      ]
+     },
+     {
+      "han": "傷於外者必反於家，故受之以家人。",
+      "vi": "Bị tổn thương ở ngoài thì tất quay về nhà, vì thế kế đến quẻ Gia nhân.",
+      "hex": [
+       37
+      ]
+     },
+     {
+      "han": "家道窮必乖，故受之以睽。睽者、乖也。",
+      "vi": "Đạo nhà đến bước cùng thì tất trái lìa, vì thế kế đến quẻ Khuê. Khuê là trái lìa.",
+      "hex": [
+       38
+      ]
+     },
+     {
+      "han": "乖必有難，故受之以蹇。蹇者、難也。",
+      "vi": "Trái lìa thì tất gặp gian nan, vì thế kế đến quẻ Kiển. Kiển là gian nan.",
+      "hex": [
+       39
+      ]
+     },
+     {
+      "han": "物不可以終難，故受之以解。解者、緩也。",
+      "vi": "Vật không thể gian nan mãi, vì thế kế đến quẻ Giải. Giải là thư thả.",
+      "hex": [
+       40
+      ]
+     },
+     {
+      "han": "緩必有所失，故受之以損。",
+      "vi": "Thư thả thì tất có chỗ sơ thất, vì thế kế đến quẻ Tổn.",
+      "hex": [
+       41
+      ]
+     },
+     {
+      "han": "損而不已必益，故受之以益。",
+      "vi": "Bớt mãi không thôi thì tất được thêm, vì thế kế đến quẻ Ích.",
+      "hex": [
+       42
+      ]
+     },
+     {
+      "han": "益而不已必決，故受之以夬。夬者、決也。",
+      "vi": "Thêm mãi không thôi thì tất phải vỡ ra, vì thế kế đến quẻ Quải. Quải là quyết (vỡ, dứt).",
+      "hex": [
+       43
+      ]
+     },
+     {
+      "han": "決必有遇，故受之以姤。姤者、遇也。",
+      "vi": "Quyết dứt thì tất có gặp gỡ, vì thế kế đến quẻ Cấu. Cấu là gặp.",
+      "hex": [
+       44
+      ]
+     },
+     {
+      "han": "物相遇而後聚，故受之以萃。萃者、聚也。",
+      "vi": "Vật gặp nhau rồi sau mới tụ họp, vì thế kế đến quẻ Tụy. Tụy là tụ họp.",
+      "hex": [
+       45
+      ]
+     },
+     {
+      "han": "聚而上者謂之升，故受之以升。",
+      "vi": "Tụ họp mà đi lên thì gọi là thăng, vì thế kế đến quẻ Thăng.",
+      "hex": [
+       46
+      ]
+     },
+     {
+      "han": "升而不已必困，故受之以困。",
+      "vi": "Lên mãi không thôi thì tất khốn, vì thế kế đến quẻ Khốn.",
+      "hex": [
+       47
+      ]
+     },
+     {
+      "han": "困乎上者必反下，故受之以井。",
+      "vi": "Khốn ở trên thì tất quay xuống dưới, vì thế kế đến quẻ Tỉnh.",
+      "hex": [
+       48
+      ]
+     },
+     {
+      "han": "井道不可不革，故受之以革。",
+      "vi": "Đạo giếng không thể không đổi mới, vì thế kế đến quẻ Cách.",
+      "hex": [
+       49
+      ]
+     },
+     {
+      "han": "革物者莫若鼎，故受之以鼎。",
+      "vi": "Thay đổi vật thì không gì bằng cái vạc, vì thế kế đến quẻ Đỉnh.",
+      "hex": [
+       50
+      ]
+     },
+     {
+      "han": "主器者莫若長子，故受之以震。震者、動也。",
+      "vi": "Người chủ giữ đồ tế khí không ai bằng con trưởng, vì thế kế đến quẻ Chấn. Chấn là động.",
+      "hex": [
+       51
+      ]
+     },
+     {
+      "han": "物不可以終動，止之，故受之以艮。艮者、止也。",
+      "vi": "Vật không thể động mãi, phải cho dừng lại, vì thế kế đến quẻ Cấn. Cấn là dừng.",
+      "hex": [
+       52
+      ]
+     },
+     {
+      "han": "物不可以終止，故受之以漸。漸者、進也。",
+      "vi": "Vật không thể dừng mãi, vì thế kế đến quẻ Tiệm. Tiệm là tiến.",
+      "hex": [
+       53
+      ]
+     },
+     {
+      "han": "進必有所歸，故受之以歸妹。",
+      "vi": "Tiến thì tất có chỗ về, vì thế kế đến quẻ Quy muội.",
+      "hex": [
+       54
+      ]
+     },
+     {
+      "han": "得其所歸者必大，故受之以豐。豐者、大也。",
+      "vi": "Được chỗ về thì tất lớn, vì thế kế đến quẻ Phong. Phong là lớn.",
+      "hex": [
+       55
+      ]
+     },
+     {
+      "han": "窮大者必失其居，故受之以旅。",
+      "vi": "Lớn đến cùng cực thì tất mất chỗ ở, vì thế kế đến quẻ Lữ.",
+      "hex": [
+       56
+      ]
+     },
+     {
+      "han": "旅而无所容，故受之以巽。巽者、入也。",
+      "vi": "Đi đất khách mà không nơi dung thân, vì thế kế đến quẻ Tốn. Tốn là vào.",
+      "hex": [
+       57
+      ]
+     },
+     {
+      "han": "入而後說之，故受之以兌。兌者、說也。",
+      "vi": "Vào được rồi sau mới vui, vì thế kế đến quẻ Đoài. Đoài là vui.",
+      "hex": [
+       58
+      ]
+     },
+     {
+      "han": "說而後散之，故受之以渙。渙者、離也。",
+      "vi": "Vui rồi sau thì tản ra, vì thế kế đến quẻ Hoán. Hoán là chia lìa.",
+      "hex": [
+       59
+      ]
+     },
+     {
+      "han": "物不可以終離，故受之以節。",
+      "vi": "Vật không thể chia lìa mãi, vì thế kế đến quẻ Tiết.",
+      "hex": [
+       60
+      ]
+     },
+     {
+      "han": "節而信之，故受之以中孚。",
+      "vi": "Có tiết độ thì được tin theo, vì thế kế đến quẻ Trung phu.",
+      "hex": [
+       61
+      ]
+     },
+     {
+      "han": "有其信者必行之，故受之以小過。",
+      "vi": "Có lòng tin thì tất đem ra làm, vì thế kế đến quẻ Tiểu quá.",
+      "hex": [
+       62
+      ]
+     },
+     {
+      "han": "有過物者必濟，故受之以既濟。",
+      "vi": "Có chỗ vượt hơn vật thì tất làm nên việc, vì thế kế đến quẻ Ký tế.",
+      "hex": [
+       63
+      ]
+     },
+     {
+      "han": "物不可窮也，故受之以未濟，終焉。",
+      "vi": "Vật không thể đến cùng tận, vì thế kế đến quẻ Vị tế, để kết thúc.",
+      "hex": [
+       64
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tap-quai",
+  "title": "Tạp quái",
+  "titleHan": "雜卦",
+  "summary": "Tạp quái truyện nói nghĩa các quẻ bằng những câu rất ngắn, phần lớn theo từng cặp, không theo thứ tự quẻ. Chu Hy (Bản nghĩa) không chia chương.",
+  "chapters": [
+   {
+    "n": 1,
+    "title": "Chương 1",
+    "paras": [
+     {
+      "han": "乾剛坤柔。",
+      "vi": "Càn cứng, Khôn mềm.",
+      "hex": [
+       1,
+       2
+      ]
+     },
+     {
+      "han": "比樂師憂。",
+      "vi": "Tỷ vui, Sư lo.",
+      "hex": [
+       8,
+       7
+      ]
+     },
+     {
+      "han": "臨觀之義，或與或求。",
+      "vi": "Nghĩa của Lâm và Quan: bên thì cho, bên thì cầu.",
+      "note": "Theo Chu Hy: lấy mình đến với vật gọi là \"cho\"; vật đến xem mình gọi là \"cầu\". Có thuyết nói hai quẻ đều có cả nghĩa cho và cầu.",
+      "hex": [
+       19,
+       20
+      ]
+     },
+     {
+      "han": "屯見而不失其居。蒙雜而著。",
+      "vi": "Truân hiện ra mà không mất chỗ ở. Mông lẫn lộn mà sáng rõ.",
+      "note": "Theo Chu Hy: Truân là Chấn gặp Khảm — Chấn động nên hiện ra, Khảm hiểm nên không đi; Mông là Khảm gặp Cấn — Khảm u tối, Cấn sáng rõ. Có thuyết nói Truân lấy hào đầu mà nói, Mông lấy hào hai mà nói.",
+      "hex": [
+       3,
+       4
+      ]
+     },
+     {
+      "han": "震、起也。艮、止也。",
+      "vi": "Chấn là dấy lên. Cấn là dừng lại.",
+      "hex": [
+       51,
+       52
+      ]
+     },
+     {
+      "han": "損益、盛衰之始也。",
+      "vi": "Tổn và Ích là khởi đầu của thịnh và suy.",
+      "hex": [
+       41,
+       42
+      ]
+     },
+     {
+      "han": "大畜、時也。无妄、災也。",
+      "vi": "Đại súc là thời. Vô vọng là tai họa.",
+      "note": "Theo Chu Hy: ngăn giữ được cái mạnh là do thời vừa gặp như vậy; Vô vọng mà tai họa từ ngoài đến.",
+      "hex": [
+       26,
+       25
+      ]
+     },
+     {
+      "han": "萃聚而升不來也。",
+      "vi": "Tụy là tụ lại, còn Thăng là không trở lại.",
+      "hex": [
+       45,
+       46
+      ]
+     },
+     {
+      "han": "謙輕而豫怠也。",
+      "vi": "Khiêm thì nhẹ, còn Dự thì trễ nải.",
+      "hex": [
+       15,
+       16
+      ]
+     },
+     {
+      "han": "噬嗑、食也。賁、无色也。",
+      "vi": "Phệ hạp nghĩa là ăn. Bí nghĩa là không có màu.",
+      "note": "Theo Chu Hy: màu trắng thì nhận được màu vẽ.",
+      "hex": [
+       21,
+       22
+      ]
+     },
+     {
+      "han": "兌見而巽伏也。",
+      "vi": "Đoài hiện ra, còn Tốn ẩn nấp.",
+      "note": "Theo Chu Hy: Đoài có hào âm lộ ra ngoài, Tốn có hào âm nấp ở trong.",
+      "hex": [
+       58,
+       57
+      ]
+     },
+     {
+      "han": "隨、无故也。蠱則飭也。",
+      "vi": "Tùy là không có việc cũ. Cổ thì phải sửa sang.",
+      "note": "Theo Chu Hy: Tùy là trước đó không có việc cũ; Cổ là về sau phải sửa sang.",
+      "hex": [
+       17,
+       18
+      ]
+     },
+     {
+      "han": "剝、爛也。復、反也。",
+      "vi": "Bác là rữa nát. Phục là trở lại.",
+      "hex": [
+       23,
+       24
+      ]
+     },
+     {
+      "han": "晉、晝也。明夷、誅也。",
+      "vi": "Tấn là ban ngày. Minh di là bị hại.",
+      "note": "Theo Chu Hy: \"tru\" (誅) nghĩa là làm tổn thương.",
+      "hex": [
+       35,
+       36
+      ]
+     },
+     {
+      "han": "井通而困相遇也。",
+      "vi": "Tỉnh là thông suốt, còn Khốn là gặp chạm nhau.",
+      "note": "Theo Chu Hy: (ở Khốn) cứng và mềm gặp nhau mà cái cứng bị che lấp.",
+      "hex": [
+       48,
+       47
+      ]
+     },
+     {
+      "han": "咸、速也。恆、久也。",
+      "vi": "Hàm là nhanh. Hằng là lâu.",
+      "hex": [
+       31,
+       32
+      ]
+     },
+     {
+      "han": "渙、離也。節、止也。",
+      "vi": "Hoán là lìa tan. Tiết là dừng lại.",
+      "hex": [
+       59,
+       60
+      ]
+     },
+     {
+      "han": "解、緩也。蹇、難也。",
+      "vi": "Giải là thư thả. Kiển là gian nan.",
+      "hex": [
+       40,
+       39
+      ]
+     },
+     {
+      "han": "睽、外也。家人、內也。",
+      "vi": "Khuê là bên ngoài. Gia nhân là bên trong.",
+      "hex": [
+       38,
+       37
+      ]
+     },
+     {
+      "han": "否泰、反其類也。",
+      "vi": "Bĩ và Thái là ngược loại nhau.",
+      "hex": [
+       12,
+       11
+      ]
+     },
+     {
+      "han": "大壯則止，遯則退也。",
+      "vi": "Đại tráng thì dừng, Độn thì lui.",
+      "note": "Theo Chu Hy: \"dừng\" nghĩa là không lui.",
+      "hex": [
+       34,
+       33
+      ]
+     },
+     {
+      "han": "大有、眾也。同人、親也。",
+      "vi": "Đại hữu là đông. Đồng nhân là thân.",
+      "hex": [
+       14,
+       13
+      ]
+     },
+     {
+      "han": "革、去故也。鼎、取新也。",
+      "vi": "Cách là bỏ cái cũ. Đỉnh là lấy cái mới.",
+      "hex": [
+       49,
+       50
+      ]
+     },
+     {
+      "han": "小過、過也。中孚、信也。",
+      "vi": "Tiểu quá là vượt quá. Trung phu là tin.",
+      "hex": [
+       62,
+       61
+      ]
+     },
+     {
+      "han": "豐、多故也。親寡旅也。",
+      "vi": "Phong là nhiều cớ sự. Ít người thân là Lữ.",
+      "note": "Theo Chu Hy: (Phong) đã sáng lại động, nên cớ sự nhiều.",
+      "hex": [
+       55,
+       56
+      ]
+     },
+     {
+      "han": "離上而坎下也。",
+      "vi": "Ly đi lên, còn Khảm đi xuống.",
+      "note": "Theo Chu Hy: lửa bốc lên, nước thấm xuống.",
+      "hex": [
+       30,
+       29
+      ]
+     },
+     {
+      "han": "小畜、寡也。履、不處也。",
+      "vi": "Tiểu súc là ít. Lý là không ở yên.",
+      "note": "Theo Chu Hy: \"không ở yên\" là nghĩa đi tới.",
+      "hex": [
+       9,
+       10
+      ]
+     },
+     {
+      "han": "需、不進也。訟、不親也。",
+      "vi": "Nhu là không tiến. Tụng là không thân.",
+      "hex": [
+       5,
+       6
+      ]
+     },
+     {
+      "han": "大過、顛也。",
+      "vi": "Đại quá là nghiêng đổ.",
+      "note": "Theo Chu Hy: từ Đại quá trở xuống, các quẻ không còn đi theo cặp đảo nhau; có người ngờ là thẻ tre bị lộn, nhưng xét vần thì lại có vẻ không sai; chưa rõ là nghĩa gì.",
+      "hex": [
+       28
+      ]
+     },
+     {
+      "han": "姤、遇也，柔遇剛也。",
+      "vi": "Cấu là gặp, là mềm gặp cứng.",
+      "hex": [
+       44
+      ]
+     },
+     {
+      "han": "漸、女歸待男行也。",
+      "vi": "Tiệm là con gái về nhà chồng, chờ bên trai rồi mới đi.",
+      "hex": [
+       53
+      ]
+     },
+     {
+      "han": "頤、養正也。",
+      "vi": "Di là nuôi điều chính.",
+      "hex": [
+       27
+      ]
+     },
+     {
+      "han": "既濟、定也。",
+      "vi": "Ký tế là đã định.",
+      "hex": [
+       63
+      ]
+     },
+     {
+      "han": "歸妹、女之終也。",
+      "vi": "Quy muội là chỗ kết thúc của người con gái.",
+      "hex": [
+       54
+      ]
+     },
+     {
+      "han": "未濟、男之窮也。",
+      "vi": "Vị tế là chỗ cùng của người con trai.",
+      "hex": [
+       64
+      ]
+     },
+     {
+      "han": "夬、決也，剛決柔也。君子道長，小人道憂也。",
+      "vi": "Quải là quyết, là cứng quyết trừ mềm. Đạo quân tử lớn lên, đạo tiểu nhân phải lo.",
+      "hex": [
+       43
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
