@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import type { Hexagram } from '../src/types/schema';
 import {
-  lineLabel, validateCommentary, validateContexts, validateHexagrams, validateLineTiers, validateTrigrams,
+  lineLabel, validateCommentary, validateContexts, validateIntro, validateHexagrams, validateLineTiers, validateTrigrams,
 } from '../src/data/validate';
 import { CANONICAL_NAMES, fullHexagramName } from '../src/data/names';
 import { hexagramFromTrigrams, oppositeHexagram } from '../src/lib/iching';
@@ -20,6 +20,7 @@ describe('toàn vẹn dữ liệu tĩnh', () => {
     expect(validateHexagrams(hexagrams)).toEqual([]));
   it('commentary.json: 64 quẻ, Thoán, Tượng, dịch và giảng đủ', () =>
     expect(validateCommentary(read('commentary.json'))).toEqual([]));
+  it('intro.json: 8 bài nhập môn đúng định dạng', () => expect(validateIntro(read('intro.json'))).toEqual([]));
   it('contexts.json: 64 quẻ × 5 ngữ cảnh cho lời quẻ và 6 hào', () => expect(validateContexts(read('contexts.json'))).toEqual([]));
 
   it('tên quẻ khớp bảng chuẩn độc lập', () => {

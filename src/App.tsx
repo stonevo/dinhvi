@@ -16,7 +16,9 @@ import { CastPage } from './pages/CastPage';
 import { ReviewPage } from './pages/ReviewPage';
 import { HexagramPage, LibraryPage } from './pages/LibraryPage';
 import { StudyPage } from './pages/StudyPage';
-import { NavCastMenu } from './ui/NavCastMenu';
+import { NavMenu, castMenuItems } from './ui/NavMenu';
+import { CAST_METHODS } from './types/schema';
+import { IntroPage, IntroSectionPage } from './pages/IntroPage';
 import { SharePage } from './pages/SharePage';
 import { QuickNotePage } from './pages/QuickNotePage';
 import { WitnessPage } from './pages/WitnessPage';
@@ -45,8 +47,23 @@ export function App() {
           <NavLink to="/" end>{t('nav.home')}</NavLink>
           <NavLink to="/trajectory">{t('nav.trajectory')}</NavLink>
           <NavLink to="/calibration">{t('nav.calibration')}</NavLink>
-          <NavCastMenu />
-          <NavLink to="/library">{t('nav.library')}</NavLink>
+          <NavMenu
+            label={t('nav.cast')}
+            to="/cast"
+            items={castMenuItems(CAST_METHODS)}
+            activeWhen={(p) => p === '/cast'}
+            menuLabel={t('nav.castMenu')}
+          />
+          <NavMenu
+            label={t('nav.library')}
+            to="/library"
+            items={[
+              { to: '/library', label: t('nav.library64') },
+              { to: '/intro', label: t('nav.intro') },
+            ]}
+            activeWhen={(p) => p.startsWith('/library') || p.startsWith('/intro')}
+            menuLabel={t('nav.libraryMenu')}
+          />
           <NavLink to="/study">{t('nav.study')}</NavLink>
           <NavLink to="/settings">{t('nav.settings')}</NavLink>
           <ProfileSwitcher />
@@ -69,6 +86,8 @@ export function App() {
           <Route path="/library" element={<LibraryPage />} />
           <Route path="/library/:n" element={<HexagramPage />} />
           <Route path="/study" element={<StudyPage />} />
+          <Route path="/intro" element={<IntroPage />} />
+          <Route path="/intro/:id" element={<IntroSectionPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
         </ErrorBoundary>

@@ -749,3 +749,19 @@ a.button.primary { background: var(--accent); color: var(--accent-ink); border-c
 a.button:hover { filter: brightness(1.05); }
 a.button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .topbar a.brand { text-decoration: none; border: 0; }
+
+/* Nhập môn Kinh Dịch */
+.intro p, .intro li { max-width: 68ch; }
+.intro-toc { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; counter-reset: intro; }
+.intro-toc li { counter-increment: intro; }
+.intro-toc-item { display: grid; gap: 4px; text-decoration: none; color: var(--ink); padding-left: 52px; position: relative; }
+.intro-toc-item::before { content: counter(intro); position: absolute; left: 16px; top: 14px; font-family: var(--font-heading); font-size: 1.4rem; color: var(--gold); }
+.intro-toc-item:hover { border-color: var(--gold); }
+.intro-quote { margin: 0; border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; }
+.intro-quote blockquote { margin: 0; display: grid; gap: 4px; }
+.intro-quote figcaption { margin-top: 4px; }
+.intro-note { background: var(--surface-2); border-radius: var(--radius); padding: 10px 12px; }
+.intro-table { border-collapse: collapse; width: 100%; font-size: 0.93rem; }
+.intro-table th, .intro-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.intro-table th { font-family: var(--font-heading); background: var(--surface-2); }
+.intro-pager { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 12px; }

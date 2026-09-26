@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, lineTierSchema, trigramSchema,
-  type Hexagram, type HexagramCommentary, type HexagramContexts, type LineTier, type Trigram, type TrigramKey,
+  hexagramCommentarySchema, hexagramContextsSchema, introSectionSchema, hexagramSchema, lineTierSchema, trigramSchema,
+  type Hexagram, type HexagramCommentary, type HexagramContexts, type IntroSection, type LineTier, type Trigram, type TrigramKey,
 } from '../types/schema';
 
 // Dữ liệu tĩnh nằm ở public/data để người tự host sửa được mà không build lại.
@@ -124,5 +124,27 @@ export function useContexts(n: number): HexagramContexts | null {
       alive = false;
     };
   }, [n]);
+  return state;
+}
+
+// Nhập môn Kinh Dịch, file riêng.
+let introCache: Promise<IntroSection[]> | null = null;
+
+export function useIntro(): IntroSection[] | null {
+  const [state, setState] = useState<IntroSection[] | null>(null);
+  useEffect(() => {
+    let alive = true;
+    introCache ??= fetchJson('intro.json', z.array(introSectionSchema).min(1));
+    introCache.catch(() => {
+      introCache = null;
+    });
+    introCache.then(
+      (v) => alive && setState(v),
+      () => alive && setState([]),
+    );
+    return () => {
+      alive = false;
+    };
+  }, []);
   return state;
 }

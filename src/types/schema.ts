@@ -415,3 +415,23 @@ export const hexagramContextsSchema = z.object({
   allMoving: contextTextsSchema.optional(),
 });
 export type HexagramContexts = z.infer<typeof hexagramContextsSchema>;
+
+// ---- Nhập môn Kinh Dịch: các bài giới thiệu, có nguồn (public/data/intro.json) ----
+export const introBlockSchema = z.discriminatedUnion('type', [
+  z.object({ type: z.literal('p'), text: z.string().min(1), source: z.string().optional() }),
+  z.object({ type: z.literal('h'), text: z.string().min(1) }),
+  z.object({ type: z.literal('quote'), han: z.string().min(1), vi: z.string().min(1), source: z.string().min(1) }),
+  z.object({ type: z.literal('list'), items: z.array(z.string().min(1)).min(1) }),
+  z.object({ type: z.literal('table'), head: z.array(z.string()).min(1), rows: z.array(z.array(z.string())).min(1) }),
+  z.object({ type: z.literal('note'), text: z.string().min(1), source: z.string().optional() }),
+]);
+export type IntroBlock = z.infer<typeof introBlockSchema>;
+
+export const introSectionSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(1),
+  summary: z.string().min(1),
+  blocks: z.array(introBlockSchema).min(1),
+  sources: z.array(z.object({ label: z.string().min(1), url: z.string().url().optional() })).min(1),
+});
+export type IntroSection = z.infer<typeof introSectionSchema>;

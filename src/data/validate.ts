@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, lineTierSchema, trigramSchema, TRIGRAM_KEYS,
+  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, introSectionSchema, lineTierSchema, trigramSchema, TRIGRAM_KEYS,
   type CommentaryPart, type Hexagram, type HexagramCommentary, type Line, type LinePosition, type LineTier, type Trigram,
 } from '../types/schema';
 import {
@@ -194,5 +194,15 @@ export function validateContexts(raw: unknown): string[] {
     if (Boolean(c.allMoving) !== (c.kingWenNumber === 1 || c.kingWenNumber === 2))
       errors.push(`quẻ ${c.kingWenNumber}: allMoving chỉ có ở Càn, Khôn`);
   });
+  return errors;
+}
+
+/** Nhập môn: đúng schema, id không trùng, mọi trích dẫn chữ Hán có nguồn. */
+export function validateIntro(raw: unknown): string[] {
+  const parsed = z.array(introSectionSchema).min(1).safeParse(raw);
+  if (!parsed.success) return zodErrors('intro', parsed.error);
+  const errors: string[] = [];
+  const ids = parsed.data.map((s) => s.id);
+  if (new Set(ids).size !== ids.length) errors.push('id bài bị trùng');
   return errors;
 }

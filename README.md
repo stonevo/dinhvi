@@ -46,6 +46,7 @@ Bản build là trang tĩnh (HashRouter, đường dẫn tương đối) — đ�
   - `trigrams.json` — 8 quái như trạng thái bên trong / hoàn cảnh bên ngoài
   - `lineTiers.json` — dấu hiệu chung của 6 vị trí hào, câu kiểm chứng có/không
   - `hexagrams.json` — 64 quẻ, 384 hào, Dụng cửu / Dụng lục; phiên âm Hán Việt kèm chữ Hán gốc (kinh văn theo [Kanripo KR1a0001](https://github.com/kanripo/KR1a0001))
+  - `intro.json` — Nhập môn Kinh Dịch: 8 bài (nguồn gốc, Kinh và Truyện, các phái Dịch học, thuật ngữ, quy tắc đọc quẻ, Đạo trời, định mệnh, tu thân), mọi trích dẫn chữ Hán đối chiếu nguyên văn, có danh sách nguồn
   - `contexts.json` — diễn giải theo 5 ngữ cảnh (công việc, tình cảm, tài chính, sức khoẻ, đi xa) cho 64 lời quẻ và 384 hào
   - `strokes.json` — số nét chữ Hán (Unihan kTotalStrokes) cho Mai Hoa theo chữ
   - `commentary.json` — Kinh & Truyện: dịch sát lời quẻ/lời hào, Thoán truyện, Đại tượng, Tiểu tượng (chữ Hán trích tự động từ KR1a0001), giảng, và ý của Trình Di ([Y Xuyên Dịch truyện, KR1a0016](https://github.com/kanripo/KR1a0016)) và Chu Hy ([Chu Dịch bản nghĩa, KR1a0031](https://github.com/kanripo/KR1a0031)), kèm tóm tắt bằng lời riêng những chỗ Nguyễn Hiến Lê hiểu khác. Phần tiếng Việt tự dịch từ chữ Hán, không dựa vào bản dịch hiện đại còn bản quyền. Cấu trúc hào (chính, trung, ứng, thừa) tính tự động từ hình quẻ (`src/lib/structure.ts`).
