@@ -180,6 +180,8 @@ function CardView({
   onNext: () => void;
 }) {
   const [picked, setPicked] = useState<number | null>(null);
+  // Giải thích của một đáp án khi rê chuột (hoặc chạm ⓘ) — để vừa kiểm tra vừa ôn.
+  const [info, setInfo] = useState<{ o: number; pinned: boolean } | null>(null);
   const [build, setBuild] = useState<{ upper: TrigramKey | ''; lower: TrigramKey | '' }>({ upper: '', lower: '' });
   const [checked, setChecked] = useState<boolean | null>(null);
   const options = useMemo(() => (card.deck === 'build' ? [] : choices(card, seed)), [card, seed]);
@@ -302,16 +304,40 @@ function CardView({
           )}
         </div>
       ) : (
-        <div className="study-options">
-          {options.map((o) => {
-            const state = checked === null ? '' : o === ans ? ' right' : o === picked ? ' wrong' : '';
-            return (
-              <button key={o} type="button" className={'study-option' + state} disabled={checked !== null} onClick={() => choose(o)}>
-                {card.deck === 'pair' && <HexagramFigure binary={hex(o).binary} size={28} label="" />} {label(o)}
-              </button>
-            );
-          })}
-        </div>
+        <>
+          <div className="study-options">
+            {options.map((o) => {
+              const state = checked === null ? '' : o === ans ? ' right' : o === picked ? ' wrong' : '';
+              const open = info?.o === o;
+              return (
+                <div
+                  key={o}
+                  className={'study-option-wrap' + (open ? ' open' : '')}
+                  onMouseEnter={() => !info?.pinned && setInfo({ o, pinned: false })}
+                  onMouseLeave={() => !info?.pinned && setInfo(null)}
+                >
+                  <button type="button" className={'study-option' + state} disabled={checked !== null} onClick={() => choose(o)}>
+                    {card.deck === 'pair' && <HexagramFigure binary={hex(o).binary} size={28} label="" />} {label(o)}
+                  </button>
+                  <button
+                    type="button"
+                    className="study-info"
+                    aria-label={t('study.explain', { item: label(o) })}
+                    aria-expanded={open}
+                    onClick={() => setInfo(open && info?.pinned ? null : { o, pinned: true })}
+                  >
+                    ⓘ
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+          {info ? (
+            <OptionDetail card={card} data={data} o={info.o} label={label(info.o)} />
+          ) : (
+            <p className="muted small">{t('study.explainHint')}</p>
+          )}
+        </>
       )}
 
       {checked !== null && (
@@ -377,6 +403,72 @@ function Answer({ card, data }: { card: Card; data: StaticData }) {
           <Link to={`/library/${h.kingWenNumber}`}>{t('study.open')}</Link>
         </p>
       </div>
+    </div>
+  );
+}
+
+/** Giải thích một đáp án (để ôn trong lúc làm bài). */
+function OptionDetail({ card, data, o, label }: { card: Card; data: StaticData; o: number; label: string }) {
+  let body: React.ReactNode;
+  if (card.deck === 'trigram') {
+    const k = TRIGRAM_KEYS[o];
+    const tr = data.trigrams[k];
+    const v = TRIGRAM_VERSE[verseIndex(k)];
+    body = (
+      <>
+        <p>
+          <span className="trigram-symbol">{TRIGRAM_SYMBOL[k]}</span> <strong>{tr.nameHanViet}</strong> <span className="han">{tr.nameHan}</span> · {t('study.detail.image')}{' '}
+          {TRIGRAM_IMAGE_HV[k]} ({tr.image})
+        </p>
+        <p className="small">
+          <span className="han">{v.han}</span> {v.hanViet} — {v.note}
+        </p>
+        <p className="muted small">{tr.asInnerState}</p>
+      </>
+    );
+  } else if (card.deck === 'line') {
+    const l = lineOf(o);
+    const h = data.hexagram(l.hexagram);
+    const line = h.lines[l.position - 1];
+    body = (
+      <div className="hex-head">
+        <HexagramFigure binary={h.binary} highlight={l.position} size={48} label={fullHexagramName(h)} />
+        <div>
+          <p>{line.original}</p>
+          <p className="han-text" lang="zh-Hant">
+            {line.originalHan}
+          </p>
+          <p className="muted small">{line.situation}</p>
+        </div>
+      </div>
+    );
+  } else {
+    const h = data.hexagram(o);
+    const up = data.trigrams[h.upperTrigram];
+    const lo = data.trigrams[h.lowerTrigram];
+    body = (
+      <div className="hex-head">
+        <HexagramFigure binary={h.binary} size={48} label={fullHexagramName(h)} />
+        <div>
+          <p>
+            <strong>
+              {h.kingWenNumber}. {fullHexagramName(h)}
+            </strong>{' '}
+            <span className="han">{h.nameHan}</span> — {h.nameVi}
+          </p>
+          <p className="small">
+            {t('library.upper')}: {TRIGRAM_SYMBOL[h.upperTrigram]} {up.nameHanViet} ({TRIGRAM_IMAGE_HV[h.upperTrigram]}) · {t('library.lower')}:{' '}
+            {TRIGRAM_SYMBOL[h.lowerTrigram]} {lo.nameHanViet} ({TRIGRAM_IMAGE_HV[h.lowerTrigram]})
+          </p>
+          <p className="muted small">{h.theme}</p>
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className="study-detail" aria-live="polite">
+      <p className="small-caps">{t('study.detail.title', { item: label })}</p>
+      {body}
     </div>
   );
 }

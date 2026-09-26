@@ -440,3 +440,10 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .verse-list li { margin: 4px 0; }
 .verse-list.plain { list-style: none; padding-left: 0; }
 .study-card select { font-size: 1.5rem; min-width: 4.5rem; }
+
+.study-option-wrap { display: flex; gap: 4px; align-items: stretch; }
+.study-option-wrap .study-option { flex: 1; }
+.study-info { padding: 0 10px; min-width: 40px; font-size: 1rem; color: var(--muted); }
+.study-option-wrap.open .study-option { outline: 2px solid var(--accent); outline-offset: 1px; }
+.study-option-wrap.open .study-info { color: var(--accent); }
+.study-detail { text-align: left; border: 1px dashed var(--line); border-radius: 8px; padding: 8px 12px; min-height: 7rem; }
