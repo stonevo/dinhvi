@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import type { StaticData } from '../data/load';
 import { t } from '../i18n';
 import { readCast, type LineValue } from '../lib/cast';
-import { liuyaoChart, type Topic } from '../lib/liuyao';
+import { liuyaoChart, type Topic, type UseGodKey } from '../lib/liuyao';
 import { vnParts } from '../lib/lunar';
 import { trigramsOf } from '../lib/iching';
 import type { CastMethod, ContextKey } from '../types/schema';
@@ -30,6 +30,8 @@ type Tab = 'reading' | 'liuyao' | 'meihua';
 export function CastResult({ view, data, ziStartsNextDay }: { view: CastView; data: StaticData; ziStartsNextDay: boolean }) {
   const isMeihua = view.method.startsWith('meihua');
   const [tab, setTab] = useState<Tab>('reading');
+  // Dụng thần chọn tay (ghi đè gợi ý theo ngữ cảnh).
+  const [useGod, setUseGod] = useState<UseGodKey | undefined>(undefined);
   const reading = useMemo(() => readCast(view.lines), [view.lines]);
   const parts = useMemo(() => vnParts(view.at, { ziStartsNextDay }), [view.at, ziStartsNextDay]);
   const chart = useMemo(
@@ -40,8 +42,9 @@ export function CastResult({ view, data, ziStartsNextDay }: { view: CastView; da
         month: parts.monthCanChi,
         topic: view.context as Topic | undefined,
         askerGender: view.askerGender,
+        useGod,
       }),
-    [view.lines, parts, view.context, view.askerGender],
+    [view.lines, parts, view.context, view.askerGender, useGod],
   );
   // Mai Hoa cần đúng một hào động; tính lại từ quẻ đã lưu nếu không có phép tính gốc.
   const meihua = useMemo(() => {
@@ -85,7 +88,7 @@ export function CastResult({ view, data, ziStartsNextDay }: { view: CastView; da
       </div>
 
       {tab === 'reading' && <CastReadingView reading={reading} question={view.question} data={data} context={view.context} />}
-      {tab === 'liuyao' && <LiuyaoTable chart={chart} data={data} />}
+      {tab === 'liuyao' && <LiuyaoTable chart={chart} data={data} useGod={useGod} onUseGod={setUseGod} />}
       {tab === 'meihua' && meihua && (
         <>
           {!view.meihua && !isMeihua && <p className="small muted">{t('meihua.fromCoins')}</p>}

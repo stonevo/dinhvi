@@ -527,3 +527,6 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .lines-so-far .bar.yin { background: linear-gradient(to right, var(--ink) 42%, transparent 42%, transparent 58%, var(--ink) 58%); }
 fieldset.field { border: 0; padding: 0; margin: 0; }
 fieldset.field legend { margin-bottom: 6px; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.tab { border: 1px solid transparent; border-bottom: none; border-radius: 8px 8px 0 0; background: transparent; padding: 6px 14px; margin-bottom: -1px; color: var(--muted); }
+.tab.on { border-color: var(--line); background: var(--bg); color: var(--ink); font-weight: 600; }

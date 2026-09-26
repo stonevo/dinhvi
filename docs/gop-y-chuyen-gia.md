@@ -79,7 +79,7 @@ Engine không phụ thuộc phần diễn giải.
 - **Diễn giải theo ngữ cảnh:** 64 lời quẻ × 384 hào × 5 ngữ cảnh. Qua một lượt soát sửa 22 ô (chủ yếu ô sức khoẻ nghe như chẩn đoán) và 4 ô ở 63 hào 5 theo nghĩa cũ.
 
 ## Chưa làm / giới hạn
-- Lục Hào chưa luận vượng suy, nguyệt phá, ám động, tiến thần / thoái thần. Mới an đủ các thành phần và quan hệ sinh khắc đơn giản với nhật, nguyệt.
-- Dụng thần là gợi ý theo chủ đề (quy ước phổ biến); nguồn cổ (Tăng San Bốc Dịch) chưa đối chiếu trực tiếp.
+- ✅ (bổ sung) Lục Hào đã luận: vượng/tướng/hưu/tù/tử, nguyệt phá / chân phá / phá mà không phá, ám động, nhật phá, tuần không (chân / giả), hào động hóa tiến / thoái / hồi đầu sinh khắc xung / hóa không / hóa phá / hóa mộ / hóa tuyệt, phục thần (6 hữu dụng / 5 vô dụng), nguyên – kỵ – cừu thần, tham sinh vong khắc. Mỗi lý do kèm nguồn (Tăng San Bốc Dịch, Bốc Phệ Chính Tông, Hoàng Kim Sách, Hỏa Châu Lâm) — xem `luc-hao-nguon.md`. Chưa làm: tam hợp, lục hợp, tam hình, tùy quỷ nhập mộ, phản ngâm / phục ngâm, ứng kỳ. Cách cộng trừ lý do thành kết luận vượng / suy là quy ước của app.
+- ✅ (bổ sung) Dụng thần theo chủ đề đã đối chiếu Tăng San Bốc Dịch và Bốc Phệ Chính Tông (khớp); có ô chọn Dụng thần bằng tay.
 - Mai Hoa theo chữ Quốc ngữ là cách thích ứng hiện đại, app ghi rõ điều này. Chữ Hán đếm nét theo Unihan kTotalStrokes (bản phồn thể), không theo cách tính bộ thủ Khang Hy.
 - Rung không chạy trên iPhone (Safari không hỗ trợ `navigator.vibrate`).
