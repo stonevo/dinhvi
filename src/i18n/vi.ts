@@ -3,7 +3,7 @@ export const vi = {
   'app.name': 'Định Vị',
   'app.tagline': 'Nhật ký tự định vị định kỳ',
 
-  'nav.home': 'Lĩnh vực',
+  'nav.home': 'Tự định vị',
   'nav.trajectory': 'Quỹ đạo',
   'nav.calibration': 'Hiệu chỉnh',
   'nav.settings': 'Cài đặt',
