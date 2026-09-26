@@ -9,7 +9,7 @@ const CONTEXT_WORDS: Record<ContextKey, string[]> = {
   money: ['tai chinh', 'tien', 'dau tu'],
   health: ['suc khoe', 'the chat', 'benh'],
   love: ['tinh cam', 'tinh yeu', 'hon nhan', 'gia dinh', 'vo chong'],
-  travel: ['di xa', 'du lich', 'xuat hanh', 'chuyen nha'],
+  travel: ['di lai', 'noi o', 'tim kiem', 'di xa', 'du lich', 'xuat hanh', 'chuyen nha'],
 };
 
 const fold = (s: string) =>

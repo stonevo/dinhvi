@@ -13,6 +13,15 @@ describe('gợi ý lĩnh vực sau khi gieo', () => {
     expect(suggestDomain(domains, 'love')?.id).toBe('b');
     expect(suggestDomain([d('x', 'SUC KHOE')], 'health')?.id).toBe('x');
   });
+  it('bộ 8 lĩnh vực mặc định: mỗi ngữ cảnh khớp đúng lĩnh vực', async () => {
+    const { DEFAULT_DOMAIN_NAMES } = await import('../src/db/db');
+    const eight = DEFAULT_DOMAIN_NAMES.map((n, i) => d(String(i), n));
+    expect(suggestDomain(eight, 'work')?.name).toBe('Công việc/sự nghiệp');
+    expect(suggestDomain(eight, 'money')?.name).toBe('Tài chính/kinh doanh');
+    expect(suggestDomain(eight, 'love')?.name).toBe('Tình cảm/hôn nhân');
+    expect(suggestDomain(eight, 'health')?.name).toBe('Sức khoẻ');
+    expect(suggestDomain(eight, 'travel')?.name).toBe('Đi lại/nơi ở/tìm kiếm');
+  });
   it('không khớp hoặc không có ngữ cảnh thì không gợi ý', () => {
     expect(suggestDomain(domains, 'travel')).toBeUndefined();
     expect(suggestDomain(domains, undefined)).toBeUndefined();

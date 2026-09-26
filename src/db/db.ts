@@ -51,14 +51,61 @@ export class DinhViDB extends Dexie {
       });
     // v4: tiến độ trang Học.
     this.version(4).stores({ study: 'id, profileId, due' });
+    // v5: bộ 8 lĩnh vực mặc định. Đổi tên 4 lĩnh vực mặc định cũ (giữ bản ghi), thêm các
+    // lĩnh vực mới còn thiếu cho hồ sơ đang dùng bộ mặc định; lĩnh vực tự thêm giữ nguyên.
+    this.version(5)
+      .stores({})
+      .upgrade(async (tx) => {
+        const table = tx.table('domains');
+        const all = (await table.toArray()) as Domain[];
+        const byProfile = new Map<string, Domain[]>();
+        for (const d of all) byProfile.set(d.profileId, [...(byProfile.get(d.profileId) ?? []), d]);
+        const now = Date.now();
+        for (const [profileId, domains] of byProfile) {
+          for (const d of domains) {
+            const renamed = LEGACY_DOMAIN_RENAMES[d.name];
+            if (renamed) await table.update(d.id, { name: renamed });
+          }
+          // Chỉ bổ sung cho hồ sơ đang dùng bộ mặc định; hồ sơ toàn lĩnh vực tự đặt thì để nguyên.
+          if (!domains.some((d) => LEGACY_DOMAIN_RENAMES[d.name] || DEFAULT_DOMAIN_NAMES.includes(d.name))) continue;
+          // Xếp bộ mặc định theo đúng thứ tự mới (sắp theo createdAt), bắt đầu từ lĩnh vực cũ nhất.
+          const base = Math.min(...domains.map((d) => new Date(d.createdAt).getTime()).filter(Number.isFinite), now);
+          const current = new Map(domains.map((d) => [LEGACY_DOMAIN_RENAMES[d.name] ?? d.name, d]));
+          for (const [i, name] of DEFAULT_DOMAIN_NAMES.entries()) {
+            const createdAt = new Date(base + i).toISOString();
+            const existing = current.get(name);
+            if (existing) await table.update(existing.id, { createdAt });
+            else await table.add({ id: newId(now + i), profileId, name, createdAt, archived: false });
+          }
+        }
+      });
   }
 }
 
-export const DEFAULT_DOMAIN_NAMES = ['Công việc', 'Gia đình', 'Sức khỏe', 'Tài chính'];
+export const DEFAULT_DOMAIN_NAMES = [
+  'Công việc/sự nghiệp',
+  'Tài chính/kinh doanh',
+  'Tình cảm/hôn nhân',
+  'Gia đình/con cái',
+  'Sức khoẻ',
+  'Học tập/thi cử',
+  'Đi lại/nơi ở/tìm kiếm',
+  'Bản thân/tinh thần',
+];
+
+/** Tên 4 lĩnh vực mặc định trước v5 → tên mới. */
+export const LEGACY_DOMAIN_RENAMES: Record<string, string> = {
+  'Công việc': 'Công việc/sự nghiệp',
+  'Tài chính': 'Tài chính/kinh doanh',
+  'Gia đình': 'Gia đình/con cái',
+  'Sức khỏe': 'Sức khoẻ',
+};
 export const DEFAULT_PROFILE_NAME = 'Tôi';
 
 function defaultDomains(profileId: string, createdAt: string): Domain[] {
-  return DEFAULT_DOMAIN_NAMES.map((name) => ({ id: newId(), profileId, name, createdAt, archived: false }));
+  // Lệch createdAt từng mili giây để giữ đúng thứ tự khi sắp theo ngày tạo.
+  const t0 = new Date(createdAt).getTime();
+  return DEFAULT_DOMAIN_NAMES.map((name, i) => ({ id: newId(), profileId, name, createdAt: new Date(t0 + i).toISOString(), archived: false }));
 }
 
 /**
@@ -85,7 +132,7 @@ export async function ensureSeeded(db: DinhViDB, now = new Date()): Promise<void
   });
 }
 
-/** Tạo hồ sơ mới kèm 4 lĩnh vực mặc định. Trả về id hồ sơ. */
+/** Tạo hồ sơ mới kèm 8 lĩnh vực mặc định. Trả về id hồ sơ. */
 export async function createProfile(db: DinhViDB, name: string, now = new Date()): Promise<string> {
   const id = newId(now.getTime());
   const createdAt = now.toISOString();

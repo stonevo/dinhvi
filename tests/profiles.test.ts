@@ -2,7 +2,7 @@ import 'fake-indexeddb/auto';
 import Dexie from 'dexie';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import {
-  DinhViDB, activeProfileData, createProfile, deleteProfile, ensureSeeded, getSettings, setActiveProfile,
+  DEFAULT_DOMAIN_NAMES, DinhViDB, activeProfileData, createProfile, deleteProfile, ensureSeeded, getSettings, setActiveProfile,
 } from '../src/db/db';
 import { exportAll, exportProfile, importProfiles, parseBackup, serializeBackup } from '../src/db/backup';
 import { makePositioning } from './fixtures';
@@ -60,7 +60,7 @@ describe('nhiều hồ sơ', () => {
     await setActiveProfile(db, lan);
     const lanData = await activeProfileData(db);
     expect(lanData.profileId).toBe(lan);
-    expect(lanData.domains).toHaveLength(4);
+    expect(lanData.domains).toHaveLength(8);
     expect(lanData.positionings).toEqual([]);
 
     await setActiveProfile(db, 'me');
@@ -118,5 +118,44 @@ describe('xuất / nhập một hồ sơ', () => {
     expect(parsed.scope).toBe('all');
     expect(parsed.profiles.map((p) => p.id)).toEqual(['me']);
     expect(parsed.domains.every((d) => d.profileId === 'me')).toBe(true);
+  });
+});
+
+describe('nâng DB lên v5: bộ 8 lĩnh vực', () => {
+  it('đổi tên 4 lĩnh vực mặc định cũ (giữ bản ghi), thêm lĩnh vực mới; hồ sơ tự đặt giữ nguyên', async () => {
+    const name = `v4-${n++}`;
+    const old = new Dexie(name);
+    old.version(1).stores({ domains: 'id, archived, createdAt', positionings: 'id, domainId, period, [domainId+period], createdAt', drafts: 'id, domainId, [domainId+period]', settings: 'id' });
+    old.version(2).stores({ casts: 'id, createdAt' });
+    old.version(3).stores({ domains: 'id, profileId, archived, createdAt', casts: 'id, profileId, createdAt', profiles: 'id, createdAt', quickNotes: 'id, domainId, createdAt' });
+    old.version(4).stores({ study: 'id, profileId, due' });
+    await old.open();
+    await old.table('profiles').bulkAdd([{ id: 'me', name: 'Tôi', createdAt: '1' }, { id: 'lan', name: 'Lan', createdAt: '2' }]);
+    await old.table('domains').bulkAdd([
+      { id: 'w', profileId: 'me', name: 'Công việc', createdAt: '2026-01-01T00:00:00.000Z', archived: false },
+      { id: 'h', profileId: 'me', name: 'Sức khỏe', createdAt: '2026-01-01T00:00:00.001Z', archived: false },
+      { id: 'x', profileId: 'me', name: 'Viết sách', createdAt: '2026-01-02T00:00:00.000Z', archived: false },
+      { id: 'l1', profileId: 'lan', name: 'Chạy bộ', createdAt: '2026-01-03T00:00:00.000Z', archived: false },
+    ]);
+    await old.table('positionings').add({ ...makePositioning({ id: 'p1', domainId: 'w' }) });
+    old.close();
+
+    const up = new DinhViDB(name);
+    await up.open();
+    const me = await up.domains.where('profileId').equals('me').toArray();
+    const names = me.map((d) => d.name);
+    expect(names).toContain('Công việc/sự nghiệp');
+    expect(names).toContain('Sức khoẻ');
+    expect(names).not.toContain('Công việc');
+    expect(names).toContain('Viết sách');
+    expect(me).toHaveLength(9); // 8 mặc định + 1 tự thêm
+    const ordered = (await up.domains.where('profileId').equals('me').sortBy('createdAt')).map((d) => d.name);
+    expect(ordered.slice(0, 8)).toEqual(DEFAULT_DOMAIN_NAMES);
+    expect(ordered[8]).toBe('Viết sách');
+    expect((await up.domains.get('w'))?.name).toBe('Công việc/sự nghiệp');
+    expect((await up.positionings.get('p1'))?.domainId).toBe('w');
+    const lan = await up.domains.where('profileId').equals('lan').toArray();
+    expect(lan.map((d) => d.name)).toEqual(['Chạy bộ']);
+    await up.delete();
   });
 });

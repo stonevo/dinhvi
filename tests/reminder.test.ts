@@ -60,7 +60,7 @@ describe('checkAndNotify', () => {
     expect(await checkAndNotify(db, show, now)).toBe(true);
     expect(await checkAndNotify(db, show, now)).toBe(false);
     expect(shown).toHaveLength(1);
-    expect(shown[0]).toContain('4 lĩnh vực');
+    expect(shown[0]).toContain('8 lĩnh vực');
     expect((await db.settings.get('settings'))?.lastReminderPeriod).toBe('2026-Q3');
     // Sang kỳ mới thì nhắc lại.
     expect(await checkAndNotify(db, show, new Date(2026, 9, 2))).toBe(true);

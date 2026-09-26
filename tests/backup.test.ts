@@ -16,7 +16,7 @@ afterEach(async () => {
 });
 
 describe('seed', () => {
-  it('tạo 4 lĩnh vực mặc định và cài đặt, idempotent', async () => {
+  it('tạo 8 lĩnh vực mặc định và cài đặt, idempotent', async () => {
     await ensureSeeded(db);
     await ensureSeeded(db);
     const names = (await db.domains.toArray()).map((d) => d.name).sort();
@@ -53,7 +53,7 @@ describe('export/import round-trip', () => {
     expect(again).toBe(text);
     const parsed = JSON.parse(again);
     expect(parsed.positionings).toHaveLength(2);
-    expect(parsed.domains).toHaveLength(4);
+    expect(parsed.domains).toHaveLength(8);
     expect(parsed.settings.cycle).toBe('month');
   });
 
@@ -71,7 +71,7 @@ describe('export/import round-trip', () => {
     expect(parsed.casts).toEqual([]);
     await importAll(db, parsed);
     expect(await db.casts.count()).toBe(0);
-    expect(await db.domains.count()).toBe(4);
+    expect(await db.domains.count()).toBe(8);
   });
 
   it('từ chối JSON hỏng', () => {
@@ -92,6 +92,6 @@ describe('export/import round-trip', () => {
   it('không nhập gì nếu file sai (dữ liệu cũ còn nguyên)', async () => {
     await ensureSeeded(db);
     expect(() => parseBackup('[]')).toThrow();
-    expect(await db.domains.count()).toBe(4);
+    expect(await db.domains.count()).toBe(8);
   });
 });
