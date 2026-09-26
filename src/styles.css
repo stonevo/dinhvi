@@ -501,9 +501,10 @@ fieldset.field legend { margin-bottom: 6px; }
 
 /* Menu xổ "Gieo quẻ ▾" */
 .nav-menu { position: relative; display: inline-flex; }
-.nav-menu-trigger { background: none; border: 0; padding: 4px 0; font: inherit; color: var(--muted); cursor: pointer; }
+.nav-menu-trigger { background: none; border: 0; padding: 4px 2px 4px 4px; font: inherit; color: var(--muted); cursor: pointer; }
+.topbar a.nav-menu-label { padding: 4px 0; }
 .nav-menu-trigger:hover, .nav-menu.open .nav-menu-trigger { color: var(--ink); }
-.nav-menu-trigger.active { color: var(--ink); border-bottom: 1px solid var(--ink); border-radius: 0; }
+
 .nav-menu-list {
   position: absolute; top: 100%; left: 0; z-index: 30; min-width: 15rem; margin-top: 4px;
   display: flex; flex-direction: column; padding: 6px 0;

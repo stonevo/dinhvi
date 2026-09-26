@@ -7,7 +7,7 @@ import { t } from '../i18n';
 import { newId } from '../lib/id';
 import { periodOf } from '../lib/period';
 import { readCast, type LineValue } from '../lib/cast';
-import { CastBoard } from '../ui/CastBoard';
+import { RitualCastBoard } from '../cast/RitualCastBoard';
 import { ChoiceGroup, HexagramLinePicker, TextInput } from '../ui/controls';
 
 /**
@@ -76,7 +76,7 @@ export function QuickNotePage() {
         />
       ) : (
         <>
-          <CastBoard lines={castLines} onChange={setCastLines} data={data} />
+          <RitualCastBoard lines={castLines} onChange={setCastLines} data={data} question={t('ritualBoard.quickQuestion', { domain: q.domain.name })} />
           {cast && (
             <label className="field">
               <span>{t('step4.choose')}</span>

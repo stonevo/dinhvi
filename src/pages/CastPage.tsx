@@ -108,7 +108,7 @@ export function CastPage() {
       <h1>{t('nav.cast')}</h1>
       {stage === 'ask' && <p className="muted">{t('ritual.intro')}</p>}
 
-      {stage === 'ask' && <AskStep draft={draft} onChange={setDraft} onNext={() => setStage('calm')} />}
+      {stage === 'ask' && <AskStep draft={draft} onChange={setDraft} onNext={() => setStage('calm')} methodLocked={Boolean(pickedMethod)} />}
       {(stage === 'calm' || stage === 'cast' || stage === 'formed') && (
         <RitualShell question={draft.question} onExit={restart}>
           {stage === 'calm' && <CalmStep sound={settings.castSound ?? true} onDone={() => setStage('cast')} />}

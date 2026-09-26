@@ -4,7 +4,7 @@ import { fullHexagramName } from '../../data/names';
 import { HexagramFigure } from '../../ui/HexagramFigure';
 import { ChoiceGroup, TextArea } from '../../ui/controls';
 import { derivedHexagram } from '../draft';
-import { CastBoard } from '../../ui/CastBoard';
+import { RitualCastBoard } from '../../cast/RitualCastBoard';
 import { Term } from '../../ui/Term';
 import type { StepProps } from './types';
 
@@ -40,7 +40,7 @@ function trigramOptions(list: Record<TrigramKey, Trigram>, side: 'inner' | 'oute
 }
 
 /** Bước 2 — Có quẻ: tự ghép hai quái kèm bằng chứng, hoặc gieo. */
-export function Step2Trigrams({ d, set, data }: StepProps) {
+export function Step2Trigrams({ d, set, data, domainName }: StepProps) {
   const method = d.method ?? 'self';
   const chooser = (
     <ChoiceGroup
@@ -54,7 +54,12 @@ export function Step2Trigrams({ d, set, data }: StepProps) {
     return (
       <div className="stack">
         {chooser}
-        <CastBoard lines={d.castLines ?? []} onChange={(castLines) => set({ castLines })} data={data} />
+        <RitualCastBoard
+          lines={d.castLines ?? []}
+          onChange={(castLines) => set({ castLines })}
+          data={data}
+          question={t('ritualBoard.positionQuestion', { domain: domainName ?? '' })}
+        />
       </div>
     );
   }

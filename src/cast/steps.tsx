@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { t } from '../i18n';
 import { tossCoins, type LineValue } from '../lib/cast';
 import { playBowl, playCoins, prefersReducedMotion, vibrate } from '../lib/feedback';
@@ -17,7 +18,15 @@ export type AskDraft = {
 };
 
 /** Bước 1: câu hỏi và ngữ cảnh trước, rồi chọn cách lập quẻ. */
-export function AskStep({ draft, onChange, onNext }: { draft: AskDraft; onChange: (d: AskDraft) => void; onNext: () => void }) {
+export function AskStep({
+  draft, onChange, onNext, methodLocked = false,
+}: {
+  draft: AskDraft;
+  onChange: (d: AskDraft) => void;
+  onNext: () => void;
+  /** Đã chọn cách lập quẻ từ menu: không hiện danh sách chọn. */
+  methodLocked?: boolean;
+}) {
   const ok = draft.question.trim().length >= 3;
   return (
     <section className="stack ask-scroll">
@@ -57,20 +66,27 @@ export function AskStep({ draft, onChange, onNext }: { draft: AskDraft; onChange
         )}
       </fieldset>
 
-      <fieldset className="field">
-        <legend>{t('ritual.method')}</legend>
-        <div className="method-list">
-          {CAST_METHODS.map((m) => (
-            <label key={m} className={'method' + (draft.method === m ? ' on' : '')}>
-              <input type="radio" name="method" checked={draft.method === m} onChange={() => onChange({ ...draft, method: m })} />
-              <span>
-                <strong>{t(`method.${m}` as 'method.coins')}</strong>
-                <span className="small muted"> — {t(`method.${m}.hint` as 'method.coins.hint')}</span>
-              </span>
-            </label>
-          ))}
-        </div>
-      </fieldset>
+      {methodLocked ? (
+        <p className="small">
+          {t('ritual.methodChosen', { method: t(`method.${draft.method}` as 'method.coins') })} ·{' '}
+          <Link to="/cast">{t('ritual.changeMethod')}</Link>
+        </p>
+      ) : (
+        <fieldset className="field">
+          <legend>{t('ritual.method')}</legend>
+          <div className="method-list">
+            {CAST_METHODS.map((m) => (
+              <label key={m} className={'method' + (draft.method === m ? ' on' : '')}>
+                <input type="radio" name="method" checked={draft.method === m} onChange={() => onChange({ ...draft, method: m })} />
+                <span>
+                  <strong>{t(`method.${m}` as 'method.coins')}</strong>
+                  <span className="small muted"> — {t(`method.${m}.hint` as 'method.coins.hint')}</span>
+                </span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      )}
 
       <label className="field">
         <span>{t('ritual.checkIn')}</span>

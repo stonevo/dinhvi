@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { t } from '../i18n';
 import { CAST_METHODS } from '../types/schema';
 
@@ -38,14 +38,19 @@ export function NavCastMenu() {
       onMouseEnter={() => canHover() && setOpen(true)}
       onMouseLeave={() => canHover() && setOpen(false)}
     >
+      {/* Chữ "Gieo quẻ": vào trang gieo có danh sách chọn cách. Mũi tên: mở menu. */}
+      <NavLink to="/cast" end className={() => 'nav-menu-label' + (active ? ' active' : '')}>
+        {t('nav.cast')}
+      </NavLink>
       <button
         type="button"
-        className={'nav-menu-trigger' + (active ? ' active' : '')}
+        className="nav-menu-trigger"
         aria-haspopup="menu"
         aria-expanded={open}
+        aria-label={t('nav.castMenu')}
         onClick={() => setOpen((o) => !o)}
       >
-        {t('nav.cast')} <span aria-hidden>▾</span>
+        <span aria-hidden>▾</span>
       </button>
       {open && (
         <div className="nav-menu-list" role="menu">

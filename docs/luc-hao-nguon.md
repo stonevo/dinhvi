@@ -210,7 +210,7 @@ API: `hexagramPattern(n)`, `FAN_YIN_TRIGRAM`; `assessment.hexagram` (`primary`, 
 | Dụng thần hóa xung khắc: đại hung | 第嫌用神化冲克者，凡谋大凶 | BPCT 第五問 |
 | Phục ngâm: ưu uất; vượng thì chờ năm tháng xung khai | 伏吟者，忧郁呻吟之象 · 伏吟之卦，用神旺相，沖開之年月，其志則伸 | BPCT 十八問答第六問 ([42章](https://www.quanxue.cn/qt_mingxiang/boshi/boshi42.html)); TSBD 反伏章 |
 
-**Chỗ hai sách khác nhau (phản ngâm cấp quẻ).** BPCT định nghĩa quái phản ngâm bằng bốn cặp quái đối xung, kèm ví dụ (姤↔小畜, 既濟↔未濟, 剝↔謙, 歸妹↔隨). TSBD ghi 「卦變者內外動而反伏者同一卦也。如乾卦變坤卦」 (反伏章), và ở 塋葬章 ghi 「如巽變乾﹐坤變震之類﹐名爲化絕化克」. Càn → Khôn và Khôn → Chấn **không** thuộc bốn cặp của BPCT. Các ví dụ TSBD thật sự luận giải (比之井, 臨之中孚, 升之觀, 巽之升, 恆之豫) đều là Khôn ↔ Tốn, tức “hào phản ngâm” theo BPCT. Engine làm theo BPCT (có danh sách rõ ràng) và **không** gắn cờ Càn → Khôn là phản ngâm. Bản Wikisource của TSBD chỉ đạt chất lượng 25–50%, nên câu 「如乾卦變坤卦」 có thể bị chép sai.
+**Chỗ hai sách khác nhau (phản ngâm cấp quẻ).** BPCT định nghĩa quái phản ngâm bằng bốn cặp quái đối xung, kèm ví dụ (姤↔小畜, 既濟↔未濟, 剝↔謙, 歸妹↔隨). TSBD ghi 「卦變者內外動而反伏者同一卦也。如乾卦變坤卦」 (反伏章), và ở 尋地章第一百十九 (ngay sau 塋葬章 / 墓葬章第一百十八) ghi 「如巽變乾﹐坤變震之類﹐名爲化絕化克」. Càn → Khôn và Khôn → Chấn **không** thuộc bốn cặp của BPCT. Các ví dụ TSBD thật sự luận giải (比之井, 臨之中孚, 升之觀, 巽之升, 恆之豫) đều là Khôn ↔ Tốn, tức “hào phản ngâm” theo BPCT. Engine làm theo BPCT (có danh sách rõ ràng) và **không** gắn cờ Càn → Khôn là phản ngâm. Bản Wikisource của TSBD chỉ đạt chất lượng 25–50%, nên câu 「如乾卦變坤卦」 có thể bị chép sai.
 
 Phản ngâm với dụng thần (`relationReasons`: `fan-yin-use-god-hit` / `fan-yin-use-god-ok`): engine xét phản ngâm ở **cả quẻ**, không chỉ ở quái chứa dụng thần. Lý do là ví dụ 臨之中孚 của TSBD: ngoại quái phản ngâm, dụng thần ở nội quái, sách vẫn luận “đi rồi lại về”.
 
@@ -326,6 +326,10 @@ Các bước đã làm:
 1. Lấy mã nguồn wiki qua `https://zh.wikisource.org/w/index.php?title=<tên>&action=raw`: 增刪卜易 (trang chính và các trang con `/7`…`/26`), 黃金策, 火珠林.
 2. Lấy HTML các trang `boshiNN.html` trên quanxue.cn (01–54) rồi bỏ thẻ HTML.
 3. Kiểm từng câu trong các bảng trên bằng so khớp chuỗi con, và đếm số chữ Hán (≤ 25). Kết quả: 80/80 khớp.
-4. Đợt bổ sung mục 10–15 (cùng ngày): lấy thêm raw các trang `/19`, `/20`, `/21`, `/25`, `/26又1`, `/26又2`, `/26又3` và trang chính (月破章, 隨鬼入墓章, 增刪黃金策千金賦章, 塋葬章 nằm ở quyển 2–4 trên trang chính). Với BPCT lấy thêm các trang `boshi09`, `10`, `28`–`30`, `39`–`50`. Khi so khớp đã bỏ `<br>` và xuống dòng. Kết quả: 133/133 câu khớp, câu dài nhất 22 chữ. Chữ 𨿽 (ngoài BMP) và dấu ﹐ (U+FE50) được giữ nguyên như bản điện tử.
+4. Đợt bổ sung mục 10–15 (cùng ngày): lấy thêm raw các trang `/19`, `/20`, `/21`, `/25`, `/26又1`, `/26又2`, `/26又3` và trang chính (月破章, 隨鬼入墓章, 增刪黃金策千金賦章, 尋地章 nằm ở quyển 2–4 trên trang chính). Với BPCT lấy thêm các trang `boshi09`, `10`, `28`–`30`, `39`–`50`. Khi so khớp đã bỏ `<br>` và xuống dòng. Kết quả: 133/133 câu khớp, câu dài nhất 22 chữ. Chữ 𨿽 (ngoài BMP) và dấu ﹐ (U+FE50) được giữ nguyên như bản điện tử.
 
 Test (`tests/liuyao.test.ts`) dùng lại nguyên các ví dụ của TSBD (月破章, 進神退神章, 暗動章, 元神忌神衰旺章, 旬空章, 動散章, 飛伏神章, 六合章, 六沖章, 三刑章, 反伏章, 隨鬼入墓章, 增刪黃金策千金賦章) và của BPCT (十八問答第四、五、六、十一、十三、十四問) làm ca kiểm tra.
+
+## Ghi chú thêm sau lượt soát độc lập (26/09/2026)
+- Soát lại độc lập: 191/191 trích dẫn trong bảng và 35/36 trích dẫn trong phần văn đúng nguyên văn, đúng sách, đúng chương; 1 chỗ ghi nhầm chương đã sửa (塋葬章 → 尋地章第一百十九).
+- Tăng San Bốc Dịch tự mâu thuẫn về hào vượng gặp tuần không: 旬空章 nói 「旺不爲空」, còn 月將章 nói 「予試不然，在旬內者畢竟爲空」. Engine theo 旬空章 (vượng thì không coi là không); người luận nên biết có ý kiến ngược lại ngay trong cùng sách.
