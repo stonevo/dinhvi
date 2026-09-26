@@ -15,11 +15,18 @@ function CoinFace({ side }: { side: 'heads' | 'tails' }) {
       <circle r="44" fill="none" stroke="#5b4216" strokeOpacity="0.55" strokeWidth="2.5" />
       <rect x="-12" y="-12" width="24" height="24" fill="#1a1422" stroke="#5b4216" strokeWidth="3" />
       {side === 'heads' ? (
-        <g className="coin-chars" fill="#4a3510" fontSize="17" fontWeight="700" textAnchor="middle" dominantBaseline="central">
-          <text y="-29">開</text>
-          <text y="29">元</text>
-          <text x="29">通</text>
-          <text x="-29">寶</text>
+        // Safari (iOS) không thừa hưởng dominant-baseline từ <g>: căn dọc bằng dy trên từng chữ.
+        <g className="coin-chars" fill="#4a3510" fontSize="17" fontWeight="700" fontFamily="'Noto Serif TC', 'Songti TC', 'PMingLiU', 'MingLiU', serif">
+          {[
+            ['開', 0, -29],
+            ['元', 0, 29],
+            ['通', 29, 0],
+            ['寶', -29, 0],
+          ].map(([ch, x, y]) => (
+            <text key={ch as string} x={x} y={y} dy="0.36em" textAnchor="middle">
+              {ch}
+            </text>
+          ))}
         </g>
       ) : (
         <g stroke="#5b4216" strokeOpacity="0.45" strokeWidth="2" fill="none">

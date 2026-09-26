@@ -15,6 +15,7 @@ import { CastResult, type CastView } from '../cast/CastResult';
 import { MeihuaCaster, linesFromMeihua, type MeihuaMethodKey } from '../cast/meihua';
 import { AskStep, CalmStep, CoinsCaster, ManualCaster, type AskDraft } from '../cast/steps';
 import { Formed, RitualShell } from '../cast/Ritual';
+import { NextPositioning } from '../cast/NextPositioning';
 
 type Stage = 'ask' | 'calm' | 'cast' | 'formed' | 'result';
 
@@ -30,7 +31,8 @@ export function CastPage() {
   const q = useLiveQuery(async () => {
     const settings = await getSettings(db);
     const casts = await db.casts.where('profileId').equals(settings.activeProfileId).sortBy('createdAt');
-    return { settings, history: casts.reverse() };
+    const domains = (await db.domains.where('profileId').equals(settings.activeProfileId).sortBy('createdAt')).filter((d) => !d.archived);
+    return { settings, history: casts.reverse(), domains };
   });
   const [params] = useSearchParams();
   const fromMenu = params.get('m');
@@ -141,6 +143,7 @@ export function CastPage() {
               {t('ritual.discard')}
             </button>
           </div>
+          <NextPositioning domains={q.domains} context={view.context} />
         </>
       )}
 
@@ -160,6 +163,7 @@ export function CastPage() {
             ziStartsNextDay={settings.ziStartsNextDay ?? true}
           />
           {viewed.notes && <p>{viewed.notes}</p>}
+          <NextPositioning domains={q.domains} context={viewed.context} />
         </section>
       )}
 

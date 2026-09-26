@@ -1,4 +1,4 @@
-import { Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom';
+import { Link, Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from './db/db';
 import { WelcomePage } from './pages/WelcomePage';
@@ -38,7 +38,9 @@ export function App() {
   return (
     <div className="shell">
       <header className="topbar no-print">
-        <span className="brand">{t('app.name')}</span>
+        <Link to="/" className="brand" aria-label={t('nav.homeFromLogo')}>
+          {t('app.name')}
+        </Link>
         <nav>
           <NavLink to="/" end>{t('nav.home')}</NavLink>
           <NavLink to="/trajectory">{t('nav.trajectory')}</NavLink>

@@ -742,3 +742,10 @@ h2 { color: var(--ink); }
 }
 :root[data-theme='dark'] .card { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35); }
 button.primary, .primary { box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 30%, transparent); }
+/* Link trông như nút (vd. "Định vị … kỳ này") */
+a.button { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 14px; border-radius: var(--radius);
+  border: 1px solid var(--line); text-decoration: none; color: var(--ink); background: var(--surface); align-self: flex-end; }
+a.button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+a.button:hover { filter: brightness(1.05); }
+a.button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.topbar a.brand { text-decoration: none; border: 0; }
