@@ -446,4 +446,27 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .study-info { padding: 0 10px; min-width: 40px; font-size: 1rem; color: var(--muted); }
 .study-option-wrap.open .study-option { outline: 2px solid var(--accent); outline-offset: 1px; }
 .study-option-wrap.open .study-info { color: var(--accent); }
-.study-detail { text-align: left; border: 1px dashed var(--line); border-radius: 8px; padding: 8px 12px; min-height: 7rem; }
+
+/* Tooltip giải thích đáp án ở trang Học */
+.study-option-wrap { position: relative; }
+.study-tooltip {
+  position: absolute; top: calc(100% + 6px); left: 0; z-index: 20;
+  width: max(100%, 20rem); max-width: min(26rem, calc(100vw - 32px));
+  background: var(--surface); color: var(--ink); text-align: left;
+  border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+}
+.study-tooltip p { margin: 4px 0; }
+@media (min-width: 560px) {
+  .study-option-wrap:nth-child(2n) .study-tooltip { left: auto; right: 0; }
+}
+/* Máy có chuột: rê là hiện, không cần nút ⓘ. Máy cảm ứng: dùng nút ⓘ. */
+.touch-only { display: none; }
+@media (hover: none), (pointer: coarse) {
+  .touch-only { display: inline; }
+  .hover-only { display: none; }
+}
+@media (hover: hover) and (pointer: fine) {
+  .study-info { display: none; }
+}

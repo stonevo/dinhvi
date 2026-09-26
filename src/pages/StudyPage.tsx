@@ -15,6 +15,9 @@ import { HexagramFigure } from '../ui/HexagramFigure';
 import { TRIGRAM_SYMBOL } from '../flow/steps/Step2Trigrams';
 
 const DECK_STORE = 'dinhvi.study.decks';
+
+/** Máy có chuột thật: rê là hiện giải thích. Máy cảm ứng dùng nút ⓘ (chạm giả lập rê chuột thì bỏ qua). */
+const canHover = () => typeof matchMedia === 'function' && matchMedia('(hover: hover) and (pointer: fine)').matches;
 const CARDS = allCards();
 
 function loadDecks(): Set<DeckKey> {
@@ -313,8 +316,8 @@ function CardView({
                 <div
                   key={o}
                   className={'study-option-wrap' + (open ? ' open' : '')}
-                  onMouseEnter={() => !info?.pinned && setInfo({ o, pinned: false })}
-                  onMouseLeave={() => !info?.pinned && setInfo(null)}
+                  onMouseEnter={() => canHover() && !info?.pinned && setInfo({ o, pinned: false })}
+                  onMouseLeave={() => canHover() && !info?.pinned && setInfo(null)}
                 >
                   <button type="button" className={'study-option' + state} disabled={checked !== null} onClick={() => choose(o)}>
                     {card.deck === 'pair' && <HexagramFigure binary={hex(o).binary} size={28} label="" />} {label(o)}
@@ -328,15 +331,19 @@ function CardView({
                   >
                     ⓘ
                   </button>
+                  {open && (
+                    <div className="study-tooltip" role="tooltip">
+                      <OptionDetail card={card} data={data} o={o} label={label(o)} />
+                    </div>
+                  )}
                 </div>
               );
             })}
           </div>
-          {info ? (
-            <OptionDetail card={card} data={data} o={info.o} label={label(info.o)} />
-          ) : (
-            <p className="muted small">{t('study.explainHint')}</p>
-          )}
+          <p className="muted small">
+            <span className="hover-only">{t('study.explainHintHover')}</span>
+            <span className="touch-only">{t('study.explainHintTouch')}</span>
+          </p>
         </>
       )}
 
