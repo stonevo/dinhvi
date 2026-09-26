@@ -1,54 +1,69 @@
-/* Tĩnh lặng: giấy ngà, chữ serif, nhiều khoảng trắng, không chuyển động.
-   Tông ấm: nền ngà, chữ nâu đậm, nhấn đất nung, phụ xanh xô thơm.
+/* Trang nghiêm: nền giấy dó, dải sơn mài, nhấn đỏ son và vàng; bản tối là đêm trầm.
+   Hình chìm Bát quái mờ; không chuyển động (trừ không gian nghi thức gieo quẻ).
    Chủ đề: data-theme="light" | "dark" | "auto" trên <html> (mặc định light). */
 :root {
-  --bg: #faf9f5;
-  --surface: #ffffff;
-  --surface-2: #f3f1ea;
-  --ink: #3d3929;
-  --muted: #7d796f;
-  --line: #e6e2d6;
-  --accent: #c96442;
-  --accent-ink: #ffffff;
-  --accent-soft: #f7e9e2;
-  --sage: #5f7f5a;
-  --sage-soft: #e8efe4;
-  --warn: #b0701c;
-  --warn-soft: #f8eedc;
+  --bg: #f3ead7;
+  --surface: #fbf6ea;
+  --surface-2: #efe3c8;
+  --ink: #2c2216;
+  --muted: #76664d;
+  --line: #dac7a0;
+  --accent: #9e2b20;
+  --accent-ink: #fff8ee;
+  --accent-soft: #f2ddd3;
+  --sage: #56704f;
+  --sage-soft: #e3ead9;
+  --warn: #9a5a12;
+  --warn-soft: #f5e6cc;
+  --gold: #a8803a;
+  --band: #1d1520;
+  --band-2: #2c1c18;
+  --band-ink: #efe2c4;
+  --watermark: rgba(120, 80, 30, 0.07);
   --radius: 8px;
   color-scheme: light;
 }
 :root[data-theme='dark'] {
-  --bg: #262624;
-  --surface: #30302e;
-  --surface-2: #2b2b29;
-  --ink: #f0eee6;
-  --muted: #a8a59b;
-  --line: #45443f;
-  --accent: #d97757;
-  --accent-ink: #1f1e1c;
-  --accent-soft: #3e2f28;
+  --bg: #15111c;
+  --surface: #1f1a28;
+  --surface-2: #1a1622;
+  --ink: #efe6d2;
+  --muted: #a89c86;
+  --line: #3b3246;
+  --accent: #e0a45a;
+  --accent-ink: #1a1320;
+  --accent-soft: #3a2b22;
   --sage: #9bbb8d;
-  --sage-soft: #2f3a2c;
+  --sage-soft: #26301f;
   --warn: #e3a75b;
-  --warn-soft: #3d3223;
+  --warn-soft: #3a2e20;
+  --gold: #d8b36a;
+  --band: #0e0b14;
+  --band-2: #1c1224;
+  --band-ink: #e9d9b4;
+  --watermark: rgba(233, 201, 121, 0.05);
   color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
   :root[data-theme='auto'] {
-    --bg: #262624;
-    --surface: #30302e;
-    --surface-2: #2b2b29;
-    --ink: #f0eee6;
-    --muted: #a8a59b;
-    --line: #45443f;
-    --accent: #d97757;
-    --accent-ink: #1f1e1c;
-    --accent-soft: #3e2f28;
+    --bg: #15111c;
+    --surface: #1f1a28;
+    --surface-2: #1a1622;
+    --ink: #efe6d2;
+    --muted: #a89c86;
+    --line: #3b3246;
+    --accent: #e0a45a;
+    --accent-ink: #1a1320;
+    --accent-soft: #3a2b22;
     --sage: #9bbb8d;
-    --sage-soft: #2f3a2c;
+    --sage-soft: #26301f;
     --warn: #e3a75b;
-    --warn-soft: #3d3223;
+    --warn-soft: #3a2e20;
+    --gold: #d8b36a;
+    --band: #0e0b14;
+    --band-2: #1c1224;
+    --band-ink: #e9d9b4;
+    --watermark: rgba(233, 201, 121, 0.05);
     color-scheme: dark;
   }
 }
@@ -651,3 +666,78 @@ body.in-ritual { overflow: hidden; }
 .ask-scroll .chip { color: #3a2a14; background: rgba(255, 255, 255, 0.5); border-color: #cfb27a; }
 .ask-scroll .chip.on { background: #b3261e; border-color: #b3261e; color: #fff; }
 .ask-scroll .primary { background: #b3261e; border-color: #b3261e; color: #fff; }
+
+
+/* ===== Nền trang nghiêm cho toàn app ===== */
+html, body { background-color: var(--bg); }
+/* Dải menu tràn hết chiều ngang không được sinh thanh cuộn ngang. */
+html, body { overflow-x: clip; }
+body {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.25 0 0 0 0 0.1 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255, 244, 214, 0.55), transparent 70%),
+    radial-gradient(ellipse at 50% 110%, rgba(120, 60, 30, 0.10), transparent 60%);
+  background-attachment: fixed;
+}
+/* Hình chìm Bát quái – Thái cực, cố định góc phải dưới */
+body::before {
+  content: ''; position: fixed; right: -12vmin; bottom: -12vmin; width: 62vmin; height: 62vmin; z-index: 0; pointer-events: none;
+  background-color: var(--watermark);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-100 -100 200 200'%3E%3Cg fill='none' stroke='%23000' stroke-width='0.6'%3E%3Ccircle r='96'/%3E%3Ccircle r='70' stroke-dasharray='1 3'/%3E%3Ccircle r='40'/%3E%3C/g%3E%3Cg stroke='%23000' stroke-width='3'%3E%3Cg transform='rotate(0)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(45)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(90)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(135)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(180)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(225)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(270)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(315)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3C/g%3E%3Cpath d='M0-40a40 40 0 0 1 0 80a20 20 0 0 1 0-40a20 20 0 0 0 0-40z'/%3E%3Ccircle cy='-20' r='5'/%3E%3Ccircle cy='20' r='5' fill='%23fff'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-100 -100 200 200'%3E%3Cg fill='none' stroke='%23000' stroke-width='0.6'%3E%3Ccircle r='96'/%3E%3Ccircle r='70' stroke-dasharray='1 3'/%3E%3Ccircle r='40'/%3E%3C/g%3E%3Cg stroke='%23000' stroke-width='3'%3E%3Cg transform='rotate(0)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(45)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(90)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(135)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(180)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(225)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(270)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3Cg transform='rotate(315)'%3E%3Cpath d='M-12 -90h24M-12 -83h24M-12 -76h24'/%3E%3C/g%3E%3C/g%3E%3Cpath d='M0-40a40 40 0 0 1 0 80a20 20 0 0 1 0-40a20 20 0 0 0 0-40z'/%3E%3Ccircle cy='-20' r='5'/%3E%3Ccircle cy='20' r='5' fill='%23fff'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+:root[data-theme='dark'] body {
+  background-image:
+    radial-gradient(ellipse 70% 45% at 50% 0%, rgba(214, 150, 70, 0.10), transparent 70%),
+    radial-gradient(ellipse at 50% 120%, rgba(90, 40, 30, 0.35), transparent 60%);
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-theme='auto'] body {
+    background-image:
+      radial-gradient(ellipse 70% 45% at 50% 0%, rgba(214, 150, 70, 0.10), transparent 70%),
+      radial-gradient(ellipse at 50% 120%, rgba(90, 40, 30, 0.35), transparent 60%);
+  }
+}
+
+/* Nội dung nằm trên hình chìm */
+.shell { position: relative; z-index: 1; }
+
+/* Dải sơn mài phía trên: tràn hết chiều ngang, chữ vàng */
+.topbar {
+  position: relative; border-bottom: 0; color: var(--band-ink);
+  background: var(--band);
+  box-shadow: 0 0 0 100vmax var(--band); clip-path: inset(0 -100vmax);
+  padding-left: 0; padding-right: 0;
+}
+.topbar::after {
+  content: ''; position: absolute; left: -100vmax; right: -100vmax; bottom: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.topbar .brand { color: #e9c979; font-family: var(--font-heading); }
+.topbar .brand::before { content: '☯ '; color: #e9c979; opacity: 0.9; }
+.topbar a, .topbar .nav-menu-trigger { color: rgba(239, 226, 196, 0.78); }
+.topbar a:hover, .topbar .nav-menu-trigger:hover, .topbar .nav-menu.open .nav-menu-trigger { color: #fff3d6; }
+.topbar a.active, .topbar a.nav-menu-label.active { color: #e9c979; border-bottom-color: #e9c979; }
+.topbar .theme-toggle, .topbar select { color: var(--band-ink); background: rgba(255, 255, 255, 0.06); border-color: rgba(233, 201, 121, 0.35); }
+.topbar .nav-menu-list a { color: var(--ink); }
+
+/* Tiêu đề trang có đường viền vàng */
+.shell > main h1, .shell h1 { position: relative; padding-bottom: 12px; }
+.shell h1::after {
+  content: '◆'; position: absolute; left: 0; bottom: -2px; font-size: 0.55rem; color: var(--gold);
+  padding-right: 8px; background: transparent;
+}
+.shell h1::before {
+  content: ''; position: absolute; left: 14px; bottom: 3px; width: min(220px, 50%); height: 1px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+h2 { color: var(--ink); }
+
+/* Khung nội dung như trang giấy */
+.card {
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border: 1px solid var(--line);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 6px 18px rgba(60, 40, 10, 0.06);
+}
+:root[data-theme='dark'] .card { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35); }
+button.primary, .primary { box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 30%, transparent); }
