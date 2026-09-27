@@ -3,7 +3,8 @@ import { activeProfileData, db } from '../db/db';
 import { useStaticData } from '../data/load';
 import { t } from '../i18n';
 import { formatPeriod, periodOf } from '../lib/period';
-import { domainTrajectory, hasTrajectory, hexagramHistory, periodOverview } from '../lib/trajectory';
+import { domainTrajectory, hasTrajectory, hexagramHistory, lineTrend, periodOverview } from '../lib/trajectory';
+import { Link } from 'react-router-dom';
 import { TrajectoryChart } from '../ui/TrajectoryChart';
 import type { StaticData } from '../data/load';
 import type { QuickNote } from '../types/schema';
@@ -100,6 +101,12 @@ export function TrajectoryPage() {
           <section key={d.id}>
             <h2>{d.name}</h2>
             <TrajectoryChart points={points} data={data} />
+            {lineTrend(points) && (
+              <p className="muted small">
+                {t(`trajectory.trend.${lineTrend(points)}` as 'trajectory.trend.up')}{' '}
+                <Link to="/intro/dao-troi">{t('trajectory.trend.read')} →</Link>
+              </p>
+            )}
             <h3 className="small-caps">{t('trajectory.history')}</h3>
             <ol className="history">
               {history.hexagrams.map((n, i) => (

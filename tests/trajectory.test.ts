@@ -69,3 +69,15 @@ describe('cổng tạo bản ghi mới', () => {
     expect(canStartPositioning('d1', '2026-Q4', reviewedAll)).toBe(true);
   });
 });
+
+describe('xu hướng hào', () => {
+  it('ba kỳ gần nhất cùng lên hoặc cùng xuống', async () => {
+    const { lineTrend } = await import('../src/lib/trajectory');
+    const pts = (...ls: number[]) => ls.map((line) => ({ line }));
+    expect(lineTrend(pts(1, 2))).toBeNull();
+    expect(lineTrend(pts(1, 2, 4))).toBe('up');
+    expect(lineTrend(pts(6, 5, 3, 1))).toBe('down');
+    expect(lineTrend(pts(2, 2, 3))).toBeNull();
+    expect(lineTrend(pts(5, 1, 2, 4))).toBe('up');
+  });
+});

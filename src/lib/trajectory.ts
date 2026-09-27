@@ -100,3 +100,15 @@ export function hexagramHistory(ps: Positioning[], domainId: string): {
     followsSequence: { k: steps.filter((s) => s.kind === 'same' || s.kind === 'next').length, n: steps.length },
   };
 }
+
+/**
+ * Hào của ba kỳ gần nhất cùng đi lên (hoặc cùng đi xuống) thì trả về hướng đó;
+ * dùng để gợi ý đọc mục "Đầy thì vơi, đi rồi trở lại" — chỉ là một đường dẫn, không diễn giải.
+ */
+export function lineTrend(points: Pick<TrajectoryPoint, 'line'>[]): 'up' | 'down' | null {
+  if (points.length < 3) return null;
+  const [a, b, c] = points.slice(-3).map((p) => p.line);
+  if (a < b && b < c) return 'up';
+  if (a > b && b > c) return 'down';
+  return null;
+}

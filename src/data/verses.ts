@@ -1,7 +1,7 @@
 // Ba bài ca nhớ quẻ trong phần "卦歌" ở quyển đầu bản Tứ khố Chu Dịch bản nghĩa
 // (Kanripo KR1a0032, 周易本義). Đề yếu Tứ khố ghi bản khắc Ngô Cách không có các bài ca
 // này, "bản nay" mới thêm vào (増列卦歌), nên app không ghi là của Chu Hy. Chữ Hán theo bản đó, dị thể đưa về chữ
-// thông dụng như tên quẻ trong app (䝉→蒙, 㤗→泰, 剥→剝, 頥→頤, 晋→晉, 兑→兌);
+// thông dụng như tên quẻ trong app (䝉→蒙, 㤗→泰, 剥→剝, 頥→頤, 晋→晉, 兑→兌, 无→無, 恒→恆, 㑹→會);
 // âm Hán Việt và lời giải là của app.
 
 export type Verse = { han: string; hanViet: string; note?: string };
@@ -26,9 +26,9 @@ export const ORDER_VERSE: (Verse & { from: number; to: number })[] = [
   { han: '比小畜兮履泰否', hanViet: 'Tỷ Tiểu Súc hề Lý Thái Bĩ', from: 8, to: 12 },
   { han: '同人大有謙豫隨', hanViet: 'Đồng Nhân Đại Hữu Khiêm Dự Tùy', from: 13, to: 17 },
   { han: '蠱臨觀兮噬嗑賁', hanViet: 'Cổ Lâm Quan hề Phệ Hạp Bí', from: 18, to: 22 },
-  { han: '剝復无妄大畜頤', hanViet: 'Bác Phục Vô Vọng Đại Súc Di', from: 23, to: 27 },
+  { han: '剝復無妄大畜頤', hanViet: 'Bác Phục Vô Vọng Đại Súc Di', from: 23, to: 27 },
   { han: '大過坎離三十備', hanViet: 'Đại Quá Khảm Ly tam thập bị', from: 28, to: 30, note: 'đủ ba mươi quẻ Thượng kinh' },
-  { han: '咸恒遯兮及大壯', hanViet: 'Hàm Hằng Độn hề cập Đại Tráng', from: 31, to: 34 },
+  { han: '咸恆遯兮及大壯', hanViet: 'Hàm Hằng Độn hề cập Đại Tráng', from: 31, to: 34 },
   { han: '晉與明夷家人睽', hanViet: 'Tấn dữ Minh Di Gia Nhân Khuê', from: 35, to: 38 },
   { han: '蹇解損益夬姤萃', hanViet: 'Kiển Giải Tổn Ích Quải Cấu Tụy', from: 39, to: 45 },
   { han: '升困井革鼎震繼', hanViet: 'Thăng Khốn Tỉnh Cách Đỉnh Chấn kế', from: 46, to: 51 },
@@ -48,8 +48,8 @@ export const CHANGE_VERSE: Verse[] = [
   {"han":"蠱三變賁井既濟","hanViet":"Cổ tam biến Bí Tỉnh Ký Tế","note":"Cổ có ba biến: từ Bí, từ Tỉnh, từ Ký Tế (Bản nghĩa ghi đây là thuyết \"có người nói\")"},
   {"han":"噬嗑六五本益生","hanViet":"Phệ Hạp lục ngũ bản Ích sinh","note":"hào sáu năm của Phệ Hạp vốn từ Ích sinh ra: hào âm ở vị 4 quẻ Ích đi lên đến vị 5"},
   {"han":"賁原於損既濟會","hanViet":"Bí nguyên ư Tổn Ký Tế hội","note":"Bí gốc ở Tổn (hào âm từ vị 3 đến vị 2, hào dương từ vị 2 lên vị 3), lại gặp cả Ký Tế (hào âm từ vị trên cùng đến vị 5, hào dương từ vị 5 lên vị trên cùng)"},
-  {"han":"无妄訟來大畜需","hanViet":"Vô Vọng Tụng lai Đại Súc Nhu","note":"Vô Vọng từ Tụng mà đến (hào dương từ vị 2 đến vị 1); Đại Súc từ Nhu (hào dương từ vị 5 lên vị trên cùng)"},
-  {"han":"咸旅恒豐皆疑似","hanViet":"Hàm Lữ Hằng Phong giai nghi tự","note":"Hàm từ Lữ, Hằng từ Phong, đều chưa chắc: Bản nghĩa chỉ nói \"hoặc lấy quái biến mà nói\" thì \"cũng thông\""},
+  {"han":"無妄訟來大畜需","hanViet":"Vô Vọng Tụng lai Đại Súc Nhu","note":"Vô Vọng từ Tụng mà đến (hào dương từ vị 2 đến vị 1); Đại Súc từ Nhu (hào dương từ vị 5 lên vị trên cùng)"},
+  {"han":"咸旅恆豐皆疑似","hanViet":"Hàm Lữ Hằng Phong giai nghi tự","note":"Hàm từ Lữ, Hằng từ Phong, đều chưa chắc: Bản nghĩa chỉ nói \"hoặc lấy quái biến mà nói\" thì \"cũng thông\""},
   {"han":"晉從觀更睽有三","hanViet":"Tấn tùng Quan canh Khuê hữu tam","note":"Tấn từ Quan mà đến (hào âm ở vị 4 tiến lên vị 5); Khuê có ba (quẻ gốc, kể ở vế sau)"},
   {"han":"離與中孚家人繫","hanViet":"Ly dữ Trung Phu Gia Nhân hệ","note":"Ly, Trung Phu và Gia Nhân nối vào Khuê: từ Ly thì hào âm tiến lên vị 3, từ Trung Phu thì hào âm tiến lên vị 5, từ Gia Nhân thì gồm cả hai"},
   {"han":"蹇利西南小過來","hanViet":"Kiển lợi Tây Nam Tiểu Quá lai","note":"Kiển \"lợi Tây Nam\" từ Tiểu Quá mà đến: hào dương tiến lên ở vị 5 mà được chỗ giữa"},

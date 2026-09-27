@@ -596,6 +596,9 @@ export const vi = {
   'record.hindsight': 'Nhìn lại',
   'record.notFound': 'Không tìm thấy bản ghi.',
 
+  'trajectory.trend.up': 'Hào đi lên ba kỳ liền.',
+  'trajectory.trend.down': 'Hào đi xuống ba kỳ liền.',
+  'trajectory.trend.read': 'Đọc thêm: Đầy thì vơi, đi rồi trở lại (bài Đạo trời)',
   'trajectory.empty': 'Quỹ đạo hiện ra khi một lĩnh vực có từ hai kỳ trở lên.',
   'trajectory.overview': 'Tổng quan kỳ {period}',
   'trajectory.col.domain': 'Lĩnh vực',
