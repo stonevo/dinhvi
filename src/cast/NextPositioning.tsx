@@ -8,7 +8,10 @@ const CONTEXT_WORDS: Record<ContextKey, string[]> = {
   work: ['cong viec', 'su nghiep', 'nghe nghiep', 'viec lam', 'kinh doanh'],
   money: ['tai chinh', 'tien', 'dau tu'],
   health: ['suc khoe', 'the chat', 'benh'],
-  love: ['tinh cam', 'tinh yeu', 'hon nhan', 'gia dinh', 'vo chong'],
+  love: ['tinh cam', 'tinh yeu', 'hon nhan', 'vo chong'],
+  family: ['gia dinh', 'con cai', 'cha me'],
+  study: ['hoc tap', 'thi cu', 'hoc hanh'],
+  self: ['ban than', 'tinh than'],
   travel: ['di lai', 'noi o', 'tim kiem', 'di xa', 'du lich', 'xuat hanh', 'chuyen nha'],
 };
 

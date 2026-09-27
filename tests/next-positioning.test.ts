@@ -10,7 +10,8 @@ describe('gợi ý lĩnh vực sau khi gieo', () => {
     expect(suggestDomain(domains, 'work')?.id).toBe('a');
     expect(suggestDomain(domains, 'money')?.id).toBe('e');
     expect(suggestDomain(domains, 'health')?.id).toBe('c');
-    expect(suggestDomain(domains, 'love')?.id).toBe('b');
+    expect(suggestDomain(domains, 'family')?.id).toBe('b');
+    expect(suggestDomain(domains, 'love')).toBeUndefined();
     expect(suggestDomain([d('x', 'SUC KHOE')], 'health')?.id).toBe('x');
   });
   it('bộ 8 lĩnh vực mặc định: mỗi ngữ cảnh khớp đúng lĩnh vực', async () => {
@@ -21,6 +22,9 @@ describe('gợi ý lĩnh vực sau khi gieo', () => {
     expect(suggestDomain(eight, 'love')?.name).toBe('Tình cảm/hôn nhân');
     expect(suggestDomain(eight, 'health')?.name).toBe('Sức khoẻ');
     expect(suggestDomain(eight, 'travel')?.name).toBe('Đi lại/nơi ở/tìm kiếm');
+    expect(suggestDomain(eight, 'family')?.name).toBe('Gia đình/con cái');
+    expect(suggestDomain(eight, 'study')?.name).toBe('Học tập/thi cử');
+    expect(suggestDomain(eight, 'self')?.name).toBe('Bản thân/tinh thần');
   });
   it('không khớp hoặc không có ngữ cảnh thì không gợi ý', () => {
     expect(suggestDomain(domains, 'travel')).toBeUndefined();

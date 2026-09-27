@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import type { StaticData } from '../data/load';
 import { t } from '../i18n';
 import { readCast, type LineValue } from '../lib/cast';
-import { liuyaoChart, type Topic, type UseGodKey } from '../lib/liuyao';
+import { TOPIC_LABELS, liuyaoChart, type Topic, type UseGodKey } from '../lib/liuyao';
 import { vnParts } from '../lib/lunar';
 import { trigramsOf } from '../lib/iching';
 import type { CastMethod, ContextKey } from '../types/schema';
@@ -40,7 +40,7 @@ export function CastResult({ view, data, ziStartsNextDay }: { view: CastView; da
         lines: view.lines,
         day: parts.dayCanChi,
         month: parts.monthCanChi,
-        topic: view.context as Topic | undefined,
+        topic: view.context && view.context in TOPIC_LABELS ? (view.context as Topic) : undefined,
         askerGender: view.askerGender,
         useGod,
       }),
