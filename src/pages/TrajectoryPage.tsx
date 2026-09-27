@@ -104,7 +104,7 @@ export function TrajectoryPage() {
             {lineTrend(points) && (
               <p className="muted small">
                 {t(`trajectory.trend.${lineTrend(points)}` as 'trajectory.trend.up')}{' '}
-                <Link to="/intro/dao-troi">{t('trajectory.trend.read')} →</Link>
+                <Link to="/intro/dao-troi?h=day-thi-voi-di-roi-tro-lai">{t('trajectory.trend.read')} →</Link>
               </p>
             )}
             <h3 className="small-caps">{t('trajectory.history')}</h3>

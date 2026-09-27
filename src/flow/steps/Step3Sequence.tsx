@@ -6,7 +6,7 @@ import { ChoiceGroup, TextArea } from '../../ui/controls';
 import { derivedHexagram } from '../draft';
 import { Term } from '../../ui/Term';
 import type { StepProps } from './types';
-import { HexTenWings } from '../../pages/TenWingsPage';
+import { HexTenWings } from '../../ui/HexTenWings';
 
 /** Bước 3 — Kiểm tra Tự quái: quẻ đứng trước có giống quãng vừa qua không. */
 export function Step3Sequence({ d, set, data, goTo }: StepProps) {

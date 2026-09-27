@@ -12,7 +12,7 @@ import { TRIGRAM_SYMBOL } from '../flow/steps/Step2Trigrams';
 import { Term } from '../ui/Term';
 import { XIANTIAN_ORDER } from '../lib/diagrams';
 import { JudgmentClassic, LineClassic, WenyanClassic } from '../ui/Classic';
-import { HexTenWings } from './TenWingsPage';
+import { HexTenWings } from '../ui/HexTenWings';
 
 /** Thư viện: tra cứu 64 quẻ. */
 export function LibraryPage() {

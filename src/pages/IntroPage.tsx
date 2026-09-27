@@ -1,4 +1,6 @@
-import { Link, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
+import { slugify } from '../lib/slug';
 import { useIntro } from '../data/load';
 import { t } from '../i18n';
 import type { IntroBlock, IntroSection } from '../types/schema';
@@ -64,7 +66,7 @@ export function Block({ b, sub }: { b: IntroBlock; sub?: boolean }) {
         </p>
       );
     case 'h':
-      return sub ? <h3>{b.text}</h3> : <h2>{b.text}</h2>;
+      return sub ? <h3 id={`h-${slugify(b.text)}`}>{b.text}</h3> : <h2 id={`h-${slugify(b.text)}`}>{b.text}</h2>;
     case 'quote':
       return (
         <figure className="intro-quote">
@@ -122,6 +124,12 @@ export function Block({ b, sub }: { b: IntroBlock; sub?: boolean }) {
 export function IntroSectionPage() {
   const { id = '' } = useParams();
   const sections = useIntro();
+  // `?h=<neo>` mở thẳng tới một mục (neo = tiêu đề mục viết không dấu, xem slugify).
+  const [search] = useSearchParams();
+  const h = search.get('h');
+  useEffect(() => {
+    if (sections && h) document.getElementById(`h-${h}`)?.scrollIntoView();
+  }, [sections, h, id]);
   if (!sections) return <p className="muted">{t('common.loading')}</p>;
   const i = sections.findIndex((s) => s.id === id);
   if (i < 0) return <p>{t('intro.notFound')}</p>;

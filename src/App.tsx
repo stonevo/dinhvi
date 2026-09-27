@@ -1,3 +1,4 @@
+import { lazy, Suspense, type ComponentType } from 'react';
 import { Link, Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from './db/db';
@@ -5,26 +6,34 @@ import { WelcomePage } from './pages/WelcomePage';
 import { ErrorBoundary } from './ui/ErrorBoundary';
 import { t } from './i18n';
 import { HomePage } from './pages/HomePage';
-import { SettingsPage } from './pages/SettingsPage';
-import { CalibrationPage } from './pages/CalibrationPage';
 import { RecordPage } from './pages/RecordPage';
 import { PositioningPage } from './flow/PositioningPage';
-import { TrajectoryPage } from './pages/TrajectoryPage';
 import { ThemeToggle } from './ui/ThemeToggle';
 import { ProfileSwitcher } from './ui/ProfileSwitcher';
-import { CastPage } from './pages/CastPage';
 import { ReviewPage } from './pages/ReviewPage';
-import { HexagramPage, LibraryPage } from './pages/LibraryPage';
-import { StudyPage } from './pages/StudyPage';
 import { NavMenu, castMenuItems } from './ui/NavMenu';
 import { CAST_METHODS } from './types/schema';
-import { IntroPage, IntroSectionPage } from './pages/IntroPage';
 import { useIntro, useTenWings } from './data/load';
-import { TenWingsBookPage, TenWingsPage } from './pages/TenWingsPage';
-import { DiagramsPage } from './pages/DiagramsPage';
-import { SharePage } from './pages/SharePage';
 import { QuickNotePage } from './pages/QuickNotePage';
-import { WitnessPage } from './pages/WitnessPage';
+
+// Các trang ít dùng hoặc nặng (Lục Hào, đồ hình, Hệ từ, trang Học…) tách thành gói riêng,
+// chỉ tải khi mở tới; service worker vẫn precache nên dùng offline được.
+const named = <K extends string>(load: () => Promise<Record<K, ComponentType>>, name: K) =>
+  lazy(() => load().then((m) => ({ default: m[name] })));
+const SettingsPage = named(() => import('./pages/SettingsPage'), 'SettingsPage');
+const CalibrationPage = named(() => import('./pages/CalibrationPage'), 'CalibrationPage');
+const TrajectoryPage = named(() => import('./pages/TrajectoryPage'), 'TrajectoryPage');
+const CastPage = named(() => import('./pages/CastPage'), 'CastPage');
+const LibraryPage = named(() => import('./pages/LibraryPage'), 'LibraryPage');
+const HexagramPage = named(() => import('./pages/LibraryPage'), 'HexagramPage');
+const StudyPage = named(() => import('./pages/StudyPage'), 'StudyPage');
+const IntroPage = named(() => import('./pages/IntroPage'), 'IntroPage');
+const IntroSectionPage = named(() => import('./pages/IntroPage'), 'IntroSectionPage');
+const TenWingsPage = named(() => import('./pages/TenWingsPage'), 'TenWingsPage');
+const TenWingsBookPage = named(() => import('./pages/TenWingsPage'), 'TenWingsBookPage');
+const DiagramsPage = named(() => import('./pages/DiagramsPage'), 'DiagramsPage');
+const SharePage = named(() => import('./pages/SharePage'), 'SharePage');
+const WitnessPage = named(() => import('./pages/WitnessPage'), 'WitnessPage');
 
 export function App() {
   // Tên các bài Nhập môn cho menu cấp 2 (file nhỏ, đã precache).
@@ -80,6 +89,7 @@ export function App() {
       </header>
       <main className="page">
         <ErrorBoundary resetKey={pathname}>
+        <Suspense fallback={<p className="muted">{t('common.loading')}</p>}>
         <Routes>
           <Route path="/" element={settings && !settings.onboarded && !justOnboarded ? <Navigate to="/welcome" replace /> : <HomePage />} />
           <Route path="/welcome" element={<WelcomePage />} />
@@ -101,6 +111,7 @@ export function App() {
           <Route path="/tenwings/:id" element={<TenWingsBookPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
+        </Suspense>
         </ErrorBoundary>
       </main>
     </div>
