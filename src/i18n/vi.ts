@@ -8,6 +8,7 @@ export const vi = {
   'nav.calibration': 'Hiệu chỉnh',
   'sync.title': 'Đồng bộ đám mây',
   'sync.intro': 'Đăng nhập Google để lưu dữ liệu lên đám mây và dùng trên nhiều máy. Mỗi tài khoản chỉ đọc được dữ liệu của chính mình. App vẫn chạy offline; có thay đổi thì tự tải lên sau ít giây.',
+  'sync.offline': 'Chưa kết nối được mạng để bật đồng bộ. App vẫn dùng bình thường; có mạng thì mở lại mục này.',
   'sync.signIn': 'Đăng nhập bằng Google',
   'sync.signedInAs': 'Đã đăng nhập: {user}',
   'sync.lastSynced': 'Đồng bộ lần cuối: {at}',

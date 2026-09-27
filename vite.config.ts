@@ -30,6 +30,8 @@ export default defineConfig({
       injectManifest: {
         // Dữ liệu quẻ nằm trong public/data — precache để dùng offline.
         globPatterns: ['**/*.{js,css,html,svg,png,json,webmanifest,woff2}'],
+        // Gói Firebase (đồng bộ đám mây) chỉ tải khi người dùng bật đồng bộ; đồng bộ vốn cần mạng.
+        globIgnores: ['**/engine-*.js'],
       },
     }),
   ],

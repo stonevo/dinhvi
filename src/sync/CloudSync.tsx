@@ -7,6 +7,8 @@ import type { SyncStatus } from './engine';
 type Engine = typeof import('./engine');
 let enginePromise: Promise<Engine> | null = null;
 let engineRef: Engine | null = null;
+/** Lần nạp gói Firebase gần nhất thất bại (thường do không có mạng). */
+let offline = false;
 
 // Trạng thái đồng bộ dùng chung cho mục Cài đặt và biểu tượng trên thanh menu.
 let current: SyncStatus | null = null;
@@ -16,22 +18,30 @@ const emit = () => listeners.forEach((l) => l());
 /** Nạp Firebase (chỉ khi đã cấu hình) và bắt đầu theo dõi đăng nhập, thay đổi dữ liệu. */
 export function loadEngine(): Promise<Engine> | null {
   if (!FIREBASE_CONFIG) return null;
-  enginePromise ??= import('./engine').then((m) => {
-    m.start();
-    engineRef = m;
-    m.subscribe((s) => {
-      current = s;
+  enginePromise ??= import('./engine')
+    .then((m) => {
+      m.start();
+      engineRef = m;
+      m.subscribe((s) => {
+        current = s;
+        emit();
+      });
+      return m;
+    })
+    .catch((e: unknown) => {
+      // Offline, chưa tải được gói Firebase: lần sau thử lại.
+      enginePromise = null;
+      offline = true;
       emit();
+      throw e;
     });
-    return m;
-  });
   return enginePromise;
 }
 
 /** Máy này đã từng đăng nhập đồng bộ (có trạng thái lưu): nạp ngay khi mở app để kiểm bản trên mây. */
 export function startIfUsedBefore(): void {
   try {
-    if (localStorage.getItem('dinhvi.sync')) void loadEngine();
+    if (localStorage.getItem('dinhvi.sync')) loadEngine()?.catch(() => undefined);
   } catch {
     /* không đọc được thì chờ người dùng mở Cài đặt */
   }
@@ -43,7 +53,10 @@ function useSync(load: boolean): { engine: Engine | null; status: SyncStatus | n
   useEffect(() => {
     const l = () => force((n) => n + 1);
     listeners.add(l);
-    if (load) loadEngine()?.then(l);
+    if (load) {
+      offline = false;
+      loadEngine()?.then(l, l);
+    }
     return () => {
       listeners.delete(l);
     };
@@ -149,7 +162,9 @@ export function CloudSyncSection() {
     <section className="card stack">
       <h2>{t('sync.title')}</h2>
       <p className="muted small">{t('sync.intro')}</p>
-      {!engine || !status ? (
+      {!engine && offline ? (
+        <p className="muted">{t('sync.offline')}</p>
+      ) : !engine || !status ? (
         <p className="muted">{t('common.loading')}</p>
       ) : status.kind === 'signedOut' ? (
         <div className="row">
