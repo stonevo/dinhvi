@@ -90,6 +90,24 @@ Chỗ trong app:
 
 Công sức: **S** = dưới một ngày; **M** = vài ngày; **L** = trên một tuần (tính cả dịch và soát). Mọi phần tiếng Việt vẫn tự dịch từ chữ Hán như quy trình trong `docs/quy-trinh-noi-dung.md`.
 
+**Trạng thái (cập nhật 27/9/2026)** — mọi nội dung đều qua một lượt viết có nguồn và một lượt kiểm độc lập từng câu:
+
+| # | Đề xuất | Trạng thái |
+|---|---|---|
+| 1 | Bài "Thời và vị" | ✅ `intro/thoi-vi`; link ở bước chọn hào |
+| 2 | 12 quẻ tiêu tức | ✅ `intro/tieu-tuc`; thẻ "Quẻ tiêu tức của tháng" ở trang chủ (`src/lib/tieuTuc.ts`) |
+| 3 | Hệ từ, Thuyết quái, Tự quái, Tạp quái | ✅ `public/data/tenwings.json`, trang "Hệ từ và các truyện"; câu Tự quái / Tạp quái ở trang quẻ và bước 3 |
+| 4 | Đồ hình Tiên thiên / Hậu thiên, 64 quẻ Phục Hy | ✅ trang "Đồ hình" (`public/data/diagrams.json`) |
+| 5 | Bói cỏ thi | ✅ `intro/co-thi`; cách gieo "Cỏ thi" (`src/lib/yarrow.ts`) |
+| 6 | Hà đồ, Lạc thư | ✅ trong trang "Đồ hình" |
+| 7 | Bộ 64 câu Đại tượng | ✅ bộ thẻ "Đại tượng → quẻ nào"; lời Đại tượng trong bản ghi định vị |
+| 8 | Thượng hạ kinh quái biến ca | ✅ trang Học. Đề yếu Tứ khố ghi các bài quái ca do bản in sau thêm vào, nên app không ghi là của Chu Hy |
+| 9 | Bảng 8×8 tra quẻ | ✅ Thư viện, nút "Bảng 8×8" |
+| 10 | Chu Đôn Di, Thái cực đồ thuyết | ✅ `intro/cac-phai`, `intro/dao-troi` |
+| 11 | "Đầy thì vơi, đi rồi trở lại" | ✅ mục trong `intro/dao-troi`. Chưa làm gợi ý trên trang Quỹ đạo |
+| 12 | Ngữ cảnh "lãnh đạo / tổ chức" | Chưa. Thay vào đó đã thêm 3 ngữ cảnh Gia đình, Học tập, Bản thân cho khớp 8 lĩnh vực Tự định vị |
+| 13 | Lộ trình học cho người mới | ✅ đầu trang Nhập môn |
+
 ### Ưu tiên 1
 
 **1. Bài "Thời và vị: mỗi quẻ là một thời, mỗi hào là một lúc"**

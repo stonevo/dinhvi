@@ -99,7 +99,8 @@ describe('tiêu chí chấp nhận', () => {
     await importAll(other, parseBackup(text));
     expect(serializeBackup(await exportAll(other, new Date(0)))).toBe(text);
     await other.delete();
-  });
+    // Nhiều thao tác IndexedDB giả lập: khi cả bộ test chạy song song dễ vượt 5 s mặc định.
+  }, 30_000);
 
   it('quẻ chỉ có thể đến từ hai quái: mọi cặp quái cho đúng quẻ trong dữ liệu', () => {
     for (const h of hexagrams) {
