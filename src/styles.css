@@ -819,3 +819,11 @@ a:hover .dg-cell { fill: var(--surface); }
 /* ---------- Lộ trình học ---------- */
 .learning-path h2 { margin-top: 0; font-size: 1.1rem; }
 .learning-path ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+
+/* ---------- Biểu tượng đồng bộ ---------- */
+.sync-badge { display: inline-flex; align-items: center; justify-content: center; width: 1.7em; height: 1.7em; border-radius: 50%; text-decoration: none; font-size: 0.95rem; color: var(--band-ink, inherit); }
+.sync-badge.ok { opacity: 0.8; }
+.sync-badge.working span { display: inline-block; animation: sync-spin 1.2s linear infinite; }
+.sync-badge.alert { background: var(--accent); color: var(--bg); font-weight: bold; }
+@keyframes sync-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .sync-badge.working span { animation: none; } }

@@ -27,3 +27,29 @@ describe('đồng bộ: quyết định', () => {
     expect(decide({ syncedCloudAt: null, dirty: true }, cloud('b')).kind).toBe('conflict');
   });
 });
+
+describe('đồng bộ: gộp ba chiều', async () => {
+  const { mergeRows, mergeBackups } = await import('../src/sync/logic');
+  const r = (id: string, v: string, updatedAt?: string) => ({ id, v, ...(updatedAt ? { updatedAt } : {}) });
+  it('mỗi bên thêm, sửa, xoá khác bản ghi thì gộp đủ', () => {
+    const base = [r('a', '1'), r('b', '1'), r('c', '1')];
+    const local = [r('a', '2'), r('b', '1'), r('d', 'local')]; // sửa a, xoá c, thêm d
+    const cloud = [r('a', '1'), r('b', '3'), r('c', '1'), r('e', 'cloud')]; // sửa b, thêm e
+    const { merged, conflicts } = mergeRows(base, local, cloud);
+    expect(conflicts).toBe(0);
+    expect(merged.map((x) => `${x.id}${x.v}`).sort()).toEqual(['a2', 'b3', 'dlocal', 'ecloud']);
+  });
+  it('hai bên cùng sửa một bản ghi: lấy bản sửa muộn hơn; xoá thua sửa', () => {
+    const base = [r('a', '1', '2026-01-01'), r('b', '1')];
+    const local = [r('a', 'L', '2026-02-01')];
+    const cloud = [r('a', 'C', '2026-03-01'), r('b', '2')];
+    const { merged, conflicts } = mergeRows(base, local, cloud);
+    expect(conflicts).toBe(2);
+    expect(merged.map((x) => `${x.id}${x.v}`).sort()).toEqual(['aC', 'b2']);
+  });
+  it('cài đặt: máy này đổi thì giữ máy này', () => {
+    const b = { settings: { t: 1 }, rows: [] as { id: string }[] };
+    expect(mergeBackups(b, { ...b, settings: { t: 2 } }, { ...b, settings: { t: 3 } }, ['rows']).merged.settings).toEqual({ t: 2 });
+    expect(mergeBackups(b, b, { ...b, settings: { t: 3 } }, ['rows']).merged.settings).toEqual({ t: 3 });
+  });
+});

@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, type ComponentType } from 'react';
-import { startIfUsedBefore } from './sync/CloudSync';
+import { SyncBadge, startIfUsedBefore } from './sync/CloudSync';
 import { Link, Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from './db/db';
@@ -87,6 +87,7 @@ export function App() {
           />
           <NavLink to="/study">{t('nav.study')}</NavLink>
           <NavLink to="/settings">{t('nav.settings')}</NavLink>
+          <SyncBadge />
           <ProfileSwitcher />
           <ThemeToggle />
         </nav>
