@@ -792,3 +792,17 @@ a.button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; 
 .tw-para p, .tw-inline p { margin: 0; }
 .tw-hex { margin-right: 10px; }
 .tw-inline { display: grid; gap: 4px; margin: 8px 0 12px; }
+
+/* ---------- Đồ hình ---------- */
+.diagram-wrap { margin: 0; display: flex; justify-content: center; }
+.diagram { width: 100%; max-width: 420px; height: auto; }
+.diagram-lg { max-width: 560px; }
+.dg-bar, .dg-bar rect { fill: var(--ink); }
+.dg-ring { fill: none; stroke: var(--line); }
+.dg-cell { fill: transparent; stroke: var(--line); }
+a:hover .dg-cell { fill: var(--surface); }
+.dg-label { font-size: 13px; fill: var(--ink); }
+.dg-sub { font-size: 10px; fill: var(--muted); }
+.dg-dot-yang { fill: var(--bg, #fff); stroke: var(--ink); stroke-width: 1.5; }
+.dg-dot-yin { fill: var(--ink); }
+.dg-binary td.mono { font-family: ui-monospace, monospace; letter-spacing: 0.1em; }

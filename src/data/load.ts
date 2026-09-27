@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramContextsSchema, introSectionSchema, hexagramSchema, lineTierSchema, tenWingsBookSchema, trigramSchema,
-  type Hexagram, type HexagramCommentary, type HexagramContexts, type IntroSection, type LineTier, type TenWingsBook, type Trigram, type TrigramKey,
+  hexagramCommentarySchema, hexagramContextsSchema, introSectionSchema, hexagramSchema, lineTierSchema, tenWingsBookSchema, diagramSectionSchema, trigramSchema,
+  type Hexagram, type HexagramCommentary, type HexagramContexts, type IntroSection, type LineTier, type TenWingsBook, type DiagramSection, type Trigram, type TrigramKey,
 } from '../types/schema';
 
 // Dữ liệu tĩnh nằm ở public/data để người tự host sửa được mà không build lại.
@@ -161,6 +161,28 @@ export function useTenWings(): TenWingsBook[] | null {
       tenWingsCache = null;
     });
     tenWingsCache.then(
+      (v) => alive && setState(v),
+      () => alive && setState([]),
+    );
+    return () => {
+      alive = false;
+    };
+  }, []);
+  return state;
+}
+
+// Đồ hình, file riêng.
+let diagramsCache: Promise<DiagramSection[]> | null = null;
+
+export function useDiagrams(): DiagramSection[] | null {
+  const [state, setState] = useState<DiagramSection[] | null>(null);
+  useEffect(() => {
+    let alive = true;
+    diagramsCache ??= fetchJson('diagrams.json', z.array(diagramSectionSchema).min(1));
+    diagramsCache.catch(() => {
+      diagramsCache = null;
+    });
+    diagramsCache.then(
       (v) => alive && setState(v),
       () => alive && setState([]),
     );

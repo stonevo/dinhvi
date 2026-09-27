@@ -25,7 +25,7 @@ export function IntroPage() {
   );
 }
 
-function Block({ b }: { b: IntroBlock }) {
+export function Block({ b, sub }: { b: IntroBlock; sub?: boolean }) {
   switch (b.type) {
     case 'p':
       return (
@@ -35,12 +35,12 @@ function Block({ b }: { b: IntroBlock }) {
         </p>
       );
     case 'h':
-      return <h2>{b.text}</h2>;
+      return sub ? <h3>{b.text}</h3> : <h2>{b.text}</h2>;
     case 'quote':
       return (
         <figure className="intro-quote">
           <blockquote>
-            <p className="han-text" lang="zh-Hant">
+            <p className={b.lang ? 'original' : 'han-text'} lang={b.lang ?? 'zh-Hant'}>
               {b.han}
             </p>
             <p>{b.vi}</p>

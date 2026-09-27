@@ -420,7 +420,8 @@ export type HexagramContexts = z.infer<typeof hexagramContextsSchema>;
 export const introBlockSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('p'), text: z.string().min(1), source: z.string().optional() }),
   z.object({ type: z.literal('h'), text: z.string().min(1) }),
-  z.object({ type: z.literal('quote'), han: z.string().min(1), vi: z.string().min(1), source: z.string().min(1) }),
+  // `han`: nguyên văn (chữ Hán; nếu có `lang` thì là ngôn ngữ đó, vd. 'fr').
+  z.object({ type: z.literal('quote'), han: z.string().min(1), vi: z.string().min(1), source: z.string().min(1), lang: z.string().optional() }),
   z.object({ type: z.literal('list'), items: z.array(z.string().min(1)).min(1) }),
   z.object({ type: z.literal('table'), head: z.array(z.string()).min(1), rows: z.array(z.array(z.string())).min(1) }),
   z.object({ type: z.literal('note'), text: z.string().min(1), source: z.string().optional() }),
@@ -457,3 +458,8 @@ export const tenWingsBookSchema = z.object({
     .min(1),
 });
 export type TenWingsBook = z.infer<typeof tenWingsBookSchema>;
+
+// ---- Đồ hình: bài ngắn kèm hình vẽ (public/data/diagrams.json) ----
+export const DIAGRAM_FIGURES = ['xiantian', 'houtian', 'fuxi-circle', 'fuxi-square', 'hetu', 'luoshu', 'binary'] as const;
+export const diagramSectionSchema = introSectionSchema.extend({ figure: z.enum(DIAGRAM_FIGURES) });
+export type DiagramSection = z.infer<typeof diagramSectionSchema>;

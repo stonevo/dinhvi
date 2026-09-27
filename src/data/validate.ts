@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, introSectionSchema, lineTierSchema, tenWingsBookSchema, trigramSchema, TRIGRAM_KEYS,
+  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, diagramSectionSchema, introSectionSchema, lineTierSchema, tenWingsBookSchema, trigramSchema, TRIGRAM_KEYS,
   type CommentaryPart, type Hexagram, type HexagramCommentary, type Line, type LinePosition, type LineTier, type Trigram,
 } from '../types/schema';
 import {
@@ -224,5 +224,17 @@ export function validateTenWings(raw: unknown): string[] {
       for (let n = 1; n <= 64; n++) if (counts.get(n) !== 1) errors.push(`${b.id}: quẻ ${n} xuất hiện ${counts.get(n) ?? 0} lần`);
     }
   }
+  return errors;
+}
+
+/** Đồ hình: đúng schema, id và hình không trùng. */
+export function validateDiagrams(raw: unknown): string[] {
+  const parsed = z.array(diagramSectionSchema).min(1).safeParse(raw);
+  if (!parsed.success) return zodErrors('diagrams', parsed.error);
+  const errors: string[] = [];
+  const ids = parsed.data.map((s) => s.id);
+  if (new Set(ids).size !== ids.length) errors.push('id bị trùng');
+  const figs = parsed.data.map((s) => s.figure);
+  if (new Set(figs).size !== figs.length) errors.push('hình bị trùng');
   return errors;
 }

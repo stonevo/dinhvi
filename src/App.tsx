@@ -21,6 +21,7 @@ import { CAST_METHODS } from './types/schema';
 import { IntroPage, IntroSectionPage } from './pages/IntroPage';
 import { useIntro, useTenWings } from './data/load';
 import { TenWingsBookPage, TenWingsPage } from './pages/TenWingsPage';
+import { DiagramsPage } from './pages/DiagramsPage';
 import { SharePage } from './pages/SharePage';
 import { QuickNotePage } from './pages/QuickNotePage';
 import { WitnessPage } from './pages/WitnessPage';
@@ -66,8 +67,9 @@ export function App() {
               { to: '/library', label: t('nav.library64') },
               { to: '/intro', label: t('nav.intro'), children: (intro ?? []).map((s) => ({ to: `/intro/${s.id}`, label: s.title })) },
               { to: '/tenwings', label: t('nav.tenwings'), children: (tenWings ?? []).map((b) => ({ to: `/tenwings/${b.id}`, label: b.title })) },
+              { to: '/diagrams', label: t('nav.diagrams') },
             ]}
-            activeWhen={(p) => p.startsWith('/library') || p.startsWith('/intro') || p.startsWith('/tenwings')}
+            activeWhen={(p) => p.startsWith('/library') || p.startsWith('/intro') || p.startsWith('/tenwings') || p.startsWith('/diagrams')}
             menuLabel={t('nav.libraryMenu')}
           />
           <NavLink to="/study">{t('nav.study')}</NavLink>
@@ -95,6 +97,7 @@ export function App() {
           <Route path="/intro" element={<IntroPage />} />
           <Route path="/intro/:id" element={<IntroSectionPage />} />
           <Route path="/tenwings" element={<TenWingsPage />} />
+          <Route path="/diagrams" element={<DiagramsPage />} />
           <Route path="/tenwings/:id" element={<TenWingsBookPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
