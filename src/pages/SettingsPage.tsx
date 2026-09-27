@@ -13,6 +13,7 @@ import {
 } from '../lib/notifications';
 import { THEMES, setTheme, useTheme } from '../lib/theme';
 import { ChoiceGroup } from '../ui/controls';
+import { CloudSyncSection } from '../sync/CloudSync';
 
 export function SettingsPage() {
   const settings = useLiveQuery(() => getSettings(db));
@@ -65,6 +66,7 @@ export function SettingsPage() {
   return (
     <section className="stack">
       <h1>{t('nav.settings')}</h1>
+      <CloudSyncSection />
 
       <h2>{t('profile.title')}</h2>
       <ProfileManager />

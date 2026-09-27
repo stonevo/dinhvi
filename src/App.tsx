@@ -1,4 +1,5 @@
-import { lazy, Suspense, type ComponentType } from 'react';
+import { lazy, Suspense, useEffect, type ComponentType } from 'react';
+import { startIfUsedBefore } from './sync/CloudSync';
 import { Link, Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from './db/db';
@@ -39,6 +40,9 @@ export function App() {
   // Tên các bài Nhập môn cho menu cấp 2 (file nhỏ, đã precache).
   const intro = useIntro();
   const tenWings = useTenWings();
+  // Đồng bộ đám mây: máy đã từng đăng nhập thì nạp Firebase ngay để kiểm bản trên mây;
+  // máy chưa dùng thì chỉ nạp khi mở mục Đồng bộ trong Cài đặt.
+  useEffect(() => startIfUsedBefore(), []);
   const { pathname, state } = useLocation();
   const justOnboarded = (state as { onboarded?: boolean } | null)?.onboarded === true;
   const isWitness = pathname === '/witness';

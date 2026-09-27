@@ -6,6 +6,18 @@ export const vi = {
   'nav.home': 'Tự định vị',
   'nav.trajectory': 'Quỹ đạo',
   'nav.calibration': 'Hiệu chỉnh',
+  'sync.title': 'Đồng bộ đám mây',
+  'sync.intro': 'Đăng nhập Google để lưu dữ liệu lên đám mây và dùng trên nhiều máy. Mỗi tài khoản chỉ đọc được dữ liệu của chính mình. App vẫn chạy offline; có thay đổi thì tự tải lên sau ít giây.',
+  'sync.signIn': 'Đăng nhập bằng Google',
+  'sync.signedInAs': 'Đã đăng nhập: {user}',
+  'sync.lastSynced': 'Đồng bộ lần cuối: {at}',
+  'sync.working': 'Đang đồng bộ…',
+  'sync.error': 'Chưa đồng bộ được: {message}',
+  'sync.conflict': 'Máy này và bản trên đám mây (lưu lúc {at}) đều có thay đổi chưa gộp. Chọn bản muốn giữ — bản kia sẽ bị thay.',
+  'sync.keepCloud': 'Dùng bản trên đám mây',
+  'sync.keepLocal': 'Dùng bản trên máy này',
+  'sync.now': 'Đồng bộ ngay',
+  'sync.signOut': 'Đăng xuất',
   'nav.settings': 'Cài đặt',
 
   'home.intro':
