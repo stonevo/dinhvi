@@ -806,3 +806,16 @@ a:hover .dg-cell { fill: var(--surface); }
 .dg-dot-yang { fill: var(--bg, #fff); stroke: var(--ink); stroke-width: 1.5; }
 .dg-dot-yin { fill: var(--ink); }
 .dg-binary td.mono { font-family: ui-monospace, monospace; letter-spacing: 0.1em; }
+
+/* ---------- Thư viện: bảng 8×8 ---------- */
+.library-view { align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap; }
+.trigram-table { border-collapse: collapse; font-size: 0.9rem; }
+.trigram-table th, .trigram-table td { border: 1px solid var(--line); padding: 4px 6px; text-align: center; vertical-align: middle; }
+.trigram-table th { font-weight: normal; white-space: nowrap; }
+.trigram-table td a { display: grid; justify-items: center; gap: 2px; text-decoration: none; color: inherit; }
+.trigram-table td a:hover { color: var(--accent); }
+.trigram-table td.dim { opacity: 0.3; }
+
+/* ---------- Lộ trình học ---------- */
+.learning-path h2 { margin-top: 0; font-size: 1.1rem; }
+.learning-path ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }

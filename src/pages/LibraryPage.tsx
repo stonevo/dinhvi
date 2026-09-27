@@ -3,13 +3,14 @@ import { Link, useParams } from 'react-router-dom';
 import { useStaticData, type StaticData } from '../data/load';
 import { fullHexagramName } from '../data/names';
 import { t } from '../i18n';
-import { nextInSequence, oppositeHexagram, previousInSequence, reversedHexagram } from '../lib/iching';
+import { hexagramFromTrigrams, nextInSequence, oppositeHexagram, previousInSequence, reversedHexagram } from '../lib/iching';
 import { filterHexagrams, type LibraryFilter } from '../lib/library';
 import { STAGES, TRIGRAM_KEYS, type LinePosition, type StageInCycle, type TrigramKey } from '../types/schema';
 import { HexagramFigure } from '../ui/HexagramFigure';
 import { LineReading } from '../ui/LineReading';
 import { TRIGRAM_SYMBOL } from '../flow/steps/Step2Trigrams';
 import { Term } from '../ui/Term';
+import { XIANTIAN_ORDER } from '../lib/diagrams';
 import { JudgmentClassic, LineClassic, WenyanClassic } from '../ui/Classic';
 import { HexTenWings } from './TenWingsPage';
 
@@ -17,6 +18,21 @@ import { HexTenWings } from './TenWingsPage';
 export function LibraryPage() {
   const { data } = useStaticData();
   const [f, setF] = useState<LibraryFilter>({ query: '', upper: '', lower: '', stage: '' });
+  const [view, setViewState] = useState<'list' | 'table'>(() => {
+    try {
+      return localStorage.getItem(VIEW_STORE) === 'table' ? 'table' : 'list';
+    } catch {
+      return 'list';
+    }
+  });
+  const setView = (v: 'list' | 'table') => {
+    setViewState(v);
+    try {
+      localStorage.setItem(VIEW_STORE, v);
+    } catch {
+      /* chỉ là tiện ích */
+    }
+  };
   if (!data) return <p className="muted">{t('common.loading')}</p>;
   const list = filterHexagrams(data.hexagrams, f);
 
@@ -56,7 +72,19 @@ export function LibraryPage() {
           </select>
         </label>
       </div>
-      <p className="muted small">{t('library.count', { n: list.length })}</p>
+      <div className="row-inline library-view">
+        <p className="muted small">{t('library.count', { n: list.length })}</p>
+        <div className="deck-chips" role="group" aria-label={t('library.view')}>
+          {(['list', 'table'] as const).map((v) => (
+            <button key={v} type="button" className={view === v ? 'chip on' : 'chip'} aria-pressed={view === v} onClick={() => setView(v)}>
+              {t(`library.view.${v}`)}
+            </button>
+          ))}
+        </div>
+      </div>
+      {view === 'table' ? (
+        <TrigramTable data={data} shown={new Set(list.map((h) => h.kingWenNumber))} />
+      ) : (
       <ul className="library-grid">
         {list.map((h) => (
           <li key={h.kingWenNumber}>
@@ -70,6 +98,54 @@ export function LibraryPage() {
           </li>
         ))}
       </ul>
+      )}
+    </div>
+  );
+}
+
+const VIEW_STORE = 'dinhvi.library.view';
+
+/** Bảng 8×8 tra quẻ: hàng = quái trên, cột = quái dưới (xếp theo thứ tự Tiên thiên). Ô không khớp bộ lọc bị làm mờ. */
+function TrigramTable({ data, shown }: { data: StaticData; shown: Set<number> }) {
+  const head = (k: TrigramKey) => (
+    <>
+      <span className="trigram-symbol">{TRIGRAM_SYMBOL[k]}</span> {data.trigrams[k].nameHanViet}
+      <span className="muted small"> {data.trigrams[k].image}</span>
+    </>
+  );
+  return (
+    <div className="table-scroll">
+      <table className="trigram-table">
+        <thead>
+          <tr>
+            <th className="small muted">{t('library.tableCorner')}</th>
+            {XIANTIAN_ORDER.map((lo) => (
+              <th key={lo}>{head(lo)}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {XIANTIAN_ORDER.map((up) => (
+            <tr key={up}>
+              <th>{head(up)}</th>
+              {XIANTIAN_ORDER.map((lo) => {
+                const n = hexagramFromTrigrams(lo, up);
+                const h = data.hexagram(n);
+                return (
+                  <td key={lo} className={shown.has(n) ? '' : 'dim'}>
+                    <Link to={`/library/${n}`} title={fullHexagramName(h)}>
+                      <HexagramFigure binary={h.binary} size={26} label="" />
+                      <span className="small">
+                        {n}. {h.nameHanViet}
+                      </span>
+                    </Link>
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

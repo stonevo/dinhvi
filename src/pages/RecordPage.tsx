@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../db/db';
-import { useStaticData } from '../data/load';
+import { useCommentary, useStaticData } from '../data/load';
 import { fullHexagramName } from '../data/names';
 import { t } from '../i18n';
 import { formatPeriod } from '../lib/period';
@@ -75,6 +75,8 @@ export function RecordPage() {
           <h2>{t('hindsight.willNotDo')}</h2>
           <p>{p.willNotDo}</p>
         </section>
+
+        <ImageReminder n={fh.kingWenNumber} />
 
         <section>
           <h3>{t('line.situation')}</h3>
@@ -165,5 +167,21 @@ export function RecordPage() {
         )}
       </article>
     </div>
+  );
+}
+
+/** Lời Đại tượng của quẻ: câu "quân tử dĩ…" để tự nhắc trong kỳ. */
+function ImageReminder({ n }: { n: number }) {
+  const c = useCommentary(n);
+  if (!c) return null;
+  return (
+    <section className="image-reminder">
+      <h3>{t('record.image.title')}</h3>
+      <p className="han-text" lang="zh-Hant">
+        {c.judgment.imageHan}
+      </p>
+      <p>{c.judgment.image}</p>
+      <p className="muted small">{t('record.image.note')}</p>
+    </section>
   );
 }

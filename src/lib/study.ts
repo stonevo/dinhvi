@@ -4,7 +4,7 @@
 import { TRIGRAM_KEYS, type StudyState, type TrigramKey } from '../types/schema';
 import { oppositeHexagram, reversedHexagram, trigramsOf } from './iching';
 
-export const DECKS = ['trigram', 'name', 'build', 'keyword', 'order', 'pair', 'line'] as const;
+export const DECKS = ['trigram', 'name', 'build', 'keyword', 'order', 'pair', 'image', 'line'] as const;
 export type DeckKey = (typeof DECKS)[number];
 
 /** `n`: số quẻ 1..64; chỉ số quái 0..7 với bộ "trigram"; số hào 1..384 với bộ "line" ((quẻ − 1) × 6 + hào). */
@@ -197,4 +197,15 @@ export function answerOf(card: Card): number {
 
 export function answerTrigrams(n: number): { upper: TrigramKey; lower: TrigramKey } {
   return trigramsOf(n);
+}
+
+/**
+ * Che tên quẻ trong câu Đại tượng để khỏi lộ đáp án: chữ Hán (kể cả trong 《》)
+ * thành □, tên Hán Việt (viết hoa, đứng riêng) thành "…".
+ */
+export function maskHexagramName(text: string, nameHan: string, nameHanViet: string): string {
+  const escape = (x: string) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  let out = text.split(nameHan).join('□'.repeat(nameHan.length));
+  out = out.replace(new RegExp(`(^|[^\\p{L}])${escape(nameHanViet)}(?![\\p{L}])`, 'gu'), '$1…');
+  return out;
 }

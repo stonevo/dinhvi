@@ -11,6 +11,7 @@ export function IntroPage() {
     <div className="stack intro">
       <h1>{t('intro.title')}</h1>
       <p className="lead">{t('intro.lead')}</p>
+      <LearningPath />
       <ol className="intro-toc">
         {sections.map((s) => (
           <li key={s.id}>
@@ -22,6 +23,34 @@ export function IntroPage() {
         ))}
       </ol>
     </div>
+  );
+}
+
+/** Lộ trình gợi ý cho người mới: đọc gì trước, học gì ở trang Học và Thư viện. */
+function LearningPath() {
+  const a = (to: string, label: string) => <Link to={to}>{label}</Link>;
+  return (
+    <section className="card learning-path">
+      <h2>{t('path.title')}</h2>
+      <ol>
+        <li>
+          {t('path.1')} {a('/intro/nguon-goc', t('path.1a'))} → {a('/intro/kinh-truyen', t('path.1b'))} → {a('/intro/thuat-ngu', t('path.1c'))} →{' '}
+          {a('/intro/quy-tac', t('path.1d'))}.
+        </li>
+        <li>
+          {t('path.2')} {a('/intro/thoi-vi', t('path.2a'))}.
+        </li>
+        <li>
+          {t('path.3')} {a('/study', t('path.3a'))}.
+        </li>
+        <li>
+          {t('path.4')} {a('/library', t('path.4a'))}.
+        </li>
+        <li>
+          {t('path.5')} {a('/tenwings', t('path.5a'))}, {a('/diagrams', t('path.5b'))}.
+        </li>
+      </ol>
+    </section>
   );
 }
 

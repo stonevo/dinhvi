@@ -12,9 +12,9 @@ import { exportAll, exportProfile, importAll, parseBackup, serializeBackup } fro
 const NOW = new Date('2026-09-26T09:00:00').getTime();
 
 describe('bộ thẻ', () => {
-  it('8 quái + 64 quẻ × 5 kiểu + 384 hào, id không trùng', () => {
+  it('8 quái + 64 quẻ × 6 kiểu + 384 hào, id không trùng', () => {
     const cards = allCards();
-    expect(cards).toHaveLength(8 + 64 * 5 + 384);
+    expect(cards).toHaveLength(8 + 64 * 6 + 384);
     expect(cards.filter((c) => c.deck === 'line')).toHaveLength(384);
     expect(new Set(cards.map((c) => c.id)).size).toBe(cards.length);
   });

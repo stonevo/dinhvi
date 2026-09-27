@@ -2,12 +2,12 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from '../db/db';
-import { useStaticData, type StaticData } from '../data/load';
+import { useCommentary, useStaticData, type StaticData } from '../data/load';
 import { TRIGRAM_IMAGE_HV, fullHexagramName } from '../data/names';
 import { ORDER_VERSE, TRIGRAM_VERSE, VERSE_SOURCE } from '../data/verses';
 import { t } from '../i18n';
 import {
-  DECKS, allCards, answerOf, answerTrigrams, choices, isMastered, lineOf, nextDue, pickNext, review,
+  DECKS, allCards, maskHexagramName, answerOf, answerTrigrams, choices, isMastered, lineOf, nextDue, pickNext, review,
   type Card, type DeckKey,
 } from '../lib/study';
 import { TRIGRAM_KEYS, type StudyState, type TrigramKey } from '../types/schema';
@@ -265,6 +265,9 @@ function CardView({
       );
       break;
     }
+    case 'image':
+      prompt = <ImagePrompt n={card.n} data={data} />;
+      break;
     case 'pair':
       prompt = (
         <>
@@ -415,6 +418,22 @@ function Answer({ card, data }: { card: Card; data: StaticData }) {
 }
 
 /** Giải thích một đáp án (để ôn trong lúc làm bài). */
+/** Câu Đại tượng (chữ Hán + bản dịch) của quẻ `n`, đã che tên quẻ. */
+function ImagePrompt({ n, data }: { n: number; data: StaticData }) {
+  const c = useCommentary(n);
+  const h = data.hexagram(n);
+  if (!c) return <p className="muted">{t('common.loading')}</p>;
+  return (
+    <>
+      <p className="han-text study-big" lang="zh-Hant">
+        {maskHexagramName(c.judgment.imageHan, h.nameHan, h.nameHanViet)}
+      </p>
+      <p>{maskHexagramName(c.judgment.image, h.nameHan, h.nameHanViet)}</p>
+      <p>{t('study.q.image')}</p>
+    </>
+  );
+}
+
 function OptionDetail({ card, data, o, label }: { card: Card; data: StaticData; o: number; label: string }) {
   let body: React.ReactNode;
   if (card.deck === 'trigram') {
