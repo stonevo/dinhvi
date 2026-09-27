@@ -217,6 +217,7 @@ export const vi = {
   'context.family': 'Gia đình',
   'context.study': 'Học tập',
   'context.self': 'Bản thân',
+  'context.lead': 'Lãnh đạo',
   'method.coins': 'Gieo 3 xu (máy)',
   'method.coins.hint': 'máy tung ba đồng xu cho từng hào, có tiếng và hiệu ứng',
   'method.coins-manual': 'Gieo xu thật, nhập tay',

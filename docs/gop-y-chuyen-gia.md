@@ -36,7 +36,7 @@ Engine không phụ thuộc phần diễn giải.
 |---|---|---|
 | Nguyên văn Hán, phiên âm, dịch nghĩa | Có: chữ Hán (Kanripo), Hán Việt, dịch sát, Thoán, Tượng, Văn ngôn, giảng, ý Trình Di / Chu Hy / Nguyễn Hiến Lê / Phan Bội Châu | ✅ có sẵn |
 | Diễn giải hiện đại | Có (tình huống, cái nguy, chỗ vấp, lời truyền thống, câu hỏi tự soi) | ✅ có sẵn |
-| Diễn giải theo ngữ cảnh: công việc, tình cảm, tài chính, sức khoẻ, đi xa | Chưa | ✅ đã làm: file riêng `public/data/contexts.json`, mỗi lời quẻ và mỗi hào có 8 ngữ cảnh (thêm gia đình, học tập, bản thân cho khớp 8 lĩnh vực Tự định vị); schema zod, lọc theo chủ đề |
+| Diễn giải theo ngữ cảnh: công việc, tình cảm, tài chính, sức khoẻ, đi xa | Chưa | ✅ đã làm: file riêng `public/data/contexts.json`, mỗi lời quẻ và mỗi hào có 8 ngữ cảnh (thêm gia đình, học tập, bản thân cho khớp 8 lĩnh vực Tự định vị, và lãnh đạo); schema zod, lọc theo chủ đề |
 | Dữ liệu có cấu trúc (JSON) để AI / lọc dùng lại | Có (zod schema, `hexagrams.json`, `commentary.json`) | ✅ có sẵn |
 | Bản quyền: tự biên soạn phần hiện đại | Đã làm: toàn bộ phần tiếng Việt là lời tự viết; Nguyễn Hiến Lê, Phan Bội Châu, Ngô Tất Tố chỉ dùng để đối chiếu, tóm ý bằng lời riêng (xem `quy-trinh-noi-dung.md`) | ✅ có sẵn |
 

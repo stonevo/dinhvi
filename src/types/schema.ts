@@ -206,7 +206,7 @@ export const positioningSchema = z.object({
 export type Positioning = z.infer<typeof positioningSchema>;
 
 /** Ngữ cảnh câu hỏi khi gieo (dùng cho diễn giải theo ngữ cảnh và Dụng thần). */
-export const CONTEXT_KEYS = ['work', 'love', 'money', 'health', 'family', 'study', 'travel', 'self'] as const;
+export const CONTEXT_KEYS = ['work', 'lead', 'love', 'money', 'health', 'family', 'study', 'travel', 'self'] as const;
 export const contextKey = z.enum(CONTEXT_KEYS);
 export type ContextKey = z.infer<typeof contextKey>;
 
@@ -396,7 +396,7 @@ export const hexagramCommentarySchema = z.object({
 });
 export type HexagramCommentary = z.infer<typeof hexagramCommentarySchema>;
 
-// ---- Diễn giải theo ngữ cảnh (công việc, tình cảm, tài chính, sức khoẻ, đi xa, gia đình, học tập, bản thân) ----
+// ---- Diễn giải theo ngữ cảnh (công việc, tình cảm, tài chính, sức khoẻ, đi xa, gia đình, học tập, bản thân, lãnh đạo) ----
 // Lời diễn giải của app, bám nghĩa lời quẻ / lời hào; public/data/contexts.json.
 
 export const contextTextsSchema = z.object({
@@ -408,6 +408,7 @@ export const contextTextsSchema = z.object({
   family: z.string().min(1),
   study: z.string().min(1),
   self: z.string().min(1),
+  lead: z.string().min(1),
 });
 export type ContextTexts = z.infer<typeof contextTextsSchema>;
 

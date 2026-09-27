@@ -23,7 +23,7 @@ describe('toàn vẹn dữ liệu tĩnh', () => {
   it('intro.json: 11 bài nhập môn đúng định dạng', () => expect(validateIntro(read('intro.json'))).toEqual([]));
   it('diagrams.json: các bài đồ hình đúng định dạng', () => expect(validateDiagrams(read('diagrams.json'))).toEqual([]));
   it('tenwings.json: năm thiên, Tự quái và Tạp quái đủ 64 quẻ', () => expect(validateTenWings(read('tenwings.json'))).toEqual([]));
-  it('contexts.json: 64 quẻ × 8 ngữ cảnh cho lời quẻ và 6 hào', () => expect(validateContexts(read('contexts.json'))).toEqual([]));
+  it('contexts.json: 64 quẻ × 9 ngữ cảnh cho lời quẻ và 6 hào', () => expect(validateContexts(read('contexts.json'))).toEqual([]));
 
   it('tên quẻ khớp bảng chuẩn độc lập', () => {
     expect(hexagrams.map((h) => [h.nameHanViet, h.nameHan])).toEqual(CANONICAL_NAMES);

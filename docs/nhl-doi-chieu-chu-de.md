@@ -105,7 +105,7 @@ Công sức: **S** = dưới một ngày; **M** = vài ngày; **L** = trên mộ
 | 9 | Bảng 8×8 tra quẻ | ✅ Thư viện, nút "Bảng 8×8" |
 | 10 | Chu Đôn Di, Thái cực đồ thuyết | ✅ `intro/cac-phai`, `intro/dao-troi` |
 | 11 | "Đầy thì vơi, đi rồi trở lại" | ✅ mục trong `intro/dao-troi`. Chưa làm gợi ý trên trang Quỹ đạo |
-| 12 | Ngữ cảnh "lãnh đạo / tổ chức" | Chưa. Thay vào đó đã thêm 3 ngữ cảnh Gia đình, Học tập, Bản thân cho khớp 8 lĩnh vực Tự định vị |
+| 12 | Ngữ cảnh "lãnh đạo / tổ chức" | ✅ ngữ cảnh "Lãnh đạo" (khoá `lead`); cùng với Gia đình, Học tập, Bản thân |
 | 13 | Lộ trình học cho người mới | ✅ đầu trang Nhập môn |
 
 ### Ưu tiên 1

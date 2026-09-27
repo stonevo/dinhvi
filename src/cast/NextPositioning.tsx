@@ -12,6 +12,7 @@ const CONTEXT_WORDS: Record<ContextKey, string[]> = {
   family: ['gia dinh', 'con cai', 'cha me'],
   study: ['hoc tap', 'thi cu', 'hoc hanh'],
   self: ['ban than', 'tinh than'],
+  lead: ['lanh dao', 'quan ly', 'to chuc', 'dieu hanh'],
   travel: ['di lai', 'noi o', 'tim kiem', 'di xa', 'du lich', 'xuat hanh', 'chuyen nha'],
 };
 
