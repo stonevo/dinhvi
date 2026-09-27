@@ -78,3 +78,12 @@ export function castFocus({ primary, moving, transformed }: CastReading): CastFo
         : { kind: 'judgment', hexagrams: [transformed!] };
   }
 }
+
+/** Số nguyên ngẫu nhiên không lệch trong [0, n), từ bộ sinh số mật mã của trình duyệt. */
+export function cryptoInt(n: number): number {
+  const buf = new Uint32Array(1);
+  const limit = Math.floor(0x100000000 / n) * n;
+  do crypto.getRandomValues(buf);
+  while (buf[0] >= limit);
+  return buf[0] % n;
+}

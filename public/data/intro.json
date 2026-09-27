@@ -1665,6 +1665,187 @@
   ]
  },
  {
+  "id": "co-thi",
+  "title": "Phép bói cỏ thi",
+  "summary": "Đoạn “đại diễn” trong Hệ từ thượng chương 9, các bước chia cỏ thi theo Chu Hy, vì sao ra 6, 7, 8, 9, tỉ lệ các hào so với ba đồng xu, và cách gieo “Cỏ thi” trong app.",
+  "blocks": [
+   {
+    "type": "p",
+    "source": "Hồ Phương Bình dẫn Thuyết văn, Dịch học khải mông thông thích; Chu Hy, Chu Dịch bản nghĩa, cuối chương 9 Hệ từ thượng",
+    "text": "Thi (蓍) là một loài cỏ; Thuyết văn (được Hồ Phương Bình dẫn trong Dịch học khải mông thông thích) nói thi thuộc loài hao (蒿), Dịch dùng để tính số. Cách chia cọng cỏ thi được ghi trong Hệ từ thượng, chương 9 (theo cách chia chương của Chu Hy); chính Chu Hy nhận xét chương này nói phép bói còn sơ lược (然亦畧矣). Câu mở đầu:"
+   },
+   {
+    "type": "quote",
+    "han": "大衍之數五十，其用四十有九。",
+    "vi": "Số đại diễn là năm mươi, dùng bốn mươi chín.",
+    "source": "Hệ từ thượng, chương 9"
+   },
+   {
+    "type": "p",
+    "text": "Chu Hy chú rằng số năm mươi có lẽ lấy số trời 5 ở giữa Hà đồ nhân với số đất 10; khi dùng để bói thì chỉ dùng bốn mươi chín. Trong Dịch học khải mông, ông nói rõ: lấy năm mươi cọng làm một nắm, để riêng một cọng không dùng, tượng Thái cực; số đem dùng là bốn mươi chín.",
+    "source": "Chu Hy, Chu Dịch bản nghĩa (chú Hệ từ ch.9); Dịch học khải mông, thiên Minh thi sách"
+   },
+   {
+    "type": "h",
+    "text": "Bốn thao tác"
+   },
+   {
+    "type": "quote",
+    "han": "分而為二以象兩。掛一以象三，揲之以四以象四時，歸奇於扐以象閏。五歲再閏，故再扐而後掛。",
+    "vi": "Chia ra hai phần để tượng hai; treo một để tượng ba; đếm từng bốn một để tượng bốn mùa; dồn số lẻ kẹp vào kẽ ngón tay để tượng tháng nhuận. Năm năm có hai lần nhuận, nên kẹp hai lần rồi sau mới treo.",
+    "source": "Hệ từ thượng, chương 9"
+   },
+   {
+    "type": "p",
+    "text": "Chu Hy giải từng chữ: “hai” là trời đất; “quải” (掛, treo) là treo một cọng vào giữa ngón út tay trái; “ba” là tam tài; “thiệt” (揲) là tách ra mà đếm; “cơ” (奇) là số dư sau khi đếm từng bốn; “lặc” (扐) là kẹp vào hai kẽ giữa ba ngón giữa của tay trái. Một lần treo, rồi bên trái đếm và kẹp, bên phải đếm và kẹp, nên trong năm việc có hai lần kẹp, rồi mới bắt đầu treo lần khác — ứng với năm năm có hai tháng nhuận.",
+    "source": "Chu Hy, Chu Dịch bản nghĩa, chú Hệ từ ch.9"
+   },
+   {
+    "type": "quote",
+    "han": "是故四營而成《易》，十有八變而成卦",
+    "vi": "Cho nên bốn bước thao tác thì thành một lần dịch, mười tám lần biến thì thành quẻ.",
+    "source": "Hệ từ thượng, chương 9"
+   },
+   {
+    "type": "p",
+    "text": "Theo Chu Hy, bốn bước (tứ doanh 四營) là chia hai, treo một, đếm bốn, dồn số lẻ; làm đủ bốn bước là một “biến” (變); ba biến thành một hào, mười tám biến đủ sáu hào.",
+    "source": "Chu Hy, Chu Dịch bản nghĩa, chú Hệ từ ch.9"
+   },
+   {
+    "type": "h",
+    "text": "Từng bước theo Chu Hy"
+   },
+   {
+    "type": "p",
+    "text": "Chu Hy viết thiên Phệ nghi (筮儀, nghi thức bói cỏ thi), có trong Chu Dịch bản nghĩa. Thiên này dặn chọn chỗ sạch làm phòng để cỏ thi; khi bói, người bói rửa tay, đốt hương, rồi khấn nói việc cần hỏi. Các bước chia cỏ:",
+    "source": "Chu Hy, Phệ nghi"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Cầm năm mươi cọng; lấy một cọng trả vào hộp, không dùng. Chia bốn mươi chín cọng làm hai, đặt vào hai khấc lớn bên trái, bên phải của giá gỗ — bước thứ nhất, “chia hai”. Khải mông gọi là “tín thủ trung phân” (信手中分): tuỳ tay chia làm hai.",
+     "Lấy một cọng ở phần phải, treo vào kẽ ngón út tay trái — bước thứ hai, “treo một”.",
+     "Đếm phần trái từng bốn cọng — nửa bước thứ ba, “đếm bốn”.",
+     "Phần còn dư, hoặc một, hoặc hai, hoặc ba, hoặc bốn (đếm vừa hết thì giữ bốn), kẹp vào kẽ ngón áp út tay trái — nửa bước thứ tư.",
+     "Đếm phần phải từng bốn, phần dư kẹp vào kẽ ngón giữa tay trái — nửa sau của bước ba và bốn. Gộp cọng treo và hai phần dư, đặt lên khấc nhỏ thứ nhất của giá: thế là xong một biến.",
+     "Gộp số cọng còn lại (44 hoặc 40), làm lại bốn bước — biến thứ hai; rồi gộp số còn lại lần nữa (40, 36 hoặc 32) — biến thứ ba. Cả ba biến đều treo một cọng.",
+     "Xong ba biến, xem số cọng treo, kẹp và số cọng đã đếm của ba biến để vẽ một hào lên bảng. Làm như vậy sáu lần, mười tám biến thành quẻ."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Vì sao biến đầu chỉ rút ra 5 hoặc 9? Chu Hy ghi:"
+   },
+   {
+    "type": "quote",
+    "han": "左一則右必三左二則右亦二左三則右必一左四則右亦四通掛一之䇿不五則九",
+    "vi": "Bên trái dư một thì bên phải ắt dư ba; trái hai thì phải cũng hai; trái ba thì phải ắt một; trái bốn thì phải cũng bốn. Tính cả cọng treo, không năm thì chín.",
+    "source": "Chu Hy, Phệ nghi (Chu Dịch bản nghĩa, quyển đầu, bản Tứ khố)"
+   },
+   {
+    "type": "p",
+    "text": "Ông nói thêm: năm là “cơ” (lẻ), chín là “ngẫu” (chẵn); lẻ có ba cách, chẵn có một cách (竒者三而耦者一). Ở biến thứ hai và thứ ba, số rút ra không bốn thì tám; lẻ và chẵn mỗi thứ được hai trong bốn cách (竒耦各得四之二).",
+    "source": "Chu Hy, Phệ nghi"
+   },
+   {
+    "type": "h",
+    "text": "Từ ba biến ra 6, 7, 8, 9"
+   },
+   {
+    "type": "p",
+    "text": "Chu Hy gọi 5 và 4 là lẻ, 9 và 8 là chẵn. Ba lần lẻ: rút tất cả 13 cọng, còn lại 36 = 4 × 9, là lão dương, vẽ ký hiệu gọi là “trùng” (重). Hai lẻ một chẵn: rút 17, còn 32 = 4 × 8, là thiếu âm, gọi “sách” (拆). Hai chẵn một lẻ: rút 21, còn 28 = 4 × 7, là thiếu dương, gọi “đơn” (單). Ba chẵn: rút 25, còn 24 = 4 × 6, là lão âm, gọi “giao” (交).",
+    "source": "Chu Hy, Phệ nghi; Chu Dịch bản nghĩa, chú Hệ từ ch.9"
+   },
+   {
+    "type": "note",
+    "text": "Trong Khải mông, Chu Hy khẳng định cả ba biến đều treo một cọng, và bác thuyết của “các nhà nho gần đây” cho rằng chỉ biến đầu mới treo, hai biến sau không treo: theo ông, như thế thành sáu lần kẹp rồi mới treo, không ứng với “năm năm hai lần nhuận”, và hai biến sau chỉ còn ba bước. Hồ Phương Bình chú rằng trong số các nhà nho ấy có Quách Ung (郭雍), trong sách Thi quái biện (蓍卦辯).",
+    "source": "Chu Hy, Dịch học khải mông, thiên Minh thi sách; Hồ Phương Bình, Dịch học khải mông thông thích"
+   },
+   {
+    "type": "h",
+    "text": "Tỉ lệ các hào: cỏ thi và đồng xu"
+   },
+   {
+    "type": "p",
+    "text": "Trong Khải mông, dưới các hình vẽ, Chu Hy đếm số cách: lão dương có 12 cách, thiếu âm 28, thiếu dương 20; câu về lão âm bị khuyết đầu dòng ở bản Tứ khố đã xem, còn chú của Hồ Phương Bình ghi lão âm có 4 cách. Cũng trong Khải mông, Chu Hy dẫn lời Thái Nguyên Định (蔡元定) có đủ bốn số: lão âm 4, lão dương 12, thiếu dương 20, thiếu âm 28. Tổng là 64. Nếu coi mỗi cách ngang khả năng — tức biến đầu ra 5 với tỉ lệ 3/4, ra 9 với 1/4, biến hai và ba ra 4 hay 8 mỗi thứ 1/2 — thì tính ra tỉ lệ ở cột giữa bảng dưới. Với cách gieo ba đồng xu của app (xem ghi chú cuối bài), mỗi đồng ngửa hay sấp đều 1/2, nên ba mặt giống nhau (6 hoặc 9) mỗi thứ 1/8, còn 7 và 8 mỗi thứ 3/8.",
+    "source": "Chu Hy, Dịch học khải mông, thiên Minh thi sách (kèm chú Hồ Phương Bình); phép tính"
+   },
+   {
+    "type": "table",
+    "head": [
+     "Hào",
+     "Cỏ thi (đếm cách theo Chu Hy)",
+     "Ba đồng xu"
+    ],
+    "rows": [
+     [
+      "6 — lão âm (động)",
+      "4/64 = 1/16",
+      "1/8"
+     ],
+     [
+      "7 — thiếu dương",
+      "20/64 = 5/16",
+      "3/8"
+     ],
+     [
+      "8 — thiếu âm",
+      "28/64 = 7/16",
+      "3/8"
+     ],
+     [
+      "9 — lão dương (động)",
+      "12/64 = 3/16",
+      "1/8"
+     ]
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Cách gieo “Cỏ thi” trong app"
+   },
+   {
+    "type": "p",
+    "text": "Trong mục Gieo quẻ, chọn cách gieo “Cỏ thi”. Mỗi lần bấm “Chia cỏ” là một biến: app chia bó cỏ ngẫu nhiên bằng bộ sinh số ngẫu nhiên mật mã của trình duyệt — số cọng bên trái chọn đều trong khoảng từ 1 đến (tổng − 2); cọng treo lấy từ phần phải; đếm từng bốn, đếm vừa hết thì tính dư 4. App hiện số cọng hai bên, cọng treo, hai phần dư, số cọng rút ra và số còn lại. Ba biến ra một hào, hào sơ trước; nút “Làm nhanh phần còn lại” chia tiếp đến đủ sáu hào."
+   },
+   {
+    "type": "note",
+    "text": "Các sách đã dẫn chỉ nói “chia hai” (Khải mông: tuỳ tay chia), không quy định mỗi bên ít nhất bao nhiêu cọng hay chia theo phân bố nào; khoảng 1 đến (tổng − 2) là quy ước của app, để phần phải còn ít nhất một cọng sau khi lấy cọng treo. Với cách chia đều này, tỉ lệ tính chính xác được là: 6 khoảng 5,2%, 7 khoảng 28,9%, 8 khoảng 44,8%, 9 khoảng 21,1% — gần nhưng không đúng bằng 1/16, 5/16, 7/16, 3/16 (6,25%, 31,25%, 43,75%, 18,75%). Chênh lệch vì ở biến đầu, chia đều cho ra 5 với tỉ lệ 36/47 (khoảng 76,6%) chứ không đúng 3/4."
+   },
+   {
+    "type": "note",
+    "text": "Cách gieo ba đồng xu của app tính mặt ngửa là 3, mặt sấp là 2, cộng ba đồng được 6 đến 9. Chưa tìm được sách cổ đã kiểm nói đúng quy tắc này. Giả Công Ngạn (đời Đường), trong sớ Nghi lễ, chỉ ghi rằng xưa dùng que gỗ vạch đất để ghi hào, nay dùng tiền, và gọi hào 9 là “trùng tiền”, hào 6 là “giao tiền”, hào 7 là “đơn tiền”, hào 8 là “sách tiền”.",
+    "source": "Giả Công Ngạn, Nghi lễ chú sớ, Sĩ quan lễ"
+   }
+  ],
+  "sources": [
+   {
+    "label": "Hệ từ thượng, Chu Dịch (Kanripo KR1a0001)",
+    "url": "https://github.com/kanripo/KR1a0001"
+   },
+   {
+    "label": "Chu Hy, Chu Dịch bản nghĩa, quyển 3 (chú Hệ từ thượng), bản Tứ khố (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/周易本義_(四庫全書本)/卷3"
+   },
+   {
+    "label": "Chu Hy, Phệ nghi 筮儀, trong Chu Dịch bản nghĩa, quyển đầu, bản Tứ khố (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/周易本義_(四庫全書本)/序"
+   },
+   {
+    "label": "Chu Dịch bản nghĩa (Kanripo KR1a0032)",
+    "url": "https://github.com/kanripo/KR1a0032"
+   },
+   {
+    "label": "Chu Hy, Dịch học khải mông, thiên Minh thi sách, trong Hồ Phương Bình, Dịch học khải mông thông thích, quyển hạ, bản Tứ khố (Wikisource)",
+    "url": "https://zh.wikisource.org/wiki/易學啟蒙通釋_(四庫全書本)/卷下"
+   },
+   {
+    "label": "Giả Công Ngạn, Nghi lễ chú sớ, quyển 1 · Sĩ quan lễ (Kanripo KR1d0028)",
+    "url": "https://github.com/kanripo/KR1d0028"
+   }
+  ]
+ },
+ {
   "id": "dao-troi",
   "title": "Đạo trời",
   "summary": "Những câu trong Hệ từ truyện nói về Thái cực, âm dương và “sinh sinh”, kèm chú của Chu Hy và Khổng Dĩnh Đạt; ba nghĩa của chữ “Dịch” theo Dịch vĩ và Trịnh Huyền, hai nghĩa theo Chu Hy; và câu “cùng thì biến”.",

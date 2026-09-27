@@ -211,7 +211,7 @@ export const contextKey = z.enum(CONTEXT_KEYS);
 export type ContextKey = z.infer<typeof contextKey>;
 
 /** Cách lập quẻ của một lần gieo. */
-export const CAST_METHODS = ['coins', 'coins-manual', 'meihua-time', 'meihua-number', 'meihua-text'] as const;
+export const CAST_METHODS = ['coins', 'coins-manual', 'yarrow', 'meihua-time', 'meihua-number', 'meihua-text'] as const;
 export const castMethod = z.enum(CAST_METHODS);
 export type CastMethod = z.infer<typeof castMethod>;
 

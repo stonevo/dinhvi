@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { YarrowCaster } from '../cast/YarrowCaster';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from '../db/db';
@@ -116,6 +117,7 @@ export function CastPage() {
           {stage === 'calm' && <CalmStep sound={settings.castSound ?? true} onDone={() => setStage('cast')} />}
           {stage === 'cast' && draft.method === 'coins' && <CoinsCaster sound={settings.castSound ?? true} onDone={(lines) => finish(lines)} />}
           {stage === 'cast' && draft.method === 'coins-manual' && <ManualCaster onDone={(lines) => finish(lines)} />}
+          {stage === 'cast' && draft.method === 'yarrow' && <YarrowCaster onDone={(lines) => finish(lines)} />}
           {stage === 'cast' && draft.method.startsWith('meihua') && (
             <div className="ritual-form">
               <MeihuaCaster
