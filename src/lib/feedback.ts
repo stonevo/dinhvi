@@ -32,12 +32,63 @@ function clink(ac: AudioContext, at: number, pitch: number, gain = 0.18) {
   }
 }
 
-/** Tiếng ba đồng xu rơi (lệch nhau vài chục mili giây). */
+/** Tiếng gỗ trầm khi xu chạm mâm: một nhịp nhiễu ngắn qua bộ lọc thấp. */
+function thud(ac: AudioContext, at: number, gain = 0.1) {
+  const len = Math.floor(ac.sampleRate * 0.08);
+  const buf = ac.createBuffer(1, len, ac.sampleRate);
+  const d = buf.getChannelData(0);
+  // Nhiễu tất định (không dùng Math.random): dãy LCG, tắt dần.
+  let x = 12345;
+  for (let i = 0; i < len; i++) {
+    x = (x * 1103515245 + 12345) & 0x7fffffff;
+    d[i] = ((x / 0x7fffffff) * 2 - 1) * (1 - i / len) ** 2;
+  }
+  const src = ac.createBufferSource();
+  src.buffer = buf;
+  const lp = ac.createBiquadFilter();
+  lp.type = 'lowpass';
+  lp.frequency.value = 380;
+  const g = ac.createGain();
+  g.gain.value = gain;
+  src.connect(lp).connect(g).connect(ac.destination);
+  src.start(at);
+}
+
+/** Tiếng đồng ngân trầm: vài họa âm thấp, họa âm cao nhỏ dần, tắt chậm. */
+function bronze(ac: AudioContext, at: number, pitch: number, gain = 0.06) {
+  const out = ac.createGain();
+  out.gain.setValueAtTime(0.0001, at);
+  out.gain.exponentialRampToValueAtTime(gain, at + 0.01);
+  out.gain.exponentialRampToValueAtTime(0.0001, at + 1.1);
+  const lp = ac.createBiquadFilter();
+  lp.type = 'lowpass';
+  lp.frequency.value = 2200;
+  out.connect(lp).connect(ac.destination);
+  for (const [ratio, amp] of [[1, 1], [2.42, 0.35], [3.9, 0.12]] as const) {
+    const osc = ac.createOscillator();
+    const g = ac.createGain();
+    g.gain.value = amp;
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(pitch * ratio, at);
+    osc.connect(g).connect(out);
+    osc.start(at);
+    osc.stop(at + 1.2);
+  }
+}
+
+/** Tiếng ba đồng xu rơi xuống mâm gỗ: thưa, trầm, ngân nhẹ. */
 export function playCoins(): void {
   const ac = audio();
   if (!ac) return;
   const t0 = ac.currentTime + 0.02;
-  [0, 0.07, 0.13].forEach((dt, i) => clink(ac, t0 + dt, 1900 + i * 260));
+  [
+    [0, 820],
+    [0.17, 930],
+    [0.31, 870],
+  ].forEach(([dt, pitch]) => {
+    thud(ac, t0 + dt);
+    bronze(ac, t0 + dt + 0.005, pitch);
+  });
 }
 
 /** Tiếng chuông xoay (singing bowl) mở đầu tĩnh tâm: âm trầm, ngân dài. */
