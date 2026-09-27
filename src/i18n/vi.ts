@@ -441,6 +441,7 @@ export const vi = {
   'study.verses': 'Bài ca nhớ quẻ',
   'study.versesSource': 'Nguồn: {source}.',
   'study.verse.trigram': 'Bát quái thủ tượng ca — nhớ hình tám quái',
+  'study.verse.change': 'Thượng hạ kinh quái biến ca — quẻ nào do quẻ nào biến ra (quái biến theo Chu Hy)',
   'study.verse.order': 'Thượng hạ kinh quái danh thứ tự ca — nhớ thứ tự 64 quẻ',
   'library.search': 'Tìm',
   'library.searchPlaceholder': 'Tên, số, chữ Hán, chủ đề…',

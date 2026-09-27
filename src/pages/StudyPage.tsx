@@ -4,7 +4,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettings } from '../db/db';
 import { useCommentary, useStaticData, type StaticData } from '../data/load';
 import { TRIGRAM_IMAGE_HV, fullHexagramName } from '../data/names';
-import { ORDER_VERSE, TRIGRAM_VERSE, VERSE_SOURCE } from '../data/verses';
+import { CHANGE_VERSE, CHANGE_VERSE_INTRO, ORDER_VERSE, TRIGRAM_VERSE, VERSE_SOURCE } from '../data/verses';
 import { t } from '../i18n';
 import {
   DECKS, allCards, maskHexagramName, answerOf, answerTrigrams, choices, isMastered, lineOf, nextDue, pickNext, review,
@@ -534,6 +534,20 @@ function Verses({ data }: { data: StaticData }) {
           ))}
         </ol>
       </details>
+      {CHANGE_VERSE.length > 0 && (
+      <details className="classic">
+        <summary>{t('study.verse.change')}</summary>
+        <p className="small muted">{CHANGE_VERSE_INTRO}</p>
+        <ol className="verse-list plain">
+          {CHANGE_VERSE.map((v) => (
+            <li key={v.han}>
+              <span className="han">{v.han}</span> <strong>{v.hanViet}</strong>
+              {v.note && <span className="muted small"> — {v.note}</span>}
+            </li>
+          ))}
+        </ol>
+      </details>
+      )}
     </section>
   );
 }

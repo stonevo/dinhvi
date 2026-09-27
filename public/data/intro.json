@@ -545,6 +545,22 @@
    },
    {
     "type": "p",
+    "text": "Tống sử, Đạo học truyện chép: Chu Đôn Di (周敦頤), tự Mậu Thúc, người Doanh Đạo, Đạo Châu, làm Thái cực đồ, làm rõ cội nguồn của lẽ trời, xét đến chỗ đầu cuối của muôn vật, lại làm Thông thư bốn mươi thiên để phát huy chỗ uẩn áo của Thái cực. Khi ông làm quan ở Nam An, Trình Hướng kết bạn với ông và cho hai con là Trình Hạo, Trình Di theo học. Lời tựa của Đạo học truyện viết:",
+    "source": "Tống sử, quyển 427, Đạo học truyện nhất (lời tựa; truyện Chu Đôn Di)"
+   },
+   {
+    "type": "quote",
+    "han": "至宋中葉，周敦頤出於舂陵，乃得聖賢不傳之學，作《太極圖說》、《通書》，推明陰陽五行之理",
+    "vi": "Đến giữa đời Tống, Chu Đôn Di xuất hiện ở Thung Lăng, mới được cái học không truyền của thánh hiền, làm Thái cực đồ thuyết và Thông thư, suy rõ lẽ âm dương ngũ hành.",
+    "source": "Tống sử, quyển 427, Đạo học truyện nhất, lời tựa"
+   },
+   {
+    "type": "p",
+    "text": "Chu Hy chú giải Thái cực đồ thuyết; bản chép trong Ngự toản Tính lý tinh nghĩa đề \"周子作　朱子註\" (Chu Đôn Di làm, Chu Hy chú). Ở đó Chu Hy nói cái tinh diệu trong học của Chu Đôn Di đều ở một bức Thái cực đồ, còn lời trong Thông thư cũng đều là chỗ chứa ý của đồ ấy (其妙具於太極一圖，通書之言，亦皆此圖之藴).",
+    "source": "Ngự toản Tính lý tinh nghĩa, quyển 1, Thái cực đồ (Chu Hy chú và lời Chu Hy dẫn ở đầu quyển)"
+   },
+   {
+    "type": "p",
     "text": "Trình Di (程頤) soạn Dịch truyện, giải Thượng, Hạ kinh cùng Thoán, Tượng, Văn ngôn, dùng bản chú của Vương Bật. Tứ khố đề yếu ghi ông không tin phép số của Thiệu Ung: Thiệu lấy số nói Dịch, còn Truyện của Trình nói lý; một bên làm rõ đạo trời, một bên sát việc người.",
     "source": "Tứ khố tổng mục đề yếu, quyển 2, Dịch truyện (Trình Di)"
    },
@@ -796,6 +812,14 @@
    {
     "label": "Princeton University Press: The I Ching or Book of Changes (Wilhelm/Baynes, lời tựa C. G. Jung)",
     "url": "https://press.princeton.edu/books/hardcover/9780691097503/the-i-ching-or-book-of-changes"
+   },
+   {
+    "label": "Tống sử, quyển 427, Đạo học truyện nhất (lời tựa; Chu Đôn Di truyện) — Wikisource",
+    "url": "https://zh.wikisource.org/wiki/宋史/卷427"
+   },
+   {
+    "label": "Ngự toản Tính lý tinh nghĩa (bản Tứ khố), quyển 1: Thái cực đồ, Chu Hy chú — Wikisource",
+    "url": "https://zh.wikisource.org/wiki/御纂性理精義_(四庫全書本)/卷01"
    }
   ]
  },
@@ -1848,11 +1872,11 @@
  {
   "id": "dao-troi",
   "title": "Đạo trời",
-  "summary": "Những câu trong Hệ từ truyện nói về Thái cực, âm dương và “sinh sinh”, kèm chú của Chu Hy và Khổng Dĩnh Đạt; ba nghĩa của chữ “Dịch” theo Dịch vĩ và Trịnh Huyền, hai nghĩa theo Chu Hy; và câu “cùng thì biến”.",
+  "summary": "Những câu trong Hệ từ truyện nói về Thái cực, âm dương và “sinh sinh”, kèm chú của Chu Hy và Khổng Dĩnh Đạt; ba nghĩa của chữ “Dịch” theo Dịch vĩ và Trịnh Huyền, hai nghĩa theo Chu Hy; và câu “cùng thì biến”; Thái cực đồ thuyết của Chu Đôn Di; và các câu về đầy thì vơi, đi rồi trở lại (Thoán Khiêm, Phong, Phục; hào 3 quẻ Thái).",
   "blocks": [
    {
     "type": "p",
-    "text": "Mục này đọc những câu trong Hệ từ truyện (một thiên của Thập Dực) nói về Thái cực, âm dương và biến đổi, cùng lời chú của Chu Hy (Chu Dịch bản nghĩa) và Khổng Dĩnh Đạt (Chu Dịch chính nghĩa), rồi xem các sách ấy và Chu Tử ngữ loại giảng chữ “Dịch” ra sao."
+    "text": "Mục này đọc những câu trong Hệ từ truyện (một thiên của Thập Dực) nói về Thái cực, âm dương và biến đổi, cùng lời chú của Chu Hy (Chu Dịch bản nghĩa) và Khổng Dĩnh Đạt (Chu Dịch chính nghĩa), rồi xem các sách ấy và Chu Tử ngữ loại giảng chữ “Dịch” ra sao; tiếp đến Thái cực đồ thuyết của Chu Đôn Di, và mấy câu Thoán truyện, lời hào nói về đầy vơi, đi và trở lại."
    },
    {
     "type": "h",
@@ -1882,6 +1906,47 @@
     "type": "note",
     "text": "Khổng Dĩnh Đạt (Chu Dịch chính nghĩa) giảng câu này theo cách khác: Thái cực là nguyên khí hỗn làm một trước khi trời đất chia ra, và ông dẫn câu “Đạo sinh một” của Lão Tử; Thái cực sinh lưỡng nghi là khi hỗn nguyên đã chia thì có trời đất; bốn tượng là kim, mộc, thủy, hỏa. Chu Hy thì giảng Thái cực là lý, và đọc câu này là thứ tự vạch quẻ, bói cỏ thi.",
     "source": "Khổng Dĩnh Đạt, Chu Dịch chính nghĩa, Hệ từ thượng (chương 11); Chu Hy, Chu Dịch bản nghĩa"
+   },
+   {
+    "type": "h",
+    "text": "Thái cực đồ thuyết của Chu Đôn Di"
+   },
+   {
+    "type": "p",
+    "text": "Tống sử, Đạo học truyện chép Chu Đôn Di (周敦頤) đời Tống làm Thái cực đồ và chép lại lời thuyết của đồ. Đoạn mở đầu:",
+    "source": "Tống sử, quyển 427, Đạo học truyện nhất, Chu Đôn Di"
+   },
+   {
+    "type": "quote",
+    "han": "無極而太極。太極動而生陽，動極而靜，靜而生陰，靜極復動，一動一靜，互為其根，分陰分陽，兩儀立焉。",
+    "vi": "Vô cực mà Thái cực. Thái cực động mà sinh dương; động đến cùng thì tĩnh, tĩnh mà sinh âm; tĩnh đến cùng thì lại động. Một động một tĩnh làm gốc cho nhau; chia ra âm, chia ra dương, hai nghi được dựng lên.",
+    "source": "Chu Đôn Di, Thái cực đồ thuyết, chép trong Tống sử, quyển 427"
+   },
+   {
+    "type": "quote",
+    "han": "陽變陰合，而生水、火、木、金、土，五氣順布，四時行焉。五行一陰陽也，陰陽一太極也。太極本無極也。",
+    "vi": "Dương biến, âm hợp mà sinh ra thủy, hỏa, mộc, kim, thổ; năm khí thuận thứ tự mà bày khắp, bốn mùa vận hành. Ngũ hành là một âm dương; âm dương là một Thái cực; Thái cực vốn là vô cực.",
+    "source": "Chu Đôn Di, Thái cực đồ thuyết, chép trong Tống sử, quyển 427"
+   },
+   {
+    "type": "p",
+    "text": "Chu Hy chú câu đầu:"
+   },
+   {
+    "type": "quote",
+    "han": "上天之載，無聲無臭，而實造化之樞紐，品彙之根柢也。故曰無極而太極。非太極之外，復有無極也。",
+    "vi": "Việc của trời trên cao không tiếng không mùi, mà thật là then chốt của tạo hóa, gốc rễ của muôn loài; cho nên nói \"vô cực mà Thái cực\". Không phải ngoài Thái cực lại có một vô cực.",
+    "source": "Chu Hy chú Thái cực đồ thuyết, trong Ngự toản Tính lý tinh nghĩa, quyển 1"
+   },
+   {
+    "type": "p",
+    "text": "Ở câu \"Thái cực động mà sinh dương\", ông chú: Thái cực là đạo thuộc \"hình nhi thượng\", âm dương là khí thuộc \"hình nhi hạ\" (太極形而上之道也，陰陽形而下之器也). Hai cụm ấy có trong Hệ từ thượng: \"cái ở trên hình gọi là đạo, cái ở dưới hình gọi là khí\" (形而上者謂之道，形而下者謂之器).",
+    "source": "Chu Hy chú Thái cực đồ thuyết, Ngự toản Tính lý tinh nghĩa, quyển 1; Hệ từ thượng, chương 12 (chia chương theo Chu Hy)"
+   },
+   {
+    "type": "note",
+    "text": "Bản Thái cực đồ thuyết trên Wikisource (lấy từ Chu Nguyên công tập) mở đầu bằng \"自無極而為太極\" (từ vô cực mà thành Thái cực). Trong lời Chu Hy dẫn ở Ngự toản Tính lý tinh nghĩa, ông nói người chép truyện Chu Đôn Di trong sử đã thêm chữ thành câu ấy, không có căn cứ (史氏之傳先生者乃增其語曰自無極而為太極則又無所依據).",
+    "source": "Thái cực đồ thuyết, Wikisource (Chu Nguyên công tập); Ngự toản Tính lý tinh nghĩa, quyển 1, phần tập thuyết"
    },
    {
     "type": "h",
@@ -1995,13 +2060,74 @@
     "text": "Câu này nằm trong đoạn Hệ từ kể các thánh vương xưa làm ra lưới, cày, chợ, thuyền, nhà cửa, chữ viết — mỗi thứ được nói là “lấy ở” (蓋取諸) một quẻ. Nó đứng ngay sau câu nói Hoàng Đế, Nghiêu, Thuấn “thông sự biến, khiến dân không mỏi” (通其變，使民不倦)."
    },
    {
+    "type": "h",
+    "text": "Đầy thì vơi, đi rồi trở lại"
+   },
+   {
+    "type": "p",
+    "text": "Mục này đặt cạnh nhau mấy câu trong Thoán truyện và lời hào nói về đầy và vơi, đi và trở lại, kèm chú của Chu Hy (Chu Dịch bản nghĩa); cuối mục trích một câu Đạo Đức kinh."
+   },
+   {
+    "type": "quote",
+    "han": "天道虧盈而益謙，地道變盈而流謙，鬼神害盈而福謙，人道惡盈而好謙。",
+    "vi": "Đạo trời làm vơi cái đầy mà thêm cho cái khiêm; đạo đất làm đổi cái đầy mà dồn chảy về cái khiêm; quỷ thần hại cái đầy mà ban phúc cho cái khiêm; đạo người ghét cái đầy mà ưa cái khiêm.",
+    "source": "Thoán truyện quẻ Khiêm (15)"
+   },
+   {
+    "type": "p",
+    "text": "Chu Hy chú: \"biến\" (變) là nghiêng đổ, \"lưu\" (流) là gom lại mà đưa về (變謂傾壞，流謂聚而歸之)."
+   },
+   {
+    "type": "quote",
+    "han": "日中則昃，月盈則食，天地盈虛，與時消息，而況於人乎，況於鬼神乎？",
+    "vi": "Mặt trời đứng bóng rồi thì xế, trăng tròn rồi thì khuyết; trời đất lúc đầy lúc vơi, theo thời mà tiêu tức (vơi đi, lớn lên), huống chi là người, huống chi là quỷ thần?",
+    "source": "Thoán truyện quẻ Phong (55)"
+   },
+   {
+    "type": "p",
+    "text": "Chu Hy chú: câu này nói rõ thêm ý ở ngoài lời quẻ, rằng không được vượt quá chỗ giữa (此又發明卦辭外意，言不可過中也)."
+   },
+   {
+    "type": "quote",
+    "han": "反復其道，七日來復，天行也。",
+    "vi": "Đi rồi trở lại theo đường của nó, bảy ngày thì trở lại: đó là lẽ trời vận hành (thiên hành).",
+    "source": "Thoán truyện quẻ Phục (24)"
+   },
+   {
+    "type": "p",
+    "text": "Chu Hy chú câu Thoán này: âm dương tiêu tức, vận trời là như thế (陰陽消息，天運然也). Ở lời quẻ, ông giảng: từ quẻ Cấu tháng năm một hào âm bắt đầu sinh, đến Phục trải bảy hào thì một hào dương trở lại, đó là lẽ tự nhiên của vận trời (自五月姤卦一陰始生，至此七爻而一陽來復，乃天運之自然)."
+   },
+   {
+    "type": "quote",
+    "han": "无平不陂，无往不復。",
+    "vi": "Không có chỗ bằng nào mà không nghiêng dốc, không có đi nào mà không trở lại.",
+    "source": "Hào Cửu tam quẻ Thái (11)"
+   },
+   {
+    "type": "p",
+    "text": "Tiểu tượng giải câu \"không có đi nào mà không trở lại\" là \"chỗ giao nhau của trời đất\" (无往不復，天地際也). Chu Hy chú hào này: sắp quá chỗ giữa, là lúc Thái sắp đến cùng cực mà Bĩ sắp tới (將過於中，泰將極而否欲來之時也)."
+   },
+   {
+    "type": "p",
+    "text": "Đạo Đức kinh (Lão Tử) là sách của Đạo gia; Tứ khố tổng mục đề yếu xếp các bản chú Lão Tử vào loại Đạo gia. Chương 40 có câu:",
+    "source": "Tứ khố tổng mục đề yếu, quyển 146, Đạo gia loại (mục Lão Tử chú)"
+   },
+   {
+    "type": "quote",
+    "han": "反者道之動，弱者道之用。",
+    "vi": "Phản (trở lại, ngược lại) là cái động của Đạo; yếu mềm là cái dụng của Đạo.",
+    "source": "Lão Tử, Đạo Đức kinh, chương 40 (bản Vương Bật)"
+   },
+   {
     "type": "list",
     "items": [
      "Thái cực → lưỡng nghi → tứ tượng → bát quái: theo Chu Hy, mỗi lần thêm một vạch; theo Khổng Dĩnh Đạt, từ nguyên khí chia ra trời đất.",
+     "Vô cực mà Thái cực (Chu Đôn Di, Thái cực đồ thuyết; Chu Hy chú).",
      "Một âm một dương gọi là đạo; sinh rồi lại sinh gọi là Dịch.",
      "Ba nghĩa (Dịch vĩ Càn tạc độ, Trịnh Huyền, Khổng Dĩnh Đạt): giản dị, biến dịch, bất dịch.",
      "Hai nghĩa (Chu Hy): giao dịch — âm dương đối đãi; biến dịch — âm dương lưu hành, cũng là phép bói (già biến sang trẻ).",
-     "Cùng thì biến, biến thì thông, thông thì lâu bền (Hệ từ hạ, chương 2)."
+     "Cùng thì biến, biến thì thông, thông thì lâu bền (Hệ từ hạ, chương 2).",
+     "Đạo trời làm vơi cái đầy mà thêm cho cái khiêm; không có đi nào mà không trở lại (Thoán Khiêm, hào 3 Thái)."
     ]
    }
   ],
@@ -2025,6 +2151,34 @@
    {
     "label": "Chu Tử ngữ loại, quyển 65 (Dịch nhất) — Wikisource",
     "url": "https://zh.wikisource.org/wiki/%E6%9C%B1%E5%AD%90%E8%AA%9E%E9%A1%9E/065"
+   },
+   {
+    "label": "Tống sử, quyển 427, Đạo học truyện nhất (Chu Đôn Di truyện, chép Thái cực đồ thuyết) — Wikisource",
+    "url": "https://zh.wikisource.org/wiki/宋史/卷427"
+   },
+   {
+    "label": "Chu Đôn Di, Thái cực đồ thuyết (bản Chu Nguyên công tập) — Wikisource",
+    "url": "https://zh.wikisource.org/wiki/太極圖說"
+   },
+   {
+    "label": "Ngự toản Tính lý tinh nghĩa (bản Tứ khố), quyển 1: Thái cực đồ, Chu Hy chú — Wikisource",
+    "url": "https://zh.wikisource.org/wiki/御纂性理精義_(四庫全書本)/卷01"
+   },
+   {
+    "label": "Chu Dịch, Thoán truyện Khiêm, Phục, Phong; hào Cửu tam và Tiểu tượng quẻ Thái (Kanripo KR1a0001)",
+    "url": "https://github.com/kanripo/KR1a0001"
+   },
+   {
+    "label": "Chu Hy, Chu Dịch bản nghĩa, quyển 1–2 (Kanripo KR1a0032)",
+    "url": "https://github.com/kanripo/KR1a0032"
+   },
+   {
+    "label": "Lão Tử, Đạo Đức kinh (bản Vương Bật), chương 40 — Wikisource",
+    "url": "https://zh.wikisource.org/wiki/道德經_(王弼本)"
+   },
+   {
+    "label": "Tứ khố tổng mục đề yếu, quyển 146 (Đạo gia loại) — Wikisource",
+    "url": "https://zh.wikisource.org/wiki/四庫全書總目提要/卷146"
    }
   ]
  },
