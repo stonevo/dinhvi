@@ -244,6 +244,10 @@ export const castRecordSchema = z.object({
   outcome: castOutcomeSchema.optional(),
   /** Giới tính người hỏi (chỉ dùng chọn Dụng thần khi hỏi tình cảm). */
   askerGender: z.enum(['male', 'female']).optional(),
+  /** Diễn giải bằng AI cho câu hỏi này (nếu có), lưu lại để xem không phải hỏi lại. */
+  aiAnswer: z.object({ text: z.string().min(1), provider: z.string().min(1), at: isoDate }).optional(),
+  /** Tự soi: câu hỏi app gợi theo hào cần đọc, và điều người dùng tự ghi. */
+  reflections: z.array(z.object({ q: z.string().min(1), a: z.string() })).optional(),
 });
 export type CastRecord = z.infer<typeof castRecordSchema>;
 

@@ -4,3 +4,4 @@ dev-dist
 *.local
 coverage
 data-src/chunks/*.json
+.wrangler

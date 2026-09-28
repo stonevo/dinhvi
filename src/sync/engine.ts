@@ -323,6 +323,21 @@ async function forceUpload() {
 
 // ---------- Đăng nhập ----------
 
+/** Mã đăng nhập (Firebase ID token) của người đang đăng nhập, để gọi máy chủ AI; null nếu chưa đăng nhập. */
+export async function getIdToken(): Promise<string | null> {
+  await authReady;
+  return user ? user.getIdToken() : null;
+}
+
+let resolveAuthReady: () => void = () => undefined;
+/** Xong lần báo trạng thái đăng nhập đầu tiên (Firebase khôi phục phiên đã lưu). */
+const authReady = new Promise<void>((r) => {
+  resolveAuthReady = r;
+});
+
+/** Có người đăng nhập chưa (đã biết trạng thái đăng nhập). */
+export const isSignedIn = () => user !== null;
+
 export async function signIn(): Promise<void> {
   try {
     await signInWithPopup(auth, new GoogleAuthProvider());
@@ -361,6 +376,7 @@ export function start(): void {
     keyInfo = ((await kv.get('keyInfo')) as EncInfo | undefined) ?? null;
     onAuthStateChanged(auth, (u) => {
       user = u;
+      resolveAuthReady();
       if (u) void syncNow();
       else setStatus({ kind: 'signedOut' });
     });

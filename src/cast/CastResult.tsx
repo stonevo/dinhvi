@@ -1,4 +1,6 @@
 import { useMemo, useState } from 'react';
+import type { AiAnswer } from '../ai/client';
+import type { Reflection } from './Reflect';
 import type { StaticData } from '../data/load';
 import { t } from '../i18n';
 import { readCast, type LineValue } from '../lib/cast';
@@ -22,6 +24,10 @@ export type CastView = {
   askerGender?: 'male' | 'female';
   /** Có khi vừa lập quẻ Mai Hoa (giữ phép tính để xem lại). */
   meihua?: MeihuaCast;
+  /** Diễn giải AI đã lưu kèm bản ghi. */
+  aiAnswer?: AiAnswer;
+  /** Tự soi đã lưu kèm bản ghi. */
+  reflections?: Reflection[];
 };
 
 type Tab = 'reading' | 'liuyao' | 'meihua';
@@ -87,7 +93,7 @@ export function CastResult({ view, data, ziStartsNextDay }: { view: CastView; da
         ))}
       </div>
 
-      {tab === 'reading' && <CastReadingView reading={reading} question={view.question} data={data} context={view.context} />}
+      {tab === 'reading' && <CastReadingView reading={reading} question={view.question} data={data} context={view.context} at={view.at} lines={view.lines} aiAnswer={view.aiAnswer} reflections={view.reflections} />}
       {tab === 'liuyao' && <LiuyaoTable chart={chart} data={data} useGod={useGod} onUseGod={setUseGod} />}
       {tab === 'meihua' && meihua && (
         <>

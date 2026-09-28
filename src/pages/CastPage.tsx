@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { answerKey, cachedAnswer } from '../ai/client';
+import { reflectionDraft } from '../cast/Reflect';
 import { YarrowCaster } from '../cast/YarrowCaster';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
@@ -93,6 +95,8 @@ export function CastPage() {
       methodInput: view.methodInput,
       askerGender: view.askerGender,
       checkOn: draft.checkInDays ? addDays(vnDateString(view.at), draft.checkInDays) : undefined,
+      aiAnswer: cachedAnswer(answerKey(view.at, view.lines, view.question)),
+      reflections: reflectionDraft(answerKey(view.at, view.lines, view.question)),
     };
     await db.casts.add(record);
     restart();
@@ -160,6 +164,8 @@ export function CastPage() {
               method: viewed.method ?? 'coins',
               methodInput: viewed.methodInput,
               askerGender: viewed.askerGender,
+              aiAnswer: viewed.aiAnswer,
+              reflections: viewed.reflections ?? [],
             }}
             data={data}
             ziStartsNextDay={settings.ziStartsNextDay ?? true}

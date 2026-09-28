@@ -7,6 +7,7 @@ import { ChoiceGroup, TextArea } from '../../ui/controls';
 import { derivedHexagram, signalCount } from '../draft';
 import { Term } from '../../ui/Term';
 import type { StepProps } from './types';
+import { useSummary } from '../../data/load';
 
 /**
  * Bước 4 — Hào. Cảnh báo tự đặt cao luôn hiển thị. Điểm khớp chỉ là số đếm
@@ -17,6 +18,7 @@ export function Step4Line({ d, set, data }: StepProps) {
   const h = data.hexagram(derivedHexagram(d)!);
   const candidates = d.tier ? linesOfTier(d.tier) : [];
   const answers = d.tierChecklistAnswers ?? {};
+  const summary = useSummary(h.kingWenNumber);
 
   return (
     <div className="stack">
@@ -52,6 +54,7 @@ export function Step4Line({ d, set, data }: StepProps) {
             return (
               <section key={pos} className="card">
                 <h3>{t('line.n', { n: pos })}</h3>
+                {summary && <p className="line-summary">{summary.lines[pos - 1]}</p>}
                 <p className="original">{line.original}</p>
                 <p className="han-text" lang="zh-Hant">{line.originalHan}</p>
                 <p className="muted small">{tier.summary}</p>

@@ -1,0 +1,22 @@
+# Máy chủ trung gian cho "Diễn giải bằng AI" của Định Vị (xem docs/ai.md).
+name = "dinhvi-ai"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# Workers AI (dự phòng khi Gemini hết lượt miễn phí).
+[ai]
+binding = "AI"
+
+# Lưu: thời điểm mỗi dịch vụ được mở lượt lại, và số lần hỏi mỗi người mỗi ngày.
+# Tạo bằng: npx wrangler kv namespace create STATE  → dán id vào đây.
+[[kv_namespaces]]
+binding = "STATE"
+id = "a1cc95b82984462c8c66dcddb2cf9a66"
+
+[vars]
+FIREBASE_PROJECT_ID = "dinh-vi-e4f65"
+ALLOWED_ORIGINS = "https://stonevo.github.io,http://localhost:5173"
+GEMINI_MODEL = "gemini-2.5-flash"
+WORKERS_AI_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+DAILY_LIMIT_PER_USER = "10"
+# Bí mật (không ghi ở đây): npx wrangler secret put GEMINI_API_KEY

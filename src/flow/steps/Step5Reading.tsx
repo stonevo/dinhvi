@@ -1,4 +1,5 @@
 import { t } from '../../i18n';
+import { HexSummary } from '../../ui/HexSummary';
 import { fullHexagramName } from '../../data/names';
 import { HexagramFigure } from '../../ui/HexagramFigure';
 import { LineReading } from '../../ui/LineReading';
@@ -23,6 +24,7 @@ export function Step5Reading({ d, set, data }: StepProps) {
           <p className="muted">{h.judgment}</p>
         </div>
       </div>
+      <HexSummary n={h.kingWenNumber} moving={[line]} markLabel={t('summary.chosen')} />
       <LineReading
         hexagram={h}
         position={line}

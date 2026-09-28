@@ -2,7 +2,7 @@ import { useSummary } from '../data/load';
 import { t } from '../i18n';
 
 /** Tóm lược một quẻ (đọc trong một phút). `moving`: các hào động cần làm nổi (khi xem kết quả gieo). */
-export function HexSummary({ n, moving = [], title }: { n: number; moving?: number[]; title?: string }) {
+export function HexSummary({ n, moving = [], title, markLabel }: { n: number; moving?: number[]; title?: string; markLabel?: string }) {
   const s = useSummary(n);
   if (!s) return null;
   return (
@@ -29,7 +29,7 @@ export function HexSummary({ n, moving = [], title }: { n: number; moving?: numb
         <ol className="summary-lines">
           {s.lines.map((l, i) => (
             <li key={i} className={moving.includes(i + 1) ? 'moving' : undefined}>
-              {moving.includes(i + 1) && <span className="moving-tag">{t('summary.moving')}</span>}
+              {moving.includes(i + 1) && <span className="moving-tag">{markLabel ?? t('summary.moving')}</span>}
               {l}
             </li>
           ))}

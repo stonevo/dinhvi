@@ -866,3 +866,15 @@ details.read-more[open] > summary { margin-bottom: 12px; }
 .next-positioning .button { flex: 0 1 auto; text-align: center; }
 .liuyao .src { display: block; font-size: 0.78rem; color: var(--muted); margin-top: 1px; }
 .liuyao li { margin-bottom: 6px; }
+
+/* ---------- Diễn giải bằng AI ---------- */
+.ai-answer { border-left: 3px solid var(--gold, var(--accent)); }
+.ai-answer p { margin: 0; }
+.ai-loading { padding: 12px 16px; }
+
+/* ---------- Soi câu hỏi vào quẻ ---------- */
+.reflect p { margin: 0; }
+.reflect-q { font-style: italic; }
+.reflect textarea { width: 100%; }
+
+.line-summary { margin: 0 0 4px; font-weight: 600; }

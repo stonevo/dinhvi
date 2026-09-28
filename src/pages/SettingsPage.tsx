@@ -14,6 +14,7 @@ import {
 import { THEMES, setTheme, useTheme } from '../lib/theme';
 import { ChoiceGroup } from '../ui/controls';
 import { CloudSyncSection } from '../sync/CloudSync';
+import { AiSettings } from '../ai/AiSettings';
 
 export function SettingsPage() {
   const settings = useLiveQuery(() => getSettings(db));
@@ -67,6 +68,7 @@ export function SettingsPage() {
     <section className="stack">
       <h1>{t('nav.settings')}</h1>
       <CloudSyncSection />
+      <AiSettings />
 
       <h2>{t('profile.title')}</h2>
       <ProfileManager />

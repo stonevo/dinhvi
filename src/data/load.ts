@@ -196,18 +196,22 @@ export function useDiagrams(): DiagramSection[] | null {
 // Tóm lược mỗi quẻ, file riêng.
 let summariesCache: Promise<Map<number, HexagramSummary>> | null = null;
 
+export function loadSummaries(): Promise<Map<number, HexagramSummary>> {
+  summariesCache ??= fetchJson('summaries.json', z.array(hexagramSummarySchema).length(64)).then(
+    (list) => new Map(list.map((s) => [s.kingWenNumber, s])),
+  );
+  summariesCache.catch(() => {
+    summariesCache = null;
+  });
+  return summariesCache;
+}
+
 /** Tóm lược của quẻ `n`; null khi đang tải hoặc tải lỗi. */
 export function useSummary(n: number): HexagramSummary | null {
   const [state, setState] = useState<HexagramSummary | null>(null);
   useEffect(() => {
     let alive = true;
-    summariesCache ??= fetchJson('summaries.json', z.array(hexagramSummarySchema).length(64)).then(
-      (list) => new Map(list.map((s) => [s.kingWenNumber, s])),
-    );
-    summariesCache.catch(() => {
-      summariesCache = null;
-    });
-    summariesCache.then(
+    loadSummaries().then(
       (m) => alive && setState(m.get(n) ?? null),
       () => alive && setState(null),
     );

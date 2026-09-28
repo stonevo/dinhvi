@@ -1,5 +1,8 @@
 import { useContexts, type StaticData } from '../data/load';
-import { HexSummary } from '../ui/HexSummary';
+import { AiSummary } from '../ai/AiSummary';
+import { Reflect, type Reflection } from './Reflect';
+import { answerKey } from '../ai/client';
+import type { AiAnswer } from '../ai/client';
 import { t } from '../i18n';
 import { castFocus, type CastReading } from '../lib/cast';
 import type { ContextKey, ContextTexts } from '../types/schema';
@@ -19,7 +22,19 @@ function ContextNote({ n, context, part }: { n: number; context?: ContextKey; pa
 }
 
 /** Đọc một lần gieo: đoạn nên đọc theo số hào động, gợi ý đặt cạnh câu hỏi, và diễn giải theo ngữ cảnh. */
-export function CastReadingView({ reading, question, data, context }: { reading: CastReading; question: string; data: StaticData; context?: ContextKey }) {
+export function CastReadingView({
+  reading, question, data, context, at, lines, aiAnswer, reflections,
+}: {
+  reading: CastReading;
+  question: string;
+  data: StaticData;
+  context?: ContextKey;
+  at: Date;
+  lines: number[];
+  aiAnswer?: AiAnswer;
+  /** Tự soi đã lưu kèm bản ghi (xem lại lịch sử). */
+  reflections?: Reflection[];
+}) {
   const focus = castFocus(reading);
   const p = data.hexagram(reading.primary);
   const tr = reading.transformed ? data.hexagram(reading.transformed) : null;
@@ -28,7 +43,8 @@ export function CastReadingView({ reading, question, data, context }: { reading:
 
   return (
     <section className="stack">
-      <HexSummary n={reading.primary} moving={reading.moving} title={t('summary.titleOf', { name: p.nameHanViet })} />
+      <AiSummary reading={reading} question={question} context={context} data={data} at={at} lines={lines} saved={aiAnswer} />
+      <Reflect reading={reading} question={question} data={data} draftKey={answerKey(at, lines, question)} saved={reflections} />
       <div className="card cast-focus stack">
         <p className="small-caps">{t('cast.focus.title')}</p>
         {question && <blockquote className="cast-question">{question}</blockquote>}
