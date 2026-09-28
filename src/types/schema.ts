@@ -467,3 +467,19 @@ export type TenWingsBook = z.infer<typeof tenWingsBookSchema>;
 export const DIAGRAM_FIGURES = ['xiantian', 'houtian', 'fuxi-circle', 'fuxi-square', 'hetu', 'luoshu', 'binary'] as const;
 export const diagramSectionSchema = introSectionSchema.extend({ figure: z.enum(DIAGRAM_FIGURES) });
 export type DiagramSection = z.infer<typeof diagramSectionSchema>;
+
+// ---- Tóm lược mỗi quẻ: đọc trong một phút, viết lại gọn từ nội dung đã có (public/data/summaries.json) ----
+export const hexagramSummarySchema = z.object({
+  kingWenNumber: z.number().int().min(1).max(64),
+  /** Hai quái và hình tượng. */
+  image: z.string().min(1),
+  /** Thời của quẻ. */
+  time: z.string().min(1),
+  do: z.array(z.string().min(1)).min(1),
+  avoid: z.array(z.string().min(1)).min(1),
+  /** Mỗi hào một câu, từ hào 1 lên. */
+  lines: z.array(z.string().min(1)).length(6),
+  /** Dụng Cửu / Dụng Lục (chỉ quẻ 1, 2). */
+  allMoving: z.string().min(1).optional(),
+});
+export type HexagramSummary = z.infer<typeof hexagramSummarySchema>;

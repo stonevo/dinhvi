@@ -1,4 +1,5 @@
 import { useContexts, type StaticData } from '../data/load';
+import { HexSummary } from '../ui/HexSummary';
 import { t } from '../i18n';
 import { castFocus, type CastReading } from '../lib/cast';
 import type { ContextKey, ContextTexts } from '../types/schema';
@@ -27,6 +28,7 @@ export function CastReadingView({ reading, question, data, context }: { reading:
 
   return (
     <section className="stack">
+      <HexSummary n={reading.primary} moving={reading.moving} title={t('summary.titleOf', { name: p.nameHanViet })} />
       <div className="card cast-focus stack">
         <p className="small-caps">{t('cast.focus.title')}</p>
         {question && <blockquote className="cast-question">{question}</blockquote>}

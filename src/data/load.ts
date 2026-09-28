@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramContextsSchema, introSectionSchema, hexagramSchema, lineTierSchema, tenWingsBookSchema, diagramSectionSchema, trigramSchema,
-  type Hexagram, type HexagramCommentary, type HexagramContexts, type IntroSection, type LineTier, type TenWingsBook, type DiagramSection, type Trigram, type TrigramKey,
+  hexagramCommentarySchema, hexagramContextsSchema, introSectionSchema, hexagramSchema, lineTierSchema, tenWingsBookSchema, diagramSectionSchema, hexagramSummarySchema, trigramSchema,
+  type Hexagram, type HexagramCommentary, type HexagramContexts, type IntroSection, type LineTier, type TenWingsBook, type DiagramSection, type HexagramSummary, type Trigram, type TrigramKey,
 } from '../types/schema';
 
 // Dữ liệu tĩnh nằm ở public/data để người tự host sửa được mà không build lại.
@@ -190,5 +190,30 @@ export function useDiagrams(): DiagramSection[] | null {
       alive = false;
     };
   }, []);
+  return state;
+}
+
+// Tóm lược mỗi quẻ, file riêng.
+let summariesCache: Promise<Map<number, HexagramSummary>> | null = null;
+
+/** Tóm lược của quẻ `n`; null khi đang tải hoặc tải lỗi. */
+export function useSummary(n: number): HexagramSummary | null {
+  const [state, setState] = useState<HexagramSummary | null>(null);
+  useEffect(() => {
+    let alive = true;
+    summariesCache ??= fetchJson('summaries.json', z.array(hexagramSummarySchema).length(64)).then(
+      (list) => new Map(list.map((s) => [s.kingWenNumber, s])),
+    );
+    summariesCache.catch(() => {
+      summariesCache = null;
+    });
+    summariesCache.then(
+      (m) => alive && setState(m.get(n) ?? null),
+      () => alive && setState(null),
+    );
+    return () => {
+      alive = false;
+    };
+  }, [n]);
   return state;
 }

@@ -827,3 +827,11 @@ a:hover .dg-cell { fill: var(--surface); }
 .sync-badge.alert { background: var(--accent); color: var(--bg); font-weight: bold; }
 @keyframes sync-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .sync-badge.working span { animation: none; } }
+
+/* ---------- Tóm lược quẻ ---------- */
+.hex-summary p { margin: 0; }
+.hex-summary .summary-do { display: grid; gap: 4px; }
+.summary-lines { margin: 4px 0 0; padding-left: 1.4em; display: grid; gap: 3px; }
+.summary-lines li.moving { color: var(--accent); font-weight: 600; }
+details.read-more > summary { cursor: pointer; padding: 10px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+details.read-more[open] > summary { margin-bottom: 12px; }

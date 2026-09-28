@@ -13,6 +13,7 @@ import { Term } from '../ui/Term';
 import { XIANTIAN_ORDER } from '../lib/diagrams';
 import { JudgmentClassic, LineClassic, WenyanClassic } from '../ui/Classic';
 import { HexTenWings } from '../ui/HexTenWings';
+import { HexSummary } from '../ui/HexSummary';
 
 /** Thư viện: tra cứu 64 quẻ. */
 export function LibraryPage() {
@@ -179,6 +180,11 @@ export function HexagramPage() {
         </div>
       </div>
 
+      <HexSummary n={num} />
+
+      <details className="read-more">
+        <summary>{t('summary.more')}</summary>
+        <div className="stack">
       <section className="grid-2">
         <TrigramBox data={data} k={h.upperTrigram} label={t('library.upperFull')} />
         <TrigramBox data={data} k={h.lowerTrigram} label={t('library.lowerFull')} />
@@ -230,6 +236,8 @@ export function HexagramPage() {
         )}
       </section>
       <WenyanClassic hexagram={h} />
+        </div>
+      </details>
     </article>
   );
 }

@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, diagramSectionSchema, introSectionSchema, lineTierSchema, tenWingsBookSchema, trigramSchema, TRIGRAM_KEYS,
+  hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, diagramSectionSchema, hexagramSummarySchema, introSectionSchema, lineTierSchema, tenWingsBookSchema, trigramSchema, TRIGRAM_KEYS,
   type CommentaryPart, type Hexagram, type HexagramCommentary, type Line, type LinePosition, type LineTier, type Trigram,
 } from '../types/schema';
 import {
@@ -236,5 +236,17 @@ export function validateDiagrams(raw: unknown): string[] {
   if (new Set(ids).size !== ids.length) errors.push('id bị trùng');
   const figs = parsed.data.map((s) => s.figure);
   if (new Set(figs).size !== figs.length) errors.push('hình bị trùng');
+  return errors;
+}
+
+/** Tóm lược: đủ 64 quẻ theo thứ tự, allMoving chỉ ở Càn, Khôn. */
+export function validateSummaries(raw: unknown): string[] {
+  const parsed = z.array(hexagramSummarySchema).length(64).safeParse(raw);
+  if (!parsed.success) return zodErrors('summaries', parsed.error);
+  const errors: string[] = [];
+  parsed.data.forEach((s, i) => {
+    if (s.kingWenNumber !== i + 1) errors.push(`vị trí ${i + 1}: quẻ ${s.kingWenNumber}`);
+    if ((s.allMoving !== undefined) !== (s.kingWenNumber <= 2)) errors.push(`quẻ ${s.kingWenNumber}: allMoving chỉ có ở Càn, Khôn`);
+  });
   return errors;
 }

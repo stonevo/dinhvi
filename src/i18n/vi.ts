@@ -42,6 +42,15 @@ export const vi = {
   'sync.keepLocal': 'Dùng bản trên máy này',
   'sync.now': 'Đồng bộ ngay',
   'sync.signOut': 'Đăng xuất',
+  'summary.title': 'Tóm lược',
+  'summary.titleOf': 'Tóm lược quẻ {name}',
+  'summary.image': 'Hình quẻ.',
+  'summary.time': 'Thời này là gì.',
+  'summary.do': 'Nên:',
+  'summary.avoid': 'Tránh:',
+  'summary.lines': 'Sáu hào đi thế nào:',
+  'summary.moving': 'hào động',
+  'summary.more': 'Đọc kỹ: hai quái, lời quẻ, Thoán, Tượng, Tự quái, sáu hào',
   'nav.settings': 'Cài đặt',
 
   'home.intro':
