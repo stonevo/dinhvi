@@ -143,6 +143,8 @@ export function CoinsCaster({ sound, onDone }: { sound: boolean; onDone: (lines:
   const [lines, setLines] = useState<LineValue[]>([]);
   const [log, setLog] = useState<(2 | 3)[][]>([]);
   const [tossing, setTossing] = useState(false);
+  // Kết quả của lần đang tung: đưa cho đồng xu ngay từ đầu để nó xoay và dừng đúng mặt.
+  const [pending, setPending] = useState<(2 | 3)[] | null>(null);
   const timer = useRef<number | undefined>(undefined);
   useEffect(() => () => window.clearTimeout(timer.current), []);
 
@@ -152,6 +154,7 @@ export function CoinsCaster({ sound, onDone }: { sound: boolean; onDone: (lines:
     const nextLines = [...lines, value];
     const nextLog = [...log, coins];
     const quick = prefersReducedMotion();
+    setPending(coins);
     setTossing(true);
     timer.current = window.setTimeout(
       () => {
@@ -173,7 +176,7 @@ export function CoinsCaster({ sound, onDone }: { sound: boolean; onDone: (lines:
   return (
     <section className="caster">
       <RitualLines lines={lines} />
-      <CoinToss coins={tossing ? null : (log.at(-1) ?? null)} tossing={tossing} />
+      <CoinToss coins={tossing ? pending : (log.at(-1) ?? null)} tossing={tossing} />
       <p className="calm-hint">
         {lines.length
           ? t('ritual.lastLine', { n: lines.length, v: lines.at(-1)!, name: t(`cast.value.${lines.at(-1)}` as 'cast.value.6') })

@@ -160,7 +160,7 @@ function UseGodCard({ a }: { a: NonNullable<NonNullable<LiuyaoChart['assessment'
       <ul className="small">
         {a.verdict.reasons.map((r, i) => (
           <li key={i}>
-            {r.effect > 0 ? '＋' : r.effect < 0 ? '－' : '·'} {r.label} <span className="muted">({r.source})</span>
+            {r.effect > 0 ? '＋' : r.effect < 0 ? '－' : '·'} {r.label} <span className="src">{r.source}</span>
           </li>
         ))}
       </ul>
@@ -175,7 +175,7 @@ function UseGodCard({ a }: { a: NonNullable<NonNullable<LiuyaoChart['assessment'
       )}
       {a.standIns.map((s) => (
         <p key={s.pillar} className="small">
-          {s.label} <span className="muted">({s.source})</span>
+          {s.label} <span className="src">{s.source}</span>
         </p>
       ))}
       <ul className="small">
@@ -185,7 +185,7 @@ function UseGodCard({ a }: { a: NonNullable<NonNullable<LiuyaoChart['assessment'
       </ul>
       {a.notes.map((n) => (
         <p key={n.key} className="small">
-          {n.label} <span className="muted">({n.source})</span>
+          {n.label} <span className="src">{n.source}</span>
         </p>
       ))}
       <p className="small muted">{t('liuyao.assessNote')}</p>
@@ -218,7 +218,7 @@ function PatternCard({ a }: { a: NonNullable<LiuyaoChart['assessment']> }) {
       <ul className="small">
         {items.map((it, i) => (
           <li key={i}>
-            {it.text} {it.source && <span className="muted">({it.source})</span>}
+            {it.text} {it.source && <span className="src">{it.source}</span>}
           </li>
         ))}
       </ul>
@@ -236,7 +236,7 @@ function TimingCard({ t: tm }: { t: NonNullable<NonNullable<LiuyaoChart['assessm
         {tm.hints.map((h) => (
           <li key={h.key}>
             {h.label}
-            {h.branchLabels.length > 0 && <> — {h.branchLabels.join(', ')}</>} <span className="muted">({h.source})</span>
+            {h.branchLabels.length > 0 && <> — {h.branchLabels.join(', ')}</>} <span className="src">{h.source}</span>
           </li>
         ))}
       </ul>

@@ -29,12 +29,16 @@ export function HexSummary({ n, moving = [], title }: { n: number; moving?: numb
         <ol className="summary-lines">
           {s.lines.map((l, i) => (
             <li key={i} className={moving.includes(i + 1) ? 'moving' : undefined}>
+              {moving.includes(i + 1) && <span className="moving-tag">{t('summary.moving')}</span>}
               {l}
-              {moving.includes(i + 1) && <span className="muted small"> · {t('summary.moving')}</span>}
             </li>
           ))}
         </ol>
-        {s.allMoving && <p className="small">{s.allMoving}</p>}
+        {s.allMoving && (
+          <p className="summary-all">
+            <strong>{t(n === 1 ? 'cast.useNine' : 'cast.useSix')}:</strong> {s.allMoving}
+          </p>
+        )}
       </div>
     </section>
   );

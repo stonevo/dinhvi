@@ -10,9 +10,11 @@ export function CastSummary({ reading, data }: { reading: ReturnType<typeof read
   const p = data.hexagram(reading.primary);
   const tr = reading.transformed ? data.hexagram(reading.transformed) : null;
   return (
-    <div className="stack">
+    <div className="stack cast-summary">
       <div className="hex-head">
-        <HexagramFigure binary={p.binary} moving={reading.moving} label={fullHexagramName(p)} />
+        <span className="cast-fig">
+          <HexagramFigure binary={p.binary} moving={reading.moving} label={fullHexagramName(p)} />
+        </span>
         <div>
           <p className="small-caps">{t('cast.primary')}</p>
           <h3>
@@ -29,7 +31,9 @@ export function CastSummary({ reading, data }: { reading: ReturnType<typeof read
       </div>
       {tr && (
         <div className="hex-head">
-          <HexagramFigure binary={tr.binary} size={48} label={fullHexagramName(tr)} />
+          <span className="cast-fig">
+            <HexagramFigure binary={tr.binary} moving={[]} label={fullHexagramName(tr)} />
+          </span>
           <div>
             <p className="small-caps">
               {t('cast.transformed')} <Term k="queBien" />

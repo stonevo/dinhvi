@@ -77,7 +77,7 @@ html, body { margin: 0; background: var(--bg); color: var(--ink); }
 }
 body {
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.6;
 }
 h1, h2, h3, .brand, .step-title { font-family: var(--font-heading); }
@@ -342,7 +342,7 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 
 /* ---------- Hồ sơ ---------- */
 .profile-switcher { padding: 4px 8px; font-size: 0.9rem; max-width: 140px; }
-.row-inline { display: inline-flex; gap: 12px; }
+.row-inline { display: inline-flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; }
 
 /* ---------- Trang chủ dạng thẻ ---------- */
 .month-hex { display: flex; gap: 14px; align-items: center; padding: 12px 16px; border-left: 3px solid var(--gold, var(--accent)); }
@@ -492,7 +492,7 @@ input:focus, select:focus, textarea:focus, button:focus-visible { outline-color:
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .context-note { border-left: 3px solid var(--accent); padding-left: 10px; }
 .table-scroll { overflow-x: auto; }
-.liuyao-table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+.liuyao-table { border-collapse: collapse; width: 100%; line-height: 1.5; }
 .liuyao-table th, .liuyao-table td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: middle; white-space: nowrap; }
 .liuyao-table tr.moving td { background: color-mix(in srgb, var(--accent) 8%, transparent); }
 .liuyao-figure { display: flex; align-items: center; gap: 6px; }
@@ -608,6 +608,14 @@ body.in-ritual { overflow: hidden; }
 .coins.tossing .coin-shadow { animation: coin-shadow 1.1s ease-in-out both; }
 @keyframes coin-arc { 0% { transform: translateY(0); } 42% { transform: translateY(-150px); } 82% { transform: translateY(0); } 90% { transform: translateY(-10px); } 100% { transform: translateY(0); } }
 @keyframes coin-spin { from { transform: rotateX(0) rotateY(0); } to { transform: rotateX(1080deg) rotateY(360deg); } }
+/* Mặt lưng: dừng ở 540° (= 180°) để lúc chạm đất đã đúng mặt, không giật từ mặt chữ sang. */
+.coins.tossing .coin-inner.tails { animation-name: coin-spin-tails; }
+@keyframes coin-spin-tails { from { transform: rotateX(0) rotateY(0); } to { transform: rotateX(1080deg) rotateY(540deg); } }
+/* Đang xoay nhanh: chữ và hoa văn mờ, nhoè; chạm đất mới hiện rõ. */
+.coins.tossing .coin-chars, .coins.tossing .coin-face.tails g { animation: coin-blur 1.1s ease-in-out both; }
+.coins.tossing .coin-face { animation: coin-face-blur 1.1s ease-in-out both; }
+@keyframes coin-blur { 0% { opacity: 1; } 12%, 78% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes coin-face-blur { 0%, 100% { filter: none; } 15%, 75% { filter: blur(1.5px); } }
 @keyframes coin-shadow { 0%, 100% { transform: scale(1); opacity: 1; } 42% { transform: scale(0.4); opacity: 0.3; } }
 
 /* Hào hiện dần */
@@ -646,6 +654,7 @@ body.in-ritual { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   .coins.tossing .coin, .coins.tossing .coin-inner, .coins.tossing .coin-shadow,
+  .coins.tossing .coin-chars, .coins.tossing .coin-face, .coins.tossing .coin-face.tails g,
   .ritual-ring, .smoke span, .ritual-glow, .ritual-btn.glow, .r-line span, .formed, .formed .ritual-lines, .ritual { animation: none; }
   .calm-taiji { transition: none; }
 }
@@ -832,6 +841,28 @@ a:hover .dg-cell { fill: var(--surface); }
 .hex-summary p { margin: 0; }
 .hex-summary .summary-do { display: grid; gap: 4px; }
 .summary-lines { margin: 4px 0 0; padding-left: 1.4em; display: grid; gap: 3px; }
-.summary-lines li.moving { color: var(--accent); font-weight: 600; }
+.summary-lines li.moving { background: color-mix(in srgb, var(--accent) 9%, transparent); border-radius: 4px; padding: 1px 6px; margin-left: -6px; }
+.summary-lines li::marker { color: var(--muted); }
+.moving-tag { display: inline-block; margin-right: 6px; padding: 0 6px; border-radius: 999px; font-size: 0.75rem; line-height: 1.5; vertical-align: 1px; color: var(--bg); background: var(--accent); }
+.summary-all { margin-top: 6px !important; }
+/* Kết quả gieo: hình quẻ chính và quẻ biến cùng một cột, chữ thẳng hàng. */
+.cast-summary .cast-fig { flex: 0 0 78px; display: flex; justify-content: flex-start; }
 details.read-more > summary { cursor: pointer; padding: 10px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 details.read-more[open] > summary { margin-bottom: 12px; }
+
+/* Lục Hào: chữ phụ trong bảng và các thẻ đánh giá không nhỏ quá, không nhạt quá. */
+.liuyao { font-size: 0.95rem; }
+/* Ba cỡ chữ cho cả tab Lục Hào: chữ chính 0.95rem, nhãn 0.8rem, nguồn 0.78rem. */
+.liuyao p, .liuyao li, .liuyao td, .liuyao select, .liuyao option, .liuyao .small, .liuyao strong,
+.liuyao .liuyao-table { font-size: 0.95rem; }
+.liuyao .small-caps, .liuyao-table th, .liuyao .tag { font-size: 0.8rem; }
+.liuyao .muted { color: color-mix(in srgb, var(--ink) 75%, var(--muted)); }
+.liuyao-table th { text-align: left; white-space: nowrap; font-weight: 600; }
+.liuyao-table td { vertical-align: top; }
+/* Sau khi gieo: chọn lĩnh vực và nút đi tới cùng một hàng, căn đáy; hẹp thì xuống dòng. */
+.next-positioning .row-inline { display: flex; }
+.next-positioning .field { flex: 1 1 200px; margin: 0; }
+.next-positioning .field select { width: 100%; }
+.next-positioning .button { flex: 0 1 auto; text-align: center; }
+.liuyao .src { display: block; font-size: 0.78rem; color: var(--muted); margin-top: 1px; }
+.liuyao li { margin-bottom: 6px; }
