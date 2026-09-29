@@ -764,7 +764,7 @@ a.button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; 
 
 /* Nhập môn Kinh Dịch */
 .intro p, .intro li { max-width: 68ch; }
-.intro-toc { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; counter-reset: intro; }
+.intro-toc { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; counter-reset: intro; }
 .intro-toc li { counter-increment: intro; }
 .intro-toc-item { display: grid; gap: 4px; text-decoration: none; color: var(--ink); padding-left: 52px; position: relative; }
 .intro-toc-item::before { content: counter(intro); position: absolute; left: 16px; top: 14px; font-family: var(--font-heading); font-size: 1.4rem; color: var(--gold); }
@@ -826,8 +826,17 @@ a:hover .dg-cell { fill: var(--surface); }
 .trigram-table td.dim { opacity: 0.3; }
 
 /* ---------- Lộ trình học ---------- */
-.learning-path h2 { margin-top: 0; font-size: 1.1rem; }
-.learning-path ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+/* Lộ trình: cùng khung, cùng lề chữ (52px) và cùng kiểu số vàng với các thẻ bài bên dưới. */
+.learning-path { padding-left: 52px; }
+.learning-path h2 { margin: 0 0 6px; font-size: 1em; font-weight: 700; font-family: var(--font-body); }
+.learning-path ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; counter-reset: path; }
+.learning-path li { position: relative; counter-increment: path; font-size: 0.9em; }
+.learning-path li::before { content: counter(path); position: absolute; left: -36px; top: -2px; font-family: var(--font-heading); font-size: 1.15rem; color: var(--gold); }
+/* Trang Nhập môn: tên bài bằng chữ nội dung (đậm), mô tả 0.9em, lời dẫn bằng chữ nội dung. */
+.intro-toc-item strong { font-size: 1em; }
+.intro-toc-item span.small { font-size: 0.9em; }
+.intro > .lead { font-size: 1em; }
+.stack > .intro-toc { margin-top: 12px; }
 
 /* ---------- Biểu tượng đồng bộ ---------- */
 .sync-badge { display: inline-flex; align-items: center; justify-content: center; width: 1.7em; height: 1.7em; border-radius: 50%; text-decoration: none; font-size: 0.95rem; color: var(--band-ink, inherit); }
