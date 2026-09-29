@@ -764,6 +764,8 @@ a.button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; 
 
 /* Nhập môn Kinh Dịch */
 .intro p, .intro li { max-width: 68ch; }
+/* Thẻ bài trong mục lục là khung, không phải đoạn chữ: rộng hết cột như thẻ Lộ trình. */
+.intro-toc > li { max-width: none; }
 .intro-toc { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; counter-reset: intro; }
 .intro-toc li { counter-increment: intro; }
 .intro-toc-item { display: grid; gap: 4px; text-decoration: none; color: var(--ink); padding-left: 52px; position: relative; }
