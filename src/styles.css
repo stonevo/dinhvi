@@ -775,6 +775,7 @@ a.button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; 
 .intro-quote blockquote { margin: 0; display: grid; gap: 4px; }
 .intro-quote figcaption { margin-top: 4px; }
 .intro-note { background: var(--surface-2); border-radius: var(--radius); padding: 10px 12px; }
+.intro-note.small { font-size: 0.95rem; }
 .intro-table { border-collapse: collapse; width: 100%; font-size: 0.93rem; }
 .intro-table th, .intro-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .intro-table th { font-family: var(--font-heading); background: var(--surface-2); }
