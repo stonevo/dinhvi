@@ -537,7 +537,9 @@ fieldset.field legend { margin-bottom: 6px; }
 body.in-ritual { overflow: hidden; }
 .ritual {
   --gold: #e9c979; --gold-soft: rgba(233, 201, 121, 0.55);
-  position: fixed; inset: 0; z-index: 100; overflow-y: auto; color: #f3e9d2;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100; overflow-y: auto; -webkit-overflow-scrolling: touch; color: #f3e9d2;
+  /* Chiều cao phần nhìn thấy thật (trừ thanh địa chỉ / công cụ của Safari), không phải 100vh. */
+  height: 100vh; height: 100dvh;
   background:
     radial-gradient(ellipse 60% 45% at 50% 58%, rgba(214, 150, 70, 0.28), transparent 70%),
     radial-gradient(ellipse at 50% 120%, #3a1d18 0%, transparent 60%),
@@ -568,8 +570,13 @@ body.in-ritual { overflow: hidden; }
 }
 .ritual-exit { position: fixed; top: 14px; right: 16px; z-index: 2; background: transparent; border: 1px solid var(--gold-soft);
   color: var(--gold); border-radius: 50%; width: 40px; height: 40px; font-size: 1rem; cursor: pointer; }
-.ritual-body { position: relative; z-index: 1; min-height: 100%; max-width: 640px; margin: 0 auto; padding: 56px 20px 40px;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; text-align: center; }
+.ritual-body { position: relative; z-index: 1; min-height: 100%; max-width: 640px; margin: 0 auto;
+  padding: 56px 20px calc(48px + env(safe-area-inset-bottom, 0px));
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 20px; text-align: center; }
+/* Căn giữa bằng margin tự động: còn chỗ thì ở giữa, nội dung dài hơn màn hình thì bắt đầu từ trên và cuộn được
+   (justify-content: center cắt mất phần trên/dưới, nút Gieo / Xem kết quả có thể nằm khuất). */
+.ritual-body > :first-child { margin-top: auto; }
+.ritual-body > :last-child { margin-bottom: auto; }
 .ritual-question { font-size: clamp(1.15rem, 3.6vw, 1.5rem); font-style: italic; color: var(--gold); line-height: 1.5; margin: 0;
   text-shadow: 0 0 18px rgba(233, 201, 121, 0.35); }
 .ritual-question::before { content: "\275D"; opacity: 0.5; margin-right: 6px; }
@@ -890,3 +897,14 @@ details.read-more[open] > summary { margin-bottom: 12px; }
 .reflect textarea { width: 100%; }
 
 .line-summary { margin: 0 0 4px; font-weight: 600; }
+
+/* Màn hình thấp (điện thoại có thanh địa chỉ/công cụ): thu gọn nghi thức để nút Gieo / Xem kết quả hiện ngay. */
+@media (max-height: 720px) {
+  .ritual-body { padding-top: 48px; gap: 12px; }
+  .ritual-question { font-size: 1.05rem; }
+  .ritual-lines { gap: 6px; }
+  .r-line { height: 9px; }
+  .coins { min-height: 84px; margin: 4px 0 0; }
+  .coin { width: clamp(52px, 15vw, 68px); }
+  .caster { gap: 10px; }
+}
