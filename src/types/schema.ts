@@ -33,6 +33,10 @@ export const trigramSchema = z.object({
   asOuterSituation: z.string().min(1),
   innerSignals: z.array(z.string().min(1)).min(3).max(5),
   outerSignals: z.array(z.string().min(1)).min(3).max(5),
+  /** Mai Hoa: số Tiên thiên (乾1 … 坤8), ngũ hành, phương Hậu thiên. Phải khớp hằng số trong src/lib/meihua.ts, diagrams.ts. */
+  xiantianNumber: z.number().int().min(1).max(8).optional(),
+  element: z.enum(['kim', 'moc', 'thuy', 'hoa', 'tho']).optional(),
+  houtianDirection: z.enum(['S', 'SW', 'W', 'NW', 'N', 'NE', 'E', 'SE']).optional(),
 });
 export type Trigram = z.infer<typeof trigramSchema>;
 
@@ -224,6 +228,27 @@ export const castOutcomeSchema = z.object({
 export type CastOutcome = z.infer<typeof castOutcomeSchema>;
 
 /** Một lần gieo ở mục "Gieo quẻ" — tách khỏi bản ghi định vị. */
+/**
+ * Chi tiết một lần gieo Mai Hoa (bản ghi cũ không có). `method` là cách lấy quẻ chi tiết
+ * (`MeihuaInput.method` trong src/lib/meihuaService.ts); `CastRecord.method` chỉ giữ nhóm thô.
+ */
+export const meihuaRecordSchema = z.object({
+  method: z.string().min(1),
+  upper: trigramKey,
+  lower: trigramKey,
+  movingLine: z.number().int().min(1).max(6),
+  the: trigramKey,
+  mutual: z.number().int().min(1).max(64),
+  mutualOf: z.enum(['primary', 'transformed']),
+  verdict: z.object({
+    level: z.enum(['dai-cat', 'cat', 'binh', 'hung', 'dai-hung']),
+    score: z.number().int(),
+    codes: z.array(z.string().min(1)),
+  }),
+  ziStartsNextDay: z.boolean().optional(),
+});
+export type MeihuaRecord = z.infer<typeof meihuaRecordSchema>;
+
 export const castRecordSchema = z.object({
   id: z.string().min(1),
   profileId: z.string().min(1).default(DEFAULT_PROFILE_ID),
@@ -248,6 +273,8 @@ export const castRecordSchema = z.object({
   aiAnswer: z.object({ text: z.string().min(1), provider: z.string().min(1), at: isoDate }).optional(),
   /** Tự soi: câu hỏi app gợi theo hào cần đọc, và điều người dùng tự ghi. */
   reflections: z.array(z.object({ q: z.string().min(1), a: z.string() })).optional(),
+  /** Mai Hoa: quái, Thể, hỗ, kết luận lúc gieo (bản ghi cũ và Lục Hào không có). */
+  meihua: meihuaRecordSchema.optional(),
 });
 export type CastRecord = z.infer<typeof castRecordSchema>;
 
@@ -487,3 +514,47 @@ export const hexagramSummarySchema = z.object({
   allMoving: z.string().min(1).optional(),
 });
 export type HexagramSummary = z.infer<typeof hexagramSummarySchema>;
+
+// ---------- Mai Hoa: 八卦萬物屬類 (vạn vật loại tượng) ----------
+
+const tuongItemSchema = z.object({ han: z.string().min(1), hanViet: z.string().min(1), vi: z.string().min(1) });
+export type TuongItem = z.infer<typeof tuongItemSchema>;
+
+/** Bảng vật tượng theo nguyên văn 梅花易數 卷一; tiếng Việt là bản dịch nháp. */
+export const meihuaTuongSchema = z.object({
+  source: z.string().url(),
+  chapter: z.string().min(1),
+  status: z.literal('can-bien-tap'),
+  note: z.string().min(1),
+  categories: z.array(tuongItemSchema).min(1),
+  trigrams: z.array(
+    z.object({
+      key: trigramKey,
+      /** Dòng đầu mỗi quái trong sách, vd. 「一 金」: số Tiên thiên và hành. */
+      header: z.object({ number: z.string().length(1), element: z.string().length(1) }),
+      /** Bảng ngắn 「八卦萬物屬類（並為上卦）」. */
+      short: z.array(tuongItemSchema).min(1),
+      detail: z.array(z.object({ category: z.string().min(1), items: z.array(tuongItemSchema).min(1) })).min(1),
+      /** Chỗ nghi chép sai / khó hiểu trong nguồn. */
+      notes: z.array(z.string()),
+    }),
+  ),
+});
+export type MeihuaTuong = z.infer<typeof meihuaTuongSchema>;
+
+/** Vật hiện đại → quái: KHÔNG phải nội dung sách, quy ước gợi ý của app, mỗi mục có căn cứ trong bảng gốc. */
+export const meihuaTuongModernSchema = z.object({
+  note: z.string().min(1),
+  status: z.literal('can-bien-tap'),
+  original: z.literal(false),
+  items: z.array(
+    z.object({
+      vi: z.string().min(1),
+      trigram: trigramKey,
+      alt: z.array(trigramKey).optional(),
+      basis: z.array(z.object({ trigram: trigramKey, category: z.string().min(1), han: z.string().min(1), why: z.string().min(1) })).min(1),
+      confidence: z.enum(['cao', 'vua', 'thap']),
+    }),
+  ),
+});
+export type MeihuaTuongModern = z.infer<typeof meihuaTuongModernSchema>;

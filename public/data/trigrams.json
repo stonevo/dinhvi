@@ -18,7 +18,10 @@
       "Người có thành tích được giao thêm quyền rất nhanh",
       "Nhịp việc nhanh, ít chỗ cho do dự",
       "Nguồn lực có sẵn cho ai dám nhận"
-    ]
+    ],
+    "xiantianNumber": 1,
+    "element": "kim",
+    "houtianDirection": "NW"
   },
   {
     "key": "dui",
@@ -39,7 +42,10 @@
       "Nhiều cuộc gặp gỡ, sự kiện, giao lưu",
       "Người ta quyết định dựa vào cảm tình nhiều hơn số liệu",
       "Có lời hứa hẹn hoặc lời khen mà chưa có cam kết cụ thể"
-    ]
+    ],
+    "xiantianNumber": 2,
+    "element": "kim",
+    "houtianDirection": "W"
   },
   {
     "key": "li",
@@ -60,7 +66,10 @@
       "Bạn được chú ý nhiều hơn kỳ trước",
       "Vị trí của bạn gắn với một người bảo trợ hoặc một dự án cụ thể",
       "Thông tin lan nhanh, khó giữ kín"
-    ]
+    ],
+    "xiantianNumber": 3,
+    "element": "hoa",
+    "houtianDirection": "S"
   },
   {
     "key": "zhen",
@@ -81,7 +90,10 @@
       "Quy trình cũ bị gián đoạn",
       "Mọi người xung quanh đang bàn về cùng một sự kiện",
       "Kế hoạch hay thời hạn bị đảo lộn chỉ sau một đêm"
-    ]
+    ],
+    "xiantianNumber": 4,
+    "element": "moc",
+    "houtianDirection": "E"
   },
   {
     "key": "xun",
@@ -102,7 +114,10 @@
       "Thay đổi diễn ra từng chút, khó chỉ ra một thời điểm",
       "Người có ảnh hưởng không phải người có chức danh",
       "Làm đều trong thời gian dài được ghi nhận hơn làm mạnh một lần"
-    ]
+    ],
+    "xiantianNumber": 5,
+    "element": "moc",
+    "houtianDirection": "SE"
   },
   {
     "key": "kan",
@@ -123,7 +138,10 @@
       "Thông tin quan trọng đang bị che hoặc chưa ai biết",
       "Đã có một sự cố và hậu quả còn đang lan",
       "Người có kinh nghiệm cũng chưa rõ hướng ra"
-    ]
+    ],
+    "xiantianNumber": 6,
+    "element": "thuy",
+    "houtianDirection": "N"
   },
   {
     "key": "gen",
@@ -144,7 +162,10 @@
       "Có người hoặc quy định trả lời “chưa” với bạn",
       "Ngân sách, thời gian hoặc chỗ trống đã hết",
       "Mọi thứ không đổi so với kỳ trước dù bạn đã thử"
-    ]
+    ],
+    "xiantianNumber": 7,
+    "element": "tho",
+    "houtianDirection": "NE"
   },
   {
     "key": "kun",
@@ -165,6 +186,9 @@
       "Kết quả đến từ khối lượng đều đặn hơn là đột phá",
       "Có một nguồn lực chung (tổ chức, gia đình, cộng đồng) mà bạn dựa vào",
       "Sáng kiến riêng lẻ ít được hưởng ứng"
-    ]
+    ],
+    "xiantianNumber": 8,
+    "element": "tho",
+    "houtianDirection": "SW"
   }
 ]

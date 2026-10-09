@@ -1,8 +1,11 @@
 import { z } from 'zod';
 import {
   hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, diagramSectionSchema, hexagramSummarySchema, introSectionSchema, lineTierSchema, tenWingsBookSchema, trigramSchema, TRIGRAM_KEYS,
+  meihuaTuongModernSchema, meihuaTuongSchema, type MeihuaTuong,
   type CommentaryPart, type Hexagram, type HexagramCommentary, type Line, type LinePosition, type LineTier, type Trigram,
 } from '../types/schema';
+import { HOUTIAN_DIRECTION } from '../lib/diagrams';
+import { TRIGRAM_ELEMENT, XIANTIAN_NUMBER } from '../lib/meihua';
 import {
   TRIGRAM_BINARY, hexagramBinary, lineYinYang, oppositeHexagram, tierOfLine, trigramsOf,
 } from '../lib/iching';
@@ -135,6 +138,13 @@ export function validateTrigrams(raw: unknown): string[] {
   for (const k of TRIGRAM_KEYS) if (!keys.includes(k)) errors.push(`thiếu quái ${k}`);
   for (const t of list)
     if (t.binary !== TRIGRAM_BINARY[t.key]) errors.push(`${t.key}.binary: ${t.binary} ≠ ${TRIGRAM_BINARY[t.key]}`);
+  for (const t of list) {
+    if (t.xiantianNumber !== undefined && t.xiantianNumber !== XIANTIAN_NUMBER[t.key])
+      errors.push(`${t.key}.xiantianNumber: ${t.xiantianNumber} ≠ ${XIANTIAN_NUMBER[t.key]}`);
+    if (t.element !== undefined && t.element !== TRIGRAM_ELEMENT[t.key]) errors.push(`${t.key}.element: ${t.element} ≠ ${TRIGRAM_ELEMENT[t.key]}`);
+    if (t.houtianDirection !== undefined && t.houtianDirection !== HOUTIAN_DIRECTION[t.key])
+      errors.push(`${t.key}.houtianDirection: ${t.houtianDirection} ≠ ${HOUTIAN_DIRECTION[t.key]}`);
+  }
   return errors;
 }
 
@@ -248,5 +258,48 @@ export function validateSummaries(raw: unknown): string[] {
     if (s.kingWenNumber !== i + 1) errors.push(`vị trí ${i + 1}: quẻ ${s.kingWenNumber}`);
     if ((s.allMoving !== undefined) !== (s.kingWenNumber <= 2)) errors.push(`quẻ ${s.kingWenNumber}: allMoving chỉ có ở Càn, Khôn`);
   });
+  return errors;
+}
+
+const HAN_DIGIT: Record<string, number> = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8 };
+const HAN_ELEMENT: Record<string, string> = { 金: 'kim', 木: 'moc', 水: 'thuy', 火: 'hoa', 土: 'tho' };
+
+/** Bảng vật tượng Mai Hoa: đủ 8 quái, mục có trong danh sách, dòng đầu khớp số Tiên thiên và hành trong code. */
+export function validateMeihuaTuong(raw: unknown): string[] {
+  const parsed = meihuaTuongSchema.safeParse(raw);
+  if (!parsed.success) return zodErrors('meihuaTuong', parsed.error);
+  const d: MeihuaTuong = parsed.data;
+  const errors: string[] = [];
+  const keys = d.trigrams.map((t) => t.key);
+  for (const k of TRIGRAM_KEYS) if (!keys.includes(k)) errors.push(`thiếu quái ${k}`);
+  if (new Set(keys).size !== keys.length) errors.push('quái trùng');
+  const cats = new Set(d.categories.map((c) => c.han));
+  for (const t of d.trigrams) {
+    if (HAN_DIGIT[t.header.number] !== XIANTIAN_NUMBER[t.key]) errors.push(`${t.key}.header.number ${t.header.number} ≠ ${XIANTIAN_NUMBER[t.key]}`);
+    if (HAN_ELEMENT[t.header.element] !== TRIGRAM_ELEMENT[t.key]) errors.push(`${t.key}.header.element ${t.header.element} ≠ ${TRIGRAM_ELEMENT[t.key]}`);
+    for (const c of t.detail) if (!cats.has(c.category)) errors.push(`${t.key}: mục lạ ${c.category}`);
+  }
+  return errors;
+}
+
+/** Bảng vật hiện đại: mỗi căn cứ phải là một vật tượng có thật trong bảng gốc (đúng quái, đúng mục). */
+export function validateMeihuaTuongModern(raw: unknown, tuongRaw: unknown): string[] {
+  const parsed = meihuaTuongModernSchema.safeParse(raw);
+  if (!parsed.success) return zodErrors('meihuaTuongModern', parsed.error);
+  const tuong = meihuaTuongSchema.safeParse(tuongRaw);
+  if (!tuong.success) return ['bảng gốc không hợp lệ'];
+  const has = (key: string, category: string, han: string) => {
+    const t = tuong.data.trigrams.find((x) => x.key === key);
+    if (!t) return false;
+    if (category === 'short') return t.short.some((i) => i.han === han);
+    return t.detail.some((c) => c.category === category && c.items.some((i) => i.han === han));
+  };
+  const errors: string[] = [];
+  for (const it of parsed.data.items) {
+    for (const b of it.basis) if (!has(b.trigram, b.category, b.han)) errors.push(`${it.vi}: căn cứ ${b.trigram}/${b.category}/${b.han} không có trong bảng gốc`);
+    const allowed = new Set([it.trigram, ...(it.alt ?? [])]);
+    for (const b of it.basis) if (!allowed.has(b.trigram)) errors.push(`${it.vi}: căn cứ thuộc ${b.trigram} nhưng không nằm trong trigram/alt`);
+    if (!it.basis.some((b) => b.trigram === it.trigram)) errors.push(`${it.vi}: quái chính ${it.trigram} không có căn cứ`);
+  }
   return errors;
 }

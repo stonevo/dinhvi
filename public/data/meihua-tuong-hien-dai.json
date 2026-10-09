@@ -1,0 +1,1212 @@
+{
+ "note": "KHÔNG phải nội dung sách Mai Hoa Dịch Số. Đây là quy ước gợi ý của app Định Vị: mỗi vật hiện đại được quy về quái dựa trên một vật tượng có thật trong 八卦萬物屬類 (梅花易數 卷一, xem meihua-tuong.json), ghi ở basis. Cần biên tập. Các vật chỉ suy được rất xa (điện thoại, máy tính, tiền giấy…) đã bỏ.",
+ "status": "can-bien-tap",
+ "original": false,
+ "items": [
+  {
+   "vi": "ô tô",
+   "trigram": "kun",
+   "alt": [
+    "kan",
+    "qian"
+   ],
+   "basis": [
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "輿輦",
+     "why": "xe chở người, chở đồ"
+    },
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "弓輪",
+     "why": "có bánh xe"
+    },
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "剛物",
+     "why": "khối vỏ cứng bằng kim loại"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "bánh xe",
+   "trigram": "kan",
+   "alt": [
+    "qian"
+   ],
+   "basis": [
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "弓輪",
+     "why": "gần chữ nhất: bánh xe"
+    },
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "圓物",
+     "why": "vật tròn"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "tàu thuyền",
+   "trigram": "kan",
+   "alt": [
+    "xun"
+   ],
+   "basis": [
+    {
+     "trigram": "kan",
+     "category": "人物",
+     "han": "舟人",
+     "why": "người đi thuyền, vật đi trên nước"
+    },
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "水",
+     "why": "đi trên nước"
+    },
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "帆",
+     "why": "cánh buồm"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "tivi",
+   "trigram": "li",
+   "alt": [
+    "zhen"
+   ],
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "電",
+     "why": "chạy điện, phát sáng"
+    },
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "目",
+     "why": "vật để nhìn"
+    },
+    {
+     "trigram": "zhen",
+     "category": "身體",
+     "han": "聲音",
+     "why": "phát tiếng"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "đèn điện",
+   "trigram": "li",
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "火",
+     "why": "vật phát sáng"
+    },
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "電",
+     "why": "ánh điện"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "tủ lạnh",
+   "trigram": "qian",
+   "alt": [
+    "kan"
+   ],
+   "basis": [
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "水寒",
+     "why": "lạnh"
+    },
+    {
+     "trigram": "qian",
+     "category": "天時",
+     "han": "冰",
+     "why": "làm ra đá lạnh"
+    },
+    {
+     "trigram": "kan",
+     "category": "飲食",
+     "han": "冷味",
+     "why": "đồ ăn lạnh"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "điều hoà",
+   "trigram": "xun",
+   "alt": [
+    "qian"
+   ],
+   "basis": [
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "風",
+     "why": "thổi gió"
+    },
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "水寒",
+     "why": "làm mát lạnh"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "quạt điện",
+   "trigram": "xun",
+   "basis": [
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "扇",
+     "why": "gần chữ nhất: cái quạt"
+    },
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "風",
+     "why": "tạo gió"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "loa",
+   "trigram": "zhen",
+   "alt": [
+    "dui"
+   ],
+   "basis": [
+    {
+     "trigram": "zhen",
+     "category": "身體",
+     "han": "聲音",
+     "why": "phát tiếng"
+    },
+    {
+     "trigram": "zhen",
+     "category": "人事",
+     "han": "鼓動噪",
+     "why": "ồn ào, rung động"
+    },
+    {
+     "trigram": "dui",
+     "category": "人事",
+     "han": "口",
+     "why": "phát lời nói"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "đàn, nhạc cụ bằng gỗ/tre",
+   "trigram": "zhen",
+   "alt": [
+    "dui"
+   ],
+   "basis": [
+    {
+     "trigram": "zhen",
+     "category": "short",
+     "han": "樂器之類",
+     "why": "các loại nhạc cụ"
+    },
+    {
+     "trigram": "zhen",
+     "category": "靜物",
+     "han": "樂器（屬竹木者）",
+     "why": "nhạc cụ làm bằng tre gỗ"
+    },
+    {
+     "trigram": "dui",
+     "category": "靜物",
+     "han": "樂器",
+     "why": "nhạc cụ (bên Đoài, gắn với kim khí)"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "kính mắt",
+   "trigram": "li",
+   "alt": [
+    "qian"
+   ],
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "目",
+     "why": "đeo ở mắt, để nhìn"
+    },
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "鏡",
+     "why": "mặt kính"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "dao, kéo",
+   "trigram": "dui",
+   "alt": [
+    "li"
+   ],
+   "basis": [
+    {
+     "trigram": "dui",
+     "category": "靜物",
+     "han": "金刀",
+     "why": "dao kim loại"
+    },
+    {
+     "trigram": "dui",
+     "category": "short",
+     "han": "毀折之物",
+     "why": "vật cắt, làm gãy"
+    },
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "戈兵",
+     "why": "binh khí"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "súng, vũ khí",
+   "trigram": "li",
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "戈兵",
+     "why": "binh khí"
+    },
+    {
+     "trigram": "li",
+     "category": "靜物",
+     "han": "干戈",
+     "why": "giáo mác"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "mũ bảo hiểm, áo giáp",
+   "trigram": "li",
+   "alt": [
+    "qian"
+   ],
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "甲胄",
+     "why": "áo giáp mũ trụ"
+    },
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "凡有殼之物",
+     "why": "có vỏ cứng bọc ngoài"
+    },
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "冠",
+     "why": "đội trên đầu"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "dây điện, dây thừng",
+   "trigram": "xun",
+   "basis": [
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "繩",
+     "why": "dây"
+    },
+    {
+     "trigram": "xun",
+     "category": "靜物",
+     "han": "長物",
+     "why": "vật dài"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "gậy, sào, ống dài",
+   "trigram": "xun",
+   "alt": [
+    "kun"
+   ],
+   "basis": [
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "直物",
+     "why": "vật thẳng"
+    },
+    {
+     "trigram": "xun",
+     "category": "靜物",
+     "han": "長物",
+     "why": "vật dài"
+    },
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "柄",
+     "why": "cán cầm"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "bút",
+   "trigram": "xun",
+   "alt": [
+    "li"
+   ],
+   "basis": [
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "直物",
+     "why": "vật thẳng, dài"
+    },
+    {
+     "trigram": "li",
+     "category": "靜物",
+     "han": "文",
+     "why": "dùng viết chữ"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "sách",
+   "trigram": "li",
+   "alt": [
+    "kun"
+   ],
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "靜物",
+     "han": "書",
+     "why": "sách"
+    },
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "文書",
+     "why": "giấy tờ, văn thư"
+    },
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "書",
+     "why": "sách (Khôn cũng có chữ 書)"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "giấy tờ, hợp đồng",
+   "trigram": "li",
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "文書",
+     "why": "gần chữ nhất: văn thư"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "vàng bạc, trang sức",
+   "trigram": "qian",
+   "alt": [
+    "kun"
+   ],
+   "basis": [
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "金寶",
+     "why": "vàng bạc châu báu"
+    },
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "珠玉",
+     "why": "ngọc"
+    },
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "金",
+     "why": "kim loại quý"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "túi xách, ba lô",
+   "trigram": "dui",
+   "alt": [
+    "kun"
+   ],
+   "basis": [
+    {
+     "trigram": "dui",
+     "category": "short",
+     "han": "帶口之器",
+     "why": "đồ đựng có miệng"
+    },
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "布帛",
+     "why": "làm bằng vải"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "cốc, chai, lọ",
+   "trigram": "dui",
+   "alt": [
+    "kan"
+   ],
+   "basis": [
+    {
+     "trigram": "dui",
+     "category": "short",
+     "han": "帶口之器",
+     "why": "đồ đựng có miệng"
+    },
+    {
+     "trigram": "kan",
+     "category": "靜物",
+     "han": "酒器",
+     "why": "đồ đựng rượu, nước"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "giày dép",
+   "trigram": "zhen",
+   "alt": [
+    "kun"
+   ],
+   "basis": [
+    {
+     "trigram": "zhen",
+     "category": "short",
+     "han": "足",
+     "why": "đi ở chân"
+    },
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "布帛",
+     "why": "làm bằng vải"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "quần áo",
+   "trigram": "kun",
+   "basis": [
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "裳",
+     "why": "xiêm áo"
+    },
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "布帛",
+     "why": "vải vóc"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "nước hoa",
+   "trigram": "xun",
+   "basis": [
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "香氣",
+     "why": "hương thơm"
+    },
+    {
+     "trigram": "xun",
+     "category": "靜物",
+     "han": "木香",
+     "why": "mùi thơm"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "đồ màu đỏ, tím",
+   "trigram": "li",
+   "alt": [
+    "qian"
+   ],
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "紅赤紫色",
+     "why": "màu đỏ, tía"
+    },
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "大赤色",
+     "why": "đỏ thẫm"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "đồ màu vàng",
+   "trigram": "kun",
+   "alt": [
+    "gen"
+   ],
+   "basis": [
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "黃色",
+     "why": "màu vàng"
+    },
+    {
+     "trigram": "gen",
+     "category": "short",
+     "han": "黃色",
+     "why": "màu vàng"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "đồ màu xanh lá, xanh lam",
+   "trigram": "zhen",
+   "alt": [
+    "xun"
+   ],
+   "basis": [
+    {
+     "trigram": "zhen",
+     "category": "short",
+     "han": "青碧綠色",
+     "why": "xanh"
+    },
+    {
+     "trigram": "xun",
+     "category": "五色",
+     "han": "綠",
+     "why": "xanh lục"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "đồ màu trắng",
+   "trigram": "dui",
+   "alt": [
+    "xun"
+   ],
+   "basis": [
+    {
+     "trigram": "dui",
+     "category": "五色",
+     "han": "白",
+     "why": "trắng"
+    },
+    {
+     "trigram": "xun",
+     "category": "五色",
+     "han": "潔白",
+     "why": "trắng tinh"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "đồ màu đen",
+   "trigram": "kan",
+   "alt": [
+    "kun"
+   ],
+   "basis": [
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "黑色",
+     "why": "đen"
+    },
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "黑色",
+     "why": "đen"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "nước uống",
+   "trigram": "kan",
+   "basis": [
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "水",
+     "why": "nước"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "rượu, bia",
+   "trigram": "kan",
+   "basis": [
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "酒",
+     "why": "rượu"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "gạo, cơm",
+   "trigram": "kun",
+   "basis": [
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "米",
+     "why": "gạo"
+    },
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "穀",
+     "why": "thóc lúa"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "bánh mì",
+   "trigram": "kun",
+   "alt": [
+    "li"
+   ],
+   "basis": [
+    {
+     "trigram": "kun",
+     "category": "靜物",
+     "han": "五穀",
+     "why": "làm từ ngũ cốc"
+    },
+    {
+     "trigram": "li",
+     "category": "飲食",
+     "han": "燒炙之物",
+     "why": "đồ nướng"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "sếp, quan chức",
+   "trigram": "qian",
+   "basis": [
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "官貴",
+     "why": "quan sang"
+    },
+    {
+     "trigram": "qian",
+     "category": "人物",
+     "han": "官宦",
+     "why": "quan lại"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "công an, cảnh sát",
+   "trigram": "qian",
+   "alt": [
+    "li"
+   ],
+   "basis": [
+    {
+     "trigram": "qian",
+     "category": "人物",
+     "han": "公門人",
+     "why": "người làm việc công môn"
+    },
+    {
+     "trigram": "qian",
+     "category": "求名",
+     "han": "刑官",
+     "why": "quan coi hình án"
+    },
+    {
+     "trigram": "li",
+     "category": "人物",
+     "han": "甲胄之士",
+     "why": "người mặc giáp"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "bộ đội",
+   "trigram": "li",
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "人物",
+     "han": "甲胄之士",
+     "why": "người mặc giáp"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "giáo viên, người làm chữ",
+   "trigram": "li",
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "文人",
+     "why": "người văn học"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "kỹ sư, thợ",
+   "trigram": "xun",
+   "alt": [
+    "kan"
+   ],
+   "basis": [
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "仙道工匠",
+     "why": "thợ khéo"
+    },
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "工",
+     "why": "thợ"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "người già (nam)",
+   "trigram": "qian",
+   "basis": [
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "老人",
+     "why": "người già"
+    },
+    {
+     "trigram": "qian",
+     "category": "short",
+     "han": "父",
+     "why": "cha"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "người già (nữ)",
+   "trigram": "kun",
+   "basis": [
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "老婦",
+     "why": "bà già"
+    },
+    {
+     "trigram": "kun",
+     "category": "short",
+     "han": "母",
+     "why": "mẹ"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "bé trai",
+   "trigram": "gen",
+   "basis": [
+    {
+     "trigram": "gen",
+     "category": "short",
+     "han": "童子",
+     "why": "trẻ nhỏ"
+    },
+    {
+     "trigram": "gen",
+     "category": "short",
+     "han": "少男",
+     "why": "con trai nhỏ"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "bé gái, thiếu nữ",
+   "trigram": "dui",
+   "basis": [
+    {
+     "trigram": "dui",
+     "category": "short",
+     "han": "少女",
+     "why": "con gái nhỏ"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "ca sĩ, diễn viên",
+   "trigram": "dui",
+   "basis": [
+    {
+     "trigram": "dui",
+     "category": "人物",
+     "han": "歌妓",
+     "why": "người hát"
+    },
+    {
+     "trigram": "dui",
+     "category": "人物",
+     "han": "伶人",
+     "why": "đào kép"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "chó",
+   "trigram": "gen",
+   "basis": [
+    {
+     "trigram": "gen",
+     "category": "short",
+     "han": "狗",
+     "why": "chó"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "chim cảnh",
+   "trigram": "xun",
+   "basis": [
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "百禽",
+     "why": "các loài chim"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "cá cảnh",
+   "trigram": "kan",
+   "basis": [
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "魚",
+     "why": "cá"
+    },
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "水族",
+     "why": "loài sống dưới nước"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "cây cảnh",
+   "trigram": "zhen",
+   "alt": [
+    "xun"
+   ],
+   "basis": [
+    {
+     "trigram": "zhen",
+     "category": "short",
+     "han": "樹",
+     "why": "cây"
+    },
+    {
+     "trigram": "zhen",
+     "category": "short",
+     "han": "草木",
+     "why": "cây cỏ"
+    },
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "枝葉之類",
+     "why": "cành lá"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "hoa",
+   "trigram": "li",
+   "alt": [
+    "zhen"
+   ],
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "花",
+     "why": "hoa"
+    },
+    {
+     "trigram": "zhen",
+     "category": "靜物",
+     "han": "花草繁鮮之物",
+     "why": "hoa cỏ tươi tốt"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "mưa",
+   "trigram": "kan",
+   "alt": [
+    "dui"
+   ],
+   "basis": [
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "雨",
+     "why": "mưa"
+    },
+    {
+     "trigram": "dui",
+     "category": "天時",
+     "han": "雨澤",
+     "why": "mưa móc"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "sấm",
+   "trigram": "zhen",
+   "basis": [
+    {
+     "trigram": "zhen",
+     "category": "short",
+     "han": "雷",
+     "why": "sấm"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "chớp, sét",
+   "trigram": "li",
+   "alt": [
+    "zhen"
+   ],
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "電",
+     "why": "chớp"
+    },
+    {
+     "trigram": "zhen",
+     "category": "short",
+     "han": "雷",
+     "why": "sấm đi kèm"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "nắng, mặt trời",
+   "trigram": "li",
+   "basis": [
+    {
+     "trigram": "li",
+     "category": "short",
+     "han": "日",
+     "why": "mặt trời"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "gió",
+   "trigram": "xun",
+   "basis": [
+    {
+     "trigram": "xun",
+     "category": "short",
+     "han": "風",
+     "why": "gió"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "trăng",
+   "trigram": "kan",
+   "alt": [
+    "dui"
+   ],
+   "basis": [
+    {
+     "trigram": "kan",
+     "category": "short",
+     "han": "月",
+     "why": "trăng"
+    },
+    {
+     "trigram": "dui",
+     "category": "天時",
+     "han": "新月",
+     "why": "trăng non"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "cửa",
+   "trigram": "gen",
+   "basis": [
+    {
+     "trigram": "gen",
+     "category": "short",
+     "han": "門闕",
+     "why": "cửa"
+    }
+   ],
+   "confidence": "cao"
+  },
+  {
+   "vi": "nhà cao tầng",
+   "trigram": "qian",
+   "alt": [
+    "zhen"
+   ],
+   "basis": [
+    {
+     "trigram": "qian",
+     "category": "屋舍",
+     "han": "大廈",
+     "why": "nhà lớn"
+    },
+    {
+     "trigram": "qian",
+     "category": "屋舍",
+     "han": "樓臺",
+     "why": "lầu đài"
+    },
+    {
+     "trigram": "zhen",
+     "category": "屋舍",
+     "han": "樓閣",
+     "why": "lầu gác"
+    }
+   ],
+   "confidence": "vua"
+  },
+  {
+   "vi": "chợ, phố đông",
+   "trigram": "zhen",
+   "basis": [
+    {
+     "trigram": "zhen",
+     "category": "地理",
+     "han": "鬧市",
+     "why": "chợ ồn ào"
+    }
+   ],
+   "confidence": "cao"
+  }
+ ]
+}

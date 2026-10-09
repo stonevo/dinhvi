@@ -22,6 +22,10 @@ export const XIANTIAN_NUMBER: Record<TrigramKey, number> = {
   kun: 8,
 };
 
+// Nguồn: 梅花易數 (Thiệu Khang Tiết, tương truyền), nguyên văn trên zh.wikisource.org:
+//   卷一 = https://zh.wikisource.org/wiki/梅花易數/卷一 (象數易理篇), 卷二 = …/卷二 (體用生克篇).
+// Mỗi quy tắc dưới đây ghi chương và câu gốc. Chỗ nào là quy ước của app (không có trong sách) thì ghi rõ.
+
 export type MeihuaMethod =
   | 'time'
   | 'numbers'
@@ -30,7 +34,10 @@ export type MeihuaMethod =
   | 'text-han'
   | 'text-han-single-left-right'
   | 'text-han-single-hour'
-  | 'text-quocngu-adapted';
+  | 'text-quocngu-adapted'
+  | 'count'
+  | 'houtian'
+  | 'manual';
 
 export type MovingLine = 1 | 2 | 3 | 4 | 5 | 6;
 
@@ -109,6 +116,8 @@ export interface LunarTimeParts {
 }
 
 /**
+ * 卷一 · 年月日時起例: 「年月日為上卦。年月日加時總數為下卦。又以年月日時總數取爻。
+ * 如子年一數…亥年十二數」. Chia dư theo 卷一 · 卦以八除；爻以六除.
  * Niên nguyệt nhật thời khởi quẻ (年月日時起卦):
  * quái trên = (năm + tháng + ngày) mod 8; quái dưới = (năm + tháng + ngày + giờ) mod 8;
  * hào động = (năm + tháng + ngày + giờ) mod 6.
@@ -128,6 +137,9 @@ export function byTime(t: LunarTimeParts): MeihuaCast {
 // ---------- Lấy quẻ theo số ----------
 
 /**
+ * 卷一 · 丈尺占: 「以丈數為上卦，尺數為下卦。合丈尺之數取爻」 (không cộng giờ);
+ * 卷一 · 尺寸占: 「以尺數為上卦，寸數為下卦。合尺寸之數加時取爻」 (cộng giờ).
+ * Ví dụ 鄰夜扣門借物占 (卷一): hai loạt tiếng gõ 1 và 5 làm trên/dưới, hào = 1 + 5 + giờ Dậu 10.
  * Hai số (二數起卦): số đầu → quái trên, số sau → quái dưới, hào động = a + b.
  * Có hai cách chép: (1) hào động = a + b; (2) hào động = a + b + chi giờ.
  * Mặc định: chỉ cộng giờ khi người gọi truyền `hourBranchNumber`.
@@ -140,6 +152,8 @@ export function byNumbers(a: number, b: number, hourBranchNumber?: number): Meih
 }
 
 /**
+ * 卷一 · 聲音占例: 「凡聞聲音，數得幾數，起作上卦，加時數配作下卦」. Sách không nói cách lấy
+ * hào ở mục này; app lấy (số + giờ) như 物數占例 (xem byCount).
  * Một số (một con số / số tiếng nghe được — 聲音占): số → quái trên,
  * số + chi giờ → quái dưới, số + chi giờ → hào động. Bắt buộc có giờ,
  * vì không có giờ thì quái trên và quái dưới trùng nhau một cách máy móc.
@@ -148,6 +162,33 @@ export function byNumber(n: number, hourBranchNumber: number): MeihuaCast {
   assertCount(n, 'Số');
   assertBranch(hourBranchNumber, 'Chi giờ');
   return build('number-single', n, n + hourBranchNumber, n + hourBranchNumber);
+}
+
+/**
+ * 卷一 · 物數占例: 「凡見有可數之物，即以此數起作上卦，以時數配作下卦。即以卦數並時數總除六取動爻」.
+ * Khác 聲音占 ở quái dưới: ở đây quái dưới chỉ là chi giờ (không cộng số vật).
+ */
+export function byCount(n: number, hourBranchNumber: number): MeihuaCast {
+  assertCount(n, 'Số vật');
+  assertBranch(hourBranchNumber, 'Chi giờ');
+  return build('count', n, hourBranchNumber, n + hourBranchNumber);
+}
+
+/**
+ * Hậu thiên — vật + phương (卷一 · 物卦起例（端法後天起卦）):
+ * 「後天端法：以物為上卦，方位為下卦，合物卦之數與方卦之數加時數以取動爻」.
+ * Số dùng là số Tiên thiên (乾1…坤8), không phải số Lạc thư: 卷二 · 先天後天論
+ * 「數自成乾一、兌二、離三…故占卜起卦，合以此數為用…後天起卦定爻必加時而後可」.
+ * `object`: quái của vật/người (tra bảng 八卦萬物屬類); `direction`: quái của phương
+ * người/vật đến theo phương vị Hậu thiên (離南坎北，震東兌西…).
+ * Ví dụ 老人有憂色占: 乾1 + 巽5 + giờ Mão 4 = 10 → hào 4.
+ */
+export function byObject(object: TrigramKey, direction: TrigramKey, hourBranchNumber: number): MeihuaCast {
+  assertBranch(hourBranchNumber, 'Chi giờ');
+  const u = XIANTIAN_NUMBER[object];
+  const l = XIANTIAN_NUMBER[direction];
+  const c = build('houtian', u, l, u + l + hourBranchNumber);
+  return { ...c, note: 'Hậu thiên: vật làm quái trên, phương làm quái dưới; hào = số Tiên thiên của hai quái + chi giờ.' };
 }
 
 /**
@@ -339,7 +380,10 @@ const RELATIONS: Record<RelationKey, Omit<Relation, 'key'>> = {
   },
 };
 
-/** Quan hệ của hành `other` đối với hành của Thể. */
+/**
+ * Quan hệ của hành `other` đối với hành của Thể. 卷二 · 體用總訣: 「體克用，諸事吉；用克體，諸事凶。
+ * 體生用，有耗失之患；用生體，有進益之喜。體用比和，則百事順遂」.
+ */
 export function relationToThe(the: Element, other: Element): Relation {
   const key: RelationKey =
     the === other
@@ -365,6 +409,9 @@ export const STRENGTH_VI: Record<SeasonalStrength, string> = {
 };
 
 /**
+ * Sách (卷二 · 體用總訣) chỉ chia thịnh / suy: 「盛者如春震、巽，秋乾、兌，夏離，冬坎，四季之月坤、艮…
+ * 衰者，春坤、艮，秋震、巽，夏乾兌，冬離，四季之月坎」. Thang năm bậc dưới đây là cách chia
+ * vượng tướng hưu tù tử thông dụng, bao trùm hai bậc của sách (vượng = thịnh, tử = suy).
  * Vượng tướng hưu tù tử của một hành theo hành đang lệnh (tháng):
  * cùng hành = vượng; lệnh sinh nó = tướng; nó sinh lệnh = hưu;
  * nó khắc lệnh = tù; lệnh khắc nó = tử.
@@ -403,6 +450,8 @@ export interface MeihuaAnalysis {
   mutual: number;
   mutualUpper: TrigramKey;
   mutualLower: TrigramKey;
+  /** Hỗ lấy từ quẻ chính, hay từ quẻ biến khi quẻ chính là Thuần Càn / Thuần Khôn (乾坤無互，互其變卦). */
+  mutualOf: 'primary' | 'transformed';
   /** Thể nằm ở quái không có hào động. */
   thePosition: 'upper' | 'lower';
   the: TrigramRole;
@@ -416,14 +465,21 @@ export interface MeihuaAnalysis {
   theStrength?: { monthElement: Element; key: SeasonalStrength; label: string };
 }
 
+/**
+ * Phân tích Thể – Dụng. 卷二 · 體用總訣: 「體卦為主，用卦為事，互卦為事之中間，刻應變卦為事之終」;
+ * trang chính (khảo cứu): 「凡上下二卦無動爻者為體，有動爻者為用」.
+ */
 export function analyze(cast: Pick<MeihuaCast, 'upper' | 'lower' | 'movingLine'>, opts: { monthElement?: Element } = {}): MeihuaAnalysis {
   const { upper, lower, movingLine } = cast;
   const primary = hexagramFromTrigrams(lower, upper);
   const bin = hexagramBinary(primary);
   const flipped = [...bin].map((c, i) => (i === movingLine - 1 ? (c === '1' ? '0' : '1') : c)).join('');
   const transformed = hexagramFromBinary(flipped);
-  const mutualLower = trigramFromBinary(bin.slice(1, 4));
-  const mutualUpper = trigramFromBinary(bin.slice(2, 5));
+  // 卷一 · 互卦起例: 「以中間四爻分作兩卦…乾坤無互，互其變卦」 — Thuần Càn / Thuần Khôn lấy hỗ của quẻ biến.
+  const mutualOf: 'primary' | 'transformed' = primary === 1 || primary === 2 ? 'transformed' : 'primary';
+  const mBin = mutualOf === 'primary' ? bin : flipped;
+  const mutualLower = trigramFromBinary(mBin.slice(1, 4));
+  const mutualUpper = trigramFromBinary(mBin.slice(2, 5));
   const mutual = hexagramFromTrigrams(mutualLower, mutualUpper);
 
   const dungIsLower = movingLine <= 3;
@@ -444,6 +500,7 @@ export function analyze(cast: Pick<MeihuaCast, 'upper' | 'lower' | 'movingLine'>
     mutual,
     mutualUpper,
     mutualLower,
+    mutualOf,
     thePosition: dungIsLower ? 'upper' : 'lower',
     the: { trigram: theTrigram, element: theEl },
     dung: role(dungTrigram),
@@ -456,4 +513,105 @@ export function analyze(cast: Pick<MeihuaCast, 'upper' | 'lower' | 'movingLine'>
     result.theStrength = { monthElement: opts.monthElement, key, label: STRENGTH_VI[key] };
   }
   return result;
+}
+
+// ---------- Hành đang lệnh theo tiết khí ----------
+
+/**
+ * Hành đang lệnh theo chi tháng tiết khí (`branch` 0 = Tý … 11 = Hợi, như `monthCanChi.branch`
+ * của lunar.ts): Dần Mão Mộc, Tỵ Ngọ Hỏa, Thân Dậu Kim, Hợi Tý Thủy, Thìn Tuất Sửu Mùi Thổ.
+ * Đây là cách chuẩn của app để xét vượng suy (tháng đổi ở tiết: Lập Xuân, Kinh Trập…);
+ * `monthElementOfLunarMonth` chỉ giữ để tương thích.
+ */
+export function monthElementOfBranch(branch: number): Element {
+  if (!Number.isInteger(branch) || branch < 0 || branch > 11) throw new RangeError(`Chi tháng phải 0–11 (Tý=0): ${branch}`);
+  if (branch === 2 || branch === 3) return 'moc';
+  if (branch === 5 || branch === 6) return 'hoa';
+  if (branch === 8 || branch === 9) return 'kim';
+  if (branch === 11 || branch === 0) return 'thuy';
+  return 'tho';
+}
+
+// ---------- Nhập tay ----------
+
+/** Nhập tay quái trên, quái dưới, hào động (vd. đã lập quẻ ở nơi khác, hoặc chép lại một quẻ trong sách). */
+export function byManual(upper: TrigramKey, lower: TrigramKey, movingLine: MovingLine): MeihuaCast {
+  if (!XIANTIAN_ORDER.includes(upper) || !XIANTIAN_ORDER.includes(lower)) throw new RangeError('Quái không hợp lệ');
+  if (!Number.isInteger(movingLine) || movingLine < 1 || movingLine > 6) throw new RangeError(`Hào động phải 1–6: ${movingLine}`);
+  return {
+    method: 'manual',
+    upperSum: XIANTIAN_NUMBER[upper],
+    lowerSum: XIANTIAN_NUMBER[lower],
+    movingSum: movingLine,
+    upper,
+    lower,
+    movingLine,
+    steps: [`Nhập tay: quái trên ${TRIGRAM_VI[upper]}, quái dưới ${TRIGRAM_VI[lower]}, hào động ${movingLine}`],
+  };
+}
+
+// ---------- Kết luận tổng hợp ----------
+
+export type VerdictLevel = 'dai-cat' | 'cat' | 'binh' | 'hung' | 'dai-hung';
+
+export const VERDICT_VI: Record<VerdictLevel, string> = {
+  'dai-cat': 'Đại cát',
+  cat: 'Cát',
+  binh: 'Bình',
+  hung: 'Hung',
+  'dai-hung': 'Đại hung',
+};
+
+/** Một yếu tố góp vào kết luận: vai (Dụng / hỗ / biến / vượng suy của Thể), mã lý do, điểm cộng trừ. */
+export interface VerdictFactor {
+  role: 'dung' | 'ho-tren' | 'ho-duoi' | 'bien' | 'the-vuong-suy';
+  /** Mã lý do ổn định để lớp diễn giải và AI dùng, vd. "DUNG:dung-khac-the", "THE:tu-dead". */
+  code: string;
+  effect: number;
+  label: string;
+}
+
+export interface MeihuaVerdict {
+  level: VerdictLevel;
+  label: string;
+  score: number;
+  factors: VerdictFactor[];
+}
+
+/**
+ * Điểm theo quan hệ ngũ hành với Thể. Sách cho quy tắc định tính (Dụng sinh Thể, Thể khắc Dụng,
+ * tỷ hòa: cát; Thể sinh Dụng: hao; Dụng khắc Thể: hung — xem `RELATIONS`); bảng điểm dưới đây là
+ * QUY ƯỚC CỦA APP để gộp các yếu tố thành một mức, không phải lời sách.
+ */
+const DUNG_SCORE: Record<RelationKey, number> = { 'dung-sinh-the': 2, 'the-khac-dung': 1, 'ty-hoa': 1, 'the-sinh-dung': -1, 'dung-khac-the': -2 };
+/** Hỗ (diễn biến giữa chừng) và biến (kết cục) chỉ tính phần sinh / khắc Thể, nhẹ hơn Dụng. */
+const SIDE_SCORE: Record<RelationKey, number> = { 'dung-sinh-the': 1, 'the-khac-dung': 0, 'ty-hoa': 0, 'the-sinh-dung': 0, 'dung-khac-the': -1 };
+const STRENGTH_SCORE: Record<SeasonalStrength, number> = { vuong: 1, tuong: 1, huu: 0, 'tu-imprisoned': -1, 'tu-dead': -1 };
+
+/**
+ * Gộp phân tích Thể – Dụng thành một mức cát / hung kèm các yếu tố có mã lý do.
+ * Căn cứ (卷二 · 體用總訣): 「宜受他卦之生，不宜他卦之克。他卦者，謂用互變也」 — xét cả Dụng, hỗ, biến;
+ * 「體盛則吉，體衰則凶」 — vượng suy của Thể; 卷二 · 卦斷遺論 giải các ví dụ 少年 / 牛 bằng việc hỗ, biến
+ * cùng sinh hoặc cùng khắc Thể. Cách cho điểm là quy ước của app (xem DUNG_SCORE).
+ * Thứ tự xét như sách: Dụng (chính), rồi hỗ quái (giữa chừng), biến quái (kết cục), và vượng suy của Thể theo tháng.
+ * Mức: điểm ≥ 3 đại cát; ≥ 1 cát; 0 bình; ≤ −1 hung; ≤ −3 đại hung.
+ */
+export function verdict(a: MeihuaAnalysis): MeihuaVerdict {
+  const rel = (role: VerdictFactor['role'], r: RoleWithRelation, table: Record<RelationKey, number>, prefix: string): VerdictFactor => ({
+    role,
+    code: `${prefix}:${r.relation.key}`,
+    effect: table[r.relation.key],
+    label: `${prefix === 'DUNG' ? 'Dụng' : prefix === 'BIEN' ? 'Biến quái' : prefix === 'HO_TREN' ? 'Hỗ trên' : 'Hỗ dưới'}: ${r.relation.label}`,
+  });
+  const factors: VerdictFactor[] = [
+    rel('dung', a.dung, DUNG_SCORE, 'DUNG'),
+    rel('ho-tren', a.mutualUpperRole, SIDE_SCORE, 'HO_TREN'),
+    rel('ho-duoi', a.mutualLowerRole, SIDE_SCORE, 'HO_DUOI'),
+    rel('bien', a.changed, SIDE_SCORE, 'BIEN'),
+  ];
+  if (a.theStrength)
+    factors.push({ role: 'the-vuong-suy', code: `THE:${a.theStrength.key}`, effect: STRENGTH_SCORE[a.theStrength.key], label: `Thể ${a.theStrength.label} theo tháng` });
+  const score = factors.reduce((s, f) => s + f.effect, 0);
+  const level: VerdictLevel = score >= 3 ? 'dai-cat' : score >= 1 ? 'cat' : score === 0 ? 'binh' : score <= -3 ? 'dai-hung' : 'hung';
+  return { level, label: VERDICT_VI[level], score, factors };
 }

@@ -1,0 +1,6328 @@
+{
+ "source": "https://zh.wikisource.org/wiki/梅花易數/卷一",
+ "chapter": "梅花易數 卷一 · 八卦萬物屬類（並為上卦） và 八卦萬物屬類",
+ "status": "can-bien-tap",
+ "note": "Chữ Hán chép nguyên văn từ zh.wikisource (giữ cả chỗ nghi chép sai, ghi ở notes). Âm Hán Việt và nghĩa tiếng Việt là bản dịch nháp của app, cần biên tập.",
+ "categories": [
+  {
+   "han": "天時",
+   "hanViet": "thiên thời",
+   "vi": "thời tiết, hiện tượng trời"
+  },
+  {
+   "han": "地理",
+   "hanViet": "địa lý",
+   "vi": "nơi chốn, địa thế"
+  },
+  {
+   "han": "人物",
+   "hanViet": "nhân vật",
+   "vi": "người"
+  },
+  {
+   "han": "人事",
+   "hanViet": "nhân sự",
+   "vi": "tính cách, cách làm việc"
+  },
+  {
+   "han": "身體",
+   "hanViet": "thân thể",
+   "vi": "bộ phận cơ thể"
+  },
+  {
+   "han": "時序",
+   "hanViet": "thời tự",
+   "vi": "mùa, thời điểm"
+  },
+  {
+   "han": "動物",
+   "hanViet": "động vật",
+   "vi": "con vật"
+  },
+  {
+   "han": "靜物",
+   "hanViet": "tĩnh vật",
+   "vi": "đồ vật"
+  },
+  {
+   "han": "屋舍",
+   "hanViet": "ốc xá",
+   "vi": "nhà cửa"
+  },
+  {
+   "han": "家宅",
+   "hanViet": "gia trạch",
+   "vi": "xem việc nhà"
+  },
+  {
+   "han": "婚姻",
+   "hanViet": "hôn nhân",
+   "vi": "xem hôn nhân"
+  },
+  {
+   "han": "飲食",
+   "hanViet": "ẩm thực",
+   "vi": "ăn uống"
+  },
+  {
+   "han": "生產",
+   "hanViet": "sinh sản",
+   "vi": "xem sinh nở"
+  },
+  {
+   "han": "求名",
+   "hanViet": "cầu danh",
+   "vi": "xem danh vị, chức vụ"
+  },
+  {
+   "han": "謀旺",
+   "hanViet": "mưu vượng",
+   "vi": "xem mưu tính việc"
+  },
+  {
+   "han": "交易",
+   "hanViet": "giao dịch",
+   "vi": "xem mua bán"
+  },
+  {
+   "han": "求利",
+   "hanViet": "cầu lợi",
+   "vi": "xem tiền của"
+  },
+  {
+   "han": "出行",
+   "hanViet": "xuất hành",
+   "vi": "xem đi xa"
+  },
+  {
+   "han": "謁見",
+   "hanViet": "yết kiến",
+   "vi": "xem gặp người"
+  },
+  {
+   "han": "疾病",
+   "hanViet": "tật bệnh",
+   "vi": "xem bệnh tật"
+  },
+  {
+   "han": "官訟",
+   "hanViet": "quan tụng",
+   "vi": "xem kiện tụng"
+  },
+  {
+   "han": "墳墓",
+   "hanViet": "phần mộ",
+   "vi": "xem mồ mả"
+  },
+  {
+   "han": "方道",
+   "hanViet": "phương đạo",
+   "vi": "phương hướng"
+  },
+  {
+   "han": "五色",
+   "hanViet": "ngũ sắc",
+   "vi": "màu sắc"
+  },
+  {
+   "han": "姓字",
+   "hanViet": "tính tự",
+   "vi": "họ, tên"
+  },
+  {
+   "han": "數目",
+   "hanViet": "số mục",
+   "vi": "con số"
+  },
+  {
+   "han": "五味",
+   "hanViet": "ngũ vị",
+   "vi": "vị"
+  }
+ ],
+ "trigrams": [
+  {
+   "key": "qian",
+   "header": {
+    "number": "一",
+    "element": "金"
+   },
+   "short": [
+    {
+     "han": "天",
+     "hanViet": "thiên",
+     "vi": "trời"
+    },
+    {
+     "han": "父",
+     "hanViet": "phụ",
+     "vi": "cha"
+    },
+    {
+     "han": "老人",
+     "hanViet": "lão nhân",
+     "vi": "người già"
+    },
+    {
+     "han": "官貴",
+     "hanViet": "quan quý",
+     "vi": "quan chức, người quyền quý"
+    },
+    {
+     "han": "頭",
+     "hanViet": "đầu",
+     "vi": "đầu"
+    },
+    {
+     "han": "骨",
+     "hanViet": "cốt",
+     "vi": "xương"
+    },
+    {
+     "han": "馬",
+     "hanViet": "mã",
+     "vi": "ngựa"
+    },
+    {
+     "han": "金寶",
+     "hanViet": "kim bảo",
+     "vi": "vàng bạc của quý"
+    },
+    {
+     "han": "珠玉",
+     "hanViet": "châu ngọc",
+     "vi": "ngọc trai, ngọc"
+    },
+    {
+     "han": "水果",
+     "hanViet": "thủy quả",
+     "vi": "trái cây"
+    },
+    {
+     "han": "圓物",
+     "hanViet": "viên vật",
+     "vi": "vật tròn"
+    },
+    {
+     "han": "冠",
+     "hanViet": "quan",
+     "vi": "mũ"
+    },
+    {
+     "han": "鏡",
+     "hanViet": "kính",
+     "vi": "gương"
+    },
+    {
+     "han": "剛物",
+     "hanViet": "cương vật",
+     "vi": "vật cứng"
+    },
+    {
+     "han": "大赤色",
+     "hanViet": "đại xích sắc",
+     "vi": "màu đỏ thẫm"
+    },
+    {
+     "han": "水寒",
+     "hanViet": "thủy hàn",
+     "vi": "nước lạnh"
+    }
+   ],
+   "detail": [
+    {
+     "category": "天時",
+     "items": [
+      {
+       "han": "天",
+       "hanViet": "thiên",
+       "vi": "trời"
+      },
+      {
+       "han": "冰",
+       "hanViet": "băng",
+       "vi": "băng"
+      },
+      {
+       "han": "雹",
+       "hanViet": "bạc",
+       "vi": "mưa đá"
+      },
+      {
+       "han": "霰",
+       "hanViet": "tản",
+       "vi": "mưa tuyết hạt"
+      }
+     ]
+    },
+    {
+     "category": "地理",
+     "items": [
+      {
+       "han": "西北方",
+       "hanViet": "tây bắc phương",
+       "vi": "phương tây bắc"
+      },
+      {
+       "han": "京都",
+       "hanViet": "kinh đô",
+       "vi": "kinh đô"
+      },
+      {
+       "han": "大郡",
+       "hanViet": "đại quận",
+       "vi": "quận lớn"
+      },
+      {
+       "han": "形勝之地",
+       "hanViet": "hình thắng chi địa",
+       "vi": "nơi địa thế hiểm đẹp"
+      },
+      {
+       "han": "高亢之所",
+       "hanViet": "cao kháng chi sở",
+       "vi": "chỗ cao ráo"
+      }
+     ]
+    },
+    {
+     "category": "人物",
+     "items": [
+      {
+       "han": "君",
+       "hanViet": "quân",
+       "vi": "vua"
+      },
+      {
+       "han": "父",
+       "hanViet": "phụ",
+       "vi": "cha"
+      },
+      {
+       "han": "大人",
+       "hanViet": "đại nhân",
+       "vi": "bậc đại nhân"
+      },
+      {
+       "han": "老人",
+       "hanViet": "lão nhân",
+       "vi": "người già"
+      },
+      {
+       "han": "長者",
+       "hanViet": "trưởng giả",
+       "vi": "bậc trưởng thượng"
+      },
+      {
+       "han": "官宦",
+       "hanViet": "quan hoạn",
+       "vi": "quan lại"
+      },
+      {
+       "han": "名人",
+       "hanViet": "danh nhân",
+       "vi": "người có danh tiếng"
+      },
+      {
+       "han": "公門人",
+       "hanViet": "công môn nhân",
+       "vi": "người làm việc công"
+      }
+     ]
+    },
+    {
+     "category": "人事",
+     "items": [
+      {
+       "han": "剛健武勇",
+       "hanViet": "cương kiện vũ dũng",
+       "vi": "cứng mạnh, võ dũng"
+      },
+      {
+       "han": "果決",
+       "hanViet": "quả quyết",
+       "vi": "quả quyết"
+      },
+      {
+       "han": "多動少靜",
+       "hanViet": "đa động thiểu tĩnh",
+       "vi": "động nhiều tĩnh ít"
+      },
+      {
+       "han": "高上下屈",
+       "hanViet": "cao thượng hạ khuất",
+       "vi": "trên cao, dưới khuất phục"
+      }
+     ]
+    },
+    {
+     "category": "身體",
+     "items": [
+      {
+       "han": "首",
+       "hanViet": "thủ",
+       "vi": "đầu"
+      },
+      {
+       "han": "骨",
+       "hanViet": "cốt",
+       "vi": "xương"
+      },
+      {
+       "han": "肺",
+       "hanViet": "phế",
+       "vi": "phổi"
+      }
+     ]
+    },
+    {
+     "category": "時序",
+     "items": [
+      {
+       "han": "秋",
+       "hanViet": "thu",
+       "vi": "mùa thu"
+      },
+      {
+       "han": "九十月之交",
+       "hanViet": "cửu thập nguyệt chi giao",
+       "vi": "giao giữa tháng 9 và tháng 10"
+      },
+      {
+       "han": "戌亥年月日時",
+       "hanViet": "tuất hợi niên nguyệt nhật thời",
+       "vi": "năm, tháng, ngày, giờ Tuất, Hợi"
+      },
+      {
+       "han": "一四九年月日時",
+       "hanViet": "nhất tứ cửu niên nguyệt nhật thời",
+       "vi": "năm, tháng, ngày, giờ mang số 1, 4, 9"
+      }
+     ]
+    },
+    {
+     "category": "動物",
+     "items": [
+      {
+       "han": "馬",
+       "hanViet": "mã",
+       "vi": "ngựa"
+      },
+      {
+       "han": "天鵝",
+       "hanViet": "thiên nga",
+       "vi": "thiên nga"
+      },
+      {
+       "han": "獅",
+       "hanViet": "sư",
+       "vi": "sư tử"
+      },
+      {
+       "han": "象",
+       "hanViet": "tượng",
+       "vi": "voi"
+      }
+     ]
+    },
+    {
+     "category": "靜物",
+     "items": [
+      {
+       "han": "金玉",
+       "hanViet": "kim ngọc",
+       "vi": "vàng ngọc"
+      },
+      {
+       "han": "寶珠",
+       "hanViet": "bảo châu",
+       "vi": "ngọc quý"
+      },
+      {
+       "han": "圓物",
+       "hanViet": "viên vật",
+       "vi": "vật tròn"
+      },
+      {
+       "han": "水果",
+       "hanViet": "thủy quả",
+       "vi": "trái cây"
+      },
+      {
+       "han": "剛物",
+       "hanViet": "cương vật",
+       "vi": "vật cứng"
+      },
+      {
+       "han": "冠",
+       "hanViet": "quan",
+       "vi": "mũ"
+      },
+      {
+       "han": "鏡",
+       "hanViet": "kính",
+       "vi": "gương"
+      }
+     ]
+    },
+    {
+     "category": "屋舍",
+     "items": [
+      {
+       "han": "公廨",
+       "hanViet": "công giải",
+       "vi": "công đường, nha môn"
+      },
+      {
+       "han": "樓臺",
+       "hanViet": "lâu đài",
+       "vi": "lầu đài"
+      },
+      {
+       "han": "高堂",
+       "hanViet": "cao đường",
+       "vi": "nhà cao"
+      },
+      {
+       "han": "大廈",
+       "hanViet": "đại hạ",
+       "vi": "nhà lớn"
+      },
+      {
+       "han": "驛舍",
+       "hanViet": "dịch xá",
+       "vi": "nhà trạm"
+      },
+      {
+       "han": "西北向之居",
+       "hanViet": "tây bắc hướng chi cư",
+       "vi": "nhà hướng tây bắc"
+      }
+     ]
+    },
+    {
+     "category": "家宅",
+     "items": [
+      {
+       "han": "秋占宅興隆",
+       "hanViet": "thu chiêm trạch hưng long",
+       "vi": "mùa thu xem: nhà hưng thịnh"
+      },
+      {
+       "han": "夏佔有禍",
+       "hanViet": "hạ chiêm hữu họa",
+       "vi": "mùa hạ xem: có họa"
+      },
+      {
+       "han": "冬占冷落",
+       "hanViet": "đông chiêm lãnh lạc",
+       "vi": "mùa đông xem: lạnh lẽo, sa sút"
+      },
+      {
+       "han": "春占吉利",
+       "hanViet": "xuân chiêm cát lợi",
+       "vi": "mùa xuân xem: tốt lành"
+      }
+     ]
+    },
+    {
+     "category": "婚姻",
+     "items": [
+      {
+       "han": "貴官之眷",
+       "hanViet": "quý quan chi quyến",
+       "vi": "gia quyến quan sang"
+      },
+      {
+       "han": "有聲名之家",
+       "hanViet": "hữu thanh danh chi gia",
+       "vi": "nhà có danh tiếng"
+      },
+      {
+       "han": "秋占宜成",
+       "hanViet": "thu chiêm nghi thành",
+       "vi": "mùa thu xem: nên thành"
+      },
+      {
+       "han": "冬夏占不利",
+       "hanViet": "đông hạ chiêm bất lợi",
+       "vi": "mùa đông, mùa hạ xem: không lợi"
+      }
+     ]
+    },
+    {
+     "category": "飲食",
+     "items": [
+      {
+       "han": "馬肉",
+       "hanViet": "mã nhục",
+       "vi": "thịt ngựa"
+      },
+      {
+       "han": "珍味",
+       "hanViet": "trân vị",
+       "vi": "món ăn quý"
+      },
+      {
+       "han": "多骨",
+       "hanViet": "đa cốt",
+       "vi": "nhiều xương"
+      },
+      {
+       "han": "肝肺",
+       "hanViet": "can phế",
+       "vi": "gan phổi"
+      },
+      {
+       "han": "幹肉",
+       "hanViet": "cán nhục",
+       "vi": "thịt khô"
+      },
+      {
+       "han": "水果",
+       "hanViet": "thủy quả",
+       "vi": "trái cây"
+      },
+      {
+       "han": "諸物之首",
+       "hanViet": "chư vật chi thủ",
+       "vi": "đầu của các con vật"
+      },
+      {
+       "han": "圓物",
+       "hanViet": "viên vật",
+       "vi": "vật tròn"
+      },
+      {
+       "han": "辛辣之物",
+       "hanViet": "tân lạt chi vật",
+       "vi": "đồ cay"
+      }
+     ]
+    },
+    {
+     "category": "生產",
+     "items": [
+      {
+       "han": "易生",
+       "hanViet": "dị sinh",
+       "vi": "dễ sinh"
+      },
+      {
+       "han": "秋占生貴子",
+       "hanViet": "thu chiêm sinh quý tử",
+       "vi": "mùa thu xem: sinh quý tử"
+      },
+      {
+       "han": "夏佔有損",
+       "hanViet": "hạ chiêm hữu tổn",
+       "vi": "mùa hạ xem: có tổn hại"
+      },
+      {
+       "han": "坐宜向西北",
+       "hanViet": "tọa nghi hướng tây bắc",
+       "vi": "nên ngồi (sinh) quay về hướng tây bắc"
+      }
+     ]
+    },
+    {
+     "category": "求名",
+     "items": [
+      {
+       "han": "有名",
+       "hanViet": "hữu danh",
+       "vi": "có danh"
+      },
+      {
+       "han": "宜隨朝內任",
+       "hanViet": "nghi tùy triều nội nhậm",
+       "vi": "nên theo chức vụ trong triều"
+      },
+      {
+       "han": "刑官",
+       "hanViet": "hình quan",
+       "vi": "quan coi hình án"
+      },
+      {
+       "han": "武職",
+       "hanViet": "vũ chức",
+       "vi": "chức võ"
+      },
+      {
+       "han": "掌權",
+       "hanViet": "chưởng quyền",
+       "vi": "nắm quyền"
+      },
+      {
+       "han": "天使",
+       "hanViet": "thiên sứ",
+       "vi": "sứ giả của vua"
+      },
+      {
+       "han": "驛官",
+       "hanViet": "dịch quan",
+       "vi": "quan coi trạm dịch"
+      },
+      {
+       "han": "宜西北方之任",
+       "hanViet": "nghi tây bắc phương chi nhậm",
+       "vi": "nên nhậm chức ở phương tây bắc"
+      }
+     ]
+    },
+    {
+     "category": "謀旺",
+     "items": [
+      {
+       "han": "有成",
+       "hanViet": "hữu thành",
+       "vi": "có thành"
+      },
+      {
+       "han": "利公門",
+       "hanViet": "lợi công môn",
+       "vi": "lợi việc công"
+      },
+      {
+       "han": "宜動中有財",
+       "hanViet": "nghi động trung hữu tài",
+       "vi": "nên động, trong động có của"
+      },
+      {
+       "han": "夏占不成",
+       "hanViet": "hạ chiêm bất thành",
+       "vi": "mùa hạ xem: không thành"
+      },
+      {
+       "han": "冬占多謀少遂",
+       "hanViet": "đông chiêm đa mưu thiểu toại",
+       "vi": "mùa đông xem: mưu nhiều thành ít"
+      }
+     ]
+    },
+    {
+     "category": "交易",
+     "items": [
+      {
+       "han": "宜金",
+       "hanViet": "nghi kim",
+       "vi": "nên (buôn) vàng"
+      },
+      {
+       "han": "玉珍寶珠貴貨",
+       "hanViet": "ngọc trân bảo châu quý hóa",
+       "vi": "ngọc, châu báu, hàng quý"
+      },
+      {
+       "han": "易成",
+       "hanViet": "dị thành",
+       "vi": "dễ thành"
+      },
+      {
+       "han": "夏占不利",
+       "hanViet": "hạ chiêm bất lợi",
+       "vi": "mùa hạ xem: không lợi"
+      }
+     ]
+    },
+    {
+     "category": "求利",
+     "items": [
+      {
+       "han": "有財",
+       "hanViet": "hữu tài",
+       "vi": "có của"
+      },
+      {
+       "han": "金",
+       "hanViet": "kim",
+       "vi": "vàng"
+      },
+      {
+       "han": "玉之利",
+       "hanViet": "ngọc chi lợi",
+       "vi": "lợi từ ngọc"
+      },
+      {
+       "han": "公門中得財",
+       "hanViet": "công môn trung đắc tài",
+       "vi": "được của từ việc công"
+      },
+      {
+       "han": "秋占大利",
+       "hanViet": "thu chiêm đại lợi",
+       "vi": "mùa thu xem: lợi lớn"
+      },
+      {
+       "han": "夏占損財",
+       "hanViet": "hạ chiêm tổn tài",
+       "vi": "mùa hạ xem: hao của"
+      },
+      {
+       "han": "冬占無財",
+       "hanViet": "đông chiêm vô tài",
+       "vi": "mùa đông xem: không có của"
+      }
+     ]
+    },
+    {
+     "category": "出行",
+     "items": [
+      {
+       "han": "利於出行",
+       "hanViet": "lợi ư xuất hành",
+       "vi": "lợi cho việc đi xa"
+      },
+      {
+       "han": "宜入京師",
+       "hanViet": "nghi nhập kinh sư",
+       "vi": "nên vào kinh đô"
+      },
+      {
+       "han": "利西北之行",
+       "hanViet": "lợi tây bắc chi hành",
+       "vi": "lợi đi về tây bắc"
+      },
+      {
+       "han": "夏占不利",
+       "hanViet": "hạ chiêm bất lợi",
+       "vi": "mùa hạ xem: không lợi"
+      }
+     ]
+    },
+    {
+     "category": "謁見",
+     "items": [
+      {
+       "han": "利見大人",
+       "hanViet": "lợi kiến đại nhân",
+       "vi": "lợi gặp bậc đại nhân"
+      },
+      {
+       "han": "有德行之人",
+       "hanViet": "hữu đức hạnh chi nhân",
+       "vi": "người có đức hạnh"
+      },
+      {
+       "han": "宜見官貴",
+       "hanViet": "nghi kiến quan quý",
+       "vi": "nên gặp quan chức, người quyền quý"
+      },
+      {
+       "han": "可見",
+       "hanViet": "khả kiến",
+       "vi": "có thể gặp"
+      }
+     ]
+    },
+    {
+     "category": "疾病",
+     "items": [
+      {
+       "han": "頭面之疾",
+       "hanViet": "đầu diện chi tật",
+       "vi": "bệnh ở đầu mặt"
+      },
+      {
+       "han": "肺疾",
+       "hanViet": "phế tật",
+       "vi": "bệnh phổi"
+      },
+      {
+       "han": "筋骨疾",
+       "hanViet": "cân cốt tật",
+       "vi": "bệnh gân xương"
+      },
+      {
+       "han": "上焦疾",
+       "hanViet": "thượng tiêu tật",
+       "vi": "bệnh thượng tiêu"
+      },
+      {
+       "han": "夏占不安",
+       "hanViet": "hạ chiêm bất an",
+       "vi": "mùa hạ xem: không yên"
+      }
+     ]
+    },
+    {
+     "category": "官訟",
+     "items": [
+      {
+       "han": "健訟",
+       "hanViet": "kiện tụng",
+       "vi": "hay kiện, kiện mạnh"
+      },
+      {
+       "han": "有貴人助",
+       "hanViet": "hữu quý nhân trợ",
+       "vi": "có quý nhân giúp"
+      },
+      {
+       "han": "秋占得勝",
+       "hanViet": "thu chiêm đắc thắng",
+       "vi": "mùa thu xem: thắng kiện"
+      },
+      {
+       "han": "夏占失理",
+       "hanViet": "hạ chiêm thất lý",
+       "vi": "mùa hạ xem: đuối lý"
+      }
+     ]
+    },
+    {
+     "category": "墳墓",
+     "items": [
+      {
+       "han": "宜向西北",
+       "hanViet": "nghi hướng tây bắc",
+       "vi": "nên hướng tây bắc"
+      },
+      {
+       "han": "宜乾山氣脈",
+       "hanViet": "nghi càn sơn khí mạch",
+       "vi": "nên theo khí mạch núi hướng Càn"
+      },
+      {
+       "han": "宜天穴",
+       "hanViet": "nghi thiên huyệt",
+       "vi": "nên đặt \"thiên huyệt\"?"
+      },
+      {
+       "han": "宜高",
+       "hanViet": "nghi cao",
+       "vi": "nên chỗ cao"
+      },
+      {
+       "han": "秋占出貴",
+       "hanViet": "thu chiêm xuất quý",
+       "vi": "mùa thu xem: sinh người sang"
+      },
+      {
+       "han": "夏占大凶",
+       "hanViet": "hạ chiêm đại hung",
+       "vi": "mùa hạ xem: rất xấu"
+      }
+     ]
+    },
+    {
+     "category": "方道",
+     "items": [
+      {
+       "han": "西北",
+       "hanViet": "tây bắc",
+       "vi": "tây bắc"
+      }
+     ]
+    },
+    {
+     "category": "五色",
+     "items": [
+      {
+       "han": "大赤色",
+       "hanViet": "đại xích sắc",
+       "vi": "màu đỏ thẫm"
+      },
+      {
+       "han": "玄色",
+       "hanViet": "huyền sắc",
+       "vi": "màu đen huyền"
+      }
+     ]
+    },
+    {
+     "category": "姓字",
+     "items": [
+      {
+       "han": "帶金旁者",
+       "hanViet": "đới kim bàng giả",
+       "vi": "họ có bộ Kim"
+      },
+      {
+       "han": "商音",
+       "hanViet": "thương âm",
+       "vi": "âm Thương"
+      },
+      {
+       "han": "行位一四九",
+       "hanViet": "hàng vị nhất tứ cửu",
+       "vi": "thứ bậc 1, 4, 9"
+      }
+     ]
+    },
+    {
+     "category": "數目",
+     "items": [
+      {
+       "han": "一",
+       "hanViet": "nhất",
+       "vi": "một"
+      },
+      {
+       "han": "四",
+       "hanViet": "tứ",
+       "vi": "bốn"
+      },
+      {
+       "han": "九",
+       "hanViet": "cửu",
+       "vi": "chín"
+      }
+     ]
+    },
+    {
+     "category": "五味",
+     "items": [
+      {
+       "han": "辛",
+       "hanViet": "tân",
+       "vi": "cay nồng"
+      },
+      {
+       "han": "辣",
+       "hanViet": "lạt",
+       "vi": "cay"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "家宅「夏佔有禍」, 生產「夏佔有損」: 佔 là dạng khác của 占 (chiêm), đọc như các mục 「夏占…」 khác.",
+    "飲食「幹肉」: nhiều khả năng là 乾肉 (can nhục, thịt khô) bị chuyển giản–phồn sai thành 幹; vi dịch theo 乾肉, hanViet giữ âm chữ 幹 (cán).",
+    "交易「宜金、玉珍寶珠貴貨」và 求利「金、玉之利」: dấu ngắt tách 金 ra; đọc liền khả dĩ là 宜金玉珍寶珠貴貨 (nên buôn vàng ngọc châu báu hàng quý) và 金玉之利 (lợi từ vàng ngọc). Giữ nguyên cách tách của base.json.",
+    "官訟「健訟」: hanViet 'kiện tụng' (健 kiện + 訟 tụng); nghĩa là hay kiện / kiện cứng cỏi, khác từ 'kiện tụng' thông thường.",
+    "墳墓「宜天穴」: thuật ngữ phong thủy, nghĩa cụ thể của 'thiên huyệt' không chắc — dịch sát chữ, đánh dấu ?.",
+    "Bảng ngắn「水寒」: ý chính xác không rõ; dịch sát chữ 'nước lạnh'.",
+    "五味「辛、辣」: cả hai là 'cay'; 辛 thiên về cay nồng, 辣 là cay (ớt) — tách để giữ hai mục."
+   ]
+  },
+  {
+   "key": "dui",
+   "header": {
+    "number": "二",
+    "element": "金"
+   },
+   "short": [
+    {
+     "han": "澤",
+     "hanViet": "trạch",
+     "vi": "đầm"
+    },
+    {
+     "han": "少女",
+     "hanViet": "thiếu nữ",
+     "vi": "con gái út, gái trẻ"
+    },
+    {
+     "han": "巫",
+     "hanViet": "vu",
+     "vi": "đồng cốt, thầy cúng"
+    },
+    {
+     "han": "舌",
+     "hanViet": "thiệt",
+     "vi": "lưỡi"
+    },
+    {
+     "han": "妾",
+     "hanViet": "thiếp",
+     "vi": "vợ lẽ"
+    },
+    {
+     "han": "肺",
+     "hanViet": "phế",
+     "vi": "phổi"
+    },
+    {
+     "han": "羊",
+     "hanViet": "dương",
+     "vi": "dê"
+    },
+    {
+     "han": "毀折之物",
+     "hanViet": "hủy chiết chi vật",
+     "vi": "vật hư hỏng, gãy"
+    },
+    {
+     "han": "帶口之器",
+     "hanViet": "đới khẩu chi khí",
+     "vi": "đồ dùng có miệng"
+    },
+    {
+     "han": "屬金者",
+     "hanViet": "thuộc kim giả",
+     "vi": "vật thuộc Kim"
+    },
+    {
+     "han": "廢缺之物",
+     "hanViet": "phế khuyết chi vật",
+     "vi": "vật bỏ đi, sứt mẻ"
+    },
+    {
+     "han": "奴僕",
+     "hanViet": "nô bộc",
+     "vi": "đầy tớ"
+    },
+    {
+     "han": "婢",
+     "hanViet": "tì",
+     "vi": "hầu gái"
+    }
+   ],
+   "detail": [
+    {
+     "category": "天時",
+     "items": [
+      {
+       "han": "雨澤",
+       "hanViet": "vũ trạch",
+       "vi": "mưa móc"
+      },
+      {
+       "han": "新月",
+       "hanViet": "tân nguyệt",
+       "vi": "trăng non"
+      },
+      {
+       "han": "星",
+       "hanViet": "tinh",
+       "vi": "sao"
+      }
+     ]
+    },
+    {
+     "category": "地理",
+     "items": [
+      {
+       "han": "澤",
+       "hanViet": "trạch",
+       "vi": "đầm"
+      },
+      {
+       "han": "水際",
+       "hanViet": "thủy tế",
+       "vi": "bờ nước"
+      },
+      {
+       "han": "缺池",
+       "hanViet": "khuyết trì",
+       "vi": "ao bị lở"
+      },
+      {
+       "han": "廢井",
+       "hanViet": "phế tỉnh",
+       "vi": "giếng bỏ"
+      },
+      {
+       "han": "山崩破裂之地",
+       "hanViet": "sơn băng phá liệt chi địa",
+       "vi": "đất núi lở, nứt vỡ"
+      },
+      {
+       "han": "其地為剛鹵",
+       "hanViet": "kì địa vi cương lỗ",
+       "vi": "đất ấy cứng và mặn"
+      }
+     ]
+    },
+    {
+     "category": "人物",
+     "items": [
+      {
+       "han": "少女",
+       "hanViet": "thiếu nữ",
+       "vi": "con gái út, gái trẻ"
+      },
+      {
+       "han": "妾",
+       "hanViet": "thiếp",
+       "vi": "vợ lẽ"
+      },
+      {
+       "han": "歌妓",
+       "hanViet": "ca kĩ",
+       "vi": "ca nữ"
+      },
+      {
+       "han": "伶人",
+       "hanViet": "linh nhân",
+       "vi": "con hát, phường nhạc"
+      },
+      {
+       "han": "譯人",
+       "hanViet": "dịch nhân",
+       "vi": "người phiên dịch"
+      },
+      {
+       "han": "巫師",
+       "hanViet": "vu sư",
+       "vi": "thầy cúng, đồng cốt"
+      }
+     ]
+    },
+    {
+     "category": "人事",
+     "items": [
+      {
+       "han": "喜悅",
+       "hanViet": "hỉ duyệt",
+       "vi": "vui mừng"
+      },
+      {
+       "han": "口",
+       "hanViet": "khẩu",
+       "vi": "miệng, lời nói"
+      },
+      {
+       "han": "讒毀",
+       "hanViet": "sàm hủy",
+       "vi": "gièm pha"
+      },
+      {
+       "han": "謗說",
+       "hanViet": "báng thuyết",
+       "vi": "nói xấu"
+      },
+      {
+       "han": "飲食",
+       "hanViet": "ẩm thực",
+       "vi": "ăn uống"
+      }
+     ]
+    },
+    {
+     "category": "身體",
+     "items": [
+      {
+       "han": "舌",
+       "hanViet": "thiệt",
+       "vi": "lưỡi"
+      },
+      {
+       "han": "口喉",
+       "hanViet": "khẩu hầu",
+       "vi": "miệng, họng"
+      },
+      {
+       "han": "肺",
+       "hanViet": "phế",
+       "vi": "phổi"
+      },
+      {
+       "han": "痰",
+       "hanViet": "đàm",
+       "vi": "đờm"
+      },
+      {
+       "han": "涎",
+       "hanViet": "diên",
+       "vi": "nước dãi"
+      }
+     ]
+    },
+    {
+     "category": "時序",
+     "items": [
+      {
+       "han": "秋八月",
+       "hanViet": "thu bát nguyệt",
+       "vi": "tháng tám mùa thu"
+      },
+      {
+       "han": "酉年月日時",
+       "hanViet": "dậu niên nguyệt nhật thời",
+       "vi": "năm, tháng, ngày, giờ Dậu"
+      },
+      {
+       "han": "二四九月日",
+       "hanViet": "nhị tứ cửu nguyệt nhật",
+       "vi": "tháng, ngày mang số 2, 4, 9"
+      }
+     ]
+    },
+    {
+     "category": "靜物",
+     "items": [
+      {
+       "han": "金刀",
+       "hanViet": "kim đao",
+       "vi": "dao bằng kim loại"
+      },
+      {
+       "han": "金類",
+       "hanViet": "kim loại",
+       "vi": "đồ thuộc loại kim"
+      },
+      {
+       "han": "樂器",
+       "hanViet": "nhạc khí",
+       "vi": "nhạc cụ"
+      },
+      {
+       "han": "廢物",
+       "hanViet": "phế vật",
+       "vi": "đồ bỏ"
+      },
+      {
+       "han": "缺器",
+       "hanViet": "khuyết khí",
+       "vi": "đồ sứt mẻ"
+      }
+     ]
+    },
+    {
+     "category": "動物",
+     "items": [
+      {
+       "han": "羊",
+       "hanViet": "dương",
+       "vi": "dê"
+      },
+      {
+       "han": "澤中之物",
+       "hanViet": "trạch trung chi vật",
+       "vi": "vật trong đầm"
+      }
+     ]
+    },
+    {
+     "category": "屋舍",
+     "items": [
+      {
+       "han": "西向之居",
+       "hanViet": "tây hướng chi cư",
+       "vi": "nhà quay về hướng tây"
+      },
+      {
+       "han": "近澤之居",
+       "hanViet": "cận trạch chi cư",
+       "vi": "nhà gần đầm"
+      },
+      {
+       "han": "敗牆壁宅",
+       "hanViet": "bại tường bích trạch",
+       "vi": "nhà tường vách đổ nát"
+      },
+      {
+       "han": "戶有損",
+       "hanViet": "hộ hữu tổn",
+       "vi": "cửa có hư hại"
+      }
+     ]
+    },
+    {
+     "category": "家宅",
+     "items": [
+      {
+       "han": "不安",
+       "hanViet": "bất an",
+       "vi": "không yên"
+      },
+      {
+       "han": "防口舌",
+       "hanViet": "phòng khẩu thiệt",
+       "vi": "đề phòng cãi cọ, thị phi"
+      },
+      {
+       "han": "秋占喜悅",
+       "hanViet": "thu chiêm hỉ duyệt",
+       "vi": "xem vào mùa thu thì vui mừng"
+      },
+      {
+       "han": "夏占家宅有禍",
+       "hanViet": "hạ chiêm gia trạch hữu họa",
+       "vi": "xem vào mùa hạ thì nhà có họa"
+      }
+     ]
+    },
+    {
+     "category": "飲食",
+     "items": [
+      {
+       "han": "羊肉",
+       "hanViet": "dương nhục",
+       "vi": "thịt dê"
+      },
+      {
+       "han": "澤中之物",
+       "hanViet": "trạch trung chi vật",
+       "vi": "vật trong đầm"
+      },
+      {
+       "han": "宿味",
+       "hanViet": "túc vị",
+       "vi": "món để cách đêm"
+      },
+      {
+       "han": "辛辣之味",
+       "hanViet": "tân lạt chi vị",
+       "vi": "món vị cay"
+      }
+     ]
+    },
+    {
+     "category": "婚姻",
+     "items": [
+      {
+       "han": "不成",
+       "hanViet": "bất thành",
+       "vi": "không thành"
+      },
+      {
+       "han": "秋占可成",
+       "hanViet": "thu chiêm khả thành",
+       "vi": "xem vào mùa thu thì có thể thành"
+      },
+      {
+       "han": "有喜",
+       "hanViet": "hữu hỉ",
+       "vi": "có việc vui"
+      },
+      {
+       "han": "主成婚之吉",
+       "hanViet": "chủ thành hôn chi cát",
+       "vi": "chủ việc thành hôn tốt lành"
+      },
+      {
+       "han": "利婚少女",
+       "hanViet": "lợi hôn thiếu nữ",
+       "vi": "lợi cho việc cưới con gái út"
+      },
+      {
+       "han": "夏占不利",
+       "hanViet": "hạ chiêm bất lợi",
+       "vi": "xem vào mùa hạ thì không lợi"
+      }
+     ]
+    },
+    {
+     "category": "生產",
+     "items": [
+      {
+       "han": "不利",
+       "hanViet": "bất lợi",
+       "vi": "không lợi"
+      },
+      {
+       "han": "恐有損胎或則生女",
+       "hanViet": "khủng hữu tổn thai hoặc tắc sinh nữ",
+       "vi": "e có tổn hại thai, hoặc thì sinh con gái"
+      },
+      {
+       "han": "夏占不利",
+       "hanViet": "hạ chiêm bất lợi",
+       "vi": "xem vào mùa hạ thì không lợi"
+      },
+      {
+       "han": "宜坐向西",
+       "hanViet": "nghi tọa hướng tây",
+       "vi": "nên ngồi quay về hướng tây"
+      }
+     ]
+    },
+    {
+     "category": "求名",
+     "items": [
+      {
+       "han": "難成",
+       "hanViet": "nan thành",
+       "vi": "khó thành"
+      },
+      {
+       "han": "因名有損",
+       "hanViet": "nhân danh hữu tổn",
+       "vi": "vì danh mà có tổn hại"
+      },
+      {
+       "han": "利西之任",
+       "hanViet": "lợi tây chi nhậm",
+       "vi": "lợi nhận chức ở phía tây"
+      },
+      {
+       "han": "宜刑官",
+       "hanViet": "nghi hình quan",
+       "vi": "nên làm quan coi hình pháp"
+      },
+      {
+       "han": "武職",
+       "hanViet": "vũ chức",
+       "vi": "chức võ"
+      },
+      {
+       "han": "伶官",
+       "hanViet": "linh quan",
+       "vi": "quan coi nhạc"
+      },
+      {
+       "han": "譯官",
+       "hanViet": "dịch quan",
+       "vi": "quan phiên dịch"
+      }
+     ]
+    },
+    {
+     "category": "求利",
+     "items": [
+      {
+       "han": "無利",
+       "hanViet": "vô lợi",
+       "vi": "không có lợi"
+      },
+      {
+       "han": "有損",
+       "hanViet": "hữu tổn",
+       "vi": "có tổn hại"
+      },
+      {
+       "han": "財利",
+       "hanViet": "tài lợi",
+       "vi": "tiền của, lợi lộc"
+      },
+      {
+       "han": "主口舌",
+       "hanViet": "chủ khẩu thiệt",
+       "vi": "chủ có cãi cọ, thị phi"
+      },
+      {
+       "han": "秋佔有財喜",
+       "hanViet": "thu chiếm hữu tài hỉ",
+       "vi": "xem vào mùa thu thì có tin vui về tiền"
+      },
+      {
+       "han": "夏占破財",
+       "hanViet": "hạ chiêm phá tài",
+       "vi": "xem vào mùa hạ thì hao tiền"
+      }
+     ]
+    },
+    {
+     "category": "出行",
+     "items": [
+      {
+       "han": "不宜遠行",
+       "hanViet": "bất nghi viễn hành",
+       "vi": "không nên đi xa"
+      },
+      {
+       "han": "防口舌",
+       "hanViet": "phòng khẩu thiệt",
+       "vi": "đề phòng cãi cọ, thị phi"
+      },
+      {
+       "han": "或損失",
+       "hanViet": "hoặc tổn thất",
+       "vi": "hoặc bị mất mát"
+      },
+      {
+       "han": "宜西行",
+       "hanViet": "nghi tây hành",
+       "vi": "nên đi về phía tây"
+      },
+      {
+       "han": "秋占宜行有利",
+       "hanViet": "thu chiêm nghi hành hữu lợi",
+       "vi": "xem vào mùa thu thì nên đi, có lợi"
+      }
+     ]
+    },
+    {
+     "category": "交易",
+     "items": [
+      {
+       "han": "難利",
+       "hanViet": "nan lợi",
+       "vi": "khó có lợi"
+      },
+      {
+       "han": "防口舌",
+       "hanViet": "phòng khẩu thiệt",
+       "vi": "đề phòng cãi cọ, thị phi"
+      },
+      {
+       "han": "有爭競",
+       "hanViet": "hữu tranh cạnh",
+       "vi": "có tranh giành"
+      },
+      {
+       "han": "夏占不利",
+       "hanViet": "hạ chiêm bất lợi",
+       "vi": "xem vào mùa hạ thì không lợi"
+      },
+      {
+       "han": "秋佔有交易之財",
+       "hanViet": "thu chiếm hữu giao dịch chi tài",
+       "vi": "xem vào mùa thu thì có tiền từ mua bán"
+      }
+     ]
+    },
+    {
+     "category": "謀旺",
+     "items": [
+      {
+       "han": "難成",
+       "hanViet": "nan thành",
+       "vi": "khó thành"
+      },
+      {
+       "han": "謀中有損",
+       "hanViet": "mưu trung hữu tổn",
+       "vi": "trong việc mưu tính có tổn hại"
+      },
+      {
+       "han": "秋占有喜",
+       "hanViet": "thu chiêm hữu hỉ",
+       "vi": "xem vào mùa thu thì có việc vui"
+      },
+      {
+       "han": "夏占不遂",
+       "hanViet": "hạ chiêm bất toại",
+       "vi": "xem vào mùa hạ thì không toại"
+      }
+     ]
+    },
+    {
+     "category": "謁見",
+     "items": [
+      {
+       "han": "利行西方",
+       "hanViet": "lợi hành tây phương",
+       "vi": "lợi đi về phương tây"
+      },
+      {
+       "han": "見有咒詛",
+       "hanViet": "kiến hữu chú trớ",
+       "vi": "gặp thì có lời nguyền rủa"
+      }
+     ]
+    },
+    {
+     "category": "疾病",
+     "items": [
+      {
+       "han": "口舌",
+       "hanViet": "khẩu thiệt",
+       "vi": "bệnh ở miệng lưỡi"
+      },
+      {
+       "han": "咽喉之疾",
+       "hanViet": "yết hầu chi tật",
+       "vi": "bệnh cổ họng"
+      },
+      {
+       "han": "氣逆喘疾",
+       "hanViet": "khí nghịch suyễn tật",
+       "vi": "khí nghịch, bệnh suyễn"
+      },
+      {
+       "han": "飲食不飧",
+       "hanViet": "ẩm thực bất san",
+       "vi": "ăn uống không được…?"
+      }
+     ]
+    },
+    {
+     "category": "墳墓",
+     "items": [
+      {
+       "han": "宜西向",
+       "hanViet": "nghi tây hướng",
+       "vi": "nên quay về hướng tây"
+      },
+      {
+       "han": "防穴中有水",
+       "hanViet": "phòng huyệt trung hữu thủy",
+       "vi": "đề phòng trong huyệt có nước"
+      },
+      {
+       "han": "近澤之墓",
+       "hanViet": "cận trạch chi mộ",
+       "vi": "mộ gần đầm"
+      },
+      {
+       "han": "夏占不宜",
+       "hanViet": "hạ chiêm bất nghi",
+       "vi": "xem vào mùa hạ thì không nên"
+      },
+      {
+       "han": "或葬廢穴",
+       "hanViet": "hoặc táng phế huyệt",
+       "vi": "hoặc chôn vào huyệt bỏ"
+      }
+     ]
+    },
+    {
+     "category": "官訟",
+     "items": [
+      {
+       "han": "爭訟不已",
+       "hanViet": "tranh tụng bất dĩ",
+       "vi": "tranh kiện không dứt"
+      },
+      {
+       "han": "曲直未決",
+       "hanViet": "khúc trực vị quyết",
+       "vi": "phải trái chưa phân"
+      },
+      {
+       "han": "因訟有損",
+       "hanViet": "nhân tụng hữu tổn",
+       "vi": "vì kiện mà có tổn hại"
+      },
+      {
+       "han": "防刑",
+       "hanViet": "phòng hình",
+       "vi": "đề phòng hình phạt"
+      },
+      {
+       "han": "秋占為體得理勝訟",
+       "hanViet": "thu chiêm vi thể đắc lí thắng tụng",
+       "vi": "xem vào mùa thu mà (Đoài) làm thể thì được lẽ, thắng kiện"
+      }
+     ]
+    },
+    {
+     "category": "姓字",
+     "items": [
+      {
+       "han": "商音",
+       "hanViet": "thương âm",
+       "vi": "âm Thương"
+      },
+      {
+       "han": "帶口帶金字旁姓氏",
+       "hanViet": "đới khẩu đới kim tự bàng tính thị",
+       "vi": "họ có chữ mang bộ khẩu, bộ kim"
+      },
+      {
+       "han": "行位四二九",
+       "hanViet": "hàng vị tứ nhị cửu",
+       "vi": "thứ bậc (hàng) 4, 2, 9"
+      }
+     ]
+    },
+    {
+     "category": "數目",
+     "items": [
+      {
+       "han": "四",
+       "hanViet": "tứ",
+       "vi": "bốn"
+      },
+      {
+       "han": "二",
+       "hanViet": "nhị",
+       "vi": "hai"
+      },
+      {
+       "han": "九",
+       "hanViet": "cửu",
+       "vi": "chín"
+      }
+     ]
+    },
+    {
+     "category": "方道",
+     "items": [
+      {
+       "han": "西方",
+       "hanViet": "tây phương",
+       "vi": "phương tây"
+      }
+     ]
+    },
+    {
+     "category": "五色",
+     "items": [
+      {
+       "han": "白",
+       "hanViet": "bạch",
+       "vi": "trắng"
+      }
+     ]
+    },
+    {
+     "category": "五味",
+     "items": [
+      {
+       "han": "辛",
+       "hanViet": "tân",
+       "vi": "cay"
+      },
+      {
+       "han": "辣",
+       "hanViet": "lạt",
+       "vi": "cay nồng"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "飲食不飧 (疾病): 飧 (san/tôn, bữa cơm chiều) khó hiểu ở đây; có thể là 飡 (= 餐, xan, ăn) chép sai → \"ăn uống không được\". vi để \"…?\".",
+    "求利 財利、主口舌: base tách hai mục, nhưng nhiều khả năng nguyên ý là một câu \"財利主口舌\" (tiền của, lợi lộc thì chủ có cãi cọ); đã dịch từng mục theo tách của base.",
+    "秋佔有財喜 / 秋佔有交易之財: 佔 (chiếm) dùng như 占 (chiêm, xem); hanViet giữ \"chiếm\" theo chữ trong nguồn.",
+    "秋占為體得理勝訟: 為體 = (Đoài) làm quẻ thể trong phép thể dụng Mai Hoa; chữ \"(Đoài)\" trong vi là phần ngầm hiểu.",
+    "行位四二九: 行 đọc \"hàng\" (thứ bậc, hàng thứ trong anh em/họ hàng); nghĩa cụ thể của 行位 chưa chắc.",
+    "辣: âm Hán Việt \"lạt\" (vị cay), khác chữ 淡 \"đạm/lạt\" (nhạt)."
+   ]
+  },
+  {
+   "key": "li",
+   "header": {
+    "number": "三",
+    "element": "火"
+   },
+   "short": [
+    {
+     "han": "火",
+     "hanViet": "hỏa",
+     "vi": "lửa"
+    },
+    {
+     "han": "雉",
+     "hanViet": "trĩ",
+     "vi": "chim trĩ"
+    },
+    {
+     "han": "日",
+     "hanViet": "nhật",
+     "vi": "mặt trời"
+    },
+    {
+     "han": "目",
+     "hanViet": "mục",
+     "vi": "mắt"
+    },
+    {
+     "han": "電",
+     "hanViet": "điện",
+     "vi": "chớp"
+    },
+    {
+     "han": "霓霞",
+     "hanViet": "nghê hà",
+     "vi": "mống và ráng"
+    },
+    {
+     "han": "中女",
+     "hanViet": "trung nữ",
+     "vi": "con gái giữa"
+    },
+    {
+     "han": "甲胄",
+     "hanViet": "giáp trụ",
+     "vi": "áo giáp, mũ trụ"
+    },
+    {
+     "han": "戈兵",
+     "hanViet": "qua binh",
+     "vi": "giáo mác, binh khí"
+    },
+    {
+     "han": "文書",
+     "hanViet": "văn thư",
+     "vi": "giấy tờ, văn bản"
+    },
+    {
+     "han": "槁木",
+     "hanViet": "cảo mộc",
+     "vi": "cây khô"
+    },
+    {
+     "han": "爐",
+     "hanViet": "lô",
+     "vi": "lò"
+    },
+    {
+     "han": "獸",
+     "hanViet": "thú",
+     "vi": "thú vật"
+    },
+    {
+     "han": "鱷龜蟹蚌",
+     "hanViet": "ngạc quy giải bạng",
+     "vi": "cá sấu, rùa, cua, trai"
+    },
+    {
+     "han": "凡有殼之物",
+     "hanViet": "phàm hữu xác chi vật",
+     "vi": "mọi vật có vỏ cứng"
+    },
+    {
+     "han": "紅赤紫色",
+     "hanViet": "hồng xích tử sắc",
+     "vi": "màu hồng, đỏ, tía"
+    },
+    {
+     "han": "花",
+     "hanViet": "hoa",
+     "vi": "hoa"
+    },
+    {
+     "han": "文人",
+     "hanViet": "văn nhân",
+     "vi": "người văn chương"
+    },
+    {
+     "han": "乾燥物",
+     "hanViet": "can táo vật",
+     "vi": "vật khô"
+    }
+   ],
+   "detail": [
+    {
+     "category": "天時",
+     "items": [
+      {
+       "han": "日",
+       "hanViet": "nhật",
+       "vi": "mặt trời"
+      },
+      {
+       "han": "電",
+       "hanViet": "điện",
+       "vi": "chớp"
+      },
+      {
+       "han": "虹",
+       "hanViet": "hồng",
+       "vi": "cầu vồng"
+      },
+      {
+       "han": "霓",
+       "hanViet": "nghê",
+       "vi": "mống (cầu vồng phụ)"
+      },
+      {
+       "han": "霞",
+       "hanViet": "hà",
+       "vi": "ráng"
+      }
+     ]
+    },
+    {
+     "category": "地理",
+     "items": [
+      {
+       "han": "南方",
+       "hanViet": "nam phương",
+       "vi": "phương nam"
+      },
+      {
+       "han": "幹亢之地",
+       "hanViet": "cán kháng chi địa",
+       "vi": "đất khô cao"
+      },
+      {
+       "han": "窖灶",
+       "hanViet": "giáo táo",
+       "vi": "hầm lò, bếp"
+      },
+      {
+       "han": "爐冶之所",
+       "hanViet": "lô dã chi sở",
+       "vi": "nơi lò rèn đúc"
+      },
+      {
+       "han": "剛燥厥地",
+       "hanViet": "cương táo quyết địa",
+       "vi": "đất ấy cứng khô"
+      },
+      {
+       "han": "其地面陽",
+       "hanViet": "kỳ địa diện dương",
+       "vi": "đất ấy quay về phía nắng"
+      }
+     ]
+    },
+    {
+     "category": "人物",
+     "items": [
+      {
+       "han": "中女",
+       "hanViet": "trung nữ",
+       "vi": "con gái giữa"
+      },
+      {
+       "han": "文人",
+       "hanViet": "văn nhân",
+       "vi": "người văn chương"
+      },
+      {
+       "han": "大腹",
+       "hanViet": "đại phúc",
+       "vi": "người bụng to"
+      },
+      {
+       "han": "目疾人",
+       "hanViet": "mục tật nhân",
+       "vi": "người đau mắt"
+      },
+      {
+       "han": "甲胄之士",
+       "hanViet": "giáp trụ chi sĩ",
+       "vi": "người mặc giáp (binh sĩ)"
+      }
+     ]
+    },
+    {
+     "category": "人事",
+     "items": [
+      {
+       "han": "文畫之所",
+       "hanViet": "văn họa chi sở",
+       "vi": "nơi văn chương, tranh vẽ"
+      },
+      {
+       "han": "聰明才學",
+       "hanViet": "thông minh tài học",
+       "vi": "thông minh, có tài học"
+      },
+      {
+       "han": "相見虛心",
+       "hanViet": "tương kiến hư tâm",
+       "vi": "gặp nhau với lòng khiêm tốn"
+      },
+      {
+       "han": "書事",
+       "hanViet": "thư sự",
+       "vi": "việc viết lách, giấy tờ"
+      }
+     ]
+    },
+    {
+     "category": "身體",
+     "items": [
+      {
+       "han": "目",
+       "hanViet": "mục",
+       "vi": "mắt"
+      },
+      {
+       "han": "心",
+       "hanViet": "tâm",
+       "vi": "tim"
+      },
+      {
+       "han": "上焦",
+       "hanViet": "thượng tiêu",
+       "vi": "thượng tiêu (vùng ngực)"
+      }
+     ]
+    },
+    {
+     "category": "時序",
+     "items": [
+      {
+       "han": "夏五月",
+       "hanViet": "hạ ngũ nguyệt",
+       "vi": "mùa hè, tháng năm"
+      },
+      {
+       "han": "午火年月日時",
+       "hanViet": "ngọ hỏa niên nguyệt nhật thời",
+       "vi": "năm, tháng, ngày, giờ Ngọ (hỏa)"
+      },
+      {
+       "han": "三二七日",
+       "hanViet": "tam nhị thất nhật",
+       "vi": "ngày mang số 3, 2, 7"
+      }
+     ]
+    },
+    {
+     "category": "靜物",
+     "items": [
+      {
+       "han": "火",
+       "hanViet": "hỏa",
+       "vi": "lửa"
+      },
+      {
+       "han": "書",
+       "hanViet": "thư",
+       "vi": "sách"
+      },
+      {
+       "han": "文",
+       "hanViet": "văn",
+       "vi": "văn tự"
+      },
+      {
+       "han": "甲胄",
+       "hanViet": "giáp trụ",
+       "vi": "áo giáp, mũ trụ"
+      },
+      {
+       "han": "干戈",
+       "hanViet": "can qua",
+       "vi": "khiên và giáo"
+      },
+      {
+       "han": "槁衣",
+       "hanViet": "cảo y",
+       "vi": "áo khô?"
+      },
+      {
+       "han": "乾燥之物",
+       "hanViet": "can táo chi vật",
+       "vi": "vật khô"
+      },
+      {
+       "han": "赤色之物",
+       "hanViet": "xích sắc chi vật",
+       "vi": "vật màu đỏ"
+      }
+     ]
+    },
+    {
+     "category": "動物",
+     "items": [
+      {
+       "han": "雉",
+       "hanViet": "trĩ",
+       "vi": "chim trĩ"
+      },
+      {
+       "han": "龜",
+       "hanViet": "quy",
+       "vi": "rùa"
+      },
+      {
+       "han": "鱉",
+       "hanViet": "miết",
+       "vi": "ba ba"
+      },
+      {
+       "han": "蟹",
+       "hanViet": "giải",
+       "vi": "cua"
+      },
+      {
+       "han": "螺",
+       "hanViet": "loa",
+       "vi": "ốc"
+      },
+      {
+       "han": "蚌",
+       "hanViet": "bạng",
+       "vi": "trai"
+      }
+     ]
+    },
+    {
+     "category": "屋舍",
+     "items": [
+      {
+       "han": "南舍之居",
+       "hanViet": "nam xá chi cư",
+       "vi": "nhà ở phía nam"
+      },
+      {
+       "han": "陽明之宅",
+       "hanViet": "dương minh chi trạch",
+       "vi": "nhà sáng sủa"
+      },
+      {
+       "han": "明窗",
+       "hanViet": "minh song",
+       "vi": "cửa sổ sáng"
+      },
+      {
+       "han": "虛室",
+       "hanViet": "hư thất",
+       "vi": "phòng trống"
+      }
+     ]
+    },
+    {
+     "category": "家宅",
+     "items": [
+      {
+       "han": "安穩",
+       "hanViet": "an ổn",
+       "vi": "yên ổn"
+      },
+      {
+       "han": "平善",
+       "hanViet": "bình thiện",
+       "vi": "yên lành"
+      },
+      {
+       "han": "冬占不安",
+       "hanViet": "đông chiêm bất an",
+       "vi": "xem vào mùa đông thì không yên"
+      },
+      {
+       "han": "克體主火災",
+       "hanViet": "khắc thể chủ hỏa tai",
+       "vi": "khắc quẻ thể thì chủ hỏa hoạn"
+      }
+     ]
+    },
+    {
+     "category": "飲食",
+     "items": [
+      {
+       "han": "雉肉",
+       "hanViet": "trĩ nhục",
+       "vi": "thịt chim trĩ"
+      },
+      {
+       "han": "煎炒",
+       "hanViet": "tiễn sao",
+       "vi": "món rán, xào"
+      },
+      {
+       "han": "燒炙之物",
+       "hanViet": "thiêu chích chi vật",
+       "vi": "đồ nướng"
+      },
+      {
+       "han": "幹脯之體",
+       "hanViet": "cán bô chi thể",
+       "vi": "thịt khô"
+      },
+      {
+       "han": "熱肉",
+       "hanViet": "nhiệt nhục",
+       "vi": "thịt nóng"
+      }
+     ]
+    },
+    {
+     "category": "婚姻",
+     "items": [
+      {
+       "han": "不成",
+       "hanViet": "bất thành",
+       "vi": "không thành"
+      },
+      {
+       "han": "利中女之婚",
+       "hanViet": "lợi trung nữ chi hôn",
+       "vi": "lợi cho hôn sự của con gái giữa"
+      },
+      {
+       "han": "夏占可成",
+       "hanViet": "hạ chiêm khả thành",
+       "vi": "xem vào mùa hè thì có thể thành"
+      },
+      {
+       "han": "冬占不利",
+       "hanViet": "đông chiêm bất lợi",
+       "vi": "xem vào mùa đông thì không lợi"
+      }
+     ]
+    },
+    {
+     "category": "生產",
+     "items": [
+      {
+       "han": "易生",
+       "hanViet": "dị sinh",
+       "vi": "dễ sinh"
+      },
+      {
+       "han": "產中女",
+       "hanViet": "sản trung nữ",
+       "vi": "sinh con gái giữa"
+      },
+      {
+       "han": "冬佔有損",
+       "hanViet": "đông chiêm hữu tổn",
+       "vi": "xem vào mùa đông thì có tổn hại"
+      },
+      {
+       "han": "坐宜向南",
+       "hanViet": "tọa nghi hướng nam",
+       "vi": "chỗ ngồi nên quay hướng nam"
+      }
+     ]
+    },
+    {
+     "category": "求名",
+     "items": [
+      {
+       "han": "有名",
+       "hanViet": "hữu danh",
+       "vi": "có danh"
+      },
+      {
+       "han": "宜南方之職",
+       "hanViet": "nghi nam phương chi chức",
+       "vi": "nên nhận chức ở phương nam"
+      },
+      {
+       "han": "文官之任",
+       "hanViet": "văn quan chi nhậm",
+       "vi": "chức quan văn"
+      },
+      {
+       "han": "宜爐冶亢場之職",
+       "hanViet": "nghi lô dã kháng trường chi chức",
+       "vi": "nên giữ chức nơi lò đúc, chỗ khô nóng"
+      }
+     ]
+    },
+    {
+     "category": "求利",
+     "items": [
+      {
+       "han": "有財宜南方求",
+       "hanViet": "hữu tài nghi nam phương cầu",
+       "vi": "có của, nên cầu ở phương nam"
+      },
+      {
+       "han": "有文書之財",
+       "hanViet": "hữu văn thư chi tài",
+       "vi": "có của nhờ giấy tờ"
+      },
+      {
+       "han": "冬占有失",
+       "hanViet": "đông chiêm hữu thất",
+       "vi": "xem vào mùa đông thì có mất"
+      }
+     ]
+    },
+    {
+     "category": "謀旺",
+     "items": [
+      {
+       "han": "可以謀旺",
+       "hanViet": "khả dĩ mưu vượng",
+       "vi": "có thể mưu cầu"
+      },
+      {
+       "han": "宜文書之事",
+       "hanViet": "nghi văn thư chi sự",
+       "vi": "nên làm việc giấy tờ"
+      }
+     ]
+    },
+    {
+     "category": "交易",
+     "items": [
+      {
+       "han": "可成",
+       "hanViet": "khả thành",
+       "vi": "có thể thành"
+      },
+      {
+       "han": "宜有文書之交易",
+       "hanViet": "nghi hữu văn thư chi giao dịch",
+       "vi": "nên giao dịch có giấy tờ"
+      }
+     ]
+    },
+    {
+     "category": "出行",
+     "items": [
+      {
+       "han": "可行",
+       "hanViet": "khả hành",
+       "vi": "có thể đi"
+      },
+      {
+       "han": "宜向南方",
+       "hanViet": "nghi hướng nam phương",
+       "vi": "nên đi về phương nam"
+      },
+      {
+       "han": "就文書之行",
+       "hanViet": "tựu văn thư chi hành",
+       "vi": "đi vì việc giấy tờ"
+      },
+      {
+       "han": "冬占不宜行",
+       "hanViet": "đông chiêm bất nghi hành",
+       "vi": "xem vào mùa đông thì không nên đi"
+      },
+      {
+       "han": "不宜行舟",
+       "hanViet": "bất nghi hành chu",
+       "vi": "không nên đi thuyền"
+      }
+     ]
+    },
+    {
+     "category": "謁見",
+     "items": [
+      {
+       "han": "可見南方人",
+       "hanViet": "khả kiến nam phương nhân",
+       "vi": "có thể gặp người phương nam"
+      },
+      {
+       "han": "冬占不順",
+       "hanViet": "đông chiêm bất thuận",
+       "vi": "xem vào mùa đông thì không thuận"
+      },
+      {
+       "han": "秋見文書考案之士",
+       "hanViet": "thu kiến văn thư khảo án chi sĩ",
+       "vi": "mùa thu gặp người lo giấy tờ, xét án"
+      }
+     ]
+    },
+    {
+     "category": "官訟",
+     "items": [
+      {
+       "han": "易散",
+       "hanViet": "dị tán",
+       "vi": "dễ tan"
+      },
+      {
+       "han": "文書動",
+       "hanViet": "văn thư động",
+       "vi": "giấy tờ biến động"
+      },
+      {
+       "han": "辭訟明辨",
+       "hanViet": "từ tụng minh biện",
+       "vi": "việc kiện được xét rõ"
+      }
+     ]
+    },
+    {
+     "category": "疾病",
+     "items": [
+      {
+       "han": "目疾",
+       "hanViet": "mục tật",
+       "vi": "đau mắt"
+      },
+      {
+       "han": "心疾",
+       "hanViet": "tâm tật",
+       "vi": "bệnh tim"
+      },
+      {
+       "han": "上焦熱病",
+       "hanViet": "thượng tiêu nhiệt bệnh",
+       "vi": "bệnh nóng ở thượng tiêu"
+      },
+      {
+       "han": "夏占伏暑",
+       "hanViet": "hạ chiêm phục thử",
+       "vi": "xem vào mùa hè thì bị nắng nóng ủ trong người"
+      },
+      {
+       "han": "時疫",
+       "hanViet": "thời dịch",
+       "vi": "dịch bệnh theo mùa"
+      }
+     ]
+    },
+    {
+     "category": "墳墓",
+     "items": [
+      {
+       "han": "南向之幕",
+       "hanViet": "nam hướng chi mạc",
+       "vi": "màn hướng nam (nghi là mộ hướng nam)"
+      },
+      {
+       "han": "無樹木之所",
+       "hanViet": "vô thụ mộc chi sở",
+       "vi": "nơi không cây cối"
+      },
+      {
+       "han": "陽穴",
+       "hanViet": "dương huyệt",
+       "vi": "huyệt sáng (dương)"
+      },
+      {
+       "han": "夏占出文人",
+       "hanViet": "hạ chiêm xuất văn nhân",
+       "vi": "xem vào mùa hè thì sinh người văn chương"
+      },
+      {
+       "han": "冬占不利",
+       "hanViet": "đông chiêm bất lợi",
+       "vi": "xem vào mùa đông thì không lợi"
+      }
+     ]
+    },
+    {
+     "category": "姓字",
+     "items": [
+      {
+       "han": "徵音",
+       "hanViet": "chủy âm",
+       "vi": "âm Chủy"
+      },
+      {
+       "han": "立人旁士姓氏",
+       "hanViet": "lập nhân bàng sĩ tính thị",
+       "vi": "họ có bộ nhân đứng"
+      },
+      {
+       "han": "行位三二七",
+       "hanViet": "hàng vị tam nhị thất",
+       "vi": "thứ bậc 3, 2, 7"
+      }
+     ]
+    },
+    {
+     "category": "數目",
+     "items": [
+      {
+       "han": "三",
+       "hanViet": "tam",
+       "vi": "ba"
+      },
+      {
+       "han": "二",
+       "hanViet": "nhị",
+       "vi": "hai"
+      },
+      {
+       "han": "七",
+       "hanViet": "thất",
+       "vi": "bảy"
+      }
+     ]
+    },
+    {
+     "category": "方道",
+     "items": [
+      {
+       "han": "南",
+       "hanViet": "nam",
+       "vi": "nam"
+      }
+     ]
+    },
+    {
+     "category": "五色",
+     "items": [
+      {
+       "han": "赤",
+       "hanViet": "xích",
+       "vi": "đỏ"
+      },
+      {
+       "han": "紫",
+       "hanViet": "tử",
+       "vi": "tía"
+      },
+      {
+       "han": "紅",
+       "hanViet": "hồng",
+       "vi": "hồng"
+      }
+     ]
+    },
+    {
+     "category": "五味",
+     "items": [
+      {
+       "han": "苦",
+       "hanViet": "khổ",
+       "vi": "đắng"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "short 鱷龜蟹蚌: 鱷 (cá sấu) lạ; Thuyết quái ghi quẻ Ly là 鱉、蟹、蠃、蚌、龜, và mục 動物 bên dưới có 鱉 — có thể 鱷 là chép sai của 鱉 (ba ba). Dịch theo chữ nguồn.",
+    "地理 幹亢之地 và 飲食 幹脯之體: 幹 nhiều khả năng là 乾 (khô) bị chuyển giản-phồn nhầm (干→幹); dịch theo nghĩa khô, hanViet giữ âm chữ nguồn 'cán'.",
+    "地理 窖灶: đọc 窖 là 'giáo' (hầm) theo Thiều Chửu; một số nơi đọc 'diếu'.",
+    "靜物 槁衣: nghĩa không chắc (áo khô? có thể là 槁木 chép sai) — để 'áo khô?'.",
+    "生產 冬佔有損: 佔 dùng thay 占 (xem, bói); đọc 'chiêm'.",
+    "墳墓 南向之幕: 幕 (màn) nhiều khả năng là 墓 (mộ) chép sai. Mục này nguồn dùng dấu 。 giữa 陽穴 và 夏占, base.json vẫn tách thành 5 mục.",
+    "姓字 立人旁士姓氏: 士 khả năng là 之 chép sai (立人旁之姓氏 = họ có bộ nhân đứng); dịch theo nghĩa đó, chữ 士 không dịch riêng.",
+    "謀旺 (mưu vượng): có thể là 謀望 (mưu vọng) — dịch là mưu cầu.",
+    "short 乾燥物 / 靜物 乾燥之物: 乾 ở đây đọc 'can' (khô), không phải 'càn'."
+   ]
+  },
+  {
+   "key": "zhen",
+   "header": {
+    "number": "四",
+    "element": "木"
+   },
+   "short": [
+    {
+     "han": "雷",
+     "hanViet": "lôi",
+     "vi": "sấm"
+    },
+    {
+     "han": "長男",
+     "hanViet": "trưởng nam",
+     "vi": "con trai trưởng"
+    },
+    {
+     "han": "足",
+     "hanViet": "túc",
+     "vi": "chân"
+    },
+    {
+     "han": "髮",
+     "hanViet": "phát",
+     "vi": "tóc"
+    },
+    {
+     "han": "龍",
+     "hanViet": "long",
+     "vi": "rồng"
+    },
+    {
+     "han": "百蟲",
+     "hanViet": "bách trùng",
+     "vi": "các loài sâu bọ"
+    },
+    {
+     "han": "蹄",
+     "hanViet": "đề",
+     "vi": "móng chân (thú)"
+    },
+    {
+     "han": "竹",
+     "hanViet": "trúc",
+     "vi": "tre trúc"
+    },
+    {
+     "han": "萑葦",
+     "hanViet": "hoàn vĩ",
+     "vi": "lau sậy"
+    },
+    {
+     "han": "馬鳴",
+     "hanViet": "mã minh",
+     "vi": "ngựa hí"
+    },
+    {
+     "han": "馵足",
+     "hanViet": "chú túc",
+     "vi": "ngựa chân sau trắng"
+    },
+    {
+     "han": "顙",
+     "hanViet": "tảng",
+     "vi": "trán"
+    },
+    {
+     "han": "稼",
+     "hanViet": "giá",
+     "vi": "lúa má"
+    },
+    {
+     "han": "樂器之類",
+     "hanViet": "nhạc khí chi loại",
+     "vi": "các loại nhạc cụ"
+    },
+    {
+     "han": "草木",
+     "hanViet": "thảo mộc",
+     "vi": "cỏ cây"
+    },
+    {
+     "han": "青碧綠色",
+     "hanViet": "thanh bích lục sắc",
+     "vi": "màu xanh, xanh biếc, xanh lục"
+    },
+    {
+     "han": "樹",
+     "hanViet": "thụ",
+     "vi": "cây"
+    },
+    {
+     "han": "木核",
+     "hanViet": "mộc hạch",
+     "vi": "hạt quả cây"
+    },
+    {
+     "han": "柴",
+     "hanViet": "sài",
+     "vi": "củi"
+    },
+    {
+     "han": "蛇",
+     "hanViet": "xà",
+     "vi": "rắn"
+    }
+   ],
+   "detail": [
+    {
+     "category": "天時",
+     "items": [
+      {
+       "han": "雷",
+       "hanViet": "lôi",
+       "vi": "sấm"
+      }
+     ]
+    },
+    {
+     "category": "地理",
+     "items": [
+      {
+       "han": "東方",
+       "hanViet": "đông phương",
+       "vi": "phương đông"
+      },
+      {
+       "han": "樹木",
+       "hanViet": "thụ mộc",
+       "vi": "cây cối"
+      },
+      {
+       "han": "鬧市",
+       "hanViet": "náo thị",
+       "vi": "chợ đông đúc ồn ào"
+      },
+      {
+       "han": "大途",
+       "hanViet": "đại đồ",
+       "vi": "đường lớn"
+      },
+      {
+       "han": "竹林",
+       "hanViet": "trúc lâm",
+       "vi": "rừng tre"
+      },
+      {
+       "han": "草木茂盛之所",
+       "hanViet": "thảo mộc mậu thịnh chi sở",
+       "vi": "nơi cây cỏ tươi tốt"
+      }
+     ]
+    },
+    {
+     "category": "人物",
+     "items": [
+      {
+       "han": "長男",
+       "hanViet": "trưởng nam",
+       "vi": "con trai trưởng"
+      }
+     ]
+    },
+    {
+     "category": "人事",
+     "items": [
+      {
+       "han": "起動",
+       "hanViet": "khởi động",
+       "vi": "khởi lên, chuyển động"
+      },
+      {
+       "han": "怒",
+       "hanViet": "nộ",
+       "vi": "giận"
+      },
+      {
+       "han": "虛驚",
+       "hanViet": "hư kinh",
+       "vi": "sợ hãi hão"
+      },
+      {
+       "han": "鼓動噪",
+       "hanViet": "cổ động táo",
+       "vi": "khuấy động ồn ào"
+      },
+      {
+       "han": "多動少靜",
+       "hanViet": "đa động thiểu tĩnh",
+       "vi": "động nhiều tĩnh ít"
+      }
+     ]
+    },
+    {
+     "category": "身體",
+     "items": [
+      {
+       "han": "足",
+       "hanViet": "túc",
+       "vi": "chân"
+      },
+      {
+       "han": "肝",
+       "hanViet": "can",
+       "vi": "gan"
+      },
+      {
+       "han": "發",
+       "hanViet": "phát",
+       "vi": "tóc (?)"
+      },
+      {
+       "han": "聲音",
+       "hanViet": "thanh âm",
+       "vi": "tiếng nói, âm thanh"
+      }
+     ]
+    },
+    {
+     "category": "時序",
+     "items": [
+      {
+       "han": "春三月",
+       "hanViet": "xuân tam nguyệt",
+       "vi": "ba tháng mùa xuân"
+      },
+      {
+       "han": "卯年月日時",
+       "hanViet": "mão niên nguyệt nhật thời",
+       "vi": "năm, tháng, ngày, giờ Mão"
+      },
+      {
+       "han": "四三八月日",
+       "hanViet": "tứ tam bát nguyệt nhật",
+       "vi": "tháng, ngày mang số 4, 3, 8"
+      }
+     ]
+    },
+    {
+     "category": "靜物",
+     "items": [
+      {
+       "han": "木竹",
+       "hanViet": "mộc trúc",
+       "vi": "gỗ, tre"
+      },
+      {
+       "han": "萑葦",
+       "hanViet": "hoàn vĩ",
+       "vi": "lau sậy"
+      },
+      {
+       "han": "樂器（屬竹木者）",
+       "hanViet": "nhạc khí (thuộc trúc mộc giả)",
+       "vi": "nhạc cụ (loại làm bằng tre, gỗ)"
+      },
+      {
+       "han": "花草繁鮮之物",
+       "hanViet": "hoa thảo phồn tiên chi vật",
+       "vi": "hoa cỏ rậm rạp tươi tốt"
+      }
+     ]
+    },
+    {
+     "category": "動物",
+     "items": [
+      {
+       "han": "龍",
+       "hanViet": "long",
+       "vi": "rồng"
+      },
+      {
+       "han": "蛇",
+       "hanViet": "xà",
+       "vi": "rắn"
+      }
+     ]
+    },
+    {
+     "category": "屋舍",
+     "items": [
+      {
+       "han": "東向之居",
+       "hanViet": "đông hướng chi cư",
+       "vi": "nhà hướng đông"
+      },
+      {
+       "han": "山林之處",
+       "hanViet": "sơn lâm chi xứ",
+       "vi": "chỗ ở nơi núi rừng"
+      },
+      {
+       "han": "樓閣",
+       "hanViet": "lâu các",
+       "vi": "lầu gác"
+      }
+     ]
+    },
+    {
+     "category": "家宅",
+     "items": [
+      {
+       "han": "宅中不時有虛驚",
+       "hanViet": "trạch trung bất thời hữu hư kinh",
+       "vi": "trong nhà thỉnh thoảng có chuyện sợ hãi hão"
+      },
+      {
+       "han": "春冬吉",
+       "hanViet": "xuân đông cát",
+       "vi": "mùa xuân, mùa đông thì tốt"
+      },
+      {
+       "han": "秋占不利",
+       "hanViet": "thu chiêm bất lợi",
+       "vi": "xem vào mùa thu thì không lợi"
+      }
+     ]
+    },
+    {
+     "category": "飲食",
+     "items": [
+      {
+       "han": "蹄",
+       "hanViet": "đề",
+       "vi": "móng giò (thú)"
+      },
+      {
+       "han": "肉",
+       "hanViet": "nhục",
+       "vi": "thịt"
+      },
+      {
+       "han": "山林野味",
+       "hanViet": "sơn lâm dã vị",
+       "vi": "món thú rừng"
+      },
+      {
+       "han": "鮮肉",
+       "hanViet": "tiên nhục",
+       "vi": "thịt tươi"
+      },
+      {
+       "han": "果酸味",
+       "hanViet": "quả toan vị",
+       "vi": "quả vị chua"
+      },
+      {
+       "han": "菜蔬",
+       "hanViet": "thái sơ",
+       "vi": "rau cỏ"
+      }
+     ]
+    },
+    {
+     "category": "婚姻",
+     "items": [
+      {
+       "han": "可",
+       "hanViet": "khả",
+       "vi": "được"
+      },
+      {
+       "han": "有成",
+       "hanViet": "hữu thành",
+       "vi": "có thành"
+      },
+      {
+       "han": "聲名之家",
+       "hanViet": "thanh danh chi gia",
+       "vi": "nhà có tiếng tăm"
+      },
+      {
+       "han": "得長男之婚",
+       "hanViet": "đắc trưởng nam chi hôn",
+       "vi": "được hôn sự với con trai trưởng"
+      },
+      {
+       "han": "秋占不宜婚",
+       "hanViet": "thu chiêm bất nghi hôn",
+       "vi": "xem vào mùa thu thì không nên cưới"
+      }
+     ]
+    },
+    {
+     "category": "求利",
+     "items": [
+      {
+       "han": "山林竹木之財",
+       "hanViet": "sơn lâm trúc mộc chi tài",
+       "vi": "của cải từ núi rừng, tre gỗ"
+      },
+      {
+       "han": "動處求財",
+       "hanViet": "động xứ cầu tài",
+       "vi": "cầu tài ở chỗ động"
+      },
+      {
+       "han": "或山林",
+       "hanViet": "hoặc sơn lâm",
+       "vi": "hoặc ở núi rừng"
+      },
+      {
+       "han": "竹木茶貨之利",
+       "hanViet": "trúc mộc trà hóa chi lợi",
+       "vi": "lợi từ hàng tre, gỗ, trà"
+      }
+     ]
+    },
+    {
+     "category": "求名",
+     "items": [
+      {
+       "han": "有名",
+       "hanViet": "hữu danh",
+       "vi": "có danh"
+      },
+      {
+       "han": "宜東方之任",
+       "hanViet": "nghi đông phương chi nhiệm",
+       "vi": "nên nhận chức ở phương đông"
+      },
+      {
+       "han": "施號發令之職",
+       "hanViet": "thi hiệu phát lệnh chi chức",
+       "vi": "chức ra hiệu lệnh"
+      },
+      {
+       "han": "掌刑獄之官",
+       "hanViet": "chưởng hình ngục chi quan",
+       "vi": "quan coi việc hình ngục"
+      },
+      {
+       "han": "竹茶木稅課之任",
+       "hanViet": "trúc trà mộc thuế khóa chi nhiệm",
+       "vi": "chức thu thuế tre, trà, gỗ"
+      },
+      {
+       "han": "或鬧市司貨之職",
+       "hanViet": "hoặc náo thị ti hóa chi chức",
+       "vi": "hoặc chức coi hàng hóa ở chợ đông"
+      }
+     ]
+    },
+    {
+     "category": "生產",
+     "items": [
+      {
+       "han": "虛驚",
+       "hanViet": "hư kinh",
+       "vi": "sợ hãi hão"
+      },
+      {
+       "han": "胎動不安",
+       "hanViet": "thai động bất an",
+       "vi": "động thai không yên"
+      },
+      {
+       "han": "頭胎必生男",
+       "hanViet": "đầu thai tất sinh nam",
+       "vi": "con so ắt sinh con trai"
+      },
+      {
+       "han": "坐宜東向",
+       "hanViet": "tọa nghi đông hướng",
+       "vi": "nên ngồi quay về hướng đông"
+      },
+      {
+       "han": "秋占必有損",
+       "hanViet": "thu chiêm tất hữu tổn",
+       "vi": "xem vào mùa thu ắt có tổn hại"
+      }
+     ]
+    },
+    {
+     "category": "疾病",
+     "items": [
+      {
+       "han": "足疾",
+       "hanViet": "túc tật",
+       "vi": "bệnh ở chân"
+      },
+      {
+       "han": "肝經之疾",
+       "hanViet": "can kinh chi tật",
+       "vi": "bệnh ở kinh can"
+      },
+      {
+       "han": "驚怖不安",
+       "hanViet": "kinh bố bất an",
+       "vi": "kinh sợ không yên"
+      }
+     ]
+    },
+    {
+     "category": "謀旺",
+     "items": [
+      {
+       "han": "可旺",
+       "hanViet": "khả vượng",
+       "vi": "có thể thịnh"
+      },
+      {
+       "han": "可求",
+       "hanViet": "khả cầu",
+       "vi": "có thể cầu"
+      },
+      {
+       "han": "宜動中謀",
+       "hanViet": "nghi động trung mưu",
+       "vi": "nên mưu tính trong lúc động"
+      },
+      {
+       "han": "秋占不遂",
+       "hanViet": "thu chiêm bất toại",
+       "vi": "xem vào mùa thu thì không toại"
+      }
+     ]
+    },
+    {
+     "category": "交易",
+     "items": [
+      {
+       "han": "利於成交",
+       "hanViet": "lợi ư thành giao",
+       "vi": "lợi cho việc thành giao dịch"
+      },
+      {
+       "han": "秋占難成",
+       "hanViet": "thu chiêm nan thành",
+       "vi": "xem vào mùa thu thì khó thành"
+      },
+      {
+       "han": "動而可成",
+       "hanViet": "động nhi khả thành",
+       "vi": "động thì có thể thành"
+      },
+      {
+       "han": "山林",
+       "hanViet": "sơn lâm",
+       "vi": "núi rừng"
+      },
+      {
+       "han": "木竹茶貨之利",
+       "hanViet": "mộc trúc trà hóa chi lợi",
+       "vi": "lợi từ hàng gỗ, tre, trà"
+      }
+     ]
+    },
+    {
+     "category": "官訟",
+     "items": [
+      {
+       "han": "健訟",
+       "hanViet": "kiện tụng",
+       "vi": "hăng kiện cáo"
+      },
+      {
+       "han": "有虛驚",
+       "hanViet": "hữu hư kinh",
+       "vi": "có sợ hãi hão"
+      },
+      {
+       "han": "行移取甚反復",
+       "hanViet": "hành di thủ thậm phản phục",
+       "vi": "…? (giấy tờ chuyển đi chuyển lại, rất hay lật lại?)"
+      }
+     ]
+    },
+    {
+     "category": "謁見",
+     "items": [
+      {
+       "han": "可見",
+       "hanViet": "khả kiến",
+       "vi": "gặp được"
+      },
+      {
+       "han": "在山林之人",
+       "hanViet": "tại sơn lâm chi nhân",
+       "vi": "người ở núi rừng"
+      },
+      {
+       "han": "利見宜有聲名之人",
+       "hanViet": "lợi kiến nghi hữu thanh danh chi nhân",
+       "vi": "lợi gặp, nên gặp người có tiếng tăm"
+      }
+     ]
+    },
+    {
+     "category": "出行",
+     "items": [
+      {
+       "han": "宜行",
+       "hanViet": "nghi hành",
+       "vi": "nên đi"
+      },
+      {
+       "han": "利於東方",
+       "hanViet": "lợi ư đông phương",
+       "vi": "lợi đi về phương đông"
+      },
+      {
+       "han": "利山林之人",
+       "hanViet": "lợi sơn lâm chi nhân",
+       "vi": "lợi cho người ở núi rừng"
+      },
+      {
+       "han": "秋占不宜行",
+       "hanViet": "thu chiêm bất nghi hành",
+       "vi": "xem vào mùa thu thì không nên đi"
+      },
+      {
+       "han": "但恐虛驚",
+       "hanViet": "đãn khủng hư kinh",
+       "vi": "chỉ e có sợ hãi hão"
+      }
+     ]
+    },
+    {
+     "category": "墳墓",
+     "items": [
+      {
+       "han": "利於東向",
+       "hanViet": "lợi ư đông hướng",
+       "vi": "lợi hướng đông"
+      },
+      {
+       "han": "山林中穴",
+       "hanViet": "sơn lâm trung huyệt",
+       "vi": "huyệt trong núi rừng"
+      },
+      {
+       "han": "秋不利",
+       "hanViet": "thu bất lợi",
+       "vi": "mùa thu không lợi"
+      }
+     ]
+    },
+    {
+     "category": "姓字",
+     "items": [
+      {
+       "han": "角音",
+       "hanViet": "giốc âm",
+       "vi": "âm Giốc"
+      },
+      {
+       "han": "帶木姓人",
+       "hanViet": "đới mộc tính nhân",
+       "vi": "người họ có bộ Mộc"
+      },
+      {
+       "han": "行位四八三",
+       "hanViet": "hàng vị tứ bát tam",
+       "vi": "thứ bậc 4, 8, 3"
+      }
+     ]
+    },
+    {
+     "category": "數目",
+     "items": [
+      {
+       "han": "四",
+       "hanViet": "tứ",
+       "vi": "bốn"
+      },
+      {
+       "han": "八",
+       "hanViet": "bát",
+       "vi": "tám"
+      },
+      {
+       "han": "三",
+       "hanViet": "tam",
+       "vi": "ba"
+      }
+     ]
+    },
+    {
+     "category": "方道",
+     "items": [
+      {
+       "han": "東",
+       "hanViet": "đông",
+       "vi": "đông"
+      }
+     ]
+    },
+    {
+     "category": "五味",
+     "items": [
+      {
+       "han": "甘",
+       "hanViet": "cam",
+       "vi": "ngọt"
+      },
+      {
+       "han": "酸味",
+       "hanViet": "toan vị",
+       "vi": "vị chua"
+      }
+     ]
+    },
+    {
+     "category": "五色",
+     "items": [
+      {
+       "han": "青",
+       "hanViet": "thanh",
+       "vi": "xanh"
+      },
+      {
+       "han": "綠",
+       "hanViet": "lục",
+       "vi": "xanh lục"
+      },
+      {
+       "han": "碧",
+       "hanViet": "bích",
+       "vi": "xanh biếc"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "身體 「發」 (phát: phát ra) khả năng là 「髮」 (tóc) viết nhầm/giản lược — bảng ngắn có 「髮」; vi dịch theo 髮, đánh dấu (?).",
+    "時序 「春三月」 có thể hiểu là 'ba tháng mùa xuân' hoặc 'tháng ba mùa xuân'; Chấn ứng tháng Mão (tháng 2) nên chọn 'ba tháng mùa xuân'.",
+    "官訟 「行移取甚反復」 khó hiểu: 行移 = công văn chuyển giao giữa các nha môn; 「取甚」 có thể chép sai (vd. 「取審」?). vi chỉ là đoán, đánh dấu …?.",
+    "官訟 「健訟」 âm là 'kiện tụng' (健 kiện = mạnh) nhưng nghĩa là 'hăng kiện cáo', khác 'kiện tụng' (訴訟) thông thường.",
+    "五味 「甘」 (ngọt) lạ với Chấn (Mộc ứng vị chua); giữ theo nguồn.",
+    "姓字 「角」 trong ngũ âm đọc 'giốc'; 「行位」 đọc 'hàng vị' (thứ bậc anh em)."
+   ]
+  },
+  {
+   "key": "xun",
+   "header": {
+    "number": "五",
+    "element": "木"
+   },
+   "short": [
+    {
+     "han": "風",
+     "hanViet": "phong",
+     "vi": "gió"
+    },
+    {
+     "han": "長女",
+     "hanViet": "trưởng nữ",
+     "vi": "con gái trưởng"
+    },
+    {
+     "han": "僧尼",
+     "hanViet": "tăng ni",
+     "vi": "sư tăng, sư ni"
+    },
+    {
+     "han": "雞",
+     "hanViet": "kê",
+     "vi": "gà"
+    },
+    {
+     "han": "股",
+     "hanViet": "cổ",
+     "vi": "đùi"
+    },
+    {
+     "han": "百禽",
+     "hanViet": "bách cầm",
+     "vi": "các loài chim"
+    },
+    {
+     "han": "百草",
+     "hanViet": "bách thảo",
+     "vi": "các loài cỏ"
+    },
+    {
+     "han": "臼",
+     "hanViet": "cữu",
+     "vi": "cối"
+    },
+    {
+     "han": "香氣",
+     "hanViet": "hương khí",
+     "vi": "mùi thơm"
+    },
+    {
+     "han": "臭",
+     "hanViet": "xú",
+     "vi": "mùi (hôi)"
+    },
+    {
+     "han": "繩",
+     "hanViet": "thằng",
+     "vi": "dây"
+    },
+    {
+     "han": "眼",
+     "hanViet": "nhãn",
+     "vi": "mắt"
+    },
+    {
+     "han": "羽毛",
+     "hanViet": "vũ mao",
+     "vi": "lông vũ"
+    },
+    {
+     "han": "帆",
+     "hanViet": "phàm",
+     "vi": "buồm"
+    },
+    {
+     "han": "扇",
+     "hanViet": "phiến",
+     "vi": "quạt"
+    },
+    {
+     "han": "枝葉之類",
+     "hanViet": "chi diệp chi loại",
+     "vi": "các loại cành lá"
+    },
+    {
+     "han": "仙道工匠",
+     "hanViet": "tiên đạo công tượng",
+     "vi": "người tu tiên đạo, thợ thủ công"
+    },
+    {
+     "han": "直物",
+     "hanViet": "trực vật",
+     "vi": "vật thẳng"
+    },
+    {
+     "han": "工巧之器",
+     "hanViet": "công xảo chi khí",
+     "vi": "đồ vật khéo léo do thợ làm"
+    }
+   ],
+   "detail": [
+    {
+     "category": "天時",
+     "items": [
+      {
+       "han": "風",
+       "hanViet": "phong",
+       "vi": "gió"
+      }
+     ]
+    },
+    {
+     "category": "地理",
+     "items": [
+      {
+       "han": "東南方之地",
+       "hanViet": "đông nam phương chi địa",
+       "vi": "đất phương đông nam"
+      },
+      {
+       "han": "草木茂秀之所",
+       "hanViet": "thảo mộc mậu tú chi sở",
+       "vi": "nơi cây cỏ tươi tốt"
+      },
+      {
+       "han": "花果菜園",
+       "hanViet": "hoa quả thái viên",
+       "vi": "vườn hoa quả, vườn rau"
+      }
+     ]
+    },
+    {
+     "category": "人物",
+     "items": [
+      {
+       "han": "長女",
+       "hanViet": "trưởng nữ",
+       "vi": "con gái trưởng"
+      },
+      {
+       "han": "秀士",
+       "hanViet": "tú sĩ",
+       "vi": "học trò giỏi"
+      },
+      {
+       "han": "寡婦之人",
+       "hanViet": "quả phụ chi nhân",
+       "vi": "người góa phụ"
+      },
+      {
+       "han": "山林仙道之人",
+       "hanViet": "sơn lâm tiên đạo chi nhân",
+       "vi": "người tu tiên đạo nơi núi rừng"
+      }
+     ]
+    },
+    {
+     "category": "人事",
+     "items": [
+      {
+       "han": "柔和",
+       "hanViet": "nhu hòa",
+       "vi": "mềm mỏng hòa nhã"
+      },
+      {
+       "han": "不定",
+       "hanViet": "bất định",
+       "vi": "không nhất định"
+      },
+      {
+       "han": "鼓舞",
+       "hanViet": "cổ vũ",
+       "vi": "cổ vũ, khích lệ"
+      },
+      {
+       "han": "利市三倍",
+       "hanViet": "lợi thị tam bội",
+       "vi": "buôn bán lời gấp ba"
+      },
+      {
+       "han": "進退不果",
+       "hanViet": "tiến thoái bất quả",
+       "vi": "tiến lui không quả quyết"
+      }
+     ]
+    },
+    {
+     "category": "身體",
+     "items": [
+      {
+       "han": "肱",
+       "hanViet": "quăng",
+       "vi": "cánh tay"
+      },
+      {
+       "han": "股",
+       "hanViet": "cổ",
+       "vi": "đùi"
+      },
+      {
+       "han": "氣",
+       "hanViet": "khí",
+       "vi": "khí"
+      },
+      {
+       "han": "風疾",
+       "hanViet": "phong tật",
+       "vi": "bệnh do phong tà (chứng phong)"
+      }
+     ]
+    },
+    {
+     "category": "時序",
+     "items": [
+      {
+       "han": "春夏之交",
+       "hanViet": "xuân hạ chi giao",
+       "vi": "lúc giao mùa xuân hạ"
+      },
+      {
+       "han": "三五八之時月日",
+       "hanViet": "tam ngũ bát chi thời nguyệt nhật",
+       "vi": "giờ, tháng, ngày mang số 3, 5, 8"
+      },
+      {
+       "han": "辰巳月日時",
+       "hanViet": "thìn tị nguyệt nhật thời",
+       "vi": "tháng, ngày, giờ Thìn, Tị"
+      }
+     ]
+    },
+    {
+     "category": "靜物",
+     "items": [
+      {
+       "han": "木香",
+       "hanViet": "mộc hương",
+       "vi": "mộc hương"
+      },
+      {
+       "han": "繩",
+       "hanViet": "thằng",
+       "vi": "dây"
+      },
+      {
+       "han": "直物",
+       "hanViet": "trực vật",
+       "vi": "vật thẳng"
+      },
+      {
+       "han": "長物",
+       "hanViet": "trường vật",
+       "vi": "vật dài"
+      },
+      {
+       "han": "竹木",
+       "hanViet": "trúc mộc",
+       "vi": "tre gỗ"
+      },
+      {
+       "han": "工巧之器",
+       "hanViet": "công xảo chi khí",
+       "vi": "đồ vật khéo léo do thợ làm"
+      }
+     ]
+    },
+    {
+     "category": "動物",
+     "items": [
+      {
+       "han": "雞",
+       "hanViet": "kê",
+       "vi": "gà"
+      },
+      {
+       "han": "百禽",
+       "hanViet": "bách cầm",
+       "vi": "các loài chim"
+      },
+      {
+       "han": "山林中之禽",
+       "hanViet": "sơn lâm trung chi cầm",
+       "vi": "chim trong núi rừng"
+      },
+      {
+       "han": "蟲",
+       "hanViet": "trùng",
+       "vi": "sâu bọ"
+      }
+     ]
+    },
+    {
+     "category": "屋舍",
+     "items": [
+      {
+       "han": "東南向之居",
+       "hanViet": "đông nam hướng chi cư",
+       "vi": "nhà hướng đông nam"
+      },
+      {
+       "han": "寺觀樓臺",
+       "hanViet": "tự quán lâu đài",
+       "vi": "chùa, đạo quán, lầu đài"
+      },
+      {
+       "han": "山林之居",
+       "hanViet": "sơn lâm chi cư",
+       "vi": "nhà ở núi rừng"
+      }
+     ]
+    },
+    {
+     "category": "家宅",
+     "items": [
+      {
+       "han": "安穩利市",
+       "hanViet": "an ổn lợi thị",
+       "vi": "yên ổn, buôn bán có lời"
+      },
+      {
+       "han": "春占吉",
+       "hanViet": "xuân chiêm cát",
+       "vi": "xem vào mùa xuân thì tốt"
+      },
+      {
+       "han": "秋占不安",
+       "hanViet": "thu chiêm bất an",
+       "vi": "xem vào mùa thu thì không yên"
+      }
+     ]
+    },
+    {
+     "category": "飲食",
+     "items": [
+      {
+       "han": "雞肉",
+       "hanViet": "kê nhục",
+       "vi": "thịt gà"
+      },
+      {
+       "han": "山林之味",
+       "hanViet": "sơn lâm chi vị",
+       "vi": "món núi rừng"
+      },
+      {
+       "han": "蔬果酸味",
+       "hanViet": "sơ quả toan vị",
+       "vi": "rau quả vị chua"
+      }
+     ]
+    },
+    {
+     "category": "婚姻",
+     "items": [
+      {
+       "han": "可成",
+       "hanViet": "khả thành",
+       "vi": "có thể thành"
+      },
+      {
+       "han": "宜長女之婚",
+       "hanViet": "nghi trưởng nữ chi hôn",
+       "vi": "nên hôn sự với con gái trưởng"
+      },
+      {
+       "han": "秋占不利",
+       "hanViet": "thu chiêm bất lợi",
+       "vi": "xem vào mùa thu thì không lợi"
+      }
+     ]
+    },
+    {
+     "category": "生產",
+     "items": [
+      {
+       "han": "易生",
+       "hanViet": "dị sinh",
+       "vi": "dễ sinh"
+      },
+      {
+       "han": "頭胎產女",
+       "hanViet": "đầu thai sản nữ",
+       "vi": "con so sinh con gái"
+      },
+      {
+       "han": "秋占損胎",
+       "hanViet": "thu chiêm tổn thai",
+       "vi": "xem vào mùa thu thì hại thai"
+      },
+      {
+       "han": "宜向東南坐",
+       "hanViet": "nghi hướng đông nam tọa",
+       "vi": "nên ngồi quay về hướng đông nam"
+      }
+     ]
+    },
+    {
+     "category": "求名",
+     "items": [
+      {
+       "han": "有名",
+       "hanViet": "hữu danh",
+       "vi": "có danh"
+      },
+      {
+       "han": "宜文職有風憲之力",
+       "hanViet": "nghi văn chức hữu phong hiến chi lực",
+       "vi": "nên làm văn chức, có quyền phong hiến (giám sát, đàn hặc)"
+      },
+      {
+       "han": "宜為風憲",
+       "hanViet": "nghi vi phong hiến",
+       "vi": "nên làm quan phong hiến"
+      },
+      {
+       "han": "宜茶果竹木稅貨之職",
+       "hanViet": "nghi trà quả trúc mộc thuế hóa chi chức",
+       "vi": "nên làm chức thu thuế hàng trà, quả, tre, gỗ"
+      },
+      {
+       "han": "宜東南之任",
+       "hanViet": "nghi đông nam chi nhiệm",
+       "vi": "nên nhận chức ở phương đông nam"
+      }
+     ]
+    },
+    {
+     "category": "求利",
+     "items": [
+      {
+       "han": "有利三倍",
+       "hanViet": "hữu lợi tam bội",
+       "vi": "có lời gấp ba"
+      },
+      {
+       "han": "宜山林之利",
+       "hanViet": "nghi sơn lâm chi lợi",
+       "vi": "nên cầu lợi từ núi rừng"
+      },
+      {
+       "han": "秋占不利",
+       "hanViet": "thu chiêm bất lợi",
+       "vi": "xem vào mùa thu thì không lợi"
+      },
+      {
+       "han": "竹貨木貨之利",
+       "hanViet": "trúc hóa mộc hóa chi lợi",
+       "vi": "lợi từ hàng tre, hàng gỗ"
+      }
+     ]
+    },
+    {
+     "category": "交易",
+     "items": [
+      {
+       "han": "可成",
+       "hanViet": "khả thành",
+       "vi": "có thể thành"
+      },
+      {
+       "han": "進退不一",
+       "hanViet": "tiến thoái bất nhất",
+       "vi": "tiến lui không nhất quán"
+      },
+      {
+       "han": "利山林交易",
+       "hanViet": "lợi sơn lâm giao dịch",
+       "vi": "lợi giao dịch về núi rừng"
+      },
+      {
+       "han": "山林木茶之利",
+       "hanViet": "sơn lâm mộc trà chi lợi",
+       "vi": "lợi từ núi rừng, gỗ, trà"
+      }
+     ]
+    },
+    {
+     "category": "謀旺",
+     "items": [
+      {
+       "han": "可謀旺",
+       "hanViet": "khả mưu vượng",
+       "vi": "có thể mưu tính thịnh"
+      },
+      {
+       "han": "有財可成",
+       "hanViet": "hữu tài khả thành",
+       "vi": "có tiền của, có thể thành"
+      },
+      {
+       "han": "秋占多謀少遂",
+       "hanViet": "thu chiêm đa mưu thiểu toại",
+       "vi": "xem vào mùa thu thì mưu nhiều mà ít toại"
+      }
+     ]
+    },
+    {
+     "category": "出行",
+     "items": [
+      {
+       "han": "可行",
+       "hanViet": "khả hành",
+       "vi": "đi được"
+      },
+      {
+       "han": "有出入之利",
+       "hanViet": "hữu xuất nhập chi lợi",
+       "vi": "có lợi trong việc ra vào"
+      },
+      {
+       "han": "宜向東南行",
+       "hanViet": "nghi hướng đông nam hành",
+       "vi": "nên đi về hướng đông nam"
+      },
+      {
+       "han": "秋占不利",
+       "hanViet": "thu chiêm bất lợi",
+       "vi": "xem vào mùa thu thì không lợi"
+      }
+     ]
+    },
+    {
+     "category": "謁見",
+     "items": [
+      {
+       "han": "可見",
+       "hanViet": "khả kiến",
+       "vi": "gặp được"
+      },
+      {
+       "han": "利見山林之人",
+       "hanViet": "lợi kiến sơn lâm chi nhân",
+       "vi": "lợi gặp người ở núi rừng"
+      },
+      {
+       "han": "利見文人秀士",
+       "hanViet": "lợi kiến văn nhân tú sĩ",
+       "vi": "lợi gặp văn nhân, học trò giỏi"
+      }
+     ]
+    },
+    {
+     "category": "疾病",
+     "items": [
+      {
+       "han": "股肱之疾",
+       "hanViet": "cổ quăng chi tật",
+       "vi": "bệnh ở đùi và cánh tay"
+      },
+      {
+       "han": "風疾",
+       "hanViet": "phong tật",
+       "vi": "bệnh do phong tà (chứng phong)"
+      },
+      {
+       "han": "腸疾",
+       "hanViet": "tràng tật",
+       "vi": "bệnh ruột"
+      },
+      {
+       "han": "中風",
+       "hanViet": "trúng phong",
+       "vi": "trúng gió"
+      },
+      {
+       "han": "寒邪",
+       "hanViet": "hàn tà",
+       "vi": "tà khí lạnh"
+      },
+      {
+       "han": "氣疾",
+       "hanViet": "khí tật",
+       "vi": "bệnh về khí"
+      }
+     ]
+    },
+    {
+     "category": "姓字",
+     "items": [
+      {
+       "han": "角音",
+       "hanViet": "giốc âm",
+       "vi": "âm Giốc"
+      },
+      {
+       "han": "草木旁姓氏",
+       "hanViet": "thảo mộc bàng tính thị",
+       "vi": "họ có bộ Thảo, bộ Mộc"
+      },
+      {
+       "han": "行位五三八",
+       "hanViet": "hàng vị ngũ tam bát",
+       "vi": "thứ bậc 5, 3, 8"
+      }
+     ]
+    },
+    {
+     "category": "官訟",
+     "items": [
+      {
+       "han": "宜和",
+       "hanViet": "nghi hòa",
+       "vi": "nên hòa giải"
+      },
+      {
+       "han": "恐遭風憲之責",
+       "hanViet": "khủng tao phong hiến chi trách",
+       "vi": "e bị quan phong hiến trách phạt"
+      }
+     ]
+    },
+    {
+     "category": "墳墓",
+     "items": [
+      {
+       "han": "宜東南方向",
+       "hanViet": "nghi đông nam phương hướng",
+       "vi": "nên hướng đông nam"
+      },
+      {
+       "han": "山林之穴",
+       "hanViet": "sơn lâm chi huyệt",
+       "vi": "huyệt nơi núi rừng"
+      },
+      {
+       "han": "多樹木",
+       "hanViet": "đa thụ mộc",
+       "vi": "nhiều cây cối"
+      },
+      {
+       "han": "秋占不利",
+       "hanViet": "thu chiêm bất lợi",
+       "vi": "xem vào mùa thu thì không lợi"
+      }
+     ]
+    },
+    {
+     "category": "數目",
+     "items": [
+      {
+       "han": "五",
+       "hanViet": "ngũ",
+       "vi": "năm"
+      },
+      {
+       "han": "三",
+       "hanViet": "tam",
+       "vi": "ba"
+      },
+      {
+       "han": "八",
+       "hanViet": "bát",
+       "vi": "tám"
+      }
+     ]
+    },
+    {
+     "category": "方道",
+     "items": [
+      {
+       "han": "東南",
+       "hanViet": "đông nam",
+       "vi": "đông nam"
+      }
+     ]
+    },
+    {
+     "category": "五味",
+     "items": [
+      {
+       "han": "酸味",
+       "hanViet": "toan vị",
+       "vi": "vị chua"
+      }
+     ]
+    },
+    {
+     "category": "五色",
+     "items": [
+      {
+       "han": "青",
+       "hanViet": "thanh",
+       "vi": "xanh"
+      },
+      {
+       "han": "綠",
+       "hanViet": "lục",
+       "vi": "xanh lục"
+      },
+      {
+       "han": "碧",
+       "hanViet": "bích",
+       "vi": "xanh biếc"
+      },
+      {
+       "han": "潔白",
+       "hanViet": "khiết bạch",
+       "vi": "trắng tinh"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "「風憲」 = chức quan giám sát, đàn hặc (ngự sử); 「宜文職有風憲之力」 dịch nháp, cách ngắt câu có thể khác.",
+    "bảng ngắn 「臭」: nghĩa cổ là 'mùi' nói chung, cũng có nghĩa 'mùi hôi'; đứng cạnh 香氣 nên dịch 'mùi (hôi)'.",
+    "疾病 「中風」 đọc 'trúng phong' (中 = trúng, bị).",
+    "姓字 「角」 trong ngũ âm đọc 'giốc'; 「行位」 đọc 'hàng vị'."
+   ]
+  },
+  {
+   "key": "kan",
+   "header": {
+    "number": "六",
+    "element": "水"
+   },
+   "short": [
+    {
+     "han": "水",
+     "hanViet": "thủy",
+     "vi": "nước"
+    },
+    {
+     "han": "雨",
+     "hanViet": "vũ",
+     "vi": "mưa"
+    },
+    {
+     "han": "雪",
+     "hanViet": "tuyết",
+     "vi": "tuyết"
+    },
+    {
+     "han": "工",
+     "hanViet": "công",
+     "vi": "thợ"
+    },
+    {
+     "han": "豕",
+     "hanViet": "thỉ",
+     "vi": "lợn"
+    },
+    {
+     "han": "中男",
+     "hanViet": "trung nam",
+     "vi": "con trai giữa"
+    },
+    {
+     "han": "溝瀆",
+     "hanViet": "câu độc",
+     "vi": "ngòi rãnh"
+    },
+    {
+     "han": "弓輪",
+     "hanViet": "cung luân",
+     "vi": "cung và bánh xe"
+    },
+    {
+     "han": "耳",
+     "hanViet": "nhĩ",
+     "vi": "tai"
+    },
+    {
+     "han": "血",
+     "hanViet": "huyết",
+     "vi": "máu"
+    },
+    {
+     "han": "月",
+     "hanViet": "nguyệt",
+     "vi": "mặt trăng"
+    },
+    {
+     "han": "盜",
+     "hanViet": "đạo",
+     "vi": "kẻ trộm"
+    },
+    {
+     "han": "宮律",
+     "hanViet": "cung luật",
+     "vi": "âm luật?"
+    },
+    {
+     "han": "棟",
+     "hanViet": "đống",
+     "vi": "xà nóc nhà"
+    },
+    {
+     "han": "叢棘",
+     "hanViet": "tùng cức",
+     "vi": "bụi gai"
+    },
+    {
+     "han": "狐",
+     "hanViet": "hồ",
+     "vi": "con cáo"
+    },
+    {
+     "han": "蒺藜",
+     "hanViet": "tật lê",
+     "vi": "cây tật lê (cỏ gai)"
+    },
+    {
+     "han": "桎梏",
+     "hanViet": "chất cốc",
+     "vi": "gông cùm"
+    },
+    {
+     "han": "水族",
+     "hanViet": "thủy tộc",
+     "vi": "loài sống dưới nước"
+    },
+    {
+     "han": "魚",
+     "hanViet": "ngư",
+     "vi": "cá"
+    },
+    {
+     "han": "鹽",
+     "hanViet": "diêm",
+     "vi": "muối"
+    },
+    {
+     "han": "酒",
+     "hanViet": "tửu",
+     "vi": "rượu"
+    },
+    {
+     "han": "醢",
+     "hanViet": "hải",
+     "vi": "mắm thịt"
+    },
+    {
+     "han": "有核之物",
+     "hanViet": "hữu hạch chi vật",
+     "vi": "vật có hạt"
+    },
+    {
+     "han": "黑色",
+     "hanViet": "hắc sắc",
+     "vi": "màu đen"
+    }
+   ],
+   "detail": [
+    {
+     "category": "天時",
+     "items": [
+      {
+       "han": "月",
+       "hanViet": "nguyệt",
+       "vi": "mặt trăng"
+      },
+      {
+       "han": "雨",
+       "hanViet": "vũ",
+       "vi": "mưa"
+      },
+      {
+       "han": "雪",
+       "hanViet": "tuyết",
+       "vi": "tuyết"
+      },
+      {
+       "han": "霜",
+       "hanViet": "sương",
+       "vi": "sương giá"
+      },
+      {
+       "han": "露",
+       "hanViet": "lộ",
+       "vi": "sương móc"
+      }
+     ]
+    },
+    {
+     "category": "地理",
+     "items": [
+      {
+       "han": "北方",
+       "hanViet": "bắc phương",
+       "vi": "phương bắc"
+      },
+      {
+       "han": "江湖",
+       "hanViet": "giang hồ",
+       "vi": "sông hồ"
+      },
+      {
+       "han": "溪澗",
+       "hanViet": "khê giản",
+       "vi": "khe suối"
+      },
+      {
+       "han": "泉井",
+       "hanViet": "tuyền tỉnh",
+       "vi": "suối và giếng"
+      },
+      {
+       "han": "卑濕之地（溝瀆、池沼、凡有水處）",
+       "hanViet": "ti thấp chi địa (câu độc, trì chiểu, phàm hữu thủy xứ)",
+       "vi": "đất thấp ẩm (ngòi rãnh, ao đầm, mọi nơi có nước)"
+      }
+     ]
+    },
+    {
+     "category": "人物",
+     "items": [
+      {
+       "han": "中男",
+       "hanViet": "trung nam",
+       "vi": "con trai giữa"
+      },
+      {
+       "han": "江湖之人",
+       "hanViet": "giang hồ chi nhân",
+       "vi": "người sống trên sông nước"
+      },
+      {
+       "han": "舟人",
+       "hanViet": "chu nhân",
+       "vi": "người chèo thuyền"
+      },
+      {
+       "han": "資賊",
+       "hanViet": "tư tặc",
+       "vi": "…?"
+      }
+     ]
+    },
+    {
+     "category": "人事",
+     "items": [
+      {
+       "han": "險陷卑下",
+       "hanViet": "hiểm hãm ti hạ",
+       "vi": "hiểm trở, sa lún, thấp kém"
+      },
+      {
+       "han": "外示以柔",
+       "hanViet": "ngoại thị dĩ nhu",
+       "vi": "bề ngoài tỏ ra mềm mỏng"
+      },
+      {
+       "han": "內序以利",
+       "hanViet": "nội tự dĩ lợi",
+       "vi": "bên trong sắp đặt theo lợi?"
+      },
+      {
+       "han": "漂泊不成",
+       "hanViet": "phiêu bạc bất thành",
+       "vi": "trôi dạt, không nên việc"
+      },
+      {
+       "han": "隨波逐流",
+       "hanViet": "tùy ba trục lưu",
+       "vi": "theo sóng trôi dòng"
+      }
+     ]
+    },
+    {
+     "category": "身體",
+     "items": [
+      {
+       "han": "耳",
+       "hanViet": "nhĩ",
+       "vi": "tai"
+      },
+      {
+       "han": "血",
+       "hanViet": "huyết",
+       "vi": "máu"
+      },
+      {
+       "han": "腎",
+       "hanViet": "thận",
+       "vi": "thận"
+      }
+     ]
+    },
+    {
+     "category": "時序",
+     "items": [
+      {
+       "han": "冬十一月",
+       "hanViet": "đông thập nhất nguyệt",
+       "vi": "mùa đông, tháng mười một"
+      },
+      {
+       "han": "子年月日時",
+       "hanViet": "tý niên nguyệt nhật thời",
+       "vi": "năm, tháng, ngày, giờ Tý"
+      },
+      {
+       "han": "一六月日",
+       "hanViet": "nhất lục nguyệt nhật",
+       "vi": "tháng, ngày mang số 1, 6"
+      }
+     ]
+    },
+    {
+     "category": "靜物",
+     "items": [
+      {
+       "han": "水帶子",
+       "hanViet": "thủy đới tử",
+       "vi": "…?"
+      },
+      {
+       "han": "帶核之物",
+       "hanViet": "đới hạch chi vật",
+       "vi": "vật có hạt"
+      },
+      {
+       "han": "弓輪",
+       "hanViet": "cung luân",
+       "vi": "cung và bánh xe"
+      },
+      {
+       "han": "矯揉之物",
+       "hanViet": "kiểu nhu chi vật",
+       "vi": "vật được uốn nắn"
+      },
+      {
+       "han": "酒器",
+       "hanViet": "tửu khí",
+       "vi": "đồ đựng rượu"
+      },
+      {
+       "han": "水具",
+       "hanViet": "thủy cụ",
+       "vi": "đồ đựng nước"
+      }
+     ]
+    },
+    {
+     "category": "屋舍",
+     "items": [
+      {
+       "han": "向北之居",
+       "hanViet": "hướng bắc chi cư",
+       "vi": "nhà quay về hướng bắc"
+      },
+      {
+       "han": "近水",
+       "hanViet": "cận thủy",
+       "vi": "gần nước"
+      },
+      {
+       "han": "水閣",
+       "hanViet": "thủy các",
+       "vi": "gác bên nước"
+      },
+      {
+       "han": "江樓",
+       "hanViet": "giang lâu",
+       "vi": "lầu bên sông"
+      },
+      {
+       "han": "花酒長器",
+       "hanViet": "hoa tửu trường khí",
+       "vi": "…?"
+      },
+      {
+       "han": "宅中混地之處",
+       "hanViet": "trạch trung hỗn địa chi xứ",
+       "vi": "chỗ đất lầy đục trong nhà?"
+      }
+     ]
+    },
+    {
+     "category": "飲食",
+     "items": [
+      {
+       "han": "豕肉",
+       "hanViet": "thỉ nhục",
+       "vi": "thịt lợn"
+      },
+      {
+       "han": "酒",
+       "hanViet": "tửu",
+       "vi": "rượu"
+      },
+      {
+       "han": "冷味",
+       "hanViet": "lãnh vị",
+       "vi": "món lạnh"
+      },
+      {
+       "han": "海味",
+       "hanViet": "hải vị",
+       "vi": "hải sản"
+      },
+      {
+       "han": "湯",
+       "hanViet": "thang",
+       "vi": "canh"
+      },
+      {
+       "han": "酸味",
+       "hanViet": "toan vị",
+       "vi": "vị chua"
+      },
+      {
+       "han": "宿食",
+       "hanViet": "túc thực",
+       "vi": "đồ ăn để qua đêm"
+      },
+      {
+       "han": "魚",
+       "hanViet": "ngư",
+       "vi": "cá"
+      },
+      {
+       "han": "帶血",
+       "hanViet": "đới huyết",
+       "vi": "món còn máu"
+      },
+      {
+       "han": "掩藏",
+       "hanViet": "yểm tàng",
+       "vi": "món ủ kín, che giấu"
+      },
+      {
+       "han": "有帶核之物",
+       "hanViet": "hữu đới hạch chi vật",
+       "vi": "vật có hạt"
+      },
+      {
+       "han": "水中之物",
+       "hanViet": "thủy trung chi vật",
+       "vi": "vật dưới nước"
+      },
+      {
+       "han": "多骨之物",
+       "hanViet": "đa cốt chi vật",
+       "vi": "vật nhiều xương"
+      }
+     ]
+    },
+    {
+     "category": "家宅",
+     "items": [
+      {
+       "han": "不安",
+       "hanViet": "bất an",
+       "vi": "không yên"
+      },
+      {
+       "han": "暗昧",
+       "hanViet": "ám muội",
+       "vi": "tối tăm, mờ ám"
+      },
+      {
+       "han": "防盜",
+       "hanViet": "phòng đạo",
+       "vi": "đề phòng trộm"
+      }
+     ]
+    },
+    {
+     "category": "婚姻",
+     "items": [
+      {
+       "han": "利中男之婚",
+       "hanViet": "lợi trung nam chi hôn",
+       "vi": "lợi cho hôn sự của con trai giữa"
+      },
+      {
+       "han": "宜北方之婚",
+       "hanViet": "nghi bắc phương chi hôn",
+       "vi": "nên kết hôn ở phương bắc"
+      },
+      {
+       "han": "辰戌丑未月婚不可",
+       "hanViet": "thìn tuất sửu mùi nguyệt hôn bất khả",
+       "vi": "tháng Thìn, Tuất, Sửu, Mùi không nên cưới"
+      }
+     ]
+    },
+    {
+     "category": "生產",
+     "items": [
+      {
+       "han": "難產有險",
+       "hanViet": "nan sản hữu hiểm",
+       "vi": "đẻ khó, có nguy hiểm"
+      },
+      {
+       "han": "宜次胎",
+       "hanViet": "nghi thứ thai",
+       "vi": "nên là thai thứ hai"
+      },
+      {
+       "han": "中男",
+       "hanViet": "trung nam",
+       "vi": "con trai giữa"
+      },
+      {
+       "han": "辰戌丑未月有損",
+       "hanViet": "thìn tuất sửu mùi nguyệt hữu tổn",
+       "vi": "tháng Thìn, Tuất, Sửu, Mùi có tổn hại"
+      },
+      {
+       "han": "宜北向",
+       "hanViet": "nghi bắc hướng",
+       "vi": "nên quay hướng bắc"
+      }
+     ]
+    },
+    {
+     "category": "求名",
+     "items": [
+      {
+       "han": "艱難",
+       "hanViet": "gian nan",
+       "vi": "gian nan"
+      },
+      {
+       "han": "恐有災險",
+       "hanViet": "khủng hữu tai hiểm",
+       "vi": "e có tai họa, nguy hiểm"
+      },
+      {
+       "han": "宜北方之任",
+       "hanViet": "nghi bắc phương chi nhậm",
+       "vi": "nên nhận chức ở phương bắc"
+      },
+      {
+       "han": "魚鹽河泊之職",
+       "hanViet": "ngư diêm hà bạc chi chức",
+       "vi": "chức coi cá, muối, sông bến"
+      }
+     ]
+    },
+    {
+     "category": "求利",
+     "items": [
+      {
+       "han": "有財失",
+       "hanViet": "hữu tài thất",
+       "vi": "có mất của"
+      },
+      {
+       "han": "宜水邊財",
+       "hanViet": "nghi thủy biên tài",
+       "vi": "nên cầu của nơi bờ nước"
+      },
+      {
+       "han": "恐有失陷",
+       "hanViet": "khủng hữu thất hãm",
+       "vi": "e bị mất mát, sa sút"
+      },
+      {
+       "han": "宜魚鹽酒貨之利",
+       "hanViet": "nghi ngư diêm tửu hóa chi lợi",
+       "vi": "nên tìm lợi từ hàng cá, muối, rượu"
+      },
+      {
+       "han": "防遺失",
+       "hanViet": "phòng di thất",
+       "vi": "đề phòng đánh mất"
+      },
+      {
+       "han": "防盜",
+       "hanViet": "phòng đạo",
+       "vi": "đề phòng trộm"
+      }
+     ]
+    },
+    {
+     "category": "交易",
+     "items": [
+      {
+       "han": "不利成交",
+       "hanViet": "bất lợi thành giao",
+       "vi": "không lợi cho việc thành giao dịch"
+      },
+      {
+       "han": "恐防失陷",
+       "hanViet": "khủng phòng thất hãm",
+       "vi": "e phải đề phòng mất mát, sa sút"
+      },
+      {
+       "han": "宜水邊交易",
+       "hanViet": "nghi thủy biên giao dịch",
+       "vi": "nên giao dịch nơi bờ nước"
+      },
+      {
+       "han": "宜魚鹽貨之交易",
+       "hanViet": "nghi ngư diêm hóa chi giao dịch",
+       "vi": "nên buôn bán hàng cá, muối"
+      },
+      {
+       "han": "或點水人之交易",
+       "hanViet": "hoặc điểm thủy nhân chi giao dịch",
+       "vi": "hoặc giao dịch với người (họ) có bộ chấm thủy"
+      }
+     ]
+    },
+    {
+     "category": "謀旺",
+     "items": [
+      {
+       "han": "不宜謀旺",
+       "hanViet": "bất nghi mưu vượng",
+       "vi": "không nên mưu cầu"
+      },
+      {
+       "han": "不能成就",
+       "hanViet": "bất năng thành tựu",
+       "vi": "không thể thành"
+      },
+      {
+       "han": "秋冬占可謀旺",
+       "hanViet": "thu đông chiêm khả mưu vượng",
+       "vi": "xem vào thu, đông thì có thể mưu cầu"
+      }
+     ]
+    },
+    {
+     "category": "出行",
+     "items": [
+      {
+       "han": "不宜遠行",
+       "hanViet": "bất nghi viễn hành",
+       "vi": "không nên đi xa"
+      },
+      {
+       "han": "宜涉舟",
+       "hanViet": "nghi thiệp chu",
+       "vi": "nên đi thuyền"
+      },
+      {
+       "han": "宜北方之行",
+       "hanViet": "nghi bắc phương chi hành",
+       "vi": "nên đi về phương bắc"
+      },
+      {
+       "han": "防盜",
+       "hanViet": "phòng đạo",
+       "vi": "đề phòng trộm"
+      },
+      {
+       "han": "恐遇險陷溺之事",
+       "hanViet": "khủng ngộ hiểm hãm nịch chi sự",
+       "vi": "e gặp chuyện nguy hiểm, sa chìm, chết đuối"
+      }
+     ]
+    },
+    {
+     "category": "謁見",
+     "items": [
+      {
+       "han": "難見",
+       "hanViet": "nan kiến",
+       "vi": "khó gặp"
+      },
+      {
+       "han": "宜見江湖之人",
+       "hanViet": "nghi kiến giang hồ chi nhân",
+       "vi": "nên gặp người sống trên sông nước"
+      },
+      {
+       "han": "或有水旁姓氏之人",
+       "hanViet": "hoặc hữu thủy bàng tính thị chi nhân",
+       "vi": "hoặc người có họ mang bộ thủy"
+      }
+     ]
+    },
+    {
+     "category": "疾病",
+     "items": [
+      {
+       "han": "耳痛",
+       "hanViet": "nhĩ thống",
+       "vi": "đau tai"
+      },
+      {
+       "han": "心疾",
+       "hanViet": "tâm tật",
+       "vi": "bệnh tim"
+      },
+      {
+       "han": "感寒",
+       "hanViet": "cảm hàn",
+       "vi": "nhiễm lạnh"
+      },
+      {
+       "han": "腎疾",
+       "hanViet": "thận tật",
+       "vi": "bệnh thận"
+      },
+      {
+       "han": "胃冷",
+       "hanViet": "vị lãnh",
+       "vi": "dạ dày lạnh"
+      },
+      {
+       "han": "水瀉",
+       "hanViet": "thủy tả",
+       "vi": "tiêu chảy"
+      },
+      {
+       "han": "痼冷之病",
+       "hanViet": "cố lãnh chi bệnh",
+       "vi": "bệnh lạnh lâu năm"
+      },
+      {
+       "han": "血病",
+       "hanViet": "huyết bệnh",
+       "vi": "bệnh về máu"
+      }
+     ]
+    },
+    {
+     "category": "官訟",
+     "items": [
+      {
+       "han": "不利",
+       "hanViet": "bất lợi",
+       "vi": "không lợi"
+      },
+      {
+       "han": "有陰險",
+       "hanViet": "hữu âm hiểm",
+       "vi": "có hiểm họa ngầm"
+      },
+      {
+       "han": "有失",
+       "hanViet": "hữu thất",
+       "vi": "có thua thiệt"
+      },
+      {
+       "han": "因訟",
+       "hanViet": "nhân tụng",
+       "vi": "vì kiện tụng"
+      },
+      {
+       "han": "失陷",
+       "hanViet": "thất hãm",
+       "vi": "sa sút, mất mát"
+      }
+     ]
+    },
+    {
+     "category": "墳墓",
+     "items": [
+      {
+       "han": "宜北向之穴",
+       "hanViet": "nghi bắc hướng chi huyệt",
+       "vi": "nên chọn huyệt hướng bắc"
+      },
+      {
+       "han": "近水傍之墓",
+       "hanViet": "cận thủy bàng chi mộ",
+       "vi": "mộ gần bên nước"
+      },
+      {
+       "han": "不利葬",
+       "hanViet": "bất lợi táng",
+       "vi": "không lợi cho việc chôn cất"
+      }
+     ]
+    },
+    {
+     "category": "姓字",
+     "items": [
+      {
+       "han": "羽音",
+       "hanViet": "vũ âm",
+       "vi": "âm Vũ"
+      },
+      {
+       "han": "點水旁之姓氏",
+       "hanViet": "điểm thủy bàng chi tính thị",
+       "vi": "họ có bộ chấm thủy"
+      },
+      {
+       "han": "行位一六",
+       "hanViet": "hàng vị nhất lục",
+       "vi": "thứ bậc 1, 6"
+      }
+     ]
+    },
+    {
+     "category": "數目",
+     "items": [
+      {
+       "han": "一",
+       "hanViet": "nhất",
+       "vi": "một"
+      },
+      {
+       "han": "六",
+       "hanViet": "lục",
+       "vi": "sáu"
+      }
+     ]
+    },
+    {
+     "category": "方道",
+     "items": [
+      {
+       "han": "北方",
+       "hanViet": "bắc phương",
+       "vi": "phương bắc"
+      }
+     ]
+    },
+    {
+     "category": "五味",
+     "items": [
+      {
+       "han": "鹹",
+       "hanViet": "hàm",
+       "vi": "mặn"
+      },
+      {
+       "han": "酸",
+       "hanViet": "toan",
+       "vi": "chua"
+      }
+     ]
+    },
+    {
+     "category": "五色",
+     "items": [
+      {
+       "han": "黑",
+       "hanViet": "hắc",
+       "vi": "đen"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "地理: 卑濕之地（溝瀆、池沼、凡有水處）— phần trong ngoặc là chú giải cho 卑濕之地, giữ thành một mục.",
+    "人物 資賊: chữ 資 khó hiểu trong văn cảnh; có thể là 盜賊 (đạo tặc, trộm cướp) chép sai — chưa xác minh, để …?.",
+    "人事 內序以利: 序 (sắp đặt, thứ tự) đọc gượng; có thể là chữ khác chép sai — chưa xác minh.",
+    "靜物 水帶子: không rõ nghĩa (nước mang hạt? dải nước?) — để …?.",
+    "屋舍 花酒長器: không rõ nghĩa, có thể chép sai/ghép nhầm — để …?. 宅中混地之處: 混 = đục, lẫn; dịch tạm 'chỗ đất lầy đục', chưa chắc.",
+    "謀旺 (mưu vượng): có thể là 謀望 (mưu vọng, mưu cầu điều mong) — dịch theo nghĩa mưu cầu.",
+    "官訟 因訟 / 失陷: có thể vốn là một cụm 因訟失陷 (vì kiện mà sa sút) bị tách; giữ theo base.json.",
+    "short 宮律 (cung luật): nghĩa trong bảng không rõ (âm luật? cung là âm đầu ngũ âm) — để 'âm luật?'.",
+    "姓字 行位: đọc 行 là 'hàng' (thứ bậc, ngôi thứ)."
+   ]
+  },
+  {
+   "key": "gen",
+   "header": {
+    "number": "七",
+    "element": "土"
+   },
+   "short": [
+    {
+     "han": "山",
+     "hanViet": "sơn",
+     "vi": "núi"
+    },
+    {
+     "han": "土",
+     "hanViet": "thổ",
+     "vi": "đất"
+    },
+    {
+     "han": "少男",
+     "hanViet": "thiếu nam",
+     "vi": "con trai út, trai trẻ"
+    },
+    {
+     "han": "童子",
+     "hanViet": "đồng tử",
+     "vi": "trẻ nhỏ"
+    },
+    {
+     "han": "狗",
+     "hanViet": "cẩu",
+     "vi": "chó"
+    },
+    {
+     "han": "手指",
+     "hanViet": "thủ chỉ",
+     "vi": "ngón tay"
+    },
+    {
+     "han": "徑路",
+     "hanViet": "kính lộ",
+     "vi": "lối nhỏ, đường tắt"
+    },
+    {
+     "han": "門闕",
+     "hanViet": "môn khuyết",
+     "vi": "cổng, cửa lầu"
+    },
+    {
+     "han": "果",
+     "hanViet": "quả",
+     "vi": "quả của cây"
+    },
+    {
+     "han": "蓏",
+     "hanViet": "lỏa",
+     "vi": "quả của cây dây, cây cỏ (dưa, bầu)"
+    },
+    {
+     "han": "閽寺",
+     "hanViet": "hôn tự",
+     "vi": "người giữ cửa, hoạn quan"
+    },
+    {
+     "han": "鼠",
+     "hanViet": "thử",
+     "vi": "chuột"
+    },
+    {
+     "han": "虎",
+     "hanViet": "hổ",
+     "vi": "hổ"
+    },
+    {
+     "han": "狐",
+     "hanViet": "hồ",
+     "vi": "cáo"
+    },
+    {
+     "han": "黔喙之屬",
+     "hanViet": "kiềm uế chi thuộc",
+     "vi": "loài mỏ (mõm) đen"
+    },
+    {
+     "han": "木生之物",
+     "hanViet": "mộc sinh chi vật",
+     "vi": "vật mọc từ cây"
+    },
+    {
+     "han": "藤生之物",
+     "hanViet": "đằng sinh chi vật",
+     "vi": "vật mọc từ dây leo"
+    },
+    {
+     "han": "爪",
+     "hanViet": "trảo",
+     "vi": "móng"
+    },
+    {
+     "han": "鼻",
+     "hanViet": "tị",
+     "vi": "mũi"
+    },
+    {
+     "han": "黃色",
+     "hanViet": "hoàng sắc",
+     "vi": "màu vàng"
+    }
+   ],
+   "detail": [
+    {
+     "category": "天時",
+     "items": [
+      {
+       "han": "雲",
+       "hanViet": "vân",
+       "vi": "mây"
+      },
+      {
+       "han": "霧",
+       "hanViet": "vụ",
+       "vi": "sương mù"
+      },
+      {
+       "han": "山嵐",
+       "hanViet": "sơn lam",
+       "vi": "hơi sương trên núi"
+      }
+     ]
+    },
+    {
+     "category": "地理",
+     "items": [
+      {
+       "han": "山徑路",
+       "hanViet": "sơn kính lộ",
+       "vi": "lối mòn trên núi"
+      },
+      {
+       "han": "近山城",
+       "hanViet": "cận sơn thành",
+       "vi": "thành gần núi"
+      },
+      {
+       "han": "丘陵",
+       "hanViet": "khâu lăng",
+       "vi": "gò đồi"
+      },
+      {
+       "han": "墳墓",
+       "hanViet": "phần mộ",
+       "vi": "mồ mả"
+      },
+      {
+       "han": "東北方",
+       "hanViet": "đông bắc phương",
+       "vi": "phương đông bắc"
+      }
+     ]
+    },
+    {
+     "category": "人物",
+     "items": [
+      {
+       "han": "少男",
+       "hanViet": "thiếu nam",
+       "vi": "con trai út, trai trẻ"
+      },
+      {
+       "han": "閒人",
+       "hanViet": "nhàn nhân",
+       "vi": "người nhàn rỗi"
+      },
+      {
+       "han": "山中人",
+       "hanViet": "sơn trung nhân",
+       "vi": "người trong núi"
+      }
+     ]
+    },
+    {
+     "category": "人事",
+     "items": [
+      {
+       "han": "阻隔",
+       "hanViet": "trở cách",
+       "vi": "ngăn trở"
+      },
+      {
+       "han": "守靜",
+       "hanViet": "thủ tĩnh",
+       "vi": "giữ yên lặng"
+      },
+      {
+       "han": "進退不決",
+       "hanViet": "tiến thoái bất quyết",
+       "vi": "tiến lui không quyết"
+      },
+      {
+       "han": "反背",
+       "hanViet": "phản bối",
+       "vi": "quay lưng, trái ngược"
+      },
+      {
+       "han": "止住",
+       "hanViet": "chỉ trú",
+       "vi": "dừng lại"
+      },
+      {
+       "han": "不見",
+       "hanViet": "bất kiến",
+       "vi": "không thấy"
+      }
+     ]
+    },
+    {
+     "category": "身體",
+     "items": [
+      {
+       "han": "手指",
+       "hanViet": "thủ chỉ",
+       "vi": "ngón tay"
+      },
+      {
+       "han": "骨",
+       "hanViet": "cốt",
+       "vi": "xương"
+      },
+      {
+       "han": "鼻",
+       "hanViet": "tị",
+       "vi": "mũi"
+      },
+      {
+       "han": "背",
+       "hanViet": "bối",
+       "vi": "lưng"
+      }
+     ]
+    },
+    {
+     "category": "時序",
+     "items": [
+      {
+       "han": "冬春之月",
+       "hanViet": "đông xuân chi nguyệt",
+       "vi": "tháng giao mùa đông và xuân"
+      },
+      {
+       "han": "十二月丑寅年月日時",
+       "hanViet": "thập nhị nguyệt sửu dần niên nguyệt nhật thời",
+       "vi": "tháng mười hai; năm, tháng, ngày, giờ Sửu, Dần"
+      },
+      {
+       "han": "七五十數月日",
+       "hanViet": "thất ngũ thập số nguyệt nhật",
+       "vi": "tháng, ngày mang số 7, 5, 10"
+      },
+      {
+       "han": "土年月日時",
+       "hanViet": "thổ niên nguyệt nhật thời",
+       "vi": "năm, tháng, ngày, giờ thuộc Thổ"
+      }
+     ]
+    },
+    {
+     "category": "靜物",
+     "items": [
+      {
+       "han": "土石",
+       "hanViet": "thổ thạch",
+       "vi": "đất đá"
+      },
+      {
+       "han": "瓜果",
+       "hanViet": "qua quả",
+       "vi": "dưa, quả"
+      },
+      {
+       "han": "黃物",
+       "hanViet": "hoàng vật",
+       "vi": "đồ màu vàng"
+      },
+      {
+       "han": "土中之物",
+       "hanViet": "thổ trung chi vật",
+       "vi": "vật trong đất"
+      }
+     ]
+    },
+    {
+     "category": "動物",
+     "items": [
+      {
+       "han": "虎",
+       "hanViet": "hổ",
+       "vi": "hổ"
+      },
+      {
+       "han": "狗",
+       "hanViet": "cẩu",
+       "vi": "chó"
+      },
+      {
+       "han": "鼠",
+       "hanViet": "thử",
+       "vi": "chuột"
+      },
+      {
+       "han": "百獸",
+       "hanViet": "bách thú",
+       "vi": "các loài thú"
+      },
+      {
+       "han": "黔啄之物",
+       "hanViet": "kiềm trác chi vật",
+       "vi": "loài mỏ đen"
+      }
+     ]
+    },
+    {
+     "category": "家宅",
+     "items": [
+      {
+       "han": "安穩",
+       "hanViet": "an ổn",
+       "vi": "yên ổn"
+      },
+      {
+       "han": "諸事有阻",
+       "hanViet": "chư sự hữu trở",
+       "vi": "mọi việc có ngăn trở"
+      },
+      {
+       "han": "家人不睦",
+       "hanViet": "gia nhân bất mục",
+       "vi": "người nhà không hòa thuận"
+      },
+      {
+       "han": "春占不安",
+       "hanViet": "xuân chiêm bất an",
+       "vi": "xem vào mùa xuân thì không yên"
+      }
+     ]
+    },
+    {
+     "category": "屋舍",
+     "items": [
+      {
+       "han": "東北方之居",
+       "hanViet": "đông bắc phương chi cư",
+       "vi": "nhà ở phương đông bắc"
+      },
+      {
+       "han": "山居近石",
+       "hanViet": "sơn cư cận thạch",
+       "vi": "nhà trên núi, gần đá"
+      },
+      {
+       "han": "近路之宅",
+       "hanViet": "cận lộ chi trạch",
+       "vi": "nhà gần đường"
+      }
+     ]
+    },
+    {
+     "category": "飲食",
+     "items": [
+      {
+       "han": "土中物味",
+       "hanViet": "thổ trung vật vị",
+       "vi": "món từ vật trong đất"
+      },
+      {
+       "han": "諸獸之肉",
+       "hanViet": "chư thú chi nhục",
+       "vi": "thịt các loài thú"
+      },
+      {
+       "han": "墓畔竹筍之屬",
+       "hanViet": "mộ bạn trúc duẩn chi thuộc",
+       "vi": "loại măng tre mọc bên mộ"
+      },
+      {
+       "han": "野味",
+       "hanViet": "dã vị",
+       "vi": "thịt thú rừng, món đồng nội"
+      }
+     ]
+    },
+    {
+     "category": "婚姻",
+     "items": [
+      {
+       "han": "阻隔難成",
+       "hanViet": "trở cách nan thành",
+       "vi": "bị ngăn trở, khó thành"
+      },
+      {
+       "han": "成亦遲",
+       "hanViet": "thành diệc trì",
+       "vi": "thành cũng chậm"
+      },
+      {
+       "han": "利少男之婚",
+       "hanViet": "lợi thiếu nam chi hôn",
+       "vi": "lợi cho việc cưới hỏi của con trai út"
+      },
+      {
+       "han": "春占不利",
+       "hanViet": "xuân chiêm bất lợi",
+       "vi": "xem vào mùa xuân thì không lợi"
+      },
+      {
+       "han": "宜對鄉裏婚",
+       "hanViet": "nghi đối hương lí hôn",
+       "vi": "nên kết hôn với người cùng làng"
+      }
+     ]
+    },
+    {
+     "category": "求名",
+     "items": [
+      {
+       "han": "阻隔無名",
+       "hanViet": "trở cách vô danh",
+       "vi": "bị ngăn trở, không có danh"
+      },
+      {
+       "han": "宜東北方之任",
+       "hanViet": "nghi đông bắc phương chi nhậm",
+       "vi": "nên nhận chức ở phương đông bắc"
+      },
+      {
+       "han": "宜土官山城之職",
+       "hanViet": "nghi thổ quan sơn thành chi chức",
+       "vi": "nên giữ chức quan coi đất, chức ở thành vùng núi"
+      }
+     ]
+    },
+    {
+     "category": "求利",
+     "items": [
+      {
+       "han": "求財阻隔",
+       "hanViet": "cầu tài trở cách",
+       "vi": "cầu tài bị ngăn trở"
+      },
+      {
+       "han": "宜山林中取財",
+       "hanViet": "nghi sơn lâm trung thủ tài",
+       "vi": "nên kiếm tiền trong núi rừng"
+      },
+      {
+       "han": "春占不利",
+       "hanViet": "xuân chiêm bất lợi",
+       "vi": "xem vào mùa xuân thì không lợi"
+      },
+      {
+       "han": "有損失",
+       "hanViet": "hữu tổn thất",
+       "vi": "có tổn thất"
+      }
+     ]
+    },
+    {
+     "category": "生產",
+     "items": [
+      {
+       "han": "難生",
+       "hanViet": "nan sinh",
+       "vi": "sinh khó"
+      },
+      {
+       "han": "有險阻之厄",
+       "hanViet": "hữu hiểm trở chi ách",
+       "vi": "có tai ách hiểm trở"
+      },
+      {
+       "han": "宜向東北",
+       "hanViet": "nghi hướng đông bắc",
+       "vi": "nên quay về hướng đông bắc"
+      },
+      {
+       "han": "春佔有損",
+       "hanViet": "xuân chiếm hữu tổn",
+       "vi": "xem vào mùa xuân thì có tổn hại"
+      }
+     ]
+    },
+    {
+     "category": "交易",
+     "items": [
+      {
+       "han": "難成",
+       "hanViet": "nan thành",
+       "vi": "khó thành"
+      },
+      {
+       "han": "有山林田土之交易",
+       "hanViet": "hữu sơn lâm điền thổ chi giao dịch",
+       "vi": "có việc mua bán núi rừng, ruộng đất"
+      },
+      {
+       "han": "春占有失",
+       "hanViet": "xuân chiêm hữu thất",
+       "vi": "xem vào mùa xuân thì có mất mát"
+      }
+     ]
+    },
+    {
+     "category": "謀旺",
+     "items": [
+      {
+       "han": "阻隔難成",
+       "hanViet": "trở cách nan thành",
+       "vi": "bị ngăn trở, khó thành"
+      },
+      {
+       "han": "進退不決",
+       "hanViet": "tiến thoái bất quyết",
+       "vi": "tiến lui không quyết"
+      }
+     ]
+    },
+    {
+     "category": "出行",
+     "items": [
+      {
+       "han": "不宜遠行",
+       "hanViet": "bất nghi viễn hành",
+       "vi": "không nên đi xa"
+      },
+      {
+       "han": "有阻",
+       "hanViet": "hữu trở",
+       "vi": "có ngăn trở"
+      },
+      {
+       "han": "宜近陸行",
+       "hanViet": "nghi cận lục hành",
+       "vi": "nên đi gần, đi đường bộ"
+      }
+     ]
+    },
+    {
+     "category": "謁見",
+     "items": [
+      {
+       "han": "不可見",
+       "hanViet": "bất khả kiến",
+       "vi": "không gặp được"
+      },
+      {
+       "han": "有阻",
+       "hanViet": "hữu trở",
+       "vi": "có ngăn trở"
+      },
+      {
+       "han": "宜見山林之人",
+       "hanViet": "nghi kiến sơn lâm chi nhân",
+       "vi": "nên gặp người ở núi rừng"
+      }
+     ]
+    },
+    {
+     "category": "疾病",
+     "items": [
+      {
+       "han": "手指之疾",
+       "hanViet": "thủ chỉ chi tật",
+       "vi": "bệnh ở ngón tay"
+      },
+      {
+       "han": "脾胃之疾",
+       "hanViet": "tì vị chi tật",
+       "vi": "bệnh tì vị"
+      }
+     ]
+    },
+    {
+     "category": "官訟",
+     "items": [
+      {
+       "han": "貴人阻滯",
+       "hanViet": "quý nhân trở trệ",
+       "vi": "quý nhân bị trở trệ"
+      },
+      {
+       "han": "官訟未解",
+       "hanViet": "quan tụng vị giải",
+       "vi": "việc kiện tụng chưa giải"
+      },
+      {
+       "han": "牽連不決",
+       "hanViet": "khiên liên bất quyết",
+       "vi": "dây dưa không dứt"
+      }
+     ]
+    },
+    {
+     "category": "墳墓",
+     "items": [
+      {
+       "han": "東北之穴",
+       "hanViet": "đông bắc chi huyệt",
+       "vi": "huyệt ở phía đông bắc"
+      },
+      {
+       "han": "山中之穴",
+       "hanViet": "sơn trung chi huyệt",
+       "vi": "huyệt trong núi"
+      },
+      {
+       "han": "春占不利",
+       "hanViet": "xuân chiêm bất lợi",
+       "vi": "xem vào mùa xuân thì không lợi"
+      },
+      {
+       "han": "近路旁有石",
+       "hanViet": "cận lộ bàng hữu thạch",
+       "vi": "gần bên đường, có đá"
+      }
+     ]
+    },
+    {
+     "category": "數目",
+     "items": [
+      {
+       "han": "五",
+       "hanViet": "ngũ",
+       "vi": "năm"
+      },
+      {
+       "han": "七",
+       "hanViet": "thất",
+       "vi": "bảy"
+      },
+      {
+       "han": "十",
+       "hanViet": "thập",
+       "vi": "mười"
+      }
+     ]
+    },
+    {
+     "category": "方道",
+     "items": [
+      {
+       "han": "東北方",
+       "hanViet": "đông bắc phương",
+       "vi": "phương đông bắc"
+      }
+     ]
+    },
+    {
+     "category": "五色",
+     "items": [
+      {
+       "han": "黃",
+       "hanViet": "hoàng",
+       "vi": "vàng"
+      }
+     ]
+    },
+    {
+     "category": "五味",
+     "items": [
+      {
+       "han": "甘",
+       "hanViet": "cam",
+       "vi": "ngọt"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "short 黔喙之屬 vs detail 動物 黔啄之物: 啄 (trác, mổ) có lẽ là 喙 (uế, mỏ/mõm) chép sai; đã dịch theo nghĩa \"loài mỏ đen\" cho cả hai, âm đọc giữ theo chữ trong nguồn.",
+    "蓏: âm Hán Việt \"lỏa\" (có nơi ghi \"lõa\"); nghĩa quả của cây dây/cây cỏ, đối với 果 là quả của cây gỗ.",
+    "春佔有損 (生產): 佔 (chiếm) ở đây dùng như 占 (chiêm, xem bói); hanViet giữ \"chiếm\" theo chữ trong nguồn.",
+    "宜對鄉裏婚: 鄉裏 = 鄉里 (làng xóm); 裏 dùng như 里.",
+    "反背: đọc \"phản bối\" (背 = lưng); nghĩa quay lưng, trái ngược, không phải \"phản bội\" hiện đại."
+   ]
+  },
+  {
+   "key": "kun",
+   "header": {
+    "number": "八",
+    "element": "土"
+   },
+   "short": [
+    {
+     "han": "地",
+     "hanViet": "địa",
+     "vi": "đất"
+    },
+    {
+     "han": "母",
+     "hanViet": "mẫu",
+     "vi": "mẹ"
+    },
+    {
+     "han": "老婦",
+     "hanViet": "lão phụ",
+     "vi": "bà già"
+    },
+    {
+     "han": "土",
+     "hanViet": "thổ",
+     "vi": "đất (hành Thổ)"
+    },
+    {
+     "han": "牛",
+     "hanViet": "ngưu",
+     "vi": "bò"
+    },
+    {
+     "han": "金",
+     "hanViet": "kim",
+     "vi": "kim loại?"
+    },
+    {
+     "han": "布帛",
+     "hanViet": "bố bạch",
+     "vi": "vải lụa"
+    },
+    {
+     "han": "文章",
+     "hanViet": "văn chương",
+     "vi": "văn vẻ, hoa văn"
+    },
+    {
+     "han": "輿輦",
+     "hanViet": "dư liễn",
+     "vi": "xe kiệu"
+    },
+    {
+     "han": "方物",
+     "hanViet": "phương vật",
+     "vi": "vật vuông"
+    },
+    {
+     "han": "柄",
+     "hanViet": "bính",
+     "vi": "cán (để cầm)"
+    },
+    {
+     "han": "黃色",
+     "hanViet": "hoàng sắc",
+     "vi": "màu vàng"
+    },
+    {
+     "han": "瓦器",
+     "hanViet": "ngõa khí",
+     "vi": "đồ gốm"
+    },
+    {
+     "han": "腹",
+     "hanViet": "phúc",
+     "vi": "bụng"
+    },
+    {
+     "han": "裳",
+     "hanViet": "thường",
+     "vi": "xiêm (váy dưới)"
+    },
+    {
+     "han": "黑色",
+     "hanViet": "hắc sắc",
+     "vi": "màu đen"
+    },
+    {
+     "han": "黍稷",
+     "hanViet": "thử tắc",
+     "vi": "kê nếp, kê tắc"
+    },
+    {
+     "han": "書",
+     "hanViet": "thư",
+     "vi": "sách"
+    },
+    {
+     "han": "米",
+     "hanViet": "mễ",
+     "vi": "gạo"
+    },
+    {
+     "han": "穀",
+     "hanViet": "cốc",
+     "vi": "thóc lúa"
+    }
+   ],
+   "detail": [
+    {
+     "category": "天時",
+     "items": [
+      {
+       "han": "雲陰",
+       "hanViet": "vân âm",
+       "vi": "mây u ám"
+      },
+      {
+       "han": "霧氣",
+       "hanViet": "vụ khí",
+       "vi": "sương mù"
+      }
+     ]
+    },
+    {
+     "category": "地理",
+     "items": [
+      {
+       "han": "田野",
+       "hanViet": "điền dã",
+       "vi": "đồng ruộng"
+      },
+      {
+       "han": "鄉裏",
+       "hanViet": "hương lý",
+       "vi": "làng quê"
+      },
+      {
+       "han": "平地",
+       "hanViet": "bình địa",
+       "vi": "đất bằng"
+      },
+      {
+       "han": "西南方",
+       "hanViet": "tây nam phương",
+       "vi": "phương tây nam"
+      }
+     ]
+    },
+    {
+     "category": "人物",
+     "items": [
+      {
+       "han": "老母",
+       "hanViet": "lão mẫu",
+       "vi": "mẹ già"
+      },
+      {
+       "han": "後母",
+       "hanViet": "hậu mẫu",
+       "vi": "mẹ kế"
+      },
+      {
+       "han": "農夫",
+       "hanViet": "nông phu",
+       "vi": "nông dân"
+      },
+      {
+       "han": "鄉人",
+       "hanViet": "hương nhân",
+       "vi": "người làng"
+      },
+      {
+       "han": "眾人",
+       "hanViet": "chúng nhân",
+       "vi": "đám đông"
+      },
+      {
+       "han": "大腹人",
+       "hanViet": "đại phúc nhân",
+       "vi": "người bụng to"
+      }
+     ]
+    },
+    {
+     "category": "人事",
+     "items": [
+      {
+       "han": "吝嗇",
+       "hanViet": "lận sắc",
+       "vi": "keo kiệt"
+      },
+      {
+       "han": "柔順",
+       "hanViet": "nhu thuận",
+       "vi": "mềm mỏng, thuận theo"
+      },
+      {
+       "han": "懦弱",
+       "hanViet": "nọa nhược",
+       "vi": "nhút nhát, yếu đuối"
+      },
+      {
+       "han": "眾多",
+       "hanViet": "chúng đa",
+       "vi": "đông nhiều"
+      }
+     ]
+    },
+    {
+     "category": "身體",
+     "items": [
+      {
+       "han": "腹",
+       "hanViet": "phúc",
+       "vi": "bụng"
+      },
+      {
+       "han": "脾",
+       "hanViet": "tỳ",
+       "vi": "tỳ (lá lách)"
+      },
+      {
+       "han": "胃",
+       "hanViet": "vị",
+       "vi": "dạ dày"
+      },
+      {
+       "han": "肉",
+       "hanViet": "nhục",
+       "vi": "thịt"
+      }
+     ]
+    },
+    {
+     "category": "時序",
+     "items": [
+      {
+       "han": "辰戌丑未月",
+       "hanViet": "thìn tuất sửu mùi nguyệt",
+       "vi": "tháng Thìn, Tuất, Sửu, Mùi"
+      },
+      {
+       "han": "未申年月日時",
+       "hanViet": "mùi thân niên nguyệt nhật thời",
+       "vi": "năm, tháng, ngày, giờ Mùi, Thân"
+      },
+      {
+       "han": "八五十月日",
+       "hanViet": "bát ngũ thập nguyệt nhật",
+       "vi": "tháng, ngày mang số 8, 5, 10"
+      }
+     ]
+    },
+    {
+     "category": "靜物",
+     "items": [
+      {
+       "han": "方物",
+       "hanViet": "phương vật",
+       "vi": "vật vuông"
+      },
+      {
+       "han": "柔物",
+       "hanViet": "nhu vật",
+       "vi": "vật mềm"
+      },
+      {
+       "han": "布帛",
+       "hanViet": "bố bạch",
+       "vi": "vải lụa"
+      },
+      {
+       "han": "絲綿",
+       "hanViet": "ti miên",
+       "vi": "tơ bông"
+      },
+      {
+       "han": "五穀",
+       "hanViet": "ngũ cốc",
+       "vi": "ngũ cốc"
+      },
+      {
+       "han": "輿釜",
+       "hanViet": "dư phủ",
+       "vi": "xe, nồi"
+      },
+      {
+       "han": "瓦器",
+       "hanViet": "ngõa khí",
+       "vi": "đồ gốm"
+      }
+     ]
+    },
+    {
+     "category": "動物",
+     "items": [
+      {
+       "han": "牛",
+       "hanViet": "ngưu",
+       "vi": "bò"
+      },
+      {
+       "han": "百獸",
+       "hanViet": "bách thú",
+       "vi": "trăm loài thú"
+      },
+      {
+       "han": "牝馬",
+       "hanViet": "tẫn mã",
+       "vi": "ngựa cái"
+      }
+     ]
+    },
+    {
+     "category": "屋舍",
+     "items": [
+      {
+       "han": "西南向",
+       "hanViet": "tây nam hướng",
+       "vi": "hướng tây nam"
+      },
+      {
+       "han": "村居",
+       "hanViet": "thôn cư",
+       "vi": "nhà ở thôn quê"
+      },
+      {
+       "han": "田舍",
+       "hanViet": "điền xá",
+       "vi": "nhà ruộng"
+      },
+      {
+       "han": "矮屋",
+       "hanViet": "ải ốc",
+       "vi": "nhà thấp"
+      },
+      {
+       "han": "土階",
+       "hanViet": "thổ giai",
+       "vi": "thềm đất"
+      },
+      {
+       "han": "倉庫",
+       "hanViet": "thương khố",
+       "vi": "kho tàng"
+      }
+     ]
+    },
+    {
+     "category": "家宅",
+     "items": [
+      {
+       "han": "安穩",
+       "hanViet": "an ổn",
+       "vi": "yên ổn"
+      },
+      {
+       "han": "多陰氣",
+       "hanViet": "đa âm khí",
+       "vi": "nhiều khí âm"
+      },
+      {
+       "han": "春占宅舍不安",
+       "hanViet": "xuân chiêm trạch xá bất an",
+       "vi": "mùa xuân xem: nhà cửa không yên"
+      }
+     ]
+    },
+    {
+     "category": "飲食",
+     "items": [
+      {
+       "han": "牛肉",
+       "hanViet": "ngưu nhục",
+       "vi": "thịt bò"
+      },
+      {
+       "han": "土中之物",
+       "hanViet": "thổ trung chi vật",
+       "vi": "vật trong đất"
+      },
+      {
+       "han": "甘味",
+       "hanViet": "cam vị",
+       "vi": "vị ngọt"
+      },
+      {
+       "han": "野味",
+       "hanViet": "dã vị",
+       "vi": "thịt rừng"
+      },
+      {
+       "han": "五穀之味",
+       "hanViet": "ngũ cốc chi vị",
+       "vi": "món từ ngũ cốc"
+      },
+      {
+       "han": "芋筍之物",
+       "hanViet": "vu duẩn chi vật",
+       "vi": "khoai, măng"
+      },
+      {
+       "han": "腹髒之物",
+       "hanViet": "phúc tạng chi vật",
+       "vi": "đồ lòng (nội tạng)"
+      }
+     ]
+    },
+    {
+     "category": "婚姻",
+     "items": [
+      {
+       "han": "利於婚姻",
+       "hanViet": "lợi ư hôn nhân",
+       "vi": "lợi cho hôn nhân"
+      },
+      {
+       "han": "宜稅產之家",
+       "hanViet": "nghi thuế sản chi gia",
+       "vi": "nên nhà có ruộng đất chịu thuế"
+      },
+      {
+       "han": "鄉村之家",
+       "hanViet": "hương thôn chi gia",
+       "vi": "nhà ở làng quê"
+      },
+      {
+       "han": "或寡婦之家",
+       "hanViet": "hoặc quả phụ chi gia",
+       "vi": "hoặc nhà góa phụ"
+      },
+      {
+       "han": "春占不利",
+       "hanViet": "xuân chiêm bất lợi",
+       "vi": "mùa xuân xem: không lợi"
+      }
+     ]
+    },
+    {
+     "category": "生產",
+     "items": [
+      {
+       "han": "易產",
+       "hanViet": "dị sản",
+       "vi": "dễ sinh"
+      },
+      {
+       "han": "春占難產",
+       "hanViet": "xuân chiêm nan sản",
+       "vi": "mùa xuân xem: khó sinh"
+      },
+      {
+       "han": "有損",
+       "hanViet": "hữu tổn",
+       "vi": "có tổn hại"
+      },
+      {
+       "han": "或不利於母",
+       "hanViet": "hoặc bất lợi ư mẫu",
+       "vi": "hoặc không lợi cho mẹ"
+      },
+      {
+       "han": "坐宜西南方",
+       "hanViet": "tọa nghi tây nam phương",
+       "vi": "nên ngồi (sinh) về phương tây nam"
+      }
+     ]
+    },
+    {
+     "category": "求名",
+     "items": [
+      {
+       "han": "有名",
+       "hanViet": "hữu danh",
+       "vi": "có danh"
+      },
+      {
+       "han": "宜西南方或教官",
+       "hanViet": "nghi tây nam phương hoặc giáo quan",
+       "vi": "nên nhậm ở tây nam, hoặc làm quan coi việc học"
+      },
+      {
+       "han": "農官守土之職",
+       "hanViet": "nông quan thủ thổ chi chức",
+       "vi": "quan coi nông nghiệp, chức giữ đất"
+      },
+      {
+       "han": "春占虛名",
+       "hanViet": "xuân chiêm hư danh",
+       "vi": "mùa xuân xem: danh hão"
+      }
+     ]
+    },
+    {
+     "category": "交易",
+     "items": [
+      {
+       "han": "宜利交易",
+       "hanViet": "nghi lợi giao dịch",
+       "vi": "nên giao dịch, có lợi"
+      },
+      {
+       "han": "宜田土交易",
+       "hanViet": "nghi điền thổ giao dịch",
+       "vi": "nên mua bán ruộng đất"
+      },
+      {
+       "han": "宜五穀",
+       "hanViet": "nghi ngũ cốc",
+       "vi": "nên (buôn) ngũ cốc"
+      },
+      {
+       "han": "利賤貨",
+       "hanViet": "lợi tiện hóa",
+       "vi": "lợi hàng rẻ"
+      },
+      {
+       "han": "重物",
+       "hanViet": "trọng vật",
+       "vi": "đồ nặng"
+      },
+      {
+       "han": "布帛",
+       "hanViet": "bố bạch",
+       "vi": "vải lụa"
+      },
+      {
+       "han": "靜中有財",
+       "hanViet": "tĩnh trung hữu tài",
+       "vi": "trong tĩnh có của"
+      },
+      {
+       "han": "春占不利",
+       "hanViet": "xuân chiêm bất lợi",
+       "vi": "mùa xuân xem: không lợi"
+      }
+     ]
+    },
+    {
+     "category": "求利",
+     "items": [
+      {
+       "han": "有利",
+       "hanViet": "hữu lợi",
+       "vi": "có lợi"
+      },
+      {
+       "han": "宜土中之利",
+       "hanViet": "nghi thổ trung chi lợi",
+       "vi": "nên lợi từ đất"
+      },
+      {
+       "han": "賤貨重物之利",
+       "hanViet": "tiện hóa trọng vật chi lợi",
+       "vi": "lợi từ hàng rẻ, đồ nặng"
+      },
+      {
+       "han": "靜中得財",
+       "hanViet": "tĩnh trung đắc tài",
+       "vi": "trong tĩnh được của"
+      },
+      {
+       "han": "春占無財",
+       "hanViet": "xuân chiêm vô tài",
+       "vi": "mùa xuân xem: không có của"
+      },
+      {
+       "han": "多中取利",
+       "hanViet": "đa trung thủ lợi",
+       "vi": "lấy lợi từ số nhiều?"
+      }
+     ]
+    },
+    {
+     "category": "謀旺",
+     "items": [
+      {
+       "han": "利求謀",
+       "hanViet": "lợi cầu mưu",
+       "vi": "lợi cho việc mưu tính"
+      },
+      {
+       "han": "鄉裏求謀",
+       "hanViet": "hương lý cầu mưu",
+       "vi": "mưu việc ở làng quê"
+      },
+      {
+       "han": "靜中求謀",
+       "hanViet": "tĩnh trung cầu mưu",
+       "vi": "mưu việc trong tĩnh"
+      },
+      {
+       "han": "春占少遂",
+       "hanViet": "xuân chiêm thiểu toại",
+       "vi": "mùa xuân xem: ít thành"
+      },
+      {
+       "han": "或謀於婦人",
+       "hanViet": "hoặc mưu ư phụ nhân",
+       "vi": "hoặc mưu việc với đàn bà"
+      }
+     ]
+    },
+    {
+     "category": "出行",
+     "items": [
+      {
+       "han": "可行",
+       "hanViet": "khả hành",
+       "vi": "có thể đi"
+      },
+      {
+       "han": "宜西南行",
+       "hanViet": "nghi tây nam hành",
+       "vi": "nên đi về tây nam"
+      },
+      {
+       "han": "宜往鄉裏行",
+       "hanViet": "nghi vãng hương lý hành",
+       "vi": "nên đi về làng quê"
+      },
+      {
+       "han": "宜陸行",
+       "hanViet": "nghi lục hành",
+       "vi": "nên đi đường bộ"
+      },
+      {
+       "han": "春占不宜行",
+       "hanViet": "xuân chiêm bất nghi hành",
+       "vi": "mùa xuân xem: không nên đi"
+      }
+     ]
+    },
+    {
+     "category": "謁見",
+     "items": [
+      {
+       "han": "可見",
+       "hanViet": "khả kiến",
+       "vi": "có thể gặp"
+      },
+      {
+       "han": "利見鄉人",
+       "hanViet": "lợi kiến hương nhân",
+       "vi": "lợi gặp người làng"
+      },
+      {
+       "han": "宜見親朋或陰人",
+       "hanViet": "nghi kiến thân bằng hoặc âm nhân",
+       "vi": "nên gặp người thân, bạn bè hoặc phụ nữ"
+      },
+      {
+       "han": "春不宜見",
+       "hanViet": "xuân bất nghi kiến",
+       "vi": "mùa xuân không nên gặp"
+      }
+     ]
+    },
+    {
+     "category": "疾病",
+     "items": [
+      {
+       "han": "腹疾",
+       "hanViet": "phúc tật",
+       "vi": "bệnh bụng"
+      },
+      {
+       "han": "脾胃之疾",
+       "hanViet": "tỳ vị chi tật",
+       "vi": "bệnh tỳ vị"
+      },
+      {
+       "han": "飲食停傷",
+       "hanViet": "ẩm thực đình thương",
+       "vi": "ăn uống ứ đọng, tổn thương"
+      },
+      {
+       "han": "穀食不化",
+       "hanViet": "cốc thực bất hóa",
+       "vi": "ăn không tiêu"
+      }
+     ]
+    },
+    {
+     "category": "官訟",
+     "items": [
+      {
+       "han": "理順",
+       "hanViet": "lý thuận",
+       "vi": "lý thuận"
+      },
+      {
+       "han": "得眾情",
+       "hanViet": "đắc chúng tình",
+       "vi": "được lòng mọi người"
+      },
+      {
+       "han": "訟當解散",
+       "hanViet": "tụng đương giải tán",
+       "vi": "vụ kiện sẽ tan"
+      }
+     ]
+    },
+    {
+     "category": "墳墓",
+     "items": [
+      {
+       "han": "宜向西南之穴",
+       "hanViet": "nghi hướng tây nam chi huyệt",
+       "vi": "nên huyệt hướng tây nam"
+      },
+      {
+       "han": "平陽之地",
+       "hanViet": "bình dương chi địa",
+       "vi": "đất bằng phẳng"
+      },
+      {
+       "han": "近田野",
+       "hanViet": "cận điền dã",
+       "vi": "gần đồng ruộng"
+      },
+      {
+       "han": "宜低葬",
+       "hanViet": "nghi đê táng",
+       "vi": "nên chôn chỗ thấp"
+      },
+      {
+       "han": "春不可葬",
+       "hanViet": "xuân bất khả táng",
+       "vi": "mùa xuân không được chôn"
+      }
+     ]
+    },
+    {
+     "category": "姓字",
+     "items": [
+      {
+       "han": "宮音",
+       "hanViet": "cung âm",
+       "vi": "âm Cung"
+      },
+      {
+       "han": "帶土姓人",
+       "hanViet": "đới thổ tính nhân",
+       "vi": "người họ có bộ Thổ"
+      },
+      {
+       "han": "行位八五十",
+       "hanViet": "hàng vị bát ngũ thập",
+       "vi": "thứ bậc 8, 5, 10"
+      }
+     ]
+    },
+    {
+     "category": "數目",
+     "items": [
+      {
+       "han": "八",
+       "hanViet": "bát",
+       "vi": "tám"
+      },
+      {
+       "han": "五",
+       "hanViet": "ngũ",
+       "vi": "năm"
+      },
+      {
+       "han": "十",
+       "hanViet": "thập",
+       "vi": "mười"
+      }
+     ]
+    },
+    {
+     "category": "方道",
+     "items": [
+      {
+       "han": "西南",
+       "hanViet": "tây nam",
+       "vi": "tây nam"
+      }
+     ]
+    },
+    {
+     "category": "五味",
+     "items": [
+      {
+       "han": "甘",
+       "hanViet": "cam",
+       "vi": "ngọt"
+      }
+     ]
+    },
+    {
+     "category": "五色",
+     "items": [
+      {
+       "han": "黃",
+       "hanViet": "hoàng",
+       "vi": "vàng"
+      },
+      {
+       "han": "黑",
+       "hanViet": "hắc",
+       "vi": "đen"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Bảng ngắn「金」: lạ với quẻ Khôn; Thuyết quái ghi 坤「為釜」, nên 金 có thể là chép sai của 釜 (phủ, nồi) — khớp với「輿釜」ở mục 靜物. Dịch tạm 'kim loại?'.",
+    "地理「鄉裏」, 謀旺「鄉裏求謀」, 出行「宜往鄉裏行」: 裏 có lẽ là 里 (hương lý = làng quê) bị chuyển giản–phồn sai; dịch theo nghĩa 鄉里.",
+    "飲食「腹髒之物」: 髒 nhiều khả năng là 臟 (tạng) bị chuyển sai; dịch theo 腹臟 (nội tạng), hanViet ghi 'tạng'.",
+    "婚姻「宜稅產之家」: 稅產 hiểu là tài sản/ruộng đất chịu thuế; chưa chắc — dịch sát chữ.",
+    "靜物「輿釜」: đọc là 輿 (xe) và 釜 (nồi), như Thuyết quái 坤「為釜」「為大輿」; bảng ngắn ghi 輿輦.",
+    "時序「八五十月日」: chỉ có 月日, không có 年…時 như các quẻ khác — giữ nguyên, có thể nguồn chép thiếu.",
+    "交易「宜利交易」: cấu trúc hơi lạ, dịch sát 'nên giao dịch, có lợi'.",
+    "求利「多中取利」: nghĩa chính xác không chắc (lấy lợi từ chỗ đông/nhiều) — dịch sát chữ, đánh dấu ?."
+   ]
+  }
+ ]
+}

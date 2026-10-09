@@ -3,34 +3,22 @@ import type { StaticData } from '../data/load';
 import { fullHexagramName } from '../data/names';
 import { t } from '../i18n';
 import type { LineValue } from '../lib/cast';
-import { hexagramBinary, hexagramFromTrigrams } from '../lib/iching';
 import { canChiName, vnParts, type VnParts } from '../lib/lunar';
+import { linesOfMeihua } from '../lib/meihuaService';
 import {
-  ELEMENT_VI, analyze, byNumberString, byNumbers, byText, byTime,
+  ELEMENT_VI, analyze, monthElementOfBranch, byNumberString, byNumbers, byText, byTime,
   type Element, type MeihuaAnalysis, type MeihuaCast, type RoleWithRelation,
 } from '../lib/meihua';
 import { TRIGRAM_SYMBOL } from '../flow/steps/Step2Trigrams';
 import type { TrigramKey } from '../types/schema';
 
-/** Hành của tháng theo tiết khí (chi tháng): Dần Mão Mộc, Tỵ Ngọ Hỏa, Thân Dậu Kim, Hợi Tý Thủy, Thìn Tuất Sửu Mùi Thổ. */
+/** Hành của tháng theo tiết khí (chi tháng) — xem `monthElementOfBranch` trong lib/meihua. */
 export function monthElementOf(p: VnParts): Element {
-  const b = p.monthCanChi.branch;
-  if (b === 2 || b === 3) return 'moc';
-  if (b === 5 || b === 6) return 'hoa';
-  if (b === 8 || b === 9) return 'kim';
-  if (b === 11 || b === 0) return 'thuy';
-  return 'tho';
+  return monthElementOfBranch(p.monthCanChi.branch);
 }
 
-/** Sáu giá trị hào từ một quẻ Mai Hoa: hào động là lão (6/9), còn lại thiếu (7/8). */
-export function linesFromMeihua(c: Pick<MeihuaCast, 'upper' | 'lower' | 'movingLine'>): LineValue[] {
-  const bin = hexagramBinary(hexagramFromTrigrams(c.lower, c.upper));
-  return [...bin].map((b, i) => {
-    const moving = i + 1 === c.movingLine;
-    if (b === '1') return moving ? 9 : 7;
-    return moving ? 6 : 8;
-  });
-}
+/** Sáu giá trị hào từ một quẻ Mai Hoa — xem `linesOfMeihua` trong lib/meihuaService. */
+export const linesFromMeihua = (c: Pick<MeihuaCast, 'upper' | 'lower' | 'movingLine'>): LineValue[] => linesOfMeihua(c);
 
 /** Thời điểm theo lịch Việt Nam: giờ, âm lịch, can chi, tiết khí. */
 export function TimeInfo({ parts }: { parts: VnParts }) {
