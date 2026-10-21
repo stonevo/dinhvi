@@ -33,6 +33,9 @@ const IntroSectionPage = named(() => import('./pages/IntroPage'), 'IntroSectionP
 const TenWingsPage = named(() => import('./pages/TenWingsPage'), 'TenWingsPage');
 const TenWingsBookPage = named(() => import('./pages/TenWingsPage'), 'TenWingsBookPage');
 const DiagramsPage = named(() => import('./pages/DiagramsPage'), 'DiagramsPage');
+const BooksPage = named(() => import('./pages/BooksPage'), 'BooksPage');
+const BookPage = named(() => import('./pages/BooksPage'), 'BookPage');
+const BookChapterPage = named(() => import('./pages/BooksPage'), 'BookChapterPage');
 const SharePage = named(() => import('./pages/SharePage'), 'SharePage');
 const WitnessPage = named(() => import('./pages/WitnessPage'), 'WitnessPage');
 
@@ -81,8 +84,9 @@ export function App() {
               { to: '/intro', label: t('nav.intro'), children: (intro ?? []).map((s) => ({ to: `/intro/${s.id}`, label: s.title })) },
               { to: '/tenwings', label: t('nav.tenwings'), children: (tenWings ?? []).map((b) => ({ to: `/tenwings/${b.id}`, label: b.title })) },
               { to: '/diagrams', label: t('nav.diagrams') },
+              { to: '/books', label: t('nav.books') },
             ]}
-            activeWhen={(p) => p.startsWith('/library') || p.startsWith('/intro') || p.startsWith('/tenwings') || p.startsWith('/diagrams')}
+            activeWhen={(p) => p.startsWith('/library') || p.startsWith('/intro') || p.startsWith('/tenwings') || p.startsWith('/diagrams') || p.startsWith('/books')}
             menuLabel={t('nav.libraryMenu')}
           />
           <NavLink to="/study">{t('nav.study')}</NavLink>
@@ -114,6 +118,9 @@ export function App() {
           <Route path="/tenwings" element={<TenWingsPage />} />
           <Route path="/diagrams" element={<DiagramsPage />} />
           <Route path="/tenwings/:id" element={<TenWingsBookPage />} />
+          <Route path="/books" element={<BooksPage />} />
+          <Route path="/books/:bookId" element={<BookPage />} />
+          <Route path="/books/:bookId/:chapterId" element={<BookChapterPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
         </Suspense>

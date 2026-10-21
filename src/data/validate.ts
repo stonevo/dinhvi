@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import {
   hexagramCommentarySchema, hexagramContextsSchema, hexagramSchema, diagramSectionSchema, hexagramSummarySchema, introSectionSchema, lineTierSchema, tenWingsBookSchema, trigramSchema, TRIGRAM_KEYS,
-  meihuaTuongModernSchema, meihuaTuongSchema, type MeihuaTuong,
+  meihuaTuongModernSchema, meihuaTuongSchema, type MeihuaTuong, bookSchema, bookChapterSchema, type BookChapter,
   type CommentaryPart, type Hexagram, type HexagramCommentary, type Line, type LinePosition, type LineTier, type Trigram,
 } from '../types/schema';
 import { HOUTIAN_DIRECTION } from '../lib/diagrams';
@@ -300,6 +300,53 @@ export function validateMeihuaTuongModern(raw: unknown, tuongRaw: unknown): stri
     const allowed = new Set([it.trigram, ...(it.alt ?? [])]);
     for (const b of it.basis) if (!allowed.has(b.trigram)) errors.push(`${it.vi}: căn cứ thuộc ${b.trigram} nhưng không nằm trong trigram/alt`);
     if (!it.basis.some((b) => b.trigram === it.trigram)) errors.push(`${it.vi}: quái chính ${it.trigram} không có căn cứ`);
+  }
+  return errors;
+}
+
+/** Dấu chú `[^n]` trong một khối (kể cả dấu ở tên chương với khối đầu). */
+export function blockMarks(texts: string[], extra?: number): number[] {
+  const s = new Set<number>();
+  for (const t of texts) for (const m of t.matchAll(/\[\^(\d+)\]/g)) s.add(Number(m[1]));
+  if (extra) s.add(extra);
+  return [...s].sort((a, b) => a - b);
+}
+
+/**
+ * Sách hay: danh sách sách và từng chương. Mỗi khối phải khớp dấu chú với chú giải, trừ các chỗ
+ * đã ghi trong `sourceIssues` (lỗi của bản gốc, đã đối chiếu tay).
+ */
+export function validateBooks(raw: unknown, readChapter: (bookId: string, chapterId: string) => unknown): string[] {
+  const parsed = z.array(bookSchema).safeParse(raw);
+  if (!parsed.success) return zodErrors('books', parsed.error);
+  const errors: string[] = [];
+  for (const b of parsed.data) {
+    const known = new Set(b.sourceIssues.map((i) => `${i.chapter}#${i.block}`));
+    const seen = new Set<string>();
+    for (const c of b.chapters) {
+      if (seen.has(c.id)) errors.push(`${b.id}: chương trùng ${c.id}`);
+      seen.add(c.id);
+      let ch: BookChapter;
+      try {
+        const r = bookChapterSchema.safeParse(readChapter(b.id, c.id));
+        if (!r.success) {
+          errors.push(...zodErrors(`${b.id}/${c.id}`, r.error));
+          continue;
+        }
+        ch = r.data;
+      } catch (e) {
+        errors.push(`${b.id}/${c.id}: không đọc được (${(e as Error).message})`);
+        continue;
+      }
+      if (ch.id !== c.id || ch.title !== c.title || ch.kind !== c.kind) errors.push(`${b.id}/${c.id}: id/tên/loại khác mục lục`);
+      ch.blocks.forEach((blk, i) => {
+        const marks = blockMarks(blk.text, i === 0 ? ch.titleNote : undefined);
+        const nums = blk.notes.flatMap((x) => Array.from({ length: (x.to ?? x.n) - x.n + 1 }, (_, k) => x.n + k));
+        const ok = marks.join() === [...nums].sort((a, b2) => a - b2).join() && new Set(nums).size === nums.length;
+        if (!ok && !known.has(`${c.id}#${i}`)) errors.push(`${b.id}/${c.id} khối ${i}: dấu [${marks}] ≠ chú giải [${nums}]`);
+        if (ok && known.has(`${c.id}#${i}`)) errors.push(`${b.id}/${c.id} khối ${i}: ghi ở sourceIssues nhưng đã khớp`);
+      });
+    }
   }
   return errors;
 }

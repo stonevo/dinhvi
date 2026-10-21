@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { z } from 'zod';
 import {
-  hexagramCommentarySchema, hexagramContextsSchema, introSectionSchema, hexagramSchema, lineTierSchema, tenWingsBookSchema, diagramSectionSchema, hexagramSummarySchema, trigramSchema,
-  type Hexagram, type HexagramCommentary, type HexagramContexts, type IntroSection, type LineTier, type TenWingsBook, type DiagramSection, type HexagramSummary, type Trigram, type TrigramKey,
+  hexagramCommentarySchema, hexagramContextsSchema, introSectionSchema, hexagramSchema, lineTierSchema, tenWingsBookSchema, diagramSectionSchema, hexagramSummarySchema, trigramSchema, bookSchema, bookChapterSchema,
+  type Hexagram, type HexagramCommentary, type HexagramContexts, type IntroSection, type LineTier, type TenWingsBook, type DiagramSection, type HexagramSummary, type Trigram, type TrigramKey, type Book, type BookChapter,
 } from '../types/schema';
 
 // Dữ liệu tĩnh nằm ở public/data để người tự host sửa được mà không build lại.
@@ -220,4 +220,51 @@ export function useSummary(n: number): HexagramSummary | null {
     };
   }, [n]);
   return state;
+}
+
+// Sách hay: danh sách sách (nhỏ) và từng chương (nạp khi mở).
+let booksCache: Promise<Book[]> | null = null;
+
+export function useBooks(): Book[] | null {
+  const [state, setState] = useState<Book[] | null>(null);
+  useEffect(() => {
+    let alive = true;
+    booksCache ??= fetchJson('books.json', z.array(bookSchema).min(1));
+    booksCache.catch(() => {
+      booksCache = null;
+    });
+    booksCache.then(
+      (v) => alive && setState(v),
+      () => alive && setState([]),
+    );
+    return () => {
+      alive = false;
+    };
+  }, []);
+  return state;
+}
+
+const chapterCache = new Map<string, Promise<BookChapter>>();
+
+/** Một chương: `null` khi đang tải, `'error'` khi không tải được. */
+export function useBookChapter(bookId: string, chapterId: string): BookChapter | null | 'error' {
+  const [state, setState] = useState<{ key: string; value: BookChapter | 'error' } | null>(null);
+  const key = `${bookId}/${chapterId}`;
+  useEffect(() => {
+    let alive = true;
+    let p = chapterCache.get(key);
+    if (!p) {
+      p = fetchJson(`books/${key}.json`, bookChapterSchema);
+      chapterCache.set(key, p);
+      p.catch(() => chapterCache.delete(key));
+    }
+    p.then(
+      (v) => alive && setState({ key, value: v }),
+      () => alive && setState({ key, value: 'error' }),
+    );
+    return () => {
+      alive = false;
+    };
+  }, [key]);
+  return state?.key === key ? state.value : null;
 }

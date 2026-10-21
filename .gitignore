@@ -5,3 +5,4 @@ dev-dist
 coverage
 data-src/chunks/*.json
 .wrangler
+scripts/books/out/

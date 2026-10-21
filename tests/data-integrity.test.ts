@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import type { Hexagram } from '../src/types/schema';
 import {
-  lineLabel, validateCommentary, validateContexts, validateIntro, validateTenWings, validateDiagrams, validateSummaries, validateHexagrams, validateLineTiers, validateTrigrams, validateMeihuaTuong, validateMeihuaTuongModern,
+  lineLabel, validateCommentary, validateContexts, validateIntro, validateTenWings, validateDiagrams, validateSummaries, validateHexagrams, validateLineTiers, validateTrigrams, validateMeihuaTuong, validateMeihuaTuongModern, validateBooks,
 } from '../src/data/validate';
 import { CANONICAL_NAMES, fullHexagramName } from '../src/data/names';
 import { hexagramFromTrigrams, oppositeHexagram } from '../src/lib/iching';
@@ -18,6 +18,8 @@ describe('toàn vẹn dữ liệu tĩnh', () => {
   it('meihua-tuong.json: 八卦萬物屬類 đủ 8 quái, dòng đầu khớp số Tiên thiên và hành', () => expect(validateMeihuaTuong(read('meihua-tuong.json'))).toEqual([]));
   it('meihua-tuong-hien-dai.json: không phải nội dung sách, mọi căn cứ có trong bảng gốc', () =>
     expect(validateMeihuaTuongModern(read('meihua-tuong-hien-dai.json'), read('meihua-tuong.json'))).toEqual([]));
+  it('books.json + books/*: mục lục khớp file chương, dấu chú khớp chú giải (trừ lỗi bản gốc đã ghi)', () =>
+    expect(validateBooks(read('books.json'), (b, c) => read(join('books', b, `${c}.json`)))).toEqual([]));
   it('lineTiers.json', () => expect(validateLineTiers(read('lineTiers.json'))).toEqual([]));
   it('hexagrams.json: schema, 64 quẻ, binary, quái, bàng thông, hào', () =>
     expect(validateHexagrams(hexagrams)).toEqual([]));

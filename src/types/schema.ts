@@ -558,3 +558,61 @@ export const meihuaTuongModernSchema = z.object({
   ),
 });
 export type MeihuaTuongModern = z.infer<typeof meihuaTuongModernSchema>;
+
+// ---------- Sách hay (public/data/books.json, books/<id>/<chương>.json) ----------
+
+const bookNoteSchema = z.object({
+  n: z.number().int().min(1),
+  /** Chú gộp, vd. "(2-3)": chú này dùng cho các dấu từ n tới `to`. */
+  to: z.number().int().min(2).optional(),
+  paras: z.array(z.string().min(1)).min(1),
+});
+export type BookNote = z.infer<typeof bookNoteSchema>;
+
+export const bookBlockSchema = z.object({
+  /** Đoạn kinh văn; dấu chú giải viết `[^n]`. */
+  text: z.array(z.string().min(1)),
+  notes: z.array(bookNoteSchema),
+  /** Lời bàn ("Án") và đoạn chú không đánh số; `after` = số chú giải đứng ngay trước nó (0: trước mọi chú). */
+  an: z.array(z.object({ after: z.number().int().min(0), paras: z.array(z.string().min(1)).min(1) })).optional(),
+});
+export type BookBlock = z.infer<typeof bookBlockSchema>;
+
+export const bookChapterSchema = z.object({
+  id: z.string().min(1),
+  /** front = Tiểu dẫn, Lời dịch giả…; chapter = chương của sách. */
+  kind: z.enum(['front', 'chapter']),
+  n: z.number().int().min(1).optional(),
+  title: z.string().min(1),
+  by: z.string().optional(),
+  /** Ghi chú cạnh số chương trong sách, vd. "CHƯƠNG 73 KHÔNG CÓ". */
+  headNote: z.string().optional(),
+  /** Số chú giải gắn ở tên chương (chú giải nằm trong khối đầu). */
+  titleNote: z.number().int().min(1).optional(),
+  intro: z.array(z.string().min(1)).optional(),
+  blocks: z.array(bookBlockSchema),
+  /** Phụ lục; đoạn bắt đầu bằng "# " là tiêu đề nhỏ. */
+  appendices: z.array(z.object({ title: z.string().min(1), paras: z.array(z.string().min(1)) })).optional(),
+  /** Lạc khoản cuối chương (vd. ngày dịch xong). */
+  outro: z.array(z.string().min(1)).optional(),
+  /** Trang PDF của bản gõ (đầu, cuối). */
+  pages: z.tuple([z.number().int(), z.number().int()]),
+});
+export type BookChapter = z.infer<typeof bookChapterSchema>;
+
+export const bookSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(1),
+  titleHan: z.string().optional(),
+  translator: z.string().min(1),
+  commentator: z.string().optional(),
+  translated: z.string().optional(),
+  epigraph: z.string().optional(),
+  summary: z.string().min(1),
+  source: z.string().min(1),
+  notes: z.array(z.string().min(1)),
+  chapters: z.array(z.object({ id: z.string().min(1), kind: z.enum(['front', 'chapter']), n: z.number().int().optional(), title: z.string().min(1) })).min(1),
+  /** Chỗ bản gốc lệch giữa dấu chú và chú giải (đã đối chiếu tay). */
+  sourceIssues: z.array(z.object({ chapter: z.string(), block: z.number().int().min(0), page: z.number().int(), note: z.string().min(1) })),
+});
+export type Book = z.infer<typeof bookSchema>;
