@@ -912,7 +912,7 @@ details.read-more[open] > summary { margin-bottom: 12px; }
 /* ---------- Sách hay ---------- */
 .book { color: var(--ink); }
 .book .lead, .book-meta, .book-source { color: var(--muted); }
-.book-epigraph { font-family: var(--font-heading); font-style: italic; color: var(--muted); }
+.book-epigraph { font-style: italic; color: var(--muted); }
 .book-meta { display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; margin: 0; }
 .book-meta dt { font-weight: bold; }
 .book-meta dd { margin: 0; }
@@ -921,7 +921,16 @@ details.read-more[open] > summary { margin-bottom: 12px; }
 .book-toc-main li { break-inside: avoid; margin: 2px 0; }
 .book-source summary { cursor: pointer; }
 .book-head h1 { margin: 0; }
-.book-head .small-caps { margin: 0 0 4px; }
+.book-head-n { margin: 0 0 4px; }
+.book-nav { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; }
+.book-nav a { min-width: 0; }
+.book-nav-prev, .book-nav-next { display: flex; gap: 4px; }
+.book-nav-prev span, .book-nav-next span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.book-nav-next { justify-content: flex-end; text-align: right; }
+.book-nav-toc { font-weight: bold; }
+.book-nav-bottom { border-top: 1px solid var(--line); padding-top: 12px; }
+.book-nav .short { display: none; }
+@media (max-width: 640px) { .book-nav .full { display: none; } .book-nav .short { display: inline; } }
 .book-lead p, .book-front p { margin: 0 0 0.6em; }
 .book-block { border-top: 1px solid var(--line); padding-top: 12px; }
 .book-block p { margin: 0 0 0.6em; line-height: 1.7; }

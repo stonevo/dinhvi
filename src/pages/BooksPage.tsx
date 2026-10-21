@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState, type ReactNode } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { useBookChapter, useBooks } from '../data/load';
 import { t } from '../i18n';
 import type { Book, BookBlock, BookChapter, BookNote } from '../types/schema';
@@ -22,8 +22,18 @@ function saveLast(bookId: string, chapterId: string) {
   }
 }
 
+/**
+ * Tên chương để hiển thị: sách in toàn chữ hoa ("TỨ KHÍ ĐIỀU THẦN LUẬN") — đổi sang chữ thường,
+ * viết hoa chữ đầu ("Tứ khí điều thần luận"). Dữ liệu vẫn giữ nguyên như sách.
+ */
+export function displayTitle(s: string): string {
+  if (s !== s.toUpperCase()) return s;
+  const low = s.toLocaleLowerCase('vi');
+  return low.charAt(0).toLocaleUpperCase('vi') + low.slice(1);
+}
+
 const chapterLabel = (c: { kind: string; n?: number; title: string }) =>
-  c.kind === 'chapter' && c.n ? `${t('books.chapter', { n: c.n })} · ${c.title}` : c.title;
+  c.kind === 'chapter' && c.n ? `${t('books.chapter', { n: c.n })} · ${displayTitle(c.title)}` : displayTitle(c.title);
 
 /** Danh sách sách. */
 export function BooksPage() {
@@ -54,6 +64,11 @@ export function BooksPage() {
 export function BookPage() {
   const { bookId = '' } = useParams();
   const books = useBooks();
+  const { state } = useLocation();
+  const toToc = (state as { toc?: boolean } | null)?.toc === true;
+  useEffect(() => {
+    if (books && toToc) document.getElementById('book-toc')?.scrollIntoView();
+  }, [books, toToc]);
   if (!books) return <p className="muted">{t('common.loading')}</p>;
   const b = books.find((x) => x.id === bookId);
   if (!b) return <p>{t('books.notFound')}</p>;
@@ -92,18 +107,18 @@ export function BookPage() {
           {lastCh ? t('books.continue', { title: chapterLabel(lastCh) }) : t('books.start')}
         </Link>
       </p>
-      <h2>{t('books.toc')}</h2>
+      <h2 id="book-toc">{t('books.toc')}</h2>
       <ul className="book-toc">
         {front.map((c) => (
           <li key={c.id}>
-            <Link to={`/books/${b.id}/${c.id}`}>{c.title}</Link>
+            <Link to={`/books/${b.id}/${c.id}`}>{displayTitle(c.title)}</Link>
           </li>
         ))}
       </ul>
       <ol className="book-toc book-toc-main">
         {main.map((c) => (
           <li key={c.id} value={c.n}>
-            <Link to={`/books/${b.id}/${c.id}`}>{c.title}</Link>
+            <Link to={`/books/${b.id}/${c.id}`}>{displayTitle(c.title)}</Link>
           </li>
         ))}
       </ol>
@@ -276,9 +291,7 @@ export function BookChapterPage() {
   return (
     <FootnoteLayer>
       <article className="stack intro book">
-        <p className="small">
-          <Link to={`/books/${b.id}`}>← {b.title}</Link>
-        </p>
+        <ChapterNav b={b} prev={prev} next={next} />
         <ChapterHeader ch={ch} />
         {ch.blocks.length > 0 && (
           <p>
@@ -311,12 +324,39 @@ export function BookChapterPage() {
         <p className="muted small">
           {t('books.citation', { translator: b.translator, title: b.title })} · {t('books.pdfPages', { a: ch.pages[0], b: ch.pages[1] })}
         </p>
-        <nav className="intro-pager">
-          {prev ? <Link to={`/books/${b.id}/${prev.id}`}>← {chapterLabel(prev)}</Link> : <span />}
-          {next ? <Link to={`/books/${b.id}/${next.id}`}>{chapterLabel(next)} →</Link> : <span />}
-        </nav>
+        <ChapterNav b={b} prev={prev} next={next} bottom />
       </article>
     </FootnoteLayer>
+  );
+}
+
+type TocItem = Book['chapters'][number];
+const shortLabel = (c: TocItem) => (c.kind === 'chapter' && c.n ? t('books.chapter', { n: c.n }) : displayTitle(c.title));
+
+/** Thanh chuyển chương: chương trước · mục lục · chương sau (đặt ở đầu và cuối trang). */
+function ChapterNav({ b, prev, next, bottom }: { b: Book; prev?: TocItem; next?: TocItem; bottom?: boolean }) {
+  return (
+    <nav className={'book-nav small' + (bottom ? ' book-nav-bottom' : '')} aria-label={t('books.chapterNav')}>
+      {prev ? (
+        <Link to={`/books/${b.id}/${prev.id}`} className="book-nav-prev" title={chapterLabel(prev)}>
+          ← <span className="full">{chapterLabel(prev)}</span>
+          <span className="short">{shortLabel(prev)}</span>
+        </Link>
+      ) : (
+        <span />
+      )}
+      <Link to={`/books/${b.id}`} state={{ toc: true }} className="book-nav-toc">
+        {t('books.toc')}
+      </Link>
+      {next ? (
+        <Link to={`/books/${b.id}/${next.id}`} className="book-nav-next" title={chapterLabel(next)}>
+          <span className="full">{chapterLabel(next)}</span>
+          <span className="short">{shortLabel(next)}</span> →
+        </Link>
+      ) : (
+        <span />
+      )}
+    </nav>
   );
 }
 
@@ -324,9 +364,9 @@ function ChapterHeader({ ch }: { ch: BookChapter }) {
   const titleNote = ch.titleNote ? noteFor(ch.blocks[0]?.notes ?? [], ch.titleNote) : undefined;
   return (
     <header className="book-head">
-      {ch.kind === 'chapter' && <p className="small-caps">{t('books.chapter', { n: ch.n ?? '' })}</p>}
+      {ch.kind === 'chapter' && <p className="muted small book-head-n">{t('books.chapter', { n: ch.n ?? '' })}</p>}
       <h1>
-        {ch.title}
+        {displayTitle(ch.title)}
         {ch.titleNote && (
           <FootnoteRef id={`${ch.id}-title`} label={String(ch.titleNote)} title={t('books.note', { n: ch.titleNote })}>
             {titleNote && <NoteBody note={titleNote} />}
@@ -334,7 +374,7 @@ function ChapterHeader({ ch }: { ch: BookChapter }) {
         )}
       </h1>
       {ch.by && <p className="muted small">{ch.by}</p>}
-      {ch.headNote && <p className="muted small">({ch.headNote})</p>}
+      {ch.headNote && <p className="muted small">({displayTitle(ch.headNote)})</p>}
     </header>
   );
 }

@@ -441,6 +441,7 @@ export const vi = {
   'books.start': 'Bắt đầu đọc',
   'books.continue': 'Đọc tiếp: {title}',
   'books.toc': 'Mục lục',
+  'books.chapterNav': 'Chuyển chương',
   'books.chapter': 'Chương {n}',
   'books.note': 'Chú giải {n}',
   'books.noteClose': 'Đóng chú giải',
